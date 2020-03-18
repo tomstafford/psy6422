@@ -8,3 +8,19 @@ output: html_document
 # PSY6422 Data Management and Visualisation
 
 ** These pages will evolve rapidly, please check back **
+
+[Google Drive](https://drive.google.com/drive/folders/1tuaTS6RPYOXh-XByRffFS1FDzbvvFs_w)
+
+ * [Reading list](reading_list.html)
+
+# Road Map for this course
+
+ * RMarkdown
+ * R projects
+ * Git/github
+ * Publishing your project
+
+
+# Example Project
+
+  * SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
