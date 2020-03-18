@@ -33,6 +33,7 @@ These pages (hosted on github, no login required):
 * Publishing your project
 
 Stretch goals:
+
 * Shiny apps
 
 ## Example Project
