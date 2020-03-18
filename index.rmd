@@ -26,7 +26,7 @@ These pages (hosted on github, no login required):
 * RStudio [done]
 * R basics / swirl [done]
 * Importing data [done]
-*
+* Merging data [project 2](https://drive.google.com/drive/folders/1N22ZMpZeRBq_2CDHCXzkx723nztIBe-Q)
 * RMarkdown
 * R projects
 * Git/github
