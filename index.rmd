@@ -1,26 +1,31 @@
 ---
-title: "index"
+title: "PSY6422 Data Mannagement and Visualisation @ The University of Sheffield"
 author: '@tomstafford'
-date: "4 March 2020"
+date: "18 March 2020"
 output: html_document
 ---
 
-# PSY6422 Data Management and Visualisation
+# Provisional course pages, will evolve rapidly, please check back
 
-** These pages will evolve rapidly, please check back **
+## Resources
 
 [Google Drive](https://drive.google.com/drive/folders/1tuaTS6RPYOXh-XByRffFS1FDzbvvFs_w)
 
  * [Reading list](reading_list.html)
 
-# Road Map for this course
+## Road Map for this course
 
+ * RStudio [done]
+ * Importing data [done]
+ *
  * RMarkdown
  * R projects
  * Git/github
  * Publishing your project
 
 
-# Example Project
+## Example Project
+
+The bulk of the assessment is to conduct and publish your own analysis project. Here is an example small project which gives an idea of what I mean
 
   * SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
