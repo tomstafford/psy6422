@@ -1,0 +1,10 @@
+---
+title: "index"
+author: '@tomstafford'
+date: "4 March 2020"
+output: html_document
+---
+
+# PSY6422 Data Management and Visualisation
+
+** These pages will evolve rapidly, please check back **
