@@ -1,6 +1,6 @@
 ---
 title: "PSY6422 Data Mannagement and Visualisation @ The University of Sheffield"
-author: '@tomstafford'
+author: 'Tom Stafford'
 date: "18 March 2020"
 output: html_document
 ---
@@ -32,9 +32,15 @@ These pages (hosted on github, no login required):
 * Git/github
 * Publishing your project
 
+Stretch goals:
+* Shiny apps
 
 ## Example Project
 
 The bulk of the assessment is to conduct and publish your own analysis project. Here is an example small project which gives an idea of what I mean
 
-  * SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
+* SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
+
+Stretch goal is to build an interactive data visualisation using Shiny
+
+* Here's one I built earlier [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
