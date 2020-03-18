@@ -10,12 +10,18 @@ output: html_document
 ## Resources
 
 [Google Drive](https://drive.google.com/drive/folders/1tuaTS6RPYOXh-XByRffFS1FDzbvvFs_w)
+ * inludes slides and workbooks, as well as these specific documents
+ * [Timetable](https://docs.google.com/spreadsheets/d/1fyvjYhai6nIaOUymkUrlGIXL89cG76lI8bLXirPbaOw/edit?usp=drivesdk)
+ * [Useful information](https://docs.google.com/document/d/1kEDLaELoFyRBCsQLkZZP1PNbNaw2uUM6AAQhd42ExwQ/edit?usp=drivesdk)
+ * [Assessment Criteria](https://docs.google.com/spreadsheets/d/1DS91tnTtC8qPQHchAbzkOK57vvsSLIQc9FN3nPp9bQY/edit?usp=drivesdk)
 
- * [Reading list](reading_list.html)
+ * [Reading list](readinglist.html)
 
 ## Road Map for this course
 
+ * Project organisation [done]
  * RStudio [done]
+ * R basics / swirl [done]
  * Importing data [done]
  *
  * RMarkdown
