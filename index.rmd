@@ -22,11 +22,11 @@ These pages (hosted on github, no login required):
 
 ## Road Map for this course
 
-* Project organisation [done]
-* RStudio [done]
-* R basics / swirl [done]
-* Importing data [done]
+* Project organisation & RStudio [workbook 1](https://docs.google.com/document/d/1PspimTHeFoGzkiy2PPL2-23o6inyybiGJOzHDwL_OPU/edit?usp=sharing)
+* R basics / swirl [workbook 2](https://drive.google.com/a/sheffield.ac.uk/file/d/1MnsxGPdTsXMUZByqXz3qXwhDZ0X2SQuv/view?usp=drivesdk)
+* Importing data [project 1 - anscombe's quartet](https://drive.google.com/drive/folders/1W4uZYPLDIuOF2OYhi_GK9e-IaC66tqu1)
 * Merging data [project 2](https://drive.google.com/drive/folders/1N22ZMpZeRBq_2CDHCXzkx723nztIBe-Q)
+* Cleaning data [project 3](https://drive.google.com/drive/folders/1U8yq7_XXs4eRG6IpuZAVwWUxW1ngTV7O)
 * RMarkdown
 * R projects
 * Git/github
