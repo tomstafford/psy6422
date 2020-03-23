@@ -1,0 +1,75 @@
+
+--- 
+title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
+author: "Tom Stafford"
+date: '2020-03-23'
+bibliography:
+- book.bib
+- packages.bib
+description: This is a template. Use it to start a new course book.
+documentclass: book
+link-citations: yes
+site: bookdown::bookdown_site
+biblio-style: apalike
+---
+
+
+
+
+# Overview {-}
+
+PSY6422 Data Management and Visualisation is part of the MSc in Psychological Researc Methods with Data Science taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/)
+
+## Resources
+
+[Google Drive](https://drive.google.com/drive/folders/1tuaTS6RPYOXh-XByRffFS1FDzbvvFs_w) (UoS login required to access):
+
+Includes slides and workbooks, as well as these specific documents
+* [Timetable](https://docs.google.com/spreadsheets/d/1fyvjYhai6nIaOUymkUrlGIXL89cG76lI8bLXirPbaOw/edit?usp=drivesdk)
+* [Useful information](https://docs.google.com/document/d/1kEDLaELoFyRBCsQLkZZP1PNbNaw2uUM6AAQhd42ExwQ/edit?usp=drivesdk)
+* [Assessment Criteria](https://docs.google.com/spreadsheets/d/1DS91tnTtC8qPQHchAbzkOK57vvsSLIQc9FN3nPp9bQY/edit?usp=drivesdk)
+
+These pages (hosted on github, no login required):
+
+* [Reading list](readinglist.html)
+
+## Course Outline
+
+The topics we cover are:
+
+* Project organisation & RStudio [workbook 1](https://docs.google.com/document/d/1PspimTHeFoGzkiy2PPL2-23o6inyybiGJOzHDwL_OPU/edit?usp=sharing)
+* R basics / swirl [workbook 2](https://drive.google.com/a/sheffield.ac.uk/file/d/1MnsxGPdTsXMUZByqXz3qXwhDZ0X2SQuv/view?usp=drivesdk)
+* Importing data [project 1 - anscombe's quartet](https://drive.google.com/drive/folders/1W4uZYPLDIuOF2OYhi_GK9e-IaC66tqu1)
+* Merging data [project 2](https://drive.google.com/drive/folders/1N22ZMpZeRBq_2CDHCXzkx723nztIBe-Q)
+* Cleaning data [project 3](https://drive.google.com/drive/folders/1U8yq7_XXs4eRG6IpuZAVwWUxW1ngTV7O)
+* RMarkdown
+* R projects
+* Git/github
+* Publishing your project
+
+Stretch goals:
+
+* Shiny apps
+
+## Example Projects
+
+The bulk of the assessment is to conduct and publish your own analysis project. Here is an example small project which gives an idea of what I mean
+
+* SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
+
+Stretch goal is to build an interactive data visualisation using Shiny
+
+* Here's one I built earlier [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
+
+## General righteousnous
+
+You should use a password manager. Really. [LastPass](https://www.lastpass.com) is recommended
+
+You should know how to use a VPN
+
+* Advice for Sheffield students here: [Working remotely - information for students](https://www.sheffield.ac.uk/it-services/remote/students)
+* You can test by visiting [this page](https://journals.sagepub.com/doi/full/10.1177/0956797613511466). If you are in the University network (either on campus or via a VPN) it will offer you the chance to download the article PDF. Otherwise it will try and charge you $35 for the privelege.
+
+## Credit
+
+Based on [a template](https://psyteachr.github.io/book-template/) published by Lisa DeBruine of the awesome [psyTeachR team at the University of Glasgow](https://psyteachr.github.io/about/) 
