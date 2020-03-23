@@ -27,7 +27,7 @@ bookdown::gitbook:
       google: no
       linkedin: no
       weibo: no
-      instapaper: no
+      instapaper: yes
       vk: no
       all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper']
 bookdown::pdf_book:

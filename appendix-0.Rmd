@@ -8,7 +8,7 @@ These pages based on [a template](https://psyteachr.github.io/book-template/) pu
 Find the repo here: [https://github.com/tomstafford/psy6422/0(https://github.com/tomstafford/psy6422/)
 
 
-## General righteousnous
+## General righteousness
 
 You should use a password manager. Really. [LastPass](https://www.lastpass.com) is recommended
 
