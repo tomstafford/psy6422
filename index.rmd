@@ -78,4 +78,4 @@ You should know how to use a VPN
 
 ## Credit
 
-Based on [a template](https://psyteachr.github.io/book-template/) published by Lisa DeBruine of the awesome [psyTeachR team at the University of Glasgow](https://psyteachr.github.io/about/) 
+Based on [a template](https://psyteachr.github.io/book-template/) published by the awesome [psyTeachR team](https://psyteachr.github.io/about/). Extra thanks to Lisa DeBruine for help
