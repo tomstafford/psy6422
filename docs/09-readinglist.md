@@ -5,7 +5,7 @@ output:
   #html_notebook: default
 ---
 
-# Reading List
+# Reading List {-}
 
 Further reading, including books, links, demos and packages. You don't need to read all of this, but you will want to dig around. If I could recommend one book to accompany the courseit would be 
 
