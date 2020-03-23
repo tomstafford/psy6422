@@ -23,29 +23,13 @@ knitr::write_bib(c(
 
 # Overview {-}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-
-## Course Aims
-
-* Aim 1
-* Aim 2
-* Aim 3
-
-## Intended Learning Outcomes
-
-By the end of this course students will be able to:
-
-* ILO 1
-* ILO 2
-* ILO 3
-
-## Old stuff
+PSY6422 Data Management and Visualisation is part of the MSc in Psychological Researc Methods with Data Science taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/)
 
 ## Resources
 
 [Google Drive](https://drive.google.com/drive/folders/1tuaTS6RPYOXh-XByRffFS1FDzbvvFs_w) (UoS login required to access):
 
-* includes slides and workbooks, as well as these specific documents
+Includes slides and workbooks, as well as these specific documents
 * [Timetable](https://docs.google.com/spreadsheets/d/1fyvjYhai6nIaOUymkUrlGIXL89cG76lI8bLXirPbaOw/edit?usp=drivesdk)
 * [Useful information](https://docs.google.com/document/d/1kEDLaELoFyRBCsQLkZZP1PNbNaw2uUM6AAQhd42ExwQ/edit?usp=drivesdk)
 * [Assessment Criteria](https://docs.google.com/spreadsheets/d/1DS91tnTtC8qPQHchAbzkOK57vvsSLIQc9FN3nPp9bQY/edit?usp=drivesdk)
@@ -54,7 +38,9 @@ These pages (hosted on github, no login required):
 
 * [Reading list](readinglist.html)
 
-## Road Map for this course
+## Course Outline
+
+The topics we cover are:
 
 * Project organisation & RStudio [workbook 1](https://docs.google.com/document/d/1PspimTHeFoGzkiy2PPL2-23o6inyybiGJOzHDwL_OPU/edit?usp=sharing)
 * R basics / swirl [workbook 2](https://drive.google.com/a/sheffield.ac.uk/file/d/1MnsxGPdTsXMUZByqXz3qXwhDZ0X2SQuv/view?usp=drivesdk)
@@ -88,8 +74,6 @@ You should know how to use a VPN
 
 * Advice for Sheffield students here: [Working remotely - information for students](https://www.sheffield.ac.uk/it-services/remote/students)
 * You can test by visiting [this page](https://journals.sagepub.com/doi/full/10.1177/0956797613511466). If you are in the University network (either on campus or via a VPN) it will offer you the chance to download the article PDF. Otherwise it will try and charge you $35 for the privelege.
-
-
 
 ## Credit
 
