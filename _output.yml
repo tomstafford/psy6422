@@ -6,7 +6,7 @@ bookdown::gitbook:
   css: [include/psyteachr.css, include/style.css]
   config:
     toc:
-      collapse: section
+      collapse: subsection
       scroll_highlight: yes
       before: |
         <li><a href="./">PSY6422 Data Management & Visualisation</a></li>
