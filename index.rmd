@@ -508,19 +508,26 @@ These pages (hosted on github, no login required):
 
 The topics we cover are:
 
-* Project organisation & RStudio [workbook 1](https://docs.google.com/document/d/1PspimTHeFoGzkiy2PPL2-23o6inyybiGJOzHDwL_OPU/edit?usp=sharing)
-* R basics / swirl [workbook 2](https://drive.google.com/a/sheffield.ac.uk/file/d/1MnsxGPdTsXMUZByqXz3qXwhDZ0X2SQuv/view?usp=drivesdk)
-* Importing data [project 1 - anscombe's quartet](https://drive.google.com/drive/folders/1W4uZYPLDIuOF2OYhi_GK9e-IaC66tqu1)
-* Merging data [project 2](https://drive.google.com/drive/folders/1N22ZMpZeRBq_2CDHCXzkx723nztIBe-Q)
-* Cleaning data [project 3](https://drive.google.com/drive/folders/1U8yq7_XXs4eRG6IpuZAVwWUxW1ngTV7O)
-* RMarkdown
-* R projects
-* Git/github
-* Publishing your project
+1. Module overview - ethics and aesthetics of visualisaion, the importance of reproducible workflows
+2. Project organisation - fundamentals of data storage, syncronisation and sharing
+3. R / Rstudio - introduction to the statistical computing language
+4. Making graphs
+5. Data Management
+6. Data Management 2
+7. Coding principles - fundamental principles of coding, writing good code, asking for help
+8. Better graphs
+9. Git and github
+10. RMarkdown 
+11. Publishing to pages - like this one!
 
 Stretch goals:
 
-* Shiny apps
+Unfortunately we won't have time this year for a number of advanced topics which I would like to cover. Hopefully next year:
+
+* Jupyter notebooks
+* The terminal / ssh
+* Interactive visualisation with Shiny apps
+* SQL
 
 ## Example Projects
 
