@@ -6,16 +6,16 @@
 
 These pages based on [a template](https://psyteachr.github.io/book-template/) published by the awesome [psyTeachR team](https://psyteachr.github.io/about/). Extra thanks to Lisa DeBruine for help.
 
-Find the repo here: [https://github.com/tomstafford/psy6422/0(https://github.com/tomstafford/psy6422/)
+Find the repo here: [https://github.com/tomstafford/psy6422/](https://github.com/tomstafford/psy6422/)
 
 
 ## Python
 
-This course teachs general principels of coding and computation, and specific skills for data management and visualisation in R. Lots of people in the data science world, particular in areas which align with computer science / machine learning, use Python.
+This course teaches general principles of coding and computation, and specific skills for data management and visualisation in R. Lots of people in the data science world, particularly in areas which align with computer science / machine learning, use Python.
 
-I decided to teach this course in R because the community around a language is as important as the language. You can do anything in any language, and most things as easily in Python as in R, but Psychologists, biologists and scholars from across the social scientists tend to use R, so I'm teaching this course in R
+I decided to teach this course in R because the community around a language is as important as the language. You can do anything in any language, and most things as easily in Python as in R, but Psychologists, biologists and scholars from across the social sciences tend to use R, so I'm teaching this course in R.
 
-If you want to learn Python, I recommend
+If you want to learn Python, I recommend:
 
 * Resource list: [Python for Non-Programmers](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)
 * Pages [RealPython: Learn Python Programming, By Example](https://realpython.com/start-here/)
