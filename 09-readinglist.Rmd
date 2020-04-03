@@ -1,6 +1,6 @@
 # Reading List
 
-<img src="images/ds_library.jpeg" style="width: 400px; float: centre;">
+<img src="images/ds_library.jpeg" style="width: 400px; float: center;">
 
 
 Further reading, including books, links, demos and packages. You don't need to read all of this, but you will want to dig around. If I could recommend one book to accompany the courseit would be 
