@@ -8,6 +8,18 @@ These pages based on [a template](https://psyteachr.github.io/book-template/) pu
 
 Find the repo here: [https://github.com/tomstafford/psy6422/0(https://github.com/tomstafford/psy6422/)
 
+## Python
+
+This course teachs general principels of coding and computation, and specific skills for data management and visualisation in R. Lots of people in the data science world, particular in areas which align with computer science / machine learning, use Python.
+
+I decided to teach this course in R because the community around a language is as important as the language. You can do anything in any language, and most things as easily in Python as in R, but Psychologists, biologists and scholars from across the social scientists tend to use R, so I'm teaching this course in R
+
+If you want to learn Python, I recommend
+
+* Book: [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by Jake VanderPlas
+* Book: [Python for Data Analysis](https://wesmckinney.com/pages/book.html) by Wes McKinney
+* Pages: [chrisalbon.com](https://chrisalbon.com/)
+
 
 ## General righteousness
 
@@ -20,4 +32,4 @@ You should know how to use a VPN
 
 ## Testimonials
 
-[](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/stories/peter-carr-1.817457)
+[Peter Carr]](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/stories/peter-carr-1.817457)

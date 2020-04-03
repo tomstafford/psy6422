@@ -1,5 +1,8 @@
 # Reading List
 
+<img src="images/ds_library.jpeg" style="width: 400px; float: centre;">
+
+
 Further reading, including books, links, demos and packages. You don't need to read all of this, but you will want to dig around. If I could recommend one book to accompany the courseit would be 
 
 ```{block, type="info"}
@@ -74,7 +77,13 @@ Our Software Dependency Problem https://research.swtch.com/deps
 
 From Psychologist to Data Scientist https://www.neurotroph.de/2019/01/from-psychologist-to-data-scientist/
 
+Bret Victor: [Learnable Programming: Designing a programming system for understanding programs](http://worrydream.com/LearnableProgramming/)
+
+[Top 10 Coding Mistakes Made by Data Scientists](https://www.kdnuggets.com/2019/04/top-10-coding-mistakes-data-scientists.html)
+
 ## R
+
+[Prime Hints For Running A Data Project In] R(https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/)
 
 Grolemund, G., & Wickham, H. (2018). R for data science.
 * See also https://r4ds.had.co.nz/
