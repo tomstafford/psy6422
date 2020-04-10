@@ -21,6 +21,7 @@ McCandless, D. (2012). Information is beautiful. London: Collins.
 
 Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). Ten simple rules for better figures. PLoS Comput Biol, 10(9), e1003833. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
 
+Weissgerber, T. L., Milic, N. M., Winham, S. J., & Garovic, V. D. (2015). [Beyond bar and line graphs: time for a new data presentation paradigm](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128). PLoS biology, 13(4).
 
 ## The Reproducibility Crisis
 

@@ -6,7 +6,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
-date: '2020-04-03'
+date: '2020-04-10'
 bibliography:
 - book.bib
 - packages.bib
@@ -22,7 +22,7 @@ biblio-style: apalike
 
 # Overview {-}
 
-PSY6422 Data Management and Visualisation is part of the MSc in Psychological Researc Methods with Data Science taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/)
+PSY6422 Data Management and Visualisation is part of the MSc in Psychological Research Methods with Data Science taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/)
 
 ## Resources
 
