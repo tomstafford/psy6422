@@ -8,6 +8,11 @@ These pages based on [a template](https://psyteachr.github.io/book-template/) pu
 Find the repo here: [https://github.com/tomstafford/psy6422/](https://github.com/tomstafford/psy6422/)
 
 
+## Help plz
+
+Why doesn't the TOC in the leftbar collapse when clicked (or toggle between open and collapsed [like it should](https://psyteachr.github.io/book-template/))?
+
+
 ## Python
 
 This course teaches general principles of coding and computation, and specific skills for data management and visualisation in R. Lots of people in the data science world, particularly in areas which align with computer science / machine learning, use Python.
