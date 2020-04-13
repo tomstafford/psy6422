@@ -17,7 +17,7 @@ So far we have written simple scripts that do things in order, top to bottom
 ```{r}
 a <- 1 # define a variable
 a <- a + 1 #add 1
-echo(a) # output the result
+print(a) # output the result
 ```
 
 Changing which statements are run is called "flow control". An "If statement" is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example

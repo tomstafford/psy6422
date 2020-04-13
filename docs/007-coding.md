@@ -1,22 +1,46 @@
 
 # Coding Principles
 
-## Flow control
+This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R both kinds of principles hold when you write in other computer languages.
 
-1. Work with [functions](#functions)
+## Fundamental methods
+
+1. [if statements](#if)
+2. [loops](#loops)
+3. [functions](#functions)
 
 
-fundamental principles of coding, writing good code, asking for help
 
-Why avoid hard coded values
+### If statements
 
-    flexibility, transparency
+So far we have written simple scripts that do things in order, top to bottom
 
-If statements
 
-loops
+```r
+a <- 1 # define a variable
+a <- a + 1 #add 1
+print(a) # output the result
+```
 
-Functions
+```
+## [1] 2
+```
+
+Changing which statements are run is called "flow control". An "If statement" is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example
+
+
+```r
+a <- 1 # define a variable
+a <- a + 1 #add 1
+if(a>4) # this is the condition which has to be met, the 'test expression'
+{print(a)} # this statement runs if the test expression is true
+```
+
+
+### Loops{#loops}
+
+Iterators
+
 
 ### Functions {#functions}
 
@@ -27,3 +51,33 @@ We need to add one *argument*, the p-value you want to report. The names you cho
 report_p <- function(p) {
 }
 ```
+
+## Fundamental principles of good code
+
+### Comment
+
+Your most important collaborator is you from six months ago, and they don't answer email.
+
+
+### Functionalise
+
+Shorter code
+
+A shortcut when writing code
+
+A shortcut when reading code
+
+
+
+### Avoid hard coded values
+
+Transparency
+
+Flexibility
+
+
+### Ask for help
+
+Writing a complete example
+
+Your code is good enough to share

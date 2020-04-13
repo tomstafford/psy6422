@@ -115,8 +115,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4" data-path="making-graphs.html"><a href="making-graphs.html"><i class="fa fa-check"></i><b>4</b> Making Graphs</a></li>
 <li class="chapter" data-level="5" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>5</b> Data Management</a></li>
 <li class="chapter" data-level="6" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>6</b> Coding Principles</a><ul>
-<li class="chapter" data-level="6.1" data-path="coding-principles.html"><a href="coding-principles.html#flow-control"><i class="fa fa-check"></i><b>6.1</b> Flow control</a><ul>
-<li class="chapter" data-level="6.1.1" data-path="coding-principles.html"><a href="coding-principles.html#functions"><i class="fa fa-check"></i><b>6.1.1</b> Functions</a></li>
+<li class="chapter" data-level="6.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>6.1</b> Fundamental methods</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="coding-principles.html"><a href="coding-principles.html#if-statements"><i class="fa fa-check"></i><b>6.1.1</b> If statements</a></li>
+<li class="chapter" data-level="6.1.2" data-path="coding-principles.html"><a href="coding-principles.html#loops"><i class="fa fa-check"></i><b>6.1.2</b> Loops</a></li>
+<li class="chapter" data-level="6.1.3" data-path="coding-principles.html"><a href="coding-principles.html#functions"><i class="fa fa-check"></i><b>6.1.3</b> Functions</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>6.2</b> Fundamental principles of good code</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="coding-principles.html"><a href="coding-principles.html#comment"><i class="fa fa-check"></i><b>6.2.1</b> Comment</a></li>
+<li class="chapter" data-level="6.2.2" data-path="coding-principles.html"><a href="coding-principles.html#functionalise"><i class="fa fa-check"></i><b>6.2.2</b> Functionalise</a></li>
+<li class="chapter" data-level="6.2.3" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>6.2.3</b> Avoid hard coded values</a></li>
+<li class="chapter" data-level="6.2.4" data-path="coding-principles.html"><a href="coding-principles.html#ask-for-help"><i class="fa fa-check"></i><b>6.2.4</b> Ask for help</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>7</b> Git and Github</a><ul>
@@ -164,22 +172,59 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="coding-principles" class="section level1">
 <h1><span class="header-section-number">Chapter 6</span> Coding Principles</h1>
-<div id="flow-control" class="section level2">
-<h2><span class="header-section-number">6.1</span> Flow control</h2>
+<p>This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R both kinds of principles hold when you write in other computer languages.</p>
+<div id="fundamental-methods" class="section level2">
+<h2><span class="header-section-number">6.1</span> Fundamental methods</h2>
 <ol style="list-style-type: decimal">
-<li>Work with <a href="coding-principles.html#functions">functions</a></li>
+<li><a href="#if">if statements</a></li>
+<li><a href="coding-principles.html#loops">loops</a></li>
+<li><a href="coding-principles.html#functions">functions</a></li>
 </ol>
-<p>fundamental principles of coding, writing good code, asking for help</p>
-<p>Why avoid hard coded values</p>
-<pre><code>flexibility, transparency</code></pre>
-<p>If statements</p>
-<p>loops</p>
-<p>Functions</p>
+<div id="if-statements" class="section level3">
+<h3><span class="header-section-number">6.1.1</span> If statements</h3>
+<p>So far we have written simple scripts that do things in order, top to bottom</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span>
+a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span>
+<span class="kw">print</span>(a) <span class="co"># output the result</span></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<p>Changing which statements are run is called &quot;flow control&quot;. An &quot;If statement&quot; is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span>
+a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span>
+<span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span>
+{<span class="kw">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></code></pre></div>
+</div>
+<div id="loops" class="section level3">
+<h3><span class="header-section-number">6.1.2</span> Loops</h3>
+<p>Iterators</p>
+</div>
 <div id="functions" class="section level3">
-<h3><span class="header-section-number">6.1.1</span> Functions</h3>
+<h3><span class="header-section-number">6.1.3</span> Functions</h3>
 <p>We need to add one <em>argument</em>, the p-value you want to report. The names you choose for the arguments are private to that argument, so it is not a problem if they conflict with other variables in your script. You put the arguments in the parentheses after <code>function</code> in the order you want them to default (just like the built-in functions you've used before).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">report_p &lt;-<span class="st"> </span><span class="cf">function</span>(p) {
 }</code></pre></div>
+</div>
+</div>
+<div id="fundamental-principles-of-good-code" class="section level2">
+<h2><span class="header-section-number">6.2</span> Fundamental principles of good code</h2>
+<div id="comment" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Comment</h3>
+<p>Your most important collaborator is you from six months ago, and they don't answer email.</p>
+</div>
+<div id="functionalise" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Functionalise</h3>
+<p>Shorter code</p>
+<p>A shortcut when writing code</p>
+<p>A shortcut when reading code</p>
+</div>
+<div id="avoid-hard-coded-values" class="section level3">
+<h3><span class="header-section-number">6.2.3</span> Avoid hard coded values</h3>
+<p>Transparency</p>
+<p>Flexibility</p>
+</div>
+<div id="ask-for-help" class="section level3">
+<h3><span class="header-section-number">6.2.4</span> Ask for help</h3>
+<p>Writing a complete example</p>
+<p>Your code is good enough to share</p>
 
 </div>
 </div>
