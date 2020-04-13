@@ -115,7 +115,7 @@ print(paste("After", years, "years you will have £", round(savings,2))) #save m
 ```
 ## [1] "After 10 years you will have £ 162.89"
 ```
-Lots of people advice against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation.
+Lots of people advice against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation:
 
 
 ```r

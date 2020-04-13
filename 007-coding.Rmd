@@ -83,7 +83,7 @@ for (years in 1:years){
 }
 print(paste("After", years, "years you will have £", round(savings,2))) #save more, kids
 ```
-Lots of people advice against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation.
+Lots of people advice against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation:
 
 ```{r}
 years <- 20 #how many years since you started saving
