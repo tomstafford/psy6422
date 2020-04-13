@@ -1,7 +1,9 @@
 
 # Coding Principles
 
-This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R both kinds of principles hold when you write in other computer languages.
+This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R, all programming languages use similar methods (although the exact syntax differs), and the principles of good code will also apply across languages.
+
+As well demonstrating these fundamentals, these pages also introduce the vocabulary used to discuss them. Knowing the vocabulary helps because it means you know what terms to use when searching for solutions to problems you have.
 
 ## Fundamental methods
 
@@ -11,7 +13,7 @@ This class is about two kinds of fundamental principles of coding. The first is 
 
 
 
-### If statements
+### If statements {#if}
 
 So far we have written simple scripts that do things in order, top to bottom
 
@@ -57,7 +59,7 @@ if(a>4){ # this is the condition which has to be met, the 'test expression'
 ## [1] "2  is equal or less than 4"
 ```
 
-You can actually have as many branches as you like, defining a series of test_expression, like this
+You can actually have as many branches as you like, defining a series of test_expressions, like this
 
 
 ```r
@@ -79,9 +81,9 @@ if (type_of_thing=='Murders'){
 
 
 
-### Loops{#loops}
+### Loops {#loops}
 
-Loops are another way of flow control, but instead of branching they just repeat
+Loops repeat, either iterating over a set values, like this:
 
 
 ```r
@@ -98,7 +100,27 @@ for (i in 1:5){
 ## [1] 5
 ```
 
-This is more usesful than it might seem at first
+Or until some condition is met
+
+
+```r
+i <- 1 #need to initialise a starting value
+while(i<6){
+  print(i)
+  i <- i + 1 # increment the value of the counter
+}
+```
+
+```
+## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5
+```
+Note that this second version, a "while loop" uses a test expression just like an if statement
+
+Loops are useful wherever you might want to repeat some operation.
 
 
 ```r
@@ -115,7 +137,8 @@ print(paste("After", years, "years you will have £", round(savings,2))) #save m
 ```
 ## [1] "After 10 years you will have £ 162.89"
 ```
-Lots of people advice against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation:
+
+Lots of people advise against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation:
 
 
 ```r
@@ -123,13 +146,13 @@ years <- 20 #how many years since you started saving
 savings <-100 #how much you start with
 interest <- 1.05 #rate of interest, ie 5% interest
 #Calculate using a vector
-total_at_each_year=savings*interest**(1:years)
-plot(total_at_each_year,xlab="years") #bonus! We store all the intervening values
+total_at_each_year=savings*interest**(1:years) #rather than a loop all the answer values are stored in a single vector
+plot(total_at_each_year,xlab="years") #bonus! We can plot, since we now have all the intervening values saved
 ```
 
 <div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-8-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-8)**CAPTION THIS FIGURE!!**</p>
+<img src="007-coding_files/figure-html/unnamed-chunk-9-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-9)**CAPTION THIS FIGURE!!**</p>
 </div>
 
 The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation. 
@@ -139,13 +162,77 @@ The problem is, loops are the natural way to think about some problems. Often I 
 
 ### Functions {#functions}
 
-We need to add one *argument*, the p-value you want to report. The names you choose for the arguments are private to that argument, so it is not a problem if they conflict with other variables in your script. You put the arguments in the parentheses after `function` in the order you want them to default (just like the built-in functions you've used before). 
+Functions take in values (called "arguments"), do something with them, and give a value or values back in return. You have already used functions, for example the mean function
 
 
 ```r
-report_p <- function(p) {
+my_nums=c(78,12,32,24,03,89) #just a vector of some numbers
+mean(my_nums) #use the mean function to find the average
+```
+
+```
+## [1] 39.66667
+```
+
+Functions always do the same thing, but give different results depending on the inputs (depending on the "arguments you pass to the function").
+
+You can write your own functions, and then use them again and again ("call them again and again"). Here is the general form of a function
+
+
+```r
+myfunctionname <- function(input_value) {
+# comment line helpfully explaining what the function does
+output_value <- input_value #lines of code which do something to the input to produce the output
+return(output_value)
 }
 ```
+
+Note a couple of things: when you run this code it does not produce any output, but a new object appears in the "global environment" window, top right. Like a variable, your function is now stored in the memory of the current R session.
+
+You can call this function now. If you close R you'll need to define the function again by running the above code again (other functions are inbuilt, like `mean` and are loaded at startup, or when you use the `library` command to load a set of functions).
+
+
+```r
+print(myfunctionname(3))
+```
+
+```
+## [1] 3
+```
+
+Now, when we call the function, we pass actual values. Let's make our a slightly more complicated
+
+
+```r
+adder <- function(first_val,second_val) {
+# raises any input to the second power
+output_value <- first_val + second_val
+return(output_value)
+}
+```
+
+This does what it says on the tin
+
+
+```r
+adder(3,5)
+```
+
+```
+## [1] 8
+```
+
+#### A note about scope
+
+### Exercises
+
+* 
+
+### More
+
+Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations & Functions](https://psyteachr.github.io/msc-data-skills/func.html)
+
+[datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
 
 ## Fundamental principles of good code
 

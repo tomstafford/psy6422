@@ -140,7 +140,7 @@ Note a couple of things: when you run this code it does not produce any output, 
 You can call this function now. If you close R you'll need to define the function again by running the above code again (other functions are inbuilt, like `mean` and are loaded at startup, or when you use the `library` command to load a set of functions).
 
 ```{r}
-print(myfunctioname(3))
+print(myfunctionname(3))
 ```
 
 Now, when we call the function, we pass actual values. Let's make our a slightly more complicated
