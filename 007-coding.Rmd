@@ -45,23 +45,58 @@ if(a>4){ # this is the condition which has to be met, the 'test expression'
 }
 ```
 
-You can actually have as many branches as you like
+You can actually have as many branches as you like, defining a series of test_expression, like this
 
 ```{r}
 type_of_thing='' 
-print("Is 4 a lot?")
-if (type_of_thing=='murders'){
+print("Is four a lot?")
+if (type_of_thing=='Murders'){
   print("yes")
-} else if (type_of_thing=='dollars'){
+} else if (type_of_thing=='Dollars'){
   print("no")
 } else {
-  print("it depends")
+  print("Depends on the context")
 }
 ```
 
+
+
 ### Loops{#loops}
 
-Iterators
+Loops are another way of flow control, but instead of branching they just repeat
+
+```{r}
+for (i in 1:5){
+  print(i)
+}
+```
+
+This is more usesful than it might seem at first
+
+```{r}
+years <- 10 #how many years since you started saving
+savings <-100 #how much you start with
+interest <- 1.05 #rate of interest, ie 5% interest
+#Calculate using a loop
+for (years in 1:years){
+  savings<-savings*interest
+}
+print(paste("After", years, "years you will have £", round(savings,2))) #save more, kids
+```
+Lots of people advice against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation.
+
+```{r}
+years <- 20 #how many years since you started saving
+savings <-100 #how much you start with
+interest <- 1.05 #rate of interest, ie 5% interest
+#Calculate using a vector
+total_at_each_year=savings*interest**(1:years)
+plot(total_at_each_year,xlab="years") #bonus! We store all the intervening values
+```
+
+The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation. 
+
+
 
 
 ### Functions {#functions}

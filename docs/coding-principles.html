@@ -203,22 +203,54 @@ a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </s
   {<span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span>
 }</code></pre></div>
 <pre><code>## [1] &quot;2  is equal or less than 4&quot;</code></pre>
-<p>You can actually have as many branches as you like</p>
+<p>You can actually have as many branches as you like, defining a series of test_expression, like this</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">type_of_thing=<span class="st">&#39;&#39;</span> 
-<span class="kw">print</span>(<span class="st">&quot;Is 4 a lot?&quot;</span>)
-<span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;murders&#39;</span>){
+<span class="kw">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)
+<span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Murders&#39;</span>){
   <span class="kw">print</span>(<span class="st">&quot;yes&quot;</span>)
-} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;dollars&#39;</span>){
+} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Dollars&#39;</span>){
   <span class="kw">print</span>(<span class="st">&quot;no&quot;</span>)
 } <span class="cf">else</span> {
-  <span class="kw">print</span>(<span class="st">&quot;it depends&quot;</span>)
+  <span class="kw">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)
 }</code></pre></div>
-<pre><code>## [1] &quot;Is 4 a lot?&quot;
-## [1] &quot;it depends&quot;</code></pre>
+<pre><code>## [1] &quot;Is four a lot?&quot;
+## [1] &quot;Depends on the context&quot;</code></pre>
 </div>
 <div id="loops" class="section level3">
 <h3><span class="header-section-number">6.1.2</span> Loops</h3>
-<p>Iterators</p>
+<p>Loops are another way of flow control, but instead of branching they just repeat</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>){
+  <span class="kw">print</span>(i)
+}</code></pre></div>
+<pre><code>## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5</code></pre>
+<p>This is more usesful than it might seem at first</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">years &lt;-<span class="st"> </span><span class="dv">10</span> <span class="co">#how many years since you started saving</span>
+savings &lt;-<span class="dv">100</span> <span class="co">#how much you start with</span>
+interest &lt;-<span class="st"> </span><span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span>
+<span class="co">#Calculate using a loop</span>
+<span class="cf">for</span> (years <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>years){
+  savings&lt;-savings<span class="op">*</span>interest
+}
+<span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;After&quot;</span>, years, <span class="st">&quot;years you will have £&quot;</span>, <span class="kw">round</span>(savings,<span class="dv">2</span>))) <span class="co">#save more, kids</span></code></pre></div>
+<pre><code>## [1] &quot;After 10 years you will have £ 162.89&quot;</code></pre>
+<p>Lots of people advice against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">years &lt;-<span class="st"> </span><span class="dv">20</span> <span class="co">#how many years since you started saving</span>
+savings &lt;-<span class="dv">100</span> <span class="co">#how much you start with</span>
+interest &lt;-<span class="st"> </span><span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span>
+<span class="co">#Calculate using a vector</span>
+total_at_each_year=savings<span class="op">*</span>interest<span class="op">**</span>(<span class="dv">1</span><span class="op">:</span>years)
+<span class="kw">plot</span>(total_at_each_year,<span class="dt">xlab=</span><span class="st">&quot;years&quot;</span>) <span class="co">#bonus! We store all the intervening values</span></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<img src="007-coding_files/figure-html/unnamed-chunk-8-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
+<p class="caption">
+Figure 6.1: <strong>CAPTION THIS FIGURE!!</strong>
+</p>
+</div>
+<p>The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation.</p>
 </div>
 <div id="functions" class="section level3">
 <h3><span class="header-section-number">6.1.3</span> Functions</h3>
