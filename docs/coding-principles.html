@@ -187,11 +187,34 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span>
 <span class="kw">print</span>(a) <span class="co"># output the result</span></code></pre></div>
 <pre><code>## [1] 2</code></pre>
+<p>The first block above is the code, the second block (the lines which start with <code>##</code>) is the output.</p>
 <p>Changing which statements are run is called &quot;flow control&quot;. An &quot;If statement&quot; is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span>
 a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span>
 <span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span>
 {<span class="kw">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></code></pre></div>
+<p>Notice there is no output. Copy the code to your own computer and run it. Now change the first line to <code>a &lt;- 9</code> and run it again.</p>
+<p>An If statement defines a branch in the flow of a script. The default can be nothing happening, but sometimes you want to define two alternatives. You can do this with an &quot;If...else...statement&quot;</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span>
+a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span>
+<span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span>
+  <span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span>
+} <span class="cf">else</span> {
+  {<span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span>
+}</code></pre></div>
+<pre><code>## [1] &quot;2  is equal or less than 4&quot;</code></pre>
+<p>You can actually have as many branches as you like</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">type_of_thing=<span class="st">&#39;&#39;</span> 
+<span class="kw">print</span>(<span class="st">&quot;Is 4 a lot?&quot;</span>)
+<span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;murders&#39;</span>){
+  <span class="kw">print</span>(<span class="st">&quot;yes&quot;</span>)
+} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;dollars&#39;</span>){
+  <span class="kw">print</span>(<span class="st">&quot;no&quot;</span>)
+} <span class="cf">else</span> {
+  <span class="kw">print</span>(<span class="st">&quot;it depends&quot;</span>)
+}</code></pre></div>
+<pre><code>## [1] &quot;Is 4 a lot?&quot;
+## [1] &quot;it depends&quot;</code></pre>
 </div>
 <div id="loops" class="section level3">
 <h3><span class="header-section-number">6.1.2</span> Loops</h3>
