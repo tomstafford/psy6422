@@ -1,5 +1,10 @@
 # Coding Principles
 
+## Flow control
+
+1. Work with [functions](#functions)
+
+
 fundamental principles of coding, writing good code, asking for help
 
 Why avoid hard coded values
@@ -11,3 +16,12 @@ If statements
 loops
 
 Functions
+
+### Functions {#functions}
+
+We need to add one *argument*, the p-value you want to report. The names you choose for the arguments are private to that argument, so it is not a problem if they conflict with other variables in your script. You put the arguments in the parentheses after `function` in the order you want them to default (just like the built-in functions you've used before). 
+
+```{r}
+report_p <- function(p) {
+}
+```
