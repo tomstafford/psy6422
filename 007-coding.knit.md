@@ -1,3 +1,4 @@
+
 # Coding Principles
 
 This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R, all programming languages use similar methods (although the exact syntax differs), and the principles of good code will also apply across languages.
@@ -16,17 +17,23 @@ As well demonstrating these fundamentals, these pages also introduce the vocabul
 
 So far we have written simple scripts that do things in order, top to bottom
 
-```{r}
+
+```r
 a <- 1 # define a variable
 a <- a + 1 #add 1
 print(a) # output the result
+```
+
+```
+## [1] 2
 ```
 
 The first block above is the code, the second block (the lines which start with `##`) is the output.
 
 Changing which statements are run is called "flow control". An "If statement" is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example
 
-```{r}
+
+```r
 a <- 1 # define a variable
 a <- a + 1 #add 1
 if(a>4) # this is the condition which has to be met, the 'test expression'
@@ -37,7 +44,8 @@ Notice there is no output. Copy the code to your own computer and run it. Now ch
 
 An If statement defines a branch in the flow of a script. The default can be nothing happening, but sometimes you want to define two alternatives. You can do this with an "If...else...statement"
 
-```{r}
+
+```r
 a <- 1 # define a variable
 a <- a + 1 #add 1
 if(a>4){ # this is the condition which has to be met, the 'test expression'
@@ -47,9 +55,14 @@ if(a>4){ # this is the condition which has to be met, the 'test expression'
 }
 ```
 
+```
+## [1] "2  is equal or less than 4"
+```
+
 You can actually have as many branches as you like, defining a series of test_expressions, like this
 
-```{r}
+
+```r
 type_of_thing='' 
 print("Is four a lot?")
 if (type_of_thing=='Murders'){
@@ -61,32 +74,56 @@ if (type_of_thing=='Murders'){
 }
 ```
 
+```
+## [1] "Is four a lot?"
+## [1] "Depends on the context"
+```
+
 
 
 ### Loops {#loops}
 
 Loops repeat, either iterating over a set values, like this:
 
-```{r}
+
+```r
 for (i in 1:5){
   print(i)
 }
 ```
 
+```
+## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5
+```
+
 Or until some condition is met
 
-```{r}
+
+```r
 i <- 1 #need to initialise a starting value
 while(i<6){
   print(i)
   i <- i + 1 # increment the value of the counter
 }
 ```
+
+```
+## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5
+```
 Note that this second version, a "while loop" uses a test expression just like an if statement
 
 Loops are useful wherever you might want to repeat some operation.
 
-```{r}
+
+```r
 years <- 10 #how many years since you started saving
 savings <-100 #how much you start with
 interest <- 1.05 #rate of interest, ie 5% interest
@@ -97,9 +134,14 @@ for (years in 1:years){
 print(paste("After", years, "years you will have £", round(savings,2))) #save more, kids
 ```
 
+```
+## [1] "After 10 years you will have £ 162.89"
+```
+
 Lots of people advise against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation:
 
-```{r}
+
+```r
 years <- 20 #how many years since you started saving
 savings <-100 #how much you start with
 interest <- 1.05 #rate of interest, ie 5% interest
@@ -107,6 +149,11 @@ interest <- 1.05 #rate of interest, ie 5% interest
 total_at_each_year=savings*interest**(1:years) #rather than a loop all the answer values are stored in a single vector
 plot(total_at_each_year,xlab="years") #bonus! We can plot, since we now have all the intervening values saved
 ```
+
+<div class="figure" style="text-align: center">
+<img src="007-coding_files/figure-html/unnamed-chunk-9-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-9)**CAPTION THIS FIGURE!!**</p>
+</div>
 
 The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation. 
 
@@ -117,17 +164,22 @@ The problem is, loops are the natural way to think about some problems. Often I 
 
 Functions take in values (called "arguments"), do something with them, and give a value or values back in return. You have already used functions, for example the mean function
 
-```{r}
+
+```r
 my_nums=c(78,12,32,24,03,89) #just a vector of some numbers
 mean(my_nums) #use the mean function to find the average
+```
 
+```
+## [1] 39.66667
 ```
 
 Functions always do the same thing, but give different results depending on the inputs (depending on the "arguments you pass to the function").
 
 You can write your own functions, and then use them again and again ("call them again and again"). Here is the general form of a function
 
-```{r}
+
+```r
 myfunctionname <- function(input_value) {
 # comment line helpfully explaining what the function does
 output_value <- input_value #lines of code which do something to the input to produce the output
@@ -139,64 +191,9 @@ Note a couple of things: when you run this code it does not produce any output, 
 
 You can call this function now. If you close R you'll need to define the function again by running the above code again (other functions are inbuilt, like `mean` and are loaded at startup, or when you use the `library` command to load a set of functions).
 
-```{r}
-print(myfunctioname(3))
-```
-
-Now, when we call the function, we pass actual values. Let's make our a slightly more complicated
-
-```{r}
-adder <- function(first_val,second_val) {
-# raises any input to the second power
-output_value <- first_val + second_val
-return(output_value)
-}
-```
-
-This does what it says on the tin
-
-```{r}
-adder(3,5)
-```
-
-#### A note about scope
-
-### Exercises
-
-* 
-
-### More
-
-Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations & Functions](https://psyteachr.github.io/msc-data-skills/func.html)
-
-[datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
-
-## Fundamental principles of good code
-
-### Comment
-
-Your most important collaborator is you from six months ago, and they don't answer email.
-
-
-### Functionalise
-
-Shorter code
-
-A shortcut when writing code
-
-A shortcut when reading code
 
 
 
-### Avoid hard coded values
-
-Transparency
-
-Flexibility
 
 
-### Ask for help
 
-Writing a complete example
-
-Your code is good enough to share
