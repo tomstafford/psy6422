@@ -191,6 +191,8 @@ Note a couple of things: when you run this code it does not produce any output, 
 
 You can call this function now. If you close R you'll need to define the function again by running the above code again (other functions are inbuilt, like `mean` and are loaded at startup, or when you use the `library` command to load a set of functions).
 
+Now, when we call the function, we pass actual values. 
+
 
 ```r
 print(myfunctionname(3))
@@ -200,33 +202,71 @@ print(myfunctionname(3))
 ## [1] 3
 ```
 
-Now, when we call the function, we pass actual values. Let's make our a slightly more complicated
+Let's make our a slightly more complicated
+
 
 
 ```r
-adder <- function(first_val,second_val) {
-# raises any input to the second power
-output_value <- first_val + second_val
+outcheck <- function(val,threshold) {
+# outlier checker
+if(val<threshold){
+  output_value <- val #if value is below theshold return that value
+} else {
+  output_value <- NA #otherwise, return NaN
+}
 return(output_value)
 }
 ```
 
-This does what it says on the tin
+This function takes two input values, and returns a single value which depends on the relation between the two
 
 
 ```r
-adder(3,5)
+outcheck(3,5)
 ```
 
 ```
-## [1] 8
+## [1] 3
 ```
+
+
+
+
+```r
+outcheck(7,5)
+```
+
+```
+## [1] NA
+```
+
 
 #### A note about scope
 
+Variables within functions are kept 'inside' the functions (within the "scope" of the function). Once you pass a value to a function is acquires the label set in the function definition. Variables defined within the function don't persist outside of it (they don't affect the "global environment")
+
+So, for example, it doesn't matter if you have another variable called `threshold`, the threshold within the function is set by the second value passed it. Like this:
+
+
+```r
+threshold <- 100
+outcheck(7,5) #returns NA because 7 is higher than 5
+```
+
+```
+## [1] NA
+```
+
+
 ### Exercises
 
-* 
+* Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even
+  * hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
+* Write a loop which goes from 10 to 20 in 3
+* Write a function which prints "FIZZ" if a number is divisible by 3, and "BUZZ" if it is divisible by 5 and "FIZZBUZZ" if it is divisble by 3 *and* 5
+* Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
+
+
 
 ### More
 
@@ -239,6 +279,10 @@ Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Sci
 ### Comment
 
 Your most important collaborator is you from six months ago, and they don't answer email.
+
+Good code doesn't just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).
+
+
 
 
 ### Functionalise
@@ -259,6 +303,13 @@ Flexibility
 
 
 ### Ask for help
+
+
+
+### More
+Software Carpentry: [Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
+
+Nice R code: [bad habits](https://nicercode.github.io/intro/bad-habits.html)
 
 Writing a complete example
 

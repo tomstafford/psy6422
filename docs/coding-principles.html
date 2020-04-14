@@ -25,7 +25,7 @@
 <meta name="author" content="Tom Stafford">
 
 
-<meta name="date" content="2020-04-13">
+<meta name="date" content="2020-04-14">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -127,6 +127,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.2.2" data-path="coding-principles.html"><a href="coding-principles.html#functionalise"><i class="fa fa-check"></i><b>6.2.2</b> Functionalise</a></li>
 <li class="chapter" data-level="6.2.3" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>6.2.3</b> Avoid hard coded values</a></li>
 <li class="chapter" data-level="6.2.4" data-path="coding-principles.html"><a href="coding-principles.html#ask-for-help"><i class="fa fa-check"></i><b>6.2.4</b> Ask for help</a></li>
+<li class="chapter" data-level="6.2.5" data-path="coding-principles.html"><a href="coding-principles.html#more-1"><i class="fa fa-check"></i><b>6.2.5</b> More</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>7</b> Git and Github</a><ul>
@@ -282,25 +283,41 @@ output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines o
 }</code></pre></div>
 <p>Note a couple of things: when you run this code it does not produce any output, but a new object appears in the &quot;global environment&quot; window, top right. Like a variable, your function is now stored in the memory of the current R session.</p>
 <p>You can call this function now. If you close R you'll need to define the function again by running the above code again (other functions are inbuilt, like <code>mean</code> and are loaded at startup, or when you use the <code>library</code> command to load a set of functions).</p>
+<p>Now, when we call the function, we pass actual values.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="kw">myfunctionname</span>(<span class="dv">3</span>))</code></pre></div>
 <pre><code>## [1] 3</code></pre>
-<p>Now, when we call the function, we pass actual values. Let's make our a slightly more complicated</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">adder &lt;-<span class="st"> </span><span class="cf">function</span>(first_val,second_val) {
-<span class="co"># raises any input to the second power</span>
-output_value &lt;-<span class="st"> </span>first_val <span class="op">+</span><span class="st"> </span>second_val
+<p>Let's make our a slightly more complicated</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">outcheck &lt;-<span class="st"> </span><span class="cf">function</span>(val,threshold) {
+<span class="co"># outlier checker</span>
+<span class="cf">if</span>(val<span class="op">&lt;</span>threshold){
+  output_value &lt;-<span class="st"> </span>val <span class="co">#if value is below theshold return that value</span>
+} <span class="cf">else</span> {
+  output_value &lt;-<span class="st"> </span><span class="ot">NA</span> <span class="co">#otherwise, return NaN</span>
+}
 <span class="kw">return</span>(output_value)
 }</code></pre></div>
-<p>This does what it says on the tin</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">adder</span>(<span class="dv">3</span>,<span class="dv">5</span>)</code></pre></div>
-<pre><code>## [1] 8</code></pre>
+<p>This function takes two input values, and returns a single value which depends on the relation between the two</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">outcheck</span>(<span class="dv">3</span>,<span class="dv">5</span>)</code></pre></div>
+<pre><code>## [1] 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>)</code></pre></div>
+<pre><code>## [1] NA</code></pre>
 <div id="a-note-about-scope" class="section level4">
 <h4><span class="header-section-number">6.1.3.1</span> A note about scope</h4>
+<p>Variables within functions are kept 'inside' the functions (within the &quot;scope&quot; of the function). Once you pass a value to a function is acquires the label set in the function definition. Variables defined within the function don't persist outside of it (they don't affect the &quot;global environment&quot;)</p>
+<p>So, for example, it doesn't matter if you have another variable called <code>threshold</code>, the threshold within the function is set by the second value passed it. Like this:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">threshold &lt;-<span class="st"> </span><span class="dv">100</span>
+<span class="kw">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>) <span class="co">#returns NA because 7 is higher than 5</span></code></pre></div>
+<pre><code>## [1] NA</code></pre>
 </div>
 </div>
 <div id="exercises" class="section level3">
 <h3><span class="header-section-number">6.1.4</span> Exercises</h3>
 <ul>
-<li></li>
+<li>Write an if...else statement that prints &quot;ODD&quot; if the number is odd, &quot;EVEN&quot; if the number is even</li>
+<li>hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)</li>
+<li>Write a loop which goes from 10 to 20 in 3</li>
+<li>Write a function which prints &quot;FIZZ&quot; if a number is divisible by 3, and &quot;BUZZ&quot; if it is divisible by 5 and &quot;FIZZBUZZ&quot; if it is divisble by 3 <em>and</em> 5</li>
+<li>Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number</li>
 </ul>
 </div>
 <div id="more" class="section level3">
@@ -314,6 +331,7 @@ output_value &lt;-<span class="st"> </span>first_val <span class="op">+</span><s
 <div id="comment" class="section level3">
 <h3><span class="header-section-number">6.2.1</span> Comment</h3>
 <p>Your most important collaborator is you from six months ago, and they don't answer email.</p>
+<p>Good code doesn't just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).</p>
 </div>
 <div id="functionalise" class="section level3">
 <h3><span class="header-section-number">6.2.2</span> Functionalise</h3>
@@ -328,6 +346,11 @@ output_value &lt;-<span class="st"> </span>first_val <span class="op">+</span><s
 </div>
 <div id="ask-for-help" class="section level3">
 <h3><span class="header-section-number">6.2.4</span> Ask for help</h3>
+</div>
+<div id="more-1" class="section level3">
+<h3><span class="header-section-number">6.2.5</span> More</h3>
+<p>Software Carpentry: <a href="https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/">Best Practices for Writing R Code</a></p>
+<p>Nice R code: <a href="https://nicercode.github.io/intro/bad-habits.html">bad habits</a></p>
 <p>Writing a complete example</p>
 <p>Your code is good enough to share</p>
 
