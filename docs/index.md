@@ -2,7 +2,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
-date: '2020-04-14'
+date: '2020-04-18'
 bibliography:
 - book.bib
 - packages.bib
@@ -45,10 +45,10 @@ The topics we cover are:
 5. Data Management
 6. Data Management 2
 7. Coding principles - fundamental principles of coding, writing good code, asking for help
-8. Better graphs
+8. Rmarkdown
 9. Git and github
-10. RMarkdown 
-11. Publishing to pages - like this one!
+10. Publishing to pages - like this one!
+11. Better graphs / preview of advanced topics
 
 Stretch goals:
 
