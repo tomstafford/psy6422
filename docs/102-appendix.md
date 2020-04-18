@@ -13,6 +13,8 @@ Find the repo here: [https://github.com/tomstafford/psy6422/](https://github.com
 
 Why doesn't the TOC in the leftbar collapse when clicked (or toggle between open and collapsed [like it should](https://psyteachr.github.io/book-template/))?
 
+How do I get a horizontal line in the TOC/sidebar?
+
 
 ## Python
 
