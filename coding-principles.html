@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="include/psyteachr.css" type="text/css" />
+<link rel="stylesheet" href="include/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">PSY6422 Data Management & Visualisation</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path=""><a href="#coding-principles"><i class="fa fa-check"></i><b>1</b> Coding Principles</a><ul>
+<li class="chapter" data-level="1.1" data-path=""><a href="#fundamental-methods"><i class="fa fa-check"></i><b>1.1</b> Fundamental methods</a><ul>
+<li class="chapter" data-level="1.1.1" data-path=""><a href="#if"><i class="fa fa-check"></i><b>1.1.1</b> If statements</a></li>
+<li class="chapter" data-level="1.1.2" data-path=""><a href="#loops"><i class="fa fa-check"></i><b>1.1.2</b> Loops</a></li>
+<li class="chapter" data-level="1.1.3" data-path=""><a href="#functions"><i class="fa fa-check"></i><b>1.1.3</b> Functions</a></li>
+<li class="chapter" data-level="1.1.4" data-path=""><a href="#exercises"><i class="fa fa-check"></i><b>1.1.4</b> Exercises</a></li>
+<li class="chapter" data-level="1.1.5" data-path=""><a href="#more"><i class="fa fa-check"></i><b>1.1.5</b> More</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path=""><a href="#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>1.2</b> Fundamental principles of good code</a><ul>
+<li class="chapter" data-level="1.2.1" data-path=""><a href="#readability-matters"><i class="fa fa-check"></i><b>1.2.1</b> Readability Matters</a></li>
+<li class="chapter" data-level="1.2.2" data-path=""><a href="#avoid-hard-coded-values"><i class="fa fa-check"></i><b>1.2.2</b> Avoid hard coded values</a></li>
+<li class="chapter" data-level="1.2.3" data-path=""><a href="#functionalise-generalise"><i class="fa fa-check"></i><b>1.2.3</b> Functionalise &amp; Generalise</a></li>
+<li class="chapter" data-level="1.2.4" data-path=""><a href="#ask-for-help"><i class="fa fa-check"></i><b>1.2.4</b> Ask for help</a></li>
+<li class="chapter" data-level="1.2.5" data-path=""><a href="#more-1"><i class="fa fa-check"></i><b>1.2.5</b> More</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" 
+    target="blank"><img alt="Creative Commons License" 
+    style="border-width:0" 
+    src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><li>
+<li><a href="tomstafford.staff.shef.ac.uk/" target="blank">Tom Stafford</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:title:end-->
+<!--bookdown:title:start-->
+<div id="coding-principles" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Coding Principles</h1>
+<p>This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R, all programming languages use similar methods (although the exact syntax differs), and the principles of good code will also apply across languages.</p>
+<p>As well demonstrating these fundamentals, these pages also introduce the vocabulary used to discuss them. Knowing the vocabulary helps because it means you know what terms to use when searching for solutions to problems you have.</p>
+<div id="fundamental-methods" class="section level2">
+<h2><span class="header-section-number">1.1</span> Fundamental methods</h2>
+<ol style="list-style-type: decimal">
+<li><a href="#if">if statements</a></li>
+<li><a href="#loops">loops</a></li>
+<li><a href="#functions">functions</a></li>
+</ol>
+<div id="if" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> If statements</h3>
+<p>So far we have written simple scripts that do things in order, top to bottom</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span>
+a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span>
+<span class="kw">print</span>(a) <span class="co"># output the result</span></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<p>The first block above is the code, the second block (the lines which start with <code>##</code>) is the output.</p>
+<p>Changing which statements are run is called &quot;flow control&quot;. An &quot;If statement&quot; is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span>
+a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span>
+<span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span>
+{<span class="kw">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></code></pre></div>
+<p>Notice there is no output. Copy the code to your own computer and run it. Now change the first line to <code>a &lt;- 9</code> and run it again.</p>
+<p>An If statement defines a branch in the flow of a script. The default can be nothing happening, but sometimes you want to define two alternatives. You can do this with an &quot;If...else...statement&quot;</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span>
+a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span>
+<span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span>
+  <span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span>
+} <span class="cf">else</span> {
+  {<span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span>
+}</code></pre></div>
+<pre><code>## [1] &quot;2  is equal or less than 4&quot;</code></pre>
+<p>You can actually have as many branches as you like, defining a series of test_expressions, like this</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">type_of_thing=<span class="st">&#39;&#39;</span> 
+<span class="kw">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)</code></pre></div>
+<pre><code>## [1] &quot;Is four a lot?&quot;</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Murders&#39;</span>){
+  <span class="kw">print</span>(<span class="st">&quot;yes&quot;</span>)
+} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Dollars&#39;</span>){
+  <span class="kw">print</span>(<span class="st">&quot;no&quot;</span>)
+} <span class="cf">else</span> {
+  <span class="kw">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)
+}</code></pre></div>
+<pre><code>## [1] &quot;Depends on the context&quot;</code></pre>
+</div>
+<div id="loops" class="section level3">
+<h3><span class="header-section-number">1.1.2</span> Loops</h3>
+<p>Loops repeat, either iterating over a set values, like this:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>){
+  <span class="kw">print</span>(i)
+}</code></pre></div>
+<pre><code>## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5</code></pre>
+<p>Or until some condition is met</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">i &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co">#need to initialise a starting value</span>
+<span class="cf">while</span>(i<span class="op">&lt;</span><span class="dv">6</span>){
+  <span class="kw">print</span>(i)
+  i &lt;-<span class="st"> </span>i <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co"># increment the value of the counter</span>
+}</code></pre></div>
+<pre><code>## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5</code></pre>
+<p>Note that this second version, a &quot;while loop&quot; uses a test expression just like an if statement</p>
+<p>Loops are useful wherever you might want to repeat some operation.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">years &lt;-<span class="st"> </span><span class="dv">10</span> <span class="co">#how many years since you started saving</span>
+savings &lt;-<span class="dv">100</span> <span class="co">#how much you start with</span>
+interest &lt;-<span class="st"> </span><span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span>
+<span class="co">#Calculate using a loop</span>
+<span class="cf">for</span> (years <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>years){
+  savings&lt;-savings<span class="op">*</span>interest
+}
+<span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;After&quot;</span>, years, <span class="st">&quot;years you will have £&quot;</span>, <span class="kw">round</span>(savings,<span class="dv">2</span>))) <span class="co">#save more, kids</span></code></pre></div>
+<pre><code>## [1] &quot;After 10 years you will have £ 162.89&quot;</code></pre>
+<p>Lots of people advise against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">years &lt;-<span class="st"> </span><span class="dv">20</span> <span class="co">#how many years since you started saving</span>
+savings &lt;-<span class="dv">100</span> <span class="co">#how much you start with</span>
+interest &lt;-<span class="st"> </span><span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span>
+<span class="co">#Calculate using a vector</span>
+total_at_each_year=savings<span class="op">*</span>interest<span class="op">**</span>(<span class="dv">1</span><span class="op">:</span>years) <span class="co">#rather than a loop all the answer values are stored in a single vector</span>
+<span class="kw">plot</span>(total_at_each_year,<span class="dt">xlab=</span><span class="st">&quot;years&quot;</span>) <span class="co">#bonus! We can plot, since we now have all the intervening values saved</span></code></pre></div>
+<p><img src="007-coding_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation.</p>
+</div>
+<div id="functions" class="section level3">
+<h3><span class="header-section-number">1.1.3</span> Functions</h3>
+<p>Functions take in values (called &quot;arguments&quot;), do something with them, and give a value or values back in return. You have already used functions, for example the mean function</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">my_nums=<span class="kw">c</span>(<span class="dv">78</span>,<span class="dv">12</span>,<span class="dv">32</span>,<span class="dv">24</span>,<span class="dv">03</span>,<span class="dv">89</span>) <span class="co">#just a vector of some numbers</span>
+<span class="kw">mean</span>(my_nums) <span class="co">#use the mean function to find the average</span></code></pre></div>
+<pre><code>## [1] 39.66667</code></pre>
+<p>Functions always do the same thing, but give different results depending on the inputs (depending on the &quot;arguments you pass to the function&quot;).</p>
+<p>You can write your own functions, and then use them again and again (&quot;call them again and again&quot;). Here is the general form of a function</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">myfunctionname &lt;-<span class="st"> </span><span class="cf">function</span>(input_value) {
+<span class="co"># comment line helpfully explaining what the function does</span>
+output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines of code which do something to the input to produce the output</span>
+<span class="kw">return</span>(output_value)
+}</code></pre></div>
+<p>Note a couple of things: when you run this code it does not produce any output, but a new object appears in the &quot;global environment&quot; window, top right. Like a variable, your function is now stored in the memory of the current R session.</p>
+<p>You can call this function now. If you close R you'll need to define the function again by running the above code again (other functions are inbuilt, like <code>mean</code> and are loaded at startup, or when you use the <code>library</code> command to load a set of functions).</p>
+<p>Now, when we call the function, we pass actual values.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">print</span>(<span class="kw">myfunctionname</span>(<span class="dv">3</span>))</code></pre></div>
+<pre><code>## [1] 3</code></pre>
+<p>Let's make our a slightly more complicated</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">outcheck &lt;-<span class="st"> </span><span class="cf">function</span>(val,threshold) {
+<span class="co"># outlier checker</span>
+<span class="cf">if</span>(val<span class="op">&lt;</span>threshold){
+  output_value &lt;-<span class="st"> </span>val <span class="co">#if value is below theshold return that value</span>
+} <span class="cf">else</span> {
+  output_value &lt;-<span class="st"> </span><span class="ot">NA</span> <span class="co">#otherwise, return NaN</span>
+}
+<span class="kw">return</span>(output_value)
+}</code></pre></div>
+<p>This function takes two input values, and returns a single value which depends on the relation between the two</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">outcheck</span>(<span class="dv">3</span>,<span class="dv">5</span>)</code></pre></div>
+<pre><code>## [1] 3</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>)</code></pre></div>
+<pre><code>## [1] NA</code></pre>
+<div id="a-note-about-scope" class="section level4">
+<h4><span class="header-section-number">1.1.3.1</span> A note about scope</h4>
+<p>Variables within functions are kept 'inside' the functions (within the &quot;scope&quot; of the function). Once you pass a value to a function is acquires the label set in the function definition. Variables defined within the function don't persist outside of it (they don't affect the &quot;global environment&quot;)</p>
+<p>So, for example, it doesn't matter if you have another variable called <code>threshold</code>, the threshold within the function is set by the second value passed it. Like this:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">threshold &lt;-<span class="st"> </span><span class="dv">100</span>
+<span class="kw">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>) <span class="co">#returns NA because 7 is higher than 5</span></code></pre></div>
+<pre><code>## [1] NA</code></pre>
+</div>
+</div>
+<div id="exercises" class="section level3">
+<h3><span class="header-section-number">1.1.4</span> Exercises</h3>
+<ul>
+<li>Write an if...else statement that prints &quot;ODD&quot; if the number is odd, &quot;EVEN&quot; if the number is even</li>
+<li>hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)</li>
+<li>Write a loop which goes from 10 to 20 in steps of 3</li>
+<li>Write a function which prints &quot;FIZZ&quot; if a number is divisible by 3, and &quot;BUZZ&quot; if it is divisible by 5 and &quot;FIZZBUZZ&quot; if it is divisble by 3 <em>and</em> 5</li>
+<li>Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number</li>
+</ul>
+</div>
+<div id="more" class="section level3">
+<h3><span class="header-section-number">1.1.5</span> More</h3>
+<p>Lisa DeBruine, &amp; Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. <a href="http://doi.org/10.5281/zenodo.3564555" class="uri">http://doi.org/10.5281/zenodo.3564555</a>: <a href="https://psyteachr.github.io/msc-data-skills/func.html">Iterations &amp; Functions</a></p>
+<p><a href="https://www.datamentor.io/r-programming/if-else-statement/">datamentor.io on Flow control</a></p>
+</div>
+</div>
+<div id="fundamental-principles-of-good-code" class="section level2">
+<h2><span class="header-section-number">1.2</span> Fundamental principles of good code</h2>
+<div id="readability-matters" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> Readability Matters</h3>
+<p>Your most important collaborator is you from six months ago, and they don't answer email.</p>
+<p>Good code doesn't just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).</p>
+<p>To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing.</p>
+<p>Look at this function, it hard to understand, right?</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pf &lt;-<span class="st"> </span><span class="cf">function</span>(n){ p=<span class="dv">1</span> ; <span class="cf">if</span> (n<span class="op">&gt;</span><span class="dv">1</span>){ i =<span class="st"> </span><span class="dv">2</span>; <span class="cf">while</span>( (i<span class="op">&lt;</span>(n<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(p<span class="op">==</span><span class="dv">1</span>) ) {<span class="cf">if</span> (n<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) p=<span class="dv">0</span>; i=i<span class="op">+</span><span class="dv">1</span> }  } <span class="cf">else</span> {p=<span class="dv">0</span> }; <span class="kw">return</span>(p) }</code></pre></div>
+<p>This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understanding, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).</p>
+<p>Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pf &lt;-<span class="st"> </span><span class="cf">function</span>(n){
+  p=<span class="dv">1</span>
+  <span class="cf">if</span> (n<span class="op">&gt;</span><span class="dv">1</span>){ 
+    i =<span class="st"> </span><span class="dv">2</span> 
+      <span class="cf">while</span>( (i<span class="op">&lt;</span>(n<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(p<span class="op">==</span><span class="dv">1</span>) ) {
+        <span class="cf">if</span> (n<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) {
+          p=<span class="dv">0</span>
+        }
+        i=i<span class="op">+</span><span class="dv">1</span>
+      }
+  } <span class="cf">else</span> {
+    p=<span class="dv">0</span>
+  }
+  <span class="kw">return</span>(p)
+}</code></pre></div>
+<p>Now we make the variable and function names sensible:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">primecheck &lt;-<span class="st"> </span><span class="cf">function</span>(num){
+  isprime=<span class="ot">TRUE</span>
+  <span class="cf">if</span> (num<span class="op">&gt;</span><span class="dv">1</span>){ 
+    i =<span class="st"> </span><span class="dv">2</span> 
+      <span class="cf">while</span>( (i<span class="op">&lt;</span>(num<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(isprime<span class="op">==</span><span class="ot">TRUE</span>) ) {
+        <span class="cf">if</span> (num<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) {
+          isprime=<span class="ot">FALSE</span>
+        }
+        i=i<span class="op">+</span><span class="dv">1</span>
+      }
+  } <span class="cf">else</span> {
+    isprime=<span class="ot">FALSE</span>
+  }
+  <span class="kw">return</span>(isprime)
+}</code></pre></div>
+<p>Can you tell what it does yet?</p>
+<p>Now fully commented</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">primecheck &lt;-<span class="st"> </span><span class="cf">function</span>(num){
+  <span class="co">#check if a number is prime</span>
+  ## assumes the number provided is an integer
+  ## works by working through all possible divisors up to half the test number, checking if the remainer is 0
+  <span class="co">#</span>
+  isprime=<span class="ot">TRUE</span> <span class="co"># a flag, which tracks if we think the number is prime. We start out assuming our number *is* prime</span>
+  <span class="co"># first we only need to do the complicated method for numbers great than 1</span>
+  <span class="cf">if</span> (num<span class="op">&gt;</span><span class="dv">1</span>){ 
+    i =<span class="st"> </span><span class="dv">2</span> <span class="co">#a counter, starting at 2 (because all numbers divide by 1)</span>
+      <span class="co">#use while loop to check all divisors until we&#39;ve done them all or we find one (and confirm the number is not prime)</span>
+      <span class="cf">while</span>( (i<span class="op">&lt;</span>(num<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(isprime<span class="op">==</span><span class="ot">TRUE</span>) ) {
+        <span class="cf">if</span> (num<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) {
+          <span class="co">#if the number divides by another number with no remainder it can&#39;t be prime, so we change the flag</span>
+          isprime=<span class="ot">FALSE</span>
+        }
+        i=i<span class="op">+</span><span class="dv">1</span> <span class="co"># increment the counter, so we work through all possible divisors</span>
+      }
+      
+  } <span class="cf">else</span> {
+    <span class="co"># if the number is 1 or lower it can&#39;t be prime, so we change the flag</span>
+    isprime=<span class="ot">FALSE</span>
+  }
+  <span class="kw">return</span>(isprime) <span class="co">#return the flag as the output of the function, 0 -&gt; not prime, 1 -&gt; prime</span>
+}</code></pre></div>
+<p>It is possible to comment too much. The code above I commented so someone who wasn't an experienced programmer could read the comments and it would help them understand how the code worked (you can tell me if I succeeded). Usually a few fewer comments might make the code easier to read, with the assumption that anyone reading it has a bit of experience with the coding language. Like this</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">primecheck &lt;-<span class="st"> </span><span class="cf">function</span>(num){
+  <span class="co">#check if a number is prime</span>
+  <span class="co"># - assumes input is integer</span>
+  <span class="co"># - work by testing all possible divisors</span>
+  isprime=<span class="ot">TRUE</span> <span class="co"># a flag, start assuming our number *is* prime </span>
+  <span class="co"># only check numbers &gt; 1</span>
+  <span class="cf">if</span> (num<span class="op">&gt;</span><span class="dv">1</span>){ 
+    i =<span class="st"> </span><span class="dv">2</span> <span class="co">#a counter</span>
+      <span class="co">#check all divisors until we&#39;ve done them all or we find one </span>
+      <span class="cf">while</span>( (i<span class="op">&lt;</span>(num<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(isprime<span class="op">==</span><span class="ot">TRUE</span>) ) {
+        <span class="cf">if</span> (num<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) {
+          <span class="co">#no remainder -&gt; number isn&#39;t prime</span>
+          isprime=<span class="ot">FALSE</span>
+        }
+        i=i<span class="op">+</span><span class="dv">1</span> <span class="co"># increment the counter</span>
+      }
+      
+  } <span class="cf">else</span> {
+    <span class="co"># if the number is 1 or lower it can&#39;t be prime</span>
+    isprime=<span class="ot">FALSE</span>
+  }
+  <span class="kw">return</span>(isprime)
+}</code></pre></div>
+<p>This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There's no shortage of space in R scripts, so if I doubt, put some effort in to laying things out nicely. You'll thank yourself when you come back to your code (which you will always have to)</p>
+</div>
+<div id="avoid-hard-coded-values" class="section level3">
+<h3><span class="header-section-number">1.2.2</span> Avoid hard coded values</h3>
+<p>Say you were going to load some data, you could do this</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mydata =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span>)</code></pre></div>
+<p>Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them</p>
+<p>Like this</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">datafile =<span class="st"> &#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span>
+mydata =<span class="st"> </span><span class="kw">read.csv</span>(datafile)</code></pre></div>
+<p>Now the second line is easier to read, and you also have a variable which you can reuse</p>
+<p>Another example</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1))
+graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>)</code></pre></div>
+<p><img src="007-coding_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))
+graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>)</code></pre></div>
+<p><img src="007-coding_files/figure-html/unnamed-chunk-24-2.png" width="672" /></p>
+<p>Adding variables means you only need to edit one line to change the look of both plots</p>
+<p>graph1 &lt;- ggplot(data = anscombe, mapping = aes(x = x1, y=y1)) graph1 + geom_point(color='blue',size=3)</p>
+<p>graph2 &lt;- ggplot(data = anscombe, mapping = aes(x = x2, y=y2)) graph2 + geom_point(color='blue',size=3)</p>
+</div>
+<div id="functionalise-generalise" class="section level3">
+<h3><span class="header-section-number">1.2.3</span> Functionalise &amp; Generalise</h3>
+<p>If you ever find yourself using very similar lines of code, you should think about making a function. Functions make your code shorter and easier to read (and write), and they make it <em>way</em> easier to update (because when you catch a bug you can just update the code in the function, rather than every time you repeated those lines). Let's look at an example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">names =<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;Harry &#39;</span>, <span class="st">&#39;Tom  &#39;</span>, <span class="st">&#39;richard&#39;</span>, <span class="st">&#39;Abezethibou of the one red wing&#39;</span>)
+
+<span class="co">#remove white space</span>
+names[<span class="dv">1</span>] <span class="op">&lt;</span><span class="st"> &#39;Harry&#39;</span></code></pre></div>
+<pre><code>## [1] FALSE</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">names[<span class="dv">2</span>]</code></pre></div>
+<pre><code>## [1] &quot;Tom  &quot;</code></pre>
+</div>
+<div id="ask-for-help" class="section level3">
+<h3><span class="header-section-number">1.2.4</span> Ask for help</h3>
+</div>
+<div id="more-1" class="section level3">
+<h3><span class="header-section-number">1.2.5</span> More</h3>
+<ul>
+<li><a href="https://inattentionalcoffee.wordpress.com/2017/01/13/program-better-for-fun-and-for-profit/">Program better, for fun and for profit</a></li>
+<li>Axelrod, V. (2014). <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full">Minimizing bugs in cognitive neuroscience programming</a>. Frontiers in psychology, 5, 1435.</li>
+<li>Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... &amp; Waugh, B. (2014). <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best practices for scientific computing</a>. PLoS biology] 12(1), e1001745.</li>
+<li><a href="https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/">Prime Hints For Running A Data Project In R</a></li>
+<li>Software Carpentry: <a href="https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/">Best Practices for Writing R Code</a></li>
+<li>Nice R code: <a href="https://nicercode.github.io/intro/bad-habits.html">bad habits</a></li>
+<li>Writing a complete example</li>
+<li>Your code is good enough to share</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="psyteachr_footer">
+  
+</div>
+<script>
+
+/* update total correct if #total_correct exists */
+update_total_correct = function() {
+  if (t = document.getElementById("total_correct")) {
+    t.innerHTML =
+      document.getElementsByClassName("correct").length + " of " +
+      document.getElementsByClassName("solveme").length + " correct";
+  }
+}
+
+/* solution button toggling function */
+b_func = function() {
+  var cl = this.parentElement.classList;
+  if (cl.contains('open')) {
+    cl.remove("open");
+  } else {
+    cl.add("open");
+  }
+}
+
+/* function for checking solveme answers */
+solveme_func = function(e) {
+  var real_answers = JSON.parse(this.dataset.answer);
+  var my_answer = this.value;
+  var cl = this.classList;
+  if (cl.contains("ignorecase")) {
+    my_answer = my_answer.toLowerCase();
+  }
+  if (cl.contains("nospaces")) {
+    my_answer = my_answer.replace(/ /g, "");
+  }
+  
+  if (my_answer !== "" & real_answers.includes(my_answer)) {
+    cl.add("correct");
+  } else {
+    cl.remove("correct");
+  }
+
+  // match numeric answers within a specified tolerance
+  if(this.dataset.tol){
+    var tol = JSON.parse(this.dataset.tol);  
+    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
+    if (matches.reduce((a, b) => a + b, 0) > 0) {
+      cl.add("correct");
+    } else {
+      cl.remove("correct");
+    }  
+  }
+
+  // added regex bit
+  if (cl.contains("regex")){
+    answer_regex = RegExp(real_answers.join("|"))
+    if (answer_regex.test(my_answer)) {
+      cl.add("correct");
+    }  
+  }
+  
+  update_total_correct();
+}
+
+window.onload = function() {
+  /* set up solution buttons */
+  var buttons = document.getElementsByTagName("button");
+
+  for (var i = 0; i < buttons.length; i++) {
+    if (buttons[i].parentElement.classList.contains('solution')) {
+      buttons[i].onclick = b_func;
+    }
+  }
+  
+  /* set up solveme inputs */
+  var solveme = document.getElementsByClassName("solveme");
+
+  for (var i = 0; i < solveme.length; i++) {
+    /* make sure input boxes don't auto-anything */
+    solveme[i].setAttribute("autocomplete","off");
+    solveme[i].setAttribute("autocorrect", "off");
+    solveme[i].setAttribute("autocapitalize", "off"); 
+    solveme[i].setAttribute("spellcheck", "false");
+    solveme[i].value = "";
+    
+    /* adjust answer for ignorecase or nospaces */
+    var cl = solveme[i].classList;
+    var real_answer = solveme[i].dataset.answer;
+    if (cl.contains("ignorecase")) {
+      real_answer = real_answer.toLowerCase();
+    }
+    if (cl.contains("nospaces")) {
+      real_answer = real_answer.replace(/ /g, "");
+    }
+    solveme[i].dataset.answer = real_answer;
+    
+    /* attach checking function */
+    solveme[i].onkeyup = solveme_func;
+    solveme[i].onchange = solveme_func;
+  }
+  
+  update_total_correct();
+}
+
+</script>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"],
+"linkedin": false,
+"instapaper": true
+},
+"fontsettings": {
+"theme": "black",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": {},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>
