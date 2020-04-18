@@ -1,6 +1,9 @@
 
 # Coding Principles
 
+
+
+
 This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R, all programming languages use similar methods (although the exact syntax differs), and the principles of good code will also apply across languages.
 
 As well demonstrating these fundamentals, these pages also introduce the vocabulary used to discuss them. Knowing the vocabulary helps because it means you know what terms to use when searching for solutions to problems you have.
@@ -151,8 +154,8 @@ plot(total_at_each_year,xlab="years") #bonus! We can plot, since we now have all
 ```
 
 <div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-9-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-9)**CAPTION THIS FIGURE!!**</p>
+<img src="007-coding_files/figure-html/unnamed-chunk-10-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-10)**CAPTION THIS FIGURE!!**</p>
 </div>
 
 The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation. 
@@ -262,7 +265,7 @@ outcheck(7,5) #returns NA because 7 is higher than 5
 
 * Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even
   * hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
-* Write a loop which goes from 10 to 20 in 3
+* Write a loop which goes from 10 to 20 in steps of 3
 * Write a function which prints "FIZZ" if a number is divisible by 3, and "BUZZ" if it is divisible by 5 and "FIZZBUZZ" if it is divisble by 3 *and* 5
 * Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
 
@@ -276,30 +279,230 @@ Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Sci
 
 ## Fundamental principles of good code
 
-### Comment
+### Readability Matters
 
 Your most important collaborator is you from six months ago, and they don't answer email.
 
 Good code doesn't just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).
 
+To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing. 
+
+Look at this function, it hard to understand, right?
 
 
 
-### Functionalise
+```r
+pf <- function(n){ p=1 ; if (n>1){ i = 2; while( (i<(n/2+1)) & (p==1) ) {if (n%%i ==0) p=0; i=i+1 }  } else {p=0 }; return(p) }
+```
 
-Shorter code
+This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understanding, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).
 
-A shortcut when writing code
-
-A shortcut when reading code
+Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:
 
 
+```r
+pf <- function(n){
+  p=1
+  if (n>1){ 
+    i = 2 
+      while( (i<(n/2+1)) & (p==1) ) {
+        if (n%%i ==0) {
+          p=0
+        }
+        i=i+1
+      }
+  } else {
+    p=0
+  }
+  return(p)
+}
+```
+
+Now we make the variable and function names sensible:
+
+
+
+```r
+primecheck <- function(num){
+  isprime=TRUE
+  if (num>1){ 
+    i = 2 
+      while( (i<(num/2+1)) & (isprime==TRUE) ) {
+        if (num%%i ==0) {
+          isprime=FALSE
+        }
+        i=i+1
+      }
+  } else {
+    isprime=FALSE
+  }
+  return(isprime)
+}
+```
+
+
+Can you tell what it does yet? 
+
+Now fully commented
+
+
+```r
+primecheck <- function(num){
+  #check if a number is prime
+  ## assumes the number provided is an integer
+  ## works by working through all possible divisors up to half the test number, checking if the remainer is 0
+  #
+  isprime=TRUE # a flag, which tracks if we think the number is prime. We start out assuming our number *is* prime
+  # first we only need to do the complicated method for numbers great than 1
+  if (num>1){ 
+    i = 2 #a counter, starting at 2 (because all numbers divide by 1)
+      #use while loop to check all divisors until we've done them all or we find one (and confirm the number is not prime)
+      while( (i<(num/2+1)) & (isprime==TRUE) ) {
+        if (num%%i ==0) {
+          #if the number divides by another number with no remainder it can't be prime, so we change the flag
+          isprime=FALSE
+        }
+        i=i+1 # increment the counter, so we work through all possible divisors
+      }
+      
+  } else {
+    # if the number is 1 or lower it can't be prime, so we change the flag
+    isprime=FALSE
+  }
+  return(isprime) #return the flag as the output of the function, 0 -> not prime, 1 -> prime
+}
+```
+
+It is possible to comment too much. The code above I commented so someone who wasn't an experienced programmer could read the comments and it would help them understand how the code worked (you can tell me if I succeeded). Usually a few fewer comments might make the code easier to read, with the assumption that anyone reading it has a bit of experience with the coding language. Like this
+
+
+
+```r
+primecheck <- function(num){
+  #check if a number is prime
+  # - assumes input is integer
+  # - work by testing all possible divisors
+  isprime=TRUE # a flag, start assuming our number *is* prime 
+  # only check numbers > 1
+  if (num>1){ 
+    i = 2 #a counter
+      #check all divisors until we've done them all or we find one 
+      while( (i<(num/2+1)) & (isprime==TRUE) ) {
+        if (num%%i ==0) {
+          #no remainder -> number isn't prime
+          isprime=FALSE
+        }
+        i=i+1 # increment the counter
+      }
+      
+  } else {
+    # if the number is 1 or lower it can't be prime
+    isprime=FALSE
+  }
+  return(isprime)
+}
+```
+
+This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There's no shortage of space in R scripts, so if I doubt, put some effort in to laying things out nicely. You'll thank yourself when you come back to your code (which you will always have to)
 
 ### Avoid hard coded values
 
-Transparency
+Say you were going to load some data, you could do this
 
-Flexibility
+
+```r
+mydata = read.csv('/home/tom/Desktop/psy6422/mydatafile.csv')
+```
+
+Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them
+
+Like this
+
+
+```r
+datafile = '/home/tom/Desktop/psy6422/mydatafile.csv'
+mydata = read.csv(datafile)
+```
+
+Now the second line is easier to read, and you also have a variable which you can reuse 
+
+Another example
+
+
+
+```r
+graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
+graph1 + geom_point(color='blue',size=3)
+```
+
+<div class="figure" style="text-align: center">
+<img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-25)**CAPTION THIS FIGURE!!**</p>
+</div>
+
+```r
+graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
+graph2 + geom_point(color='blue',size=3)
+```
+
+<div class="figure" style="text-align: center">
+<img src="007-coding_files/figure-html/unnamed-chunk-25-2.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-25)**CAPTION THIS FIGURE!!**</p>
+</div>
+
+Adding variables means you only need to edit one line to change the look of both plots
+
+
+```r
+pointcolour='red'; pointsize=5
+
+
+graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
+graph1 + geom_point(color=pointcolour,size=pointsize)
+```
+
+<div class="figure" style="text-align: center">
+<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-26)**CAPTION THIS FIGURE!!**</p>
+</div>
+
+```r
+graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
+graph2 + geom_point(color=pointcolour,size=pointsize)
+```
+
+<div class="figure" style="text-align: center">
+<img src="007-coding_files/figure-html/unnamed-chunk-26-2.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-26)**CAPTION THIS FIGURE!!**</p>
+</div>
+
+This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with
+
+### Functionalise & Generalise
+
+If you ever find yourself using very similar lines of code, you should think about making a function. Functions make your code shorter and easier to read (and write), and they make it *way* easier to update (because when you catch a bug you can just update the code in the function, rather than every time you repeated those lines).
+
+Functions are also an opportunity to think to yourself "what is the most general purpose way of doing what I'm doing". Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things
+
+Let's look at an example:
+
+
+```r
+graphtitles = c('Plot of something hard to explain but really worth it promise', 'Plot of super complicated stuff I need to show you', 'Not so sure about this plot what do you think?')
+
+#insert a line break so plot titles fit above the plots
+graphtitles[1] <- 'Harry'
+
+
+print(names)
+```
+
+```
+## function (x)  .Primitive("names")
+```
+
+
+
 
 
 ### Ask for help

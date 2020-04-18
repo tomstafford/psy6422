@@ -399,8 +399,7 @@ graphtitles = c('Plot of something hard to explain but really worth it promise',
 
 #insert a line break so plot titles fit above the plots
 graphtitles[1] <- 'Harry'
-names[2] <- 'Tom'
-names[3] <- 'richard'
+
 
 print(names)
 ```
