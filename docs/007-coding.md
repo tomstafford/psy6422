@@ -153,10 +153,7 @@ total_at_each_year=savings*interest**(1:years) #rather than a loop all the answe
 plot(total_at_each_year,xlab="years") #bonus! We can plot, since we now have all the intervening values saved
 ```
 
-<div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-10-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-10)**CAPTION THIS FIGURE!!**</p>
-</div>
+<img src="007-coding_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" />
 
 The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation. 
 
@@ -436,9 +433,10 @@ graph1 + geom_point(color='blue',size=3)
 ```
 
 <div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-25)**CAPTION THIS FIGURE!!**</p>
+<img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" alt="Example Graph 1, hardcoded parameters" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-25)Example Graph 1, hardcoded parameters</p>
 </div>
+
 
 ```r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
@@ -446,8 +444,8 @@ graph2 + geom_point(color='blue',size=3)
 ```
 
 <div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-25-2.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-25)**CAPTION THIS FIGURE!!**</p>
+<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" alt="Example Graph 2, hardcoded parameters" width="100%" />
+<p class="caption">(\#fig:unnamed-chunk-26)Example Graph 2, hardcoded parameters</p>
 </div>
 
 Adding variables means you only need to edit one line to change the look of both plots
@@ -456,25 +454,18 @@ Adding variables means you only need to edit one line to change the look of both
 ```r
 pointcolour='red'; pointsize=5
 
-
 graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color=pointcolour,size=pointsize)
 ```
 
-<div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-26)**CAPTION THIS FIGURE!!**</p>
-</div>
+<img src="007-coding_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" />
 
 ```r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color=pointcolour,size=pointsize)
 ```
 
-<div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-26-2.png" alt="**CAPTION THIS FIGURE!!**" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-26)**CAPTION THIS FIGURE!!**</p>
-</div>
+<img src="007-coding_files/figure-html/unnamed-chunk-27-2.png" width="100%" style="display: block; margin: auto;" />
 
 This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with
 

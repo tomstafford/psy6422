@@ -360,11 +360,13 @@ Now the second line is easier to read, and you also have a variable which you ca
 Another example
 
 
-```{r}
+```{r  fig.cap="Example Graph 1, hardcoded parameters"}
 
 graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color='blue',size=3)
+```
 
+```{r  fig.cap="Example Graph 2, hardcoded parameters"}
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color='blue',size=3)
 
@@ -374,7 +376,6 @@ Adding variables means you only need to edit one line to change the look of both
 
 ```{r}
 pointcolour='red'; pointsize=5
-
 
 graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color=pointcolour,size=pointsize)
