@@ -445,20 +445,10 @@ mydata =<span class="st"> </span><span class="kw">read.csv</span>(datafile)</cod
 <p>Another example</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1))
 graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>)</code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-25"></span>
-<img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" alt="Example Graph 1, hardcoded parameters" width="100%" />
-<p class="caption">
-Figure 6.1: Example Graph 1, hardcoded parameters
-</p>
-</div>
+<p><img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))
 graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>)</code></pre></div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-26"></span>
-<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" alt="Example Graph 2, hardcoded parameters" width="100%" />
-<p class="caption">
-Figure 6.2: Example Graph 2, hardcoded parameters
-</p>
-</div>
+<p><img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Adding variables means you only need to edit one line to change the look of both plots</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pointcolour=<span class="st">&#39;red&#39;</span>; pointsize=<span class="dv">5</span>
 
@@ -474,18 +464,37 @@ graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_p
 <h3><span class="header-section-number">6.2.3</span> Functionalise &amp; Generalise</h3>
 <p>If you ever find yourself using very similar lines of code, you should think about making a function. Functions make your code shorter and easier to read (and write), and they make it <em>way</em> easier to update (because when you catch a bug you can just update the code in the function, rather than every time you repeated those lines).</p>
 <p>Functions are also an opportunity to think to yourself &quot;what is the most general purpose way of doing what I'm doing&quot;. Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things</p>
-<p>Let's look at an example:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graphtitles =<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;Plot of something hard to explain but really worth it promise&#39;</span>, <span class="st">&#39;Plot of super complicated stuff I need to show you&#39;</span>, <span class="st">&#39;Not so sure about this plot what do you think?&#39;</span>)
+<p>Let's look at a toy example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mynumbers =<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)
 
-<span class="co">#insert a line break so plot titles fit above the plots</span>
-graphtitles[<span class="dv">1</span>] &lt;-<span class="st"> &#39;Harry&#39;</span>
+<span class="co">#double and add one to each number</span>
+mynumbers[<span class="dv">1</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">1</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>
+mynumbers[<span class="dv">2</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">2</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>
+mynumbers[<span class="dv">3</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">3</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>
 
+<span class="kw">print</span>(mynumbers)</code></pre></div>
+<pre><code>## [1] 5 7 9</code></pre>
+<p>This can be improved with a function</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">myfunc &lt;-<span class="st"> </span><span class="cf">function</span>(num){
+  <span class="co">#toy function, doubles and adds 1</span>
+  <span class="kw">return</span>(num<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)
+  }  
 
-<span class="kw">print</span>(names)</code></pre></div>
-<pre><code>## function (x)  .Primitive(&quot;names&quot;)</code></pre>
+mynumbers =<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)
+
+mynumbers &lt;-<span class="st"> </span><span class="kw">myfunc</span>(mynumbers)
+
+<span class="kw">print</span>(mynumbers)</code></pre></div>
+<pre><code>## [1] 5 7 9</code></pre>
+<p>This code is easier to read, easier to change, and you can write new code which uses this function again</p>
 </div>
 <div id="ask-for-help" class="section level3">
 <h3><span class="header-section-number">6.2.4</span> Ask for help</h3>
+<p>Nobody finds this easy straight away. Learning how to find help a core programming skill (along with not giving up when it feels like you are completely stuck).</p>
+<p>Part of this is knowing how programming people talk about stuff so you can search effectively for solutions.</p>
+<p>If you get an error message, copy and paste it into your search</p>
+<p>If you are really stuck, just trying to descibe you problem is a good way of indentifying exactly what you want to do, and why you can't. When you've described your problem full - see this <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">How to make a great R reproducible example</a> - you can ask a friend or post it to a forum</p>
+<p>If you're on this module you can post it to Slack on the r-coding channel, or if not try seeking out R groups in your city or institution. Shout out to <a href="https://rladies.org/">Rladies</a></p>
 </div>
 <div id="more-2" class="section level3">
 <h3><span class="header-section-number">6.2.5</span> More</h3>
@@ -496,8 +505,7 @@ graphtitles[<span class="dv">1</span>] &lt;-<span class="st"> &#39;Harry&#39;</s
 <li><a href="https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/">Prime Hints For Running A Data Project In R</a></li>
 <li>Software Carpentry: <a href="https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/">Best Practices for Writing R Code</a></li>
 <li>Nice R code: <a href="https://nicercode.github.io/intro/bad-habits.html">bad habits</a></li>
-<li>Writing a complete example</li>
-<li>Your code is good enough to share</li>
+<li>Barnes, N. (2010). <a href="https://www.nature.com/articles/467753a">Publish your computer code: it is good enough</a>. Nature, 467(7317), 753-753.</li>
 </ul>
 
 </div>

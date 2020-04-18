@@ -432,10 +432,7 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color='blue',size=3)
 ```
 
-<div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" alt="Example Graph 1, hardcoded parameters" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-25)Example Graph 1, hardcoded parameters</p>
-</div>
+<img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" />
 
 
 ```r
@@ -443,10 +440,7 @@ graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color='blue',size=3)
 ```
 
-<div class="figure" style="text-align: center">
-<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" alt="Example Graph 2, hardcoded parameters" width="100%" />
-<p class="caption">(\#fig:unnamed-chunk-26)Example Graph 2, hardcoded parameters</p>
-</div>
+<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" />
 
 Adding variables means you only need to edit one line to change the look of both plots
 
@@ -475,30 +469,58 @@ If you ever find yourself using very similar lines of code, you should think abo
 
 Functions are also an opportunity to think to yourself "what is the most general purpose way of doing what I'm doing". Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things
 
-Let's look at an example:
+Let's look at a toy example:
 
 
 ```r
-graphtitles = c('Plot of something hard to explain but really worth it promise', 'Plot of super complicated stuff I need to show you', 'Not so sure about this plot what do you think?')
+mynumbers = c(2,3,4)
 
-#insert a line break so plot titles fit above the plots
-graphtitles[1] <- 'Harry'
+#double and add one to each number
+mynumbers[1] <- mynumbers[1]*2+1
+mynumbers[2] <- mynumbers[2]*2+1
+mynumbers[3] <- mynumbers[3]*2+1
 
-
-print(names)
+print(mynumbers)
 ```
 
 ```
-## function (x)  .Primitive("names")
+## [1] 5 7 9
 ```
 
+This can be improved with a function
 
 
+```r
+myfunc <- function(num){
+  #toy function, doubles and adds 1
+  return(num*2+1)
+  }  
+
+mynumbers = c(2,3,4)
+
+mynumbers <- myfunc(mynumbers)
+
+print(mynumbers)
+```
+
+```
+## [1] 5 7 9
+```
+
+This code is easier to read, easier to change, and you can write new code which uses this function again
 
 
 ### Ask for help
 
+Nobody finds this easy straight away. Learning how to find help a core programming skill (along with not giving up when it feels like you are completely stuck). 
 
+Part of this is knowing how programming people talk about stuff so you can search effectively for solutions. 
+
+If you get an error message, copy and paste it into your search
+
+If you are really stuck, just trying to descibe you problem is a good way of indentifying exactly what you want to do, and why you can't. When you've described your problem full - see this [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) - you can ask a friend or post it to a forum
+
+If you're on this module you can post it to Slack on the r-coding channel, or if not try seeking out R groups in your city or institution. Shout out to [Rladies](https://rladies.org/)
 
 ### More
 
@@ -508,5 +530,4 @@ print(names)
 * [Prime Hints For Running A Data Project In R](https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/)
 * Software Carpentry: [Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
 * Nice R code: [bad habits](https://nicercode.github.io/intro/bad-habits.html)
-* Writing a complete example
-* Your code is good enough to share
+* Barnes, N. (2010). [Publish your computer code: it is good enough](https://www.nature.com/articles/467753a). Nature, 467(7317), 753-753.
