@@ -1,8 +1,9 @@
 
 # Publishing 
 
+## Sharing your Rmd files via Github pages
 
-# Other sharing options
+## Other sharing options
 
 OSF
 

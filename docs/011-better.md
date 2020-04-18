@@ -1,9 +1,11 @@
 
-# Better graphs
+# Advanced Topics
+
+## Better graphs
 
 
-# Reproducibility
+## Reproducibility
 
 https://luisdva.github.io/rstats/annotater/
 
-# Previous of advanced topics
+## Preview of other advanced topics
