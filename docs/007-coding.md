@@ -292,7 +292,7 @@ Look at this function, it hard to understand, right?
 pf <- function(n){ p=1 ; if (n>1){ i = 2; while( (i<(n/2+1)) & (p==1) ) {if (n%%i ==0) p=0; i=i+1 }  } else {p=0 }; return(p) }
 ```
 
-This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understanding, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).
+This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).
 
 Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:
 
@@ -346,8 +346,8 @@ Now fully commented
 ```r
 primecheck <- function(num){
   #check if a number is prime
-  ## assumes the number provided is an integer
-  ## works by working through all possible divisors up to half the test number, checking if the remainer is 0
+  # - assumes the number provided is an integer
+  # - works by working through all possible divisors up to half the test number, checking if the remainer is 0
   #
   isprime=TRUE # a flag, which tracks if we think the number is prime. We start out assuming our number *is* prime
   # first we only need to do the complicated method for numbers great than 1
@@ -378,7 +378,6 @@ It is possible to comment too much. The code above I commented so someone who wa
 primecheck <- function(num){
   #check if a number is prime
   # - assumes input is integer
-  # - work by testing all possible divisors
   isprime=TRUE # a flag, start assuming our number *is* prime 
   # only check numbers > 1
   if (num>1){ 
@@ -400,20 +399,20 @@ primecheck <- function(num){
 }
 ```
 
-This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There's no shortage of space in R scripts, so if I doubt, put some effort in to laying things out nicely. You'll thank yourself when you come back to your code (which you will always have to)
+This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There's no shortage of space in R scripts, so if in doubt, put some effort in to laying things out nicely, use sensible names for variable functions and add comments. You'll thank yourself when you come back to your code (which you will always have to).
 
 ### Avoid hard coded values
 
-Say you were going to load some data, you could do this
+Say you were going to load some data, you could do this:
 
 
 ```r
 mydata = read.csv('/home/tom/Desktop/psy6422/mydatafile.csv')
 ```
 
-Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them
+Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them.
 
-Like this
+Like this:
 
 
 ```r
@@ -421,53 +420,59 @@ datafile = '/home/tom/Desktop/psy6422/mydatafile.csv'
 mydata = read.csv(datafile)
 ```
 
-Now the second line is easier to read, and you also have a variable which you can reuse 
+Now the second line is easier to read, and you also have a variable which you can reuse. For example maybe later in your script you want to save the name of the raw data file somewhere. You can just use:
+
+
+```r
+label = paste('This plot generated using data from ', datafile)
+```
+
+And when you use the same script for different data, both the lines loading data and recording the data file are correct.
 
 Another example
 
 
-
 ```r
 graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
-graph1 + geom_point(color='blue',size=3)
+graph1 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" />
 
 
 ```r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
-graph2 + geom_point(color='blue',size=3)
+graph2 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" />
 
 Adding variables means you only need to edit one line to change the look of both plots
 
 
 ```r
-pointcolour='red'; pointsize=5
+pointcolour='red'; pointsize=5 ; pointshape = 23 #change this line for different look
 
-graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
-graph1 + geom_point(color=pointcolour,size=pointsize)
+graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1)) 
+graph1 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;" />
 
 ```r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
-graph2 + geom_point(color=pointcolour,size=pointsize)
+graph2 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-27-2.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-28-2.png" width="100%" style="display: block; margin: auto;" />
 
-This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with
+This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.
 
 ### Functionalise & Generalise
 
 If you ever find yourself using very similar lines of code, you should think about making a function. Functions make your code shorter and easier to read (and write), and they make it *way* easier to update (because when you catch a bug you can just update the code in the function, rather than every time you repeated those lines).
 
-Functions are also an opportunity to think to yourself "what is the most general purpose way of doing what I'm doing". Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things
+Functions are also an opportunity to think to yourself "what is the most general purpose way of doing what I'm doing". Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things.
 
 Let's look at a toy example:
 
@@ -476,9 +481,9 @@ Let's look at a toy example:
 mynumbers = c(2,3,4)
 
 #double and add one to each number
-mynumbers[1] <- mynumbers[1]*2+1
-mynumbers[2] <- mynumbers[2]*2+1
-mynumbers[3] <- mynumbers[3]*2+1
+mynumbers[1] <- mynumbers[1]*2+1 # line 1
+mynumbers[2] <- mynumbers[2]*2+1 # line 2
+mynumbers[3] <- mynumbers[3]*2+1 # line 3
 
 print(mynumbers)
 ```
@@ -498,7 +503,7 @@ myfunc <- function(num){
 
 mynumbers = c(2,3,4)
 
-mynumbers <- myfunc(mynumbers)
+mynumbers <- myfunc(mynumbers) # all the work with 1 line!
 
 print(mynumbers)
 ```
@@ -507,7 +512,7 @@ print(mynumbers)
 ## [1] 5 7 9
 ```
 
-This code is easier to read, easier to change, and you can write new code which uses this function again
+This code is easier to read, easier to change, and you can write new code which uses this function again.
 
 
 ### Ask for help
@@ -516,18 +521,18 @@ Nobody finds this easy straight away. Learning how to find help a core programmi
 
 Part of this is knowing how programming people talk about stuff so you can search effectively for solutions. 
 
-If you get an error message, copy and paste it into your search
+If you get an error message, copy and paste it into your search.
 
-If you are really stuck, just trying to descibe you problem is a good way of indentifying exactly what you want to do, and why you can't. When you've described your problem full - see this [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) - you can ask a friend or post it to a forum
+If you are really stuck, just trying to descibe you problem is a good way of indentifying exactly what you want to do, and why you can't. When you've described your problem full - see this [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) - you can ask a friend or post it to a forum.
 
 If you're on this module you can post it to Slack on the r-coding channel, or if not try seeking out R groups in your city or institution. Shout out to [Rladies](https://rladies.org/)
 
 ### More
 
 * [Program better, for fun and for profit](https://inattentionalcoffee.wordpress.com/2017/01/13/program-better-for-fun-and-for-profit/)
-* Axelrod, V. (2014). [Minimizing bugs in cognitive neuroscience programming](https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full). Frontiers in psychology, 5, 1435.
-* Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... & Waugh, B. (2014). [Best practices for scientific computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745). PLoS biology] 12(1), e1001745.
 * [Prime Hints For Running A Data Project In R](https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/)
 * Software Carpentry: [Best Practices for Writing R Code](https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/)
 * Nice R code: [bad habits](https://nicercode.github.io/intro/bad-habits.html)
 * Barnes, N. (2010). [Publish your computer code: it is good enough](https://www.nature.com/articles/467753a). Nature, 467(7317), 753-753.
+* Axelrod, V. (2014). [Minimizing bugs in cognitive neuroscience programming](https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full). Frontiers in psychology, 5, 1435.
+* Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... & Waugh, B. (2014). [Best practices for scientific computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745). PLoS biology] 12(1), e1001745.

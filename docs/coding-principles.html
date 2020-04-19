@@ -25,7 +25,7 @@
 <meta name="author" content="Tom Stafford">
 
 
-<meta name="date" content="2020-04-18">
+<meta name="date" content="2020-04-19">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -348,7 +348,7 @@ output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines o
 <p>To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing.</p>
 <p>Look at this function, it hard to understand, right?</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pf &lt;-<span class="st"> </span><span class="cf">function</span>(n){ p=<span class="dv">1</span> ; <span class="cf">if</span> (n<span class="op">&gt;</span><span class="dv">1</span>){ i =<span class="st"> </span><span class="dv">2</span>; <span class="cf">while</span>( (i<span class="op">&lt;</span>(n<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(p<span class="op">==</span><span class="dv">1</span>) ) {<span class="cf">if</span> (n<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) p=<span class="dv">0</span>; i=i<span class="op">+</span><span class="dv">1</span> }  } <span class="cf">else</span> {p=<span class="dv">0</span> }; <span class="kw">return</span>(p) }</code></pre></div>
-<p>This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understanding, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).</p>
+<p>This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).</p>
 <p>Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pf &lt;-<span class="st"> </span><span class="cf">function</span>(n){
   p=<span class="dv">1</span>
@@ -385,8 +385,8 @@ output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines o
 <p>Now fully commented</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">primecheck &lt;-<span class="st"> </span><span class="cf">function</span>(num){
   <span class="co">#check if a number is prime</span>
-  ## assumes the number provided is an integer
-  ## works by working through all possible divisors up to half the test number, checking if the remainer is 0
+  <span class="co"># - assumes the number provided is an integer</span>
+  <span class="co"># - works by working through all possible divisors up to half the test number, checking if the remainer is 0</span>
   <span class="co">#</span>
   isprime=<span class="ot">TRUE</span> <span class="co"># a flag, which tracks if we think the number is prime. We start out assuming our number *is* prime</span>
   <span class="co"># first we only need to do the complicated method for numbers great than 1</span>
@@ -411,7 +411,6 @@ output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines o
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">primecheck &lt;-<span class="st"> </span><span class="cf">function</span>(num){
   <span class="co">#check if a number is prime</span>
   <span class="co"># - assumes input is integer</span>
-  <span class="co"># - work by testing all possible divisors</span>
   isprime=<span class="ot">TRUE</span> <span class="co"># a flag, start assuming our number *is* prime </span>
   <span class="co"># only check numbers &gt; 1</span>
   <span class="cf">if</span> (num<span class="op">&gt;</span><span class="dv">1</span>){ 
@@ -431,46 +430,48 @@ output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines o
   }
   <span class="kw">return</span>(isprime)
 }</code></pre></div>
-<p>This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There's no shortage of space in R scripts, so if I doubt, put some effort in to laying things out nicely. You'll thank yourself when you come back to your code (which you will always have to)</p>
+<p>This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There's no shortage of space in R scripts, so if in doubt, put some effort in to laying things out nicely, use sensible names for variable functions and add comments. You'll thank yourself when you come back to your code (which you will always have to).</p>
 </div>
 <div id="avoid-hard-coded-values" class="section level3">
 <h3><span class="header-section-number">6.2.2</span> Avoid hard coded values</h3>
-<p>Say you were going to load some data, you could do this</p>
+<p>Say you were going to load some data, you could do this:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mydata =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span>)</code></pre></div>
-<p>Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them</p>
-<p>Like this</p>
+<p>Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them.</p>
+<p>Like this:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">datafile =<span class="st"> &#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span>
 mydata =<span class="st"> </span><span class="kw">read.csv</span>(datafile)</code></pre></div>
-<p>Now the second line is easier to read, and you also have a variable which you can reuse</p>
+<p>Now the second line is easier to read, and you also have a variable which you can reuse. For example maybe later in your script you want to save the name of the raw data file somewhere. You can just use:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">label =<span class="st"> </span><span class="kw">paste</span>(<span class="st">&#39;This plot generated using data from &#39;</span>, datafile)</code></pre></div>
+<p>And when you use the same script for different data, both the lines loading data and recording the data file are correct.</p>
 <p>Another example</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1))
-graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>)</code></pre></div>
-<p><img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))
-graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>)</code></pre></div>
+graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></code></pre></div>
 <p><img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>Adding variables means you only need to edit one line to change the look of both plots</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pointcolour=<span class="st">&#39;red&#39;</span>; pointsize=<span class="dv">5</span>
-
-graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1))
-graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span>pointcolour,<span class="dt">size=</span>pointsize)</code></pre></div>
-<p><img src="007-coding_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))
-graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span>pointcolour,<span class="dt">size=</span>pointsize)</code></pre></div>
-<p><img src="007-coding_files/figure-html/unnamed-chunk-27-2.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with</p>
+graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></code></pre></div>
+<p><img src="007-coding_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Adding variables means you only need to edit one line to change the look of both plots</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pointcolour=<span class="st">&#39;red&#39;</span>; pointsize=<span class="dv">5</span> ; pointshape =<span class="st"> </span><span class="dv">23</span> <span class="co">#change this line for different look</span>
+
+graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1)) 
+graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span>pointcolour,<span class="dt">size=</span>pointsize, <span class="dt">shape =</span> pointshape) <span class="co"># never change these lines</span></code></pre></div>
+<p><img src="007-coding_files/figure-html/unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))
+graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span>pointcolour,<span class="dt">size=</span>pointsize, <span class="dt">shape =</span> pointshape) <span class="co"># never change these lines</span></code></pre></div>
+<p><img src="007-coding_files/figure-html/unnamed-chunk-28-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.</p>
 </div>
 <div id="functionalise-generalise" class="section level3">
 <h3><span class="header-section-number">6.2.3</span> Functionalise &amp; Generalise</h3>
 <p>If you ever find yourself using very similar lines of code, you should think about making a function. Functions make your code shorter and easier to read (and write), and they make it <em>way</em> easier to update (because when you catch a bug you can just update the code in the function, rather than every time you repeated those lines).</p>
-<p>Functions are also an opportunity to think to yourself &quot;what is the most general purpose way of doing what I'm doing&quot;. Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things</p>
+<p>Functions are also an opportunity to think to yourself &quot;what is the most general purpose way of doing what I'm doing&quot;. Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things.</p>
 <p>Let's look at a toy example:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">mynumbers =<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)
 
 <span class="co">#double and add one to each number</span>
-mynumbers[<span class="dv">1</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">1</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>
-mynumbers[<span class="dv">2</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">2</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>
-mynumbers[<span class="dv">3</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">3</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>
+mynumbers[<span class="dv">1</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">1</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span> <span class="co"># line 1</span>
+mynumbers[<span class="dv">2</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">2</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span> <span class="co"># line 2</span>
+mynumbers[<span class="dv">3</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">3</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span> <span class="co"># line 3</span>
 
 <span class="kw">print</span>(mynumbers)</code></pre></div>
 <pre><code>## [1] 5 7 9</code></pre>
@@ -482,30 +483,30 @@ mynumbers[<span class="dv">3</span>] &lt;-<span class="st"> </span>mynumbers[<sp
 
 mynumbers =<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)
 
-mynumbers &lt;-<span class="st"> </span><span class="kw">myfunc</span>(mynumbers)
+mynumbers &lt;-<span class="st"> </span><span class="kw">myfunc</span>(mynumbers) <span class="co"># all the work with 1 line!</span>
 
 <span class="kw">print</span>(mynumbers)</code></pre></div>
 <pre><code>## [1] 5 7 9</code></pre>
-<p>This code is easier to read, easier to change, and you can write new code which uses this function again</p>
+<p>This code is easier to read, easier to change, and you can write new code which uses this function again.</p>
 </div>
 <div id="ask-for-help" class="section level3">
 <h3><span class="header-section-number">6.2.4</span> Ask for help</h3>
 <p>Nobody finds this easy straight away. Learning how to find help a core programming skill (along with not giving up when it feels like you are completely stuck).</p>
 <p>Part of this is knowing how programming people talk about stuff so you can search effectively for solutions.</p>
-<p>If you get an error message, copy and paste it into your search</p>
-<p>If you are really stuck, just trying to descibe you problem is a good way of indentifying exactly what you want to do, and why you can't. When you've described your problem full - see this <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">How to make a great R reproducible example</a> - you can ask a friend or post it to a forum</p>
+<p>If you get an error message, copy and paste it into your search.</p>
+<p>If you are really stuck, just trying to descibe you problem is a good way of indentifying exactly what you want to do, and why you can't. When you've described your problem full - see this <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">How to make a great R reproducible example</a> - you can ask a friend or post it to a forum.</p>
 <p>If you're on this module you can post it to Slack on the r-coding channel, or if not try seeking out R groups in your city or institution. Shout out to <a href="https://rladies.org/">Rladies</a></p>
 </div>
 <div id="more-2" class="section level3">
 <h3><span class="header-section-number">6.2.5</span> More</h3>
 <ul>
 <li><a href="https://inattentionalcoffee.wordpress.com/2017/01/13/program-better-for-fun-and-for-profit/">Program better, for fun and for profit</a></li>
-<li>Axelrod, V. (2014). <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full">Minimizing bugs in cognitive neuroscience programming</a>. Frontiers in psychology, 5, 1435.</li>
-<li>Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... &amp; Waugh, B. (2014). <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best practices for scientific computing</a>. PLoS biology] 12(1), e1001745.</li>
 <li><a href="https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/">Prime Hints For Running A Data Project In R</a></li>
 <li>Software Carpentry: <a href="https://swcarpentry.github.io/r-novice-inflammation/06-best-practices-R/">Best Practices for Writing R Code</a></li>
 <li>Nice R code: <a href="https://nicercode.github.io/intro/bad-habits.html">bad habits</a></li>
 <li>Barnes, N. (2010). <a href="https://www.nature.com/articles/467753a">Publish your computer code: it is good enough</a>. Nature, 467(7317), 753-753.</li>
+<li>Axelrod, V. (2014). <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full">Minimizing bugs in cognitive neuroscience programming</a>. Frontiers in psychology, 5, 1435.</li>
+<li>Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... &amp; Waugh, B. (2014). <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best practices for scientific computing</a>. PLoS biology] 12(1), e1001745.</li>
 </ul>
 
 </div>
