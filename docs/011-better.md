@@ -1,4 +1,3 @@
-
 # Advanced Topics
 
 ## Better graphs

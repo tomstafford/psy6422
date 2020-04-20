@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>PSY6422 Data Management and Visualisation @ The University of Sheffield</title>
-  <meta name="description" content="This is a template. Use it to start a new course book.">
-  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 10 Advanced Topics | PSY6422 Data Management and Visualisation @ The University of Sheffield</title>
+  <meta name="description" content="This is a template. Use it to start a new course book." />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="PSY6422 Data Management and Visualisation @ The University of Sheffield" />
+  <meta property="og:title" content="Chapter 10 Advanced Topics | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
   <meta property="og:type" content="book" />
   
   
@@ -17,29 +16,33 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="PSY6422 Data Management and Visualisation @ The University of Sheffield" />
+  <meta name="twitter:title" content="Chapter 10 Advanced Topics | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
   
   <meta name="twitter:description" content="This is a template. Use it to start a new course book." />
   
 
-<meta name="author" content="Tom Stafford">
+<meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2020-04-20">
+<meta name="date" content="2020-04-20" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="publishing.html">
-<link rel="next" href="reading-list.html">
+<link rel="prev" href="publishing.html"/>
+<link rel="next" href="reading-list.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -168,11 +171,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="11.10" data-path="appendices.html"><a href="appendices.html#python"><i class="fa fa-check"></i><b>11.10</b> Python</a></li>
 <li class="chapter" data-level="11.11" data-path="appendices.html"><a href="appendices.html#general-righteousness"><i class="fa fa-check"></i><b>11.11</b> General righteousness</a></li>
 <li class="chapter" data-level="11.12" data-path="appendices.html"><a href="appendices.html#testimonials"><i class="fa fa-check"></i><b>11.12</b> Testimonials</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="overview-1.html"><a href="overview-1.html"><i class="fa fa-check"></i>Overview</a><ul>
-<li class="chapter" data-level="11.13" data-path="overview-1.html"><a href="overview-1.html#resources-2"><i class="fa fa-check"></i><b>11.13</b> Resources</a></li>
-<li class="chapter" data-level="11.14" data-path="overview-1.html"><a href="overview-1.html#course-outline-1"><i class="fa fa-check"></i><b>11.14</b> Course Outline</a></li>
-<li class="chapter" data-level="11.15" data-path="overview-1.html"><a href="overview-1.html#example-projects-1"><i class="fa fa-check"></i><b>11.15</b> Example Projects</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" 
@@ -328,11 +326,13 @@ window.onload = function() {
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -340,13 +340,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
+"linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": true,
 "vk": false,
 "all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"],
-"linkedin": false,
-"instapaper": true
+"google": false
 },
 "fontsettings": {
 "theme": "black",
@@ -354,6 +353,14 @@ gitbook.start({
 "size": 2
 },
 "edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

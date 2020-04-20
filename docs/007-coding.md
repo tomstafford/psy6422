@@ -1,4 +1,3 @@
-
 # Coding Principles
 
 
@@ -153,7 +152,7 @@ total_at_each_year=savings*interest**(1:years) #rather than a loop all the answe
 plot(total_at_each_year,xlab="years") #bonus! We can plot, since we now have all the intervening values saved
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" />
 
 The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation. 
 
@@ -437,7 +436,7 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" />
 
 
 ```r
@@ -445,7 +444,7 @@ graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" />
 
 Adding variables means you only need to edit one line to change the look of both plots
 
@@ -457,14 +456,14 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-28-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" />
 
 ```r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-<img src="007-coding_files/figure-html/unnamed-chunk-28-2.png" width="100%" style="display: block; margin: auto;" />
+<img src="007-coding_files/figure-html/unnamed-chunk-27-2.png" width="100%" style="display: block; margin: auto;" />
 
 This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.
 

@@ -1,4 +1,3 @@
-
 # Rmarkdown
 
 These pages are written in Rmarkdown. You can see this individual file [here in the online repositry](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd)

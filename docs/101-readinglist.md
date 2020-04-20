@@ -1,4 +1,3 @@
-
 # Reading List
 
 <img src="images/ds_library.jpeg" style="width: 400px; float: center;">

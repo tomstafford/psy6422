@@ -1,4 +1,3 @@
-
 # Publishing 
 
 ## Sharing your Rmd files via Github pages
