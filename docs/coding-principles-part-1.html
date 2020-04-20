@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Making Graphs | PSY6422 Data Management and Visualisation @ The University of Sheffield</title>
+  <title>7 Coding Principles, part 1 | PSY6422 Data Management and Visualisation @ The University of Sheffield</title>
   <meta name="description" content="This is a template. Use it to start a new course book." />
   <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Making Graphs | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
+  <meta property="og:title" content="7 Coding Principles, part 1 | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Making Graphs | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
+  <meta name="twitter:title" content="7 Coding Principles, part 1 | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
   
   <meta name="twitter:description" content="This is a template. Use it to start a new course book." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="r-r-studio.html">
-<link rel="next" href="data-management-1.html">
+<link rel="prev" href="coding-part-2-this-section-is-out-of-order.html">
+<link rel="next" href="rmarkdown.html">
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -230,16 +230,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="making-graphs" class="section level1" number="4">
-<h1 number="4"><span class="header-section-number">4</span> Making Graphs</h1>
-<p>This is a placeholder page. This material was delivered offline</p>
-<p>Specific resources:</p>
-<blockquote>
-<blockquote>
-<p>TO APPEAR&lt;&lt;</p>
-</blockquote>
-</blockquote>
+<div id="coding-principles-part-1" class="section level1" number="7">
+<h1 number="7"><span class="header-section-number">7</span> Coding Principles, part 1</h1>
+<p>This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R, all programming languages use similar methods (although the exact syntax differs), and the principles of good code will also apply across languages.</p>
+<p>As well demonstrating these fundamentals, these pages also introduce the vocabulary used to discuss them. Knowing the vocabulary helps because it means you know what terms to use when searching for solutions to problems you have.</p>
+<div id="fundamental-methods" class="section level2" number="7.1">
+<h2 number="7.1"><span class="header-section-number">7.1</span> Fundamental methods</h2>
+<ol style="list-style-type: decimal">
+<li><a href="coding-principles-part-1.html#if">if statements</a></li>
+<li><a href="coding-part-2-this-section-is-out-of-order.html#loops">loops</a></li>
+<li><a href="coding-part-2-this-section-is-out-of-order.html#functions">functions</a></li>
+</ol>
+<div id="if" class="section level3" number="7.1.1">
+<h3 number="7.1.1"><span class="header-section-number">7.1.1</span> If statements</h3>
+<p>So far we have written simple scripts that do things in order, top to bottom</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="coding-principles-part-1.html#cb35-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb35-2"><a href="coding-principles-part-1.html#cb35-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb35-3"><a href="coding-principles-part-1.html#cb35-3"></a><span class="kw">print</span>(a) <span class="co"># output the result</span></span></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<p>The first block above is the code, the second block (the lines which start with <code>##</code>) is the output.</p>
+<p>Changing which statements are run is called “flow control”. An “If statement” is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="coding-principles-part-1.html#cb37-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb37-2"><a href="coding-principles-part-1.html#cb37-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb37-3"><a href="coding-principles-part-1.html#cb37-3"></a><span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
+<span id="cb37-4"><a href="coding-principles-part-1.html#cb37-4"></a>  {<span class="kw">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></span></code></pre></div>
+<p>Notice there is no output. Copy the code to your own computer and run it. Now change the first line to <code>a &lt;- 9</code> and run it again.</p>
+<p>An If statement defines a branch in the flow of a script. The default can be nothing happening, but sometimes you want to define two alternatives. You can do this with an “If…else…statement”</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="coding-principles-part-1.html#cb38-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb38-2"><a href="coding-principles-part-1.html#cb38-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb38-3"><a href="coding-principles-part-1.html#cb38-3"></a><span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
+<span id="cb38-4"><a href="coding-principles-part-1.html#cb38-4"></a>  <span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span></span>
+<span id="cb38-5"><a href="coding-principles-part-1.html#cb38-5"></a>} <span class="cf">else</span> {</span>
+<span id="cb38-6"><a href="coding-principles-part-1.html#cb38-6"></a>  {<span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span></span>
+<span id="cb38-7"><a href="coding-principles-part-1.html#cb38-7"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;2  is equal or less than 4&quot;</code></pre>
+<p>You can actually have as many branches as you like, defining a series of test_expressions, like this</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="coding-principles-part-1.html#cb40-1"></a>type_of_thing=<span class="st">&#39;&#39;</span> </span>
+<span id="cb40-2"><a href="coding-principles-part-1.html#cb40-2"></a><span class="kw">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)</span>
+<span id="cb40-3"><a href="coding-principles-part-1.html#cb40-3"></a><span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Murders&#39;</span>){</span>
+<span id="cb40-4"><a href="coding-principles-part-1.html#cb40-4"></a>  <span class="kw">print</span>(<span class="st">&quot;yes&quot;</span>)</span>
+<span id="cb40-5"><a href="coding-principles-part-1.html#cb40-5"></a>} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Dollars&#39;</span>){</span>
+<span id="cb40-6"><a href="coding-principles-part-1.html#cb40-6"></a>  <span class="kw">print</span>(<span class="st">&quot;no&quot;</span>)</span>
+<span id="cb40-7"><a href="coding-principles-part-1.html#cb40-7"></a>} <span class="cf">else</span> {</span>
+<span id="cb40-8"><a href="coding-principles-part-1.html#cb40-8"></a>  <span class="kw">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)</span>
+<span id="cb40-9"><a href="coding-principles-part-1.html#cb40-9"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;Is four a lot?&quot;
+## [1] &quot;Depends on the context&quot;</code></pre>
+<p>Somethgun else here</p>
 
+</div>
+</div>
 </div>
 <div class="psyteachr_footer">
   
@@ -351,8 +391,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="r-r-studio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-management-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="coding-part-2-this-section-is-out-of-order.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="rmarkdown.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,5 +1,5 @@
 
-# coding B
+# coding, part 2 : this section is out of order
 
 ### Loops
 
@@ -110,7 +110,7 @@ Now, when we call the function, we pass actual values.
 
 
 ```r
-print(myfunctionname(3))
+myfunctionname(3)
 ```
 
 ```

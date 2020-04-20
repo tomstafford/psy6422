@@ -244,38 +244,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="if" class="section level3" number="7.1.1">
 <h3 number="7.1.1"><span class="header-section-number">7.1.1</span> If statements</h3>
 <p>So far we have written simple scripts that do things in order, top to bottom</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="coding-principles.html#cb35-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
-<span id="cb35-2"><a href="coding-principles.html#cb35-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
-<span id="cb35-3"><a href="coding-principles.html#cb35-3"></a><span class="kw">print</span>(a) <span class="co"># output the result</span></span></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="coding-principles.html#cb1-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb1-2"><a href="coding-principles.html#cb1-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb1-3"><a href="coding-principles.html#cb1-3"></a><span class="kw">print</span>(a) <span class="co"># output the result</span></span></code></pre></div>
 <pre><code>## [1] 2</code></pre>
 <p>The first block above is the code, the second block (the lines which start with <code>##</code>) is the output.</p>
 <p>Changing which statements are run is called “flow control”. An “If statement” is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="coding-principles.html#cb37-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
-<span id="cb37-2"><a href="coding-principles.html#cb37-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
-<span id="cb37-3"><a href="coding-principles.html#cb37-3"></a><span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
-<span id="cb37-4"><a href="coding-principles.html#cb37-4"></a>  {<span class="kw">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></span></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="coding-principles.html#cb3-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb3-2"><a href="coding-principles.html#cb3-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb3-3"><a href="coding-principles.html#cb3-3"></a><span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
+<span id="cb3-4"><a href="coding-principles.html#cb3-4"></a>  {<span class="kw">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></span></code></pre></div>
 <p>Notice there is no output. Copy the code to your own computer and run it. Now change the first line to <code>a &lt;- 9</code> and run it again.</p>
 <p>An If statement defines a branch in the flow of a script. The default can be nothing happening, but sometimes you want to define two alternatives. You can do this with an “If…else…statement”</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="coding-principles.html#cb38-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
-<span id="cb38-2"><a href="coding-principles.html#cb38-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
-<span id="cb38-3"><a href="coding-principles.html#cb38-3"></a><span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
-<span id="cb38-4"><a href="coding-principles.html#cb38-4"></a>  <span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span></span>
-<span id="cb38-5"><a href="coding-principles.html#cb38-5"></a>} <span class="cf">else</span> {</span>
-<span id="cb38-6"><a href="coding-principles.html#cb38-6"></a>  {<span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span></span>
-<span id="cb38-7"><a href="coding-principles.html#cb38-7"></a>}</span></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="coding-principles.html#cb4-1"></a>a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb4-2"><a href="coding-principles.html#cb4-2"></a>a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb4-3"><a href="coding-principles.html#cb4-3"></a><span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
+<span id="cb4-4"><a href="coding-principles.html#cb4-4"></a>  <span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span></span>
+<span id="cb4-5"><a href="coding-principles.html#cb4-5"></a>} <span class="cf">else</span> {</span>
+<span id="cb4-6"><a href="coding-principles.html#cb4-6"></a>  {<span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span></span>
+<span id="cb4-7"><a href="coding-principles.html#cb4-7"></a>}</span></code></pre></div>
 <pre><code>## [1] &quot;2  is equal or less than 4&quot;</code></pre>
 <p>You can actually have as many branches as you like, defining a series of test_expressions, like this</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="coding-principles.html#cb40-1"></a>type_of_thing=<span class="st">&#39;&#39;</span> </span>
-<span id="cb40-2"><a href="coding-principles.html#cb40-2"></a><span class="kw">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)</span>
-<span id="cb40-3"><a href="coding-principles.html#cb40-3"></a><span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Murders&#39;</span>){</span>
-<span id="cb40-4"><a href="coding-principles.html#cb40-4"></a>  <span class="kw">print</span>(<span class="st">&quot;yes&quot;</span>)</span>
-<span id="cb40-5"><a href="coding-principles.html#cb40-5"></a>} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Dollars&#39;</span>){</span>
-<span id="cb40-6"><a href="coding-principles.html#cb40-6"></a>  <span class="kw">print</span>(<span class="st">&quot;no&quot;</span>)</span>
-<span id="cb40-7"><a href="coding-principles.html#cb40-7"></a>} <span class="cf">else</span> {</span>
-<span id="cb40-8"><a href="coding-principles.html#cb40-8"></a>  <span class="kw">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)</span>
-<span id="cb40-9"><a href="coding-principles.html#cb40-9"></a>}</span></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="coding-principles.html#cb6-1"></a>type_of_thing=<span class="st">&#39;&#39;</span> </span>
+<span id="cb6-2"><a href="coding-principles.html#cb6-2"></a><span class="kw">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)</span>
+<span id="cb6-3"><a href="coding-principles.html#cb6-3"></a><span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Murders&#39;</span>){</span>
+<span id="cb6-4"><a href="coding-principles.html#cb6-4"></a>  <span class="kw">print</span>(<span class="st">&quot;yes&quot;</span>)</span>
+<span id="cb6-5"><a href="coding-principles.html#cb6-5"></a>} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Dollars&#39;</span>){</span>
+<span id="cb6-6"><a href="coding-principles.html#cb6-6"></a>  <span class="kw">print</span>(<span class="st">&quot;no&quot;</span>)</span>
+<span id="cb6-7"><a href="coding-principles.html#cb6-7"></a>} <span class="cf">else</span> {</span>
+<span id="cb6-8"><a href="coding-principles.html#cb6-8"></a>  <span class="kw">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)</span>
+<span id="cb6-9"><a href="coding-principles.html#cb6-9"></a>}</span></code></pre></div>
 <pre><code>## [1] &quot;Is four a lot?&quot;
 ## [1] &quot;Depends on the context&quot;</code></pre>
+<p>Somethgun else here</p>
 
 </div>
 </div>

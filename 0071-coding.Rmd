@@ -1,4 +1,4 @@
-# coding B
+# coding, part 2 : this section is out of order
 
 ### Loops
 
@@ -79,7 +79,7 @@ You can call this function now. If you close R you'll need to define the functio
 Now, when we call the function, we pass actual values. 
 
 ```{r}
-print(myfunctionname(3))
+myfunctionname(3)
 ```
 
 Let's make our a slightly more complicated
