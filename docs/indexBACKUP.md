@@ -1,14 +1,16 @@
 
 --- 
-title: "Book Template"
-author: "Lisa DeBruine"
-date: "2020-04-20"
-site: bookdown::bookdown_site
+title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
+author: "Tom Stafford"
+date: '2020-04-20'
+bibliography:
+- book.bib
+- packages.bib
+description: This is a template. Use it to start a new course book.
 documentclass: book
-bibliography: [book.bib, packages.bib]
-biblio-style: apalike
 link-citations: yes
-description: "Guide for psyTeachR course books."
+site: bookdown::bookdown_site
+biblio-style: apalike
 ---
 
 

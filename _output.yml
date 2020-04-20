@@ -1,4 +1,3 @@
-
 bookdown::gitbook: 
   default: true
   smart: false
