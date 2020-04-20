@@ -1,3 +1,4 @@
+
 bookdown::gitbook: 
   default: true
   smart: false
@@ -7,18 +8,18 @@ bookdown::gitbook:
   config:
     toc:
       collapse: section
+      scroll_highlight: yes
       before: |
-        <li><a href="./">PSY6422 Data Management & Visualisation</a></li>
+        <li><a href="./">Book Template</a></li>
       after: |
         <li><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" 
             target="blank"><img alt="Creative Commons License" 
             style="border-width:0" 
-            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
-            <br>
-            <a href="tomstafford.staff.shef.ac.uk/" target="blank">Tom Stafford</a></li>
+            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></li>
+        <li><a href="https://psyteachr.github.io/books" target="blank">PsyTeachR Books</a></li>
     download: []
     fontsettings:
-      theme: black
+      theme: white
       family: sans
       size: 2
     sharing:
@@ -27,7 +28,7 @@ bookdown::gitbook:
       google: no
       linkedin: no
       weibo: no
-      instapaper: yes
+      instapaper: no
       vk: no
       all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper']
 bookdown::pdf_book:
