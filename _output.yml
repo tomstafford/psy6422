@@ -1,8 +1,5 @@
 bookdown::gitbook: 
-output:
-  html_document:
-    toc: false
-    toc_depth: 2
-    toc_float:
-      collapsed: true
-      smooth_scroll: true
+toc_depth: 1
+toc:
+  collapsed: true
+  smooth_scroll: true
