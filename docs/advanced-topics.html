@@ -87,8 +87,6 @@ code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* Com
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
-<link rel="stylesheet" href="include/psyteachr.css" type="text/css" />
-<link rel="stylesheet" href="include/style.css" type="text/css" />
 </head>
 
 <body>
@@ -101,9 +99,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">PSY6422 Data Management & Visualisation</a></li>
-
-<li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#resources"><i class="fa fa-check"></i><b>0.1</b> Resources</a></li>
 <li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-outline"><i class="fa fa-check"></i><b>0.2</b> Course Outline</a></li>
@@ -167,13 +162,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="11.11" data-path="appendices.html"><a href="appendices.html#general-righteousness"><i class="fa fa-check"></i><b>11.11</b> General righteousness</a></li>
 <li class="chapter" data-level="11.12" data-path="appendices.html"><a href="appendices.html#testimonials"><i class="fa fa-check"></i><b>11.12</b> Testimonials</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" 
-    target="blank"><img alt="Creative Commons License" 
-    style="border-width:0" 
-    src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><li>
-<li><a href="tomstafford.staff.shef.ac.uk/" target="blank">Tom Stafford</a></li>
-
 </ul>
 
       </nav>
@@ -205,111 +193,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 </div>
 </div>
-<div class="psyteachr_footer">
-  
-</div>
-<script>
-
-/* update total correct if #total_correct exists */
-update_total_correct = function() {
-  if (t = document.getElementById("total_correct")) {
-    t.innerHTML =
-      document.getElementsByClassName("correct").length + " of " +
-      document.getElementsByClassName("solveme").length + " correct";
-  }
-}
-
-/* solution button toggling function */
-b_func = function() {
-  var cl = this.parentElement.classList;
-  if (cl.contains('open')) {
-    cl.remove("open");
-  } else {
-    cl.add("open");
-  }
-}
-
-/* function for checking solveme answers */
-solveme_func = function(e) {
-  var real_answers = JSON.parse(this.dataset.answer);
-  var my_answer = this.value;
-  var cl = this.classList;
-  if (cl.contains("ignorecase")) {
-    my_answer = my_answer.toLowerCase();
-  }
-  if (cl.contains("nospaces")) {
-    my_answer = my_answer.replace(/ /g, "");
-  }
-  
-  if (my_answer !== "" & real_answers.includes(my_answer)) {
-    cl.add("correct");
-  } else {
-    cl.remove("correct");
-  }
-
-  // match numeric answers within a specified tolerance
-  if(this.dataset.tol){
-    var tol = JSON.parse(this.dataset.tol);  
-    var matches = real_answers.map(x => Math.abs(x - my_answer) < tol)
-    if (matches.reduce((a, b) => a + b, 0) > 0) {
-      cl.add("correct");
-    } else {
-      cl.remove("correct");
-    }  
-  }
-
-  // added regex bit
-  if (cl.contains("regex")){
-    answer_regex = RegExp(real_answers.join("|"))
-    if (answer_regex.test(my_answer)) {
-      cl.add("correct");
-    }  
-  }
-  
-  update_total_correct();
-}
-
-window.onload = function() {
-  /* set up solution buttons */
-  var buttons = document.getElementsByTagName("button");
-
-  for (var i = 0; i < buttons.length; i++) {
-    if (buttons[i].parentElement.classList.contains('solution')) {
-      buttons[i].onclick = b_func;
-    }
-  }
-  
-  /* set up solveme inputs */
-  var solveme = document.getElementsByClassName("solveme");
-
-  for (var i = 0; i < solveme.length; i++) {
-    /* make sure input boxes don't auto-anything */
-    solveme[i].setAttribute("autocomplete","off");
-    solveme[i].setAttribute("autocorrect", "off");
-    solveme[i].setAttribute("autocapitalize", "off"); 
-    solveme[i].setAttribute("spellcheck", "false");
-    solveme[i].value = "";
-    
-    /* adjust answer for ignorecase or nospaces */
-    var cl = solveme[i].classList;
-    var real_answer = solveme[i].dataset.answer;
-    if (cl.contains("ignorecase")) {
-      real_answer = real_answer.toLowerCase();
-    }
-    if (cl.contains("nospaces")) {
-      real_answer = real_answer.replace(/ /g, "");
-    }
-    solveme[i].dataset.answer = real_answer;
-    
-    /* attach checking function */
-    solveme[i].onkeyup = solveme_func;
-    solveme[i].onchange = solveme_func;
-  }
-  
-  update_total_correct();
-}
-
-</script>
             </section>
 
           </div>
@@ -337,12 +220,10 @@ gitbook.start({
 "weibo": false,
 "instapper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"],
-"linkedin": false,
-"instapaper": true
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
 },
 "fontsettings": {
-"theme": "black",
+"theme": "white",
 "family": "sans",
 "size": 2
 },
@@ -350,10 +231,9 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": {},
+"download": null,
 "toc": {
-"collapse": "section",
-"scroll_highlight": true
+"collapse": "subsection"
 }
 });
 });

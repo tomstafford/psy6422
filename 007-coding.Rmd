@@ -35,7 +35,7 @@ Changing which statements are run is called "flow control". An "If statement" is
 a <- 1 # define a variable
 a <- a + 1 #add 1
 if(a>4) # this is the condition which has to be met, the 'test expression'
-{print(a)} # this statement runs if the test expression is true
+  {print(a)} # this statement runs if the test expression is true
 ```
 
 Notice there is no output. Copy the code to your own computer and run it. Now change the first line to `a <- 9` and run it again.
