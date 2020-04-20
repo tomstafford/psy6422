@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # Coding Principles
+=======
+
+# Coding Principles, part 1
+>>>>>>> 9d6390dea5dd47fb0c5fa39305ed68d644dd219e
 
 
 
@@ -81,6 +86,7 @@ if (type_of_thing=='Murders'){
 ## [1] "Depends on the context"
 ```
 
+<<<<<<< HEAD
 
 
 ### Loops {#loops}
@@ -535,3 +541,6 @@ If you're on this module you can post it to Slack on the r-coding channel, or if
 * Barnes, N. (2010). [Publish your computer code: it is good enough](https://www.nature.com/articles/467753a). Nature, 467(7317), 753-753.
 * Axelrod, V. (2014). [Minimizing bugs in cognitive neuroscience programming](https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full). Frontiers in psychology, 5, 1435.
 * Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... & Waugh, B. (2014). [Best practices for scientific computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745). PLoS biology] 12(1), e1001745.
+=======
+Somethgun else here
+>>>>>>> 9d6390dea5dd47fb0c5fa39305ed68d644dd219e

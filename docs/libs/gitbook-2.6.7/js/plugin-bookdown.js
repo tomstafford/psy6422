@@ -28,6 +28,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
       }
     });
 
+<<<<<<< HEAD
     // add the View button (file view on Github)
     var view = config.view;
     if (view && view.link) gitbook.toolbar.createButton({
@@ -40,6 +41,8 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
       }
     });
 
+=======
+>>>>>>> 9d6390dea5dd47fb0c5fa39305ed68d644dd219e
     // add the Download button
     var down = config.download;
     var normalizeDownload = function() {
@@ -84,7 +87,11 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
     if (config.search !== false) info.push('f: Toggle search input ' +
       '(use <up>/<down>/Enter in the search input to navigate through search matches; ' +
       'press Esc to cancel search)');
+<<<<<<< HEAD
     if (config.info !== false) gitbook.toolbar.createButton({
+=======
+    gitbook.toolbar.createButton({
+>>>>>>> 9d6390dea5dd47fb0c5fa39305ed68d644dd219e
       icon: 'fa fa-info',
       label: 'Information about the toolbar',
       position: 'left',
