@@ -1,2 +1,2 @@
 bookdown::gitbook: 
-
+collapse: section
