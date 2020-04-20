@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 # Coding Principles
-=======
-
-# Coding Principles, part 1
->>>>>>> 9d6390dea5dd47fb0c5fa39305ed68d644dd219e
 
 
 
@@ -86,27 +81,25 @@ if (type_of_thing=='Murders'){
 ## [1] "Depends on the context"
 ```
 
-<<<<<<< HEAD
 
-
-### Loops {#loops}
+### Loops
 
 Loops repeat, either iterating over a set values, like this:
-
-
-```r
-for (i in 1:5){
+  
+  
+  ```r
+  for (i in 1:5){
   print(i)
-}
-```
-
-```
-## [1] 1
-## [1] 2
-## [1] 3
-## [1] 4
-## [1] 5
-```
+  }
+  ```
+  
+  ```
+  ## [1] 1
+  ## [1] 2
+  ## [1] 3
+  ## [1] 4
+  ## [1] 5
+  ```
 
 Or until some condition is met
 
@@ -131,6 +124,7 @@ Note that this second version, a "while loop" uses a test expression just like a
 Loops are useful wherever you might want to repeat some operation.
 
 
+
 ```r
 years <- 10 #how many years since you started saving
 savings <-100 #how much you start with
@@ -147,7 +141,7 @@ print(paste("After", years, "years you will have £", round(savings,2))) #save m
 ```
 
 Lots of people advise against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation:
-
+ 
 
 ```r
 years <- 20 #how many years since you started saving
@@ -155,17 +149,14 @@ savings <-100 #how much you start with
 interest <- 1.05 #rate of interest, ie 5% interest
 #Calculate using a vector
 total_at_each_year=savings*interest**(1:years) #rather than a loop all the answer values are stored in a single vector
-plot(total_at_each_year,xlab="years") #bonus! We can plot, since we now have all the intervening values saved
+#plot(total_at_each_year,xlab="years") #bonus! We can plot, since we now have all the intervening values saved
 ```
-
-<img src="007-coding_files/figure-html/unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" />
 
 The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation. 
 
 
 
-
-### Functions {#functions}
+### Functions
 
 Functions take in values (called "arguments"), do something with them, and give a value or values back in return. You have already used functions, for example the mean function
 
@@ -200,7 +191,7 @@ Now, when we call the function, we pass actual values.
 
 
 ```r
-print(myfunctionname(3))
+myfunctionname(3)
 ```
 
 ```
@@ -251,53 +242,53 @@ outcheck(7,5)
 Variables within functions are kept 'inside' the functions (within the "scope" of the function). Once you pass a value to a function is acquires the label set in the function definition. Variables defined within the function don't persist outside of it (they don't affect the "global environment")
 
 So, for example, it doesn't matter if you have another variable called `threshold`, the threshold within the function is set by the second value passed it. Like this:
-
-
-```r
-threshold <- 100
-outcheck(7,5) #returns NA because 7 is higher than 5
-```
-
-```
-## [1] NA
-```
-
-
-### Exercises
-
-* Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even
-  * hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
-* Write a loop which goes from 10 to 20 in steps of 3
-* Write a function which prints "FIZZ" if a number is divisible by 3, and "BUZZ" if it is divisible by 5 and "FIZZBUZZ" if it is divisble by 3 *and* 5
-* Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
-
-
-
-### More
-
-Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations & Functions](https://psyteachr.github.io/msc-data-skills/func.html)
-
-[datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
-
-## Fundamental principles of good code
-
-### Readability Matters
-
-Your most important collaborator is you from six months ago, and they don't answer email.
+                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                ```r
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              threshold <- 100
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              outcheck(7,5) #returns NA because 7 is higher than 5
+                                                                                                                                                                                                                                                                ```
+                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                ```
+                                                                                                                                                                                                                                                                ## [1] NA
+                                                                                                                                                                                                                                                                ```
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              ### Exercises
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              * Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even
+                                                                                                                                                                                                                                                              * hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
+                                                                                                                                                                                                                                                              * Write a loop which goes from 10 to 20 in steps of 3
+                                                                                                                                                                                                                                                              * Write a function which prints "FIZZ" if a number is divisible by 3, and "BUZZ" if it is divisible by 5 and "FIZZBUZZ" if it is divisble by 3 *and* 5
+                                                                                                                                                                                                                                                              * Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              ### More
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations & Functions](https://psyteachr.github.io/msc-data-skills/func.html)
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              [datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              ## Fundamental principles of good code
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              ### Readability Matters
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              Your most important collaborator is you from six months ago, and they don't answer email.
 
 Good code doesn't just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).
-
-To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing. 
-
-Look at this function, it hard to understand, right?
-
-
-
-```r
-pf <- function(n){ p=1 ; if (n>1){ i = 2; while( (i<(n/2+1)) & (p==1) ) {if (n%%i ==0) p=0; i=i+1 }  } else {p=0 }; return(p) }
-```
-
-This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing. 
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              Look at this function, it hard to understand, right?
+                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                ```r
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              pf <- function(n){ p=1 ; if (n>1){ i = 2; while( (i<(n/2+1)) & (p==1) ) {if (n%%i ==0) p=0; i=i+1 }  } else {p=0 }; return(p) }
+                                                                                                                                                                                                                                                                ```
+                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                              This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).
 
 Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:
 
@@ -359,19 +350,19 @@ primecheck <- function(num){
   if (num>1){ 
     i = 2 #a counter, starting at 2 (because all numbers divide by 1)
       #use while loop to check all divisors until we've done them all or we find one (and confirm the number is not prime)
-      while( (i<(num/2+1)) & (isprime==TRUE) ) {
-        if (num%%i ==0) {
-          #if the number divides by another number with no remainder it can't be prime, so we change the flag
-          isprime=FALSE
-        }
-        i=i+1 # increment the counter, so we work through all possible divisors
-      }
-      
-  } else {
-    # if the number is 1 or lower it can't be prime, so we change the flag
+while( (i<(num/2+1)) & (isprime==TRUE) ) {
+  if (num%%i ==0) {
+    #if the number divides by another number with no remainder it can't be prime, so we change the flag
     isprime=FALSE
   }
-  return(isprime) #return the flag as the output of the function, 0 -> not prime, 1 -> prime
+  i=i+1 # increment the counter, so we work through all possible divisors
+}
+
+} else {
+  # if the number is 1 or lower it can't be prime, so we change the flag
+  isprime=FALSE
+}
+return(isprime) #return the flag as the output of the function, 0 -> not prime, 1 -> prime
 }
 ```
 
@@ -388,19 +379,19 @@ primecheck <- function(num){
   if (num>1){ 
     i = 2 #a counter
       #check all divisors until we've done them all or we find one 
-      while( (i<(num/2+1)) & (isprime==TRUE) ) {
-        if (num%%i ==0) {
-          #no remainder -> number isn't prime
-          isprime=FALSE
-        }
-        i=i+1 # increment the counter
-      }
-      
-  } else {
-    # if the number is 1 or lower it can't be prime
+while( (i<(num/2+1)) & (isprime==TRUE) ) {
+  if (num%%i ==0) {
+    #no remainder -> number isn't prime
     isprime=FALSE
   }
-  return(isprime)
+  i=i+1 # increment the counter
+}
+
+} else {
+  # if the number is 1 or lower it can't be prime
+  isprime=FALSE
+}
+return(isprime)
 }
 ```
 
@@ -409,11 +400,11 @@ This version is 22 lines rather than 1, but I hope you agree it is easier to wor
 ### Avoid hard coded values
 
 Say you were going to load some data, you could do this:
-
-
-```r
-mydata = read.csv('/home/tom/Desktop/psy6422/mydatafile.csv')
-```
+  
+  
+  ```r
+  mydata = read.csv('/home/tom/Desktop/psy6422/mydatafile.csv')
+  ```
 
 Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them.
 
@@ -541,6 +532,4 @@ If you're on this module you can post it to Slack on the r-coding channel, or if
 * Barnes, N. (2010). [Publish your computer code: it is good enough](https://www.nature.com/articles/467753a). Nature, 467(7317), 753-753.
 * Axelrod, V. (2014). [Minimizing bugs in cognitive neuroscience programming](https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full). Frontiers in psychology, 5, 1435.
 * Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... & Waugh, B. (2014). [Best practices for scientific computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745). PLoS biology] 12(1), e1001745.
-=======
-Somethgun else here
->>>>>>> 9d6390dea5dd47fb0c5fa39305ed68d644dd219e
+
