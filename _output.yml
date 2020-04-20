@@ -1,5 +1,17 @@
 bookdown::gitbook: 
-toc_depth: 1
-toc:
-  collapsed: true
-  smooth_scroll: true
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+config:
+  toc:
+    collapse: section
+    scroll_highlight: yes
+    before: |
+      <li><a href="./">PSY6422 Data Management & Visualisation</a></li>
+    after: |
+      <li><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" 
+          target="blank"><img alt="Creative Commons License" 
+          style="border-width:0" 
+          src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><li>
+      <li><a href="tomstafford.staff.shef.ac.uk/" target="blank">Tom Stafford</a></li>
