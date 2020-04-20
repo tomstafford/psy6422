@@ -16,11 +16,11 @@ Here's is the [relevant page of the manual](https://bookdown.org/yihui/bookdown/
 
 You can see that I have 
 
-```{r}
+``
 collapse: section
-```
+``
 
-in my ''_output.yml'' file [here](https://github.com/tomstafford/psy6422/blob/master/_output.yml). Why doesn't it work
+in my ``_output.yml`` file [here](https://github.com/tomstafford/psy6422/blob/master/_output.yml). Why doesn't it work
 
 How do I get a horizontal line in the TOC/sidebar?
 

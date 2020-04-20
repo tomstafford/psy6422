@@ -204,6 +204,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="help-plz" class="section level2">
 <h2><span class="header-section-number">11.9</span> Help plz</h2>
 <p>Why doesn't the TOC in the leftbar collapse when clicked (or toggle between open and collapsed <a href="https://psyteachr.github.io/book-template/">like it should</a>)?</p>
+<p>Here's is the <a href="https://bookdown.org/yihui/bookdown/html.html">relevant page of the manual</a></p>
+<p>You can see that I have</p>
+<p><code>collapse: section</code></p>
+<p>in my <code>_output.yml</code> file <a href="https://github.com/tomstafford/psy6422/blob/master/_output.yml">here</a>. Why doesn't it work</p>
 <p>How do I get a horizontal line in the TOC/sidebar?</p>
 </div>
 <div id="python" class="section level2">
@@ -384,8 +388,7 @@ gitbook.start({
 },
 "download": {},
 "toc": {
-"collapse": "subsection",
-"toc_depth": 0
+"collapse": "section"
 }
 });
 });
