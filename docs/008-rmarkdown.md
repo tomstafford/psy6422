@@ -1,5 +1,10 @@
 # Rmarkdown
 
+
+<div class="info">
+<p><em>Note this is a placeholder page. This material hasn't been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
+</div>
+
 These pages are written in Rmarkdown. You can see this individual file [here in the online repositry](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd)
 
 Rstudio magic turns this file in to a webpage which you are probably looking at now.
