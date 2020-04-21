@@ -1,13 +1,13 @@
-# Reading List
+# Extra Reading 
 
 <img src="images/ds_library.jpeg" style="width: 400px; float: center;">
 
 
 Further reading, including books, links, demos and packages. You don't need to read all of this, but you will want to dig around. If I could recommend one book to accompany the courseit would be 
 
-```{block, type="info"}
-Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.co/). Princeton University Press.
-```
+<div class="info">
+<p>Healy, K. (2018). <a href="https://socviz.co/">Data visualization: a practical introduction</a>. Princeton University Press.</p>
+</div>
 
 ## Visualisation (theory)
 
