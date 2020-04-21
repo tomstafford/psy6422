@@ -22,6 +22,9 @@ knitr::write_bib(c(
 
 ```
 
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
+```
 
 # Module Overview 
 

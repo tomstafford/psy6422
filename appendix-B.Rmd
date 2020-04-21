@@ -4,7 +4,15 @@
 
 These pages based on [a template](https://psyteachr.github.io/book-template/) published by the awesome [psyTeachR team](https://psyteachr.github.io/about/). Extra thanks to Lisa DeBruine for help.
 
+## Colophone
+
 Find the repo here: [https://github.com/tomstafford/psy6422/](https://github.com/tomstafford/psy6422/)
+
+Everything worked better when I:
+* set GitHub pages to run off of Master/docs
+* listenedd to Lisa and used bookdown at the CL, not knit in Rstudio, to render the pages: ``R -e 'bookdown::render_book("index.Rmd")'``
+* installed [R 3.6](https://cran.r-project.org/bin/linux/ubuntu/README.html)
+* installed [Webex](https://github.com/PsyTeachR/webex)
 
 ## Python
 
