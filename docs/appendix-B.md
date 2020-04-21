@@ -1,4 +1,4 @@
-# Appendices {-}
+# Notes
 
 ## Credit
 
