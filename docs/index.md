@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
-date: '2020-04-20'
+date: '2020-04-21'
 bibliography:
 - book.bib
 - packages.bib
