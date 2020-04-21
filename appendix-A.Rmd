@@ -1,4 +1,4 @@
-# Extra Reading (#reading)
+# Extra Reading
 
 <img src="images/ds_library.jpeg" style="width: 400px; float: center;">
 
