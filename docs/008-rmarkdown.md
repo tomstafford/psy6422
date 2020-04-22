@@ -32,7 +32,41 @@ That looks like this, at the top of the file
 
 ![Yaml matter at the top of a .Rmd file](images/yaml.png)
 
-This is called YAML and it is stuff meant to be read by the computer when the file is converted into a document to be read by humans. You can see that this is meant to be an "HTML" document (that's the kind on a webpage), so let's make it now. Click "knit" in RStudio (or "knit to HTML" if you are exploring the options menu)
+This is called YAML and it is stuff meant to be read by the computer when the file is converted into a document to be read by humans. You can see that this is meant to be an "HTML" document (that's the kind on a webpage), so let's make it now. Click "knit" in RStudio (or "knit to HTML" if you are exploring the options menu).
+
+After a brief pause you should get a new window open, containing something that some of the same words as your document. Notice how the YAML stuff has disappeared, and the document now contains formatting (bold, italics, headings).
+
+# Second, text
+
+If you just write stuff in a .Rmd document you get text, like this.
+
+It can contain formatting - *italics*, **bold**, etc - as well as stuff like lists and hyperlinks
+
+* See the formatting options in this [cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
+* Lists need a second options
+
+But the real strength of Rmarkdown is you can mix text and code
+
+# Third, code
+
+Like this
+
+
+```r
+print("Here is some R code")
+a <- 6
+b <- 2.3
+
+print(a/b)
+```
+
+```
+## [1] "Here is some R code"
+## [1] 2.608696
+```
+
+
+
 
 
 

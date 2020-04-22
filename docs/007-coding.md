@@ -65,7 +65,7 @@ You can actually have as many branches as you like, defining a series of test_ex
 
 
 ```r
-type_of_thing='' 
+type_of_thing <- '' 
 print("Is four a lot?")
 if (type_of_thing=='Murders'){
   print("yes")
@@ -162,7 +162,7 @@ Functions take in values (called "arguments"), do something with them, and give 
 
 
 ```r
-my_nums=c(78,12,32,24,03,89) #just a vector of some numbers
+my_nums <- c(78,12,32,24,03,89) #just a vector of some numbers
 mean(my_nums) #use the mean function to find the average
 ```
 
