@@ -24,7 +24,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2020-04-21" />
+<meta name="date" content="2020-04-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -126,10 +126,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.1.1" data-path="coding-principles.html"><a href="coding-principles.html#if"><i class="fa fa-check"></i><b>6.1.1</b> If statements</a></li>
 <li class="chapter" data-level="6.1.2" data-path="coding-principles.html"><a href="coding-principles.html#loops"><i class="fa fa-check"></i><b>6.1.2</b> Loops</a></li>
 <li class="chapter" data-level="6.1.3" data-path="coding-principles.html"><a href="coding-principles.html#functions"><i class="fa fa-check"></i><b>6.1.3</b> Functions</a></li>
-<li class="chapter" data-level="6.1.4" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>6.1.4</b> Avoid hard coded values</a></li>
-<li class="chapter" data-level="6.1.5" data-path="coding-principles.html"><a href="coding-principles.html#functionalise-generalise"><i class="fa fa-check"></i><b>6.1.5</b> Functionalise &amp; Generalise</a></li>
-<li class="chapter" data-level="6.1.6" data-path="coding-principles.html"><a href="coding-principles.html#ask-for-help"><i class="fa fa-check"></i><b>6.1.6</b> Ask for help</a></li>
-<li class="chapter" data-level="6.1.7" data-path="coding-principles.html"><a href="coding-principles.html#more-1"><i class="fa fa-check"></i><b>6.1.7</b> More</a></li>
+<li class="chapter" data-level="6.1.4" data-path="coding-principles.html"><a href="coding-principles.html#exercises"><i class="fa fa-check"></i><b>6.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>6.2</b> Fundamental principles of good code</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="coding-principles.html"><a href="coding-principles.html#readability-matters"><i class="fa fa-check"></i><b>6.2.1</b> Readability Matters</a></li>
+<li class="chapter" data-level="6.2.2" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>6.2.2</b> Avoid hard coded values</a></li>
+<li class="chapter" data-level="6.2.3" data-path="coding-principles.html"><a href="coding-principles.html#functionalise-generalise"><i class="fa fa-check"></i><b>6.2.3</b> Functionalise &amp; Generalise</a></li>
+<li class="chapter" data-level="6.2.4" data-path="coding-principles.html"><a href="coding-principles.html#ask-for-help"><i class="fa fa-check"></i><b>6.2.4</b> Ask for help</a></li>
+<li class="chapter" data-level="6.2.5" data-path="coding-principles.html"><a href="coding-principles.html#more-1"><i class="fa fa-check"></i><b>6.2.5</b> More</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>7</b> Rmarkdown</a><ul>
@@ -259,7 +263,7 @@ a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </s
 savings &lt;-<span class="dv">100</span> <span class="co">#how much you start with</span>
 interest &lt;-<span class="st"> </span><span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span>
 <span class="co">#Calculate using a loop</span>
-<span class="cf">for</span> (years <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>years){
+<span class="cf">for</span> (year <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>years){
   savings&lt;-savings<span class="op">*</span>interest
 }
 <span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;After&quot;</span>, years, <span class="st">&quot;years you will have £&quot;</span>, <span class="kw">round</span>(savings,<span class="dv">2</span>))) <span class="co">#save more, kids</span></code></pre></div>
@@ -310,49 +314,33 @@ output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines o
 <h4><span class="header-section-number">6.1.3.1</span> A note about scope</h4>
 <p>Variables within functions are kept 'inside' the functions (within the &quot;scope&quot; of the function). Once you pass a value to a function is acquires the label set in the function definition. Variables defined within the function don't persist outside of it (they don't affect the &quot;global environment&quot;)</p>
 <p>So, for example, it doesn't matter if you have another variable called <code>threshold</code>, the threshold within the function is set by the second value passed it. Like this:</p>
-<pre><code>                                                                                                                                                                                                                                                            ```r
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          threshold &lt;- 100
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          outcheck(7,5) #returns NA because 7 is higher than 5
-                                                                                                                                                                                                                                                            ```
-                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                            ```
-                                                                                                                                                                                                                                                            ## [1] NA
-                                                                                                                                                                                                                                                            ```
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          ### Exercises
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          * Write an if...else statement that prints &quot;ODD&quot; if the number is odd, &quot;EVEN&quot; if the number is even
-                                                                                                                                                                                                                                                          * hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
-                                                                                                                                                                                                                                                          * Write a loop which goes from 10 to 20 in steps of 3
-                                                                                                                                                                                                                                                          * Write a function which prints &quot;FIZZ&quot; if a number is divisible by 3, and &quot;BUZZ&quot; if it is divisible by 5 and &quot;FIZZBUZZ&quot; if it is divisble by 3 *and* 5
-                                                                                                                                                                                                                                                          * Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          ### More
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          Lisa DeBruine, &amp; Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations &amp; Functions](https://psyteachr.github.io/msc-data-skills/func.html)
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          [datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          ## Fundamental principles of good code
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          ### Readability Matters
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          Your most important collaborator is you from six months ago, and they don&#39;t answer email.</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">threshold &lt;-<span class="st"> </span><span class="dv">100</span>
+<span class="kw">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>) <span class="co">#returns NA because 7 is higher than 5</span></code></pre></div>
+<pre><code>## [1] NA</code></pre>
+</div>
+</div>
+<div id="exercises" class="section level3">
+<h3><span class="header-section-number">6.1.4</span> Exercises</h3>
+<pre><code>                                                                                            * Write an if...else statement that prints &quot;ODD&quot; if the number is odd, &quot;EVEN&quot; if the number is even</code></pre>
+<ul>
+<li>hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)</li>
+<li>Write a loop which goes from 10 to 20 in steps of 3</li>
+<li>Write a function which prints &quot;FIZZ&quot; if a number is divisible by 3, and &quot;BUZZ&quot; if it is divisible by 5 and &quot;FIZZBUZZ&quot; if it is divisble by 3 <em>and</em> 5</li>
+<li>Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number ### More</li>
+</ul>
+<p>Lisa DeBruine, &amp; Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. <a href="http://doi.org/10.5281/zenodo.3564555" class="uri">http://doi.org/10.5281/zenodo.3564555</a>: <a href="https://psyteachr.github.io/msc-data-skills/func.html">Iterations &amp; Functions</a></p>
+<p><a href="https://www.datamentor.io/r-programming/if-else-statement/">datamentor.io on Flow control</a></p>
+</div>
+</div>
+<div id="fundamental-principles-of-good-code" class="section level2">
+<h2><span class="header-section-number">6.2</span> Fundamental principles of good code</h2>
+<div id="readability-matters" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Readability Matters</h3>
+<p>Your most important collaborator is you from six months ago, and they don't answer email.</p>
 <p>Good code doesn't just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).</p>
-<pre><code>                                                                                                                                                                                                                                                          To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing. 
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          Look at this function, it hard to understand, right?
-                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                            ```r
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          pf &lt;- function(n){ p=1 ; if (n&gt;1){ i = 2; while( (i&lt;(n/2+1)) &amp; (p==1) ) {if (n%%i ==0) p=0; i=i+1 }  } else {p=0 }; return(p) }
-                                                                                                                                                                                                                                                            ```
-                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                                                                          This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won&#39;t understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).</code></pre>
+<p>To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing. Look at this function, it hard to understand, right?</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pf &lt;-<span class="st"> </span><span class="cf">function</span>(n){ p=<span class="dv">1</span> ; <span class="cf">if</span> (n<span class="op">&gt;</span><span class="dv">1</span>){ i =<span class="st"> </span><span class="dv">2</span>; <span class="cf">while</span>( (i<span class="op">&lt;</span>(n<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(p<span class="op">==</span><span class="dv">1</span>) ) {<span class="cf">if</span> (n<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) p=<span class="dv">0</span>; i=i<span class="op">+</span><span class="dv">1</span> }  } <span class="cf">else</span> {p=<span class="dv">0</span> }; <span class="kw">return</span>(p) }</code></pre></div>
+<p>This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).</p>
 <p>Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pf &lt;-<span class="st"> </span><span class="cf">function</span>(n){
   p=<span class="dv">1</span>
@@ -436,9 +424,8 @@ output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines o
 }</code></pre></div>
 <p>This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There's no shortage of space in R scripts, so if in doubt, put some effort in to laying things out nicely, use sensible names for variable functions and add comments. You'll thank yourself when you come back to your code (which you will always have to).</p>
 </div>
-</div>
 <div id="avoid-hard-coded-values" class="section level3">
-<h3><span class="header-section-number">6.1.4</span> Avoid hard coded values</h3>
+<h3><span class="header-section-number">6.2.2</span> Avoid hard coded values</h3>
 <p>Say you were going to load some data, you could do this:</p>
 <p><code>r   mydata = read.csv('/home/tom/Desktop/psy6422/mydatafile.csv')</code></p>
 <p>Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them.</p>
@@ -467,7 +454,7 @@ graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_p
 <p>This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.</p>
 </div>
 <div id="functionalise-generalise" class="section level3">
-<h3><span class="header-section-number">6.1.5</span> Functionalise &amp; Generalise</h3>
+<h3><span class="header-section-number">6.2.3</span> Functionalise &amp; Generalise</h3>
 <p>If you ever find yourself using very similar lines of code, you should think about making a function. Functions make your code shorter and easier to read (and write), and they make it <em>way</em> easier to update (because when you catch a bug you can just update the code in the function, rather than every time you repeated those lines).</p>
 <p>Functions are also an opportunity to think to yourself &quot;what is the most general purpose way of doing what I'm doing&quot;. Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things.</p>
 <p>Let's look at a toy example:</p>
@@ -495,7 +482,7 @@ mynumbers &lt;-<span class="st"> </span><span class="kw">myfunc</span>(mynumbers
 <p>This code is easier to read, easier to change, and you can write new code which uses this function again.</p>
 </div>
 <div id="ask-for-help" class="section level3">
-<h3><span class="header-section-number">6.1.6</span> Ask for help</h3>
+<h3><span class="header-section-number">6.2.4</span> Ask for help</h3>
 <p>Nobody finds this easy straight away. Learning how to find help a core programming skill (along with not giving up when it feels like you are completely stuck).</p>
 <p>Part of this is knowing how programming people talk about stuff so you can search effectively for solutions.</p>
 <p>If you get an error message, copy and paste it into your search.</p>
@@ -503,7 +490,7 @@ mynumbers &lt;-<span class="st"> </span><span class="kw">myfunc</span>(mynumbers
 <p>If you're on this module you can post it to Slack on the r-coding channel, or if not try seeking out R groups in your city or institution. Shout out to <a href="https://rladies.org/">Rladies</a></p>
 </div>
 <div id="more-1" class="section level3">
-<h3><span class="header-section-number">6.1.7</span> More</h3>
+<h3><span class="header-section-number">6.2.5</span> More</h3>
 <ul>
 <li><a href="https://inattentionalcoffee.wordpress.com/2017/01/13/program-better-for-fun-and-for-profit/">Program better, for fun and for profit</a></li>
 <li><a href="https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/">Prime Hints For Running A Data Project In R</a></li>

@@ -97,7 +97,7 @@ years <- 10 #how many years since you started saving
 savings <-100 #how much you start with
 interest <- 1.05 #rate of interest, ie 5% interest
 #Calculate using a loop
-for (years in 1:years){
+for (year in 1:years){
   savings<-savings*interest
 }
 print(paste("After", years, "years you will have £", round(savings,2))) #save more, kids
@@ -185,48 +185,39 @@ Variables within functions are kept 'inside' the functions (within the "scope" o
 
 So, for example, it doesn't matter if you have another variable called `threshold`, the threshold within the function is set by the second value passed it. Like this:
                                                                                                                                                                                                                                                                 
-                                                                                                                                                                                                                                                                ```{r}
-                                                                                                                                                                                                                                                              threshold <- 100
-                                                                                                                                                                                                                                                              outcheck(7,5) #returns NA because 7 is higher than 5
-                                                                                                                                                                                                                                                              ```
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              ### Exercises
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              * Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even
-                                                                                                                                                                                                                                                              * hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
-                                                                                                                                                                                                                                                              * Write a loop which goes from 10 to 20 in steps of 3
-                                                                                                                                                                                                                                                              * Write a function which prints "FIZZ" if a number is divisible by 3, and "BUZZ" if it is divisible by 5 and "FIZZBUZZ" if it is divisble by 3 *and* 5
-                                                                                                                                                                                                                                                              * Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              ### More
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations & Functions](https://psyteachr.github.io/msc-data-skills/func.html)
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              [datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              ## Fundamental principles of good code
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              ### Readability Matters
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              Your most important collaborator is you from six months ago, and they don't answer email.
+```{r}
+threshold <- 100
+outcheck(7,5) #returns NA because 7 is higher than 5
+```
+                                                                                            
+### Exercises
+                                                                                                * Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even
+* hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
+* Write a loop which goes from 10 to 20 in steps of 3
+* Write a function which prints "FIZZ" if a number is divisible by 3, and "BUZZ" if it is divisible by 5 and "FIZZBUZZ" if it is divisble by 3 *and* 5
+* Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
+### More
+
+Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations & Functions](https://psyteachr.github.io/msc-data-skills/func.html)
+
+[datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
+
+## Fundamental principles of good code
+
+### Readability Matters
+
+Your most important collaborator is you from six months ago, and they don't answer email.
 
 Good code doesn't just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing. 
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              Look at this function, it hard to understand, right?
-                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                
-                                                                                                                                                                                                                                                                ```{r}
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              pf <- function(n){ p=1 ; if (n>1){ i = 2; while( (i<(n/2+1)) & (p==1) ) {if (n%%i ==0) p=0; i=i+1 }  } else {p=0 }; return(p) }
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              ```
-                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                              This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).
+
+To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing. 
+                                                                                                Look at this function, it hard to understand, right?
+
+```{r}
+pf <- function(n){ p=1 ; if (n>1){ i = 2; while( (i<(n/2+1)) & (p==1) ) {if (n%%i ==0) p=0; i=i+1 }  } else {p=0 }; return(p) }
+```
+
+This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won't understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).
 
 Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:
 
