@@ -252,7 +252,8 @@ outcheck(7,5) #returns NA because 7 is higher than 5
 ```
 ## [1] NA
 ```
-                                                                                            
+
+
 ### Exercises
                                                                                                 * Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even
 * hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
