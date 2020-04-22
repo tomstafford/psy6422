@@ -259,11 +259,12 @@ outcheck(7,5) #returns NA because 7 is higher than 5
 * Write a loop which goes from 10 to 20 in steps of 3
 * Write a function which prints "FIZZ" if a number is divisible by 3, and "BUZZ" if it is divisible by 5 and "FIZZBUZZ" if it is divisble by 3 *and* 5
 * Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
+
 ### More
 
-Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations & Functions](https://psyteachr.github.io/msc-data-skills/func.html)
+* Lisa DeBruine, & Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. http://doi.org/10.5281/zenodo.3564555: [Iterations & Functions](https://psyteachr.github.io/msc-data-skills/func.html)
+* [datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
 
-[datamentor.io on Flow control](https://www.datamentor.io/r-programming/if-else-statement/)
 
 ## Fundamental principles of good code
 
@@ -394,10 +395,10 @@ This version is 22 lines rather than 1, but I hope you agree it is easier to wor
 
 Say you were going to load some data, you could do this:
   
-  
-  ```r
-  mydata = read.csv('/home/tom/Desktop/psy6422/mydatafile.csv')
-  ```
+
+```r
+mydata = read.csv('/home/tom/Desktop/psy6422/mydatafile.csv')
+```
 
 Now this happens to work on my computer, but it won't on yours. The reason it won't work isn't because there is a bug in how i'm loading data, just that you don't have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them.
 
