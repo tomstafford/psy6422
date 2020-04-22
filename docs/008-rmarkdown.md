@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Rmarkdown
 
 <div class="info">
@@ -6,7 +11,7 @@
 
 You need to be able to share you analysis. Comments are good for making code readable, but often you will want longer sections of text, mixed in with both the code you a running and the outputs of the code (e.g. the plots you are making with it). Do this with Rmarkdown.
 
-A Rmarkdown file is a plain text file, like a R script, but with the extension ``.Rmd'' rather than ``.R''. You can make one now in RStudio by clicking File >  New File > R Markdown. Or by saving an existing .R script as ``filename.Rmd``.
+A Rmarkdown file is a plain text file, like a R script, but with the extension ``.Rmd`` rather than ``.R``. You can make one now in RStudio by clicking File >  New File > R Markdown. Or by saving an existing .R script as ``filename.Rmd``.
 
 RMarkdown is the system which marks how text should look after it has been converted into a webpage or PDF or other document. The name RMarkdown is kind of a joke, since RMarkdown is a verion of a "markup langauge". Markups are the opposite of the [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) systems (like MS word or Google Docs) which you are used to.
 
@@ -34,22 +39,25 @@ That looks like this, at the top of the file
 
 This is called YAML and it is stuff meant to be read by the computer when the file is converted into a document to be read by humans. You can see that this is meant to be an "HTML" document (that's the kind on a webpage), so let's make it now. Click "knit" in RStudio (or "knit to HTML" if you are exploring the options menu).
 
-After a brief pause you should get a new window open, containing something that some of the same words as your document. Notice how the YAML stuff has disappeared, and the document now contains formatting (bold, italics, headings).
+After a brief pause you should get a new window open, containing something that some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings).
 
-# Second, text
+Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click "Knit" and select "Knit to PDF". It will want you to save the output file as something (I suggest ``temp.pdf''), but once you've done that you get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before. 
 
-If you just write stuff in a .Rmd document you get text, like this.
 
-It can contain formatting - *italics*, **bold**, etc - as well as stuff like lists and hyperlinks
+## Second, text
+
+If you just write stuff in a ``.Rmd`` document you get text. This is the second kind of thing in a ``.Rmd`` document, like this.
+
+It can contain formatting - *italics*, **bold**, etc - as well as stuff like lists and hyperlinks:
 
 * See the formatting options in this [cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 * Lists need a second options
 
 But the real strength of Rmarkdown is you can mix text and code
 
-# Third, code
+## Third, code
 
-Like this
+This is the third ingredient. Like this:
 
 
 ```r
