@@ -192,8 +192,8 @@ outcheck(7,5) #returns NA because 7 is higher than 5
 
 
 ### Exercises
-                                                                                                * Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even
-* hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
+
+* Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even (hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
 * Write a loop which goes from 10 to 20 in steps of 3
 * Write a function which prints "FIZZ" if a number is divisible by 3, and "BUZZ" if it is divisible by 5 and "FIZZBUZZ" if it is divisble by 3 *and* 5
 * Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number
