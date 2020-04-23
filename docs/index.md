@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
-date: '2020-04-22'
+date: '2020-04-23'
 output: pdf_document
 description: This is a template. Use it to start a new course book.
 documentclass: book

@@ -1,7 +1,13 @@
+---
+title: "Untitled"
+author: '@tomstafford'
+date: "23 April 2020"
+output: html_document
+---
 # Rmarkdown
 
 <div class="info">
-<p><em>Note this is a placeholder page. This material hasn't been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
+<p><em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
 </div>
 
 You need to be able to share you analysis. Comments are good for making code readable, but often you will want longer sections of text, mixed in with both the code you a running and the outputs of the code (e.g. the plots you are making with it). Do this with Rmarkdown.
@@ -46,7 +52,7 @@ If you just write stuff in a ``.Rmd`` document you get text. This is the second 
 It can contain formatting - *italics*, **bold**, etc - as well as stuff like lists and hyperlinks:
 
 * See the formatting options in this [cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
-* Lists need a second options
+* This line just to demonstrate that this is a list
 
 But the real strength of Rmarkdown is you can mix text and code
 
@@ -59,26 +65,93 @@ This is the third ingredient. Like this:
 print("Here is some R code")
 a <- 6
 b <- 2.3
-
 print(a/b)
+print("And the output it produces")
 ```
 
 ```
 ## [1] "Here is some R code"
 ## [1] 2.608696
+## [1] "And the output it produces"
 ```
 
+Here is another example
 
 
 
+```r
+#Code to make an example graph
+library(tidyverse)
+
+#load some data
+filename <- '/home/tom/Desktop/psy6422/mydatafile.csv'
+df <- read.csv(filename)
+
+#rename columns for easy labelling
+df <- df %>% rename(ppt = Participant.Number,asrs = Total.ASRS.Score)
+
+#plot parameters
+plottitle  <-  'ASRS values for each participant'
+xlab  <-  'Participant number'
+ylab  <-  'Total ASRS score'
+pointsize  <-  7
+
+#make plot
+p1 <- ggplot(data=df,aes(x=ppt,y=asrs))
+p1 + geom_point(size=pointsize) +
+  ggtitle(plottitle) +
+  xlab(xlab) +
+  ylab(ylab)
+```
+
+<img src="008-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" />
 
 
+You don't need to show the r code, but still include it in the document and use it to generate figures etc. 
 
-This called 
+The scatterplot above uses participant number as one of the axes, which doesn't really make any sense. A histogram is a better way of visualising the spread of scores on a single variable, so here is one:
+
+<img src="008-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" />
+
+The code to make this plot is contained in the same ``.Rmd`` file as this text, but I've hidden it so only the output is shown. To do this I set ``echo = FALSE`` for the r chunk in the ``.Rmd`` file. You'll have to look at the [source file](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd) to see this, because - obviously! - in the webpage you don't see any code.
+
+You can also put single values in ongoing text using Rmarkdown
+
+Imagine you have some data
+
+
+```r
+data = c(10,42,2,2,34,63)
+```
+
+You can then refer to it in the text. Like this: the mean of the data is 25.5
+
+If you are viewing on the webpage you see the answer, but the file contains an instruction to calculate ``mean(data)``.
+
+Neat, eh?
+
+
+## Conclusion
+
+Rmarkdown documents give you a powerful way to combine text, code and code outputs in one file. That means you don't lose track of how graphs are generated, or statistics are calculated. With RMarkdown your workflow is reproducible, so if you add new data you can udpate the final report with just one click. RMarkdown documents also encourage you to document fully and explain your code. You can export to different formats depending on your audience, all from the same file.
+
+## Exercises
+
+* Create a new RMarkdown document
+* Describe in text the data you are thinking of using for your assignment. 
+  * Use some highlights: bold, italics
+  * Use headings
+* Include an R chunk importning the data and showing the first few lines of the data
+* Show a graph of something (either a scatterplot, or a histogram perhaps)
+* Include some inline text, reporting a mean value (as my last example above)
+* Make PDF and a Word file by clicking "knit"
+* Email it to me
 
 ## Resources
 
 * [RStudio intro to Rmarkdown](https://rmarkdown.rstudio.com/)
 * [RStudio RMarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
+
+
 
 
