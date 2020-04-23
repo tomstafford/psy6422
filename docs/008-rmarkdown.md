@@ -32,15 +32,15 @@ Try now creating your own Rmarkdown file by clicking File > New File > Rmarkdown
 
 RMarkdown files have three components.
 
-## First a heading
+## First a header
 
-That looks like this, at the top of the file
+Aka "header material". It looks like this, at the top of the file:
 
 ![Yaml matter at the top of a .Rmd file](images/yaml.png)
 
 This is called YAML and it is stuff meant to be read by the computer when the file is converted into a document to be read by humans. You can see that this is meant to be an "HTML" document (that's the kind on a webpage), so let's make it now. Click "knit" in RStudio (or "knit to HTML" if you are exploring the options menu).
 
-After a brief pause you should get a new window open, containing something that some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings).
+After a brief pause you should get a new window open, containing something that has some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings).
 
 Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click "Knit" and select "Knit to PDF". It will want you to save the output file as something (I suggest ``temp.pdf''), but once you've done that you get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before. 
 
@@ -151,6 +151,7 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 
 * [RStudio intro to Rmarkdown](https://rmarkdown.rstudio.com/)
 * [RStudio RMarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
+* [markdownlivepreview.com](https://markdownlivepreview.com/)
 
 
 
