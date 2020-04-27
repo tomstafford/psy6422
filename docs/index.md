@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
-date: '2020-04-23'
+date: '2020-04-27'
 output: pdf_document
 description: This is a template. Use it to start a new course book.
 documentclass: book
@@ -17,7 +17,7 @@ biblio-style: apalike
 
 
 
-# Module Overview 
+# Module Overview {-}
 
 PSY6422 Data Management and Visualisation is part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/)
 
@@ -91,5 +91,6 @@ Stretch goal is to build an interactive data visualisation using Shiny
 ## More
 
 * Russ Poldrack's [Advice for learning to code from scratch ](http://www.russpoldrack.org/2016/05/advice-for-learning-to-code-from-scratch.html)
+* Neuroskeptic on a [true story of data analysis error](http://neuroskeptic.blogspot.com/2011/04/tufnel-effect.html) (and how you can avoid it) "if you're doing something which involves 100 steps, it only takes 1 mistake to render the other 99 irrelevant."
 
 

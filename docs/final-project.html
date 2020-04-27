@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Git and Github | PSY6422 Data Management and Visualisation @ The University of Sheffield</title>
+  <title>Final project | PSY6422 Data Management and Visualisation @ The University of Sheffield</title>
   <meta name="description" content="This is a template. Use it to start a new course book." />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Git and Github | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
+  <meta property="og:title" content="Final project | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Git and Github | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
+  <meta name="twitter:title" content="Final project | PSY6422 Data Management and Visualisation @ The University of Sheffield" />
   
   <meta name="twitter:description" content="This is a template. Use it to start a new course book." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="rmarkdown.html"/>
-<link rel="next" href="publishing.html"/>
+<link rel="prev" href="advanced-topics.html"/>
+<link rel="next" href="extra-reading.html"/>
 <script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -248,34 +248,51 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="git-and-github" class="section level1" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Git and Github</h1>
-<p>With our guest lecturer, Seb James</p>
-<div class="info">
-<p>
-<em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em>
-</p>
+<div id="final-project" class="section level1 unnumbered" number="">
+<h1>Final project</h1>
+<div id="choosing-your-data" class="section level2" number="9.4">
+<h2><span class="header-section-number">9.4</span> Choosing your data</h2>
+<p>The data is an excuse for the data visualisation, so don’t agonise over this, and go for simple over complex if you have a choice. I recommend you find a data set with variables which you understand. The lecture on March 19th covered how to find open data.</p>
+<div id="finding-data" class="section level3" number="9.4.1">
+<h3><span class="header-section-number">9.4.1</span> Finding Data</h3>
+<p>I will update these notes soon, but basically many papers are now published accommpanied by open data. Sometimes this is indicated by an Open Data Badge. For example, take a look at the <a href="https://journals.sagepub.com/toc/pss/current">current table of contents for Psychological Science</a>. The badges are an initiative of the Centre for Open Science <a href="https://cos.io/our-services/open-science-badges/" class="uri">https://cos.io/our-services/open-science-badges/</a></p>
+<p>You can also search a preprint archive such as <a href="https://psyarxiv.com/">psyarxiv</a>. Many, but not all, papers published as preprints will have open data. You can also search <a href="https://osf.io/">OSF.io</a> directly.</p>
+<p>Pick a topic and have a look at what is available</p>
+<p>The other route is large publicly available resources, such as <a href="https://ourworldindata.org/">Our World in Data</a></p>
 </div>
-<div id="before-the-class" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> Before the class</h2>
-<p>Create an account on <a href="https://github.com/">github.com</a>, if you don’t already have one.</p>
-<p>Make sure you have access to git on your computer:</p>
+</div>
+<div id="choose-your-graph" class="section level2" number="9.5">
+<h2><span class="header-section-number">9.5</span> Choose your graph</h2>
+<p>You only need to draw one graph, but more is permitted.</p>
+<p>The important thing is to show - either in the graph, or in text, or both - that you have thought about the logic of what you are visualising, <em>how</em> it shows the information and <em>why</em> this important</p>
+</div>
+<div id="check-list" class="section level2" number="9.6">
+<h2><span class="header-section-number">9.6</span> Check list</h2>
+<p>Here are some questions to ask youself as you prepare your project</p>
 <ul>
-<li>Students using windows can install: <a href="https://gitforwindows.org/" class="uri">https://gitforwindows.org/</a> Once installed they should be able to open a git bash window and type <code>git --version</code></li>
-<li>Students on a Mac will have git if they install ‘Xcode’ and ‘Command line tools for Xcode’.They can test by opening a terminal and typing <code>git --version</code></li>
+<li>do I care about this topic and/or data?</li>
+<li>do you have access to the raw data?</li>
+<li>can load it?
+<ul>
+<li>if you can open it in a spreadsheet you will be definitely be able to open it in R, but you will still want to check if it is well formatted when you load it in R
+<ul>
+<li>for example, if different cells have different amounts of information in your data won’t import nicely</li>
+<li>or, if you important information is contained in cell colours then this won’t be avaialble when you import into R</li>
+</ul></li>
+</ul></li>
+<li>Do you understand it?
+<ul>
+<li>is there a code book?</li>
+<li>do you know what the columsn are?</li>
+<li>do you understand the values?</li>
+</ul></li>
 </ul>
-</div>
-<div id="resources-1" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Resources</h2>
-<p>Intro to git talk: <a href="https://github.com/ABRG-Models/GitTutorial" class="uri">https://github.com/ABRG-Models/GitTutorial</a></p>
-<p>Software carpentry: <a href="http://sebjameswml.github.io/git-novice/" class="uri">http://sebjameswml.github.io/git-novice/</a></p>
-</div>
-<div id="bonus-links" class="section level2" number="7.3">
-<h2><span class="header-section-number">7.3</span> Bonus Links</h2>
-<p><a href="https://www.sbf5.com/~cduan/technical/git/">Understanding Git Conceptually</a></p>
-<p>Vuorre, M., &amp; Curley, J. P. (2018). <a href="https://journals.sagepub.com/doi/full/10.1177/2515245918754826">Curating research assets: A tutorial on the git version control system</a>. Advances in Methods and Practices in Psychological Science, 1(2), 219-236.</p>
 
 </div>
+</div>
+
+
+
 </div>
 <div class="psyteachr_footer">
   
@@ -387,8 +404,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="rmarkdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="publishing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="advanced-topics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="extra-reading.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
