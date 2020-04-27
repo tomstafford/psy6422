@@ -3,7 +3,7 @@ title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
 date: '2020-04-27'
 output: pdf_document
-description: This is a template. Use it to start a new course book.
+description: Notes on the course - rapidly evolving!
 documentclass: book
 link-citations: yes
 bibliography:

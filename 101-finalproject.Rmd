@@ -36,3 +36,9 @@ Here are some questions to ask youself as you prepare your project
   * is there a code book?
   * do you know what the columsn are?
   * do you understand the values?
+  
+  
+  ## Answers to common questions
+  
+  1. it doesn't matter if you don't do the things you said you wanted to do in the initial self-assessment
+  2. you can use the data from another course, for example the course project (psy6009)
