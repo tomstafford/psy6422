@@ -1,8 +1,10 @@
 ---
 title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
-date: '`r Sys.Date()`'
-output: html_document
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
 ---
 # Rmarkdown
 
@@ -10,11 +12,11 @@ output: html_document
 *Note this is a placeholder page. This material hasn't been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly*
 ```
 
-You need to be able to share you analysis. Comments are good for making code readable, but often you will want longer sections of text, mixed in with both the code you a running and the outputs of the code (e.g. the plots you are making with it). Do this with Rmarkdown.
+You need to be able to share your analysis. Comments are good for making code readable, but often you will want longer sections of text, mixed in with both the code you are running and the outputs of the code (e.g. the plots you are making with it). Do this with Rmarkdown.
 
 A Rmarkdown file is a plain text file, like a R script, but with the extension ``.Rmd`` rather than ``.R``. You can make one now in RStudio by clicking File >  New File > R Markdown. Or by saving an existing .R script as ``filename.Rmd``.
 
-RMarkdown is the system which marks how text should look after it has been converted into a webpage or PDF or other document. The name RMarkdown is kind of a joke, since RMarkdown is a verion of a "markup langauge". Markups are the opposite of the [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) systems (like MS word or Google Docs) which you are used to.
+RMarkdown is the system which marks how text should look after it has been converted into a webpage, or PDF, or some other kind of document. The name RMarkdown is kind of a joke, since RMarkdown is a version of a "markup langauge". Markups are the opposite of the [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) systems (like MS word or Google Docs) which you are used to.
 
 These pages are written in Rmarkdown. You can see this individual file [here in the online repositry](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd). It will really help if you read the webpage alongside the file, so you can compare the file which generates the text, using the markdown, and the output (the webpage).
 
@@ -40,9 +42,11 @@ Aka "header material". It looks like this, at the top of the file:
 
 This is called YAML and it is stuff meant to be read by the computer when the file is converted into a document to be read by humans. You can see that this is meant to be an "HTML" document (that's the kind on a webpage), so let's make it now. Click "knit" in RStudio (or "knit to HTML" if you are exploring the options menu).
 
-After a brief pause you should get a new window open, containing something that has some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings).
+(you'll be prompted to give your ``.Rmd`` file a name first, if you haven't done this already).
 
-Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click "Knit" and select "Knit to PDF". It will want you to save the output file as something (I suggest ``temp.pdf''), but once you've done that you get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before. 
+After a brief pause you should get a new window open, containing something that has some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings, etc).
+
+Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click "Knit" and select "Knit to PDF". You get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before. 
 
 
 ## Second, text
@@ -58,7 +62,7 @@ But the real strength of Rmarkdown is you can mix text and code
 
 ## Third, code
 
-This is the third ingredient. Like this:
+This is the third ingredient, code and any output it produces. Like this:
 
 ```{r}
 
@@ -99,8 +103,8 @@ p1 + geom_point(size=pointsize) +
 
 ```
 
+You don't need to show the r code, but can still include it in the document and use it to generate figures etc. 
 
-You don't need to show the r code, but still include it in the document and use it to generate figures etc. 
 
 The scatterplot above uses participant number as one of the axes, which doesn't really make any sense. A histogram is a better way of visualising the spread of scores on a single variable, so here is one:
 
@@ -144,7 +148,7 @@ Neat, eh?
 
 ## Conclusion
 
-Rmarkdown documents give you a powerful way to combine text, code and code outputs in one file. That means you don't lose track of how graphs are generated, or statistics are calculated. With RMarkdown your workflow is reproducible, so if you add new data you can udpate the final report with just one click. RMarkdown documents also encourage you to document fully and explain your code. You can export to different formats depending on your audience, all from the same file.
+Rmarkdown documents give you a powerful way to combine text, code and code outputs in one file. That means you don't lose track of how graphs are generated, or statistics are calculated. With RMarkdown your workflow is reproducible, so if you add new data you can update the final report with just one click. RMarkdown documents also encourage you to document fully and explain your code. You can export to different formats depending on your audience, all from the same file.
 
 ## Exercises
 
@@ -152,11 +156,12 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 * Describe in text the data you are thinking of using for your assignment. 
   * Use some highlights: bold, italics
   * Use headings
-* Include an R chunk importning the data and showing the first few lines of the data
+* Include an R chunk importing the data and showing the first few lines of the data
+* Include some more text describing the key variables you are interested in
 * Show a graph of something (either a scatterplot, or a histogram perhaps)
 * Include some inline text, reporting a mean value (as my last example above)
 * Make PDF and a Word file by clicking "knit"
-* Email it to me
+* Email the .Rmd file *and the PDF to me
 
 ## Resources
 

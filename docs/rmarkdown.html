@@ -24,7 +24,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2020-04-27" />
+<meta name="date" content="2020-04-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -255,9 +255,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em>
 </p>
 </div>
-<p>You need to be able to share you analysis. Comments are good for making code readable, but often you will want longer sections of text, mixed in with both the code you a running and the outputs of the code (e.g. the plots you are making with it). Do this with Rmarkdown.</p>
+<p>You need to be able to share your analysis. Comments are good for making code readable, but often you will want longer sections of text, mixed in with both the code you are running and the outputs of the code (e.g. the plots you are making with it). Do this with Rmarkdown.</p>
 <p>A Rmarkdown file is a plain text file, like a R script, but with the extension <code>.Rmd</code> rather than <code>.R</code>. You can make one now in RStudio by clicking File &gt; New File &gt; R Markdown. Or by saving an existing .R script as <code>filename.Rmd</code>.</p>
-<p>RMarkdown is the system which marks how text should look after it has been converted into a webpage or PDF or other document. The name RMarkdown is kind of a joke, since RMarkdown is a verion of a “markup langauge”. Markups are the opposite of the <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> systems (like MS word or Google Docs) which you are used to.</p>
+<p>RMarkdown is the system which marks how text should look after it has been converted into a webpage, or PDF, or some other kind of document. The name RMarkdown is kind of a joke, since RMarkdown is a version of a “markup langauge”. Markups are the opposite of the <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> systems (like MS word or Google Docs) which you are used to.</p>
 <p>These pages are written in Rmarkdown. You can see this individual file <a href="https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd">here in the online repositry</a>. It will really help if you read the webpage alongside the file, so you can compare the file which generates the text, using the markdown, and the output (the webpage).</p>
 <p>Rstudio magic (called “rendering” or “knitting”) turns this file in to the webpage.</p>
 <p>Compare the <a href="https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd">file</a> and the <a href="https://tomstafford.github.io/psy6422/rmarkdown.html">webpage</a>.</p>
@@ -276,8 +276,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p class="caption">Yaml matter at the top of a .Rmd file</p>
 </div>
 <p>This is called YAML and it is stuff meant to be read by the computer when the file is converted into a document to be read by humans. You can see that this is meant to be an “HTML” document (that’s the kind on a webpage), so let’s make it now. Click “knit” in RStudio (or “knit to HTML” if you are exploring the options menu).</p>
-<p>After a brief pause you should get a new window open, containing something that has some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings).</p>
-<p>Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click “Knit” and select “Knit to PDF”. It will want you to save the output file as something (I suggest ``temp.pdf’’), but once you’ve done that you get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before.</p>
+<p>(you’ll be prompted to give your <code>.Rmd</code> file a name first, if you haven’t done this already).</p>
+<p>After a brief pause you should get a new window open, containing something that has some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings, etc).</p>
+<p>Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click “Knit” and select “Knit to PDF”. You get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before.</p>
 </div>
 <div id="second-text" class="section level2" number="6.3">
 <h2><span class="header-section-number">6.3</span> Second, text</h2>
@@ -291,7 +292,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="third-code" class="section level2" number="6.4">
 <h2><span class="header-section-number">6.4</span> Third, code</h2>
-<p>This is the third ingredient. Like this:</p>
+<p>This is the third ingredient, code and any output it produces. Like this:</p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="rmarkdown.html#cb43-1"></a><span class="kw">print</span>(<span class="st">&quot;Here is some R code&quot;</span>)</span>
 <span id="cb43-2"><a href="rmarkdown.html#cb43-2"></a>a &lt;-<span class="st"> </span><span class="dv">6</span></span>
 <span id="cb43-3"><a href="rmarkdown.html#cb43-3"></a>b &lt;-<span class="st"> </span><span class="fl">2.3</span></span>
@@ -324,7 +325,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb45-21"><a href="rmarkdown.html#cb45-21"></a><span class="st">  </span><span class="kw">xlab</span>(xlab) <span class="op">+</span></span>
 <span id="cb45-22"><a href="rmarkdown.html#cb45-22"></a><span class="st">  </span><span class="kw">ylab</span>(ylab)</span></code></pre></div>
 <p><img src="008-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<p>You don’t need to show the r code, but still include it in the document and use it to generate figures etc.</p>
+<p>You don’t need to show the r code, but can still include it in the document and use it to generate figures etc.</p>
 <p>The scatterplot above uses participant number as one of the axes, which doesn’t really make any sense. A histogram is a better way of visualising the spread of scores on a single variable, so here is one:</p>
 <p><img src="008-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>The code to make this plot is contained in the same <code>.Rmd</code> file as this text, but I’ve hidden it so only the output is shown. To do this I set <code>echo = FALSE</code> for the r chunk in the <code>.Rmd</code> file. You’ll have to look at the <a href="https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd">source file</a> to see this, because - obviously! - in the webpage you don’t see any code.</p>
@@ -337,7 +338,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="conclusion" class="section level2" number="6.5">
 <h2><span class="header-section-number">6.5</span> Conclusion</h2>
-<p>Rmarkdown documents give you a powerful way to combine text, code and code outputs in one file. That means you don’t lose track of how graphs are generated, or statistics are calculated. With RMarkdown your workflow is reproducible, so if you add new data you can udpate the final report with just one click. RMarkdown documents also encourage you to document fully and explain your code. You can export to different formats depending on your audience, all from the same file.</p>
+<p>Rmarkdown documents give you a powerful way to combine text, code and code outputs in one file. That means you don’t lose track of how graphs are generated, or statistics are calculated. With RMarkdown your workflow is reproducible, so if you add new data you can update the final report with just one click. RMarkdown documents also encourage you to document fully and explain your code. You can export to different formats depending on your audience, all from the same file.</p>
 </div>
 <div id="exercises-1" class="section level2" number="6.6">
 <h2><span class="header-section-number">6.6</span> Exercises</h2>
@@ -348,11 +349,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Use some highlights: bold, italics</li>
 <li>Use headings</li>
 </ul></li>
-<li>Include an R chunk importning the data and showing the first few lines of the data</li>
+<li>Include an R chunk importing the data and showing the first few lines of the data</li>
+<li>Include some more text describing the key variables you are interested in</li>
 <li>Show a graph of something (either a scatterplot, or a histogram perhaps)</li>
 <li>Include some inline text, reporting a mean value (as my last example above)</li>
 <li>Make PDF and a Word file by clicking “knit”</li>
-<li>Email it to me</li>
+<li>Email the .Rmd file *and the PDF to me</li>
 </ul>
 </div>
 <div id="resources" class="section level2" number="6.7">
