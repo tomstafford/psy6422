@@ -51,7 +51,7 @@ If you just write stuff in a ``.Rmd`` document you get text. This is the second 
 
 It can contain formatting - *italics*, **bold**, etc - as well as stuff like lists and hyperlinks:
 
-* See the formatting options in this [cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
+* See the formatting options in this [cheatsheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 * This line just to demonstrate that this is a list
 
 But the real strength of Rmarkdown is you can mix text and code
