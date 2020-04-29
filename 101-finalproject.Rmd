@@ -42,3 +42,6 @@ Here are some questions to ask youself as you prepare your project
   
   1. it doesn't matter if you don't do the things you said you wanted to do in the initial self-assessment
   2. you can use the data from another course, for example the course project (psy6009)
+  3. the data / data questions doesn't have to be something which expresses the relationship between two variables. Any visualisation which shows something non-trivial about the data is good.
+  4. You don't need to do any statistical tests or model fitting. You don't need to have a set amount of data to meet statistical significance, just enough to be interesting when visualised
+  5. You don't need more than a brief introduction to the data - no literature review please.
