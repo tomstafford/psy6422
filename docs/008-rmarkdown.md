@@ -3,7 +3,6 @@ title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
 date: "2020-04-29"
 output:
-  pdf_document: default
   html_document: default
 ---
 

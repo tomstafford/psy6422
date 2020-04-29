@@ -3,7 +3,6 @@ title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
 author: "Tom Stafford"
 date: "`r Sys.Date()`"
 output:
-  pdf_document: default
   html_document: default
 ---
 
@@ -112,7 +111,7 @@ The scatterplot above uses participant number as one of the axes, which doesn't 
 
 #plot parameters
 binwidth <- 6
-plottitle  <-  'Distributuon of ASRS values over sample'
+plottitle  <-  'Distribution of ASRS values over sample'
 xlab  <-  paste('Total ASRS score ( binwidth = ',binwidth,')')
 ylab  <-  'Frequency'
 #pointsize  <-  7
