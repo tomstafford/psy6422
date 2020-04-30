@@ -21,6 +21,8 @@ You only need to draw one graph, but more is permitted.
 
 The important thing is to show - either in the graph, or in text, or both - that you have thought about the logic of what you are visualising, *how* it shows the information and *why* this important
 
+You may find this helpful, a guide to different kinds of graphs and when they are appropriate, made by journalists at the Financial Times: [A visual vocabulary](https://ft-interactive.github.io/visual-vocabulary/)
+
 
 ## Check list
 
