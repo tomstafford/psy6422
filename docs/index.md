@@ -27,15 +27,27 @@ PSY6422 Data Management and Visualisation is part of the [MSc in Psychological R
   
 ## Motivation
 
-You are aiming to produce reproducible workflows - scripts that automate all steps between raw data and the final data in your papers.
+Psychological science is increasingly reliant on complex computational and statistical methods to make sense of rich behavioural data. This course aims to teach the skills which support creating robust and repoducibile analyses with such methods and data.
 
-Point and click solutions (spreedsheets, SPSS) are inadequate.
+As well as supporting sophisticated data visualisation, we aim to train you in reproducible workflows - meaning that you can reliably re-create all steps of an analysis using scripts that automate all steps between raw data and the final visualisation.
 
 As well as being *reproducible* (by you or other researchers) your work should be *legible* (to Future You, or other researchers) and *scalable* (it should work as well on 400,000 data points as on 40).
 
 You will need help to do this. Therefore you will use Open Source solutions - these are analysis products which have a worldwide community of people using them, and the infrastructure which supports sharing advice and solutions. 
 
-In practice, this means you are going to start by using R (you could use [Python](https://tomstafford.github.io/psy6422/appendices.html#python), but this module is based on R)
+In practice, this means you are going to start by using R (you could use [Python](https://tomstafford.github.io/psy6422/appendices.html#python), but this module is based on R).
+
+## Course Aims
+
+By the end of this course you will have:
+
+  * Been trained in data project management and the importance of reproducible workflows
+  * Used the statical programming language R, and RStudio, for data management, analysis and visualisation
+  * Been introduced to fundamental programming concepts
+  * Prepared data project documentation using RMarkdown
+  * Had an introduction to version control using git 
+  * Published data projects to the web via github pages
+  
 
 ## Resources for current students
 
@@ -60,12 +72,11 @@ In 2020 we are covering a compressed curriculum. The topics we cover are:
 3. R / Rstudio - introduction to the statistical computing language
 4. Making graphs
 5. Data Management
-6. Data Management 2
-7. Coding principles - fundamental principles of coding, writing good code, asking for help
-8. Rmarkdown
-9. Git and github
-10. Publishing to pages - like this one!
-11. Advanced topics
+6. Coding principles - fundamental principles of coding, writing good code, asking for help
+7. Rmarkdown
+8. Git and github
+9. Publishing to pages - like this one!
+10. Advanced topics
 
 Stretch goals:
 

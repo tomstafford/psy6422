@@ -13,6 +13,14 @@ With our guest lecturer, Seb James
 
 Create an account on [github.com](https://github.com/), if you don't already have one.
 
+Install git on your machine. 
+
+  * On Windows: https://git-scm.com/download/win
+  * On Mac: https://git-scm.com/download/mac
+  
+Until you do that you DON'T have the git features enabled in RStudio.
+
+
 ## Accessing git 
 
 If you have RStudio you can access git using point and click (top right), or via the terinmal (the tab next to Console on the bottom right). 
