@@ -26,6 +26,7 @@ Outside of RStudio:
 ## Resources for the class
 
 This week's class is taught by Seb James. Links to his materials are below
+
   * Intro to git talk: https://github.com/ABRG-Models/GitTutorial
   * Software carpentry: http://sebjameswml.github.io/git-novice/
 
