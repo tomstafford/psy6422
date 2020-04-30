@@ -13,6 +13,8 @@ With our guest lecturer, Seb James
 
 Create an account on [github.com](https://github.com/), if you don't already have one.
 
+## Accessing git 
+
 If you have RStudio you can access git using point and click (top right), or via the terinmal (the tab next to Console on the bottom right). 
 
 Outside of RStudio:
@@ -21,13 +23,17 @@ Outside of RStudio:
  * Students on a Mac will have git if they install 'Xcode' and 'Command line tools for Xcode'.They can test by opening a terminal and typing ``git --version``
 
 
-## Resources 
+## Resources for the class
 
-Intro to git talk: https://github.com/ABRG-Models/GitTutorial
-
-Software carpentry: http://sebjameswml.github.io/git-novice/
+This week's class is taught by Seb James. Links to his materials are below
+  * Intro to git talk: https://github.com/ABRG-Models/GitTutorial
+  * Software carpentry: http://sebjameswml.github.io/git-novice/
 
 ## Exercise - publishing your project with github pages
+
+Git and github are fundmental tools which will be relevant for collaborating on reliable computational projects, but it is not essential you master the full range of capabilities they offer for this module.
+
+The only essential from this class is that you can use github to publish an analysis. Follow these steps to check you can do this:
 
 1. Create a new github repositry (a "repo")
     * click "initilise with README.md"
@@ -40,7 +46,7 @@ Software carpentry: http://sebjameswml.github.io/git-novice/
     * Example: my repo is at [github.com/tomstafford/supertues](https://github.com/tomstafford/supertues), so the published pages are at [tomstafford.github.io/supertues](https://tomstafford.github.io/supertues/)
 
 
-## Bonus Links
+## Bonus Reading
 
 Official documentation: [github pages](https://help.github.com/en/github/working-with-github-pages)
 
