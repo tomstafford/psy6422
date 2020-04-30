@@ -41,7 +41,7 @@ In practice, this means you are going to start by using R (you could use [Python
 
 By the end of this course you will have:
 
-  * Been trained in data project management and the importance of reproducible workflows
+  * Been trained in data project management -- including fundamentals of data storage, syncronisation and sharing -- and the importance of reproducible workflows
   * Used the statical programming language R, and RStudio, for data management, analysis and visualisation
   * Been introduced to fundamental programming concepts
   * Prepared data project documentation using RMarkdown
@@ -65,20 +65,9 @@ You may particularly enjoy the [Reading list](extra-reading.html)
 
 ## Course Outline
 
-In 2020 we are covering a compressed curriculum. The topics we cover are:
+In 2020 we are covering a compressed curriculum. You can see the class topics in the leftbar
 
-1. Module overview - ethics and aesthetics of visualisaion, the importance of reproducible workflows
-2. Project organisation - fundamentals of data storage, syncronisation and sharing
-3. R / Rstudio - introduction to the statistical computing language
-4. Making graphs
-5. Data Management
-6. Coding principles - fundamental principles of coding, writing good code, asking for help
-7. Rmarkdown
-8. Git and github
-9. Publishing to pages - like this one!
-10. Advanced topics
-
-Stretch goals:
+### Stretch goals:
 
 Unfortunately we won't have time this year for a number of advanced topics which I would like to cover. Hopefully next year:
 
