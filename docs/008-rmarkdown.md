@@ -1,5 +1,5 @@
 ---
-title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
+title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
 date: "2020-04-30"
 output:

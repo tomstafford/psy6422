@@ -1,5 +1,5 @@
 ---
-title: "PSY6422 Data Management and Visualisation @ The University of Sheffield"
+title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
 date: "`r Sys.Date()`"
 output:
