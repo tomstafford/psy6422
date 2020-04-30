@@ -27,18 +27,17 @@ Intro to git talk: https://github.com/ABRG-Models/GitTutorial
 
 Software carpentry: http://sebjameswml.github.io/git-novice/
 
-## Exercises - publishing your project with github pages
+## Exercise - publishing your project with github pages
 
-1. Create a new github repositry
-  * click "initilise with README.md"
-2. Add .html file called index.html
-  * you can do this via the command line, in which case you need to add, commit and push to the remote repositry
-  * or you can drag and drop the upload via the webpage
-  * **NOTE**: To make the repostitry an archive of your project you can and should add all the other other files and folders, including the .Rmd file which you used to make the index.html file
+1. Create a new github repositry (a "repo")
+    * click "initilise with README.md"
+2. Add an .html file called index.html. This file can be created by clicking 'knit' in RStudio from your .Rmd file (see the class on [Rmarkdown](rmarkdown.html))
+    * You can add to a repo via the command line, in which case you need to add, commit and push to the remote repositry
+    * or you can drag and drop the upload via the webpage
+    * **NOTE**: To make the repositry an archive of your project you can and should add all the other other files and folders, including the .Rmd file which you used to make the index.html file
 3. Via the webpage click "Settings" and scroll down to "Github Pages". Under "Source" select "Master branch".
-4. Find your pages at my [yourusername.github.io/yourreponame]()
-
-Example: my repo is at [github.com/tomstafford/supertues](https://github.com/tomstafford/supertues), so the published pages are at [tomstafford.github.io/supertues](https://tomstafford.github.io/supertues/)
+4. Find your pages, after a short moment, at [yourusername.github.io/yourreponame]()
+    * Example: my repo is at [github.com/tomstafford/supertues](https://github.com/tomstafford/supertues), so the published pages are at [tomstafford.github.io/supertues](https://tomstafford.github.io/supertues/)
 
 
 ## Bonus Links
