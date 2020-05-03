@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
-date: "2020-04-30"
+date: "2020-05-03"
 output:
   html_document: default
 ---
@@ -146,7 +146,7 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 * Show a graph of something (either a scatterplot, or a histogram perhaps)
 * Include some inline text, reporting a mean value (as my last example above)
 * Make PDF and a Word file by clicking "knit"
-* Email the .Rmd file *and the PDF to me
+* ~~Email~~ Send the .Rmd file *and the PDF to me via a Slack direct message
 
 ## Resources
 
