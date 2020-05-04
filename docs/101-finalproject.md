@@ -1,5 +1,28 @@
 # Final project {-}
 
+The final project for the course contributes the bulk of your grade, as well as creating a portfolio piece for you to demonstrate what you learnt on the course. The final project is a chance to deploy all the skills taught on the course in a single complete data visualations project, which takes us from raw data and a question through data preparation and exploration through to publishing a visualisation and the documentation which shares your findings with others.
+
+## Project requirements
+
+A complete project, including raw data, analysis scripts, documentation and visualisations shared in a way that allows the visualisation to be reproduced and understood
+
+In practice, this means you should upload a project to github, containing a Rmarkdown file which explains your visualisation, as taught in the module (although alternatives are acceptable if they meet the primary criteria).
+
+Please include these headings in your project
+
+* Data Origins
+  * Answering questions of where it comes from, how it was collected, what the variables mean, etc
+* Research Questions
+  * in plain english, a simple statement of what question(s) your visulisation will attempt to address
+* Data Preparation
+  * steps taken to clean the data, exclude outliers, create summary statistics, grouped variables, etc
+  * showing the code which does this were relevant
+* Visualisation(s)
+  * graph or graphs
+  * documentation explaining any motivation (although good graph labelling is better than explanation in the accompanying text)
+  * code for producing them
+* Summary
+  * Brief thoughts on what you have learnt, what you might do next if you had more time / more data
 ## Choosing your data
 
 The data is an excuse for the data visualisation, so don't agonise over this, and go for simple over complex if you have a choice. I recommend you find a data set with variables which you understand. The lecture on March 19th covered how to find open data. 
