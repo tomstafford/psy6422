@@ -57,6 +57,12 @@ By the end of this course you will have:
   * Had an introduction to version control using git 
   * Published data projects to the web via github pages
   
+### Final project
+
+The bulk of the course assessment is to conduct and publish your own analysis project. By doing this you will have experience of combining all the skills taught on the course within a singe project. This will take a data visualisation from start to finish - from raw data, through data cleaning and documentation to sharing your code and the resulting visualisation on the web.
+
+See here for [more on the nature of your final project](final-project.html)
+
 
 ## Resources for current students
 
@@ -84,17 +90,6 @@ Unfortunately we won't have time this year for a number of advanced topics which
 * The terminal / ssh
 * Interactive visualisation with Shiny apps
 * SQL
-
-## Example Projects
-
-The bulk of the assessment is to conduct and publish your own analysis project. Here is an example small project which gives an idea of what I mean
-
-* SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
-
-Stretch goal is to build an interactive data visualisation using Shiny
-
-* Here's one I built earlier [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
-
 
 
 ## More

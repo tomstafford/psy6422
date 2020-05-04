@@ -36,14 +36,27 @@ Here are some questions to ask youself as you prepare your project
     * or, if you important information is contained in cell colours then this won't be avaialble when you import into R
 * Do you understand it?
   * is there a code book?
-  * do you know what the columsn are?
+  * do you know what the columns are?
   * do you understand the values?
   
   
-  ## Answers to common questions
+## Answers to common questions
   
   1. it doesn't matter if you don't do the things you said you wanted to do in the initial self-assessment
   2. you can use the data from another course, for example the course project (psy6009)
   3. the data / data questions doesn't have to be something which expresses the relationship between two variables. Any visualisation which shows something non-trivial about the data is good.
-  4. You don't need to do any statistical tests or model fitting. You don't need to have a set amount of data to meet statistical significance, just enough to be interesting when visualised
+  4. You don't need to do any statistical tests or model fitting. You don't need to have a set amount of data to meet statistical significance, just enough to be interesting when visualised.
   5. You don't need more than a brief introduction to the data - no literature review please.
+  6. This is a visualisation project, not an analysis project, so you don't need to do statistical analysis. You will, however, find that a clear question or set of questions helps develop a good visualisation and/or that a good visualisation helps clarify an unclear question or set of questions.
+  
+## Example Projects
+
+Here is an example small project which gives an idea of what I mean
+
+* SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
+
+### Stretch goals
+
+There hasn't been time to do this this year, but in future years we will aim to build an interactive data visualisations using the Shiny package. Here's one built for a research project I'm on : [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
+
+
