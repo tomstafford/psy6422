@@ -23,6 +23,8 @@ Please include these headings in your project
   * code for producing them
 * Summary
   * Brief thoughts on what you have learnt, what you might do next if you had more time / more data
+  
+  
 ## Choosing your data
 
 The data is an excuse for the data visualisation, so don't agonise over this, and go for simple over complex if you have a choice. I recommend you find a data set with variables which you understand. The lecture on March 19th covered how to find open data. 
