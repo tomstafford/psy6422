@@ -26,7 +26,7 @@ Please include these headings in your project
 * Summary
   * Brief thoughts on what you have learnt, what you might do next if you had more time / more data
   
-<div class="alert">
+<div class="info">
 <p>The ultimate aim is to make something that looks good and shows off your abilities. You want to produce something you are proud to show people (including future employers and supervisors)</p>
 </div>
   
