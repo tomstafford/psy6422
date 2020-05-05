@@ -12,10 +12,12 @@ Please include these headings in your project
 
 * Data Origins
   * Answering questions of where it comes from, how it was collected, what the variables mean, etc
+  * show the first few rows of the raw data, if possible
 * Research Questions
   * in plain english, a simple statement of what question(s) your visulisation will attempt to address
 * Data Preparation
   * steps taken to clean the data, exclude outliers, create summary statistics, grouped variables, etc
+  * show the first few rows of the processed data, if possible
   * showing the code which does this were relevant
 * Visualisation(s)
   * graph or graphs
@@ -24,6 +26,9 @@ Please include these headings in your project
 * Summary
   * Brief thoughts on what you have learnt, what you might do next if you had more time / more data
   
+```{block, type="alert"}
+The ultimate aim is to make something that looks good and shows off your abilities. You want to produce something you are proud to show people (including future employers and supervisors)
+```  
   
 ## Choosing your data
 

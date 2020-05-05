@@ -24,7 +24,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2020-05-04" />
+<meta name="date" content="2020-05-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -273,6 +273,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>RMarkdown is the system which marks how text should look after it has been converted into a webpage, or PDF, or some other kind of document. The name RMarkdown is kind of a joke, since RMarkdown is a version of a “markup langauge”. Markups are the opposite of the <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> systems (like MS word or Google Docs) which you are used to.</p>
 <p>These pages are written in Rmarkdown. You can see this individual file <a href="https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd">here in the online repositry</a>. It will really help if you read the webpage alongside the file, so you can compare the file which generates the text, using the markdown, and the output (the webpage).</p>
 <p>Rstudio magic (called “rendering” or “knitting”) turns this file in to the webpage.</p>
+<div class="info">
+<p>
+Before you can turn your <code>.Rmd</code> files into PDF you need to install TeX on your machine: <a href="https://miktex.org/download">use this download link</a>
+</p>
+</div>
 <p>Compare the <a href="https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd">file</a> and the <a href="https://tomstafford.github.io/psy6422/rmarkdown.html">webpage</a>.</p>
 <p><strong>In the webpage this line is in bold. Why?</strong></p>
 <p><em>In the webpage this line is in italic. Why?</em></p>
@@ -337,10 +342,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb45-20"><a href="rmarkdown.html#cb45-20"></a><span class="st">  </span><span class="kw">ggtitle</span>(plottitle) <span class="op">+</span></span>
 <span id="cb45-21"><a href="rmarkdown.html#cb45-21"></a><span class="st">  </span><span class="kw">xlab</span>(xlab) <span class="op">+</span></span>
 <span id="cb45-22"><a href="rmarkdown.html#cb45-22"></a><span class="st">  </span><span class="kw">ylab</span>(ylab)</span></code></pre></div>
-<p><img src="008-rmarkdown_files/figure-html/unnamed-chunk-2-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="008-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>You don’t need to show the r code, but can still include it in the document and use it to generate figures etc.</p>
 <p>The scatterplot above uses participant number as one of the axes, which doesn’t really make any sense. A histogram is a better way of visualising the spread of scores on a single variable, so here is one:</p>
-<p><img src="008-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="008-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>The code to make this plot is contained in the same <code>.Rmd</code> file as this text, but I’ve hidden it so only the output is shown. To do this I set <code>echo = FALSE</code> for the r chunk in the <code>.Rmd</code> file. You’ll have to look at the <a href="https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd">source file</a> to see this, because - obviously! - in the webpage you don’t see any code.</p>
 <p>You can also put single values in ongoing text using Rmarkdown</p>
 <p>Imagine you have some data</p>
@@ -375,7 +380,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><a href="https://rmarkdown.rstudio.com/">RStudio intro to Rmarkdown</a></li>
 <li><a href="https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf">RStudio RMarkdown cheatsheet</a></li>
-<li><a href="https://markdownlivepreview.com/">markdownlivepreview.com</a></li>
+<li>Helps with learning Markdown conventions: <a href="https://markdownlivepreview.com/">markdownlivepreview.com</a></li>
+<li>Making Word documents: <a href="https://rmarkdown.rstudio.com/articles_docx.html">Happy collaboration with Rmd to docx</a></li>
+<li>Install this to make PDFs work: <a href="https://miktex.org/download">Getting MiKTeX</a></li>
 </ul>
 
 </div>

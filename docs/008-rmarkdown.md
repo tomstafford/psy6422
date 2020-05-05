@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
-date: "2020-05-04"
+date: "2020-05-05"
 output:
   html_document: default
 ---
@@ -17,6 +17,11 @@ RMarkdown is the system which marks how text should look after it has been conve
 These pages are written in Rmarkdown. You can see this individual file [here in the online repositry](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd). It will really help if you read the webpage alongside the file, so you can compare the file which generates the text, using the markdown, and the output (the webpage).
 
 Rstudio magic (called "rendering" or "knitting") turns this file in to the webpage.
+
+<div class="info">
+<p>Before you can turn your <code>.Rmd</code> files into PDF you need to install TeX on your machine: <a href="https://miktex.org/download">use this download link</a></p>
+</div>
+
 
 Compare the [file](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd) and the [webpage](https://tomstafford.github.io/psy6422/rmarkdown.html). 
 
@@ -104,14 +109,14 @@ p1 + geom_point(size=pointsize) +
   ylab(ylab)
 ```
 
-<img src="008-rmarkdown_files/figure-html/unnamed-chunk-2-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="008-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" />
 
 You don't need to show the r code, but can still include it in the document and use it to generate figures etc. 
 
 
 The scatterplot above uses participant number as one of the axes, which doesn't really make any sense. A histogram is a better way of visualising the spread of scores on a single variable, so here is one:
 
-<img src="008-rmarkdown_files/figure-html/unnamed-chunk-3-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="008-rmarkdown_files/figure-html/unnamed-chunk-4-1.png" width="100%" style="display: block; margin: auto;" />
 
 The code to make this plot is contained in the same ``.Rmd`` file as this text, but I've hidden it so only the output is shown. To do this I set ``echo = FALSE`` for the r chunk in the ``.Rmd`` file. You'll have to look at the [source file](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd) to see this, because - obviously! - in the webpage you don't see any code.
 
@@ -152,7 +157,9 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 
 * [RStudio intro to Rmarkdown](https://rmarkdown.rstudio.com/)
 * [RStudio RMarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
-* [markdownlivepreview.com](https://markdownlivepreview.com/)
+* Helps with learning Markdown conventions: [markdownlivepreview.com](https://markdownlivepreview.com/)
+* Making Word documents: [Happy collaboration with Rmd to docx](https://rmarkdown.rstudio.com/articles_docx.html)
+* Install this to make PDFs work: [Getting MiKTeX](https://miktex.org/download)
 
 
 

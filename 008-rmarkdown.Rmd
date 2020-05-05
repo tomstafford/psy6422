@@ -18,6 +18,11 @@ These pages are written in Rmarkdown. You can see this individual file [here in 
 
 Rstudio magic (called "rendering" or "knitting") turns this file in to the webpage.
 
+```{block, type="info"}
+ Before you can turn your ``.Rmd`` files into PDF you need to install TeX on your machine: [use this download link](https://miktex.org/download)
+```
+
+
 Compare the [file](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd) and the [webpage](https://tomstafford.github.io/psy6422/rmarkdown.html). 
 
 **In the webpage this line is in bold. Why?**
@@ -163,7 +168,9 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 
 * [RStudio intro to Rmarkdown](https://rmarkdown.rstudio.com/)
 * [RStudio RMarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
-* [markdownlivepreview.com](https://markdownlivepreview.com/)
+* Helps with learning Markdown conventions: [markdownlivepreview.com](https://markdownlivepreview.com/)
+* Making Word documents: [Happy collaboration with Rmd to docx](https://rmarkdown.rstudio.com/articles_docx.html)
+* Install this to make PDFs work: [Getting MiKTeX](https://miktex.org/download)
 
 
 
