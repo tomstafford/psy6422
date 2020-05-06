@@ -78,6 +78,15 @@ Here are some questions to ask youself as you prepare your project
   4. You don't need to do any statistical tests or model fitting. You don't need to have a set amount of data to meet statistical significance, just enough to be interesting when visualised.
   5. You don't need more than a brief introduction to the data - no literature review please.
   6. This is a visualisation project, not an analysis project, so you don't need to do statistical analysis. You will, however, find that a clear question or set of questions helps develop a good visualisation and/or that a good visualisation helps clarify an unclear question or set of questions.
+
+## Getting help
+
+Simple questions should be posted on slack, ideally in the appropriate channel. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals.
+
+For more complex problems, you will want to share your whole project - this means not just the R or Rmd file you are working on, but the data file(s) as well, as well as an auxillary notes. 
+Please create a folder, following the [project organisation scheme](project-organisation.html) we covered in week 1 with subfolders for the data, figures, etc and including the .Rmd file. Share this with me and I can help. 
+
+You can either share a google drive folder or a [github repo](git-and-github.html). Doing this means I have all the parts required to reproduce your issue. It also means that if you  update your project in between contacting me and me looking at it then I see the very latest version, rather than working on an outdated problem.
   
 ## Example Projects
 

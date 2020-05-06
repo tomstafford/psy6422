@@ -5,7 +5,7 @@
 </div>
   
   
-## Data Management {datastuff}
+## Research Data Management
 
 Everything recorded during an experiment, whether by you or the computer, is data. All log files. Everything.
 
