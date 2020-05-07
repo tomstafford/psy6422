@@ -39,6 +39,12 @@ This week's class is taught by Seb James. Links to his materials are below
     * PDF of slides: https://github.com/ABRG-Models/GitTutorial/blob/master/talk.pdf
   * Software carpentry: http://sebjameswml.github.io/git-novice/
 
+Examples of two published projects supported by Github repos
+
+  * https://github.com/ABRG-Models/AttractorScaffolding
+  * https://github.com/ABRG-Models/linetask2014
+  * https://github.com/ABRG-Models/BarrelEmerge/tree/eLife_submission1_full
+
 ## Exercise - publishing your project with github pages
 
 Git and github are fundmental tools which will be relevant for collaborating on reliable computational projects, but it is not essential you master the full range of capabilities they offer for this module.
