@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
 author: "[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)"
-date: '2020-05-07'
+date: '2020-05-08'
 output: pdf_document
 description: Notes on the course - rapidly evolving!
 documentclass: book
