@@ -4,11 +4,13 @@
 <p><em>Note this is a placeholder page. In 2020 most of this material was delivered offline. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
 </div>
   
+Slides on project organisation are on the google drive: [slides format](https://docs.google.com/presentation/d/1VH3cntMOo4BnRaglEWbRn5qQ0SMd2gGGWQHHDL1pKd0/edit?usp=drivesdk), [pdf format](https://drive.google.com/file/d/1VyHcpxMBjEVN4TPC5Fz9FmTq3bctSmvB/view?usp=drivesdk). Please note, most of this class was taught in workshop format, so there aren't many slides.
+
 ## Project folders
 
 You should organise all the documentation, files, data, code and outputs for a project in a single folder. Your aim is that when you come back to this project, or want to share it, everything you need is in one place and sensibly organised.
 
-Create subfolders for 'data', 'graphs', 'notes'. Michael Frank's onboarding guide explains a bit more about the logic of this(http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html).
+Create subfolders for 'data', 'graphs', 'notes'. [Michael Frank's onboarding guide](http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html) explains a bit more about the logic of this.
 
 ## Naming Things
 

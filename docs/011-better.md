@@ -4,12 +4,34 @@
 <p><em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
 </div>
 
+Rather than teach substantive content, in this class I will showcase important advanced topics which you may wish to explore after the course. The idea is that it will be faster for you to set out on your own with a quick overview of the data science landscape. This way at least you will have heard of potential solutions when you encounter future problems.
 
-## Better graphs
 
+## Interactive graphs
+
+Using Shiny Apps
+
+ * Example: [Enhanced sensitivity to group differences with decision modelling](https://sheffield-university.shinyapps.io/decision_power/)
+
+Javascript!
+
+ * Example: Grid histograms of [Constituencies by median age in 2017](https://olihawkins.com/visualisation/14) from Oli Hawkins
 
 ## Reproducibility
 
-https://luisdva.github.io/rstats/annotater/
+Dependencies
+
+Package management https://luisdva.github.io/rstats/annotater/
+
+Containers
 
 ## Preview of other advanced topics
+
+Remote access via the command line and ssh
+
+[Python](https://tomstafford.github.io/psy6422/notes.html#python)
+
+SQL
+
+
+

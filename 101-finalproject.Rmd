@@ -8,7 +8,7 @@ A complete project, including raw data, analysis scripts, documentation and visu
 
 In practice, this means you should upload a project to github, containing a Rmarkdown file which explains your visualisation, as taught in the module (although alternatives are acceptable if they meet the primary criteria).
 
-Please include these headings in your project
+Please include these headings, or something similar, in your project.
 
 * Data Origins
   * Answering questions of where it comes from, how it was collected, what the variables mean, etc

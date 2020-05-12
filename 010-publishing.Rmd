@@ -36,7 +36,8 @@ If you are making multiple changes to your files, using git on your computer is 
 [The Open Science Framework](OSF.io) a platform which provides storage and sharing for all materials across the whole lifespan of a project. Incredibly useful for sharing, but doesn't look as nice as github pages, so we're not using it on psy6422.
 
 [Jupyter notebooks](https://jupyter.org/). Another way of mixing description, code and outputs. More common for python code.
-
+ 
+ * Example: [Light reanalysis of Čavojová et al (2018)](https://github.com/tomstafford/cavojova2018/blob/master/cavojava_reanalysis.ipynb)
 
 
 
