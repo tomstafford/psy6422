@@ -280,22 +280,45 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="sharing-your-rmd-files-via-github-pages" class="section level2" number="8.1">
 <h2><span class="header-section-number">8.1</span> Sharing your Rmd files via Github pages</h2>
 <ol style="list-style-type: decimal">
-<li><p>Save your analysis in a file <code>index.Rmd</code></p></li>
-<li><p>Click ‘knit’ in RStudio</p></li>
+<li>Create a new github repositry (a “repo”)</li>
 </ol>
 <ul>
-<li>(selecting ‘knit to HTML’ if you haven’t specified this in the header)</li>
+<li>click “initilise with README.md”</li>
 </ul>
-<ol start="3" style="list-style-type: decimal">
-<li><p>Save your files to a github repo: <code>https://github.com/username/myrepo/</code></p></li>
-<li><p>Via the browser, edit the settings for the repo and scroll down to ‘Github Pages’. There change ‘Source’ to ‘Master’</p></li>
+<ol start="2" style="list-style-type: decimal">
+<li>“clone” to your computer</li>
 </ol>
-<p>Your pages will be at <a href="https://username.github.io/myrepo/" class="uri">https://username.github.io/myrepo/</a></p>
+<ul>
+<li>Either use git to manage the files in the repo, (in which case you need to add, commit and push to the remote repositry)</li>
+<li>OR upload the files to the repo via the github.com web interface.</li>
+</ul>
+<p>If you are making multiple changes to your files, using git on your computer is easier (see the class on <a href="git-and-github.html">git and github</a>)</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Save your analysis in a file <code>index.Rmd</code></p></li>
+<li><p>Add an .html file called index.html. This file can be created by clicking ‘knit’ in RStudio from your .Rmd file (see the class on <a href="rmarkdown.html">Rmarkdown</a></p></li>
+</ol>
+<ul>
+<li>selecting ‘knit to HTML’ if you haven’t specified this in the header</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Upload or “Push” your files, most importantly the <code>index.html</code> file to a github repo, probably viewable at something like: <code>https://github.com/username/myrepo/</code></li>
+</ol>
+<ul>
+<li><strong>NOTE</strong>: To make the repositry an archive of your project you can and should add all the other other files and folders, including the .Rmd file which you used to make the index.html file</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>Visit this link and, via the browser,</li>
+</ol>
+<ul>
+<li>click “Settings” and scroll down to “Github Pages”. Under “Source” select “Master branch”.edit the settings for the repo and scroll down to ‘Github Pages’. There change ‘Source’ to ‘Master’</li>
+<li>Find your pages, after a short moment, at <a href="">yourusername.github.io/yourreponame</a></li>
+<li>Example: my repo is at <a href="https://github.com/tomstafford/supertues">github.com/tomstafford/supertues</a>, so the published pages are at <a href="https://tomstafford.github.io/supertues/">tomstafford.github.io/supertues</a></li>
+</ul>
 </div>
 <div id="other-sharing-options" class="section level2" number="8.2">
 <h2><span class="header-section-number">8.2</span> Other sharing options</h2>
-<p>OSF</p>
-<p>Jupyter notebooks</p>
+<p><a href="OSF.io">The Open Science Framework</a> a platform which provides storage and sharing for all materials across the whole lifespan of a project. Incredibly useful for sharing, but doesn’t look as nice as github pages, so we’re not using it on psy6422.</p>
+<p><a href="https://jupyter.org/">Jupyter notebooks</a>. Another way of mixing description, code and outputs. More common for python code.</p>
 
 </div>
 </div>
