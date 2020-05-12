@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
 author: "[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)"
-date: '2020-05-08'
+date: '2020-05-12'
 output: pdf_document
 description: Notes on the course - rapidly evolving!
 documentclass: book
@@ -48,7 +48,7 @@ By the end of this course you will have:
   * Had an introduction to version control using git 
   * Published data projects to the web via github pages
   
-### Final project {finaproject}
+### The Final project 
 
 The bulk of the course assessment is to conduct and publish your own analysis project. By doing this you will have experience of combining all the skills taught on the course within a singe project. This will take a data visualisation from start to finish - from raw data, through data cleaning and documentation to sharing your code and the resulting visualisation on the web.
 

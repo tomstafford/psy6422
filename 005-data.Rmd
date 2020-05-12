@@ -7,3 +7,5 @@
 Specific resources:
   
   >>TO APPEAR<<
+  
+  Loadings, cleaning, inspecting, merging and summarising data using the [Tidyverse](https://www.tidyverse.org/) library for data science
