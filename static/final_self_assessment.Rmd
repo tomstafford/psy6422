@@ -1,0 +1,33 @@
+---
+title: 'PSY6422 final self-assessment'
+author: "Your Name Here"
+date: "15/05/2020"
+output: pdf_document
+---
+
+# Marking Criteria
+
+Submits by 12 noon on the 26th of May 2020 in PDF by email to ``t.stafford@shef.ac.uk``
+
+Answers the questions in the headings below, showing evidence of engagement with the course
+
+Note: I expect and hope that all students can get full marks for this assessment. There is no word limit, but short is sweet. I suggest you write between 3 sentences and 3 paragraphs for each.
+
+# Final Self-assessment for PSY6422
+
+
+## 1. Which topic did I find most useful or interesting? Explain why
+
+
+
+## 2. Which topic did I find least useful, interesting or most difficult? Explain why
+
+
+
+## 3. What topics do I want to learn more about in the future? Explain why
+
+
+
+## 4. Please share one thing you have read and enjoyed or found useful on the topic of data management and/or visualisation
+
+

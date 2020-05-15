@@ -42,7 +42,7 @@ You can also search a preprint archive such as [psyarxiv](https://psyarxiv.com/)
 
 Pick a topic and have a look at what is available
 
-The other route is large publicly available resources, such as [Our World in Data](https://ourworldindata.org/)
+The other route is large publicly available resources, such as [Our World in Data](https://ourworldindata.org/). Another good source of diverse, open and current data sets is the [Data Is Plural](http://tinyletter.com/data-is-plural/archive) newsletter
 
 
 ## Choose your graph
@@ -78,7 +78,8 @@ Here are some questions to ask youself as you prepare your project
   4. You don't need to do any statistical tests or model fitting. You don't need to have a set amount of data to meet statistical significance, just enough to be interesting when visualised.
   5. You don't need more than a brief introduction to the data - no literature review please.
   6. This is a visualisation project, not an analysis project, so you don't need to do statistical analysis. You will, however, find that a clear question or set of questions helps develop a good visualisation and/or that a good visualisation helps clarify an unclear question or set of questions.
-
+  7. There is no word limit, but remember - for a project which has maximum impact short is sweet (i.e. try and show off quality of work without quantity of text)
+  
 ## Getting help
 
 Simple questions should be posted on slack, ideally in the appropriate channel. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals.
@@ -87,6 +88,8 @@ For more complex problems, you will want to share your whole project - this mean
 Please create a folder, following the [project organisation scheme](project-organisation.html) we covered in week 1 with subfolders for the data, figures, etc and including the .Rmd file. Share this with me and I can help. 
 
 You can either share a google drive folder or a [github repo](git-and-github.html). Doing this means I have all the parts required to reproduce your issue. It also means that if you  update your project in between contacting me and me looking at it then I see the very latest version, rather than working on an outdated problem.
+
+Note that the deadline for assignments is the after the weekend, so I will not be answering questions in the days immediately before the deadline. If you want to ensure an answer to your question please ask it so here is at least one full working day before the deadline (i.e. if the deadline is after the Weekend, please ask by 5pm on the thursday).
   
 ## Example Projects
 

@@ -9,6 +9,6 @@ fi
 R -e 'bookdown::render_book("index.Rmd")'
 
 git add -A
-git commit -m $msg
+git commit -m 
 git push origin master
 
