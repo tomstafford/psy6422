@@ -39,7 +39,9 @@ Remote access via the command line and ssh
 
 [Python](https://tomstafford.github.io/psy6422/notes.html#python)
 
-SQL
+Database queries: SQL
+
+  * We will look at this interactive tutorial https://sqlzoo.net/wiki/SELECT_basics
 
 
 
