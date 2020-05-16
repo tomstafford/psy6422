@@ -23,7 +23,9 @@ Javascript!
 ## Reproducibility
 
 Dependencies
+
  * Package management 
+ 
     * renv: https://github.com/rstudio/renv
     * e.g. https://luisdva.github.io/rstats/annotater/
  * Containers
