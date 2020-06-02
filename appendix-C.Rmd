@@ -43,7 +43,7 @@ You should know how to use a VPN
 
 ## Careers
 
-Inside or outside of research, data management and visualisation skills will be good for you career. Unlikely many high-technical skills, coding is highly accessible. Even in the world of software development, over half of programmers are [self-taught](https://www.infoworld.com/article/2908474/stack-overflow-survey-finds-nearly-half-have-no-degree-in-computer-science.html). But coding is relevant to more than just pure software jobs, [one report](https://www.burning-glass.com/research-project/coding-skills/) found that 20% of graduate-level jobs value coding as a skill, and this 20% paid 30% more than other graduate jobs.
+Inside or outside of research, data management and visualisation skills will be good for your career. Unlike many high-technical skills, coding is highly accessible. Even in the world of software development, over half of programmers are [self-taught](https://www.infoworld.com/article/2908474/stack-overflow-survey-finds-nearly-half-have-no-degree-in-computer-science.html). But coding is relevant to more than just pure software jobs, [one report](https://www.burning-glass.com/research-project/coding-skills/) found that 20% of graduate-level jobs value coding as a skill, and these jobs paid on average 30% more than other graduate jobs.
 
 More information:
 
