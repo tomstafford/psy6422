@@ -49,6 +49,8 @@ A Guide to Reproducible Code in Ecology and Evolution https://www.britishecologi
 
 Gael Varoquaux: Computational practices for reproducible science https://www.slideshare.net/GaelVaroquaux/computational-practices-for-reproducible-science
 
+Axelrod, V. (2014). [Minimizing bugs in cognitive neuroscience programming](https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full). Frontiers in psychology, 5, 1435.
+
 "our wishlist for what knowledge and skills we'd find in a well-prepared data scientist candidate coming from a masters program." https://github.com/brohrer/academic_advisory/blob/master/curriculum_roadmap.md
 
 ## Project organisation
@@ -97,7 +99,7 @@ Adler, J. (2010). R in a nutshell: A desktop quick reference. " O'Reilly Media, 
 
 Intro to R (Liz Page-Gould): http://www.page-gould.com/r/uoft/
 
-Open R Textbook (Danielle Navarro): http://health.adelaide.edu.au/psychology/ccs/teaching/lsr/
+Free R Textbook (Danielle Navarro): [Learning Statistics With R] https://learningstatisticswithr.com/
 
 * Particularly chapter 3 https://learningstatisticswithr-bookdown.netlify.com/intror
 
@@ -108,6 +110,8 @@ Here::Here https://github.com/jennybc/here_here
 https://swirlstats.com/
 
 Lisa DeBruine, & Dale Barr. (2019). Data Skills for Reproducible Science. Zenodo. doi:10.5281/zenodo.3564348 https://psyteachr.github.io/msc-data-skills/
+
+[We are R-ladies](https://twitter.com/WeAreRLadies) - Twitter account with a rotating curator featuring discussions, package highlights, and tips
 
 ## Making graphs (practice)
 

@@ -41,6 +41,15 @@ You should know how to use a VPN
 * Advice for Sheffield students here: [Working remotely - information for students](https://www.sheffield.ac.uk/it-services/remote/students)
 * You can test by visiting [this page](https://journals.sagepub.com/doi/full/10.1177/0956797613511466). If you are in the University network (either on campus or via a VPN) it will offer you the chance to download the article PDF. Otherwise it will try and charge you $35 for the privilege.
 
+## Careers
+
+Inside or outside of research, data management and visualisation skills will be good for you career. Unlikely many high-technical skills, coding is highly accessible. Even in the world of software development, over half of programmers are [self-taught](https://www.infoworld.com/article/2908474/stack-overflow-survey-finds-nearly-half-have-no-degree-in-computer-science.html). But coding is relevant to more than just pure software jobs, [one report](https://www.burning-glass.com/research-project/coding-skills/) found that 20% of graduate-level jobs value coding as a skill, and this 20% paid 30% more than other graduate jobs.
+
+More information:
+
+* [Job profile: Data Scientist](https://www.prospects.ac.uk/job-profiles/data-scientist)
+* [Data Scientist: Job Description](https://targetjobs.co.uk/careers-advice/job-descriptions/454123-data-scientist-job-description)
+* University of Sheffield: [Career Connect](https://www.sheffield.ac.uk/careers/careerconnect)
 
 ## Testimonials
 
