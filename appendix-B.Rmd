@@ -25,6 +25,8 @@ Weissgerber, T. L., Milic, N. M., Winham, S. J., & Garovic, V. D. (2015). [Beyon
 
 [Nightingale: The Journal of The Data Visualisation Society](https://medium.com/nightingale)
 
+Podcast: [Explore Explain: A Video and Podcast Series](https://www.visualisingdata.com/podcast/)
+
 ## The Reproducibility Crisis
 
 Cancer Biology Reproducibility Project
