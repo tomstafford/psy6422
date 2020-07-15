@@ -38,10 +38,16 @@ ggplotly(Deprivation.plot)
 Yidan's project mixed python and R and involved some highly techincal work installing and quering a SQL database server. The topic, [Skill acquisition of solo players: a case study
 ](https://github.com/yidanliu-psy/solo-player-skill/blob/master/visualisation.ipynb) revealed how practice mapped to skill level in players of an online stategy game:
 
-<img src="images/yidan.png" style="width: 400px; float: center;">
+#<img src="images/yidan.png" style="width: 400px; float: center;">
+
+<center>
+
+![your image caption](images/yidan.png)
+
+</center>
 
 	
-	[Is there a difference between the typing patterns of those with Parkinson’s Disease versus those without?](https://lmcgrath2.github.io/PSY6422project/)
+[Is there a difference between the typing patterns of those with Parkinson’s Disease versus those without?](https://lmcgrath2.github.io/PSY6422project/)
 
 My unofficial prize for aesthetics in data visualisation went to Katie's project [avocado prices, sales & distribution across the US between 2015 - 2018](https://katielmoran.github.io/PSY6422) which used a consistent, and avacado-themed, colour scheme throughout:
 
