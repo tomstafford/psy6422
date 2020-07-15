@@ -14,7 +14,7 @@ Hala took open data from Sheffield city council and showed [daily cycles in air 
 
 Note the spikes in N02 levels during the morning and evening rush hours.
 
-Nabia looked at [Students' Performance in Exams](https://nabihaahmad.github.io/)
+Nabiha looked at [Students' Performance in Exams](https://nabihaahmad.github.io/)
 
 <img src="images/nabia.png" style="width: 600px; float: center;">
 
