@@ -44,6 +44,14 @@ Pick a topic and have a look at what is available
 
 The other route is large publicly available resources, such as [Our World in Data](https://ourworldindata.org/). Another good source of diverse, open and current data sets is the [Data Is Plural](http://tinyletter.com/data-is-plural/archive) newsletter
 
+### Suggestions for 2021 (in progress)
+
+These are examples of large, probably messy, real-world data sets which could make good starting points for projects:
+
+* [freeCodeCamp.org survey of new programmers](https://github.com/freeCodeCamp?q=new-coder-survey)
+* [StackOverFlow survey data](https://insights.stackoverflow.com/survey/)
+* [BEHACOM - a dataset modelling users’ behaviour in computers](https://www.sciencedirect.com/science/article/pii/S2352340920306612)
+
 
 ## Choose your graph
 
