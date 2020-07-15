@@ -17,22 +17,49 @@ Nabia looked at [Students' Performance in Exams](https://nabihaahmad.github.io/)
 
 <img src="images/nabia.png" style="width: 400px; float: center;">
 
+Rachel, looked at [COVID-19 Deaths in England](https://rachelanthony.github.io/) and produced a number of animated and interactive plots which really show off the data visualisation potential of R/ggplot, including this shocking plot of regional rates of death against deprivation, which shows that the death rate in the most deprived areas was twice that of the rate in the least deprived areas. However over bars for details.
 
-https://rachelanthony.github.io/	 Hidden advantages and disadvantages of social class: how classroom settings reproduce social inequality by staging unfair comparisons
-https://sam-antrobus.github.io/Final_Project/	
+```{r echo=FALSE,error=FALSE, message=FALSE}
+library(plotly)
+Deprivation <- data.frame(Deprivation.Scale = c(1,2,3,4,5,6,7,8,9,10),
+                          Death.Rate = c(55.1,57.6,52.4,39.5,34.9,32.1,29.6,30.3,27.0,25.3))
+
+Deprivation.plot <- ggplot(Deprivation, aes(x=Deprivation.Scale, y=Death.Rate, fill=Deprivation.Scale))+geom_bar(stat = 'identity', position='dodge')+
+  ggtitle('COVID-19 Death Rate according to Deprivation Scale')+
+  labs(x = 'Deprivation Scale', y='Death Rate, per 100,000')+
+  scale_x_continuous(breaks = c(1,2,3,4,5,6,7,8,9,10))+
+  scale_fill_gradient(low = "blue",high = "red")+
+  theme(legend.position='none')
+ggplotly(Deprivation.plot)
+```
+
+
+
+Yidan's project mixed python and R and involved some highly techincal work installing and quering a SQL database server. The topic, [Skill acquisition of solo players: a case study
+](https://github.com/yidanliu-psy/solo-player-skill/blob/master/visualisation.ipynb) revealed how practice mapped to skill level in players of an online stategy game:
+
+<img src="images/yidan.png" style="width: 400px; float: center;">
+
 	
-https://github.com/Hobnob5000/DataVisProject	NULL
-https://eleanorhyde.github.io/	Professional CS:GO Matches
-https://github.com/ekhojah/Birthwight	NULL
-https://github.com/StephanosAK/PSY6422-Final-Assessment-	NULL
-https://github.com/yidanliu-psy/solo-player-skill/blob/master/visualisation.ipynb	Skill acquisition of solo players: a case study
-https://kamac-sheff.github.io/Caffeine/Caffeine.html	Caffeine Intake and Mental Health
-https://lmcgrath2.github.io/PSY6422project/	Is there a difference between the typing patterns of those with Parkinson’s Disease versus those without?
-https://github.com/FMcG96/PSY6422	NULL
-https://katielmoran.github.io/PSY6422/	 avocado prices, sales & distribution across the US between 2015 - 2018
-https://bessieo.github.io/Looking-At-Others/	Who’s Paying More Attention to Others?
-https://adamscott1997.github.io/PSY6422/	Out of reach for the younger generation? Changes in average house prices and incomes in England 1997-2019
-https://victoria1403.github.io/PSY6422-Final-Project/	World Happiness Report 2019 data
+	[Is there a difference between the typing patterns of those with Parkinson’s Disease versus those without?](https://lmcgrath2.github.io/PSY6422project/)
+
+My unofficial prize for aesthetics in data visualisation went to Katie's project [avocado prices, sales & distribution across the US between 2015 - 2018](https://katielmoran.github.io/PSY6422) which used a consistent, and avacado-themed, colour scheme throughout:
+
+<img src="images/katie.png" style="width: 400px; float: center;">
+
+Adam's project is a good illustration of the power of data visualisation - it can make salient something we might know but had not reckoned with. In his case, project was on [Changes in average house prices and incomes in England 1997-2019](https://adamscott1997.github.io/PSY6422/), and his graph of the change in the ratio of average house price to average income shows just how unafforable housing has become:
+
+<img src="images/adam.png" style="width: 400px; float: center;">
+
+
+Other projects looked at topics which interested the studetns and for which public data was available. For example, Victoria looked at the [World Happiness Report 2019 data](https://victoria1403.github.io/PSY6422-Final-Project/), (another) Katie looked at [Caffeine Intake and Mental Health](https://kamac-sheff.github.io/Caffeine/Caffeine.html), and Eleanor looked at [Professional CS:GO Matches](https://eleanorhyde.github.io/) and in particular at the performance of a professional team based in Sheffield.
+
+Others  projects used open data from published research, replicating and extending the analysis the original authors reproduced( [Bessie](https://bessieo.github.io/Looking-At-Others/), [Esra](https://ekhojah.github.io/Birthwight/), [Sam](https://sam-antrobus.github.io/Final_Project/))
+
+These are just the projects which were completed and published publically by students on the module this year (and who gave me permission to link to their work). I am immensely proud of all the work students did on this module, which was severely disrupted by the pandemic.
+
+
+
 	
-https://github.com/henrycusack/PSY6422-Religion-IQ-HomicideRates	Investigating the Relationship Between Religiosity, IQ and Homicide Rates
+
 
