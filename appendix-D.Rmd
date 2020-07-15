@@ -1,23 +1,26 @@
 # Class of 2020
 
-This was the first year the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) has run, of which this is key module.
+This was the first year for the new [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science). PSY6422 is a key module for this course, and is designed to set students up for their independent data science project, completed over the summer.
 
-Most students came into this module with little or no previous experience of coding. I hope you agree they should be proud of what they have achieved, and my hope is that the skills taught on this module have set them up to use powerful, flexible, computational methods to produce reproducible analysis and useful data visualisaions in the rest of their work.
+Most students came into this module with little or no previous experience of coding. The aim is to share powerful, flexible, computational methods which allow the production of reproducible analyses and useful data visualisations.
 
+The module is taught via workshops, and the end point is to carry out and publish a data analysis and visualisation on a data set which interests you.
 
-
-
-Here just a few examples of data visualisations produced by the class for their [final projects](docs/final-project.html). Each project was different, and each student published their data, analysis code and visualisation as an online notebook (so click the link for more).
+Here just a few examples of data visualisations produced by the class for their [final projects](docs/final-project.html). Each project was different, and each student published their data, analysis code and visualisation as an online notebook (so please click the link for more details of each project).
 
 Hala took open data from Sheffield city council and showed [daily cycles in air pollution levels](https://halaaj.github.io/PSY6422/)
 
 <img src="images/hala.png" style="width: 600px; float: center;">
 
-Nabia looked at [Students' Performance in Exams](https://nabihaahmad.github.io/) and used these boxplots with jittered points, which allow you to see the group average but also the underlying data
+Note the spikes in N02 levels during the morning and evening rush hours.
+
+Nabia looked at [Students' Performance in Exams](https://nabihaahmad.github.io/)
 
 <img src="images/nabia.png" style="width: 600px; float: center;">
 
-Rachel, looked at [COVID-19 Deaths in England](https://rachelanthony.github.io/) and produced a number of animated and interactive plots which really show off the data visualisation potential of R/ggplot, including this shocking plot of regional rates of death against deprivation, which shows that the death rate in the most deprived areas was twice that of the rate in the least deprived areas. However over bars for details.
+Note that these boxplots with jittered points allow you to see the group average but also the underlying data.
+
+Rachel, looked at [COVID-19 Deaths in England](https://rachelanthony.github.io/) and produced a number of animated and interactive plots which really show off the data visualisation potential of R/ggplot, including this shocking plot of regional rates of death against deprivation, which shows that the death rate in the most deprived areas was twice that of the rate in the least deprived areas. Hover over each bar for details.
 
 ```{r echo=FALSE,error=FALSE, message=FALSE}
 library(plotly)
@@ -35,29 +38,28 @@ ggplotly(Deprivation.plot)
 
 
 
-Yidan's project mixed python and R and involved some highly techincal work installing and quering a SQL database server. The topic, [Skill acquisition of solo players: a case study
-](https://github.com/yidanliu-psy/solo-player-skill/blob/master/visualisation.ipynb) revealed how practice mapped to skill level in players of an online stategy game:
+Yidan's project mixed python and R and involved some highly technical work installing and querying an SQL database server. The topic, [Skill acquisition of solo players: a case study
+](https://github.com/yidanliu-psy/solo-player-skill/blob/master/visualisation.ipynb) revealed how practice mapped to skill level in players of an online strategy game:
 
 <img src="images/yidan.png" style="width: 600px; float: center;">
 
-
+This is the famous learning curve, showing that players improved with practice (but at a deccelerating rate).
 	
-[Is there a difference between the typing patterns of those with Parkinson’s Disease versus those without?](https://lmcgrath2.github.io/PSY6422project/)
-
-My unofficial prize for aesthetics in data visualisation went to Katie's project [avocado prices, sales & distribution across the US between 2015 - 2018](https://katielmoran.github.io/PSY6422) which used a consistent, and avacado-themed, colour scheme throughout:
+My unofficial prize for aesthetics in data visualisation went to Katie's project [avocado prices, sales & distribution across the US between 2015-2018](https://katielmoran.github.io/PSY6422) which used a consistent, and avocado-themed, colour scheme throughout:
 
 <img src="images/katie.png" style="width: 600px; float: center;">
 
-Adam's project is a good illustration of the power of data visualisation - it can make salient something we might know but had not reckoned with. In his case, project was on [Changes in average house prices and incomes in England 1997-2019](https://adamscott1997.github.io/PSY6422/), and his graph of the change in the ratio of average house price to average income shows just how unafforable housing has become:
+Adam's project is a good illustration of the power of data visualisation - it can make salient something we might know but had not fully reckoned with. In his case, his project was on [Changes in average house prices and incomes in England 1997-2019](https://adamscott1997.github.io/PSY6422/): 
 
 <img src="images/adam.png" style="width: 600px; float: center;">
 
+His graph of the change in the ratio of average house price to average income shows just how unaffordable housing has become.
 
-Other projects looked at topics which interested the studetns and for which public data was available. For example, Victoria looked at the [World Happiness Report 2019 data](https://victoria1403.github.io/PSY6422-Final-Project/), (another) Katie looked at [Caffeine Intake and Mental Health](https://kamac-sheff.github.io/Caffeine/Caffeine.html), and Eleanor looked at [Professional CS:GO Matches](https://eleanorhyde.github.io/) and in particular at the performance of a professional team based in Sheffield.
+Several projects looked at topics which interested the students and for which public data was available. For example, Victoria looked at the [World Happiness Report 2019 data](https://victoria1403.github.io/PSY6422-Final-Project/), (another) Katie looked at [Caffeine Intake and Mental Health](https://kamac-sheff.github.io/Caffeine/Caffeine.html), and Eleanor looked at [Professional CS:GO Matches](https://eleanorhyde.github.io/) and in particular at the performance of a professional team based in Sheffield.
 
-Others  projects used open data from published research, replicating and extending the analysis the original authors reproduced( [Bessie](https://bessieo.github.io/Looking-At-Others/), [Esra](https://ekhojah.github.io/Birthwight/), [Sam](https://sam-antrobus.github.io/Final_Project/))
+Others  projects used open data from published research, replicating and extending the analysis the original authors reproduced( [Bessie](https://bessieo.github.io/Looking-At-Others/), [Esra](https://ekhojah.github.io/Birthwight/), [Sam](https://sam-antrobus.github.io/Final_Project/), [Leah](https://lmcgrath2.github.io/PSY6422project/))
 
-These are just the projects which were completed and published publically by students on the module this year (and who gave me permission to link to their work). I am immensely proud of all the work students did on this module, which was severely disrupted by the pandemic.
+These are just the projects which were completed and published publicly by students on the module this year (and who gave me permission to link to their work). I am immensely proud of all the work students did on this module, which was severely disrupted by the pandemic.
 
 
 
