@@ -57,9 +57,11 @@ His graph of the change in the ratio of average house price to average income sh
 
 Several projects looked at topics which interested the students and for which public data was available. For example, Victoria looked at the [World Happiness Report 2019 data](https://victoria1403.github.io/PSY6422-Final-Project/), (another) Katie looked at [Caffeine Intake and Mental Health](https://kamac-sheff.github.io/Caffeine/Caffeine.html), and Eleanor looked at [Professional CS:GO Matches](https://eleanorhyde.github.io/) and in particular at the performance of a professional team based in Sheffield.
 
-Others  projects used open data from published research, replicating and extending the analysis the original authors reproduced( [Bessie](https://bessieo.github.io/Looking-At-Others/), [Esra](https://ekhojah.github.io/Birthwight/), [Sam](https://sam-antrobus.github.io/Final_Project/), [Leah](https://lmcgrath2.github.io/PSY6422project/))
+Others  projects used open data from published research, replicating and extending the analysis the original authors reproduced ([Bessie](https://bessieo.github.io/Looking-At-Others/), [Esra](https://ekhojah.github.io/Birthwight/), [Sam](https://sam-antrobus.github.io/Final_Project/), [Leah](https://lmcgrath2.github.io/PSY6422project/))
 
-These are just the projects which were completed and published publicly by students on the module this year (and who gave me permission to link to their work). I am immensely proud of all the work students did on this module, which was severely disrupted by the pandemic.
+These are just the projects which were completed and published publicly by students on the module this year (and who gave me permission to link to their work). I am immensely proud of all the work students did on this module, which was severely disrupted by the pandemic. However far you get with data analysis and visualisation there is always more you can learn, which can be daunting, but it can also be exciting because there are new things to try, new data to look and new things to find out.
+
+*Tom Stafford, July 2020*
 
 
 
