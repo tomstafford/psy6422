@@ -120,3 +120,12 @@ Lisa DeBruine, & Dale Barr. (2019). Data Skills for Reproducible Science. Zenodo
 Graphing in R (Eric-Jan Wagenmakers and Quentin F. Gronau): http://shinyapps.org/apps/RGraphCompendium/index.php
 
 https://gupsych.github.io/data_skills/03_ggplot.html
+
+## Statistics
+
+[Discovering Statistics Using R](https://www.discoveringstatistics.com/books/discovering-statistics-using-r/)
+
+Hox, J. (2010) Multilevel Analysis: Techniques and Applications
+
+[Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/statistical-rethinking/)
+
