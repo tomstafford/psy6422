@@ -55,6 +55,8 @@ Axelrod, V. (2014). [Minimizing bugs in cognitive neuroscience programming](http
 
 "our wishlist for what knowledge and skills we'd find in a well-prepared data scientist candidate coming from a masters program." https://github.com/brohrer/academic_advisory/blob/master/curriculum_roadmap.md
 
+Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (2017). [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510). PLoS computational biology, 13(6), e1005510.
+
 ## Project organisation
 
 Mike Frank onboarding guide http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html
