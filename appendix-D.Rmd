@@ -1,12 +1,14 @@
 # Class of 2020
 
-This was the first year for the new [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science). PSY6422 is a key module for this course, and is designed to set students up for their independent data science project, completed over the summer.
+This was the first year for the new [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science). PSY6422 is a key module for this course, and is designed to set students up for their independent data science project, completed over the summer. 
+
+Before they work on their summer projects, MSc students complete a mini-project on this module, and these are what is showcased below
 
 Most students came into this module with little or no previous experience of coding. The aim is to share powerful, flexible, computational methods which allow the production of reproducible analyses and useful data visualisations.
 
 The module is taught via workshops, and the end point is to carry out and publish a data analysis and visualisation on a data set which interests you.
 
-Here just a few examples of data visualisations produced by the class for their [final projects](docs/final-project.html). Each project was different, and each student published their data, analysis code and visualisation as an online notebook (so please click the link for more details of each project).
+Here just a few examples of data visualisations produced by the class for their [data mini-projects](docs/final-project.html). Each project was different, and each student published their data, analysis code and visualisation as an online notebook (so please click the link for more details of each project).
 
 Hala took open data from Sheffield city council and showed [daily cycles in air pollution levels](https://halaaj.github.io/PSY6422/)
 
