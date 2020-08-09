@@ -66,7 +66,45 @@ These are just the projects which were completed and published publicly by stude
 *Tom Stafford, July 2020*
 
 
+## Feedback
 
-	
+Selected feedback from the class of 2020
 
+<style>
+  .alpha {
+  text-align: right;
+  color: darkblue;
+  font-style: italic;
+  padding-bottom: 15px;
+  }
+  .beta {
+  text-align: left;
+  color: green;
+  font-style: italic;
+  padding-bottom: 15px;
+  }
+</style>
 
+<div class="alpha">Coming from someone who has never coded before, I thoroughly enjoyed visualising data. I never thought I would be someone who would enjoy looking at data, but I found it but both useful and interesting to create graphs that visualise the data in a more digestible form.</div>
+
+<div class="beta">Since I’ve never done coding to do anything before and I’ve only used point and click methods this is an obvious advantage of doing things this way so you can see where you went wrong and easily change it without having to start over again.</div>
+
+<div class="alpha">I have actually found myself enjoying a topic that I was convinced that I was going to hate, so for that I am thankful.</div>
+
+<div class="beta">The topic I found most useful and interesting was the RMarkdown topic. I was initally extremely skeptical about this topic, my exact thoughts were; why would anyone use RMarkdown when Microsoft Word is available? I have since come to understand my naivety and learnt RMarkdown is an incredibly useful tool, which bridges the conputational functionality of R with the ability to annotate code and create a running commentary of the analysis - amazing!</div>
+
+<div class="alpha">Before this module I had heard of R but not really understood its purpose or usefulness. I had assumed it was similar to SPSS, oh how wrong I was.</div>
+
+<div class="beta">Very rewarding.</div>
+
+<div class="alpha">I am immensely proud of my visualisation project</div>
+
+<div class="beta">I am oddly grateful for the struggles I experienced as I feel I have really got a sense of accomplishment out of completing the module. Before starting this Msc I’d have laughed at the idea of even understanding anything to do with coding or visualisation, but now I genuinely have an interest in it.</div>
+
+<div class="alpha">I found the topics of constructing and publishing projects in a reproducible way and via an open platform really interesting.</div>
+
+<div class="beta">I also found learning how to handle data and construct graphs in R very useful as I have never manipulated data using coding, and it was interesting to learn how you can keep track of your working and avoid simple errors this way.</div>
+
+<div class="alpha">Finding yourself in completely disarray when trying to solve an unsolvable coding problem, but feeling like an absolute genius when said unsolvable problem is solved was very satisfying.</div>
+
+<div class="beta">Thanks for the detailed feedback on our Data Visualisation projects! It was very thorough, some of the best feedback I’ve ever received while at university!!</div>
