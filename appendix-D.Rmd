@@ -2,7 +2,7 @@
 
 This was the first year for the new [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science). PSY6422 is a key module for this course, and is designed to set students up for their independent data science project, completed over the summer. 
 
-Before they work on their summer projects, MSc students complete a mini-project on this module, and these are what is showcased below
+Before they work on their summer projects, MSc students complete a mini-project on this module, and these are what is showcased below.
 
 Most students came into this module with little or no previous experience of coding. The aim is to share powerful, flexible, computational methods which allow the production of reproducible analyses and useful data visualisations.
 
@@ -91,7 +91,7 @@ Selected feedback from the class of 2020
 
 <div class="alpha">I have actually found myself enjoying a topic that I was convinced that I was going to hate, so for that I am thankful.</div>
 
-<div class="beta">The topic I found most useful and interesting was the RMarkdown topic. I was initally extremely skeptical about this topic, my exact thoughts were; why would anyone use RMarkdown when Microsoft Word is available? I have since come to understand my naivety and learnt RMarkdown is an incredibly useful tool, which bridges the conputational functionality of R with the ability to annotate code and create a running commentary of the analysis - amazing!</div>
+<div class="beta">The topic I found most useful and interesting was the RMarkdown topic. I was initally extremely skeptical about this topic, my exact thoughts were; why would anyone use RMarkdown when Microsoft Word is available? I have since come to understand my naivety and learnt RMarkdown is an incredibly useful tool, which bridges the computational functionality of R with the ability to annotate code and create a running commentary of the analysis - amazing!</div>
 
 <div class="alpha">Before this module I had heard of R but not really understood its purpose or usefulness. I had assumed it was similar to SPSS, oh how wrong I was.</div>
 
