@@ -90,6 +90,8 @@ Bret Victor: [Learnable Programming: Designing a programming system for understa
 
 [Top 10 Coding Mistakes Made by Data Scientists](https://www.kdnuggets.com/2019/04/top-10-coding-mistakes-data-scientists.html)
 
+[Coding error postmortem](http://reproducibility.stanford.edu/coding-error-postmortem/) by Russ Poldrack, McKenzie Hagen, and Patrick Bissett (August 10, 2020)
+
 ## R
 
 [Prime Hints For Running A Data Project In] R(https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/)
@@ -137,6 +139,9 @@ Hox, J. (2010) Multilevel Analysis: Techniques and Applications
 
 [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems](https://www.amazon.co.uk/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646) by Aurelien Geron (2019)
 
+[Efficient R Programming](https://csgillespie.github.io/efficientR/)
+
+SQL [Database access dplyr ](https://db.rstudio.com/dplyr/)
 
 [Data Visualization course](https://datavizm20.classes.andrewheiss.com/lesson/) by Dr. Andrew Heiss of Georgia State University
 
