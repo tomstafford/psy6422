@@ -24,7 +24,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2020-08-17" />
+<meta name="date" content="2020-08-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="notes.html"/>
 
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,6 +51,7 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
 <script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
@@ -60,25 +62,26 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -87,9 +90,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -139,19 +142,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">PSY6422 Data Management & Visualisation</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Module Overview</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Module Overview</a>
+<ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#motivation"><i class="fa fa-check"></i><b>0.1</b> Motivation</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-aims"><i class="fa fa-check"></i><b>0.2</b> Course Aims</a><ul>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-aims"><i class="fa fa-check"></i><b>0.2</b> Course Aims</a>
+<ul>
 <li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#slides"><i class="fa fa-check"></i><b>0.2.1</b> Slides</a></li>
 <li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#the-final-project"><i class="fa fa-check"></i><b>0.2.2</b> The Final project</a></li>
 </ul></li>
 <li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#resources-for-current-students"><i class="fa fa-check"></i><b>0.3</b> Resources for current students</a></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#course-outline"><i class="fa fa-check"></i><b>0.4</b> Course Outline</a><ul>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#course-outline"><i class="fa fa-check"></i><b>0.4</b> Course Outline</a>
+<ul>
 <li class="chapter" data-level="0.4.1" data-path="index.html"><a href="index.html#stretch-goals"><i class="fa fa-check"></i><b>0.4.1</b> Stretch goals:</a></li>
 </ul></li>
 <li class="chapter" data-level="0.5" data-path="index.html"><a href="index.html#more"><i class="fa fa-check"></i><b>0.5</b> More</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="project-organisation.html"><a href="project-organisation.html"><i class="fa fa-check"></i><b>1</b> Project Organisation</a><ul>
+<li class="chapter" data-level="1" data-path="project-organisation.html"><a href="project-organisation.html"><i class="fa fa-check"></i><b>1</b> Project Organisation</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="project-organisation.html"><a href="project-organisation.html#project-folders"><i class="fa fa-check"></i><b>1.1</b> Project folders</a></li>
 <li class="chapter" data-level="1.2" data-path="project-organisation.html"><a href="project-organisation.html#naming-things"><i class="fa fa-check"></i><b>1.2</b> Naming Things</a></li>
 <li class="chapter" data-level="1.3" data-path="project-organisation.html"><a href="project-organisation.html#research-data-management"><i class="fa fa-check"></i><b>1.3</b> Research Data Management</a></li>
@@ -161,15 +168,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="r-r-studio.html"><a href="r-r-studio.html"><i class="fa fa-check"></i><b>2</b> R &amp; R Studio</a></li>
 <li class="chapter" data-level="3" data-path="making-graphs.html"><a href="making-graphs.html"><i class="fa fa-check"></i><b>3</b> Making Graphs</a></li>
 <li class="chapter" data-level="4" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>4</b> Data Management</a></li>
-<li class="chapter" data-level="5" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>5</b> Coding Principles</a><ul>
-<li class="chapter" data-level="5.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>5.1</b> Fundamental methods</a><ul>
+<li class="chapter" data-level="5" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>5</b> Coding Principles</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>5.1</b> Fundamental methods</a>
+<ul>
 <li class="chapter" data-level="5.1.1" data-path="coding-principles.html"><a href="coding-principles.html#if"><i class="fa fa-check"></i><b>5.1.1</b> If statements</a></li>
 <li class="chapter" data-level="5.1.2" data-path="coding-principles.html"><a href="coding-principles.html#loops"><i class="fa fa-check"></i><b>5.1.2</b> Loops</a></li>
 <li class="chapter" data-level="5.1.3" data-path="coding-principles.html"><a href="coding-principles.html#functions"><i class="fa fa-check"></i><b>5.1.3</b> Functions</a></li>
 <li class="chapter" data-level="5.1.4" data-path="coding-principles.html"><a href="coding-principles.html#exercises"><i class="fa fa-check"></i><b>5.1.4</b> Exercises</a></li>
 <li class="chapter" data-level="5.1.5" data-path="index.html"><a href="index.html#more"><i class="fa fa-check"></i><b>5.1.5</b> More</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>5.2</b> Fundamental principles of good code</a><ul>
+<li class="chapter" data-level="5.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>5.2</b> Fundamental principles of good code</a>
+<ul>
 <li class="chapter" data-level="5.2.1" data-path="coding-principles.html"><a href="coding-principles.html#readability-matters"><i class="fa fa-check"></i><b>5.2.1</b> Readability Matters</a></li>
 <li class="chapter" data-level="5.2.2" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>5.2.2</b> Avoid hard coded values</a></li>
 <li class="chapter" data-level="5.2.3" data-path="coding-principles.html"><a href="coding-principles.html#functionalise-generalise"><i class="fa fa-check"></i><b>5.2.3</b> Functionalise &amp; Generalise</a></li>
@@ -177,7 +187,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.2.5" data-path="coding-principles.html"><a href="coding-principles.html#more-1"><i class="fa fa-check"></i><b>5.2.5</b> More</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>6</b> Rmarkdown</a><ul>
+<li class="chapter" data-level="6" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>6</b> Rmarkdown</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="rmarkdown.html"><a href="rmarkdown.html#and-this-line-is-a-heading"><i class="fa fa-check"></i><b>6.1</b> And this line is a heading</a></li>
 <li class="chapter" data-level="6.2" data-path="rmarkdown.html"><a href="rmarkdown.html#first-a-header"><i class="fa fa-check"></i><b>6.2</b> First a header</a></li>
 <li class="chapter" data-level="6.3" data-path="rmarkdown.html"><a href="rmarkdown.html#second-text"><i class="fa fa-check"></i><b>6.3</b> Second, text</a></li>
@@ -186,25 +197,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.6" data-path="coding-principles.html"><a href="coding-principles.html#exercises"><i class="fa fa-check"></i><b>6.6</b> Exercises</a></li>
 <li class="chapter" data-level="6.7" data-path="rmarkdown.html"><a href="rmarkdown.html#resources"><i class="fa fa-check"></i><b>6.7</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>7</b> Git and Github</a><ul>
+<li class="chapter" data-level="7" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>7</b> Git and Github</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="git-and-github.html"><a href="git-and-github.html#before-the-class"><i class="fa fa-check"></i><b>7.1</b> Before the class</a></li>
 <li class="chapter" data-level="7.2" data-path="git-and-github.html"><a href="git-and-github.html#accessing-git"><i class="fa fa-check"></i><b>7.2</b> Accessing git</a></li>
 <li class="chapter" data-level="7.3" data-path="git-and-github.html"><a href="git-and-github.html#resources-for-the-class"><i class="fa fa-check"></i><b>7.3</b> Resources for the class</a></li>
 <li class="chapter" data-level="7.4" data-path="git-and-github.html"><a href="git-and-github.html#exercise---publishing-your-project-with-github-pages"><i class="fa fa-check"></i><b>7.4</b> Exercise - publishing your project with github pages</a></li>
 <li class="chapter" data-level="7.5" data-path="git-and-github.html"><a href="git-and-github.html#bonus-reading"><i class="fa fa-check"></i><b>7.5</b> Bonus Reading</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="publishing.html"><a href="publishing.html"><i class="fa fa-check"></i><b>8</b> Publishing</a><ul>
+<li class="chapter" data-level="8" data-path="publishing.html"><a href="publishing.html"><i class="fa fa-check"></i><b>8</b> Publishing</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="publishing.html"><a href="publishing.html#sharing-your-rmd-files-via-github-pages"><i class="fa fa-check"></i><b>8.1</b> Sharing your Rmd files via Github pages</a></li>
 <li class="chapter" data-level="8.2" data-path="publishing.html"><a href="publishing.html#other-sharing-options"><i class="fa fa-check"></i><b>8.2</b> Other sharing options</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="advanced-topics.html"><a href="advanced-topics.html"><i class="fa fa-check"></i><b>9</b> Advanced Topics</a><ul>
+<li class="chapter" data-level="9" data-path="advanced-topics.html"><a href="advanced-topics.html"><i class="fa fa-check"></i><b>9</b> Advanced Topics</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="advanced-topics.html"><a href="advanced-topics.html#interactive-graphs"><i class="fa fa-check"></i><b>9.1</b> Interactive graphs</a></li>
 <li class="chapter" data-level="9.2" data-path="advanced-topics.html"><a href="advanced-topics.html#reproducibility"><i class="fa fa-check"></i><b>9.2</b> Reproducibility</a></li>
 <li class="chapter" data-level="9.3" data-path="advanced-topics.html"><a href="advanced-topics.html#preview-of-other-advanced-topics"><i class="fa fa-check"></i><b>9.3</b> Preview of other advanced topics</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="final-project.html"><a href="final-project.html"><i class="fa fa-check"></i>Final project</a><ul>
+<li class="chapter" data-level="" data-path="final-project.html"><a href="final-project.html"><i class="fa fa-check"></i>Final project</a>
+<ul>
 <li class="chapter" data-level="9.4" data-path="final-project.html"><a href="final-project.html#requirements"><i class="fa fa-check"></i><b>9.4</b> Project requirements</a></li>
-<li class="chapter" data-level="9.5" data-path="final-project.html"><a href="final-project.html#choosing-your-data"><i class="fa fa-check"></i><b>9.5</b> Choosing your data</a><ul>
+<li class="chapter" data-level="9.5" data-path="final-project.html"><a href="final-project.html#choosing-your-data"><i class="fa fa-check"></i><b>9.5</b> Choosing your data</a>
+<ul>
 <li class="chapter" data-level="9.5.1" data-path="final-project.html"><a href="final-project.html#finding-data"><i class="fa fa-check"></i><b>9.5.1</b> Finding Data</a></li>
 <li class="chapter" data-level="9.5.2" data-path="final-project.html"><a href="final-project.html#suggestions-for-2021-in-progress"><i class="fa fa-check"></i><b>9.5.2</b> Suggestions for 2021 (in progress)</a></li>
 </ul></li>
@@ -212,16 +228,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.7" data-path="final-project.html"><a href="final-project.html#check-list"><i class="fa fa-check"></i><b>9.7</b> Check list</a></li>
 <li class="chapter" data-level="9.8" data-path="final-project.html"><a href="final-project.html#answers-to-common-questions"><i class="fa fa-check"></i><b>9.8</b> Answers to common questions</a></li>
 <li class="chapter" data-level="9.9" data-path="final-project.html"><a href="final-project.html#getting-help"><i class="fa fa-check"></i><b>9.9</b> Getting help</a></li>
-<li class="chapter" data-level="9.10" data-path="final-project.html"><a href="final-project.html#example-projects"><i class="fa fa-check"></i><b>9.10</b> Example Projects</a><ul>
+<li class="chapter" data-level="9.10" data-path="final-project.html"><a href="final-project.html#example-projects"><i class="fa fa-check"></i><b>9.10</b> Example Projects</a>
+<ul>
 <li class="chapter" data-level="9.10.1" data-path="index.html"><a href="index.html#stretch-goals"><i class="fa fa-check"></i><b>9.10.1</b> Stretch goals</a></li>
 </ul></li>
 </ul></li>
 <li class="appendix"><span><b>Appendices</b></span></li>
-<li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes</a><ul>
+<li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes</a>
+<ul>
 <li class="chapter" data-level="A.1" data-path="class-notes.html"><a href="class-notes.html#ask-me-questions"><i class="fa fa-check"></i><b>A.1</b> Ask me questions</a></li>
 <li class="chapter" data-level="A.2" data-path="class-notes.html"><a href="class-notes.html#terminology-raw-data"><i class="fa fa-check"></i><b>A.2</b> Terminology: ‘Raw data’</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading</a><ul>
+<li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading</a>
+<ul>
 <li class="chapter" data-level="B.1" data-path="extra-reading.html"><a href="extra-reading.html#visualisation-theory"><i class="fa fa-check"></i><b>B.1</b> Visualisation (theory)</a></li>
 <li class="chapter" data-level="B.2" data-path="extra-reading.html"><a href="extra-reading.html#the-reproducibility-crisis"><i class="fa fa-check"></i><b>B.2</b> The Reproducibility Crisis</a></li>
 <li class="chapter" data-level="B.3" data-path="extra-reading.html"><a href="extra-reading.html#better-practice"><i class="fa fa-check"></i><b>B.3</b> Better practice</a></li>
@@ -232,7 +251,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="B.8" data-path="extra-reading.html"><a href="extra-reading.html#statistics"><i class="fa fa-check"></i><b>B.8</b> Statistics</a></li>
 <li class="chapter" data-level="B.9" data-path="extra-reading.html"><a href="extra-reading.html#advanced-reading-background-other-recommends"><i class="fa fa-check"></i><b>B.9</b> Advanced Reading, Background &amp; Other Recommends</a></li>
 </ul></li>
-<li class="chapter" data-level="C" data-path="notes.html"><a href="notes.html"><i class="fa fa-check"></i><b>C</b> Notes</a><ul>
+<li class="chapter" data-level="C" data-path="notes.html"><a href="notes.html"><i class="fa fa-check"></i><b>C</b> Notes</a>
+<ul>
 <li class="chapter" data-level="C.1" data-path="notes.html"><a href="notes.html#credit"><i class="fa fa-check"></i><b>C.1</b> Credit</a></li>
 <li class="chapter" data-level="C.2" data-path="notes.html"><a href="notes.html#colophon"><i class="fa fa-check"></i><b>C.2</b> Colophon</a></li>
 <li class="chapter" data-level="C.3" data-path="notes.html"><a href="notes.html#python"><i class="fa fa-check"></i><b>C.3</b> Python</a></li>
@@ -241,7 +261,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="C.6" data-path="notes.html"><a href="notes.html#careers"><i class="fa fa-check"></i><b>C.6</b> Careers</a></li>
 <li class="chapter" data-level="C.7" data-path="notes.html"><a href="notes.html#testimonials"><i class="fa fa-check"></i><b>C.7</b> Testimonials</a></li>
 </ul></li>
-<li class="chapter" data-level="D" data-path="class-of-2020.html"><a href="class-of-2020.html"><i class="fa fa-check"></i><b>D</b> Class of 2020</a><ul>
+<li class="chapter" data-level="D" data-path="class-of-2020.html"><a href="class-of-2020.html"><i class="fa fa-check"></i><b>D</b> Class of 2020</a>
+<ul>
 <li class="chapter" data-level="D.1" data-path="class-of-2020.html"><a href="class-of-2020.html#feedback"><i class="fa fa-check"></i><b>D.1</b> Feedback</a></li>
 </ul></li>
 <li class="divider"></li>
@@ -268,7 +289,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="class-of-2020" class="section level1">
+<div id="class-of-2020" class="section level1" number="13">
 <h1><span class="header-section-number">D</span> Class of 2020</h1>
 <p>This was the first year for the new <a href="https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science">MSc in Psychological Research Methods with Data Science</a>. PSY6422 is a key module for this course, and is designed to set students up for their independent data science project, completed over the summer.</p>
 <p>Before they work on their summer projects, MSc students complete a mini-project on this module, and these are what is showcased below.</p>
@@ -282,8 +303,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="images/nabia.png" style="width: 600px; float: center;"></p>
 <p>Note that these boxplots with jittered points allow you to see the group average but also the underlying data.</p>
 <p>Rachel, looked at <a href="https://rachelanthony.github.io/">COVID-19 Deaths in England</a> and produced a number of animated and interactive plots which really show off the data visualisation potential of R/ggplot, including this shocking plot of regional rates of death against deprivation, which shows that the death rate in the most deprived areas was twice that of the rate in the least deprived areas. Hover over each bar for details.</p>
-<div id="htmlwidget-b91cb642e283311b7fa1" style="width:100%;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b91cb642e283311b7fa1">{"x":{"data":[{"orientation":"v","width":0.9,"base":0,"x":[1],"y":[55.1],"text":"Deprivation.Scale:  1<br />Death.Rate: 55.1<br />Deprivation.Scale:  1","type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,0,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[2],"y":[57.6],"text":"Deprivation.Scale:  2<br />Death.Rate: 57.6<br />Deprivation.Scale:  2","type":"bar","marker":{"autocolorscale":false,"color":"rgba(109,0,228,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[3],"y":[52.4],"text":"Deprivation.Scale:  3<br />Death.Rate: 52.4<br />Deprivation.Scale:  3","type":"bar","marker":{"autocolorscale":false,"color":"rgba(147,0,201,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[4],"y":[39.5],"text":"Deprivation.Scale:  4<br />Death.Rate: 39.5<br />Deprivation.Scale:  4","type":"bar","marker":{"autocolorscale":false,"color":"rgba(173,0,175,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[5],"y":[34.9],"text":"Deprivation.Scale:  5<br />Death.Rate: 34.9<br />Deprivation.Scale:  5","type":"bar","marker":{"autocolorscale":false,"color":"rgba(193,0,149,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[6],"y":[32.1],"text":"Deprivation.Scale:  6<br />Death.Rate: 32.1<br />Deprivation.Scale:  6","type":"bar","marker":{"autocolorscale":false,"color":"rgba(209,0,124,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[7],"y":[29.6],"text":"Deprivation.Scale:  7<br />Death.Rate: 29.6<br />Deprivation.Scale:  7","type":"bar","marker":{"autocolorscale":false,"color":"rgba(223,0,99,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":0,"x":[8],"y":[30.3],"text":"Deprivation.Scale:  8<br />Death.Rate: 30.3<br />Deprivation.Scale:  8","type":"bar","marker":{"autocolorscale":false,"color":"rgba(235,0,73,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":0,"x":[9],"y":[27],"text":"Deprivation.Scale:  9<br />Death.Rate: 27.0<br />Deprivation.Scale:  9","type":"bar","marker":{"autocolorscale":false,"color":"rgba(245,0,45,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":0,"x":[10],"y":[25.3],"text":"Deprivation.Scale: 10<br />Death.Rate: 25.3<br />Deprivation.Scale: 10","type":"bar","marker":{"autocolorscale":false,"color":"rgba(255,0,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.7625570776256,"r":7.30593607305936,"b":40.1826484018265,"l":37.2602739726027},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"COVID-19 Death Rate according to Deprivation Scale","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.0550000000000001,10.945],"tickmode":"array","ticktext":["1","2","3","4","5","6","7","8","9","10"],"tickvals":[1,2,3,4,5,6,7,8,9,10],"categoryorder":"array","categoryarray":["1","2","3","4","5","6","7","8","9","10"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Deprivation Scale","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-2.88,60.48],"tickmode":"array","ticktext":["0","20","40","60"],"tickvals":[0,20,40,60],"categoryorder":"array","categoryarray":["0","20","40","60"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Death Rate, per 100,000","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"1df3b69d1bee4":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"1df3b69d1bee4","visdat":{"1df3b69d1bee4":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-ca908f90afa3959116b6" style="width:100%;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-ca908f90afa3959116b6">{"x":{"data":[{"orientation":"v","width":0.9,"base":0,"x":[1],"y":[55.1],"text":"Deprivation.Scale:  1<br />Death.Rate: 55.1<br />Deprivation.Scale:  1","type":"bar","marker":{"autocolorscale":false,"color":"rgba(0,0,255,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[2],"y":[57.6],"text":"Deprivation.Scale:  2<br />Death.Rate: 57.6<br />Deprivation.Scale:  2","type":"bar","marker":{"autocolorscale":false,"color":"rgba(109,0,228,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[3],"y":[52.4],"text":"Deprivation.Scale:  3<br />Death.Rate: 52.4<br />Deprivation.Scale:  3","type":"bar","marker":{"autocolorscale":false,"color":"rgba(147,0,201,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[4],"y":[39.5],"text":"Deprivation.Scale:  4<br />Death.Rate: 39.5<br />Deprivation.Scale:  4","type":"bar","marker":{"autocolorscale":false,"color":"rgba(173,0,175,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[5],"y":[34.9],"text":"Deprivation.Scale:  5<br />Death.Rate: 34.9<br />Deprivation.Scale:  5","type":"bar","marker":{"autocolorscale":false,"color":"rgba(193,0,149,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[6],"y":[32.1],"text":"Deprivation.Scale:  6<br />Death.Rate: 32.1<br />Deprivation.Scale:  6","type":"bar","marker":{"autocolorscale":false,"color":"rgba(209,0,124,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.9,"base":0,"x":[7],"y":[29.6],"text":"Deprivation.Scale:  7<br />Death.Rate: 29.6<br />Deprivation.Scale:  7","type":"bar","marker":{"autocolorscale":false,"color":"rgba(223,0,99,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":0,"x":[8],"y":[30.3],"text":"Deprivation.Scale:  8<br />Death.Rate: 30.3<br />Deprivation.Scale:  8","type":"bar","marker":{"autocolorscale":false,"color":"rgba(235,0,73,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":0,"x":[9],"y":[27],"text":"Deprivation.Scale:  9<br />Death.Rate: 27.0<br />Deprivation.Scale:  9","type":"bar","marker":{"autocolorscale":false,"color":"rgba(245,0,45,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"orientation":"v","width":0.899999999999999,"base":0,"x":[10],"y":[25.3],"text":"Deprivation.Scale: 10<br />Death.Rate: 25.3<br />Deprivation.Scale: 10","type":"bar","marker":{"autocolorscale":false,"color":"rgba(255,0,0,1)","line":{"width":1.88976377952756,"color":"transparent"}},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.7625570776256,"r":7.30593607305936,"b":40.1826484018265,"l":37.2602739726027},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187},"title":{"text":"COVID-19 Death Rate according to Deprivation Scale","font":{"color":"rgba(0,0,0,1)","family":"","size":17.5342465753425},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.0550000000000001,10.945],"tickmode":"array","ticktext":["1","2","3","4","5","6","7","8","9","10"],"tickvals":[1,2,3,4,5,6,7,8,9,10],"categoryorder":"array","categoryarray":["1","2","3","4","5","6","7","8","9","10"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"y","title":{"text":"Deprivation Scale","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-2.88,60.48],"tickmode":"array","ticktext":["0","20","40","60"],"tickvals":[0,20,40,60],"categoryorder":"array","categoryarray":["0","20","40","60"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.65296803652968,"tickwidth":0.66417600664176,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.689497716895},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176,"zeroline":false,"anchor":"x","title":{"text":"Death Rate, per 100,000","font":{"color":"rgba(0,0,0,1)","family":"","size":14.6118721461187}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":"transparent","line":{"color":"rgba(51,51,51,1)","width":0.66417600664176,"linetype":"solid"},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.88976377952756,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.689497716895}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","showSendToCloud":false},"source":"A","attrs":{"72fd631bceaf":{"x":{},"y":{},"fill":{},"type":"bar"}},"cur_data":"72fd631bceaf","visdat":{"72fd631bceaf":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 <p>Yidan’s project mixed python and R and involved some highly technical work installing and querying an SQL database server. The topic, <a href="https://github.com/yidanliu-psy/solo-player-skill/blob/master/visualisation.ipynb">Skill acquisition of solo players: a case study</a> revealed how practice mapped to skill level in players of an online strategy game:</p>
 <p><img src="images/yidan.png" style="width: 600px; float: center;"></p>
 <p>This is the famous learning curve, showing that players improved with practice (but at a deccelerating rate).</p>
@@ -296,7 +317,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Others projects used open data from published research, replicating and extending the analysis the original authors reproduced (<a href="https://bessieo.github.io/Looking-At-Others/">Bessie</a>, <a href="https://ekhojah.github.io/Birthwight/">Esra</a>, <a href="https://sam-antrobus.github.io/Final_Project/">Sam</a>, <a href="https://lmcgrath2.github.io/PSY6422project/">Leah</a>)</p>
 <p>These are just the projects which were completed and published publicly by students on the module this year (and who gave me permission to link to their work). I am immensely proud of all the work students did on this module, which was severely disrupted by the pandemic. However far you get with data analysis and visualisation there is always more you can learn, which can be daunting, but it can also be exciting because there are new things to try, new data to look and new things to find out.</p>
 <p><em>Tom Stafford, July 2020</em></p>
-<div id="feedback" class="section level2">
+<div id="feedback" class="section level2" number="13.1">
 <h2><span class="header-section-number">D.1</span> Feedback</h2>
 <p>Selected feedback from the class of 2020</p>
 <style>
