@@ -357,13 +357,13 @@ And when you use the same script for different data, both the lines loading data
 
 Another example
 
-```{r}
+```{r anscombe1}
 
 graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-```{r}
+```{r anscombe2}
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color='blue',size=3) #change this line for different look
 
@@ -371,7 +371,7 @@ graph2 + geom_point(color='blue',size=3) #change this line for different look
 
 Adding variables means you only need to edit one line to change the look of both plots
 
-```{r}
+```{r anscombe1and2red}
 pointcolour='red'; pointsize=5 ; pointshape = 23 #change this line for different look
 
 graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1)) 

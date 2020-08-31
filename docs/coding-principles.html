@@ -24,7 +24,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2020-08-30" />
+<meta name="date" content="2020-08-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -544,19 +544,19 @@ Look at this function, it hard to understand, right?</p>
 <p>Another example</p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="coding-principles.html#cb35-1"></a>graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1))</span>
 <span id="cb35-2"><a href="coding-principles.html#cb35-2"></a>graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></span></code></pre></div>
-<p><img src="007-coding_files/figure-html/unnamed-chunk-25-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="007-coding_files/figure-html/anscombe1-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="coding-principles.html#cb36-1"></a>graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))</span>
 <span id="cb36-2"><a href="coding-principles.html#cb36-2"></a>graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></span></code></pre></div>
-<p><img src="007-coding_files/figure-html/unnamed-chunk-26-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="007-coding_files/figure-html/anscombe2-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Adding variables means you only need to edit one line to change the look of both plots</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="coding-principles.html#cb37-1"></a>pointcolour=<span class="st">&#39;red&#39;</span>; pointsize=<span class="dv">5</span> ; pointshape =<span class="st"> </span><span class="dv">23</span> <span class="co">#change this line for different look</span></span>
 <span id="cb37-2"><a href="coding-principles.html#cb37-2"></a></span>
 <span id="cb37-3"><a href="coding-principles.html#cb37-3"></a>graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1)) </span>
 <span id="cb37-4"><a href="coding-principles.html#cb37-4"></a>graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span>pointcolour,<span class="dt">size=</span>pointsize, <span class="dt">shape =</span> pointshape) <span class="co"># never change these lines</span></span></code></pre></div>
-<p><img src="007-coding_files/figure-html/unnamed-chunk-27-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="007-coding_files/figure-html/anscombe1and2red-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="coding-principles.html#cb38-1"></a>graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))</span>
 <span id="cb38-2"><a href="coding-principles.html#cb38-2"></a>graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span>pointcolour,<span class="dt">size=</span>pointsize, <span class="dt">shape =</span> pointshape) <span class="co"># never change these lines</span></span></code></pre></div>
-<p><img src="007-coding_files/figure-html/unnamed-chunk-27-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><img src="007-coding_files/figure-html/anscombe1and2red-2.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.</p>
 </div>
 <div id="functionalise-generalise" class="section level3" number="5.2.3">
