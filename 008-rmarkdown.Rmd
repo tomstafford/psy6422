@@ -77,7 +77,7 @@ print("And the output it produces")
 Here is another example
 
 
-```{r}
+```{r asrs_scatter}
 #Code to make an example graph
 library(tidyverse)
 
@@ -109,7 +109,7 @@ You don't need to show the r code, but can still include it in the document and 
 
 The scatterplot above uses participant number as one of the axes, which doesn't really make any sense. A histogram is a better way of visualising the spread of scores on a single variable, so here is one:
 
-```{r echo=FALSE}
+```{r example_histogram echo=FALSE}
 #Code to make a better example graph
 # - note we don't need to load the data again etc
 # here's a useful page about making histograms http://www.sthda.com/english/wiki/ggplot2-histogram-plot-quick-start-guide-r-software-and-data-visualization
