@@ -57,6 +57,7 @@ More information:
 * [Data Scientist: Job Description](https://targetjobs.co.uk/careers-advice/job-descriptions/454123-data-scientist-job-description)
 * University of Sheffield: [Career Connect](https://www.sheffield.ac.uk/careers/careerconnect)
 * Academic Jobs: [jobs.ac.uk](https://www.jobs.ac.uk/)
+* University of Sheffield Careers service: [Support for international students](https://www.sheffield.ac.uk/careers/services/international)
 
 ## Testimonials
 
