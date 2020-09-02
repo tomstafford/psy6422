@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if [ "$1" != "" ]; then
     msg=$1
 else
@@ -9,6 +10,6 @@ fi
 R -e 'bookdown::render_book("index.Rmd")'
 
 git add -A
-git commit -m "work in progress update" 
+git commit -m $msg
 git push origin master
 
