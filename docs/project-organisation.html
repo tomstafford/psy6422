@@ -24,7 +24,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2020-09-02" />
+<meta name="date" content="2020-09-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,6 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="r-r-studio.html"/>
-<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,7 +50,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
 <script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
@@ -62,26 +60,25 @@
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -90,9 +87,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -142,23 +139,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">PSY6422 Data Management & Visualisation</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Module Overview</a>
-<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Module Overview</a><ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#motivation"><i class="fa fa-check"></i><b>0.1</b> Motivation</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-aims"><i class="fa fa-check"></i><b>0.2</b> Course Aims</a>
-<ul>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-aims"><i class="fa fa-check"></i><b>0.2</b> Course Aims</a><ul>
 <li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#slides"><i class="fa fa-check"></i><b>0.2.1</b> Slides</a></li>
 <li class="chapter" data-level="0.2.2" data-path="index.html"><a href="index.html#the-final-project"><i class="fa fa-check"></i><b>0.2.2</b> The Final project</a></li>
 </ul></li>
 <li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#resources-for-current-students"><i class="fa fa-check"></i><b>0.3</b> Resources for current students</a></li>
-<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#course-outline"><i class="fa fa-check"></i><b>0.4</b> Course Outline</a>
-<ul>
+<li class="chapter" data-level="0.4" data-path="index.html"><a href="index.html#course-outline"><i class="fa fa-check"></i><b>0.4</b> Course Outline</a><ul>
 <li class="chapter" data-level="0.4.1" data-path="index.html"><a href="index.html#stretch-goals"><i class="fa fa-check"></i><b>0.4.1</b> Stretch goals:</a></li>
 </ul></li>
 <li class="chapter" data-level="0.5" data-path="index.html"><a href="index.html#more"><i class="fa fa-check"></i><b>0.5</b> More</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="project-organisation.html"><a href="project-organisation.html"><i class="fa fa-check"></i><b>1</b> Project Organisation</a>
-<ul>
+<li class="chapter" data-level="1" data-path="project-organisation.html"><a href="project-organisation.html"><i class="fa fa-check"></i><b>1</b> Project Organisation</a><ul>
 <li class="chapter" data-level="1.1" data-path="project-organisation.html"><a href="project-organisation.html#project-folders"><i class="fa fa-check"></i><b>1.1</b> Project folders</a></li>
 <li class="chapter" data-level="1.2" data-path="project-organisation.html"><a href="project-organisation.html#naming-things"><i class="fa fa-check"></i><b>1.2</b> Naming Things</a></li>
 <li class="chapter" data-level="1.3" data-path="project-organisation.html"><a href="project-organisation.html#research-data-management"><i class="fa fa-check"></i><b>1.3</b> Research Data Management</a></li>
@@ -168,18 +161,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="r-r-studio.html"><a href="r-r-studio.html"><i class="fa fa-check"></i><b>2</b> R &amp; R Studio</a></li>
 <li class="chapter" data-level="3" data-path="making-graphs.html"><a href="making-graphs.html"><i class="fa fa-check"></i><b>3</b> Making Graphs</a></li>
 <li class="chapter" data-level="4" data-path="data-management.html"><a href="data-management.html"><i class="fa fa-check"></i><b>4</b> Data Management</a></li>
-<li class="chapter" data-level="5" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>5</b> Coding Principles</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>5.1</b> Fundamental methods</a>
-<ul>
+<li class="chapter" data-level="5" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>5</b> Coding Principles</a><ul>
+<li class="chapter" data-level="5.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>5.1</b> Fundamental methods</a><ul>
 <li class="chapter" data-level="5.1.1" data-path="coding-principles.html"><a href="coding-principles.html#if"><i class="fa fa-check"></i><b>5.1.1</b> If statements</a></li>
 <li class="chapter" data-level="5.1.2" data-path="coding-principles.html"><a href="coding-principles.html#loops"><i class="fa fa-check"></i><b>5.1.2</b> Loops</a></li>
 <li class="chapter" data-level="5.1.3" data-path="coding-principles.html"><a href="coding-principles.html#functions"><i class="fa fa-check"></i><b>5.1.3</b> Functions</a></li>
 <li class="chapter" data-level="5.1.4" data-path="coding-principles.html"><a href="coding-principles.html#exercises"><i class="fa fa-check"></i><b>5.1.4</b> Exercises</a></li>
 <li class="chapter" data-level="5.1.5" data-path="index.html"><a href="index.html#more"><i class="fa fa-check"></i><b>5.1.5</b> More</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>5.2</b> Fundamental principles of good code</a>
-<ul>
+<li class="chapter" data-level="5.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>5.2</b> Fundamental principles of good code</a><ul>
 <li class="chapter" data-level="5.2.1" data-path="coding-principles.html"><a href="coding-principles.html#readability-matters"><i class="fa fa-check"></i><b>5.2.1</b> Readability Matters</a></li>
 <li class="chapter" data-level="5.2.2" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>5.2.2</b> Avoid hard coded values</a></li>
 <li class="chapter" data-level="5.2.3" data-path="coding-principles.html"><a href="coding-principles.html#functionalise-generalise"><i class="fa fa-check"></i><b>5.2.3</b> Functionalise &amp; Generalise</a></li>
@@ -187,8 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.2.5" data-path="coding-principles.html"><a href="coding-principles.html#more-1"><i class="fa fa-check"></i><b>5.2.5</b> More</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>6</b> Rmarkdown</a>
-<ul>
+<li class="chapter" data-level="6" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>6</b> Rmarkdown</a><ul>
 <li class="chapter" data-level="6.1" data-path="rmarkdown.html"><a href="rmarkdown.html#and-this-line-is-a-heading"><i class="fa fa-check"></i><b>6.1</b> And this line is a heading</a></li>
 <li class="chapter" data-level="6.2" data-path="rmarkdown.html"><a href="rmarkdown.html#first-a-header"><i class="fa fa-check"></i><b>6.2</b> First a header</a></li>
 <li class="chapter" data-level="6.3" data-path="rmarkdown.html"><a href="rmarkdown.html#second-text"><i class="fa fa-check"></i><b>6.3</b> Second, text</a></li>
@@ -197,30 +186,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.6" data-path="coding-principles.html"><a href="coding-principles.html#exercises"><i class="fa fa-check"></i><b>6.6</b> Exercises</a></li>
 <li class="chapter" data-level="6.7" data-path="rmarkdown.html"><a href="rmarkdown.html#resources"><i class="fa fa-check"></i><b>6.7</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>7</b> Git and Github</a>
-<ul>
+<li class="chapter" data-level="7" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>7</b> Git and Github</a><ul>
 <li class="chapter" data-level="7.1" data-path="git-and-github.html"><a href="git-and-github.html#before-the-class"><i class="fa fa-check"></i><b>7.1</b> Before the class</a></li>
 <li class="chapter" data-level="7.2" data-path="git-and-github.html"><a href="git-and-github.html#accessing-git"><i class="fa fa-check"></i><b>7.2</b> Accessing git</a></li>
 <li class="chapter" data-level="7.3" data-path="git-and-github.html"><a href="git-and-github.html#resources-for-the-class"><i class="fa fa-check"></i><b>7.3</b> Resources for the class</a></li>
 <li class="chapter" data-level="7.4" data-path="git-and-github.html"><a href="git-and-github.html#exercise---publishing-your-project-with-github-pages"><i class="fa fa-check"></i><b>7.4</b> Exercise - publishing your project with github pages</a></li>
 <li class="chapter" data-level="7.5" data-path="git-and-github.html"><a href="git-and-github.html#bonus-reading"><i class="fa fa-check"></i><b>7.5</b> Bonus Reading</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="publishing.html"><a href="publishing.html"><i class="fa fa-check"></i><b>8</b> Publishing</a>
-<ul>
+<li class="chapter" data-level="8" data-path="publishing.html"><a href="publishing.html"><i class="fa fa-check"></i><b>8</b> Publishing</a><ul>
 <li class="chapter" data-level="8.1" data-path="publishing.html"><a href="publishing.html#sharing-your-rmd-files-via-github-pages"><i class="fa fa-check"></i><b>8.1</b> Sharing your Rmd files via Github pages</a></li>
 <li class="chapter" data-level="8.2" data-path="publishing.html"><a href="publishing.html#other-sharing-options"><i class="fa fa-check"></i><b>8.2</b> Other sharing options</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="advanced-topics.html"><a href="advanced-topics.html"><i class="fa fa-check"></i><b>9</b> Advanced Topics</a>
-<ul>
+<li class="chapter" data-level="9" data-path="advanced-topics.html"><a href="advanced-topics.html"><i class="fa fa-check"></i><b>9</b> Advanced Topics</a><ul>
 <li class="chapter" data-level="9.1" data-path="advanced-topics.html"><a href="advanced-topics.html#interactive-graphs"><i class="fa fa-check"></i><b>9.1</b> Interactive graphs</a></li>
 <li class="chapter" data-level="9.2" data-path="advanced-topics.html"><a href="advanced-topics.html#reproducibility"><i class="fa fa-check"></i><b>9.2</b> Reproducibility</a></li>
 <li class="chapter" data-level="9.3" data-path="advanced-topics.html"><a href="advanced-topics.html#preview-of-other-advanced-topics"><i class="fa fa-check"></i><b>9.3</b> Preview of other advanced topics</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="final-project.html"><a href="final-project.html"><i class="fa fa-check"></i>Final project</a>
-<ul>
+<li class="chapter" data-level="" data-path="final-project.html"><a href="final-project.html"><i class="fa fa-check"></i>Final project</a><ul>
 <li class="chapter" data-level="9.4" data-path="final-project.html"><a href="final-project.html#requirements"><i class="fa fa-check"></i><b>9.4</b> Project requirements</a></li>
-<li class="chapter" data-level="9.5" data-path="final-project.html"><a href="final-project.html#choosing-your-data"><i class="fa fa-check"></i><b>9.5</b> Choosing your data</a>
-<ul>
+<li class="chapter" data-level="9.5" data-path="final-project.html"><a href="final-project.html#choosing-your-data"><i class="fa fa-check"></i><b>9.5</b> Choosing your data</a><ul>
 <li class="chapter" data-level="9.5.1" data-path="final-project.html"><a href="final-project.html#finding-data"><i class="fa fa-check"></i><b>9.5.1</b> Finding Data</a></li>
 <li class="chapter" data-level="9.5.2" data-path="final-project.html"><a href="final-project.html#suggestions-for-2021-in-progress"><i class="fa fa-check"></i><b>9.5.2</b> Suggestions for 2021 (in progress)</a></li>
 </ul></li>
@@ -228,19 +212,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.7" data-path="final-project.html"><a href="final-project.html#check-list"><i class="fa fa-check"></i><b>9.7</b> Check list</a></li>
 <li class="chapter" data-level="9.8" data-path="final-project.html"><a href="final-project.html#answers-to-common-questions"><i class="fa fa-check"></i><b>9.8</b> Answers to common questions</a></li>
 <li class="chapter" data-level="9.9" data-path="final-project.html"><a href="final-project.html#getting-help"><i class="fa fa-check"></i><b>9.9</b> Getting help</a></li>
-<li class="chapter" data-level="9.10" data-path="final-project.html"><a href="final-project.html#example-projects"><i class="fa fa-check"></i><b>9.10</b> Example Projects</a>
-<ul>
+<li class="chapter" data-level="9.10" data-path="final-project.html"><a href="final-project.html#example-projects"><i class="fa fa-check"></i><b>9.10</b> Example Projects</a><ul>
 <li class="chapter" data-level="9.10.1" data-path="index.html"><a href="index.html#stretch-goals"><i class="fa fa-check"></i><b>9.10.1</b> Stretch goals</a></li>
 </ul></li>
 </ul></li>
 <li class="appendix"><span><b>Appendices</b></span></li>
-<li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes</a>
-<ul>
+<li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes</a><ul>
 <li class="chapter" data-level="A.1" data-path="class-notes.html"><a href="class-notes.html#ask-me-questions"><i class="fa fa-check"></i><b>A.1</b> Ask me questions</a></li>
 <li class="chapter" data-level="A.2" data-path="class-notes.html"><a href="class-notes.html#terminology-raw-data"><i class="fa fa-check"></i><b>A.2</b> Terminology: ‘Raw data’</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading</a>
-<ul>
+<li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading</a><ul>
 <li class="chapter" data-level="B.1" data-path="extra-reading.html"><a href="extra-reading.html#visualisation-theory"><i class="fa fa-check"></i><b>B.1</b> Visualisation (theory)</a></li>
 <li class="chapter" data-level="B.2" data-path="extra-reading.html"><a href="extra-reading.html#the-reproducibility-crisis"><i class="fa fa-check"></i><b>B.2</b> The Reproducibility Crisis</a></li>
 <li class="chapter" data-level="B.3" data-path="extra-reading.html"><a href="extra-reading.html#better-practice"><i class="fa fa-check"></i><b>B.3</b> Better practice</a></li>
@@ -251,8 +232,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="B.8" data-path="extra-reading.html"><a href="extra-reading.html#statistics"><i class="fa fa-check"></i><b>B.8</b> Statistics</a></li>
 <li class="chapter" data-level="B.9" data-path="extra-reading.html"><a href="extra-reading.html#advanced-reading-background-other-recommends"><i class="fa fa-check"></i><b>B.9</b> Advanced Reading, Background &amp; Other Recommends</a></li>
 </ul></li>
-<li class="chapter" data-level="C" data-path="notes.html"><a href="notes.html"><i class="fa fa-check"></i><b>C</b> Notes</a>
-<ul>
+<li class="chapter" data-level="C" data-path="notes.html"><a href="notes.html"><i class="fa fa-check"></i><b>C</b> Notes</a><ul>
 <li class="chapter" data-level="C.1" data-path="notes.html"><a href="notes.html#credit"><i class="fa fa-check"></i><b>C.1</b> Credit</a></li>
 <li class="chapter" data-level="C.2" data-path="notes.html"><a href="notes.html#colophon"><i class="fa fa-check"></i><b>C.2</b> Colophon</a></li>
 <li class="chapter" data-level="C.3" data-path="notes.html"><a href="notes.html#python"><i class="fa fa-check"></i><b>C.3</b> Python</a></li>
@@ -261,8 +241,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="C.6" data-path="notes.html"><a href="notes.html#careers"><i class="fa fa-check"></i><b>C.6</b> Careers</a></li>
 <li class="chapter" data-level="C.7" data-path="notes.html"><a href="notes.html#testimonials"><i class="fa fa-check"></i><b>C.7</b> Testimonials</a></li>
 </ul></li>
-<li class="chapter" data-level="D" data-path="class-of-2020.html"><a href="class-of-2020.html"><i class="fa fa-check"></i><b>D</b> Class of 2020</a>
-<ul>
+<li class="chapter" data-level="D" data-path="class-of-2020.html"><a href="class-of-2020.html"><i class="fa fa-check"></i><b>D</b> Class of 2020</a><ul>
 <li class="chapter" data-level="D.1" data-path="class-of-2020.html"><a href="class-of-2020.html#feedback"><i class="fa fa-check"></i><b>D.1</b> Feedback</a></li>
 </ul></li>
 <li class="divider"></li>
@@ -289,7 +268,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="project-organisation" class="section level1" number="1">
+<div id="project-organisation" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> Project Organisation</h1>
 <div class="info">
 <p>
@@ -297,12 +276,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </p>
 </div>
 <p>Slides on project organisation are on the google drive: <a href="https://docs.google.com/presentation/d/1VH3cntMOo4BnRaglEWbRn5qQ0SMd2gGGWQHHDL1pKd0/edit?usp=drivesdk">slides format</a>, <a href="https://drive.google.com/file/d/1VyHcpxMBjEVN4TPC5Fz9FmTq3bctSmvB/view?usp=drivesdk">pdf format</a>. Please note, most of this class was taught in workshop format, so there aren’t many slides.</p>
-<div id="project-folders" class="section level2" number="1.1">
+<div id="project-folders" class="section level2">
 <h2><span class="header-section-number">1.1</span> Project folders</h2>
 <p>You should organise all the documentation, files, data, code and outputs for a project in a single folder. Your aim is that when you come back to this project, or want to share it, everything you need is in one place and sensibly organised.</p>
 <p>Create subfolders for ‘data’, ‘graphs’, ‘notes’. <a href="http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html">Michael Frank’s onboarding guide</a> explains a bit more about the logic of this.</p>
 </div>
-<div id="naming-things" class="section level2" number="1.2">
+<div id="naming-things" class="section level2">
 <h2><span class="header-section-number">1.2</span> Naming Things</h2>
 <p>Files come in different types. This is indicated by their name, not the content.Turn on the options which means you file viewers the extensions of files (so you can see the full filename is <code>MyProject.Doc</code> not just <code>MyProject</code>). How to do this: <a href="https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/">PC</a>, <a href="https://support.apple.com/en-gb/guide/mac-help/mchlp2304/mac">Mac</a>.</p>
 <p>Because you will want to share this project use names that make sense to other people, as well as to you. <code>MyProject.Doc</code> is a bad name. <code>joeblogs_psy64222.doc</code> is better.</p>
@@ -310,19 +289,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>These rules also apply to variables in computer code.</p>
 <p>Jenny Bryan has good thoughts on <a href="http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf">Naming Things</a></p>
 </div>
-<div id="research-data-management" class="section level2" number="1.3">
+<div id="research-data-management" class="section level2">
 <h2><span class="header-section-number">1.3</span> Research Data Management</h2>
 <p>Everything recorded during an experiment, whether by you or the computer, is data. All log files. Everything.</p>
 <p>Never delete <em>any</em> data.</p>
 <p>Never edit the raw data files. They should exist is a folder called or and only ever be opened, never modified in any way.</p>
 <p>All data should be backed-up automatically, as soon as it is collected. For how to do this, see the next header</p>
 </div>
-<div id="backup-and-sync" class="section level2" number="1.4">
+<div id="backup-and-sync" class="section level2">
 <h2><span class="header-section-number">1.4</span> Backup and Sync</h2>
 <p>Any back up process which requires you to remember to deploy it is fragile. Use a cloud synchronisation service. Many are available, like OneDrive or Dropbox, but since you are in the University of Sheffield you should install the <a href="https://www.google.com/drive/download/">Google Drive Backup and Sync tool</a>.</p>
 <p>As well as backing up your work to the cloud, this will allow you to work on multiple machines (because changes are automatically carried across from one to the other), as well as collaborate (because multiple people can add to the same shared folder and any changes are instantly available to the whole team).</p>
 </div>
-<div id="reading" class="section level2" number="1.5">
+<div id="reading" class="section level2">
 <h2><span class="header-section-number">1.5</span> Reading:</h2>
 <ul>
 <li><a href="http://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data organisation</a></li>
