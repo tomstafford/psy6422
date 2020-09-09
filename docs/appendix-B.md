@@ -61,7 +61,9 @@ Wilson, G., Bryan, J., Cranston, K., Kitzes, J., Nederbragt, L., & Teal, T. K. (
 
 Mike Frank onboarding guide http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html
 
-Jenny Bryan: Naming Things http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf
+Jenny Bryan's advice on filenames: [Naming Things](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
+
+Emily Riederer [Column naming contracts](https://emilyriederer.netlify.app/post/column-name-contracts/)
 
 Broman & Woo (2017) Data Organization in Spreadsheets https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989
 
@@ -72,8 +74,6 @@ Hadley Wickham: Tidy Data: http://vita.had.co.nz/papers/tidy-data.pdf
 
 
 ## Coding
-
-
 
 
 Readings in Applied Data Science https://github.com/hadley/stats337#readings
@@ -91,6 +91,7 @@ Bret Victor: [Learnable Programming: Designing a programming system for understa
 [Top 10 Coding Mistakes Made by Data Scientists](https://www.kdnuggets.com/2019/04/top-10-coding-mistakes-data-scientists.html)
 
 [Coding error postmortem](http://reproducibility.stanford.edu/coding-error-postmortem/) by Russ Poldrack, McKenzie Hagen, and Patrick Bissett (August 10, 2020)
+
 
 ## R
 
@@ -146,5 +147,6 @@ Rachel Thomas's [Applied Data Ethics Syllabus](https://ethics.fast.ai/syllabus)
 SQL [Database access dplyr ](https://db.rstudio.com/dplyr/)
 
 [Data Visualization course](https://datavizm20.classes.andrewheiss.com/lesson/) by Dr. Andrew Heiss of Georgia State University
+
 
 
