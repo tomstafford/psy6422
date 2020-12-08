@@ -43,10 +43,11 @@ You can also search a preprint archive such as [psyarxiv](https://psyarxiv.com/)
 Pick a topic and have a look at what is available
 
 The other route is large publicly available resources:
+
 * such as [Our World in Data](https://ourworldindata.org/). 
 * Another good source of diverse, open and current data sets is the [Data Is Plural](http://tinyletter.com/data-is-plural/archive) newsletter
 * Enjoy this crowdsourced list of [Open psychological datasets](https://docs.google.com/spreadsheets/d/1ejOJTNTL5ApCuGTUciV0REEEAqvhI2Rd2FCoj7afops/edit#gid=0)
-
+* [Kaggle](https://www.kaggle.com/)
 
 ### Suggestions for 2021 (in progress)
 
