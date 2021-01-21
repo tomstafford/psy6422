@@ -128,6 +128,10 @@ Graphing in R (Eric-Jan Wagenmakers and Quentin F. Gronau): http://shinyapps.org
 
 https://gupsych.github.io/data_skills/03_ggplot.html
 
+## Presentations
+
+Kieran Healy : [Making Slides](https://kieranhealy.org/blog/archives/2018/03/24/making-slides/)
+
 ## Statistics
 
 [Discovering Statistics Using R](https://www.discoveringstatistics.com/books/discovering-statistics-using-r/)
