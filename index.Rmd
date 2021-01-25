@@ -28,7 +28,7 @@ options(tinytex.verbose = TRUE)
 
 # Module Overview {-}
 
-PSY6422 Data Management and Visualisation is part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/). See here for more on [data science @ Sheffield](notes.html#data-science-sheffield)
+PSY6422 Data Management and Visualisation is part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/). See here for more on the difference courses which offer [data science @ Sheffield](notes.html#data-science-sheffield)
 
 ```{block, type="info"}
 *These are placeholder pages. In 2020 most of this material was delivered offline. I am adding notes online as I can, so these pages in particular may evolve quickly*
@@ -51,32 +51,28 @@ In practice, this means you are going to start by using R (you could use [Python
 By the end of this course you will have:
 
   * Been trained in data project management -- including fundamentals of data storage, syncronisation and sharing -- and the importance of reproducible workflows
-  * Used the statical programming language R, and RStudio, for data management, analysis and visualisation
+  * Used the statistical programming language R, and RStudio, for data management, analysis and visualisation
   * Been introduced to fundamental programming concepts
   * Prepared data project documentation using RMarkdown
   * Had an introduction to version control using git 
   * Published data projects to the web via github pages
   
-### Slides
-
-Slides from this class are on the google drive: [slides format](https://docs.google.com/presentation/d/1-P8bGNuoqMFd6PVytXNSJCQOGAMtkgo0azEifFVCA1g/edit?usp=drivesdk), [pdf format](https://drive.google.com/file/d/1BPsMeVEhrqFQ1haGvN7ONMnu4InnDVsP/view?usp=drivesdk)  
   
 ### The Final project 
 
 The bulk of the course assessment is to conduct and publish your own analysis project. By doing this you will have experience of combining all the skills taught on the course within a singe project. This will take a data visualisation from start to finish - from raw data, through data cleaning and documentation to sharing your code and the resulting visualisation on the web.
 
-See here for [more on the nature of your final project](final-project.html)
+See here for [more on the nature of your final project](final-project.html), see here for examples from last year [class of 2020](class-of-2020.html).
 
 
 ## Resources for current students
 
-[Google Drive](https://drive.google.com/drive/folders/1tuaTS6RPYOXh-XByRffFS1FDzbvvFs_w) (UoS login required to access):
+[Google Drive](https://drive.google.com/drive/folders/1IbnGAO2Gn4u9T_qze5zhZyU9E8qNmdHh?usp=sharing) (UoS login required to access):
 
 Includes slides and workbooks, as well as these specific documents
 
-* [Timetable](https://docs.google.com/spreadsheets/d/1fyvjYhai6nIaOUymkUrlGIXL89cG76lI8bLXirPbaOw/edit?usp=drivesdk)
-* [Useful information](https://docs.google.com/document/d/1kEDLaELoFyRBCsQLkZZP1PNbNaw2uUM6AAQhd42ExwQ/edit?usp=drivesdk)
-* [Assessment Criteria](https://docs.google.com/spreadsheets/d/1DS91tnTtC8qPQHchAbzkOK57vvsSLIQc9FN3nPp9bQY/edit?usp=drivesdk)
+* [Timetable](https://docs.google.com/spreadsheets/d/1KP9tRqOh6KW6F0jq9k1jL380qF0F6VjtthQ2IFEYRRw/edit?usp=sharing)
+* [Assessment Criteria](https://docs.google.com/spreadsheets/d/1oTJKI675ijCs14jUoT9d_8yPH2i_S2AfQG507jN8aVY/edit?usp=sharing)
 
 And of course these pages (hosted on github, no login required)
 
@@ -84,11 +80,11 @@ You may particularly enjoy the [Reading list](extra-reading.html)
 
 ## Course Outline
 
-In 2020 we are covering a compressed curriculum. You can see the class topics in the leftbar
+The curriculum is updated each year, but you can get the general idea of topics from the leftbar.
 
 ### Stretch goals:
 
-Unfortunately we won't have time this year for a number of advanced topics which I would like to cover. Hopefully next year:
+Advanced topics are choosen by class consensus, but may include:
 
 * Jupyter notebooks
 * The terminal / ssh
@@ -100,5 +96,6 @@ Unfortunately we won't have time this year for a number of advanced topics which
 
 * Russ Poldrack's [Advice for learning to code from scratch ](http://www.russpoldrack.org/2016/05/advice-for-learning-to-code-from-scratch.html)
 * Neuroskeptic on a [true story of data analysis error](http://neuroskeptic.blogspot.com/2011/04/tufnel-effect.html) (and how you can avoid it) "if you're doing something which involves 100 steps, it only takes 1 mistake to render the other 99 irrelevant."
+* [Data Sharing and Management Snafu in 3 Short Acts](https://www.youtube.com/watch?v=66oNv_DJuPc)
 
 

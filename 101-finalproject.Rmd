@@ -60,7 +60,7 @@ These are examples of large, probably messy, real-world data sets which could ma
 
 ## Choose your graph
 
-You only need to draw one graph, but more is permitted.
+You only need to draw one graph, but more are permitted.
 
 The important thing is to show - either in the graph, or in text, or both - that you have thought about the logic of what you are visualising, *how* it shows the information and *why* this important
 
@@ -73,10 +73,10 @@ Here are some questions to ask youself as you prepare your project
 
 * do I care about this topic and/or data?
 * do you have access to the raw data?
-* can load it?
+* can you load it?
   * if you can open it in a spreadsheet you will be definitely be able to open it in R, but you will still want to check if it is well formatted when you load it in R
     * for example, if different cells have different amounts of information in your data won't import nicely
-    * or, if you important information is contained in cell colours then this won't be avaialble when you import into R
+    * or, if you important information is contained in cell colours then this won't be available when you import into R
 * Do you understand it?
   * is there a code book?
   * do you know what the columns are?
@@ -109,7 +109,7 @@ Note that the deadline for assignments is the after the weekend, so I will not b
 Here is an example small project which gives an idea of what I mean
 
 * SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
-
+* [Class of 2020 projects](class-of-2020.html).
 ### Stretch goals
 
 There hasn't been time to do this this year, but in future years we will aim to build an interactive data visualisations using the Shiny package. Here's one built for a research project I'm on : [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
