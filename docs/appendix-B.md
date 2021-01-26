@@ -27,6 +27,8 @@ Weissgerber, T. L., Milic, N. M., Winham, S. J., & Garovic, V. D. (2015). [Beyon
 
 Podcast: [Explore Explain: A Video and Podcast Series](https://www.visualisingdata.com/podcast/)
 
+[Why you sometimes need to break the rules in data viz](https://medium.economist.com/why-you-sometimes-need-to-break-the-rules-in-data-viz-4d8ece284919) by Rosamund Pearce
+
 ## The Reproducibility Crisis
 
 Cancer Biology Reproducibility Project
@@ -125,6 +127,10 @@ Lisa DeBruine, & Dale Barr. (2019). Data Skills for Reproducible Science. Zenodo
 Graphing in R (Eric-Jan Wagenmakers and Quentin F. Gronau): http://shinyapps.org/apps/RGraphCompendium/index.php
 
 https://gupsych.github.io/data_skills/03_ggplot.html
+
+## Presentations
+
+Kieran Healy : [Making Slides](https://kieranhealy.org/blog/archives/2018/03/24/making-slides/)
 
 ## Statistics
 
