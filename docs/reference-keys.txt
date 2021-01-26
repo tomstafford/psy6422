@@ -5,14 +5,14 @@ resources-for-current-students
 course-outline
 stretch-goals
 more
+r-r-studio
+making-graphs
 project-organisation
 project-folders
 naming-things
 research-data-management
 backup-and-sync
 reading
-r-r-studio
-making-graphs
 data-management
 coding-principles
 fundamental-methods
