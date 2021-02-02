@@ -10,6 +10,8 @@ checklist
 resources
 further-reading-on-the-motivation-for-a-data-management-component-of-this-course
 r-r-studio
+class-material-1
+resources-1
 exercises-checklist
 making-graphs
 project-organisation
@@ -40,7 +42,7 @@ second-text
 third-code
 conclusion
 exercises-1
-resources-1
+resources-2
 git-and-github
 before-the-class
 accessing-git

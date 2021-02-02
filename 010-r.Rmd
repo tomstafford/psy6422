@@ -4,13 +4,19 @@
 *Note this is a placeholder page. In 2020 most of this material was delivered offline. I am adding notes online as I can, so these pages in particular may evolve quickly*
 ```
 
+## Class material
+
 Specific resources:
   
   >>TO APPEAR<<
   
-  Statistical computing using R, the open source programming language, and the [R Studio interface](https://rstudio.com/).
+Slides from this class are on the google drive: [slides format](), [pdf format](). 
+
+Please note, most of this class was taught in workshop format, so there aren't many slides.
   
-  Slides from this class are on the google drive: [slides format](https://docs.google.com/presentation/d/1GdEVUaTarjw2Msd60PG4TNyevzQw2xxDF25IQWanWcQ/edit?usp=drivesdk), [pdf format](https://drive.google.com/file/d/1QyTWp4mYHWj0mtoR3J3YarcFPAQCkppt/view?usp=drivesdk). Please note, most of this class was taught in workshop format, so there aren't many slides.
+## Resources
+
+  Statistical computing using R, the open source programming language, and the [R Studio interface](https://rstudio.com/).
 
 ## Exercises & Checklist
 

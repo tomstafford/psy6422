@@ -8,6 +8,8 @@
   
   >>TO APPEAR<<
 
+Slides from this class are on the google drive: [slides format](), [pdf format](). 
+
 
 ## Exercise 1 (assessed!)
 
@@ -19,7 +21,7 @@ Aim 1: tell me what you know already
  * review course webpages, write ~50 words on your experience with computers and coding
 
 Aim 2: start thinking about data to visualise  
- * describing a dataset you have access to and what you’ll do with it OR  
+ * describe a dataset you have access to and what you’ll do with it OR  
  * describe the kind of topic you'd like to identify relevant data to do a project on
 
 Aim 3: set some targets for what you’d like to learn next  
