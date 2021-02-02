@@ -5,6 +5,10 @@ resources-for-current-students
 overview-assessment-module-organisation
 class-material
 exercise-1-assessed
+aim-1-tell-me-what-you-know-already
+aim-2-start-thinking-about-data-to-visualise
+aim-3-set-some-targets-for-what-youd-like-to-learn-next
+marking-criteria
 checklist
 resources
 further-reading-on-the-motivation-for-a-data-management-component-of-this-course
