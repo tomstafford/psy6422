@@ -8,8 +8,7 @@
   
   >>TO APPEAR<<
 
-Slides from this class are on the google drive: [slides format](), [pdf format](). 
-
+<!-- Slides from this class are on the google drive: [slides format](), [pdf format](). -->
 
 ## Exercise 1 (assessed!)
 
