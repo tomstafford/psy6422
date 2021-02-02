@@ -10,8 +10,7 @@ checklist
 resources
 further-reading-on-the-motivation-for-a-data-management-component-of-this-course
 r-r-studio
-exercises
-checklist-1
+exercises-checklist
 making-graphs
 project-organisation
 project-folders
@@ -26,7 +25,7 @@ if
 loops
 functions
 a-note-about-scope
-exercises-1
+exercises
 more
 fundamental-principles-of-good-code
 readability-matters
@@ -40,7 +39,7 @@ first-a-header
 second-text
 third-code
 conclusion
-exercises-2
+exercises-1
 resources-1
 git-and-github
 before-the-class
