@@ -16,19 +16,19 @@ The exercise for this class is an initial self-assessment, which comprises 10% o
 Submit by email to Tom a document of no more than one A4 page (i.e. less than 500 words):
 
 Aim 1: tell me what you know already
-  * review course webpages, write ~50 words on your experience with computers and coding
+* review course webpages, write ~50 words on your experience with computers and coding
 
 Aim 2: start thinking about data to visualise
-  * describing a dataset you have access to and what you’ll do with it
-  (or)
-  * describe the kind of topic you'd like to identify relevant data to do a project on
+* describing a dataset you have access to and what you’ll do with it
+(or)
+* describe the kind of topic you'd like to identify relevant data to do a project on
 
 Aim 3: set some targets for what you’d like to learn next
-  * describe 1 or 2 ambitions; techniques, technologies or tools you'd like to acquire
+* describe 1 or 2 ambitions; techniques, technologies or tools you'd like to acquire
 
 Marking criteria: 
-  * submits on time
-  * addresses all three aims
+* submits on time
+* addresses all three aims
 
 
 
