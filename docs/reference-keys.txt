@@ -34,7 +34,7 @@ readability-matters
 avoid-hard-coded-values
 functionalise-generalise
 ask-for-help
-more-1
+resources-2
 rmarkdown
 and-this-line-is-a-heading
 first-a-header
@@ -42,7 +42,7 @@ second-text
 third-code
 conclusion
 exercises-1
-resources-2
+resources-3
 git-and-github
 before-the-class
 accessing-git
@@ -75,10 +75,13 @@ better-practice
 project-organisation-1
 coding
 r
+hints
+courses-books
 making-graphs-practice
 presentations
 statistics
 advanced-reading-background-other-recommends
+pedagogy
 notes
 credit
 colophon

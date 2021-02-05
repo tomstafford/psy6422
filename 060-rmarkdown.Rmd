@@ -168,6 +168,7 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 
 * [RStudio intro to Rmarkdown](https://rmarkdown.rstudio.com/)
 * [RStudio RMarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
+* [Getting started in R markdown](https://www.r-bloggers.com/2020/02/getting-started-in-r-markdown-2/)
 * Helps with learning Markdown conventions: [markdownlivepreview.com](https://markdownlivepreview.com/)
 * Making Word documents: [Happy collaboration with Rmd to docx](https://rmarkdown.rstudio.com/articles_docx.html)
 * Install this to make PDFs work: [Getting MiKTeX](https://miktex.org/download)

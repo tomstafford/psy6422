@@ -97,30 +97,52 @@ Bret Victor: [Learnable Programming: Designing a programming system for understa
 
 ## R
 
+### Hints
+
 [Prime Hints For Running A Data Project In] R(https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/)
-
-Grolemund, G., & Wickham, H. (2018). R for data science.
-* See also https://r4ds.had.co.nz/
-
-Getting Used to R, RStudio, and R Markdown https://rbasics.netlify.com/
-
-Adler, J. (2010). R in a nutshell: A desktop quick reference. " O'Reilly Media, Inc.".
-
-Intro to R (Liz Page-Gould): http://www.page-gould.com/r/uoft/
-
-Free R Textbook (Danielle Navarro): [Learning Statistics With R] https://learningstatisticswithr.com/
-
-* Particularly chapter 3 https://learningstatisticswithr-bookdown.netlify.com/intror
 
 RStudio Cheat Sheets: https://www.rstudio.com/resources/cheatsheets/
 
 Here::Here https://github.com/jennybc/here_here
 
-https://swirlstats.com/
+[We are R-ladies](https://twitter.com/WeAreRLadies) - Twitter account with a rotating curator featuring discussions, package highlights, and tips
+
+
+### Courses / books
+
+I recommend you start with swirl: https://swirlstats.com/
 
 Lisa DeBruine, & Dale Barr. (2019). Data Skills for Reproducible Science. Zenodo. doi:10.5281/zenodo.3564348 https://psyteachr.github.io/msc-data-skills/
 
-[We are R-ladies](https://twitter.com/WeAreRLadies) - Twitter account with a rotating curator featuring discussions, package highlights, and tips
+You may also enjoy:
+
+Chester Ismay and Patrick C. Kennedy: [Getting Used to R, RStudio, and R Markdown](https://rbasics.netlify.com/)
+
+Matt Crump: [Reproducible statistics for psychologists with R](https://crumplab.github.io/rstatsforpsych/)
+
+Danielle Navarro: [Learning Statistics With R] https://learningstatisticswithr.com/
+* Particularly chapter 3 https://learningstatisticswithr-bookdown.netlify.com/intror
+
+[Data Science with R](http://robust-tools.djnavarro.net/): An introductory course by Danielle Navarro
+
+
+
+
+[Data Science in a Box](https://datasciencebox.org/?s=03)
+
+Adler, J. (2010). R in a nutshell: A desktop quick reference. " O'Reilly Media, Inc.".
+
+Intro to R (Liz Page-Gould): http://www.page-gould.com/r/uoft/
+
+Grolemund, G., & Wickham, H. (2018). R for data science.
+* See also https://r4ds.had.co.nz/
+
+
+
+
+
+
+
 
 ## Making graphs (practice)
 
@@ -140,6 +162,9 @@ Hox, J. (2010) Multilevel Analysis: Techniques and Applications
 
 [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/statistical-rethinking/)
 
+model checking package: [Performance](https://easystats.github.io/performance/index.html)
+
+
 ## Advanced Reading, Background & Other Recommends
 
 [Data Feminism](https://data-feminism.mitpress.mit.edu/) by Catherine D'Ignazio and Lauren F. Klein. The MIT Press. 2020
@@ -155,4 +180,6 @@ SQL [Database access dplyr ](https://db.rstudio.com/dplyr/)
 [Data Visualization course](https://datavizm20.classes.andrewheiss.com/lesson/) by Dr. Andrew Heiss of Georgia State University
 
 
+## Pedagogy
 
+Brown, N. C., & Wilson, G. (2018). [Ten quick tips for teaching programming](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006023). PLoS computational biology, 14(4), e1006023.

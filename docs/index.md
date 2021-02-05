@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
 author: "[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)"
-date: '2021-02-02'
+date: '2021-02-05'
 output: pdf_document
 description: Notes on the course - rapidly evolving!
 documentclass: book
@@ -63,7 +63,7 @@ The intention with the assessment is to ensure that every student leaves the cou
 See here for [more on the nature of your final project](final-project.html), see here for examples from last year [class of 2020](class-of-2020.html).
 
 
-### Resources for current students
+## Resources for current students
 
 [Google Drive](https://drive.google.com/drive/folders/1IbnGAO2Gn4u9T_qze5zhZyU9E8qNmdHh?usp=sharing) (UoS login required to access):
 

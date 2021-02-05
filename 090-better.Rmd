@@ -25,9 +25,11 @@ Javascript!
 Dependencies
 
  * Package management 
- 
+    * https://groundhogr.com/
     * renv: https://github.com/rstudio/renv
     * e.g. https://luisdva.github.io/rstats/annotater/
+ * Reproducible workflows
+    * [Targets](https://books.ropensci.org/targets/) (was Drake)
  * Containers
     * e.g. [docker](https://www.docker.com/)
 

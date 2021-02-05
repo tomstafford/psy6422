@@ -19,12 +19,13 @@ Please note, most of this class was taught in workshop format, so there aren't m
   
 ## Resources
 
-  Statistical computing using R, the open source programming language, and the [R Studio interface](https://rstudio.com/).
+Statistical computing using R, the open source programming language, and the [R Studio interface](https://rstudio.com/).
 
 <img src="images/dv-cover-pupress.jpeg" style="width: 400px; float: center;">
 
 Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.co/). Princeton University Press.
 
+Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to-install-r-and-rstudio-2/)
 
 
 
