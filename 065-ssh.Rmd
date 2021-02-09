@@ -1,0 +1,15 @@
+# ssh and the command line
+
+<img src="images/remote.png" style="width: 400px; float: center;">
+
+
+```{block, type="info"}
+*Note this is a placeholder page. This material hasn't been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly*
+```
+
+
+
+
+## Resources
+
+[Five reasons why researchers should learn to love the command line](https://www.nature.com/articles/d41586-021-00263-0)

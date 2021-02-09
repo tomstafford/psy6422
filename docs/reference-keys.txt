@@ -43,6 +43,8 @@ third-code
 conclusion
 exercises-1
 resources-3
+ssh-and-the-command-line
+resources-4
 git-and-github
 before-the-class
 accessing-git
