@@ -25,13 +25,15 @@ Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to
 
 ## Exercises & Checklist
 
+*To complete this class you should do the following :*
+
 * install R on your computer
 
 * identify the console
-  * entered a command directly (e.g. "2 + 2")
+  * enter a command directly (e.g. "2 + 2")
 
 * identify the file window
-  * saved a script as a .R file
+  * save a script as a .R file
   * run a single line of the script by pressing CTRL + ENTER
   * run the whole script
 
@@ -39,7 +41,7 @@ Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to
 
 * identify the files/plots/etc window
 
-* installed the swirl package
+* install the swirl package
 
 * open this [script](https://tomstafford.github.io/psy6422/static/class2.R) 
-  * reviewed line by line
+  * review line by line

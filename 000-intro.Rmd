@@ -35,6 +35,8 @@ Aim 3: set some targets for what you’d like to learn next
 
 ## Checklist:
 
+*To complete this class you should do the following :*
+
 * Review these webpages
   * identify topics covered
   * locate timetable
