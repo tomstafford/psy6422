@@ -11,10 +11,6 @@ Slides : [slides format](https://docs.google.com/presentation/d/1F0Pk9pYKKKvZAFr
 
 Statistical computing using R, the open source programming language, and the [R Studio interface](https://rstudio.com/).
 
-<img src="images/dv-cover-pupress.jpeg" style="width: 400px; float: center;">
-
-Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.co/). Princeton University Press.
-
 Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to-install-r-and-rstudio-2/)
 
 [https://swirlstats.com/](https://swirlstats.com/students.html)
@@ -38,7 +34,8 @@ Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to
 
 * identify the files/plots/etc window
 
-* install the swirl package
+* know how to install and load a library of functions ("a package")
+  * install the swirl package
 
 * open this [script](https://tomstafford.github.io/psy6422/static/class2.R) 
   * review line by line
