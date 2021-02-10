@@ -1,9 +1,5 @@
 # R & R Studio
 
-```{block, type="info"}
-*Note this is a placeholder page. This material hasn't been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly*
-```
-
 ## Class material
 
 Videos from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1IbnGAO2Gn4u9T_qze5zhZyU9E8qNmdHh?usp=sharing) (UoS login required to access)
@@ -21,6 +17,7 @@ Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.
 
 Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to-install-r-and-rstudio-2/)
 
+[https://swirlstats.com/](https://swirlstats.com/students.html)
 
 
 ## Exercises & Checklist
