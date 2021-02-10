@@ -58,10 +58,6 @@ bonus-reading
 publishing
 sharing-your-rmd-files-via-github-pages
 other-sharing-options
-advanced-topics
-interactive-graphs
-reproducibility
-preview-of-other-advanced-topics
 requirements
 choosing-your-data
 finding-data
@@ -71,6 +67,10 @@ check-list
 answers-to-common-questions
 getting-help
 example-projects
+advanced-topics
+interactive-graphs
+reproducibility
+preview-of-other-advanced-topics
 class-notes
 ask-me-questions
 terminology-raw-data
