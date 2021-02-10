@@ -17,7 +17,9 @@ This book is recommended for the course, and for this lecture in particular:
 <img src="images/dv-cover-pupress.jpeg" style="width: 400px; float: center;">
 
 Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.co/). Princeton University Press.
-
+ * The whole book is available online via the link
+ * There are supporting materials here: https://github.com/kjhealy/socviz
+ 
 We are going to be using the ggplot package for our visualisations:
 
 Create Elegant Data Visualisations Using the Grammar of Graphics - [ggplot2](https://ggplot2.tidyverse.org/)
