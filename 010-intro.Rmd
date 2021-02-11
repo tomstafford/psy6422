@@ -2,7 +2,7 @@
 
 ## Class material:
   
-Videos from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1IbnGAO2Gn4u9T_qze5zhZyU9E8qNmdHh?usp=sharing) (UoS login required to access)
+Videos from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1Qrw5RhXSoFXx1_NxNffV-5AkludSU-Fk?usp=sharing) (UoS login required to access)
 
 Slides : [slides format](https://docs.google.com/presentation/d/1cfM44YtwsoJ0bTtKPN1lf1OPSe0-Wr-UkiPYR376gJ0/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1FGeWRhNpb4CJZY6OESagIPvtdFPIBE_Z/view?usp=sharing).
 
