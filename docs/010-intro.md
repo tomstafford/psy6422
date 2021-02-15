@@ -37,7 +37,7 @@ The purpose of this assessment is to ensure you are engaging with the course and
 
 You submit by email to me, as an attachment with a filename containing your surname and registration number, of the form:
 
-  surname_000000000.pdf
+|     surname_000000000.pdf
 
 (file format does not need to be pdf)
 
