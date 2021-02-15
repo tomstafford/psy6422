@@ -30,6 +30,16 @@ Aim 3: set some targets for what you’d like to learn next
 The purpose of this assessment is to ensure you are engaging with the course and to start a conversation between us about the final assessment. I want to give you 100%, all you have to do to achieve this is follow the instructions above.
 
 
+### Submission
+
+You submit by email to me, as an attachment with a filename containing your surname and registration number, of the form:
+
+  surname_000000000.pdf
+
+(file format does not need to be pdf)
+
+
+
 
 ## Checklist:
 
