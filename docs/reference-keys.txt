@@ -16,7 +16,6 @@ exercises-checklist
 making-graphs
 class-material-2
 resources-2
-exercises
 checklist-1
 project-organisation
 project-folders
@@ -31,7 +30,7 @@ if
 loops
 functions
 a-note-about-scope
-exercises-1
+exercises
 more
 fundamental-principles-of-good-code
 readability-matters
@@ -45,7 +44,7 @@ first-a-header
 second-text
 third-code
 conclusion
-exercises-2
+exercises-1
 resources-4
 ssh-and-the-command-line
 resources-5
