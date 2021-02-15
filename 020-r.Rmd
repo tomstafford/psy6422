@@ -37,5 +37,5 @@ Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to
 * know how to install and load a library of functions ("a package")
   * install the swirl package
 
-* open this [script](https://tomstafford.github.io/psy6422/static/class2.R) 
+* open this [script](static/class2.R) 
   * review line by line
