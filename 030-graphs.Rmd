@@ -36,21 +36,25 @@ Work through [Chapter 3 'Make a plot'](https://socviz.co/makeplot.html)
 
 ## Checklist
 
-Completed the exercises
+Completed the exercises  
+
  * especially section 3.8 'Where to go next' in [Chapter 3 'Make a plot'](https://socviz.co/makeplot.html)
 
-Key concepts (chapter 2):
+Key concepts (chapter 2):  
+
 * variables and functions
 * variables are typed (e.g. can be numeric or character)
  * and how you detect what type a variable is
 * indexing for variables and data frames
 
-In the console, understood
+In the console, understood  
+
   * the shortcut keys for the assignment operator <- 
   * the use of tab for autocomplete
   * the use up arrow to cycle through previous commands
 
-Key concepts (chapter 3):
+Key concepts (chapter 3):  
+
 * Tidydata
   * [long vs wide data](https://en.wikipedia.org/wiki/Wide_and_narrow_data)
   * values and keys
