@@ -148,7 +148,6 @@ Grolemund, G., & Wickham, H. (2018). R for data science.
 
 Graphing in R (Eric-Jan Wagenmakers and Quentin F. Gronau): http://shinyapps.org/apps/RGraphCompendium/index.php
 
-https://gupsych.github.io/data_skills/03_ggplot.html
 
 ## Presentations
 
