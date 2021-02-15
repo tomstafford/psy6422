@@ -1,5 +1,9 @@
 # Making Graphs
 
+<div class="info">
+<p><em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
+</div>
+
 ## Class material
 
 Videos from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1IbnGAO2Gn4u9T_qze5zhZyU9E8qNmdHh?usp=sharing) (UoS login required to access). Note: most of this class talk in workshop style, so the recordings are short and the slides are brief
