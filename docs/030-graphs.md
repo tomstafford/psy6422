@@ -10,7 +10,7 @@ Videos from the class are in the PSY6422 [Google Drive](https://drive.google.com
 
 <!-- Slides : [slides format](https://docs.google.com/presentation/d/1DbStojATmr9ZH4_23-F24uqZZ_9M9LkenGLFlwWZBig/edit?usp=sharing), [pdf format](). -->
 
-The live-coding demo used these files: [class3a.R](/static/class3a.R)
+The live-coding demo used these files: [class3a.R](psy6422/static/class3a.R)
   
 ## Resources
 
