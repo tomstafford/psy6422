@@ -8,7 +8,7 @@ Slides : [slides format](https://docs.google.com/presentation/d/1cfM44YtwsoJ0bTt
 
 ## Exercise 1 (assessed!)
 
-The exercise for this class is an initial self-assessment, which comprises 10% of your final grade. The deadline is in two week - see the timetable.
+The exercise for this class is an initial self-assessment, which comprises 10% of your final grade. The deadline is in two weeks - see the timetable.
 
 Submit by email to Tom a document of no more than one A4 page (i.e. less than 500 words):
 
@@ -26,6 +26,8 @@ Aim 3: set some targets for what you’d like to learn next
 
 * submits on time
 * addresses all three aims
+
+The purpose of this assessment is to ensure you are engaging with the course and to start a conversation between us about the final assessment. I want to give you 100%, all you have to do to achieve this is follow the instructions above.
 
 
 
