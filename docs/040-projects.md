@@ -61,7 +61,7 @@ Create project containing script to generate plots from this data: [anscombe.csv
 
 Share this project with another student on the course. [2021 see this file for who](https://docs.google.com/spreadsheets/d/1voRTo2A22_zAkZ4QRHe823N04QiNBqunX2MSuVRD09o/edit?usp=sharing)
 
-Run the project shared with you, complete this checklist.
+Run the project shared with you, complete [this checklist](https://forms.gle/67XEt4vLBoS2fdP27) 2021: deadline 0900 on 24th of Feb.
 
 Review the questions in the library [Research Data Management plan for postgraduate researchers](https://drive.google.com/file/d/1T0kwMSmecf7JZXgKQ1IfCzC9G50cQx87/view?usp=sharing)
 
@@ -82,7 +82,7 @@ Appreciate the need for a research data management plan
 Map network drives / automate backups
 
 You should be able to  
- * download a file to my Desktop (e.g. [this one](static/anscombe.csv)) and locate it on your hard drive  
+ * download a file to your Desktop (e.g. [this one](static/anscombe.csv)) and locate it on your hard drive  
  * report the full path of a file  
  * open a csv file as plain text  
  * share a project folder with someone else  
