@@ -59,7 +59,7 @@ Pair programming exercise: Write a script to create and save a histogram of life
 
 Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R); find completed example on google drive) 
 
-Share this project with another student on the course.
+Share this project with another student on the course. [2021 see this file for who](https://docs.google.com/spreadsheets/d/1voRTo2A22_zAkZ4QRHe823N04QiNBqunX2MSuVRD09o/edit?usp=sharing)
 
 Run the project shared with you, complete this checklist.
 
