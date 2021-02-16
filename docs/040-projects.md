@@ -4,9 +4,9 @@
 <p><em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
 </div>
   
-<!-- Slides on project organisation are on the google drive: [slides format](https://docs.google.com/presentation/d/1dswTN4SOj9cNlh3DKIev9K_y64FmvFDq6G_EbeA4Ksw/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1VyHcpxMBjEVN4TPC5Fz9FmTq3bctSmvB/view?usp=drivesdk). -->
+Slides on project organisation are on the google drive: [slides format](https://docs.google.com/presentation/d/1dswTN4SOj9cNlh3DKIev9K_y64FmvFDq6G_EbeA4Ksw/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1b6Ua8fJH8nucKkrAagxFgY1ruzGeXO_R/view?usp=sharing). 
 
-Please note, most of this class was taught in workshop format, so there aren't many slides.
+Please note, some of this class was taught in workshop format, so slides don't fully reflect what was taught.
 
 ## Project folders
 
@@ -44,9 +44,42 @@ Any back up process which requires you to remember to deploy it is fragile. Use 
 As well as backing up your work to the cloud, this will allow you to work on multiple machines (because changes are automatically carried across from one to the other), as well as collaborate (because multiple people can add to the same shared folder and any changes are instantly available to the whole team).
 
 
-## Reading: 
+## Resources: 
 
+* Jenny Bryan's presentation on [Naming Things](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
+* [Michael Frank's onboarding guide](http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html)
 * [Tidy Data organisation](http://vita.had.co.nz/papers/tidy-data.pdf) 
 * [Habits and open data: Helping students develop a theory of scientific mind ](http://bayesfactor.blogspot.co.uk/2015/11/habits-and-open-data-helping-students.html)
 * Broman & Woo (2017) [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 * [University of Sheffield pages on Research Data Management](https://www.sheffield.ac.uk/library/rdm/index)
+
+## Exercises
+
+Pair programming exercise: Write a script to create and save a histogram of life expectancy by continent, using the gapminder data (see slides for more notes)
+
+Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R); find completed example on google drive) 
+
+Review the questions in the library [Research Data Management plan for postgraduate researchers](https://drive.google.com/file/d/1T0kwMSmecf7JZXgKQ1IfCzC9G50cQx87/view?usp=sharing)
+
+## Checklist
+
+*in general*  
+ * Be able to organise and share project work
+
+*specifically*  
+Understand & Use  
+ * file extensions, file paths  
+ * standard file naming conventions  
+ * ISO 8601 date format  
+ * standard folder organisation for projects  
+
+Appreciate the need for a research data management plan
+
+Map network drives / automate backups
+
+You should be able to  
+* download a file to my Desktop (e.g. [this one](static/anscombe.csv)) and locate it on your hard drive
+* report the full path of a file
+* open a csv file as plain text
+* share a project folder with someone else
+
