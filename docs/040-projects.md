@@ -59,6 +59,10 @@ Pair programming exercise: Write a script to create and save a histogram of life
 
 Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R); find completed example on google drive) 
 
+Share this project with another student on the course.
+
+Run the project shared with you, complete this checklist.
+
 Review the questions in the library [Research Data Management plan for postgraduate researchers](https://drive.google.com/file/d/1T0kwMSmecf7JZXgKQ1IfCzC9G50cQx87/view?usp=sharing)
 
 ## Checklist
@@ -78,8 +82,8 @@ Appreciate the need for a research data management plan
 Map network drives / automate backups
 
 You should be able to  
-* download a file to my Desktop (e.g. [this one](static/anscombe.csv)) and locate it on your hard drive
-* report the full path of a file
-* open a csv file as plain text
-* share a project folder with someone else
+ * download a file to my Desktop (e.g. [this one](static/anscombe.csv)) and locate it on your hard drive  
+ * report the full path of a file  
+ * open a csv file as plain text  
+ * share a project folder with someone else  
 
