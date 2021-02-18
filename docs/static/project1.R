@@ -2,8 +2,9 @@
 
 # Topic: Anscombe's Quartet
 
-## download the whole folder \project1 to your google drive/computer
-## set the RStudio working directory
+## download this script and the data to your computer
+## create a project folder and put the script and the data in
+## set the RStudio working directory to the project folder
 ## after this block, every comment requests that you enter some instructions
 
 

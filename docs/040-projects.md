@@ -52,6 +52,8 @@ As well as backing up your work to the cloud, this will allow you to work on mul
 * [Habits and open data: Helping students develop a theory of scientific mind ](http://bayesfactor.blogspot.co.uk/2015/11/habits-and-open-data-helping-students.html)
 * Broman & Woo (2017) [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
 * [University of Sheffield pages on Research Data Management](https://www.sheffield.ac.uk/library/rdm/index)
+* Arslan, R. C. (2019). [How to automatically document data with the codebook package to facilitate data reuse](https://journals.sagepub.com/doi/full/10.1177/2515245919838783). Advances in Methods and Practices in Psychological Science, 2(2), 169-187.
+* Jenny Bryan: [I love the here package. Here's why. ]https://github.com/jennybc/here_here)
 
 ## Exercises
 
