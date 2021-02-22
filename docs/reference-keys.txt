@@ -28,7 +28,8 @@ backup-and-sync
 resources-3
 exercises-1
 checklist-2
-data-management
+data-wrangling
+resources-4
 coding-principles
 fundamental-methods
 if
@@ -42,7 +43,7 @@ readability-matters
 avoid-hard-coded-values
 functionalise-generalise
 ask-for-help
-resources-4
+resources-5
 rmarkdown
 and-this-line-is-a-heading
 first-a-header
@@ -50,9 +51,9 @@ second-text
 third-code
 conclusion
 exercises-3
-resources-5
-ssh-and-the-command-line
 resources-6
+ssh-and-the-command-line
+resources-7
 git-and-github
 before-the-class
 accessing-git
