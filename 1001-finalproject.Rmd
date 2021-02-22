@@ -98,7 +98,7 @@ Here are some questions to ask youself as you prepare your project
 Simple questions should be posted on slack, ideally in the appropriate channel. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals.
 
 For more complex problems, you will want to share your whole project - this means not just the R or Rmd file you are working on, but the data file(s) as well, as well as an auxillary notes. 
-Please create a folder, following the [project organisation scheme](project-organisation.html) we covered in week 1 with subfolders for the data, figures, etc and including the .Rmd file. Share this with me and I can help. 
+Please create a folder, following the [project organisation scheme](project-organisation.html) we covered in week 2 with subfolders for the data, figures, etc and including the .Rmd file. Share this with me and I can help. 
 
 You can either share a google drive folder or a [github repo](git-and-github.html). Doing this means I have all the parts required to reproduce your issue. It also means that if you  update your project in between contacting me and me looking at it then I see the very latest version, rather than working on an outdated problem.
 
@@ -110,6 +110,7 @@ Here is an example small project which gives an idea of what I mean
 
 * SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
 * [Class of 2020 projects](class-of-2020.html).
+
 ### Stretch goals
 
 There hasn't been time to do this this year, but in future years we will aim to build an interactive data visualisations using the Shiny package. Here's one built for a research project I'm on : [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)

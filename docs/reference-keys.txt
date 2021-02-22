@@ -71,6 +71,7 @@ check-list
 answers-to-common-questions
 getting-help
 example-projects
+stretch-goals
 advanced-topics
 interactive-graphs
 reproducibility

@@ -38,6 +38,11 @@ If you are making multiple changes to your files, using git on your computer is 
 [Jupyter notebooks](https://jupyter.org/). Another way of mixing description, code and outputs. More common for python code.
  
  * Example: [Light reanalysis of Čavojová et al (2018)](https://github.com/tomstafford/cavojova2018/blob/master/cavojava_reanalysis.ipynb)
+ 
+ 
+ ## Resources
+ 
+Cathy Gao: [How to publish project online?](https://rpubs.com/cathydatascience/518692)
 
 
 
