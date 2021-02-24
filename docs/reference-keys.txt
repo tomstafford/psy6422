@@ -35,7 +35,6 @@ suggestions-for-2021-in-progress
 choose-your-graph
 check-list
 answers-to-common-questions
-getting-help
 example-projects
 stretch-goals
 data-wrangling
