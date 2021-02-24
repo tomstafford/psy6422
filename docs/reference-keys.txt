@@ -39,6 +39,9 @@ getting-help
 example-projects
 stretch-goals
 data-wrangling
+class-material-3
+exercises-2
+checklist-3
 resources-4
 coding-principles
 fundamental-methods
@@ -46,7 +49,7 @@ if
 loops
 functions
 a-note-about-scope
-exercises-2
+exercises-3
 more
 fundamental-principles-of-good-code
 readability-matters
@@ -60,7 +63,7 @@ first-a-header
 second-text
 third-code
 conclusion
-exercises-3
+exercises-4
 resources-6
 ssh-and-the-command-line
 resources-7
