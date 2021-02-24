@@ -13,7 +13,7 @@ There are no slides for this class, it is taught entirely in workshop format.
 
 ## Exercises
 
-Find the folder `/modelproject_asrs` in the google drive
+Find the folder `/modelproject_asrs` in the google drive  
 * review the project organisation and files
 * open the file `datawrangle_exercises.R`
 * complete the tasks described
@@ -27,7 +27,7 @@ You should leave being familiar with these concepts, and known where to look up 
   * load data from a TSV file (tab separated values)
   
 * Recognise common tidyverse functions (below)
-* Use the pipe operator `%>%'
+* Use the pipe operator `%>%`
 * Mutate: new columns by combining old ones
   * Use string functions on column values (e.g. separate on characters, take substrings)
 * Select: select columns
