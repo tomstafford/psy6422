@@ -14,6 +14,7 @@ There are no slides for this class, it is taught entirely in workshop format.
 ## Exercises
 
 Find the folder `/modelproject_asrs` in the google drive  
+
 * review the project organisation and files
 * open the file `datawrangle_exercises.R`
 * complete the tasks described
