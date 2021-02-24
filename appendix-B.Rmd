@@ -99,7 +99,7 @@ Bret Victor: [Learnable Programming: Designing a programming system for understa
 
 ### Hints
 
-[Prime Hints For Running A Data Project In] R(https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/)
+[Prime Hints For Running A Data Project In R](https://kkulma.github.io/2018-03-18-Prime-Hints-for-Running-a-data-project-in-R/)
 
 RStudio Cheat Sheets: https://www.rstudio.com/resources/cheatsheets/
 
@@ -120,7 +120,7 @@ Chester Ismay and Patrick C. Kennedy: [Getting Used to R, RStudio, and R Markdow
 
 Matt Crump: [Reproducible statistics for psychologists with R](https://crumplab.github.io/rstatsforpsych/)
 
-Danielle Navarro: [Learning Statistics With R] https://learningstatisticswithr.com/
+Danielle Navarro: [Learning Statistics With R](https://learningstatisticswithr.com/)  
 * Particularly chapter 3 https://learningstatisticswithr-bookdown.netlify.com/intror
 
 [Data Science with R](http://robust-tools.djnavarro.net/): An introductory course by Danielle Navarro

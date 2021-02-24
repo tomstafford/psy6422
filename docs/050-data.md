@@ -9,7 +9,7 @@ Specific resources:
   >>TO APPEAR<<
   
   
-This class is about loadings, cleaning, inspecting, merging and summarising data using the [Tidyverse](https://www.tidyverse.org/) library for data science. The majority of most data science projects is getting the data into the best form for plotting or analysis, what is called data cleaning, data munging or data wrangling.
+This class is about loading, cleaning, inspecting, merging and summarising data using the [Tidyverse](https://www.tidyverse.org/) library for data science. The majority of most data science projects is getting the data into the best form for plotting or analysis, what is called data cleaning, data munging or data wrangling.
 
   
 ## Resources
