@@ -1,8 +1,4 @@
 # Project Organisation
-
-<div class="info">
-<p><em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
-</div>
   
 Slides on project organisation are on the google drive: [slides format](https://docs.google.com/presentation/d/1dswTN4SOj9cNlh3DKIev9K_y64FmvFDq6G_EbeA4Ksw/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1b6Ua8fJH8nucKkrAagxFgY1ruzGeXO_R/view?usp=sharing). 
 

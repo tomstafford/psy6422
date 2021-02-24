@@ -1,6 +1,15 @@
 # Final project {-}
 
-The final project for the course contributes the bulk of your grade, as well as creating a portfolio piece for you to demonstrate what you learnt on the course. The final project is a chance to deploy all the skills taught on the course in a single complete data visualations project, which takes us from raw data and a question through data preparation and exploration through to publishing a visualisation and the documentation which shares your findings with others.
+```{block, type="info"}
+*These pages are about the final project, which comprises most of the module grade. There are many useful notes below, which you will want to refer to as you complete your project*
+```
+  
+Slides on project organisation are on the google drive: [slides format](https://docs.google.com/presentation/d/1crdlTcYf3hy15pE9Tz-0EdpQyaxCt2uOJ5w9IOX0UW0/edit?usp=sharing), [pdf format](https://docs.google.com/presentation/d/1crdlTcYf3hy15pE9Tz-0EdpQyaxCt2uOJ5w9IOX0UW0/edit?usp=sharing). 
+
+
+In this class we covered how to identify data for your final project for this module. We also discussed the project format and assessment criteria. 
+
+The final project for the course contributes the bulk of your grade, as well as creating a portfolio piece for you to demonstrate what you learnt on the course. The final project is a chance to deploy all the skills taught on the course in a single complete data visualisations project, which takes us from raw data and a question through data preparation and exploration through to publishing a visualisation and the documentation which shares your findings with others.
 
 ## Project requirements {#requirements}
 
