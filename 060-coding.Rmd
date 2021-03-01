@@ -191,7 +191,7 @@ outcheck(7,5) #returns NA because 7 is higher than 5
 ```
 
 
-### Exercises
+### Exercises 1
 
 * Write an if...else statement that prints "ODD" if the number is odd, "EVEN" if the number is even (hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)
 * Write a loop which goes from 10 to 20 in steps of 3
@@ -355,7 +355,7 @@ label = paste('This plot generated using data from ', datafile)
 
 And when you use the same script for different data, both the lines loading data and recording the data file are correct.
 
-Another example
+Another example, suppose you had two plots:
 
 ```{r anscombe1}
 
@@ -435,6 +435,40 @@ If you are really stuck, just trying to describe you problem is a good way of in
 
 If you're on this module you can do this by posting it to Slack, or if not try seeking out R groups in your city or institution. Shout out to [Rladies](https://rladies.org/)
 
+### Exercises 2
+
+* In pairs, take one persons code from a previous week's project and review for readability, using the __better code__ checklist below. Write an improved version together
+* In pairs, try these '[Parsons Problems](https://github.com/tomstafford/parsonsproblems)' __only try the R problems__ not the python (`.py`) ones
+* Review these articles on how to make a minimal reproducible example: [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) & [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask).
+* Make and share on slack a minimal reproducible example of your next R problem
+
+### Checklist
+
+__control flow__
+
+* if statements
+  * if ...then statements
+  * if ...then .. else statements
+* for loops
+* functions
+* scope
+
+
+__better code__  
+
+* readable code
+   * indents and whitespace
+   * sensible variable names
+   * comments
+* hard coded values aid extension, efficiency and reproducibility
+* functions make code easier to read, easier to modify, reduce the likelihood of bugs
+
+__ask for help__  
+
+* google the error message
+* make a minimal reproducible example
+
+ 
 ### Resources
 
 * [Function tips](https://debruine.github.io/posts/function-tips/)

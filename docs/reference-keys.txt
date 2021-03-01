@@ -48,13 +48,15 @@ if
 loops
 functions
 a-note-about-scope
-exercises-3
+exercises-1-1
 more
 fundamental-principles-of-good-code
 readability-matters
 avoid-hard-coded-values
 functionalise-generalise
 ask-for-help
+exercises-2-1
+checklist-4
 resources-5
 rmarkdown
 and-this-line-is-a-heading
@@ -62,7 +64,7 @@ first-a-header
 second-text
 third-code
 conclusion
-exercises-4
+exercises-3
 resources-6
 ssh-and-the-command-line
 resources-7
