@@ -172,7 +172,7 @@ mean(my_nums) #use the mean function to find the average
 
 Functions always do the same thing, but give different results depending on the inputs (depending on the "arguments you pass to the function").
 
-You can write your own functions, and then use them again and again ("call them again and again"). Here is the general form of a function
+You can write your own functions, and then use them ("call them") again and again. Here is the general form of a function
 
 
 ```r
@@ -198,7 +198,7 @@ myfunctionname(3)
 ## [1] 3
 ```
 
-Let's make our a slightly more complicated
+Let's make our function slightly more complicated
 
 
 
@@ -520,7 +520,7 @@ If you're on this module you can do this by posting it to Slack, or if not try s
 
 ### Exercises 2
 
-* In pairs, take one persons code from a previous week's project and review for readability, using the __better code__ checklist below. Write an improved version together
+* In pairs, take one person's code from a previous week's project and review for readability, using the __better code__ checklist below. Write an improved version together
 * In pairs, try these '[Parsons Problems](https://github.com/tomstafford/parsonsproblems)' __only try the R problems__ not the python (`.py`) ones
 * Review these articles on how to make a minimal reproducible example: [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) & [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask).
 * Make and share on slack a minimal reproducible example of your next R problem
@@ -533,8 +533,9 @@ __control flow__
   * if ...then statements
   * if ...then .. else statements
 * for loops
+* while loops
 * functions
-* scope
+  * scope
 
 
 __better code__  
