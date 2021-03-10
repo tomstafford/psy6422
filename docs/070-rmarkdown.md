@@ -14,7 +14,7 @@ A Rmarkdown file is a plain text file, like a R script, but with the extension `
 
 RMarkdown is the system which marks how text should look after it has been converted into a webpage, or PDF, or some other kind of document. The name RMarkdown is kind of a joke, since RMarkdown is a version of a "markup langauge". Markups are the opposite of the [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) systems (like MS word or Google Docs) which you are used to.
 
-These pages are written in Rmarkdown. You can see this individual file [here in the online repositry](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd). It will really help if you read the webpage alongside the file, so you can compare the file which generates the text, using the markdown, and the output (the webpage).
+These pages are written in Rmarkdown. You can see this individual file [here in the online repositry](https://github.com/tomstafford/psy6422/blob/master/070-rmarkdown.Rmd). It will really help if you read the webpage alongside the file, so you can compare the file which generates the text, using the markdown, and the output (the webpage).
 
 Rstudio magic (called "rendering" or "knitting") turns this file in to the webpage.
 
@@ -23,7 +23,7 @@ Rstudio magic (called "rendering" or "knitting") turns this file in to the webpa
 </div>
 
 
-Compare the [file](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd) and the [webpage](https://tomstafford.github.io/psy6422/rmarkdown.html). 
+Compare the [file](https://github.com/tomstafford/psy6422/blob/master/070-rmarkdown.Rmd) and the [webpage](https://tomstafford.github.io/psy6422/rmarkdown.html). 
 
 **In the webpage this line is in bold. Why?**
 
@@ -137,7 +137,7 @@ The scatterplot above uses participant number as one of the axes, which doesn't 
 
 <img src="070-rmarkdown_files/figure-html/examplehistogram-1.png" width="100%" style="display: block; margin: auto;" />
 
-The code to make this plot is contained in the same ``.Rmd`` file as this text, but I've hidden it so only the output is shown. To do this I set ``echo = FALSE`` for the r chunk in the ``.Rmd`` file. You'll have to look at the [source file](https://github.com/tomstafford/psy6422/blob/master/008-rmarkdown.Rmd) to see this, because - obviously! - in the webpage you don't see any code.
+The code to make this plot is contained in the same ``.Rmd`` file as this text, but I've hidden it so only the output is shown. To do this I set ``echo = FALSE`` for the r chunk in the ``.Rmd`` file. You'll have to look at the [source file](https://github.com/tomstafford/psy6422/blob/master/070-rmarkdown.Rmd) to see this, because - obviously! - in the webpage you don't see any code.
 
 ### Options for code chunks
 
