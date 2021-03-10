@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
 author: "[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)"
-date: '2021-03-02'
+date: '2021-03-10'
 output: pdf_document
 description: Notes on the course - rapidly evolving!
 documentclass: book
@@ -49,8 +49,11 @@ The curriculum is updated each year, but you can get the general idea of the ord
   * Published data projects to the web via github pages
   
 There is also the opportunity to cover advanced topics, either in class or as part of your project. These could include
+
   * Interactive visualisation with Shiny apps
   * SQL
+  * webscraping
+  * animated / roll-over visualisation
 
 You may particularly enjoy the [Reading list](extra-reading.html)
   

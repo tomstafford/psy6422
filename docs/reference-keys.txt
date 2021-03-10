@@ -63,8 +63,11 @@ and-this-line-is-a-heading
 first-a-header
 second-text
 third-code
+options-for-code-chunks
+include-r-in-inline-text
 conclusion
 exercises-3
+checklist-5
 resources-6
 ssh-and-the-command-line
 resources-7
