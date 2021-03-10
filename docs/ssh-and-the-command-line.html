@@ -238,7 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.6" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#find-files-run-files-copy-files"><i class="fa fa-check"></i><b>8.6</b> Find files, run files, copy files</a><ul>
 <li class="chapter" data-level="8.6.1" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#switches"><i class="fa fa-check"></i><b>8.6.1</b> switches</a></li>
 </ul></li>
-<li class="chapter" data-level="8.7" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#exercise"><i class="fa fa-check"></i><b>8.7</b> Exercise</a></li>
+<li class="chapter" data-level="8.7" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#exercises-4"><i class="fa fa-check"></i><b>8.7</b> Exercises</a></li>
 <li class="chapter" data-level="8.8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#checklist-6"><i class="fa fa-check"></i><b>8.8</b> Checklist</a></li>
 <li class="chapter" data-level="8.9" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#resources-7"><i class="fa fa-check"></i><b>8.9</b> Resources</a></li>
 </ul></li>
@@ -326,14 +326,14 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <p>In this class we will introduce the idea of the command line, running commands without the normal graphical user interface (GUI) and accessing remote computers using ssh (secure shell).</p>
 <div id="launching-the-terminal" class="section level2">
 <h2><span class="header-section-number">8.1</span> Launching the Terminal</h2>
-<p>On Windows or iOS, either search ‘Terminal’. You should see a small black box (called “Command Prompt” on Windows) with a cursor</p>
+<p>On Windows or iOS, search ‘Terminal’ in the launcher. You should see a small black box (called “Command Prompt” on Windows) with a cursor.</p>
 <p><img src="images/windows_cmd.png" style="width: 400px; float: center;"></p>
-<p>Note that the cursor appears after some information that shows a file path and/or computer identity. Just as RStudio has a working directory, a location where it looks to load or save files, so with the command line. This is very important, since many command line instructions will only work if the are run <em>in the right place</em></p>
+<p>Note that the cursor appears after some information that shows a file path and/or computer identity. Just as RStudio has a working directory, a location where it looks to load or save files, so with the command line. This is very important, since many command line instructions will only work if they are run <em>in the right place</em>.</p>
 </div>
 <div id="changing-folders-navigating-the-directory-tree" class="section level2">
 <h2><span class="header-section-number">8.2</span> Changing folders (‘navigating the directory tree’)</h2>
 <p>Get the contents of the current directory with <code>dir</code> (on Windows) or <code>ls</code> (on iOS).</p>
-<p>You will get a list of contents, some of these things are folders, some are files. Can you identify which is which.</p>
+<p>You will get a list of contents, some of these things are folders, some are files. Can you identify which is which?</p>
 <p>You can move into a subfolder, using <code>cd foldername</code>. You can move up/back the path using <code>cd ..</code></p>
 <p>You can get the current path <code>cd</code> (Windows) or <code>pwd</code> (iOS)</p>
 <p>This way you can navigate all of the files stored on your computer. It is fiddly and annoying compared to the normal GUI method, but it is more fundamental to how computers work ‘under the hood’ and this way of interacting with computers is necessary in some situations (including, often, accessing remote computers).</p>
@@ -356,6 +356,7 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <p><code>ping wapo.com</code> (the East coast of the USA), or <code>ping globaltimes.cn</code> (mainland China)</p>
 <p>But we can also ping individual machines. “sharc” is one of the <a href="https://docs.hpc.shef.ac.uk/en/latest/">high performance computing</a> (HPC) clusters at Sheffield. You can only talk to it if you are inside the University network (i.e. you need to be on campus or turn your VPN on). Try</p>
 <p><code>ping sharc.shef.ac.uk</code></p>
+<p>If you’ve turned your VPN on correctly it will work.</p>
 </div>
 <div id="remote-access-using-ssh" class="section level2">
 <h2><span class="header-section-number">8.5</span> Remote access using SSH</h2>
@@ -363,14 +364,14 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <p><code>ssh use@machine_ip</code></p>
 <p>Tom will set up a machine for you to try this in class. If successful you should see something like this</p>
 <p><img src="images/neo.png" style="width: 400px; float: center;"></p>
-<p>The terminal will look similar, but commands you run will now execute on this remote machine. You may also have also changed operating system, so you rather than the commands for iOS or Windows, you need to use the commands the work on the remote machine. Many HPC machines and webservers are linux machines.</p>
+<p>The terminal will look similar, but commands you run will now execute on this remote machine. You may also have also changed operating system, so you rather than the commands for iOS or Windows, you need to use the commands the work on the remote machine. Many HPC machines and webservers are linux machines (and so is the one we will connect to in class).</p>
 </div>
 <div id="find-files-run-files-copy-files" class="section level2">
 <h2><span class="header-section-number">8.6</span> Find files, run files, copy files</h2>
 <p><em>This section assumes you are working on a remote linux machine</em></p>
 <p>Let’s use the command <code>find</code> to look on this remote computer for any R scripts. The use of * here is known as “a wildcard”</p>
 <p><code>find -name '*.R'</code></p>
-<p>We can run R on the remote computer, but not RStudio (because the terminal doesn’t show graphics, only text). Sometimes this is known as running software “headless”.</p>
+<p>We can run R on the remote computer, but you can’t run RStudio (because the terminal doesn’t show graphics, only text). Running software without the GUI is known as running software “headless”.</p>
 <p><code>R</code></p>
 <p>Will launch an interactive R console. Quit with <code>q()</code></p>
 <p>But we can also run the script without launching R (so the will run the script and then quit, leaving us back at the terminal. You can either navigate to the containing folder and run it.</p>
@@ -391,10 +392,17 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <p><code>espeak -s 230 "hello my name is speedy"</code></p>
 </div>
 </div>
-<div id="exercise" class="section level2">
-<h2><span class="header-section-number">8.7</span> Exercise</h2>
-<p>Find and run an mp3 file on a remote machine
-* You can run a mp3 file using <code>nvlc</code></p>
+<div id="exercises-4" class="section level2">
+<h2><span class="header-section-number">8.7</span> Exercises</h2>
+<p><strong>These exercises will need to be done in class or immediately after since the remote machine is not turned on permamently</strong></p>
+<ul>
+<li>Find and run an mp3 file on a remote machine
+<ul>
+<li>You can run a mp3 file using <code>nvlc</code><br />
+</li>
+</ul></li>
+<li>Successfully copy a file to/from a remote machine</li>
+</ul>
 </div>
 <div id="checklist-6" class="section level2">
 <h2><span class="header-section-number">8.8</span> Checklist</h2>

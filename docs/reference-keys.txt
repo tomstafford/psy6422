@@ -77,7 +77,7 @@ ping
 remote-access-using-ssh
 find-files-run-files-copy-files
 switches
-exercise
+exercises-4
 checklist-6
 resources-7
 git-and-github
