@@ -235,9 +235,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.3" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#networking"><i class="fa fa-check"></i><b>8.3</b> Networking</a></li>
 <li class="chapter" data-level="8.4" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#ping"><i class="fa fa-check"></i><b>8.4</b> Ping</a></li>
 <li class="chapter" data-level="8.5" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#remote-access-using-ssh"><i class="fa fa-check"></i><b>8.5</b> Remote access using SSH</a></li>
-<li class="chapter" data-level="8.6" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#find-files-run-files-copy-files"><i class="fa fa-check"></i><b>8.6</b> Find files, run files, copy files</a></li>
-<li class="chapter" data-level="8.7" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#checklist-6"><i class="fa fa-check"></i><b>8.7</b> Checklist</a></li>
-<li class="chapter" data-level="8.8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#resources-7"><i class="fa fa-check"></i><b>8.8</b> Resources</a></li>
+<li class="chapter" data-level="8.6" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#find-files-run-files-copy-files"><i class="fa fa-check"></i><b>8.6</b> Find files, run files, copy files</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#switches"><i class="fa fa-check"></i><b>8.6.1</b> switches</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#exercise"><i class="fa fa-check"></i><b>8.7</b> Exercise</a></li>
+<li class="chapter" data-level="8.8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#checklist-6"><i class="fa fa-check"></i><b>8.8</b> Checklist</a></li>
+<li class="chapter" data-level="8.9" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#resources-7"><i class="fa fa-check"></i><b>8.9</b> Resources</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>9</b> Git and Github</a><ul>
 <li class="chapter" data-level="9.1" data-path="git-and-github.html"><a href="git-and-github.html#before-the-class"><i class="fa fa-check"></i><b>9.1</b> Before the class</a></li>
@@ -365,27 +368,50 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <div id="find-files-run-files-copy-files" class="section level2">
 <h2><span class="header-section-number">8.6</span> Find files, run files, copy files</h2>
 <p><em>This section assumes you are working on a remote linux machine</em></p>
-<p><code>find /home/tom -type f -name '*.R'</code></p>
-<p>headless R</p>
+<p>Let’s use the command <code>find</code> to look on this remote computer for any R scripts. The use of * here is known as “a wildcard”</p>
+<p><code>find -name '*.R'</code></p>
+<p>We can run R on the remote computer, but not RStudio (because the terminal doesn’t show graphics, only text). Sometimes this is known as running software “headless”.</p>
+<p><code>R</code></p>
+<p>Will launch an interactive R console. Quit with <code>q()</code></p>
+<p>But we can also run the script without launching R (so the will run the script and then quit, leaving us back at the terminal. You can either navigate to the containing folder and run it.</p>
 <p><code>Rscript toyscript.R</code></p>
+<p>You can also feed the script to R by specifying the full path</p>
+<p><code>Rscript home/neo/Desktop/toyscript.R</code></p>
+<p>Find out how long the script takes to run by putting <code>time</code> in front</p>
 <p><code>time Rscript toyscript.R</code></p>
-<p><code>scp toyscript.R  user@your_up:/path/to/Desktop/toyscript.R</code></p>
-<p>switches</p>
-<p><code>spd-say</code></p>
+<p>Now there’s no point running a simple R script remotely, but when you have very large data it can be convenient to run your analysis on a remote machine which is more powerful (or on many remote machines, which allows parallel processing).</p>
+<p>Let’s copy this script from the remote machine to our home machine. To do this you need the <code>scp</code> command and to know your username and ip address. The path to where you want the file saved comes after the colon:</p>
+<p><code>scp toyscript.R  user@your_ip:/path/to/Desktop/toyscript.R</code></p>
+<div id="switches" class="section level3">
+<h3><span class="header-section-number">8.6.1</span> switches</h3>
+<p>Often we feed additional options (sometimes called ‘switches’) to command line tools. So the command <code>espeak</code> speaks words aloud</p>
+<p><code>espeak "hello"</code></p>
+<p>We can read the <a href="https://linux.die.net/man/1/espeak">espeak documentation</a> to see what the options are. Let’s adjust the pitch and speed.</p>
+<p><code>espeak -p 80 "hello"</code></p>
+<p><code>espeak -s 230 "hello my name is speedy"</code></p>
+</div>
+</div>
+<div id="exercise" class="section level2">
+<h2><span class="header-section-number">8.7</span> Exercise</h2>
+<p>Find and run an mp3 file on a remote machine
+* You can run a mp3 file using <code>nvlc</code></p>
 </div>
 <div id="checklist-6" class="section level2">
-<h2><span class="header-section-number">8.7</span> Checklist</h2>
+<h2><span class="header-section-number">8.8</span> Checklist</h2>
 <ul>
 <li>Identify and launch a terminal window</li>
 <li>Navigate the directory tree using command line instructions</li>
 <li>find your ip address</li>
 <li>ping an ip or website</li>
-<li>find files, run programmes, on remote machines</li>
+<li>find files, run programmes, on remote machines
+<ul>
+<li>feed options to command line tools using switches</li>
+</ul></li>
 <li>copy files to/from remote machines using scp</li>
 </ul>
 </div>
 <div id="resources-7" class="section level2">
-<h2><span class="header-section-number">8.8</span> Resources</h2>
+<h2><span class="header-section-number">8.9</span> Resources</h2>
 <ul>
 <li><a href="https://www.nature.com/articles/d41586-021-00263-0">Five reasons why researchers should learn to love the command line</a></li>
 <li><a href="https://www.sheffield.ac.uk/it-services/vpn">University of Sheffield VPN</a></li>
