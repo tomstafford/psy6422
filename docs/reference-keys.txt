@@ -70,6 +70,13 @@ exercises-3
 checklist-5
 resources-6
 ssh-and-the-command-line
+launching-the-terminal
+changing-folders-navigating-the-directory-tree
+networking
+ping
+remote-access-using-ssh
+find-files-run-files-copy-files
+checklist-6
 resources-7
 git-and-github
 before-the-class

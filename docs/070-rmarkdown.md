@@ -208,6 +208,7 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 * Helps with learning Markdown conventions: [markdownlivepreview.com](https://markdownlivepreview.com/)
 * Making Word documents: [Happy collaboration with Rmd to docx](https://rmarkdown.rstudio.com/articles_docx.html)
 * Install this to make PDFs work: [Getting MiKTeX](https://miktex.org/download)
+* You can write beautifully APA formatted manuscripts in RMarkdown: [A minimal example of APA manuscript preparation, integrating text & analysis code, using Rmarkdown and papaja](https://github.com/tomstafford/rmarkdown_apa)
 
 
 
