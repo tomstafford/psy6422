@@ -328,7 +328,7 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <p>In this class we will introduce the idea of the command line, running commands without the normal graphical user interface (GUI) and accessing remote computers using ssh (secure shell).</p>
 <div id="launching-the-terminal" class="section level2">
 <h2><span class="header-section-number">8.1</span> Launching the Terminal</h2>
-<p>On Windows or iOS, search ‘Terminal’ in the launcher. You should see a small black box (called “Command Prompt” on Windows) with a cursor.</p>
+<p>On Windows or Mac, search ‘Terminal’ in the launcher. You should see a small black box (called “Command Prompt” on Windows) with a cursor.</p>
 <p align="center">
 <img src="images/windows_cmd.png" style="width: 600px; float: center;">
 </p>
@@ -336,10 +336,10 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 </div>
 <div id="changing-folders-navigating-the-directory-tree" class="section level2">
 <h2><span class="header-section-number">8.2</span> Changing folders (‘navigating the directory tree’)</h2>
-<p>Get the contents of the current directory with <code>dir</code> (on Windows) or <code>ls</code> (on iOS).</p>
+<p>Get the contents of the current directory with <code>dir</code> (on Windows) or <code>ls</code> (on Mac).</p>
 <p>You will get a list of contents, some of these things are folders, some are files. Can you identify which is which?</p>
 <p>You can move into a subfolder, using <code>cd foldername</code>. You can move up/back the path using <code>cd ..</code></p>
-<p>You can get the current path <code>cd</code> (Windows) or <code>pwd</code> (iOS)</p>
+<p>You can get the current path <code>cd</code> (Windows) or <code>pwd</code> (Mac)</p>
 <p>This way you can navigate all of the files stored on your computer. It is fiddly and annoying compared to the normal GUI method, but it is more fundamental to how computers work ‘under the hood’ and this way of interacting with computers is necessary in some situations (including, often, accessing remote computers).</p>
 <p>Remeber, like in RStudio, you can use TAB to autocomplete commands.</p>
 </div>
@@ -347,7 +347,7 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <h2><span class="header-section-number">8.3</span> Networking</h2>
 <p>Computers connected to a network have an address, called an <a href="https://en.wikipedia.org/wiki/Internet_Protocol">IP address</a>, which is always four numbers separated by dots. You are used to navigating the internet using domain names such as <a href="">sheffield.ac.uk</a>, but these names exist for human convenience. Like the command line for individual computers, IP addresses are closer to the metal of how computer networks actually work.</p>
 <p>Copy this IP into your browser and see which website it takes you to: <a href="http://143.167.2.102">143.167.2.102</a>.</p>
-<p>You computer is also connected to the internet, so it has an IP address. You can find this out by typing <code>ipconfig</code> (Windows) or <code>ifconfig</code> (iOS) at the command line. (You can also google ‘what is my ip’ but that won’t work for what we’re about to do). This command should give you a bunch of information. Look for the IP addresses. If you are at home you may see one with the first two numbers <code>192.168.xxx.xxx</code>. If you are on campus you should see an IP of the form `172.xxx.xxx.xxx’. All computer on the University network have IPs which start with the same number.</p>
+<p>You computer is also connected to the internet, so it has an IP address. You can find this out by typing <code>ipconfig</code> (Windows) or <code>ifconfig</code> (Mac) at the command line. (You can also google ‘what is my ip’ but that won’t work for what we’re about to do). This command should give you a bunch of information. Look for the IP addresses. If you are at home you may see one with the first two numbers <code>192.168.xxx.xxx</code>. If you are on campus you should see an IP of the form `172.xxx.xxx.xxx’. All computer on the University network have IPs which start with the same number.</p>
 <p>Now launch the University VPN and look for your IP again. If you are off campus it should change, so you now have an IP which starts 172. Remember this number, we will use it later.</p>
 </div>
 <div id="ping" class="section level2">
@@ -370,7 +370,7 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <p align="center">
 <img src="images/neo.png" style="width: 600px; float: center;">
 </p>
-<p>The terminal will look similar, but commands you run will now execute on this remote machine. You may also have changed operating system, so you rather than the commands for iOS or Windows, you need to use the commands the work on the remote machine. Many HPC machines and webservers are linux machines (and so is the one we will connect to in class).</p>
+<p>The terminal will look similar, but commands you run will now execute on this remote machine. You may also have changed operating system, so you rather than the commands for Mac or Windows, you need to use the commands the work on the remote machine. Many HPC machines and webservers are linux machines (and so is the one we will connect to in class).</p>
 </div>
 <div id="find-files-run-files-copy-files" class="section level2">
 <h2><span class="header-section-number">8.6</span> Find files, run files, copy files</h2>
@@ -400,14 +400,18 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 </div>
 <div id="exercises-4" class="section level2">
 <h2><span class="header-section-number">8.7</span> Exercises</h2>
-<p><strong>These exercises will need to be done in class or immediately after since the remote machine is not turned on permamently</strong></p>
+<p><strong>These exercises will need to be done in the week after class, since the remote machine is not turned on permamently. See slack for the IP, username and password to use for remote access</strong></p>
 <ul>
-<li>Find and run an mp3 file on a remote machine
+<li>Enter the remote IP in a browser - this shows a website served from the remote computer</li>
+<li>remote access it using ssh</li>
+<li>find the file index.html
 <ul>
-<li>You can run a mp3 file using <code>nvlc</code><br />
-</li>
+<li>hint: it is in /var</li>
 </ul></li>
-<li>Successfully copy a file to/from a remote machine</li>
+<li>copy to your local machine using scp</li>
+<li>edit using a text editor and save on your local machine</li>
+<li>copy back to 138.68.142.125</li>
+<li>look again at the IP in a browser to verify that you changed it (remember to press refresh/F5/clear your cache)</li>
 </ul>
 </div>
 <div id="checklist-6" class="section level2">
