@@ -76,7 +76,7 @@ Tom will set up a machine for you to try this in class. If successful you should
 <img src="images/neo.png" style="width: 600px; float: center;">
 </p>
 
-The terminal will look similar, but commands you run will now execute on this remote machine. You may also have also changed operating system, so you rather than the commands for iOS or Windows, you need to use the commands the work on the remote machine. Many HPC machines and webservers are linux machines (and so is the one we will connect to in class).
+The terminal will look similar, but commands you run will now execute on this remote machine. You may also have changed operating system, so you rather than the commands for iOS or Windows, you need to use the commands the work on the remote machine. Many HPC machines and webservers are linux machines (and so is the one we will connect to in class).
 
 ## Find files, run files, copy files
 
@@ -118,7 +118,7 @@ Often we feed additional options (sometimes called 'switches') to command line t
 
 We can read the [espeak documentation](https://linux.die.net/man/1/espeak) to see what the options are. Let's adjust the pitch and speed.
 
-`espeak -p 80 "hello"`
+`espeak -p 8 "hello but with extra gravitas"`
 
 `espeak -s 230 "hello my name is speedy"`
 
