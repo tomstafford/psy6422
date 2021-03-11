@@ -68,7 +68,7 @@ If you've turned your VPN on correctly it will work.
 
 If two computers are connected, you may be able to remotely access one from the other using a command called ssh. This takes the form
 
-`ssh use@machine_ip`
+`ssh user@machine_ip`
 
 Tom will set up a machine for you to try this in class. If successful you should see something like this
 
