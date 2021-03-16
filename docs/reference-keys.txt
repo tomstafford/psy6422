@@ -84,11 +84,13 @@ git-and-github
 before-the-class
 accessing-git
 resources-for-the-class
-exercise---publishing-your-project-with-github-pages
-bonus-reading
+checklist-7
+resources-8
 publishing
 sharing-your-rmd-files-via-github-pages
 other-sharing-options
+checklist-8
+resources-9
 advanced-topics
 interactive-graphs
 reproducibility

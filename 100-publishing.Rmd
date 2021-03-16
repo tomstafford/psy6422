@@ -4,6 +4,8 @@
 *Note this is a placeholder page. This material hasn't been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly*
 ```
 
+Git and github allows collaboration and version control on large software projects, but it also provides a convenient way of publishing data projects to the web. This is the way we will use to produce our [final projects](final-project.html) for this module.
+
 
 ## Sharing your Rmd files via Github pages
 
@@ -38,9 +40,14 @@ If you are making multiple changes to your files, using git on your computer is 
 [Jupyter notebooks](https://jupyter.org/). Another way of mixing description, code and outputs. More common for python code.
  
  * Example: [Light reanalysis of Čavojová et al (2018)](https://github.com/tomstafford/cavojova2018/blob/master/cavojava_reanalysis.ipynb)
+
+
+## Checklist
+
+* Publish website using github pages
  
  
- ## Resources
+## Resources
  
 Cathy Gao: [How to publish project online?](https://rpubs.com/cathydatascience/518692)
 
