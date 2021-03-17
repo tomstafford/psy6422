@@ -30,24 +30,28 @@ Outside of RStudio:
 
 This week's class is taught by Seb James. Links to his materials are below
 
-  * Intro to git talk: https://github.com/ABRG-Models/GitTutorial
-    * PDF of slides: https://github.com/ABRG-Models/GitTutorial/blob/master/talk.pdf
-  * Software carpentry: http://sebjameswml.github.io/git-novice/
+
+* Intro to git talk: https://github.com/ABRG-Models/GitTutorial
+* PDF of slides: https://github.com/ABRG-Models/GitTutorial/blob/master/talk.pdf
+* Software carpentry: http://sebjameswml.github.io/git-novice/
 
 Examples of two published projects supported by Github repos
 
-  * https://github.com/ABRG-Models/AttractorScaffolding
-  * https://github.com/ABRG-Models/linetask2014
-  * https://github.com/ABRG-Models/BarrelEmerge/tree/eLife_submission1_full
+* https://github.com/ABRG-Models/AttractorScaffolding
+* https://github.com/ABRG-Models/linetask2014
+* https://github.com/ABRG-Models/BarrelEmerge/tree/eLife_submission1_full
 
 ## Checklist
 
 Git and github are fundamental tools which will be relevant for collaborating on reliable computational projects, but it is not essential you master the full range of capabilities they offer for this module.
 
 By the end of this class you should
+
+
 * have a github account
 * installed git on your local machine
 * understand why git is useful for code projects
+* recognise the essential terminology: repo/repositry, branches, commit, push
 
 ## Resources
 
