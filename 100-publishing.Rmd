@@ -7,6 +7,8 @@
 Git and github allows collaboration and version control on large software projects, but it also provides a convenient way of publishing data projects to the web. This is the way we will use to produce our [final projects](final-project.html) for this module.
 
 
+
+
 ## Sharing your Rmd files via Github pages
 
 1. Create a new github repositry (a "repo")
@@ -24,7 +26,7 @@ If you are making multiple changes to your files, using git on your computer is 
   * selecting 'knit to HTML' if you haven't specified this in the header
 
 5. Upload or "Push" your files, most importantly the ``index.html`` file to a github repo, probably viewable at something like: ``https://github.com/username/myrepo/``
-  * **NOTE**: To make the repositry an archive of your project you can and should add all the other other files and folders, including the .Rmd file which you used to make the index.html file
+  * **NOTE**: To make the repository an archive of your project you can and should add all the other other files and folders, including the .Rmd file which you used to make the index.html file
 
 6. Visit this link and, via the browser,
   * click "Settings" and scroll down to "Github Pages". Under "Source" select "Master branch".edit the settings for the repo and scroll down to 'Github Pages'. There change 'Source' to 'Master'
@@ -45,6 +47,8 @@ If you are making multiple changes to your files, using git on your computer is 
 ## Checklist
 
 * Publish website using github pages
+* Understand that index.html is the default page for a website
+* Use projects in RStudio
  
  
 ## Resources
