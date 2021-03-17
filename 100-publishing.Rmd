@@ -53,7 +53,7 @@ If you are making multiple changes to your files, using git on your computer is 
  
 ## Resources
  
-Cathy Gao: [How to publish project online?](https://rpubs.com/cathydatascience/518692)
-
+* Cathy Gao: [How to publish project online?](https://rpubs.com/cathydatascience/518692)
+* [Using git with RStudio](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
 
 
