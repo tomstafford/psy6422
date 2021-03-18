@@ -81,6 +81,7 @@ exercises-4
 checklist-6
 resources-7
 git-and-github
+motivation-1
 before-the-class
 accessing-git
 resources-for-the-class
