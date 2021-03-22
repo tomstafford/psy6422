@@ -92,10 +92,13 @@ sharing-your-rmd-files-via-github-pages
 other-sharing-options
 checklist-8
 resources-9
-advanced-topics
-interactive-graphs
+interactive-graphs-with-shiny
+before-class
+exercises-5
+resources-10
+examples-of-interactive-graphs-which-use-different-tech-javascript
+database-queries-sql
 reproducibility
-preview-of-other-advanced-topics
 class-notes
 ask-me-questions
 terminology-raw-data
