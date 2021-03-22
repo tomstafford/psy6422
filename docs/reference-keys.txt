@@ -99,6 +99,13 @@ resources-10
 examples-of-interactive-graphs-which-use-different-tech-javascript
 database-queries-sql
 reproducibility
+interactive-graphs-with-shiny-1
+before-class-1
+exercises-6
+resources-11
+examples-of-interactive-graphs-which-use-different-tech-javascript-1
+database-queries-sql-1
+reproducibility-1
 class-notes
 ask-me-questions
 terminology-raw-data

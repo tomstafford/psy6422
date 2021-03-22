@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Project Organisation | PSY6422 Data Management and Visualisation</title>
+  <title>Advanced Topics | PSY6422 Data Management and Visualisation</title>
   <meta name="description" content="Notes on the course - rapidly evolving!" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Project Organisation | PSY6422 Data Management and Visualisation" />
+  <meta property="og:title" content="Advanced Topics | PSY6422 Data Management and Visualisation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Project Organisation | PSY6422 Data Management and Visualisation" />
+  <meta name="twitter:title" content="Advanced Topics | PSY6422 Data Management and Visualisation" />
   
   <meta name="twitter:description" content="Notes on the course - rapidly evolving!" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="making-graphs.html"/>
-<link rel="next" href="final-project.html"/>
+<link rel="prev" href="advanced-topics.html"/>
+<link rel="next" href="class-notes.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -333,76 +333,83 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="project-organisation" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Project Organisation</h1>
-<p>Slides on project organisation are on the google drive: <a href="https://docs.google.com/presentation/d/1dswTN4SOj9cNlh3DKIev9K_y64FmvFDq6G_EbeA4Ksw/edit?usp=sharing">slides format</a>, <a href="https://drive.google.com/file/d/1b6Ua8fJH8nucKkrAagxFgY1ruzGeXO_R/view?usp=sharing">pdf format</a>.</p>
-<p>Please note, some of this class was taught in workshop format, so slides don’t fully reflect what was taught.</p>
-<div id="project-folders" class="section level2">
-<h2><span class="header-section-number">4.1</span> Project folders</h2>
-<p>You should organise all the documentation, files, data, code and outputs for a project in a single folder. Your aim is that when you come back to this project, or want to share it, everything you need is in one place and sensibly organised.</p>
-<p>Create subfolders for ‘data’, ‘graphs’, ‘notes’. <a href="http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html">Michael Frank’s onboarding guide</a> explains a bit more about the logic of this.</p>
+<div id="advanced-topics-1" class="section level1 unnumbered">
+<h1>Advanced Topics</h1>
+<div class="info">
+<p>
+<em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em>
+</p>
 </div>
-<div id="naming-things" class="section level2">
-<h2><span class="header-section-number">4.2</span> Naming Things</h2>
-<p>Files come in different types. This is indicated by their name, not the content.Turn on the options which means you file viewers the extensions of files (so you can see the full filename is <code>MyProject.Doc</code> not just <code>MyProject</code>). How to do this: <a href="https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/">PC</a>, <a href="https://support.apple.com/en-gb/guide/mac-help/mchlp2304/mac">Mac</a>.</p>
-<p>Because you will want to share this project use names that make sense to other people, as well as to you. <code>MyProject.Doc</code> is a bad name. <code>joeblogs_psy64222.doc</code> is better.</p>
-<p>Computers sometimes care about capitalisation, which means you need to pay attention : <code>MyFile.doc</code> and <code>myfile.doc</code> may not get treated the same. Computers also sometimes care about spaces in filenames. You can include these in your filenames and wait until this messes things up later (maybe much later, maybe even never), or you can decide now to be careful about capitalisation and never use spaces in your files names. Replace spaces with underscoress <code>My File.doc</code> becomes <code>my_file.doc</code></p>
-<p>These rules also apply to variables in computer code.</p>
-<p>Jenny Bryan has good thoughts on <a href="http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf">Naming Things</a></p>
+<p>The first ten topics of this course represent the core that I want every student to take away from the course. With these topics you should be equiped to focus on your personal data project for which makes up the majority of the grade on the course.</p>
+<p>The remaining time in the timetable is available for supervision on this data project, and to cover more advanced topics. For these topics, rather than provide a lecture, we will work in small groups to follow exercises and tutorials which exist outside of the course. The motivation for this is two-fold. First, because all your future work will be teamwork, I want students to graduate from this course with experience working together on technical projects. Whether you are more or less confident in the technical requirements, you will learn a lot from trying to share what you know or think you know with a group. Second, a key skill for ongoing development in data science is to teach yourself. There world is rich in useful advice, tutorials and examples. Only by discovering how you can use these will you maximise your potential after you have finished this module.</p>
+<div id="interactive-graphs-with-shiny-1" class="section level2">
+<h2><span class="header-section-number">10.8</span> Interactive graphs with Shiny</h2>
+<div id="before-class-1" class="section level3">
+<h3><span class="header-section-number">10.8.1</span> Before class</h3>
+<p>Please install shiny</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb50-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;shiny&quot;</span>)</a>
+<a class="sourceLine" id="cb50-2" title="2"><span class="kw">install.packages</span>(<span class="st">&quot;shinyjs&quot;</span>)</a>
+<a class="sourceLine" id="cb50-3" title="3"><span class="kw">install.packages</span>(<span class="st">&quot;shinydashboard&quot;</span>)</a></code></pre></div>
+<p>Please visit <a href="https://www.shinyapps.io/">shinyapps.io</a> and make an account (you may be able to activate an account associated with your TUoS account by clicking ‘sign in with Google’)</p>
 </div>
-<div id="research-data-management" class="section level2">
-<h2><span class="header-section-number">4.3</span> Research Data Management</h2>
-<p>Everything recorded during an experiment, whether by you or the computer, is data. All log files. Everything.</p>
-<p>Never delete <em>any</em> data.</p>
-<p>Never edit the raw data files. They should exist is a folder called or and only ever be opened, never modified in any way.</p>
-<p>All data should be backed-up automatically, as soon as it is collected. For how to do this, see the next header</p>
+<div id="exercises-6" class="section level3">
+<h3><span class="header-section-number">10.8.2</span> Exercises</h3>
+<p>We are going to follow <a href="https://debruine.github.io/">Lisa DeBruine</a>’s tutorial - <a href="https://psyteachr.github.io/shiny-tutorials/01-first-app.html">First Shiny App</a>.</p>
+<p>Additional challenges / exercises
+* Make scatterplot rather than histogram
+* Make the app load data which you save in the project directory
+* Deploy to the web with <a href="https://www.shinyapps.io/">shinyapps.io</a>
+* This page may be helpful when combining exercises 2 and 3: <a href="https://support.rstudio.com/hc/en-us/articles/229848967-Why-does-my-app-work-locally-but-not-on-shinyapps-io-">Why does my app work locally, but not on shinyapps.io</a>
+* Look for and share additional resources on shiny apps</p>
 </div>
-<div id="backup-and-sync" class="section level2">
-<h2><span class="header-section-number">4.4</span> Backup and Sync</h2>
-<p>Any back up process which requires you to remember to deploy it is fragile. Use a cloud synchronisation service. Many are available, like OneDrive or Dropbox, but since you are in the University of Sheffield you should install the <a href="https://www.google.com/drive/download/">Google Drive Backup and Sync tool</a>.</p>
-<p>As well as backing up your work to the cloud, this will allow you to work on multiple machines (because changes are automatically carried across from one to the other), as well as collaborate (because multiple people can add to the same shared folder and any changes are instantly available to the whole team).</p>
-</div>
-<div id="resources-3" class="section level2">
-<h2><span class="header-section-number">4.5</span> Resources:</h2>
+<div id="resources-11" class="section level3">
+<h3><span class="header-section-number">10.8.3</span> Resources</h3>
 <ul>
-<li>Jenny Bryan’s presentation on <a href="http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf">Naming Things</a></li>
-<li><a href="http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html">Michael Frank’s onboarding guide</a></li>
-<li><a href="http://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data organisation</a></li>
-<li><a href="http://bayesfactor.blogspot.co.uk/2015/11/habits-and-open-data-helping-students.html">Habits and open data: Helping students develop a theory of scientific mind</a></li>
-<li>Broman &amp; Woo (2017) <a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989">Data Organization in Spreadsheets</a></li>
-<li><a href="https://www.sheffield.ac.uk/library/rdm/index">University of Sheffield pages on Research Data Management</a></li>
-<li>Arslan, R. C. (2019). <a href="https://journals.sagepub.com/doi/full/10.1177/2515245919838783">How to automatically document data with the codebook package to facilitate data reuse</a>. Advances in Methods and Practices in Psychological Science, 2(2), 169-187.</li>
-<li>Jenny Bryan: <a href="https://github.com/jennybc/here_here">I love the here package. Here’s why.</a></li>
-<li><a href="https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/">Why should I use the here package when I’m already using projects?</a></li>
+<li>This is part of a set of <a href="https://psyteachr.github.io/shiny-tutorials/index.html">Shiny Tutorials</a></li>
+<li>RStudio: <a href="https://shiny.rstudio.com/gallery/">Shiny User Showcase</a></li>
+<li>Example: <a href="https://shiny.rstudio.com/gallery/movie-explorer.html">Movie-explorer</a></li>
+<li>Example: <a href="https://sheffield-university.shinyapps.io/decision_power/">Enhanced sensitivity to group differences with decision modelling</a></li>
 </ul>
 </div>
-<div id="exercises-1" class="section level2">
-<h2><span class="header-section-number">4.6</span> Exercises</h2>
-<p>Pair programming exercise: Write a script to create and save a histogram of life expectancy by continent, using the gapminder data (see slides for more notes)</p>
-<p>Create project containing script to generate plots from this data: <a href="static/anscombe.csv">anscombe.csv</a> (template script <a href="static/project1.R">here</a>; find completed example on google drive)</p>
-<p>Share this project with another student on the course. <a href="https://docs.google.com/spreadsheets/d/1voRTo2A22_zAkZ4QRHe823N04QiNBqunX2MSuVRD09o/edit?usp=sharing">2021 see this file for who</a></p>
-<p>Run the project shared with you, complete <a href="https://forms.gle/67XEt4vLBoS2fdP27">this checklist</a> 2021: deadline 0900 on 24th of Feb.</p>
-<p>Review the questions in the library <a href="https://drive.google.com/file/d/1T0kwMSmecf7JZXgKQ1IfCzC9G50cQx87/view?usp=sharing">Research Data Management plan for postgraduate researchers</a></p>
+<div id="examples-of-interactive-graphs-which-use-different-tech-javascript-1" class="section level3">
+<h3><span class="header-section-number">10.8.4</span> Examples of interactive graphs which use different tech (Javascript!)</h3>
+<ul>
+<li><a href="https://rpsychologist.com/d3/cohend/">Interpreting Cohen’s d Effect Size</a> by Kristoffer Magnusson</li>
+<li>Example: Grid histograms of <a href="https://olihawkins.com/visualisation/14">Constituencies by median age in 2017</a> from Oli Hawkins</li>
+</ul>
 </div>
-<div id="checklist-2" class="section level2">
-<h2><span class="header-section-number">4.7</span> Checklist</h2>
-<p><em>in general</em><br />
-* Be able to organise and share project work</p>
-<p><em>specifically</em><br />
-Understand &amp; Use<br />
-* file extensions, file paths<br />
-* standard file naming conventions<br />
-* ISO 8601 date format<br />
-* standard folder organisation for projects</p>
-<p>Appreciate the need for a research data management plan</p>
-<p>Map network drives / automate backups</p>
-<p>You should be able to<br />
-* download a file to your Desktop (e.g. <a href="static/anscombe.csv">this one</a>) and locate it on your hard drive<br />
-* report the full path of a file<br />
-* open a csv file as plain text<br />
-* share a project folder with someone else</p>
+</div>
+<div id="database-queries-sql-1" class="section level2">
+<h2><span class="header-section-number">10.9</span> Database queries: SQL</h2>
+<ul>
+<li>We will look at this interactive tutorial <a href="https://sqlzoo.net/wiki/SELECT_basics" class="uri">https://sqlzoo.net/wiki/SELECT_basics</a></li>
+</ul>
+</div>
+<div id="reproducibility-1" class="section level2">
+<h2><span class="header-section-number">10.10</span> Reproducibility</h2>
+<p>Dependencies</p>
+<ul>
+<li>Package management
+<ul>
+<li><a href="https://groundhogr.com/" class="uri">https://groundhogr.com/</a></li>
+<li>renv: <a href="https://github.com/rstudio/renv" class="uri">https://github.com/rstudio/renv</a></li>
+<li>e.g. <a href="https://luisdva.github.io/rstats/annotater/" class="uri">https://luisdva.github.io/rstats/annotater/</a></li>
+</ul></li>
+<li>Reproducible workflows
+<ul>
+<li><a href="https://books.ropensci.org/targets/">Targets</a> (was Drake)</li>
+</ul></li>
+<li>Containers
+<ul>
+<li>e.g. <a href="https://www.docker.com/">docker</a></li>
+</ul></li>
+</ul>
 
 </div>
+</div>
+
+
+
 </div>
 <div class="psyteachr_footer">
   
@@ -514,8 +521,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="making-graphs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="final-project.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="advanced-topics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="class-notes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
