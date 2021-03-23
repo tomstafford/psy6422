@@ -29,6 +29,7 @@ Please visit [shinyapps.io](https://www.shinyapps.io/) and make an account (you 
 We are going to follow [Lisa DeBruine](https://debruine.github.io/)'s tutorial -  [First Shiny App](https://psyteachr.github.io/shiny-tutorials/01-first-app.html).
 
 Additional challenges / exercises
+
 * Make scatterplot rather than histogram
 * Make the app load data which you save in the project directory
 * Deploy to the web with [shinyapps.io](https://www.shinyapps.io/)
