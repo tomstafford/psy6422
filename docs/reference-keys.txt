@@ -101,6 +101,11 @@ animated-plots-with-gganimate
 exercises-6
 database-queries-sql
 reproducibility
+interactive-graphs-with-shiny-1
+before-class-1
+exercises-7
+resources-11
+examples-of-interactive-graphs-which-use-different-tech-javascript-1
 class-notes
 ask-me-questions
 terminology-raw-data

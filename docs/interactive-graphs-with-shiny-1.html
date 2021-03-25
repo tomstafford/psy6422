@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 ssh and the command line | PSY6422 Data Management and Visualisation</title>
+  <title>Chapter 11 Interactive graphs with Shiny | PSY6422 Data Management and Visualisation</title>
   <meta name="description" content="Notes on the course - rapidly evolving!" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 ssh and the command line | PSY6422 Data Management and Visualisation" />
+  <meta property="og:title" content="Chapter 11 Interactive graphs with Shiny | PSY6422 Data Management and Visualisation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 ssh and the command line | PSY6422 Data Management and Visualisation" />
+  <meta name="twitter:title" content="Chapter 11 Interactive graphs with Shiny | PSY6422 Data Management and Visualisation" />
   
   <meta name="twitter:description" content="Notes on the course - rapidly evolving!" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="rmarkdown.html"/>
-<link rel="next" href="git-and-github.html"/>
+<link rel="prev" href="advanced-topics.html"/>
+<link rel="next" href="class-notes.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -332,129 +332,51 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ssh-and-the-command-line" class="section level1">
-<h1><span class="header-section-number">Chapter 8</span> ssh and the command line</h1>
-<p align="center">
-<img src="images/remote.png" style="width: 600px; float: center;">
-</p>
-<div class="info">
-<p>
-Before this class please install the <a href="https://www.sheffield.ac.uk/it-services/vpn">University VPN</a> and confirm it works [estimated time: 5-10 minutes]
-</p>
+<div id="interactive-graphs-with-shiny-1" class="section level1">
+<h1><span class="header-section-number">Chapter 11</span> Interactive graphs with Shiny</h1>
+<div id="before-class-1" class="section level2">
+<h2><span class="header-section-number">11.1</span> Before class</h2>
+<p>Please install shiny</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb53-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;shiny&quot;</span>)</a>
+<a class="sourceLine" id="cb53-2" title="2"><span class="kw">install.packages</span>(<span class="st">&quot;shinyjs&quot;</span>)</a>
+<a class="sourceLine" id="cb53-3" title="3"><span class="kw">install.packages</span>(<span class="st">&quot;shinydashboard&quot;</span>)</a></code></pre></div>
+<p>Please visit <a href="https://www.shinyapps.io/">shinyapps.io</a> and make an account (you may be able to activate an account associated with your TUoS account by clicking ‘sign in with Google’)</p>
 </div>
-<p>In this class we will introduce the idea of the command line, running commands without the normal graphical user interface (GUI) and accessing remote computers using ssh (secure shell).</p>
-<div id="launching-the-terminal" class="section level2">
-<h2><span class="header-section-number">8.1</span> Launching the Terminal</h2>
-<p>On Windows or Mac, search ‘Terminal’ in the launcher. You should see a small black box (called “Command Prompt” on Windows) with a cursor.</p>
-<p align="center">
-<img src="images/windows_cmd.png" style="width: 600px; float: center;">
-</p>
-<p>Note that the cursor appears after some information that shows a file path and/or computer identity. Just as RStudio has a working directory, a location where it looks to load or save files, so with the command line. This is very important, since many command line instructions will only work if they are run <em>in the right place</em>.</p>
-</div>
-<div id="changing-folders-navigating-the-directory-tree" class="section level2">
-<h2><span class="header-section-number">8.2</span> Changing folders (‘navigating the directory tree’)</h2>
-<p>Get the contents of the current directory with <code>dir</code> (on Windows) or <code>ls</code> (on Mac).</p>
-<p>You will get a list of contents, some of these things are folders, some are files. Can you identify which is which?</p>
-<p>You can move into a subfolder, using <code>cd foldername</code>. You can move up/back the path using <code>cd ..</code></p>
-<p>You can get the current path <code>cd</code> (Windows) or <code>pwd</code> (Mac)</p>
-<p>This way you can navigate all of the files stored on your computer. It is fiddly and annoying compared to the normal GUI method, but it is more fundamental to how computers work ‘under the hood’ and this way of interacting with computers is necessary in some situations (including, often, accessing remote computers).</p>
-<p>Remeber, like in RStudio, you can use TAB to autocomplete commands.</p>
-</div>
-<div id="networking" class="section level2">
-<h2><span class="header-section-number">8.3</span> Networking</h2>
-<p>Computers connected to a network have an address, called an <a href="https://en.wikipedia.org/wiki/Internet_Protocol">IP address</a>, which is always four numbers separated by dots. You are used to navigating the internet using domain names such as <a href="">sheffield.ac.uk</a>, but these names exist for human convenience. Like the command line for individual computers, IP addresses are closer to the metal of how computer networks actually work.</p>
-<p>Copy this IP into your browser and see which website it takes you to: <a href="http://143.167.2.102">143.167.2.102</a>.</p>
-<p>You computer is also connected to the internet, so it has an IP address. You can find this out by typing <code>ipconfig</code> (Windows) or <code>ifconfig</code> (Mac) at the command line. (You can also google ‘what is my ip’ but that won’t work for what we’re about to do). This command should give you a bunch of information. Look for the IP addresses. If you are at home you may see one with the first two numbers <code>192.168.xxx.xxx</code>. If you are on campus you should see an IP of the form `172.xxx.xxx.xxx’. All computer on the University network have IPs which start with the same number.</p>
-<p>Now launch the University VPN and look for your IP again. If you are off campus it should change, so you now have an IP which starts 172. Remember this number, we will use it later.</p>
-</div>
-<div id="ping" class="section level2">
-<h2><span class="header-section-number">8.4</span> Ping</h2>
-<p>Computers talk to each other in lots of different ways, but you are probably mostly familiar with webpages - the “world wide web” (www) served via the <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">http protocol</a>.</p>
-<p>One of the very simplest ways for two computers to talk to each other is <code>ping</code> which is just a tool to check whether two computers can pass messages back and forth. The content of the message isn’t important, it is just to check that they are both connected to the network</p>
-<p>You can ping an IP or a website. Try it at the command line</p>
-<p><code>ping shef.ac.uk</code></p>
-<p>You should get back a bunch of lines will tell you how long, in milliseconds, your computer took to get a message to and from that website. Try it with somewhere further away.</p>
-<p><code>ping wapo.com</code> (the East coast of the USA), or <code>ping globaltimes.cn</code> (mainland China)</p>
-<p>But we can also ping individual machines. “sharc” is one of the <a href="https://docs.hpc.shef.ac.uk/en/latest/">high performance computing</a> (HPC) clusters at Sheffield. You can only talk to it if you are inside the University network (i.e. you need to be on campus or turn your VPN on). Try</p>
-<p><code>ping sharc.shef.ac.uk</code></p>
-<p>If you’ve turned your VPN on correctly it will work.</p>
-</div>
-<div id="remote-access-using-ssh" class="section level2">
-<h2><span class="header-section-number">8.5</span> Remote access using SSH</h2>
-<p>If two computers are connected, you may be able to remotely access one from the other using a command called ssh. This takes the form</p>
-<p><code>ssh user@machine_ip</code></p>
-<p>Tom will set up a machine for you to try this in class. If successful you should see something like this</p>
-<p align="center">
-<img src="images/neo.png" style="width: 600px; float: center;">
-</p>
-<p>The terminal will look similar, but commands you run will now execute on this remote machine. You may also have changed operating system, so you rather than the commands for Mac or Windows, you need to use the commands the work on the remote machine. Many HPC machines and webservers are linux machines (and so is the one we will connect to in class).</p>
-</div>
-<div id="find-files-run-files-copy-files" class="section level2">
-<h2><span class="header-section-number">8.6</span> Find files, run files, copy files</h2>
-<p><em>This section assumes you are working on a remote linux machine</em></p>
-<p>Let’s use the command <code>find</code> to look on this remote computer for any R scripts. The use of * here is known as “a wildcard”</p>
-<p><code>find -name '*.R'</code></p>
-<p>We can run R on the remote computer, but you can’t run RStudio (because the terminal doesn’t show graphics, only text). Running software without the GUI is known as running software “headless”.</p>
-<p><code>R</code></p>
-<p>Will launch an interactive R console. Quit with <code>q()</code></p>
-<p>But we can also run the script without launching R (so the will run the script and then quit, leaving us back at the terminal. You can either navigate to the containing folder and run it.</p>
-<p><code>Rscript toyscript.R</code></p>
-<p>You can also feed the script to R by specifying the full path</p>
-<p><code>Rscript home/neo/Desktop/toyscript.R</code></p>
-<p>Find out how long the script takes to run by putting <code>time</code> in front</p>
-<p><code>time Rscript toyscript.R</code></p>
-<p>Now there’s no point running a simple R script remotely, but when you have very large data it can be convenient to run your analysis on a remote machine which is more powerful (or on many remote machines, which allows parallel processing).</p>
-<p>Let’s copy this script from the remote machine to our home machine. To do this you need the <code>scp</code> command and to know your username and ip address. The path to where you want the file saved comes after the colon:</p>
-<p><code>scp toyscript.R  user@your_ip:/path/to/Desktop/toyscript.R</code></p>
-<div id="switches" class="section level3">
-<h3><span class="header-section-number">8.6.1</span> switches</h3>
-<p>Often we feed additional options (sometimes called ‘switches’) to command line tools. So the command <code>espeak</code> speaks words aloud</p>
-<p><code>espeak "hello"</code></p>
-<p>We can read the <a href="https://linux.die.net/man/1/espeak">espeak documentation</a> to see what the options are. Let’s adjust the pitch and speed.</p>
-<p><code>espeak -p 8 "hello but with extra gravitas"</code></p>
-<p><code>espeak -s 230 "hello my name is speedy"</code></p>
-</div>
-</div>
-<div id="exercises-4" class="section level2">
-<h2><span class="header-section-number">8.7</span> Exercises</h2>
-<p><strong>These exercises will need to be done in the week after class, since the remote machine is not turned on permamently. See slack for the IP, username and password to use for remote access</strong></p>
+<div id="exercises-7" class="section level2">
+<h2><span class="header-section-number">11.2</span> Exercises</h2>
+<p>We are going to follow <a href="https://debruine.github.io/">Lisa DeBruine</a>’s tutorial - <a href="https://psyteachr.github.io/shiny-tutorials/01-first-app.html">First Shiny App</a>.</p>
+<p>Additional challenges / exercises</p>
 <ul>
-<li>Enter the remote IP in a browser - this shows a website served from the remote computer</li>
-<li>remote access it using ssh</li>
-<li>find the file index.html
+<li>Make scatterplot rather than histogram</li>
+<li>Make the app load data which you save in the project directory</li>
+<li>Deploy to the web with <a href="https://www.shinyapps.io/">shinyapps.io</a>
 <ul>
-<li>hint: it is in /var</li>
+<li>This page may be helpful when combining exercises 2 and 3: <a href="https://support.rstudio.com/hc/en-us/articles/229848967-Why-does-my-app-work-locally-but-not-on-shinyapps-io-">Why does my app work locally, but not on shinyapps.io</a></li>
 </ul></li>
-<li>copy to your local machine using scp</li>
-<li>edit using a text editor and save on your local machine</li>
-<li>copy back to 138.68.142.125</li>
-<li>look again at the IP in a browser to verify that you changed it (remember to press refresh/F5/clear your cache)</li>
+<li>Look for and share additional resources on shiny apps</li>
 </ul>
 </div>
-<div id="checklist-6" class="section level2">
-<h2><span class="header-section-number">8.8</span> Checklist</h2>
+<div id="resources-11" class="section level2">
+<h2><span class="header-section-number">11.3</span> Resources</h2>
 <ul>
-<li>Identify and launch a terminal window</li>
-<li>Navigate the directory tree using command line instructions</li>
-<li>find your ip address</li>
-<li>ping an ip or website</li>
-<li>find files, run programmes, on remote machines
-<ul>
-<li>feed options to command line tools using switches</li>
-</ul></li>
-<li>copy files to/from remote machines using scp</li>
+<li>This is part of a set of <a href="https://psyteachr.github.io/shiny-tutorials/index.html">Shiny Tutorials</a></li>
+<li>RStudio: <a href="https://shiny.rstudio.com/gallery/">Shiny User Showcase</a></li>
+<li>Example: <a href="https://shiny.rstudio.com/gallery/movie-explorer.html">Movie-explorer</a></li>
+<li>Example: <a href="https://sheffield-university.shinyapps.io/decision_power/">Enhanced sensitivity to group differences with decision modelling</a></li>
 </ul>
 </div>
-<div id="resources-7" class="section level2">
-<h2><span class="header-section-number">8.9</span> Resources</h2>
+<div id="examples-of-interactive-graphs-which-use-different-tech-javascript-1" class="section level2">
+<h2><span class="header-section-number">11.4</span> Examples of interactive graphs which use different tech (Javascript!)</h2>
 <ul>
-<li><a href="https://www.nature.com/articles/d41586-021-00263-0">Five reasons why researchers should learn to love the command line</a></li>
-<li><a href="https://www.sheffield.ac.uk/it-services/vpn">University of Sheffield VPN</a></li>
-<li>For historical interest: <a href="http://cristal.inria.fr/~weis/info/commandline.html">In the Beginning… Was the Command Line</a> (1999) Neal Stephenson</li>
-<li>If you want to experiment with linux you may start with <a href="https://ubuntu.com/download/desktop">Ubuntu Linux</a></li>
+<li><a href="https://rpsychologist.com/d3/cohend/">Interpreting Cohen’s d Effect Size</a> by Kristoffer Magnusson</li>
+<li>Example: Grid histograms of <a href="https://olihawkins.com/visualisation/14">Constituencies by median age in 2017</a> from Oli Hawkins</li>
 </ul>
 
 </div>
+</div>
+
+
+
 </div>
 <div class="psyteachr_footer">
   
@@ -566,8 +488,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="rmarkdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="git-and-github.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="advanced-topics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="class-notes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
