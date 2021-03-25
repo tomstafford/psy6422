@@ -80,7 +80,7 @@ Assuming you have fixed that, it's time to make some plots:
 Here are three different turorials on gganimate:
 
 * gganimate.com: [Getting Started](https://gganimate.com/articles/gganimate.html)
-* datanovia.com: [](https://www.datanovia.com/en/blog/gganimate-how-to-create-plots-with-beautiful-animation-in-r)
+* datanovia.com: [How to Create Plots with Beautiful Animation in R](https://www.datanovia.com/en/blog/gganimate-how-to-create-plots-with-beautiful-animation-in-r)
 * rpubs.com/jedoenriquez: [An Intro to Animating Charts with gganimate](https://rpubs.com/jedoenriquez/animatingchartsintro)
 
 The first is written by the package authors. Pay attention the material on 'rendering' at the end, this is important if you want to make animations you can share.
