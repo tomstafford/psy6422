@@ -13,7 +13,7 @@ The remaining time in the timetable is available for supervision on this data pr
 In 2021 we votes on the advanced topics to cover in class:
 * [interactive plots with shiny](interactive-graphs-with-shiny.html)
 * [animated plots with gganimate](animated-plots-with-gganimate.html)
-* [SQL](1140-sql.html)
+* [SQL](database-queries-sql.html)
 * python
 
 
