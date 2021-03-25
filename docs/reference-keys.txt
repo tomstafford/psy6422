@@ -97,6 +97,8 @@ before-class
 exercises-5
 resources-10
 examples-of-interactive-graphs-which-use-different-tech-javascript
+animated-plots-with-gganimate
+exercises-6
 database-queries-sql
 reproducibility
 class-notes
