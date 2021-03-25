@@ -94,13 +94,11 @@ checklist-8
 resources-9
 section
 reproducibility
-interactive-graphs-with-shiny
 before-class
 exercises-5
 resources-10
 examples-of-interactive-graphs-which-use-different-tech-javascript
 exercises-6
-database-queries-sql
 class-notes
 ask-me-questions
 terminology-raw-data

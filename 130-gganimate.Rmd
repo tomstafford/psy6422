@@ -1,4 +1,4 @@
-# Animated plots with gganimate {-}
+# - Animated plots with gganimate {-}
 
 This is a package developed by Thomas Lin Pedersen and colleagues. It has it's own page here:
 [gganimate](https://gganimate.com/)

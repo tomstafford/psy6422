@@ -1,4 +1,4 @@
-# Interactive graphs with Shiny
+# - Interactive graphs with Shiny {-}
 
 ## Before class
 
