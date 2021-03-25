@@ -1,0 +1,3 @@
+## Database queries: SQL
+
+* We will look at this interactive tutorial https://sqlzoo.net/wiki/SELECT_basics

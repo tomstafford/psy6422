@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>C Notes | PSY6422 Data Management and Visualisation</title>
+  <title>Chapter 11 Interactive graphs with Shiny | PSY6422 Data Management and Visualisation</title>
   <meta name="description" content="Notes on the course - rapidly evolving!" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="C Notes | PSY6422 Data Management and Visualisation" />
+  <meta property="og:title" content="Chapter 11 Interactive graphs with Shiny | PSY6422 Data Management and Visualisation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="C Notes | PSY6422 Data Management and Visualisation" />
+  <meta name="twitter:title" content="Chapter 11 Interactive graphs with Shiny | PSY6422 Data Management and Visualisation" />
   
   <meta name="twitter:description" content="Notes on the course - rapidly evolving!" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="extra-reading.html"/>
-<link rel="next" href="class-of-2020.html"/>
+<link rel="prev" href="advanced-topics.html"/>
+<link rel="next" href="animated-plots-with-gganimate.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -327,69 +327,45 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="notes" class="section level1">
-<h1><span class="header-section-number">C</span> Notes</h1>
-<div id="credit" class="section level2">
-<h2><span class="header-section-number">C.1</span> Credit</h2>
-<p>These pages based on <a href="https://psyteachr.github.io/book-template/">a template</a> published by the awesome <a href="https://psyteachr.github.io/about/">psyTeachR team</a>. Extra thanks to Lisa DeBruine for help.</p>
+<div id="interactive-graphs-with-shiny" class="section level1">
+<h1><span class="header-section-number">Chapter 11</span> Interactive graphs with Shiny</h1>
+<div id="before-class" class="section level2">
+<h2><span class="header-section-number">11.1</span> Before class</h2>
+<p>Please install shiny</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb49-1" title="1"><span class="kw">install.packages</span>(<span class="st">&quot;shiny&quot;</span>)</a>
+<a class="sourceLine" id="cb49-2" title="2"><span class="kw">install.packages</span>(<span class="st">&quot;shinyjs&quot;</span>)</a>
+<a class="sourceLine" id="cb49-3" title="3"><span class="kw">install.packages</span>(<span class="st">&quot;shinydashboard&quot;</span>)</a></code></pre></div>
+<p>Please visit <a href="https://www.shinyapps.io/">shinyapps.io</a> and make an account (you may be able to activate an account associated with your TUoS account by clicking ‘sign in with Google’)</p>
 </div>
-<div id="colophon" class="section level2">
-<h2><span class="header-section-number">C.2</span> Colophon</h2>
-<p>Find the repo here: <a href="https://github.com/tomstafford/psy6422/">https://github.com/tomstafford/psy6422/</a></p>
-<p>Everything worked better when I:</p>
+<div id="exercises-5" class="section level2">
+<h2><span class="header-section-number">11.2</span> Exercises</h2>
+<p>We are going to follow <a href="https://debruine.github.io/">Lisa DeBruine</a>’s tutorial - <a href="https://psyteachr.github.io/shiny-tutorials/01-first-app.html">First Shiny App</a>.</p>
+<p>Additional challenges / exercises</p>
 <ul>
-<li>set GitHub pages to run off of Master/docs</li>
-<li>listened to Lisa and used bookdown at the CL, not knit in Rstudio, to render the pages: <code>R -e 'bookdown::render_book("index.Rmd")'</code></li>
-<li>installed <a href="https://cran.r-project.org/bin/linux/ubuntu/README.html">R 3.6</a></li>
-<li>installed tidyverse, bookdown, devtools and finally <a href="https://github.com/PsyTeachR/webex">Webex</a>.</li>
+<li>Make scatterplot rather than histogram</li>
+<li>Make the app load data which you save in the project directory</li>
+<li>Deploy to the web with <a href="https://www.shinyapps.io/">shinyapps.io</a>
+<ul>
+<li>This page may be helpful when combining exercises 2 and 3: <a href="https://support.rstudio.com/hc/en-us/articles/229848967-Why-does-my-app-work-locally-but-not-on-shinyapps-io-">Why does my app work locally, but not on shinyapps.io</a></li>
+</ul></li>
+<li>Look for and share additional resources on shiny apps</li>
 </ul>
 </div>
-<div id="python" class="section level2">
-<h2><span class="header-section-number">C.3</span> Python</h2>
-<p>This course teaches general principles of coding and computation, and specific skills for data management and visualisation in R. Lots of people in the data science world, particularly in areas which align with computer science / machine learning, use Python.</p>
-<p>I decided to teach this course in R because the community around a language is as important as the language. You can do anything in any language, and most things as easily in Python as in R, but Psychologists, biologists and scholars from across the social sciences tend to use R, so I’m teaching this course in R.</p>
-<p>If you want to learn Python, I recommend:</p>
+<div id="resources-10" class="section level2">
+<h2><span class="header-section-number">11.3</span> Resources</h2>
 <ul>
-<li>Resource list: <a href="https://wiki.python.org/moin/BeginnersGuide/NonProgrammers">Python for Non-Programmers</a></li>
-<li>Pages <a href="https://realpython.com/start-here/">RealPython: Learn Python Programming, By Example</a></li>
-<li>Book: <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a> by Jake VanderPlas</li>
-<li>Book: <a href="https://wesmckinney.com/pages/book.html">Python for Data Analysis</a> by Wes McKinney</li>
-<li>Pages: <a href="https://chrisalbon.com/">chrisalbon.com</a></li>
-<li>Pages: <a href="https://towardsdatascience.com">TowardsDataScience</a>, for example this one <a href="https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673">A Quick Introduction to the “Pandas” Python Library</a></li>
-<li>Book: <a href="http://www.pygaze.org/pep/">Python for Experimental Psychologists</a> by Edwin Dalmaijer</li>
-<li>Pages: <a href="https://www.w3schools.com/python/default.asp">w3Schools</a></li>
+<li>This is part of a set of <a href="https://psyteachr.github.io/shiny-tutorials/index.html">Shiny Tutorials</a></li>
+<li>RStudio: <a href="https://shiny.rstudio.com/gallery/">Shiny User Showcase</a></li>
+<li>Example: <a href="https://shiny.rstudio.com/gallery/movie-explorer.html">Movie-explorer</a></li>
+<li>Example: <a href="https://sheffield-university.shinyapps.io/decision_power/">Enhanced sensitivity to group differences with decision modelling</a></li>
 </ul>
 </div>
-<div id="general-righteousness" class="section level2">
-<h2><span class="header-section-number">C.4</span> General righteousness</h2>
-<p>You should use a password manager. Really. <a href="https://www.lastpass.com">LastPass</a> is recommended</p>
-<p>You should know how to use a VPN</p>
+<div id="examples-of-interactive-graphs-which-use-different-tech-javascript" class="section level2">
+<h2><span class="header-section-number">11.4</span> Examples of interactive graphs which use different tech (Javascript!)</h2>
 <ul>
-<li>Advice for Sheffield students here: <a href="https://www.sheffield.ac.uk/it-services/remote/students">Working remotely - information for students</a></li>
-<li>You can test by visiting <a href="https://journals.sagepub.com/doi/full/10.1177/0956797613511466">this page</a>. If you are in the University network (either on campus or via a VPN) it will offer you the chance to download the article PDF. Otherwise it will try and charge you $35 for the privilege.</li>
+<li><a href="https://rpsychologist.com/d3/cohend/">Interpreting Cohen’s d Effect Size</a> by Kristoffer Magnusson</li>
+<li>Example: Grid histograms of <a href="https://olihawkins.com/visualisation/14">Constituencies by median age in 2017</a> from Oli Hawkins</li>
 </ul>
-</div>
-<div id="data-science-sheffield" class="section level2">
-<h2><span class="header-section-number">C.5</span> Data Science @ Sheffield</h2>
-<p>The <a href="https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science">MSc in Psychological Research Methods with Data Science</a>, of which <a href="index.html">this module</a> is a core part, is designed to teach graduate psychologists data science skills. If you don’t have a psychology background our other <a href="https://www.sheffield.ac.uk/psychology/prospectivepg/masters">MSc courses in cognitive neuroscience</a> can operate as “conversion courses”, since they are designed to teach core psychology/neuroscience skills to people from non-psychology backgrounds.</p>
-<p>Our MSc is not the only way you can study data science at the University of Sheffield. The <a href="https://www.sheffield.ac.uk/postgraduate/taught/courses/2020/data-analytics-msc">MSc in Data Analytics</a> is taught in the Department of Computer Science and has a stronger focus on computational tools such as machine learning. The <a href="https://www.sheffield.ac.uk/postgraduate/taught/courses/2020/data-science-msc">MSc in Data Science</a> is in the Information School which is in the Faculty of Social Science, and has more of a focus on business decisions and using data in organisations. We also highly recommend the <a href="https://www.sheffield.ac.uk/postgraduate/taught/courses/2020/social-research-ma">MSc in Social Research</a>, run by the <a href="https://www.sheffield.ac.uk/smi">Sheffield Methods Institute</a>, which teaches a full suite of quantative and qualatative research skills. The SMI is also home to the <a href="https://www.sheffield.ac.uk/smi/postgraduate/data-analytics-society-cdt">Data Analytics and Society Centre for Doctoral Training</a> which offers opportunities to undertake a 4-year funded integrated MSc and PhD.</p>
-</div>
-<div id="careers" class="section level2">
-<h2><span class="header-section-number">C.6</span> Careers</h2>
-<p>Inside or outside of research, data management and visualisation skills will be good for your career. Unlike many high-technical skills, coding is highly accessible. Even in the world of software development, over half of programmers are <a href="https://www.infoworld.com/article/2908474/stack-overflow-survey-finds-nearly-half-have-no-degree-in-computer-science.html">self-taught</a>. But coding is relevant to more than just pure software jobs, <a href="https://www.burning-glass.com/research-project/coding-skills/">one report</a> found that 20% of graduate-level jobs value coding as a skill, and these jobs paid on average 30% more than other graduate jobs.</p>
-<p>More information:</p>
-<ul>
-<li><a href="https://www.prospects.ac.uk/job-profiles/data-scientist">Job profile: Data Scientist</a></li>
-<li><a href="https://targetjobs.co.uk/careers-advice/job-descriptions/454123-data-scientist-job-description">Data Scientist: Job Description</a></li>
-<li>University of Sheffield: <a href="https://www.sheffield.ac.uk/careers/careerconnect">Career Connect</a></li>
-<li>Academic Jobs: <a href="https://www.jobs.ac.uk/">jobs.ac.uk</a></li>
-<li>University of Sheffield Careers service: <a href="https://www.sheffield.ac.uk/careers/services/international">Support for international students</a></li>
-</ul>
-</div>
-<div id="testimonials" class="section level2">
-<h2><span class="header-section-number">C.7</span> Testimonials</h2>
-<p><a href="https://www.sheffield.ac.uk/psychology/prospectivepg/masters/stories/peter-carr-1.817457">Peter Carr</a></p>
-<p>This is the first year the <a href="https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science">MSc in Psychological Research Methods with Data Science</a> has run, so more soon!</p>
 
 </div>
 </div>
@@ -503,8 +479,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="extra-reading.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="class-of-2020.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="advanced-topics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="animated-plots-with-gganimate.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
