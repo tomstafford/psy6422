@@ -94,6 +94,7 @@ checklist-8
 resources-9
 section
 reproducibility
+general-righteousness
 before-class
 exercises-5
 resources-10
@@ -119,8 +120,6 @@ pedagogy
 notes
 credit
 colophon
-python
-general-righteousness
 data-science-sheffield
 careers
 testimonials

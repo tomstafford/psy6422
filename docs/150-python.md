@@ -1,0 +1,16 @@
+# - Python {-}
+
+This course teaches general principles of coding and computation, and specific skills for data management and visualisation in R. Lots of people in the data science world, particularly in areas which align with computer science / machine learning, use Python.
+
+I decided to teach this course in R because the community around a language is as important as the language. You can do anything in any language, and most things as easily in Python as in R, but Psychologists, biologists and scholars from across the social sciences tend to use R, so I'm teaching this course in R.
+
+If you want to learn Python, I recommend:
+
+* Resource list: [Python for Non-Programmers](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)
+* Pages [RealPython: Learn Python Programming, By Example](https://realpython.com/start-here/)
+* Book: [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) by Jake VanderPlas
+* Book: [Python for Data Analysis](https://wesmckinney.com/pages/book.html) by Wes McKinney
+* Pages: [chrisalbon.com](https://chrisalbon.com/)
+* Pages: [TowardsDataScience](https://towardsdatascience.com), for example this one [A Quick Introduction to the “Pandas” Python Library](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
+* Book: [Python for Experimental Psychologists](http://www.pygaze.org/pep/) by Edwin Dalmaijer
+* Pages: [w3Schools](https://www.w3schools.com/python/default.asp)

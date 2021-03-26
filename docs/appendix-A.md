@@ -1,9 +1,7 @@
 # Class notes
 
 
-<div class="info">
-<p><em>These are placeholder pages. In 2020 most of this material was delivered offline. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
-</div>
+
 
 ## Ask me questions
 
