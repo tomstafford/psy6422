@@ -7,9 +7,11 @@ output: pdf_document
 
 # Marking Criteria
 
-Submits by 12 noon on the 26th of May 2020 in PDF by email to ``t.stafford@shef.ac.uk``
+See the Assessment criteria document for these. Roughly they are:
 
-Answers the questions in the headings below, showing evidence of engagement with the course
+Submit by the deadline (see Timetable) in PDF by email to ``t.stafford@sheffield.ac.uk``. Use the filename format ``surname_registrationnumber.pdf``
+
+Answer the questions in the headings below, showing evidence of engagement with the course
 
 Note: I expect and hope that all students can get full marks for this assessment. There is no word limit, but short is sweet. I suggest you write between 3 sentences and 3 paragraphs for each.
 
