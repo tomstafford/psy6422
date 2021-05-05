@@ -84,9 +84,9 @@ Includes slides and other resources, as well as these specific documents
 * [Timetable](https://docs.google.com/spreadsheets/d/1KP9tRqOh6KW6F0jq9k1jL380qF0F6VjtthQ2IFEYRRw/edit?usp=sharing)
 * [Assessment Criteria](https://docs.google.com/spreadsheets/d/1oTJKI675ijCs14jUoT9d_8yPH2i_S2AfQG507jN8aVY/edit?usp=sharing)
 
-Two FAQ documents which I am adding to as questions come in
+FAQ document which I am adding to as questions come in
 
-* [FAQ for PSY6422 (including on module project)](on module project submission)
+* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/1HSAdBFsz-tMwi2oUJaHGxE7Tv7majutM01j4wZBrFTw/edit?usp=sharing)
 
 Most information is on these pages (hosted on github, no login required)
 
