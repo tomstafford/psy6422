@@ -46,6 +46,8 @@ I will showcase some features of python, focusing on things which are the same o
 * for loops
 * zero indexing
 
+This is useful if you can't manage to install python: [Google Colaboratory](https://colab.research.google.com/)
+
 We will do some basic data wrangling with pandas and seaborn
 
   `conda install seaborn`
