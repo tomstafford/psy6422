@@ -14,3 +14,7 @@ If you want to learn Python, I recommend:
 * Pages: [TowardsDataScience](https://towardsdatascience.com), for example this one [A Quick Introduction to the “Pandas” Python Library](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
 * Book: [Python for Experimental Psychologists](http://www.pygaze.org/pep/) by Edwin Dalmaijer
 * Pages: [w3Schools](https://www.w3schools.com/python/default.asp)
+
+Other resources
+
+* Nicolas P. Rougier: [Matplotlib tutorial](https://github.com/rougier/matplotlib-tutorial)

@@ -1,4 +1,4 @@
-# Final project {-}
+# Module project {-}
 
 <div class="info">
 <p><em>These pages are about the final project, which comprises most of the module grade. There are many useful notes below, which you will want to refer to as you complete your project</em></p>

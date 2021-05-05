@@ -148,6 +148,7 @@ Grolemund, G., & Wickham, H. (2018). R for data science.
 
 Graphing in R (Eric-Jan Wagenmakers and Quentin F. Gronau): http://shinyapps.org/apps/RGraphCompendium/index.php
 
+[r-charts.com](https://r-charts.com/): "Over 1100 graphs with reproducible code divided in 8 big categories and over 50 chart types, in addition of tools to choose and create colors and color palettes"
 
 ## Presentations
 
