@@ -1,8 +1,8 @@
 # Final project {-}
 
-```{block, type="info"}
-*These pages are about the final project, which comprises most of the module grade. There are many useful notes below, which you will want to refer to as you complete your project*
-```
+<div class="info">
+<p><em>These pages are about the final project, which comprises most of the module grade. There are many useful notes below, which you will want to refer to as you complete your project</em></p>
+</div>
   
 Slides on project organisation are on the google drive: [slides format](https://docs.google.com/presentation/d/1crdlTcYf3hy15pE9Tz-0EdpQyaxCt2uOJ5w9IOX0UW0/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1rMhl90cesR99Jpwwh5MUpXrY9xfsMR82/view?usp=sharing). 
 
@@ -35,9 +35,9 @@ Please include these headings, or something similar, in your project.
 * Summary
   * Brief thoughts on what you have learnt, what you might do next if you had more time / more data
   
-```{block, type="info"}
-The ultimate aim is to make something that looks good and shows off your abilities. You want to produce something you are proud to show people (including future employers and supervisors)
-```  
+<div class="info">
+<p>The ultimate aim is to make something that looks good and shows off your abilities. You want to produce something you are proud to show people (including future employers and supervisors)</p>
+</div>
   
 ## Choosing your data
 
@@ -57,8 +57,9 @@ The other route is large publicly available resources:
 * Another good source of diverse, open and current data sets is the [Data Is Plural](http://tinyletter.com/data-is-plural/archive) newsletter
 * Enjoy this crowdsourced list of [Open psychological datasets](https://docs.google.com/spreadsheets/d/1ejOJTNTL5ApCuGTUciV0REEEAqvhI2Rd2FCoj7afops/edit#gid=0)
 * [Kaggle](https://www.kaggle.com/)
+* [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/articles/)
 
-### Suggestions for 2021 (in progress)
+### Suggestions for possible project data sets 
 
 These are examples of large, probably messy, real-world data sets which could make good starting points for projects:
 
@@ -66,6 +67,7 @@ These are examples of large, probably messy, real-world data sets which could ma
 * [StackOverFlow survey data](https://insights.stackoverflow.com/survey/)
 * [BEHACOM - a dataset modelling users’ behaviour in computers](https://www.sciencedirect.com/science/article/pii/S2352340920306612)
 * The [World Values Survey](http://www.worldvaluessurvey.org/wvs.jsp) “is the largest non-commercial, cross-national, time series investigation of human beliefs and values ever executed, currently including interviews with almost 400,000 respondents."
+* [AnAge Database of Animal Ageing and Longevity](https://genomics.senescence.info/species/index.html)
 
 ## Choose your graph
 

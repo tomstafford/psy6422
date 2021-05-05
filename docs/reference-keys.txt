@@ -1,6 +1,6 @@
 motivation
 course-aims
-the-final-project
+the-module-mini-project
 resources-for-current-students
 overview-assessment-module-organisation
 class-material
@@ -31,7 +31,7 @@ checklist-2
 requirements
 choosing-your-data
 finding-data
-suggestions-for-2021-in-progress
+suggestions-for-possible-project-data-sets
 choose-your-graph
 check-list
 answers-to-common-questions

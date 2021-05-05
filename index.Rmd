@@ -66,13 +66,13 @@ There is also the opportunity to cover advanced topics, either in class or as pa
 
 You may particularly enjoy the [Reading list](extra-reading.html)
   
-### The Final project 
+### The Module mini-project 
 
 The bulk of the course assessment is to conduct and publish your own analysis project. By doing this you will have experience of combining all the skills taught on the course within a singe project. This will take a data visualisation from start to finish - from raw data, through data cleaning and documentation to sharing your code and the resulting visualisation on the web.
 
 The intention with the assessment is to ensure that every student leaves the course with something they are proud to put in their portfolio of work, something which shows what they can do and which helps with future job or course applications.
 
-See here for [more on the nature of your final project](final-project.html), see here for examples from last year [class of 2020](class-of-2020.html).
+See here for [more on the nature of your module project](module-project.html), see here for examples from last year [class of 2020](class-of-2020.html).
 
 
 ## Resources for current students
@@ -83,6 +83,10 @@ Includes slides and other resources, as well as these specific documents
 
 * [Timetable](https://docs.google.com/spreadsheets/d/1KP9tRqOh6KW6F0jq9k1jL380qF0F6VjtthQ2IFEYRRw/edit?usp=sharing)
 * [Assessment Criteria](https://docs.google.com/spreadsheets/d/1oTJKI675ijCs14jUoT9d_8yPH2i_S2AfQG507jN8aVY/edit?usp=sharing)
+
+Two FAQ documents which I am adding to as questions come in
+
+* [FAQ for PSY6422 (including on module project)](on module project submission)
 
 Most information is on these pages (hosted on github, no login required)
 
