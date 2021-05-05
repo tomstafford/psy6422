@@ -16,7 +16,7 @@ I'd probably also do anything involving an API, web-scraping or bulk text proces
 
 ## A worked example
 
-To showcase python, we'll be trying to reproduce an analysis by Oli Hawkins, showing of a [support-vector machine classification of Penguin data](https://twitter.com/olihawkins/status/1285664698201972736)
+To showcase python, we'll be trying to reproduce an analysis by Oli Hawkins, showing off a [support-vector machine classification of Penguin data](https://twitter.com/olihawkins/status/1285664698201972736)
 
 <img src="images/penguins.png" style="width: 600px; float: center;">
 
@@ -30,20 +30,28 @@ Before the class, please
 * install [miniconda](https://docs.conda.io/en/latest/miniconda.html)
   * You MAY have installed python and conda already, when you installed R, if you did this via the [Anaconda](https://www.anaconda.com/) distribution.
 * clone [the penguin-model repo](https://github.com/olihawkins/penguin-models)
-* create a conda environment, following the instructions in the README.md
+* create a conda environment, following the instructions in the repo README.md
 
   `conda env create -f environment.yml`
   
 
 ## In class
 
-We will run the models, and explore the data and code
-
 We will use the Spyder IDE
 
   `conda install spyder`
-  
-We will do some basic data wrangling with pandas
+
+I will showcase some features of python, focusing on things which are the same or frustratingly different from R
+
+* for loops
+* zero indexing
+
+We will do some basic data wrangling with pandas and seaborn
+
+  `conda install seaborn`
+
+We will run the models, and explore the data and code, focusing on hacking a complex, existing, project
+
 
 ## After class
 
@@ -60,6 +68,7 @@ If you want to learn Python, I recommend:
 * Book: [Python for Experimental Psychologists](http://www.pygaze.org/pep/) by Edwin Dalmaijer
 * Pages: [w3Schools](https://www.w3schools.com/python/default.asp)
 
-Other resources
+
+Other resources:
 
 * Nicolas P. Rougier: [Matplotlib tutorial](https://github.com/rougier/matplotlib-tutorial)
