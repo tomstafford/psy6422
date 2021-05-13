@@ -11,8 +11,8 @@ In my very prejudiced opinion, there are three reasons to prefer Python to R. Th
 * [Conda](https://docs.conda.io/en/latest/), for package, dependency and environment management
 * [Pandas](https://pandas.pydata.org/), the data wrangling toolkit
 * Certain toolkits, 
-  * e.g. * Machine Learning tools. Computer Scientists tend to use Python, so the latest in ML, Deep Learning etc is more accessible if you use Python (e.g. [PyTorth](https://pytorch.org/), [scikit-learn](https://scikit-learn.org/stable/))
-  * Running experiments, using [psychopy](https://www.psychopy.org/)
+  * e.g. Machine Learning tools. Computer Scientists tend to use Python, so the latest in ML, Deep Learning etc is more accessible if you use Python (e.g. [PyTorth](https://pytorch.org/), [scikit-learn](https://scikit-learn.org/stable/))
+  * e.g. Running experiments, using [psychopy](https://www.psychopy.org/)
   
 I'd probably also do anything involving talking to hardware, an API, web-scraping or bulk text processing in Python, but this may just be prejudice. Python is a good interstitial language.
 
