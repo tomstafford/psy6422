@@ -10,9 +10,11 @@ In my very prejudiced opinion, there are three reasons to prefer Python to R. Th
 
 * [Conda](https://docs.conda.io/en/latest/), for package, dependency and environment management
 * [Pandas](https://pandas.pydata.org/), the data wrangling toolkit
-* Machine Learning tools. Computer Scientists tend to use Python, so the latest in ML, Deep Learning etc is more accessible if you use Python (e.g. [PyTorth](https://pytorch.org/), [scikit-learn](https://scikit-learn.org/stable/)
-
-I'd probably also do anything involving an API, web-scraping or bulk text processing in Python, but this may just be prejudice.
+* Certain toolkits, 
+  * e.g. * Machine Learning tools. Computer Scientists tend to use Python, so the latest in ML, Deep Learning etc is more accessible if you use Python (e.g. [PyTorth](https://pytorch.org/), [scikit-learn](https://scikit-learn.org/stable/))
+  * Running experiments, using [psychopy](https://www.psychopy.org/)
+  
+I'd probably also do anything involving talking to hardware, an API, web-scraping or bulk text processing in Python, but this may just be prejudice. Python is a good interstitial language.
 
 ## A worked example
 
@@ -26,7 +28,7 @@ repo: [github.com/olihawkins/penguin-models](https://github.com/olihawkins/pengu
 
 Before the class, please 
 
-* install [Python](https://www.python.org/downloads/)
+* install [Python](https://www.python.org/downloads/). **note** Python underwent a major update from version 2 to 3. Make sure you install version 3+ of python.
 * install [miniconda](https://docs.conda.io/en/latest/miniconda.html)
   * You MAY have installed python and conda already, when you installed R, if you did this via the [Anaconda](https://www.anaconda.com/) distribution.
 * clone [the penguin-model repo](https://github.com/olihawkins/penguin-models)
