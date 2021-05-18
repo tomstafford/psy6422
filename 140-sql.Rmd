@@ -25,7 +25,7 @@ Tables also have 'records' (the stored information, which you be used to thinkin
 
 In class, I will illustrate the key concepts of SQL with an example from my own research
 
-| Stafford, T. (2018). [Female chess players outperform expectations when playing men](http://journals.sagepub.com/doi/10.1177/0956797617736887). *Psychological Science, 29*(3), 429-436. ([Preprint](https://psyarxiv.com/bpy3t/)).  
+* Stafford, T. (2018). [Female chess players outperform expectations when playing men](http://journals.sagepub.com/doi/10.1177/0956797617736887). *Psychological Science, 29*(3), 429-436. ([Preprint](https://psyarxiv.com/bpy3t/)).  
   
 Then we will look at this interactive turorial:
 
