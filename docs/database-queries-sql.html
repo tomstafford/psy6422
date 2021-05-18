@@ -24,7 +24,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2021-05-13" />
+<meta name="date" content="2021-05-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -270,13 +270,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="animated-plots-with-gganimate.html"><a href="animated-plots-with-gganimate.html"><i class="fa fa-check"></i>- Animated plots with gganimate</a><ul>
 <li class="chapter" data-level="10.12" data-path="animated-plots-with-gganimate.html"><a href="animated-plots-with-gganimate.html#exercises-6"><i class="fa fa-check"></i><b>10.12</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="database-queries-sql.html"><a href="database-queries-sql.html"><i class="fa fa-check"></i>- Database queries: SQL</a></li>
+<li class="chapter" data-level="" data-path="database-queries-sql.html"><a href="database-queries-sql.html"><i class="fa fa-check"></i>- Database queries: SQL</a><ul>
+<li class="chapter" data-level="10.13" data-path="database-queries-sql.html"><a href="database-queries-sql.html#context"><i class="fa fa-check"></i><b>10.13</b> Context</a></li>
+<li class="chapter" data-level="10.14" data-path="database-queries-sql.html"><a href="database-queries-sql.html#key-information"><i class="fa fa-check"></i><b>10.14</b> Key information</a></li>
+<li class="chapter" data-level="10.15" data-path="database-queries-sql.html"><a href="database-queries-sql.html#exercises-7"><i class="fa fa-check"></i><b>10.15</b> Exercises</a></li>
+<li class="chapter" data-level="10.16" data-path="database-queries-sql.html"><a href="database-queries-sql.html#checklist-9"><i class="fa fa-check"></i><b>10.16</b> Checklist</a></li>
+<li class="chapter" data-level="10.17" data-path="database-queries-sql.html"><a href="database-queries-sql.html#resources-11"><i class="fa fa-check"></i><b>10.17</b> Resources</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i>- Python</a><ul>
-<li class="chapter" data-level="10.13" data-path="python.html"><a href="python.html#motivation-2"><i class="fa fa-check"></i><b>10.13</b> Motivation</a></li>
-<li class="chapter" data-level="10.14" data-path="python.html"><a href="python.html#a-worked-example"><i class="fa fa-check"></i><b>10.14</b> A worked example</a></li>
-<li class="chapter" data-level="10.15" data-path="python.html"><a href="python.html#preparation"><i class="fa fa-check"></i><b>10.15</b> Preparation</a></li>
-<li class="chapter" data-level="10.16" data-path="python.html"><a href="python.html#in-class"><i class="fa fa-check"></i><b>10.16</b> In class</a></li>
-<li class="chapter" data-level="10.17" data-path="python.html"><a href="python.html#after-class"><i class="fa fa-check"></i><b>10.17</b> After class</a></li>
+<li class="chapter" data-level="10.18" data-path="python.html"><a href="python.html#motivation-2"><i class="fa fa-check"></i><b>10.18</b> Motivation</a></li>
+<li class="chapter" data-level="10.19" data-path="python.html"><a href="python.html#a-worked-example"><i class="fa fa-check"></i><b>10.19</b> A worked example</a></li>
+<li class="chapter" data-level="10.20" data-path="python.html"><a href="python.html#preparation"><i class="fa fa-check"></i><b>10.20</b> Preparation</a></li>
+<li class="chapter" data-level="10.21" data-path="python.html"><a href="python.html#in-class"><i class="fa fa-check"></i><b>10.21</b> In class</a></li>
+<li class="chapter" data-level="10.22" data-path="python.html"><a href="python.html#after-class"><i class="fa fa-check"></i><b>10.22</b> After class</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendices</b></span></li>
 <li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes</a><ul>
@@ -335,14 +341,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="database-queries-sql" class="section level1 unnumbered">
 <h1>- Database queries: SQL</h1>
+<div id="context" class="section level2">
+<h2><span class="header-section-number">10.13</span> Context</h2>
+<p>SQL, you can pronouce it S-Q-L or “sequel”, is a database system. It is old, in internet terms, but not going anywhere, and core to many data science jobs.</p>
+</div>
+<div id="key-information" class="section level2">
+<h2><span class="header-section-number">10.14</span> Key information</h2>
+<p>There are different flavours, such as MySQL which is used by WordPress websites, or PostgreSQL / postgres.</p>
+<p>The common core of SQL is that that it is a ‘relational’ database management systems. It is used for storing information and saying how it is connected to other bits of information. Compare this to the spreadsheet/CSV, which stores information in a list.</p>
+<p>Note that SQL is designed for databases with potentially billions of rows of data. It demands working habits where you can’t “look” at the data all at once, as you would with a spreadsheet.</p>
+<p>SQL has it’s <a href="https://en.wikipedia.org/wiki/SQL_syntax">own terminology</a> but to start off we will think about two things</p>
 <ul>
-<li>We will look at this interactive tutorial <a href="https://sqlzoo.net/wiki/SELECT_basics" class="uri">https://sqlzoo.net/wiki/SELECT_basics</a></li>
+<li>Tables: these are rows and columns of data.</li>
+<li>Queries: these are commands we use to select, pull out and/or combine tables</li>
 </ul>
-<p>Resources:</p>
+<p>Tables have ‘fields’ (the variable names which define what information is stored, you may be used to thinking of these as the columns of your data)</p>
+<p>Tables also have ‘records’ (the stored information, which you be used to thinking of as the rows of your data)</p>
+</div>
+<div id="exercises-7" class="section level2">
+<h2><span class="header-section-number">10.15</span> Exercises</h2>
+<p>In class, I will illustrate the key concepts of SQL with an example from my own research</p>
+<div class="line-block">Stafford, T. (2018). <a href="http://journals.sagepub.com/doi/10.1177/0956797617736887">Female chess players outperform expectations when playing men</a>. <em>Psychological Science, 29</em>(3), 429-436. (<a href="https://psyarxiv.com/bpy3t/">Preprint</a>).</div>
+<p>Then we will look at this interactive turorial:</p>
 <ul>
+<li><a href="https://sqlzoo.net/wiki/SELECT_basics">sqlzoo.net/wiki/SELECT_basics</a></li>
+</ul>
+</div>
+<div id="checklist-9" class="section level2">
+<h2><span class="header-section-number">10.16</span> Checklist</h2>
+<p>By the end of the class, you should</p>
+<ul>
+<li>Know what SQL is and why it is important for data science</li>
+<li>Understand key concepts: tables, queries, fields, rows</li>
+<li>Recognise and solve problems involving SELECT</li>
+<li>Recognise and solve problems involving JOIN</li>
+</ul>
+</div>
+<div id="resources-11" class="section level2">
+<h2><span class="header-section-number">10.17</span> Resources</h2>
+<ul>
+<li>Interactive tutorial <a href="https://sqlzoo.net/wiki/SELECT_basics">sqlzoo.net/wiki/SELECT_basics</a></li>
 <li><a href="https://www.r-bloggers.com/2021/03/sqlite-is-great-for-r-and-shiny-the-dbmisc-package-may-help-a-bit/">SQLite is great for R and Shiny. The dbmisc package may help a bit.</a></li>
 </ul>
 
+</div>
 </div>
 <div class="psyteachr_footer">
   

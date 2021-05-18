@@ -100,6 +100,11 @@ exercises-5
 resources-10
 examples-of-interactive-graphs-which-use-different-tech-javascript
 exercises-6
+context
+key-information
+exercises-7
+checklist-9
+resources-11
 motivation-2
 a-worked-example
 preparation

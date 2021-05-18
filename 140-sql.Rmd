@@ -17,17 +17,31 @@ SQL has it's [own terminology](https://en.wikipedia.org/wiki/SQL_syntax) but to 
 * Tables: these are rows and columns of data.
 * Queries: these are commands we use to select, pull out and/or combine tables
 
-Tables have 'fields' (which you may think of as columns) and 'records' (which you may think of as rows)
+Tables have 'fields' (the variable names which define what information is stored, you may be used to thinking of these as the columns of your data)
+
+Tables also have 'records' (the stored information, which you be used to thinking of as the rows of your data)
 
 ## Exercises
 
-In class, I will illustrate the key concepts of SQL with an example. Then we will look at this interactive turorial:
+In class, I will illustrate the key concepts of SQL with an example from my own research
+
+| Stafford, T. (2018). [Female chess players outperform expectations when playing men](http://journals.sagepub.com/doi/10.1177/0956797617736887). *Psychological Science, 29*(3), 429-436. ([Preprint](https://psyarxiv.com/bpy3t/)).  
+  
+Then we will look at this interactive turorial:
 
 * [sqlzoo.net/wiki/SELECT_basics](https://sqlzoo.net/wiki/SELECT_basics)
 
+## Checklist
+
+By the end of the class, you should
+
+* Know what SQL is and why it is important for data science
+* Understand key concepts: tables, queries, fields, rows
+* Recognise and solve problems involving SELECT
+* Recognise and solve problems involving JOIN
 
 
+## Resources
 
-Resources:
-
+* Interactive tutorial [sqlzoo.net/wiki/SELECT_basics](https://sqlzoo.net/wiki/SELECT_basics)
 * [SQLite is great for R and Shiny. The dbmisc package may help a bit.](https://www.r-bloggers.com/2021/03/sqlite-is-great-for-r-and-shiny-the-dbmisc-package-may-help-a-bit/)
