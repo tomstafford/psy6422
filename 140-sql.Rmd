@@ -29,7 +29,12 @@ In class, I will illustrate the key concepts of SQL with an example from my own 
   
 Then we will look at this interactive turorial:
 
-* [sqlzoo.net/wiki/SELECT_basics](https://sqlzoo.net/wiki/SELECT_basics)
+* [sqlzoo.net](https://sqlzoo.net)
+
+Specifically, we will do
+
+* SELECT basics https://sqlzoo.net/wiki/SELECT_basics
+* JOIN https://sqlzoo.net/wiki/The_JOIN_operation
 
 ## Checklist
 
@@ -37,11 +42,12 @@ By the end of the class, you should
 
 * Know what SQL is and why it is important for data science
 * Understand key concepts: tables, queries, fields, rows
-* Recognise and solve problems involving SELECT
-* Recognise and solve problems involving JOIN
+* Recognise and solve problems involving SQL commands such as SELECT, FROM, WHERE, wildcard (%), JOIN, ON, 
+
 
 
 ## Resources
 
+* w3schools.com [JOIN](https://www.w3schools.com/sql/sql_join.asp)
 * Interactive tutorial [sqlzoo.net/wiki/SELECT_basics](https://sqlzoo.net/wiki/SELECT_basics)
 * [SQLite is great for R and Shiny. The dbmisc package may help a bit.](https://www.r-bloggers.com/2021/03/sqlite-is-great-for-r-and-shiny-the-dbmisc-package-may-help-a-bit/)
