@@ -28,7 +28,7 @@ Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.
 
 * We are going to be using the ggplot package for our visualisations: [ggplot2](https://ggplot2.tidyverse.org/)
 * [Five Charts You’ve Never Used but Should](https://policyviz.com/2021/02/08/five-charts-youve-never-used-but-should/)
-
+* guru99: [Scatter Plot in R using ggplot2 (with Example)](https://www.guru99.com/r-scatter-plot-ggplot2.html)
 
 ## Exercises
 
