@@ -34,6 +34,7 @@ Additional challenges / exercises
 * Example: [Movie-explorer](https://shiny.rstudio.com/gallery/movie-explorer.html)
 * Example: [Enhanced sensitivity to group differences with decision modelling](https://sheffield-university.shinyapps.io/decision_power/)
 * [The Anatomy of a Shiny Application](https://www.r-bloggers.com/2021/04/the-anatomy-of-a-shiny-application/)
+* [Shiny widgets](https://shiny.rstudio.com/tutorial/written-tutorial/lesson3/) - useful to get an idea of what you can do
 
 
 ## Examples of interactive graphs which use different tech (Javascript!)

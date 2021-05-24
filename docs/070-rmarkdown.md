@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
-date: "2021-05-19"
+date: "2021-05-24"
 output:
   html_document: default
 ---
