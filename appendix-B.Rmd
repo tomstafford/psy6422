@@ -29,7 +29,11 @@ Podcast: [Explore Explain: A Video and Podcast Series](https://www.visualisingda
 
 [Why you sometimes need to break the rules in data viz](https://medium.economist.com/why-you-sometimes-need-to-break-the-rules-in-data-viz-4d8ece284919) by Rosamund Pearce
 
+The Encyclopedia of Human-Computer Interaction, 2nd Ed.: [Data Visualization for Human Perception](https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/data-visualization-for-human-perception)
+
 The Economist newsletter: "[Off the Charts](https://www.economist.com/offthecharts/)" is highly recommended. Examples: [better bar charts](https://view.e.economist.com/?qs=56104efe1f008c7741aaecad26fac5ac478021656b5a9180944c48b674116491a6f66c9f3634ba531584569cbf53c8668ce8496cc20515719fb62b40048ac22dd528432bf4149fd74086ba8db6b1b99c), [using log scales](https://view.e.economist.com/?qs=d55c97a1de83b95ad1aa9d756a88fafed0667fd13b0f03f87873b0da100014d793b5daf177867d16839f007b7c64b8febf2834c6517faf9f686782c48696e6b52d21ec363f03f3efb7bf039c6351e781)
+
+[The Do’s and Don’ts of Chart Making](https://towardsdatascience.com/the-dos-and-don-ts-of-chart-making-13c629456027)
 
 ## The Reproducibility Crisis
 
