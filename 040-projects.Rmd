@@ -16,7 +16,7 @@ Files come in different types. This is indicated by their name, not the content.
 
 Because you will want to share this project use names that make sense to other people, as well as to you. ``MyProject.Doc`` is a bad name. ``joeblogs_psy64222.doc`` is better.
 
-Computers sometimes care about capitalisation, which means you need to pay attention : ``MyFile.doc`` and ``myfile.doc`` may not get treated the same. Computers also sometimes care about spaces in filenames. You can include these in your filenames and wait until this messes things up later (maybe much later, maybe even never), or you can decide now to be careful about capitalisation and never use spaces in your files names. Replace spaces with underscoress ``My File.doc`` becomes ``my_file.doc``
+Computers sometimes care about capitalisation, which means you need to pay attention : ``MyFile.doc`` and ``myfile.doc`` may not get treated the same. Computers also sometimes care about spaces in filenames. You can include these in your filenames and wait until this messes things up later (maybe much later, maybe even never), or you can decide now to be careful about capitalisation and never use spaces in your files names. Replace spaces with underscores ``My File.doc`` becomes ``my_file.doc``
 
 These rules also apply to variables in computer code.
 

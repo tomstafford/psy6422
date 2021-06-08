@@ -50,3 +50,4 @@ Almost any data wrangling task you can imagine can be done, you just need to fin
 * Claudia A Engel: [Data Wrangling with R](https://cengel.github.io/R-data-wrangling/dplyr.html)
 * R for Data Science: Part II [Wrangle](https://r4ds.had.co.nz/wrangle-intro.html), especially [Chapter 12 Tidy Data](https://r4ds.had.co.nz/tidy-data.html) and [Chapter 13 Relational Data](https://r4ds.had.co.nz/relational-data.html)
 * datacarpentry.org [Data Wrangling with dplyr and tidyr](https://datacarpentry.org/r-socialsci/03-dplyr-tidyr/index.html)
+* RStudio: [data wrangling cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (PDF)
