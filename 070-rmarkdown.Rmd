@@ -203,6 +203,7 @@ Using RMarkdown is core way to get the higher marks on this course. These exerci
 ## Resources
 
 * [RStudio intro to Rmarkdown](https://rmarkdown.rstudio.com/)
+* Xie et al (2021): [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 * [RStudio RMarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 * [Getting started in R markdown](https://www.r-bloggers.com/2020/02/getting-started-in-r-markdown-2/)
 * Helps with learning Markdown conventions: [markdownlivepreview.com](https://markdownlivepreview.com/)
