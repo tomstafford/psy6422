@@ -186,8 +186,22 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 
 
 <div class="info">
-<p>Using RMarkdown is core way to get the higher marks on this course. These exercises help you check you have mastered this material, as well as giving another opportunity for Tom to feed back on your project</p>
+<p>Using RMarkdown is essential on this course. These exercises help you check you have mastered this material, as well as giving another opportunity for Tom to feed back on your project</p>
 </div>
+
+## Advanced
+
+Set the [html output options](https://bookdown.org/yihui/rmarkdown/html-document.html) in the YAML to make your output look nicer
+
+```yaml
+---
+title: "Habits"
+output:
+  df_print: 'paged'
+  code_folding: 'show'
+    number_sections: true
+---
+```
 
 
 ## Checklist
@@ -211,6 +225,7 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 * Making Word documents: [Happy collaboration with Rmd to docx](https://rmarkdown.rstudio.com/articles_docx.html)
 * Install this to make PDFs work: [Getting MiKTeX](https://miktex.org/download)
 * You can write beautifully APA formatted manuscripts in RMarkdown: [A minimal example of APA manuscript preparation, integrating text & analysis code, using Rmarkdown and papaja](https://github.com/tomstafford/rmarkdown_apa)
+
 
 
 

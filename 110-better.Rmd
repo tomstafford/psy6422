@@ -21,7 +21,7 @@ In 2021 we votes on the advanced topics to cover in class:
 ## Other topics/resources
 
 * regexone.com [Learn Regular Expressions with simple, interactive exercises.](https://regexone.com/)
-
+* Performance tuning: [Code performance in R: Parallelization](https://www.r-bloggers.com/2021/06/code-performance-in-r-parallelization/)
 
 ## Reproducibility
 
