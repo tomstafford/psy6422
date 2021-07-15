@@ -250,8 +250,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7.5" data-path="rmarkdown.html"><a href="rmarkdown.html#conclusion"><i class="fa fa-check"></i><b>7.5</b> Conclusion</a></li>
 <li class="chapter" data-level="7.6" data-path="rmarkdown.html"><a href="rmarkdown.html#exercises-3"><i class="fa fa-check"></i><b>7.6</b> Exercises</a></li>
-<li class="chapter" data-level="7.7" data-path="rmarkdown.html"><a href="rmarkdown.html#checklist-5"><i class="fa fa-check"></i><b>7.7</b> Checklist</a></li>
-<li class="chapter" data-level="7.8" data-path="rmarkdown.html"><a href="rmarkdown.html#resources-6"><i class="fa fa-check"></i><b>7.8</b> Resources</a></li>
+<li class="chapter" data-level="7.7" data-path="rmarkdown.html"><a href="rmarkdown.html#advanced"><i class="fa fa-check"></i><b>7.7</b> Advanced</a></li>
+<li class="chapter" data-level="7.8" data-path="rmarkdown.html"><a href="rmarkdown.html#checklist-5"><i class="fa fa-check"></i><b>7.8</b> Checklist</a></li>
+<li class="chapter" data-level="7.9" data-path="rmarkdown.html"><a href="rmarkdown.html#resources-6"><i class="fa fa-check"></i><b>7.9</b> Resources</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html"><i class="fa fa-check"></i><b>8</b> ssh and the command line</a>
 <ul>
@@ -384,10 +385,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a href="https://gganimate.com/">gganimate</a></p>
 <p>This is the documentation. It explains how to install it, and what you can do with it, and - if you dig a bit - what the options are for the various functions.</p>
 <p>Get started by installing:</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="animated-plots-with-gganimate.html#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;gganimate&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="animated-plots-with-gganimate.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;gganimate&quot;</span>)</span></code></pre></div>
 <p>This may give you a warning about additional packages you can install to help create output files in gif or movie file format</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="animated-plots-with-gganimate.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;gifski&quot;</span>)</span>
-<span id="cb51-2"><a href="animated-plots-with-gganimate.html#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;av&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="animated-plots-with-gganimate.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;gifski&quot;</span>)</span>
+<span id="cb52-2"><a href="animated-plots-with-gganimate.html#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;av&quot;</span>)</span></code></pre></div>
 <p>This <em>in turn</em> may ask for additional software to be installed on your machine, and the instructions will depende on what kind of operating system you are on.</p>
 <p>Assuming you have fixed that, it’s time to make some plots:</p>
 <p>Here are three different turorials on gganimate:</p>
@@ -400,7 +401,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The second gives a good exploration of the different option, nicely showing off possible effects and how you would use them with different data sets.</p>
 <p>The third is the shortest and simplest, but note that they use a different structure for creating ggplot objects than we do (piping the data to ggplot). If you are not sure, start here.</p>
 <p>There is some nuance in getting the animation to save. You are having trouble with this, I recommend you divide the data frame preparation, animate plot creation and rendering into seperate stages. Once you have made a plot object, <code>p</code>, try this</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="animated-plots-with-gganimate.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">animate</span>(p,<span class="at">renderer=</span><span class="fu">gifski_renderer</span>(<span class="st">&quot;my_animation.gif&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="animated-plots-with-gganimate.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">animate</span>(p,<span class="at">renderer=</span><span class="fu">gifski_renderer</span>(<span class="st">&quot;my_animation.gif&quot;</span>))</span></code></pre></div>
 <div id="exercises-6" class="section level2" number="10.13">
 <h2><span class="header-section-number">10.13</span> Exercises</h2>
 <ul>

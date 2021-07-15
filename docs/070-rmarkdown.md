@@ -199,7 +199,6 @@ title: "Habits"
 output:
   df_print: 'paged'
   code_folding: 'show'
-    number_sections: true
 ---
 ```
 

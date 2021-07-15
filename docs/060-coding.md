@@ -564,4 +564,5 @@ __ask for help__
 * Barnes, N. (2010). [Publish your computer code: it is good enough](https://www.nature.com/articles/467753a). Nature, 467(7317), 753-753.
 * Axelrod, V. (2014). [Minimizing bugs in cognitive neuroscience programming](https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01435/full). Frontiers in psychology, 5, 1435.
 * Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... & Waugh, B. (2014). [Best practices for scientific computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745). PLoS biology] 12(1), e1001745.
-
+* r-bloggers.com [Looping through variable names and generating plots](https://www.r-bloggers.com/2021/05/little-useless-useful-r-functions-looping-through-variable-names-and-generating-plots/)
+* r-bloggers.com [Coding Principles: Updating and Maintaining Code](https://www.r-bloggers.com/2021/02/coding-principles-updating-and-maintaining-code/)
