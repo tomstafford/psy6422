@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
-date: "2021-06-03"
+date: "2021-07-15"
 output:
   html_document: default
 ---
@@ -102,7 +102,8 @@ df <- read_csv(url(urlfile))
 ```
 
 ```
-## Parsed with column specification:
+## 
+## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
 ##   `Participant Number` = col_double(),
 ##   `Total ASRS Score` = col_double(),
@@ -203,6 +204,7 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 ## Resources
 
 * [RStudio intro to Rmarkdown](https://rmarkdown.rstudio.com/)
+* Xie et al (2021): [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 * [RStudio RMarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 * [Getting started in R markdown](https://www.r-bloggers.com/2020/02/getting-started-in-r-markdown-2/)
 * Helps with learning Markdown conventions: [markdownlivepreview.com](https://markdownlivepreview.com/)

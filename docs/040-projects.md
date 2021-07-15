@@ -16,7 +16,14 @@ Files come in different types. This is indicated by their name, not the content.
 
 Because you will want to share this project use names that make sense to other people, as well as to you. ``MyProject.Doc`` is a bad name. ``joeblogs_psy64222.doc`` is better.
 
-Computers sometimes care about capitalisation, which means you need to pay attention : ``MyFile.doc`` and ``myfile.doc`` may not get treated the same. Computers also sometimes care about spaces in filenames. You can include these in your filenames and wait until this messes things up later (maybe much later, maybe even never), or you can decide now to be careful about capitalisation and never use spaces in your files names. Replace spaces with underscoress ``My File.doc`` becomes ``my_file.doc``
+Computers sometimes care about capitalisation, which means you need to pay attention : ``MyFile.doc`` and ``myfile.doc`` may not get treated the same. Computers also sometimes care about spaces in filenames. You can include these in your filenames and wait until this messes things up later (maybe much later, maybe even never), or you can decide now to be careful about capitalisation and never use spaces in your files names. Replace spaces with underscores ``My File.doc`` becomes ``my_file.doc``
+
+<div class="info">
+<p>*R/RStudio may not work well if you are using Windows and have Chinese characters in your username. You can avoid this by using the latin alphabet (thanks to 胡传鹏 for this tip)</p>
+<p>“c:/users/chuanpeng” √√√ “c:/users/传鹏” ×××*</p>
+</div>
+
+Never include special characters (e.g. &).
 
 These rules also apply to variables in computer code.
 
@@ -51,6 +58,7 @@ As well as backing up your work to the cloud, this will allow you to work on mul
 * Arslan, R. C. (2019). [How to automatically document data with the codebook package to facilitate data reuse](https://journals.sagepub.com/doi/full/10.1177/2515245919838783). Advances in Methods and Practices in Psychological Science, 2(2), 169-187.
 * Jenny Bryan: [I love the here package. Here's why.](https://github.com/jennybc/here_here)
 * [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/)
+* rstats.wtf : [Project-oriented workflow](https://rstats.wtf/project-oriented-workflow.html)
 
 ## Exercises
 
