@@ -93,6 +93,7 @@ other-sharing-options
 checklist-8
 resources-9
 section
+other-topicsresources
 reproducibility
 general-righteousness
 before-class

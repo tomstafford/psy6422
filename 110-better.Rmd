@@ -11,10 +11,16 @@ The remaining time in the timetable is available for supervision on this data pr
 ## 2021
 
 In 2021 we votes on the advanced topics to cover in class:
+
 * [interactive plots with shiny](interactive-graphs-with-shiny.html)
 * [animated plots with gganimate](animated-plots-with-gganimate.html)
 * [SQL](database-queries-sql.html)
 * python
+
+
+## Other topics/resources
+
+* regexone.com [Learn Regular Expressions with simple, interactive exercises.](https://regexone.com/)
 
 
 ## Reproducibility
