@@ -19,8 +19,9 @@ Because you will want to share this project use names that make sense to other p
 Computers sometimes care about capitalisation, which means you need to pay attention : ``MyFile.doc`` and ``myfile.doc`` may not get treated the same. Computers also sometimes care about spaces in filenames. You can include these in your filenames and wait until this messes things up later (maybe much later, maybe even never), or you can decide now to be careful about capitalisation and never use spaces in your files names. Replace spaces with underscores ``My File.doc`` becomes ``my_file.doc``
 
 <div class="info">
-<p>*R/RStudio may not work well if you are using Windows and have Chinese characters in your username. You can avoid this by using the latin alphabet (thanks to 胡传鹏 for this tip)</p>
-<p>“c:/users/chuanpeng” √√√ “c:/users/传鹏” ×××*</p>
+<p>R/RStudio may not work well if you are using Windows and have Chinese characters in your username. You can avoid this by using the latin alphabet (thanks to 胡传鹏 for this tip)</p>
+<p>“c:/users/chuanpeng” √√√</p>
+<p>“c:/users/传鹏” ×××</p>
 </div>
 
 Never include special characters (e.g. &).
