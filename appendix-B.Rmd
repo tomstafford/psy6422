@@ -23,6 +23,8 @@ Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). Ten simple rules for bet
 
 Weissgerber, T. L., Milic, N. M., Winham, S. J., & Garovic, V. D. (2015). [Beyond bar and line graphs: time for a new data presentation paradigm](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128). PLoS biology, 13(4).
 
+ * Related: [Visualizing Distributions with Raincloud Plots with ggplot2](https://www.cedricscherer.com/2021/06/06/visualizing-distributions-with-raincloud-plots-with-ggplot2/)
+
 [Nightingale: The Journal of The Data Visualisation Society](https://medium.com/nightingale)
 
 Podcast: [Explore Explain: A Video and Podcast Series](https://www.visualisingdata.com/podcast/)
