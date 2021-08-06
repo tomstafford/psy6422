@@ -32,6 +32,8 @@ More information:
 * University of Sheffield: [Career Connect](https://www.sheffield.ac.uk/careers/careerconnect)
 * Academic Jobs: [jobs.ac.uk](https://www.jobs.ac.uk/)
 * University of Sheffield Careers service: [Support for international students](https://www.sheffield.ac.uk/careers/services/international)
+* Book & podcast: [Build a Career in Data Science](https://podcast.bestbook.cool/)
+
 
 ## Testimonials
 
