@@ -37,6 +37,8 @@ The Economist newsletter: "[Off the Charts](https://www.economist.com/offthechar
 
 [The Do’s and Don’ts of Chart Making](https://towardsdatascience.com/the-dos-and-don-ts-of-chart-making-13c629456027)
 
+Riffe, T., Sander, N., & Kluesener, S. (2021). Editorial to the Special Issue on Demographic Data Visualization: [Getting the point across–Reaching the potential of demographic data visualization](https://www.demographic-research.org/volumes/vol44/36/). Demographic research. Rostock: Max Planck Institute for Demographic Research, 2021, Vol. 44.
+
 ## The Reproducibility Crisis
 
 Cancer Biology Reproducibility Project
