@@ -58,6 +58,7 @@ The other route is large publicly available resources:
 * Enjoy this crowdsourced list of [Open psychological datasets](https://docs.google.com/spreadsheets/d/1ejOJTNTL5ApCuGTUciV0REEEAqvhI2Rd2FCoj7afops/edit#gid=0)
 * [Kaggle](https://www.kaggle.com/)
 * [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/articles/)
+* [Datasets APIs and open source projects related to Climate Change](https://github.com/KKulma/climate-change-data)
 
 ### Suggestions for possible project data sets 
 

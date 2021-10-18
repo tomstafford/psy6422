@@ -566,3 +566,4 @@ __ask for help__
 * Wilson, G., Aruliah, D. A., Brown, C. T., Hong, N. P. C., Davis, M., Guy, R. T., ... & Waugh, B. (2014). [Best practices for scientific computing](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745). PLoS biology] 12(1), e1001745.
 * r-bloggers.com [Looping through variable names and generating plots](https://www.r-bloggers.com/2021/05/little-useless-useful-r-functions-looping-through-variable-names-and-generating-plots/)
 * r-bloggers.com [Coding Principles: Updating and Maintaining Code](https://www.r-bloggers.com/2021/02/coding-principles-updating-and-maintaining-code/)
+* Advanced R by Hadley Wickham: [Style guide](http://adv-r.had.co.nz/Style.html)
