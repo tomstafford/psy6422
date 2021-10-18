@@ -1,6 +1,6 @@
 # Class of 2021
 
-This was the second year for the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science). The course ran entirely online, but the intention was the same - to use PSY6422 to set students up for their independent data science project, carried out over the summer, but also to ensure that they left the MSc with a complete data project they could show off as part of a portfolio.
+This was the second year for the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/postgraduate/taught/courses/2022/psychological-research-methods-data-science-msc). The course ran entirely online, but the intention was the same - to use PSY6422 to set students up for their independent data science project, carried out over the summer, but also to ensure that they left the MSc with a complete data project they could show off as part of a portfolio.
 
 There were too many students on the module this year to show all projects, so here are a few highlights:
 
