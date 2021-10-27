@@ -103,7 +103,7 @@ df <- read_csv(url(urlfile))
 
 ```
 ## 
-## ── Column specification ────────────────────────────────────────────────────────
+## ── Column specification ───────────────────────────────────────────────────────────────────────────────────────────────
 ## cols(
 ##   `Participant Number` = col_double(),
 ##   `Total ASRS Score` = col_double(),
