@@ -2,7 +2,12 @@
 # do not edit!!!!!
 
 library(tidyverse)
-library(webex)
+
+# webex renamed webexercises, which breaks the block function, so you can use an old version
+#library(devtools)
+#install_version("webex", version = "0.9.1", repos = "http://cran.us.r-project.org")
+
+#library(webex)
 
 # default knitr options
 knitr::opts_chunk$set(

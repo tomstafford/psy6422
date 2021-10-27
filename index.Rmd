@@ -1,8 +1,10 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
-author: "[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)"
-date: '`r Sys.Date()`'
-output: pdf_document
+author: '[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)'
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
 description: Notes on the course - rapidly evolving!
 documentclass: book
 link-citations: yes
