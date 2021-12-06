@@ -69,6 +69,7 @@ These are examples of large, probably messy, real-world data sets which could ma
 * [BEHACOM - a dataset modelling users’ behaviour in computers](https://www.sciencedirect.com/science/article/pii/S2352340920306612)
 * The [World Values Survey](http://www.worldvaluessurvey.org/wvs.jsp) “is the largest non-commercial, cross-national, time series investigation of human beliefs and values ever executed, currently including interviews with almost 400,000 respondents."
 * [AnAge Database of Animal Ageing and Longevity](https://genomics.senescence.info/species/index.html)
+* [The General Index](https://archive.org/details/GeneralIndex) - detailed linguistic data derived from 107,233,728 academic journal articles
 
 ## Choose your graph
 
