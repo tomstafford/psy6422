@@ -11,11 +11,10 @@ checklist
 resources
 further-reading-on-the-motivation-for-a-data-management-component-of-this-course
 r-r-studio
-class-material-1
 resources-1
 exercises-checklist
 making-graphs
-class-material-2
+class-material-1
 resources-2
 other-resources
 exercises
@@ -38,7 +37,7 @@ answers-to-common-questions
 example-projects
 stretch-goals
 data-wrangling
-class-material-3
+class-material-2
 exercises-2
 checklist-3
 resources-4
@@ -94,6 +93,7 @@ other-sharing-options
 checklist-8
 resources-9
 section
+section-1
 other-topicsresources
 reproducibility
 general-righteousness

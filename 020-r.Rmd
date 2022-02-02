@@ -1,12 +1,5 @@
 # R & R Studio
 
-## Class material
-
-Videos from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1IbnGAO2Gn4u9T_qze5zhZyU9E8qNmdHh?usp=sharing) (UoS login required to access)
-
-Slides : [slides format](https://docs.google.com/presentation/d/1F0Pk9pYKKKvZAFrP92MqmTgjGDQb9gNxmpCYKStWJ8s/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1xFe5S_ZOCr2TgeFY-3georQnhd_eh5_d/view?usp=sharing).
-
-  
 ## Resources
 
 Statistical computing using R, the open source programming language, and the [R Studio interface](https://rstudio.com/).

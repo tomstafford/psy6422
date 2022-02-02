@@ -1,9 +1,5 @@
 # Project Organisation
   
-Slides on project organisation are on the google drive: [slides format](https://docs.google.com/presentation/d/1dswTN4SOj9cNlh3DKIev9K_y64FmvFDq6G_EbeA4Ksw/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1b6Ua8fJH8nucKkrAagxFgY1ruzGeXO_R/view?usp=sharing). 
-
-Please note, some of this class was taught in workshop format, so slides don't fully reflect what was taught.
-
 ## Project folders
 
 You should organise all the documentation, files, data, code and outputs for a project in a single folder. Your aim is that when you come back to this project, or want to share it, everything you need is in one place and sensibly organised.

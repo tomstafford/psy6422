@@ -1,9 +1,5 @@
 # Publishing 
 
-<div class="info">
-<p><em>Note this is a placeholder page. This material hasn’t been taught yet. I am adding notes online as I can, so these pages in particular may evolve quickly</em></p>
-</div>
-
 Git and github allows collaboration and version control on large software projects, but it also provides a convenient way of publishing data projects to the web. This is the way we will use to produce our [final projects](final-project.html) for this module.
 
 

@@ -2,9 +2,7 @@
 
 ## Class material:
   
-Videos from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1Qrw5RhXSoFXx1_NxNffV-5AkludSU-Fk?usp=sharing) (UoS login required to access)
-
-Slides : [slides format](https://docs.google.com/presentation/d/1cfM44YtwsoJ0bTtKPN1lf1OPSe0-Wr-UkiPYR376gJ0/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1FGeWRhNpb4CJZY6OESagIPvtdFPIBE_Z/view?usp=sharing).
+Materials from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1sDmbrTfKpiz2Y02R17ajLPkJV1XSxvJD?usp=sharing) (UoS login required to access). Slides : [slides format](https://docs.google.com/presentation/d/15RlRzRGL3fa1SckE8YUWhJxiuWf5GH5pssIcG2zStKM/edit?usp=sharing).
 
 ## Exercise 1 (assessed!)
 
@@ -27,8 +25,7 @@ Aim 3: set some targets for what you’d like to learn next
 
 ### Marking criteria: 
 
-* submits on time
-* addresses all three aims
+See the asesssment document
 
 The purpose of this assessment is to ensure you are engaging with the course and to start a conversation between us about the final assessment. I want to give you 100%, all you have to do to achieve this is follow the instructions above.
 

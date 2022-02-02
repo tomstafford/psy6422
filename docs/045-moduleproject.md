@@ -4,9 +4,6 @@
 <p><em>These pages are about the final project, which comprises most of the module grade. There are many useful notes below, which you will want to refer to as you complete your project</em></p>
 </div>
   
-Slides on project organisation are on the google drive: [slides format](https://docs.google.com/presentation/d/1crdlTcYf3hy15pE9Tz-0EdpQyaxCt2uOJ5w9IOX0UW0/edit?usp=sharing), [pdf format](https://drive.google.com/file/d/1rMhl90cesR99Jpwwh5MUpXrY9xfsMR82/view?usp=sharing). 
-
-
 In this class we covered how to identify data for your final project for this module. We also discussed the project format and assessment criteria. Unlike other classes there is no checklist of learning outcomes.
 
 The final project for the course contributes the bulk of your grade, as well as creating a portfolio piece for you to demonstrate what you learnt on the course. The final project is a chance to deploy all the skills taught on the course in a single complete data visualisations project, which takes us from raw data and a question through data preparation and exploration through to publishing a visualisation and the documentation which shares your findings with others. The ambition is that a project is complete and reproducible, i.e. it contains the input (the data), the output (like these max and min values, or a graph), documentation (explanation of what is what) and the whole is stitched together with an R code - the script that changes the input to the output. I should be able to run your script on my computer and produce the same output.

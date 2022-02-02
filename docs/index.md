@@ -24,7 +24,7 @@ biblio-style: apalike
 PSY6422 Data Management and Visualisation is part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/). See here for more on the different courses which offer [data science, at the University of Sheffield](notes.html#data-science-sheffield)
 
 <div class="info">
-<p><em>These pages are evolving. This material is from when the course was taught online in 2021. I will update for 2022 in January/February. Meanwhile, please enjoy the <a href="class-of-2021.html">class of 2021 showcase</a></em></p>
+<p><em>Spring 2022: These pages are evolving as I teach the course (in person rather than online this year!). If you find any inconsistencies please let me know. Check out the <a href="class-of-2021.html">class of 2021 showcase</a> from last academic year</em></p>
 </div>
   
 ## Motivation
@@ -70,7 +70,7 @@ See here for [more on the nature of your module project](module-project.html), s
 
 ## Resources for current students
 
-[Google Drive](https://drive.google.com/drive/folders/1IbnGAO2Gn4u9T_qze5zhZyU9E8qNmdHh?usp=sharing) (UoS login required to access):
+[Google Drive](https://drive.google.com/drive/folders/1sDmbrTfKpiz2Y02R17ajLPkJV1XSxvJD?usp=sharing):
 
 Includes slides and other resources, as well as these specific documents
 
@@ -79,7 +79,7 @@ Includes slides and other resources, as well as these specific documents
 
 FAQ document which I am adding to as questions come in
 
-* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/1HSAdBFsz-tMwi2oUJaHGxE7Tv7majutM01j4wZBrFTw/edit?usp=sharing)
+* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/11OQs5bTnqth_cxwjHbQNeJTWZdp-wSTUcCQ2Uoz5rFw/edit?usp=sharing)
 
 Most information is on these pages (hosted on github, no login required)
 
