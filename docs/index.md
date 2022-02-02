@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
 author: '[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)'
-date: "2021-10-27"
+date: "2022-02-02"
 output:
   html_document:
     df_print: paged
@@ -74,7 +74,7 @@ See here for [more on the nature of your module project](module-project.html), s
 
 Includes slides and other resources, as well as these specific documents
 
-* [Timetable](https://docs.google.com/spreadsheets/d/1KP9tRqOh6KW6F0jq9k1jL380qF0F6VjtthQ2IFEYRRw/edit?usp=sharing)
+* [Timetable](https://docs.google.com/spreadsheets/d/1YBbaaFursDBg-aGvJ32WJd-IinPM7oml-tPMnVZIEA0/edit?usp=sharing)
 * [Assessment Criteria](https://docs.google.com/spreadsheets/d/1oTJKI675ijCs14jUoT9d_8yPH2i_S2AfQG507jN8aVY/edit?usp=sharing)
 
 FAQ document which I am adding to as questions come in

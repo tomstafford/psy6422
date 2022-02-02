@@ -19,6 +19,8 @@ Tufte, E. R. (2001). The visual display of quantitative information. Cheshire, C
 
 McCandless, D. (2012). Information is beautiful. London: Collins.
 
+Wilke, C.O. (2019). [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/index.html). O'Reilly. [free online]
+
 Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). Ten simple rules for better figures. PLoS Comput Biol, 10(9), e1003833. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
 
 Weissgerber, T. L., Milic, N. M., Winham, S. J., & Garovic, V. D. (2015). [Beyond bar and line graphs: time for a new data presentation paradigm](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002128). PLoS biology, 13(4).
@@ -38,6 +40,8 @@ The Economist newsletter: "[Off the Charts](https://www.economist.com/offthechar
 [The Do’s and Don’ts of Chart Making](https://towardsdatascience.com/the-dos-and-don-ts-of-chart-making-13c629456027)
 
 Riffe, T., Sander, N., & Kluesener, S. (2021). Editorial to the Special Issue on Demographic Data Visualization: [Getting the point across–Reaching the potential of demographic data visualization](https://www.demographic-research.org/volumes/vol44/36/). Demographic research. Rostock: Max Planck Institute for Demographic Research, 2021, Vol. 44.
+
+Franconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). [The science of visual data communication: What works](https://journals.sagepub.com/doi/pdf/10.1177/15291006211051956). Psychological Science in the Public Interest, 22(3), 110-161.
 
 ## The Reproducibility Crisis
 
@@ -195,3 +199,5 @@ SQL [Database access dplyr ](https://db.rstudio.com/dplyr/)
 ## Pedagogy
 
 Brown, N. C., & Wilson, G. (2018). [Ten quick tips for teaching programming](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006023). PLoS computational biology, 14(4), e1006023.
+
+Hudiburgh, L. M., & Garbinsky, D. (2020). [Data Visualization: Bringing Data to Life in an Introductory Statistics Course](https://www.tandfonline.com/doi/full/10.1080/10691898.2020.1796399). Journal of Statistics Education, 28(3), 262-279.

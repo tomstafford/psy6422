@@ -10,22 +10,23 @@ The remaining time in the timetable is available for supervision on this data pr
 
 ## 2021
 
-In 2021 we votes on the advanced topics to cover in class:
+In 2021 we voted on the advanced topics to cover in class:
 
 * [interactive plots with shiny](interactive-graphs-with-shiny.html)
 * [animated plots with gganimate](animated-plots-with-gganimate.html)
 * [SQL](database-queries-sql.html)
-* python
+* [python](python.html)
 
 
 ## Other topics/resources
 
 * regexone.com [Learn Regular Expressions with simple, interactive exercises.](https://regexone.com/)
 * Performance tuning: [Code performance in R: Parallelization](https://www.r-bloggers.com/2021/06/code-performance-in-r-parallelization/)
+* [Making Your First R Package](https://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html)
 
 ## Reproducibility
 
-Dependencies
+Dependencies 
 
  * Package management 
     * https://groundhogr.com/
@@ -36,7 +37,12 @@ Dependencies
  * Containers
     * e.g. [docker](https://www.docker.com/)
 
+Code Review
 
+ * Strand, J. F. (2021, March 31). [Error Tight: Exercises for Lab Groups to Prevent Research Mistakes.](https://psyarxiv.com/rsn5y) https://doi.org/10.31234/osf.io/rsn5y
+ * [CODECHECK](https://codecheck.org.uk/)
+ 
+ 
 ## General righteousness
 
 You should use a password manager. Really. [LastPass](https://www.lastpass.com) is recommended

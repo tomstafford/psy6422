@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
-date: "2021-10-27"
+date: "2022-02-02"
 output:
   html_document: default
 ---
@@ -103,7 +103,7 @@ df <- read_csv(url(urlfile))
 
 ```
 ## 
-## ── Column specification ───────────────────────────────────────────────────────────────────────────────────────────────
+## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
 ##   `Participant Number` = col_double(),
 ##   `Total ASRS Score` = col_double(),

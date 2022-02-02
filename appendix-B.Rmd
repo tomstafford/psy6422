@@ -199,3 +199,5 @@ SQL [Database access dplyr ](https://db.rstudio.com/dplyr/)
 ## Pedagogy
 
 Brown, N. C., & Wilson, G. (2018). [Ten quick tips for teaching programming](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006023). PLoS computational biology, 14(4), e1006023.
+
+Hudiburgh, L. M., & Garbinsky, D. (2020). [Data Visualization: Bringing Data to Life in an Introductory Statistics Course](https://www.tandfonline.com/doi/full/10.1080/10691898.2020.1796399). Journal of Statistics Education, 28(3), 262-279.
