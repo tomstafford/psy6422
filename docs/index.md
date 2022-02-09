@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
 author: '[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)'
-date: "2022-02-02"
+date: "2022-02-09"
 output:
   html_document:
     df_print: paged
@@ -65,7 +65,7 @@ The bulk of the course assessment is to conduct and publish your own analysis pr
 
 The intention with the assessment is to ensure that every student leaves the course with something they are proud to put in their portfolio of work, something which shows what they can do and which helps with future job or course applications.
 
-See here for [more on the nature of your module project](module-project.html), see here for examples from last year [class of 2020](class-of-2020.html).
+See here for [more on the nature of your module project](module-project.html), see here for examples from previous years: [class of 2020](class-of-2020.html), [class of 2021](class-of-2021.html)..
 
 
 ## Resources for current students

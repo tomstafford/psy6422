@@ -31,4 +31,4 @@ Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to
   * install the swirl package
 
 * open this [script](static/class2.R) 
-  * review line by line
+  * review line by line [as a pair exercise ideally]
