@@ -8,7 +8,7 @@ Materials from the class are in the PSY6422 [Google Drive](https://drive.google.
 
 The exercise for this class is an initial self-assessment, which comprises part of your final grade. The deadline is in two weeks - see the timetable.
 
-Submit by email to Tom a document of no more than one A4 page (i.e. less than 500 words):
+Submit using the form link provided by Tom [check your email] a document of no more than one A4 page (i.e. less than 500 words):
 
 Aim 1: tell me what you know already  
 
@@ -32,7 +32,7 @@ The purpose of this assessment is to ensure you are engaging with the course and
 
 ### Submission
 
-You submit by email to me, as an attachment with a filename containing your surname and registration number, of the form:
+You submit using them form link supplied by me, as an attachment with a filename containing your surname and registration number, of the form:
 
 |     surname_000000000.pdf
 
