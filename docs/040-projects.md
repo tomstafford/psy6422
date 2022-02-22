@@ -59,15 +59,19 @@ As well as backing up your work to the cloud, this will allow you to work on mul
 
 ## Exercises
 
-Pair programming exercise: Write a script to create and save a histogram of life expectancy by continent, using the gapminder data (see slides for more notes)
+### Warm up: Pair programming exercise
+
+: Write a script to create and save a histogram of life expectancy by continent, using the gapminder data (see slides for more notes)
+
+### Homework: Project 1
 
 Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R); find completed example on google drive) 
 
-Share this project with another student on the course. [2021 see this file for who](https://docs.google.com/spreadsheets/d/1voRTo2A22_zAkZ4QRHe823N04QiNBqunX2MSuVRD09o/edit?usp=sharing)
+Share this project with another student on the course. [2022 see this file for who](https://docs.google.com/spreadsheets/d/1gDbF07ekkz19HshAiDpZ6iu_y5iOKWrpyXDQKElV794/edit?usp=sharing)
 
-Run the project shared with you, complete [this checklist](https://forms.gle/67XEt4vLBoS2fdP27) 2021: deadline 0900 on 24th of Feb.
+Run the project shared with you, complete [this checklist](https://docs.google.com/forms/d/e/1FAIpQLSdfOtUIUEs66W0nSqrHTHrMT-iubygdAhNFhUwbu0kOLZIMeA/viewform?usp=sf_link) 2022: deadline 0900 on 2nd of March.
 
-Review the questions in the library [Research Data Management plan for postgraduate researchers](https://drive.google.com/file/d/1T0kwMSmecf7JZXgKQ1IfCzC9G50cQx87/view?usp=sharing)
+Review the questions in the library [Research Data Management plan for postgraduate researchers](https://docs.google.com/document/d/1rHXl2LYhgv7zeuwc5fDRMyqSgE3OaLa8/edit?usp=sharing&ouid=109750001665912327637&rtpof=true&sd=true)
 
 ## Checklist
 

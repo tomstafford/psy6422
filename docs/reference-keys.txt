@@ -26,6 +26,8 @@ research-data-management
 backup-and-sync
 resources-3
 exercises-1
+warm-up-pair-programming-exercise
+homework-project-1
 checklist-2
 requirements
 choosing-your-data
