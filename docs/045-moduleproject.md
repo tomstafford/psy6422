@@ -38,7 +38,7 @@ Please include these headings, or something similar, in your project.
   
 ## Choosing your data
 
-The data is an excuse for the data visualisation, so don't agonise over this, and go for simple over complex if you have a choice. I recommend you find a data set with variables which you understand. The lecture on March 19th covered how to find open data. 
+The data is an excuse for the data visualisation, so don't agonise over this, and go for simple over complex if you have a choice. I recommend you find a data set with variables which you understand. 
 
 ### Finding Data
 
@@ -108,7 +108,7 @@ Here are some questions to ask youself as you prepare your project
   10. The data does not have to be very large or very complex. Better a simple, clear, project than a complex, sophisticated project which is harder to understand.
 ## Getting help
 
-Simple questions should be posted on slack, ideally in the appropriate channel. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals. During the semester I add answers to asked questions to this [document](https://docs.google.com/document/d/1HSAdBFsz-tMwi2oUJaHGxE7Tv7majutM01j4wZBrFTw/edit?usp=sharing). At the end of the semester I will update the webpage so all the information you need is on these pages.
+Simple questions should be posted on slack, ideally in the appropriate channel. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals. During the semester I add answers to asked questions to the Q&A document (link [here](index.html)). At the end of the semester I will update the webpage so all the information you need is on these pages.
 
 For more complex problems, you will want to share your whole project - this means not just the R or Rmd file you are working on, but the data file(s) as well, as well as an auxillary notes. 
 Please create a folder, following the [project organisation scheme](project-organisation.html) we covered in week 2 with subfolders for the data, figures, etc and including the .Rmd file. Share this with me and I can help. 
@@ -123,9 +123,12 @@ Here is an example small project which gives an idea of what I mean
 
 * SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
 * [Class of 2020 projects](class-of-2020.html).
+* [Class of 2021 projects](class-of-2021.html).
 
 ### Stretch goals
 
-There hasn't been time to do this this year, but in future years we will aim to build an interactive data visualisations using the Shiny package. Here's one built for a research project I'm on : [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
+More ambitious projects, using more advanced techiques, are possible for students who are further along with coding. These include techniques like database (SQL) queries, use of APIs, web-scraping or interactive plots
+
+An accessible way to build interactive data visualisations is using the [Shiny package](https://shiny.rstudio.com/) Here's one built for previous research project I worked on : [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
 
 
