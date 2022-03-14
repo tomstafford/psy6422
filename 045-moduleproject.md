@@ -108,7 +108,7 @@ Here are some questions to ask youself as you prepare your project
   10. The data does not have to be very large or very complex. Better a simple, clear, project than a complex, sophisticated project which is harder to understand.
 ## Getting help
 
-Simple questions should be posted on slack, ideally in the appropriate channel. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals. During the semester I add answers to asked questions to this [document](https://docs.google.com/document/d/1HSAdBFsz-tMwi2oUJaHGxE7Tv7majutM01j4wZBrFTw/edit?usp=sharing). At the end of the semester I will update the webpage so all the information you need is on these pages.
+Simple questions should be posted on slack, ideally in the appropriate channel. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals. During the semester I add answers to asked questions to the Q&A document (link [here](index.html)). At the end of the semester I will update the webpage so all the information you need is on these pages.
 
 For more complex problems, you will want to share your whole project - this means not just the R or Rmd file you are working on, but the data file(s) as well, as well as an auxillary notes. 
 Please create a folder, following the [project organisation scheme](project-organisation.html) we covered in week 2 with subfolders for the data, figures, etc and including the .Rmd file. Share this with me and I can help. 
