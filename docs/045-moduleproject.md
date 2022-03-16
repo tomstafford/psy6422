@@ -42,7 +42,7 @@ The data is an excuse for the data visualisation, so don't agonise over this, an
 
 ### Finding Data
 
-I will update these notes soon, but basically many papers are now published accommpanied by open data. Sometimes this is indicated by an Open Data Badge. For example, take a look at the [current table of contents for Psychological Science](https://journals.sagepub.com/toc/pss/current). The badges are an initiative of the Centre for Open Science https://cos.io/our-services/open-science-badges/
+Many papers are now published accompanied by open data. Sometimes this is indicated by an Open Data Badge. For example, take a look at the [current table of contents for Psychological Science](https://journals.sagepub.com/toc/pss/current). The badges are an initiative of the [Centre for Open Science](https://cos.io/our-services/open-science-badges/)
 
 You can also search a preprint archive such as [psyarxiv](https://psyarxiv.com/). Many, but not all, papers published as preprints will have open data. You can also search [OSF.io](https://osf.io/) directly. 
 
@@ -97,7 +97,8 @@ Here are some questions to ask youself as you prepare your project
 ## Answers to common questions
   
   1. it doesn't matter if you don't do the things you said you wanted to do in the initial self-assessment
-  2. you can use the data from another course, for example the course project (psy6009)
+  2. you can use the data from another course, for example the course project (psy6009) 
+  2b. if you do use the data from your research project make sure you are clear how this module project is different. I recommend not using the data from your research project.
   3. the data / data questions doesn't have to be something which expresses the relationship between two variables. Any visualisation which shows something non-trivial about the data is good.
   4. You don't need to do any statistical tests or model fitting. You don't need to have a set amount of data to meet statistical significance, just enough to be interesting when visualised.
   5. You don't need more than a brief introduction to the data - no literature review please.
@@ -122,13 +123,25 @@ Note that the deadline for assignments is the after the weekend, so I will not b
 Here is an example small project which gives an idea of what I mean
 
 * SuperTues: [Published](https://tomstafford.github.io/supertues/), [repo](https://github.com/tomstafford/supertues)
+
+Also, please look at prior project completed by students on this course:
+
 * [Class of 2020 projects](class-of-2020.html).
 * [Class of 2021 projects](class-of-2021.html).
 
-### Stretch goals
+## Stretch goals
 
 More ambitious projects, using more advanced techiques, are possible for students who are further along with coding. These include techniques like database (SQL) queries, use of APIs, web-scraping or interactive plots
 
 An accessible way to build interactive data visualisations is using the [Shiny package](https://shiny.rstudio.com/) Here's one built for previous research project I worked on : [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
 
 
+## In class exercises
+
+Exercises for the class include
+
+* In pairs, discuss what visualisation you have planned for the module project. 
+* In pairs, review the checklist. Ask each other, and answer as far as you can, these questions?
+* In pairs, discuss the assessment criteria. Are you clear on what is needed to get marks on this project?
+* Whole class, discuss suggestions for improving the assessment criteria
+* Whole class, review and ask questions about the FAQ document and guidance on module projects

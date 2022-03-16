@@ -38,6 +38,7 @@ check-list
 answers-to-common-questions
 example-projects
 stretch-goals
+in-class-exercises
 data-wrangling
 class-material-2
 exercises-2
