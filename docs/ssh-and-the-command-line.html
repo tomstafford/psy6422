@@ -425,6 +425,11 @@ Before this class please install the <a href="https://www.sheffield.ac.uk/it-ser
 <p>Now there’s no point running a simple R script remotely, but when you have very large data it can be convenient to run your analysis on a remote machine which is more powerful (or on many remote machines, which allows parallel processing).</p>
 <p>Let’s copy this script from the remote machine to our home machine. To do this you need the <code>scp</code> command and to know your username and ip address. The path to where you want the file saved comes after the colon:</p>
 <p><code>scp toyscript.R  user@your_ip:/path/to/Desktop/toyscript.R</code></p>
+<div class="info">
+<p>
+scp will work on linux or mac, but not on windows.
+</p>
+</div>
 <div id="switches" class="section level3 hasAnchor">
 <h3><span class="header-section-number">8.6.1</span> switches<a href="ssh-and-the-command-line.html#switches" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Often we feed additional options (sometimes called ‘switches’) to command line tools. So the command <code>espeak</code> speaks words aloud</p>
