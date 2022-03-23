@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
-date: "2022-03-16"
+date: "2022-03-23"
 output:
   html_document: default
 ---
@@ -102,13 +102,14 @@ df <- read_csv(url(urlfile))
 ```
 
 ```
-## Rows: 25 Columns: 4
-## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: ","
-## dbl (4): Participant Number, Total ASRS Score, Inattention subscale, Hyperac...
 ## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## ── Column specification ────────────────────────────────────────────────────────
+## cols(
+##   `Participant Number` = col_double(),
+##   `Total ASRS Score` = col_double(),
+##   `Inattention subscale` = col_double(),
+##   `Hyperactivity subscale` = col_double()
+## )
 ```
 
 ```r
