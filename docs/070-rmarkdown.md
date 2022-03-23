@@ -102,14 +102,13 @@ df <- read_csv(url(urlfile))
 ```
 
 ```
-## 
+## Rows: 25 Columns: 4
 ## ── Column specification ────────────────────────────────────────────────────────
-## cols(
-##   `Participant Number` = col_double(),
-##   `Total ASRS Score` = col_double(),
-##   `Inattention subscale` = col_double(),
-##   `Hyperactivity subscale` = col_double()
-## )
+## Delimiter: ","
+## dbl (4): Participant Number, Total ASRS Score, Inattention subscale, Hyperac...
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
 
 ```r

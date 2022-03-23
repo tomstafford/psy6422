@@ -12,7 +12,8 @@ In this class we will introduce the idea of the command line, running commands w
 
 ## Launching the Terminal
 
-On Windows or Mac, search 'Terminal' in the launcher. You should see a small black box (called "Command Prompt" on Windows) with a cursor.
+On Windows or Mac, search 'Terminal' in the launcher. You should see a small black box (called "Command Prompt" on Windows) with a cursor. On windows you can also enter `cmd.exe` in the search box in the bottom left.
+
 
 <p align="center">
 <img src="images/windows_cmd.png" style="width: 600px; float: center;">
