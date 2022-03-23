@@ -25,7 +25,7 @@ If you are making multiple changes to your files, using git on your computer is 
   * **NOTE**: To make the repository an archive of your project you can and should add all the other other files and folders, including the .Rmd file which you used to make the index.html file
 
 6. Visit this link and, via the browser,
-  * click "Settings" and scroll down to "Github Pages". Under "Source" select "Master branch".edit the settings for the repo and scroll down to 'Github Pages'. There change 'Source' to 'Master'
+  * click "Settings" and scroll down to "Pages". Under "Source" select "Branch: main". Click Save
   * Find your pages, after a short moment, at [yourusername.github.io/yourreponame]()
   * Example: my repo is at [github.com/tomstafford/supertues](https://github.com/tomstafford/supertues), so the published pages are at [tomstafford.github.io/supertues](https://tomstafford.github.io/supertues/)
 
