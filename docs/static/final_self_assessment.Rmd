@@ -1,8 +1,10 @@
 ---
-title: 'PSY6422 final self-assessment'
+title: "PSY6422 final self-assessment"
 author: "Your Name Here"
 date: "22/04/2022"
-output: pdf_document
+output:
+  html_document:
+    df_print: paged
 ---
 
 # Marking Criteria
