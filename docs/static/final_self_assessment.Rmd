@@ -1,35 +1,29 @@
 ---
 title: 'PSY6422 final self-assessment'
 author: "Your Name Here"
-date: "15/05/2020"
+date: "22/04/2022"
 output: pdf_document
 ---
 
 # Marking Criteria
 
-See the Assessment criteria document for these. Roughly they are:
+See the Assessment criteria document for these. Roughly these are to answer the questions in the headings below, showing evidence of engagement with the course
 
-Submit by the deadline (see Timetable) in PDF by email to ``t.stafford@sheffield.ac.uk``. Use the filename format ``surname_registrationnumber.pdf``
-
-Answer the questions in the headings below, showing evidence of engagement with the course
-
+Please 
+ * Submit by the deadline (see Timetable)
+ * in PDF
+ * the filename format ``surname_registrationnumber.pdf``
+ * Using the google form link (check your email)
+ 
 Note: I expect and hope that all students can get full marks for this assessment. There is no word limit, but short is sweet. I suggest you write between 3 sentences and 3 paragraphs for each.
 
 # Final Self-assessment for PSY6422
 
-
 ## 1. What aspects of the course (topics, learning methods) did you enjoy? What about the course helped your learning and are things we should do more of, or could be copied by other courses?
 
+## 2. Which aspects of the course did you find least useful, least interesting or most difficult? Explain what hindered your learning and, if possible, name a specific thing which we could do to help.
 
-
-
-## 2. Which aspects of the course did you find least useful, interesting or most difficult? Explain what hindered your learning and, if possible, name a specific thing which we could do to help.
-
-
-
-## 3. What topics do I want to learn more about in the future? Explain why
-
-
+## 3. What topics do you want to learn more about in the future? Explain why
 
 ## 4. Please share one thing you have read and enjoyed or found useful on the topic of data management and/or visualisation. Please include a full reference.
 
