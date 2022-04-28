@@ -50,6 +50,8 @@ In your codebook you should say briefly where your data comes from (how it was c
 
 A codebook should also say how any missing values are coded and any other quirks of the data which could affect someone else's onward use.
 
+If you are using secondary data (i.e. data from someone else) it may come with an existing codebook and you should include this in your own project, along with your copy of the data. Make notes, either in an additional, addendum, codebook or in the comments on your analysis code, about any additional considerations which should be noted about the data.
+
 ## Backup and Sync
 
 Any back up process which requires you to remember to deploy it is fragile. Use a cloud synchronisation service. Many are available, like OneDrive or Dropbox, but since you are in the University of Sheffield you should install the [Google Drive Backup and Sync tool](https://www.google.com/drive/download/). 
