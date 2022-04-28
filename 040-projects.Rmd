@@ -38,6 +38,17 @@ Never edit the raw data files. They should exist is a folder called \raw or \dat
 
 All data should be backed-up automatically, as soon as it is collected. For how to do this, see the next header
 
+## Inlude meta-data
+
+When you share data you *must* include descriptions of where the data comes from and how it can be interpreted. This is sometimes referred to as *data dictionary* or *code book*. The general category is *meta-data* - data about the data.
+
+Typically I include a file called ```codebook.txt``` in the same folder as the data. You can see this in the example projects shared during the module.
+
+In your codebook you should say briefly where your data comes from (how it was collected, who by etc). You should explain what the variables are. Usually variable columns are labelled with abbreviated or compressed names. The code book is your chance to explain in full what these abbreviations mean. You should also explain what the values or levels are of the difference variables. So, for example, if you have a column called ```gender``` in your data. A line in your codebook might be:
+
+```gender : self declared gender of participant. Values are 1 = female, 2 = male, 3 = other, 4 = prefer not to say```
+
+A codebook should also say how any missing values are coded and any other quirks of the data which could affect someone else's onward use.
 
 ## Backup and Sync
 
