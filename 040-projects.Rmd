@@ -38,7 +38,7 @@ Never edit the raw data files. They should exist is a folder called \raw or \dat
 
 All data should be backed-up automatically, as soon as it is collected. For how to do this, see the next header
 
-## Inlude meta-data
+## Include meta-data
 
 When you share data you *must* include descriptions of where the data comes from and how it can be interpreted. This is sometimes referred to as *data dictionary* or *code book*. The general category is *meta-data* - data about the data.
 

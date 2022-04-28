@@ -23,7 +23,7 @@ project-organisation
 project-folders
 naming-things
 research-data-management
-inlude-meta-data
+include-meta-data
 backup-and-sync
 resources-3
 exercises-1
