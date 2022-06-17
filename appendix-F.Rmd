@@ -41,7 +41,7 @@ This project looked at "Covid-19-immunised to total region population ratio in t
 
 Ben looked at [Efficacy of Self Testing - comparing two Covid 19 prevalence metrics across stages of the pandemic in England](https://ben-pw.github.io/PSY6422_Project/);  [Pages](https://github.com/Ben-PW/PSY6422_Project)
 
-[A stacked bar plot showing likert scale responses to imagined traumatic scenarios](https://natasharobinson2603.github.io/PSY6422_finalproject/), 
+Natasha: [A stacked bar plot showing likert scale responses to imagined traumatic scenarios](https://natasharobinson2603.github.io/PSY6422_finalproject/), 
 <img src="images/2022natasha.png" style="width: 600px; float: center;">
 [Pages](https://github.com/NatashaRobinson2603/PSY6422_finalproject)
 
