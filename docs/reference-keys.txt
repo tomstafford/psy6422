@@ -145,4 +145,10 @@ class-of-2021
 feedback-1
 class-of-2022
 advice-for-future-students
-feedback-2
+one-thing-you-have-read-and-enjoyed-or-found-useful
+general-visualisation
+r-specific-advice
+markdown
+advanced-r-packages
+general-coding-projects-reproducibility
+feedback-on-the-module
