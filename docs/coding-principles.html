@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Coding Principles | PSY6422 Data Management and Visualisation</title>
   <meta name="description" content="Notes on the course - rapidly evolving!" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Coding Principles | PSY6422 Data Management and Visualisation" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Notes on the course - rapidly evolving!" />
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2022-04-28" />
+<meta name="date" content="2022-06-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -63,25 +62,27 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -90,9 +91,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -143,190 +144,228 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">PSY6422 Data Management & Visualisation</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#module-overview">Module Overview<span></span></a><ul>
-<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>0.1</b> Motivation<span></span></a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-aims"><i class="fa fa-check"></i><b>0.2</b> Course Aims<span></span></a><ul>
-<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#the-module-mini-project"><i class="fa fa-check"></i><b>0.2.1</b> The Module mini-project<span></span></a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Module Overview</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#motivation"><i class="fa fa-check"></i><b>0.1</b> Motivation</a></li>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-aims"><i class="fa fa-check"></i><b>0.2</b> Course Aims</a>
+<ul>
+<li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#the-module-mini-project"><i class="fa fa-check"></i><b>0.2.1</b> The Module mini-project</a></li>
 </ul></li>
-<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#resources-for-current-students"><i class="fa fa-check"></i><b>0.3</b> Resources for current students<span></span></a></li>
+<li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#resources-for-current-students"><i class="fa fa-check"></i><b>0.3</b> Resources for current students</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html"><i class="fa fa-check"></i><b>1</b> Overview, assessment &amp; module organisation<span></span></a><ul>
-<li class="chapter" data-level="1.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#class-material"><i class="fa fa-check"></i><b>1.1</b> Class material:<span></span></a></li>
-<li class="chapter" data-level="1.2" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#exercise-1-assessed"><i class="fa fa-check"></i><b>1.2</b> Exercise 1 (assessed!)<span></span></a><ul>
-<li class="chapter" data-level="1.2.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#marking-criteria"><i class="fa fa-check"></i><b>1.2.1</b> Marking criteria:<span></span></a></li>
-<li class="chapter" data-level="1.2.2" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#submission"><i class="fa fa-check"></i><b>1.2.2</b> Submission<span></span></a></li>
+<li class="chapter" data-level="1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html"><i class="fa fa-check"></i><b>1</b> Overview, assessment &amp; module organisation</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#class-material"><i class="fa fa-check"></i><b>1.1</b> Class material:</a></li>
+<li class="chapter" data-level="1.2" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#exercise-1-assessed"><i class="fa fa-check"></i><b>1.2</b> Exercise 1 (assessed!)</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#marking-criteria"><i class="fa fa-check"></i><b>1.2.1</b> Marking criteria:</a></li>
+<li class="chapter" data-level="1.2.2" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#submission"><i class="fa fa-check"></i><b>1.2.2</b> Submission</a></li>
 </ul></li>
-<li class="chapter" data-level="1.3" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#checklist"><i class="fa fa-check"></i><b>1.3</b> Checklist:<span></span></a></li>
-<li class="chapter" data-level="1.4" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#resources"><i class="fa fa-check"></i><b>1.4</b> Resources<span></span></a><ul>
-<li class="chapter" data-level="1.4.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#further-reading-on-the-motivation-for-a-data-management-component-of-this-course"><i class="fa fa-check"></i><b>1.4.1</b> Further reading on the motivation for a data management component of this course<span></span></a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="r-r-studio.html"><a href="r-r-studio.html"><i class="fa fa-check"></i><b>2</b> R &amp; R Studio<span></span></a><ul>
-<li class="chapter" data-level="2.1" data-path="r-r-studio.html"><a href="r-r-studio.html#resources-1"><i class="fa fa-check"></i><b>2.1</b> Resources<span></span></a></li>
-<li class="chapter" data-level="2.2" data-path="r-r-studio.html"><a href="r-r-studio.html#exercises-checklist"><i class="fa fa-check"></i><b>2.2</b> Exercises &amp; Checklist<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="making-graphs.html"><a href="making-graphs.html"><i class="fa fa-check"></i><b>3</b> Making Graphs<span></span></a><ul>
-<li class="chapter" data-level="3.1" data-path="making-graphs.html"><a href="making-graphs.html#class-material-1"><i class="fa fa-check"></i><b>3.1</b> Class material<span></span></a></li>
-<li class="chapter" data-level="3.2" data-path="making-graphs.html"><a href="making-graphs.html#resources-2"><i class="fa fa-check"></i><b>3.2</b> Resources<span></span></a><ul>
-<li class="chapter" data-level="3.2.1" data-path="making-graphs.html"><a href="making-graphs.html#other-resources"><i class="fa fa-check"></i><b>3.2.1</b> Other resources<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="3.3" data-path="making-graphs.html"><a href="making-graphs.html#exercises"><i class="fa fa-check"></i><b>3.3</b> Exercises<span></span></a></li>
-<li class="chapter" data-level="3.4" data-path="making-graphs.html"><a href="making-graphs.html#checklist-1"><i class="fa fa-check"></i><b>3.4</b> Checklist<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="project-organisation.html"><a href="project-organisation.html"><i class="fa fa-check"></i><b>4</b> Project Organisation<span></span></a><ul>
-<li class="chapter" data-level="4.1" data-path="project-organisation.html"><a href="project-organisation.html#project-folders"><i class="fa fa-check"></i><b>4.1</b> Project folders<span></span></a></li>
-<li class="chapter" data-level="4.2" data-path="project-organisation.html"><a href="project-organisation.html#naming-things"><i class="fa fa-check"></i><b>4.2</b> Naming Things<span></span></a></li>
-<li class="chapter" data-level="4.3" data-path="project-organisation.html"><a href="project-organisation.html#research-data-management"><i class="fa fa-check"></i><b>4.3</b> Research Data Management<span></span></a></li>
-<li class="chapter" data-level="4.4" data-path="project-organisation.html"><a href="project-organisation.html#include-meta-data"><i class="fa fa-check"></i><b>4.4</b> Include meta-data<span></span></a></li>
-<li class="chapter" data-level="4.5" data-path="project-organisation.html"><a href="project-organisation.html#backup-and-sync"><i class="fa fa-check"></i><b>4.5</b> Backup and Sync<span></span></a></li>
-<li class="chapter" data-level="4.6" data-path="project-organisation.html"><a href="project-organisation.html#resources-3"><i class="fa fa-check"></i><b>4.6</b> Resources:<span></span></a></li>
-<li class="chapter" data-level="4.7" data-path="project-organisation.html"><a href="project-organisation.html#exercises-1"><i class="fa fa-check"></i><b>4.7</b> Exercises<span></span></a><ul>
-<li class="chapter" data-level="4.7.1" data-path="project-organisation.html"><a href="project-organisation.html#warm-up-pair-programming-exercise"><i class="fa fa-check"></i><b>4.7.1</b> Warm up: Pair programming exercise<span></span></a></li>
-<li class="chapter" data-level="4.7.2" data-path="project-organisation.html"><a href="project-organisation.html#homework-project-1"><i class="fa fa-check"></i><b>4.7.2</b> Homework: Project 1<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="4.8" data-path="project-organisation.html"><a href="project-organisation.html#checklist-2"><i class="fa fa-check"></i><b>4.8</b> Checklist<span></span></a></li>
-</ul></li>
-<li><a href="module-project.html#module-project">Module project<span></span></a><ul>
-<li class="chapter" data-level="4.9" data-path="module-project.html"><a href="module-project.html"><i class="fa fa-check"></i><b>4.9</b> Project requirements<span></span></a></li>
-<li class="chapter" data-level="4.10" data-path="module-project.html"><a href="module-project.html#choosing-your-data"><i class="fa fa-check"></i><b>4.10</b> Choosing your data<span></span></a><ul>
-<li class="chapter" data-level="4.10.1" data-path="module-project.html"><a href="module-project.html#finding-data"><i class="fa fa-check"></i><b>4.10.1</b> Finding Data<span></span></a></li>
-<li class="chapter" data-level="4.10.2" data-path="module-project.html"><a href="module-project.html#suggestions-for-possible-project-data-sets"><i class="fa fa-check"></i><b>4.10.2</b> Suggestions for possible project data sets<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="4.11" data-path="module-project.html"><a href="module-project.html#choose-your-graph"><i class="fa fa-check"></i><b>4.11</b> Choose your graph<span></span></a></li>
-<li class="chapter" data-level="4.12" data-path="module-project.html"><a href="module-project.html#check-list"><i class="fa fa-check"></i><b>4.12</b> Check list<span></span></a></li>
-<li class="chapter" data-level="4.13" data-path="module-project.html"><a href="module-project.html#answers-to-common-questions"><i class="fa fa-check"></i><b>4.13</b> Answers to common questions<span></span></a></li>
-<li class="chapter" data-level="4.14" data-path="module-project.html"><a href="module-project.html#example-projects"><i class="fa fa-check"></i><b>4.14</b> Example Projects<span></span></a></li>
-<li class="chapter" data-level="4.15" data-path="module-project.html"><a href="module-project.html#stretch-goals"><i class="fa fa-check"></i><b>4.15</b> Stretch goals<span></span></a></li>
-<li class="chapter" data-level="4.16" data-path="module-project.html"><a href="module-project.html#in-class-exercises"><i class="fa fa-check"></i><b>4.16</b> In class exercises<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="data-wrangling.html"><a href="data-wrangling.html"><i class="fa fa-check"></i><b>5</b> Data Wrangling<span></span></a><ul>
-<li class="chapter" data-level="5.1" data-path="data-wrangling.html"><a href="data-wrangling.html#class-material-2"><i class="fa fa-check"></i><b>5.1</b> Class material<span></span></a></li>
-<li class="chapter" data-level="5.2" data-path="data-wrangling.html"><a href="data-wrangling.html#exercises-2"><i class="fa fa-check"></i><b>5.2</b> Exercises<span></span></a></li>
-<li class="chapter" data-level="5.3" data-path="data-wrangling.html"><a href="data-wrangling.html#checklist-3"><i class="fa fa-check"></i><b>5.3</b> Checklist<span></span></a></li>
-<li class="chapter" data-level="5.4" data-path="data-wrangling.html"><a href="data-wrangling.html#resources-4"><i class="fa fa-check"></i><b>5.4</b> Resources<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>6</b> Coding Principles<span></span></a><ul>
-<li class="chapter" data-level="6.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>6.1</b> Fundamental methods<span></span></a><ul>
-<li class="chapter" data-level="6.1.1" data-path="coding-principles.html"><a href="coding-principles.html#if"><i class="fa fa-check"></i><b>6.1.1</b> If statements<span></span></a></li>
-<li class="chapter" data-level="6.1.2" data-path="coding-principles.html"><a href="coding-principles.html#loops"><i class="fa fa-check"></i><b>6.1.2</b> Loops<span></span></a></li>
-<li class="chapter" data-level="6.1.3" data-path="coding-principles.html"><a href="coding-principles.html#functions"><i class="fa fa-check"></i><b>6.1.3</b> Functions<span></span></a></li>
-<li class="chapter" data-level="6.1.4" data-path="coding-principles.html"><a href="coding-principles.html#exercises-1-1"><i class="fa fa-check"></i><b>6.1.4</b> Exercises 1<span></span></a></li>
-<li class="chapter" data-level="6.1.5" data-path="coding-principles.html"><a href="coding-principles.html#more"><i class="fa fa-check"></i><b>6.1.5</b> More<span></span></a></li>
-</ul></li>
-<li class="chapter" data-level="6.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>6.2</b> Fundamental principles of good code<span></span></a><ul>
-<li class="chapter" data-level="6.2.1" data-path="coding-principles.html"><a href="coding-principles.html#readability-matters"><i class="fa fa-check"></i><b>6.2.1</b> Readability Matters<span></span></a></li>
-<li class="chapter" data-level="6.2.2" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>6.2.2</b> Avoid hard coded values<span></span></a></li>
-<li class="chapter" data-level="6.2.3" data-path="coding-principles.html"><a href="coding-principles.html#functionalise-generalise"><i class="fa fa-check"></i><b>6.2.3</b> Functionalise &amp; Generalise<span></span></a></li>
-<li class="chapter" data-level="6.2.4" data-path="coding-principles.html"><a href="coding-principles.html#ask-for-help"><i class="fa fa-check"></i><b>6.2.4</b> Ask for help<span></span></a></li>
-<li class="chapter" data-level="6.2.5" data-path="coding-principles.html"><a href="coding-principles.html#exercises-2-1"><i class="fa fa-check"></i><b>6.2.5</b> Exercises 2<span></span></a></li>
-<li class="chapter" data-level="6.2.6" data-path="coding-principles.html"><a href="coding-principles.html#checklist-4"><i class="fa fa-check"></i><b>6.2.6</b> Checklist<span></span></a></li>
-<li class="chapter" data-level="6.2.7" data-path="coding-principles.html"><a href="coding-principles.html#resources-5"><i class="fa fa-check"></i><b>6.2.7</b> Resources<span></span></a></li>
+<li class="chapter" data-level="1.3" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#checklist"><i class="fa fa-check"></i><b>1.3</b> Checklist:</a></li>
+<li class="chapter" data-level="1.4" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#resources"><i class="fa fa-check"></i><b>1.4</b> Resources</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#further-reading-on-the-motivation-for-a-data-management-component-of-this-course"><i class="fa fa-check"></i><b>1.4.1</b> Further reading on the motivation for a data management component of this course</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>7</b> Rmarkdown<span></span></a><ul>
-<li class="chapter" data-level="7.1" data-path="rmarkdown.html"><a href="rmarkdown.html#and-this-line-is-a-heading"><i class="fa fa-check"></i><b>7.1</b> And this line is a heading<span></span></a></li>
-<li class="chapter" data-level="7.2" data-path="rmarkdown.html"><a href="rmarkdown.html#first-a-header"><i class="fa fa-check"></i><b>7.2</b> First a header<span></span></a></li>
-<li class="chapter" data-level="7.3" data-path="rmarkdown.html"><a href="rmarkdown.html#second-text"><i class="fa fa-check"></i><b>7.3</b> Second, text<span></span></a></li>
-<li class="chapter" data-level="7.4" data-path="rmarkdown.html"><a href="rmarkdown.html#third-code"><i class="fa fa-check"></i><b>7.4</b> Third, code<span></span></a><ul>
-<li class="chapter" data-level="7.4.1" data-path="rmarkdown.html"><a href="rmarkdown.html#options-for-code-chunks"><i class="fa fa-check"></i><b>7.4.1</b> Options for code chunks<span></span></a></li>
-<li class="chapter" data-level="7.4.2" data-path="rmarkdown.html"><a href="rmarkdown.html#include-r-in-inline-text"><i class="fa fa-check"></i><b>7.4.2</b> Include r in inline text<span></span></a></li>
+<li class="chapter" data-level="2" data-path="r-r-studio.html"><a href="r-r-studio.html"><i class="fa fa-check"></i><b>2</b> R &amp; R Studio</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="r-r-studio.html"><a href="r-r-studio.html#resources-1"><i class="fa fa-check"></i><b>2.1</b> Resources</a></li>
+<li class="chapter" data-level="2.2" data-path="r-r-studio.html"><a href="r-r-studio.html#exercises-checklist"><i class="fa fa-check"></i><b>2.2</b> Exercises &amp; Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="7.5" data-path="rmarkdown.html"><a href="rmarkdown.html#conclusion"><i class="fa fa-check"></i><b>7.5</b> Conclusion<span></span></a></li>
-<li class="chapter" data-level="7.6" data-path="rmarkdown.html"><a href="rmarkdown.html#exercises-3"><i class="fa fa-check"></i><b>7.6</b> Exercises<span></span></a></li>
-<li class="chapter" data-level="7.7" data-path="rmarkdown.html"><a href="rmarkdown.html#advanced"><i class="fa fa-check"></i><b>7.7</b> Advanced<span></span></a></li>
-<li class="chapter" data-level="7.8" data-path="rmarkdown.html"><a href="rmarkdown.html#checklist-5"><i class="fa fa-check"></i><b>7.8</b> Checklist<span></span></a></li>
-<li class="chapter" data-level="7.9" data-path="rmarkdown.html"><a href="rmarkdown.html#resources-6"><i class="fa fa-check"></i><b>7.9</b> Resources<span></span></a></li>
+<li class="chapter" data-level="3" data-path="making-graphs.html"><a href="making-graphs.html"><i class="fa fa-check"></i><b>3</b> Making Graphs</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="making-graphs.html"><a href="making-graphs.html#class-material-1"><i class="fa fa-check"></i><b>3.1</b> Class material</a></li>
+<li class="chapter" data-level="3.2" data-path="making-graphs.html"><a href="making-graphs.html#resources-2"><i class="fa fa-check"></i><b>3.2</b> Resources</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="making-graphs.html"><a href="making-graphs.html#other-resources"><i class="fa fa-check"></i><b>3.2.1</b> Other resources</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html"><i class="fa fa-check"></i><b>8</b> ssh and the command line<span></span></a><ul>
-<li class="chapter" data-level="8.1" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#launching-the-terminal"><i class="fa fa-check"></i><b>8.1</b> Launching the Terminal<span></span></a></li>
-<li class="chapter" data-level="8.2" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#changing-folders-navigating-the-directory-tree"><i class="fa fa-check"></i><b>8.2</b> Changing folders (‘navigating the directory tree’)<span></span></a></li>
-<li class="chapter" data-level="8.3" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#networking"><i class="fa fa-check"></i><b>8.3</b> Networking<span></span></a></li>
-<li class="chapter" data-level="8.4" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#ping"><i class="fa fa-check"></i><b>8.4</b> Ping<span></span></a></li>
-<li class="chapter" data-level="8.5" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#remote-access-using-ssh"><i class="fa fa-check"></i><b>8.5</b> Remote access using SSH<span></span></a></li>
-<li class="chapter" data-level="8.6" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#find-files-run-files-copy-files"><i class="fa fa-check"></i><b>8.6</b> Find files, run files, copy files<span></span></a><ul>
-<li class="chapter" data-level="8.6.1" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#switches"><i class="fa fa-check"></i><b>8.6.1</b> switches<span></span></a></li>
+<li class="chapter" data-level="3.3" data-path="making-graphs.html"><a href="making-graphs.html#exercises"><i class="fa fa-check"></i><b>3.3</b> Exercises</a></li>
+<li class="chapter" data-level="3.4" data-path="making-graphs.html"><a href="making-graphs.html#checklist-1"><i class="fa fa-check"></i><b>3.4</b> Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="8.7" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#exercises-4"><i class="fa fa-check"></i><b>8.7</b> Exercises<span></span></a></li>
-<li class="chapter" data-level="8.8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#checklist-6"><i class="fa fa-check"></i><b>8.8</b> Checklist<span></span></a></li>
-<li class="chapter" data-level="8.9" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#resources-7"><i class="fa fa-check"></i><b>8.9</b> Resources<span></span></a></li>
+<li class="chapter" data-level="4" data-path="project-organisation.html"><a href="project-organisation.html"><i class="fa fa-check"></i><b>4</b> Project Organisation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="project-organisation.html"><a href="project-organisation.html#project-folders"><i class="fa fa-check"></i><b>4.1</b> Project folders</a></li>
+<li class="chapter" data-level="4.2" data-path="project-organisation.html"><a href="project-organisation.html#naming-things"><i class="fa fa-check"></i><b>4.2</b> Naming Things</a></li>
+<li class="chapter" data-level="4.3" data-path="project-organisation.html"><a href="project-organisation.html#research-data-management"><i class="fa fa-check"></i><b>4.3</b> Research Data Management</a></li>
+<li class="chapter" data-level="4.4" data-path="project-organisation.html"><a href="project-organisation.html#include-meta-data"><i class="fa fa-check"></i><b>4.4</b> Include meta-data</a></li>
+<li class="chapter" data-level="4.5" data-path="project-organisation.html"><a href="project-organisation.html#backup-and-sync"><i class="fa fa-check"></i><b>4.5</b> Backup and Sync</a></li>
+<li class="chapter" data-level="4.6" data-path="project-organisation.html"><a href="project-organisation.html#resources-3"><i class="fa fa-check"></i><b>4.6</b> Resources:</a></li>
+<li class="chapter" data-level="4.7" data-path="project-organisation.html"><a href="project-organisation.html#exercises-1"><i class="fa fa-check"></i><b>4.7</b> Exercises</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="project-organisation.html"><a href="project-organisation.html#warm-up-pair-programming-exercise"><i class="fa fa-check"></i><b>4.7.1</b> Warm up: Pair programming exercise</a></li>
+<li class="chapter" data-level="4.7.2" data-path="project-organisation.html"><a href="project-organisation.html#homework-project-1"><i class="fa fa-check"></i><b>4.7.2</b> Homework: Project 1</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>9</b> Git and Github<span></span></a><ul>
-<li class="chapter" data-level="9.1" data-path="git-and-github.html"><a href="git-and-github.html#motivation-1"><i class="fa fa-check"></i><b>9.1</b> Motivation<span></span></a></li>
-<li class="chapter" data-level="9.2" data-path="git-and-github.html"><a href="git-and-github.html#before-the-class"><i class="fa fa-check"></i><b>9.2</b> Before the class<span></span></a></li>
-<li class="chapter" data-level="9.3" data-path="git-and-github.html"><a href="git-and-github.html#accessing-git"><i class="fa fa-check"></i><b>9.3</b> Accessing git<span></span></a></li>
-<li class="chapter" data-level="9.4" data-path="git-and-github.html"><a href="git-and-github.html#resources-for-the-class"><i class="fa fa-check"></i><b>9.4</b> Resources for the class<span></span></a></li>
-<li class="chapter" data-level="9.5" data-path="git-and-github.html"><a href="git-and-github.html#checklist-7"><i class="fa fa-check"></i><b>9.5</b> Checklist<span></span></a></li>
-<li class="chapter" data-level="9.6" data-path="git-and-github.html"><a href="git-and-github.html#resources-8"><i class="fa fa-check"></i><b>9.6</b> Resources<span></span></a></li>
+<li class="chapter" data-level="4.8" data-path="project-organisation.html"><a href="project-organisation.html#checklist-2"><i class="fa fa-check"></i><b>4.8</b> Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="publishing.html"><a href="publishing.html"><i class="fa fa-check"></i><b>10</b> Publishing<span></span></a><ul>
-<li class="chapter" data-level="10.1" data-path="publishing.html"><a href="publishing.html#sharing-your-rmd-files-via-github-pages"><i class="fa fa-check"></i><b>10.1</b> Sharing your Rmd files via Github pages<span></span></a></li>
-<li class="chapter" data-level="10.2" data-path="publishing.html"><a href="publishing.html#other-sharing-options"><i class="fa fa-check"></i><b>10.2</b> Other sharing options<span></span></a></li>
-<li class="chapter" data-level="10.3" data-path="publishing.html"><a href="publishing.html#checklist-8"><i class="fa fa-check"></i><b>10.3</b> Checklist<span></span></a></li>
-<li class="chapter" data-level="10.4" data-path="publishing.html"><a href="publishing.html#resources-9"><i class="fa fa-check"></i><b>10.4</b> Resources<span></span></a></li>
+<li class="chapter" data-level="" data-path="module-project.html"><a href="module-project.html"><i class="fa fa-check"></i>Module project</a>
+<ul>
+<li class="chapter" data-level="4.9" data-path="module-project.html"><a href="module-project.html#requirements"><i class="fa fa-check"></i><b>4.9</b> Project requirements</a></li>
+<li class="chapter" data-level="4.10" data-path="module-project.html"><a href="module-project.html#choosing-your-data"><i class="fa fa-check"></i><b>4.10</b> Choosing your data</a>
+<ul>
+<li class="chapter" data-level="4.10.1" data-path="module-project.html"><a href="module-project.html#finding-data"><i class="fa fa-check"></i><b>4.10.1</b> Finding Data</a></li>
+<li class="chapter" data-level="4.10.2" data-path="module-project.html"><a href="module-project.html#suggestions-for-possible-project-data-sets"><i class="fa fa-check"></i><b>4.10.2</b> Suggestions for possible project data sets</a></li>
 </ul></li>
-<li><a href="advanced-topics.html#advanced-topics">Advanced Topics<span></span></a><ul>
-<li class="chapter" data-level="10.5" data-path="advanced-topics.html"><a href="advanced-topics.html"><i class="fa fa-check"></i><b>10.5</b> 2022<span></span></a></li>
-<li class="chapter" data-level="10.6" data-path="advanced-topics.html"><a href="advanced-topics.html#section-1"><i class="fa fa-check"></i><b>10.6</b> 2021<span></span></a></li>
-<li class="chapter" data-level="10.7" data-path="advanced-topics.html"><a href="advanced-topics.html#other-topicsresources"><i class="fa fa-check"></i><b>10.7</b> Other topics/resources<span></span></a></li>
-<li class="chapter" data-level="10.8" data-path="advanced-topics.html"><a href="advanced-topics.html#reproducibility"><i class="fa fa-check"></i><b>10.8</b> Reproducibility<span></span></a></li>
-<li class="chapter" data-level="10.9" data-path="advanced-topics.html"><a href="advanced-topics.html#general-righteousness"><i class="fa fa-check"></i><b>10.9</b> General righteousness<span></span></a></li>
+<li class="chapter" data-level="4.11" data-path="module-project.html"><a href="module-project.html#choose-your-graph"><i class="fa fa-check"></i><b>4.11</b> Choose your graph</a></li>
+<li class="chapter" data-level="4.12" data-path="module-project.html"><a href="module-project.html#check-list"><i class="fa fa-check"></i><b>4.12</b> Check list</a></li>
+<li class="chapter" data-level="4.13" data-path="module-project.html"><a href="module-project.html#answers-to-common-questions"><i class="fa fa-check"></i><b>4.13</b> Answers to common questions</a></li>
+<li class="chapter" data-level="4.14" data-path="module-project.html"><a href="module-project.html#example-projects"><i class="fa fa-check"></i><b>4.14</b> Example Projects</a></li>
+<li class="chapter" data-level="4.15" data-path="module-project.html"><a href="module-project.html#stretch-goals"><i class="fa fa-check"></i><b>4.15</b> Stretch goals</a></li>
+<li class="chapter" data-level="4.16" data-path="module-project.html"><a href="module-project.html#in-class-exercises"><i class="fa fa-check"></i><b>4.16</b> In class exercises</a></li>
 </ul></li>
-<li><a href="interactive-graphs-with-shiny.html#interactive-graphs-with-shiny">- Interactive graphs with Shiny<span></span></a><ul>
-<li class="chapter" data-level="10.10" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html"><i class="fa fa-check"></i><b>10.10</b> Before class<span></span></a></li>
-<li class="chapter" data-level="10.11" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#exercises-5"><i class="fa fa-check"></i><b>10.11</b> Exercises<span></span></a></li>
-<li class="chapter" data-level="10.12" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#resources-10"><i class="fa fa-check"></i><b>10.12</b> Resources<span></span></a></li>
-<li class="chapter" data-level="10.13" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#examples-of-interactive-graphs-which-use-different-tech-javascript"><i class="fa fa-check"></i><b>10.13</b> Examples of interactive graphs which use different tech (Javascript!)<span></span></a></li>
+<li class="chapter" data-level="5" data-path="data-wrangling.html"><a href="data-wrangling.html"><i class="fa fa-check"></i><b>5</b> Data Wrangling</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="data-wrangling.html"><a href="data-wrangling.html#class-material-2"><i class="fa fa-check"></i><b>5.1</b> Class material</a></li>
+<li class="chapter" data-level="5.2" data-path="data-wrangling.html"><a href="data-wrangling.html#exercises-2"><i class="fa fa-check"></i><b>5.2</b> Exercises</a></li>
+<li class="chapter" data-level="5.3" data-path="data-wrangling.html"><a href="data-wrangling.html#checklist-3"><i class="fa fa-check"></i><b>5.3</b> Checklist</a></li>
+<li class="chapter" data-level="5.4" data-path="data-wrangling.html"><a href="data-wrangling.html#resources-4"><i class="fa fa-check"></i><b>5.4</b> Resources</a></li>
 </ul></li>
-<li><a href="animated-plots-with-gganimate.html#animated-plots-with-gganimate">- Animated plots with gganimate<span></span></a><ul>
-<li class="chapter" data-level="10.14" data-path="animated-plots-with-gganimate.html"><a href="animated-plots-with-gganimate.html"><i class="fa fa-check"></i><b>10.14</b> Exercises<span></span></a></li>
+<li class="chapter" data-level="6" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>6</b> Coding Principles</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>6.1</b> Fundamental methods</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="coding-principles.html"><a href="coding-principles.html#if"><i class="fa fa-check"></i><b>6.1.1</b> If statements</a></li>
+<li class="chapter" data-level="6.1.2" data-path="coding-principles.html"><a href="coding-principles.html#loops"><i class="fa fa-check"></i><b>6.1.2</b> Loops</a></li>
+<li class="chapter" data-level="6.1.3" data-path="coding-principles.html"><a href="coding-principles.html#functions"><i class="fa fa-check"></i><b>6.1.3</b> Functions</a></li>
+<li class="chapter" data-level="6.1.4" data-path="coding-principles.html"><a href="coding-principles.html#exercises-1-1"><i class="fa fa-check"></i><b>6.1.4</b> Exercises 1</a></li>
+<li class="chapter" data-level="6.1.5" data-path="coding-principles.html"><a href="coding-principles.html#more"><i class="fa fa-check"></i><b>6.1.5</b> More</a></li>
 </ul></li>
-<li><a href="database-queries-sql.html#database-queries-sql">- Database queries: SQL<span></span></a><ul>
-<li class="chapter" data-level="10.15" data-path="database-queries-sql.html"><a href="database-queries-sql.html"><i class="fa fa-check"></i><b>10.15</b> Context<span></span></a></li>
-<li class="chapter" data-level="10.16" data-path="database-queries-sql.html"><a href="database-queries-sql.html#key-information"><i class="fa fa-check"></i><b>10.16</b> Key information<span></span></a></li>
-<li class="chapter" data-level="10.17" data-path="database-queries-sql.html"><a href="database-queries-sql.html#exercises-7"><i class="fa fa-check"></i><b>10.17</b> Exercises<span></span></a></li>
-<li class="chapter" data-level="10.18" data-path="database-queries-sql.html"><a href="database-queries-sql.html#checklist-9"><i class="fa fa-check"></i><b>10.18</b> Checklist<span></span></a></li>
-<li class="chapter" data-level="10.19" data-path="database-queries-sql.html"><a href="database-queries-sql.html#resources-11"><i class="fa fa-check"></i><b>10.19</b> Resources<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>6.2</b> Fundamental principles of good code</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="coding-principles.html"><a href="coding-principles.html#readability-matters"><i class="fa fa-check"></i><b>6.2.1</b> Readability Matters</a></li>
+<li class="chapter" data-level="6.2.2" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>6.2.2</b> Avoid hard coded values</a></li>
+<li class="chapter" data-level="6.2.3" data-path="coding-principles.html"><a href="coding-principles.html#functionalise-generalise"><i class="fa fa-check"></i><b>6.2.3</b> Functionalise &amp; Generalise</a></li>
+<li class="chapter" data-level="6.2.4" data-path="coding-principles.html"><a href="coding-principles.html#ask-for-help"><i class="fa fa-check"></i><b>6.2.4</b> Ask for help</a></li>
+<li class="chapter" data-level="6.2.5" data-path="coding-principles.html"><a href="coding-principles.html#exercises-2-1"><i class="fa fa-check"></i><b>6.2.5</b> Exercises 2</a></li>
+<li class="chapter" data-level="6.2.6" data-path="coding-principles.html"><a href="coding-principles.html#checklist-4"><i class="fa fa-check"></i><b>6.2.6</b> Checklist</a></li>
+<li class="chapter" data-level="6.2.7" data-path="coding-principles.html"><a href="coding-principles.html#resources-5"><i class="fa fa-check"></i><b>6.2.7</b> Resources</a></li>
 </ul></li>
-<li><a href="python.html#python">- Python<span></span></a><ul>
-<li class="chapter" data-level="10.20" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i><b>10.20</b> Motivation<span></span></a></li>
-<li class="chapter" data-level="10.21" data-path="python.html"><a href="python.html#a-worked-example"><i class="fa fa-check"></i><b>10.21</b> A worked example<span></span></a></li>
-<li class="chapter" data-level="10.22" data-path="python.html"><a href="python.html#preparation"><i class="fa fa-check"></i><b>10.22</b> Preparation<span></span></a></li>
-<li class="chapter" data-level="10.23" data-path="python.html"><a href="python.html#in-class"><i class="fa fa-check"></i><b>10.23</b> In class<span></span></a></li>
-<li class="chapter" data-level="10.24" data-path="python.html"><a href="python.html#after-class"><i class="fa fa-check"></i><b>10.24</b> After class<span></span></a></li>
 </ul></li>
-<li class="appendix"><span><b>Appendices<span></span></b></span></li>
-<li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes<span></span></a><ul>
-<li class="chapter" data-level="A.1" data-path="class-notes.html"><a href="class-notes.html#ask-me-questions"><i class="fa fa-check"></i><b>A.1</b> Ask me questions<span></span></a></li>
-<li class="chapter" data-level="A.2" data-path="class-notes.html"><a href="class-notes.html#terminology-raw-data"><i class="fa fa-check"></i><b>A.2</b> Terminology: ‘Raw data’<span></span></a></li>
+<li class="chapter" data-level="7" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>7</b> Rmarkdown</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="rmarkdown.html"><a href="rmarkdown.html#and-this-line-is-a-heading"><i class="fa fa-check"></i><b>7.1</b> And this line is a heading</a></li>
+<li class="chapter" data-level="7.2" data-path="rmarkdown.html"><a href="rmarkdown.html#first-a-header"><i class="fa fa-check"></i><b>7.2</b> First a header</a></li>
+<li class="chapter" data-level="7.3" data-path="rmarkdown.html"><a href="rmarkdown.html#second-text"><i class="fa fa-check"></i><b>7.3</b> Second, text</a></li>
+<li class="chapter" data-level="7.4" data-path="rmarkdown.html"><a href="rmarkdown.html#third-code"><i class="fa fa-check"></i><b>7.4</b> Third, code</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="rmarkdown.html"><a href="rmarkdown.html#options-for-code-chunks"><i class="fa fa-check"></i><b>7.4.1</b> Options for code chunks</a></li>
+<li class="chapter" data-level="7.4.2" data-path="rmarkdown.html"><a href="rmarkdown.html#include-r-in-inline-text"><i class="fa fa-check"></i><b>7.4.2</b> Include r in inline text</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading<span></span></a><ul>
-<li class="chapter" data-level="B.1" data-path="extra-reading.html"><a href="extra-reading.html#visualisation-theory"><i class="fa fa-check"></i><b>B.1</b> Visualisation (theory)<span></span></a></li>
-<li class="chapter" data-level="B.2" data-path="extra-reading.html"><a href="extra-reading.html#the-reproducibility-crisis"><i class="fa fa-check"></i><b>B.2</b> The Reproducibility Crisis<span></span></a></li>
-<li class="chapter" data-level="B.3" data-path="extra-reading.html"><a href="extra-reading.html#better-practice"><i class="fa fa-check"></i><b>B.3</b> Better practice<span></span></a></li>
-<li class="chapter" data-level="B.4" data-path="extra-reading.html"><a href="extra-reading.html#project-organisation-1"><i class="fa fa-check"></i><b>B.4</b> Project organisation<span></span></a></li>
-<li class="chapter" data-level="B.5" data-path="extra-reading.html"><a href="extra-reading.html#coding"><i class="fa fa-check"></i><b>B.5</b> Coding<span></span></a></li>
-<li class="chapter" data-level="B.6" data-path="extra-reading.html"><a href="extra-reading.html#r"><i class="fa fa-check"></i><b>B.6</b> R<span></span></a><ul>
-<li class="chapter" data-level="B.6.1" data-path="extra-reading.html"><a href="extra-reading.html#hints"><i class="fa fa-check"></i><b>B.6.1</b> Hints<span></span></a></li>
-<li class="chapter" data-level="B.6.2" data-path="extra-reading.html"><a href="extra-reading.html#courses-books"><i class="fa fa-check"></i><b>B.6.2</b> Courses / books<span></span></a></li>
+<li class="chapter" data-level="7.5" data-path="rmarkdown.html"><a href="rmarkdown.html#conclusion"><i class="fa fa-check"></i><b>7.5</b> Conclusion</a></li>
+<li class="chapter" data-level="7.6" data-path="rmarkdown.html"><a href="rmarkdown.html#exercises-3"><i class="fa fa-check"></i><b>7.6</b> Exercises</a></li>
+<li class="chapter" data-level="7.7" data-path="rmarkdown.html"><a href="rmarkdown.html#advanced"><i class="fa fa-check"></i><b>7.7</b> Advanced</a></li>
+<li class="chapter" data-level="7.8" data-path="rmarkdown.html"><a href="rmarkdown.html#checklist-5"><i class="fa fa-check"></i><b>7.8</b> Checklist</a></li>
+<li class="chapter" data-level="7.9" data-path="rmarkdown.html"><a href="rmarkdown.html#resources-6"><i class="fa fa-check"></i><b>7.9</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="B.7" data-path="extra-reading.html"><a href="extra-reading.html#making-graphs-practice"><i class="fa fa-check"></i><b>B.7</b> Making graphs (practice)<span></span></a></li>
-<li class="chapter" data-level="B.8" data-path="extra-reading.html"><a href="extra-reading.html#presentations"><i class="fa fa-check"></i><b>B.8</b> Presentations<span></span></a></li>
-<li class="chapter" data-level="B.9" data-path="extra-reading.html"><a href="extra-reading.html#statistics"><i class="fa fa-check"></i><b>B.9</b> Statistics<span></span></a></li>
-<li class="chapter" data-level="B.10" data-path="extra-reading.html"><a href="extra-reading.html#advanced-reading-background-other-recommends"><i class="fa fa-check"></i><b>B.10</b> Advanced Reading, Background &amp; Other Recommends<span></span></a></li>
-<li class="chapter" data-level="B.11" data-path="extra-reading.html"><a href="extra-reading.html#pedagogy"><i class="fa fa-check"></i><b>B.11</b> Pedagogy<span></span></a></li>
+<li class="chapter" data-level="8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html"><i class="fa fa-check"></i><b>8</b> ssh and the command line</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#launching-the-terminal"><i class="fa fa-check"></i><b>8.1</b> Launching the Terminal</a></li>
+<li class="chapter" data-level="8.2" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#changing-folders-navigating-the-directory-tree"><i class="fa fa-check"></i><b>8.2</b> Changing folders (‘navigating the directory tree’)</a></li>
+<li class="chapter" data-level="8.3" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#networking"><i class="fa fa-check"></i><b>8.3</b> Networking</a></li>
+<li class="chapter" data-level="8.4" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#ping"><i class="fa fa-check"></i><b>8.4</b> Ping</a></li>
+<li class="chapter" data-level="8.5" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#remote-access-using-ssh"><i class="fa fa-check"></i><b>8.5</b> Remote access using SSH</a></li>
+<li class="chapter" data-level="8.6" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#find-files-run-files-copy-files"><i class="fa fa-check"></i><b>8.6</b> Find files, run files, copy files</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#switches"><i class="fa fa-check"></i><b>8.6.1</b> switches</a></li>
 </ul></li>
-<li class="chapter" data-level="C" data-path="notes.html"><a href="notes.html"><i class="fa fa-check"></i><b>C</b> Notes<span></span></a><ul>
-<li class="chapter" data-level="C.1" data-path="notes.html"><a href="notes.html#credit"><i class="fa fa-check"></i><b>C.1</b> Credit<span></span></a></li>
-<li class="chapter" data-level="C.2" data-path="notes.html"><a href="notes.html#colophon"><i class="fa fa-check"></i><b>C.2</b> Colophon<span></span></a></li>
-<li class="chapter" data-level="C.3" data-path="notes.html"><a href="notes.html#data-science-sheffield"><i class="fa fa-check"></i><b>C.3</b> Data Science @ Sheffield<span></span></a></li>
-<li class="chapter" data-level="C.4" data-path="notes.html"><a href="notes.html#careers"><i class="fa fa-check"></i><b>C.4</b> Careers<span></span></a></li>
-<li class="chapter" data-level="C.5" data-path="notes.html"><a href="notes.html#testimonials"><i class="fa fa-check"></i><b>C.5</b> Testimonials<span></span></a></li>
+<li class="chapter" data-level="8.7" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#exercises-4"><i class="fa fa-check"></i><b>8.7</b> Exercises</a></li>
+<li class="chapter" data-level="8.8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#checklist-6"><i class="fa fa-check"></i><b>8.8</b> Checklist</a></li>
+<li class="chapter" data-level="8.9" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#resources-7"><i class="fa fa-check"></i><b>8.9</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="D" data-path="class-of-2020.html"><a href="class-of-2020.html"><i class="fa fa-check"></i><b>D</b> Class of 2020<span></span></a><ul>
-<li class="chapter" data-level="D.1" data-path="class-of-2020.html"><a href="class-of-2020.html#feedback"><i class="fa fa-check"></i><b>D.1</b> Feedback<span></span></a></li>
+<li class="chapter" data-level="9" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>9</b> Git and Github</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="git-and-github.html"><a href="git-and-github.html#motivation-1"><i class="fa fa-check"></i><b>9.1</b> Motivation</a></li>
+<li class="chapter" data-level="9.2" data-path="git-and-github.html"><a href="git-and-github.html#before-the-class"><i class="fa fa-check"></i><b>9.2</b> Before the class</a></li>
+<li class="chapter" data-level="9.3" data-path="git-and-github.html"><a href="git-and-github.html#accessing-git"><i class="fa fa-check"></i><b>9.3</b> Accessing git</a></li>
+<li class="chapter" data-level="9.4" data-path="git-and-github.html"><a href="git-and-github.html#resources-for-the-class"><i class="fa fa-check"></i><b>9.4</b> Resources for the class</a></li>
+<li class="chapter" data-level="9.5" data-path="git-and-github.html"><a href="git-and-github.html#checklist-7"><i class="fa fa-check"></i><b>9.5</b> Checklist</a></li>
+<li class="chapter" data-level="9.6" data-path="git-and-github.html"><a href="git-and-github.html#resources-8"><i class="fa fa-check"></i><b>9.6</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="E" data-path="class-of-2021.html"><a href="class-of-2021.html"><i class="fa fa-check"></i><b>E</b> Class of 2021<span></span></a><ul>
-<li class="chapter" data-level="E.1" data-path="class-of-2021.html"><a href="class-of-2021.html#feedback-1"><i class="fa fa-check"></i><b>E.1</b> Feedback<span></span></a></li>
+<li class="chapter" data-level="10" data-path="publishing.html"><a href="publishing.html"><i class="fa fa-check"></i><b>10</b> Publishing</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="publishing.html"><a href="publishing.html#sharing-your-rmd-files-via-github-pages"><i class="fa fa-check"></i><b>10.1</b> Sharing your Rmd files via Github pages</a></li>
+<li class="chapter" data-level="10.2" data-path="publishing.html"><a href="publishing.html#other-sharing-options"><i class="fa fa-check"></i><b>10.2</b> Other sharing options</a></li>
+<li class="chapter" data-level="10.3" data-path="publishing.html"><a href="publishing.html#checklist-8"><i class="fa fa-check"></i><b>10.3</b> Checklist</a></li>
+<li class="chapter" data-level="10.4" data-path="publishing.html"><a href="publishing.html#resources-9"><i class="fa fa-check"></i><b>10.4</b> Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="advanced-topics.html"><a href="advanced-topics.html"><i class="fa fa-check"></i>Advanced Topics</a>
+<ul>
+<li class="chapter" data-level="10.5" data-path="advanced-topics.html"><a href="advanced-topics.html#section"><i class="fa fa-check"></i><b>10.5</b> 2022</a></li>
+<li class="chapter" data-level="10.6" data-path="advanced-topics.html"><a href="advanced-topics.html#section-1"><i class="fa fa-check"></i><b>10.6</b> 2021</a></li>
+<li class="chapter" data-level="10.7" data-path="advanced-topics.html"><a href="advanced-topics.html#other-topicsresources"><i class="fa fa-check"></i><b>10.7</b> Other topics/resources</a></li>
+<li class="chapter" data-level="10.8" data-path="advanced-topics.html"><a href="advanced-topics.html#reproducibility"><i class="fa fa-check"></i><b>10.8</b> Reproducibility</a></li>
+<li class="chapter" data-level="10.9" data-path="advanced-topics.html"><a href="advanced-topics.html#general-righteousness"><i class="fa fa-check"></i><b>10.9</b> General righteousness</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html"><i class="fa fa-check"></i>- Interactive graphs with Shiny</a>
+<ul>
+<li class="chapter" data-level="10.10" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#before-class"><i class="fa fa-check"></i><b>10.10</b> Before class</a></li>
+<li class="chapter" data-level="10.11" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#exercises-5"><i class="fa fa-check"></i><b>10.11</b> Exercises</a></li>
+<li class="chapter" data-level="10.12" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#resources-10"><i class="fa fa-check"></i><b>10.12</b> Resources</a></li>
+<li class="chapter" data-level="10.13" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#examples-of-interactive-graphs-which-use-different-tech-javascript"><i class="fa fa-check"></i><b>10.13</b> Examples of interactive graphs which use different tech (Javascript!)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="animated-plots-with-gganimate.html"><a href="animated-plots-with-gganimate.html"><i class="fa fa-check"></i>- Animated plots with gganimate</a>
+<ul>
+<li class="chapter" data-level="10.14" data-path="animated-plots-with-gganimate.html"><a href="animated-plots-with-gganimate.html#exercises-6"><i class="fa fa-check"></i><b>10.14</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="database-queries-sql.html"><a href="database-queries-sql.html"><i class="fa fa-check"></i>- Database queries: SQL</a>
+<ul>
+<li class="chapter" data-level="10.15" data-path="database-queries-sql.html"><a href="database-queries-sql.html#context"><i class="fa fa-check"></i><b>10.15</b> Context</a></li>
+<li class="chapter" data-level="10.16" data-path="database-queries-sql.html"><a href="database-queries-sql.html#key-information"><i class="fa fa-check"></i><b>10.16</b> Key information</a></li>
+<li class="chapter" data-level="10.17" data-path="database-queries-sql.html"><a href="database-queries-sql.html#exercises-7"><i class="fa fa-check"></i><b>10.17</b> Exercises</a></li>
+<li class="chapter" data-level="10.18" data-path="database-queries-sql.html"><a href="database-queries-sql.html#checklist-9"><i class="fa fa-check"></i><b>10.18</b> Checklist</a></li>
+<li class="chapter" data-level="10.19" data-path="database-queries-sql.html"><a href="database-queries-sql.html#resources-11"><i class="fa fa-check"></i><b>10.19</b> Resources</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i>- Python</a>
+<ul>
+<li class="chapter" data-level="10.20" data-path="python.html"><a href="python.html#motivation-2"><i class="fa fa-check"></i><b>10.20</b> Motivation</a></li>
+<li class="chapter" data-level="10.21" data-path="python.html"><a href="python.html#a-worked-example"><i class="fa fa-check"></i><b>10.21</b> A worked example</a></li>
+<li class="chapter" data-level="10.22" data-path="python.html"><a href="python.html#preparation"><i class="fa fa-check"></i><b>10.22</b> Preparation</a></li>
+<li class="chapter" data-level="10.23" data-path="python.html"><a href="python.html#in-class"><i class="fa fa-check"></i><b>10.23</b> In class</a></li>
+<li class="chapter" data-level="10.24" data-path="python.html"><a href="python.html#after-class"><i class="fa fa-check"></i><b>10.24</b> After class</a></li>
+</ul></li>
+<li class="appendix"><span><b>Appendices</b></span></li>
+<li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes</a>
+<ul>
+<li class="chapter" data-level="A.1" data-path="class-notes.html"><a href="class-notes.html#ask-me-questions"><i class="fa fa-check"></i><b>A.1</b> Ask me questions</a></li>
+<li class="chapter" data-level="A.2" data-path="class-notes.html"><a href="class-notes.html#terminology-raw-data"><i class="fa fa-check"></i><b>A.2</b> Terminology: ‘Raw data’</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading</a>
+<ul>
+<li class="chapter" data-level="B.1" data-path="extra-reading.html"><a href="extra-reading.html#visualisation-theory"><i class="fa fa-check"></i><b>B.1</b> Visualisation (theory)</a></li>
+<li class="chapter" data-level="B.2" data-path="extra-reading.html"><a href="extra-reading.html#the-reproducibility-crisis"><i class="fa fa-check"></i><b>B.2</b> The Reproducibility Crisis</a></li>
+<li class="chapter" data-level="B.3" data-path="extra-reading.html"><a href="extra-reading.html#better-practice"><i class="fa fa-check"></i><b>B.3</b> Better practice</a></li>
+<li class="chapter" data-level="B.4" data-path="extra-reading.html"><a href="extra-reading.html#project-organisation-1"><i class="fa fa-check"></i><b>B.4</b> Project organisation</a></li>
+<li class="chapter" data-level="B.5" data-path="extra-reading.html"><a href="extra-reading.html#coding"><i class="fa fa-check"></i><b>B.5</b> Coding</a></li>
+<li class="chapter" data-level="B.6" data-path="extra-reading.html"><a href="extra-reading.html#r"><i class="fa fa-check"></i><b>B.6</b> R</a>
+<ul>
+<li class="chapter" data-level="B.6.1" data-path="extra-reading.html"><a href="extra-reading.html#hints"><i class="fa fa-check"></i><b>B.6.1</b> Hints</a></li>
+<li class="chapter" data-level="B.6.2" data-path="extra-reading.html"><a href="extra-reading.html#courses-books"><i class="fa fa-check"></i><b>B.6.2</b> Courses / books</a></li>
+</ul></li>
+<li class="chapter" data-level="B.7" data-path="extra-reading.html"><a href="extra-reading.html#making-graphs-practice"><i class="fa fa-check"></i><b>B.7</b> Making graphs (practice)</a></li>
+<li class="chapter" data-level="B.8" data-path="extra-reading.html"><a href="extra-reading.html#presentations"><i class="fa fa-check"></i><b>B.8</b> Presentations</a></li>
+<li class="chapter" data-level="B.9" data-path="extra-reading.html"><a href="extra-reading.html#statistics"><i class="fa fa-check"></i><b>B.9</b> Statistics</a></li>
+<li class="chapter" data-level="B.10" data-path="extra-reading.html"><a href="extra-reading.html#advanced-reading-background-other-recommends"><i class="fa fa-check"></i><b>B.10</b> Advanced Reading, Background &amp; Other Recommends</a></li>
+<li class="chapter" data-level="B.11" data-path="extra-reading.html"><a href="extra-reading.html#pedagogy"><i class="fa fa-check"></i><b>B.11</b> Pedagogy</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="notes.html"><a href="notes.html"><i class="fa fa-check"></i><b>C</b> Notes</a>
+<ul>
+<li class="chapter" data-level="C.1" data-path="notes.html"><a href="notes.html#credit"><i class="fa fa-check"></i><b>C.1</b> Credit</a></li>
+<li class="chapter" data-level="C.2" data-path="notes.html"><a href="notes.html#colophon"><i class="fa fa-check"></i><b>C.2</b> Colophon</a></li>
+<li class="chapter" data-level="C.3" data-path="notes.html"><a href="notes.html#data-science-sheffield"><i class="fa fa-check"></i><b>C.3</b> Data Science @ Sheffield</a></li>
+<li class="chapter" data-level="C.4" data-path="notes.html"><a href="notes.html#careers"><i class="fa fa-check"></i><b>C.4</b> Careers</a></li>
+<li class="chapter" data-level="C.5" data-path="notes.html"><a href="notes.html#testimonials"><i class="fa fa-check"></i><b>C.5</b> Testimonials</a></li>
+</ul></li>
+<li class="chapter" data-level="D" data-path="class-of-2020.html"><a href="class-of-2020.html"><i class="fa fa-check"></i><b>D</b> Class of 2020</a>
+<ul>
+<li class="chapter" data-level="D.1" data-path="class-of-2020.html"><a href="class-of-2020.html#feedback"><i class="fa fa-check"></i><b>D.1</b> Feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="E" data-path="class-of-2021.html"><a href="class-of-2021.html"><i class="fa fa-check"></i><b>E</b> Class of 2021</a>
+<ul>
+<li class="chapter" data-level="E.1" data-path="class-of-2021.html"><a href="class-of-2021.html#feedback-1"><i class="fa fa-check"></i><b>E.1</b> Feedback</a></li>
+</ul></li>
+<li class="chapter" data-level="F" data-path="class-of-2022.html"><a href="class-of-2022.html"><i class="fa fa-check"></i><b>F</b> Class of 2022</a>
+<ul>
+<li class="chapter" data-level="F.1" data-path="class-of-2022.html"><a href="class-of-2022.html#advice-for-future-students"><i class="fa fa-check"></i><b>F.1</b> Advice for future students</a></li>
+<li class="chapter" data-level="F.2" data-path="class-of-2022.html"><a href="class-of-2022.html#feedback-2"><i class="fa fa-check"></i><b>F.2</b> Feedback</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" 
@@ -352,70 +391,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="coding-principles" class="section level1 hasAnchor">
+<div id="coding-principles" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Coding Principles<a href="coding-principles.html#coding-principles" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This class is about two kinds of fundamental principles of coding. The first is fundamental methods of making code do what you want - if statement, loops, functions. The second is fundamental principles of good code. Although we are using R, all programming languages use similar methods (although the exact syntax differs), and the principles of good code will also apply across languages.</p>
 <p>As well demonstrating these fundamentals, these pages also introduce the vocabulary used to discuss them. Knowing the vocabulary helps because it means you know what terms to use when searching for solutions to problems you have.</p>
-<div id="fundamental-methods" class="section level2 hasAnchor">
+<div id="fundamental-methods" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Fundamental methods<a href="coding-principles.html#fundamental-methods" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
 <li><a href="coding-principles.html#if">if statements</a></li>
 <li><a href="coding-principles.html#loops">loops</a></li>
 <li><a href="coding-principles.html#functions">functions</a></li>
 </ol>
-<div id="if" class="section level3 hasAnchor">
+<div id="if" class="section level3 hasAnchor" number="6.1.1">
 <h3><span class="header-section-number">6.1.1</span> If statements<a href="coding-principles.html#if" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>So far we have written simple scripts that do things in order, top to bottom</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></a>
-<a class="sourceLine" id="cb1-2" title="2">a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></a>
-<a class="sourceLine" id="cb1-3" title="3"><span class="kw">print</span>(a) <span class="co"># output the result</span></a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="coding-principles.html#cb1-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb1-2"><a href="coding-principles.html#cb1-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb1-3"><a href="coding-principles.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(a) <span class="co"># output the result</span></span></code></pre></div>
 <pre><code>## [1] 2</code></pre>
 <p>The first block above is the code, the second block (the lines which start with <code>##</code>) is the output.</p>
-<p>Changing which statements are run is called “flow control”. An “If statement” is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></a>
-<a class="sourceLine" id="cb3-2" title="2">a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></a>
-<a class="sourceLine" id="cb3-4" title="4">  {<span class="kw">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></a></code></pre></div>
+<p>Changing which statements are run is called “flow control.” An “If statement” is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="coding-principles.html#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb3-2"><a href="coding-principles.html#cb3-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb3-3"><a href="coding-principles.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(a<span class="sc">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
+<span id="cb3-4"><a href="coding-principles.html#cb3-4" aria-hidden="true" tabindex="-1"></a>  {<span class="fu">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></span></code></pre></div>
 <p>Notice there is no output. Copy the code to your own computer and run it. Now change the first line to <code>a &lt;- 9</code> and run it again.</p>
 <p>An If statement defines a branch in the flow of a script. The default can be nothing happening, but sometimes you want to define two alternatives. You can do this with an “If…else…statement”</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">a &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co"># define a variable</span></a>
-<a class="sourceLine" id="cb4-2" title="2">a &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co">#add 1</span></a>
-<a class="sourceLine" id="cb4-3" title="3"><span class="cf">if</span>(a<span class="op">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></a>
-<a class="sourceLine" id="cb4-4" title="4">  <span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span></a>
-<a class="sourceLine" id="cb4-5" title="5">} <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb4-6" title="6">  {<span class="kw">print</span>(<span class="kw">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span></a>
-<a class="sourceLine" id="cb4-7" title="7">}</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="coding-principles.html#cb4-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb4-2"><a href="coding-principles.html#cb4-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb4-3"><a href="coding-principles.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(a<span class="sc">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
+<span id="cb4-4"><a href="coding-principles.html#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span></span>
+<span id="cb4-5"><a href="coding-principles.html#cb4-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb4-6"><a href="coding-principles.html#cb4-6" aria-hidden="true" tabindex="-1"></a>  {<span class="fu">print</span>(<span class="fu">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span></span>
+<span id="cb4-7"><a href="coding-principles.html#cb4-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <pre><code>## [1] &quot;2  is equal or less than 4&quot;</code></pre>
 <p>You can actually have as many branches as you like, defining a series of test_expressions, like this</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">type_of_thing &lt;-<span class="st"> &#39;&#39;</span> </a>
-<a class="sourceLine" id="cb6-2" title="2"><span class="kw">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)</a>
-<a class="sourceLine" id="cb6-3" title="3"><span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Murders&#39;</span>){</a>
-<a class="sourceLine" id="cb6-4" title="4">  <span class="kw">print</span>(<span class="st">&quot;yes&quot;</span>)</a>
-<a class="sourceLine" id="cb6-5" title="5">} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="op">==</span><span class="st">&#39;Dollars&#39;</span>){</a>
-<a class="sourceLine" id="cb6-6" title="6">  <span class="kw">print</span>(<span class="st">&quot;no&quot;</span>)</a>
-<a class="sourceLine" id="cb6-7" title="7">} <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb6-8" title="8">  <span class="kw">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)</a>
-<a class="sourceLine" id="cb6-9" title="9">}</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="coding-principles.html#cb6-1" aria-hidden="true" tabindex="-1"></a>type_of_thing <span class="ot">&lt;-</span> <span class="st">&#39;&#39;</span> </span>
+<span id="cb6-2"><a href="coding-principles.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)</span>
+<span id="cb6-3"><a href="coding-principles.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (type_of_thing<span class="sc">==</span><span class="st">&#39;Murders&#39;</span>){</span>
+<span id="cb6-4"><a href="coding-principles.html#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;yes&quot;</span>)</span>
+<span id="cb6-5"><a href="coding-principles.html#cb6-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="sc">==</span><span class="st">&#39;Dollars&#39;</span>){</span>
+<span id="cb6-6"><a href="coding-principles.html#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;no&quot;</span>)</span>
+<span id="cb6-7"><a href="coding-principles.html#cb6-7" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb6-8"><a href="coding-principles.html#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)</span>
+<span id="cb6-9"><a href="coding-principles.html#cb6-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <pre><code>## [1] &quot;Is four a lot?&quot;
 ## [1] &quot;Depends on the context&quot;</code></pre>
 </div>
-<div id="loops" class="section level3 hasAnchor">
+<div id="loops" class="section level3 hasAnchor" number="6.1.2">
 <h3><span class="header-section-number">6.1.2</span> Loops<a href="coding-principles.html#loops" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Loops repeat, either iterating over a set values, like this:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">5</span>){</a>
-<a class="sourceLine" id="cb8-2" title="2"><span class="kw">print</span>(i)</a>
-<a class="sourceLine" id="cb8-3" title="3">}</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="coding-principles.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb8-2"><a href="coding-principles.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(i)</span>
+<span id="cb8-3"><a href="coding-principles.html#cb8-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <pre><code>## [1] 1
 ## [1] 2
 ## [1] 3
 ## [1] 4
 ## [1] 5</code></pre>
 <p>Or until some condition is met</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1">i &lt;-<span class="st"> </span><span class="dv">1</span> <span class="co">#need to initialise a starting value</span></a>
-<a class="sourceLine" id="cb10-2" title="2"><span class="cf">while</span>(i<span class="op">&lt;</span><span class="dv">6</span>){</a>
-<a class="sourceLine" id="cb10-3" title="3">  <span class="kw">print</span>(i)</a>
-<a class="sourceLine" id="cb10-4" title="4">  i &lt;-<span class="st"> </span>i <span class="op">+</span><span class="st"> </span><span class="dv">1</span> <span class="co"># increment the value of the counter</span></a>
-<a class="sourceLine" id="cb10-5" title="5">}</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="coding-principles.html#cb10-1" aria-hidden="true" tabindex="-1"></a>i <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co">#need to initialise a starting value</span></span>
+<span id="cb10-2"><a href="coding-principles.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>(i<span class="sc">&lt;</span><span class="dv">6</span>){</span>
+<span id="cb10-3"><a href="coding-principles.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
+<span id="cb10-4"><a href="coding-principles.html#cb10-4" aria-hidden="true" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">+</span> <span class="dv">1</span> <span class="co"># increment the value of the counter</span></span>
+<span id="cb10-5"><a href="coding-principles.html#cb10-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <pre><code>## [1] 1
 ## [1] 2
 ## [1] 3
@@ -423,67 +462,67 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [1] 5</code></pre>
 <p>Note that this second version, a “while loop” uses a test expression just like an if statement</p>
 <p>Loops are useful wherever you might want to repeat some operation.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1">years &lt;-<span class="st"> </span><span class="dv">10</span> <span class="co">#how many years since you started saving</span></a>
-<a class="sourceLine" id="cb12-2" title="2">savings &lt;-<span class="dv">100</span> <span class="co">#how much you start with</span></a>
-<a class="sourceLine" id="cb12-3" title="3">interest &lt;-<span class="st"> </span><span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span></a>
-<a class="sourceLine" id="cb12-4" title="4"><span class="co">#Calculate using a loop</span></a>
-<a class="sourceLine" id="cb12-5" title="5"><span class="cf">for</span> (year <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>years){</a>
-<a class="sourceLine" id="cb12-6" title="6">  savings&lt;-savings<span class="op">*</span>interest</a>
-<a class="sourceLine" id="cb12-7" title="7">}</a>
-<a class="sourceLine" id="cb12-8" title="8"><span class="kw">print</span>(<span class="kw">paste</span>(<span class="st">&quot;After&quot;</span>, years, <span class="st">&quot;years you will have £&quot;</span>, <span class="kw">round</span>(savings,<span class="dv">2</span>))) <span class="co">#save more, kids</span></a></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="coding-principles.html#cb12-1" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="co">#how many years since you started saving</span></span>
+<span id="cb12-2"><a href="coding-principles.html#cb12-2" aria-hidden="true" tabindex="-1"></a>savings <span class="ot">&lt;-</span><span class="dv">100</span> <span class="co">#how much you start with</span></span>
+<span id="cb12-3"><a href="coding-principles.html#cb12-3" aria-hidden="true" tabindex="-1"></a>interest <span class="ot">&lt;-</span> <span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span></span>
+<span id="cb12-4"><a href="coding-principles.html#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate using a loop</span></span>
+<span id="cb12-5"><a href="coding-principles.html#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (year <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>years){</span>
+<span id="cb12-6"><a href="coding-principles.html#cb12-6" aria-hidden="true" tabindex="-1"></a>  savings<span class="ot">&lt;-</span>savings<span class="sc">*</span>interest</span>
+<span id="cb12-7"><a href="coding-principles.html#cb12-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-8"><a href="coding-principles.html#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;After&quot;</span>, years, <span class="st">&quot;years you will have £&quot;</span>, <span class="fu">round</span>(savings,<span class="dv">2</span>))) <span class="co">#save more, kids</span></span></code></pre></div>
 <pre><code>## [1] &quot;After 10 years you will have £ 162.89&quot;</code></pre>
 <p>Lots of people advise against using loops because they are can be slow and it isn’t always obvious what they are doing. Alternatives often exist, like vectorisation:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" title="1">years &lt;-<span class="st"> </span><span class="dv">20</span> <span class="co">#how many years since you started saving</span></a>
-<a class="sourceLine" id="cb14-2" title="2">savings &lt;-<span class="dv">100</span> <span class="co">#how much you start with</span></a>
-<a class="sourceLine" id="cb14-3" title="3">interest &lt;-<span class="st"> </span><span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span></a>
-<a class="sourceLine" id="cb14-4" title="4"><span class="co">#Calculate using a vector</span></a>
-<a class="sourceLine" id="cb14-5" title="5">total_at_each_year=savings<span class="op">*</span>interest<span class="op">**</span>(<span class="dv">1</span><span class="op">:</span>years) <span class="co">#rather than a loop all the answer values are stored in a single vector</span></a>
-<a class="sourceLine" id="cb14-6" title="6"><span class="co">#plot(total_at_each_year,xlab=&quot;years&quot;) #bonus! We can plot, since we now have all the intervening values saved</span></a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="coding-principles.html#cb14-1" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co">#how many years since you started saving</span></span>
+<span id="cb14-2"><a href="coding-principles.html#cb14-2" aria-hidden="true" tabindex="-1"></a>savings <span class="ot">&lt;-</span><span class="dv">100</span> <span class="co">#how much you start with</span></span>
+<span id="cb14-3"><a href="coding-principles.html#cb14-3" aria-hidden="true" tabindex="-1"></a>interest <span class="ot">&lt;-</span> <span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span></span>
+<span id="cb14-4"><a href="coding-principles.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate using a vector</span></span>
+<span id="cb14-5"><a href="coding-principles.html#cb14-5" aria-hidden="true" tabindex="-1"></a>total_at_each_year<span class="ot">=</span>savings<span class="sc">*</span>interest<span class="sc">**</span>(<span class="dv">1</span><span class="sc">:</span>years) <span class="co">#rather than a loop all the answer values are stored in a single vector</span></span>
+<span id="cb14-6"><a href="coding-principles.html#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(total_at_each_year,xlab=&quot;years&quot;) #bonus! We can plot, since we now have all the intervening values saved</span></span></code></pre></div>
 <p>The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation.</p>
 </div>
-<div id="functions" class="section level3 hasAnchor">
+<div id="functions" class="section level3 hasAnchor" number="6.1.3">
 <h3><span class="header-section-number">6.1.3</span> Functions<a href="coding-principles.html#functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Functions take in values (called “arguments”), do something with them, and give a value or values back in return. You have already used functions, for example the mean function</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1">my_nums &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">78</span>,<span class="dv">12</span>,<span class="dv">32</span>,<span class="dv">24</span>,<span class="dv">03</span>,<span class="dv">89</span>) <span class="co">#just a vector of some numbers</span></a>
-<a class="sourceLine" id="cb15-2" title="2"><span class="kw">mean</span>(my_nums) <span class="co">#use the mean function to find the average</span></a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="coding-principles.html#cb15-1" aria-hidden="true" tabindex="-1"></a>my_nums <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">78</span>,<span class="dv">12</span>,<span class="dv">32</span>,<span class="dv">24</span>,<span class="dv">03</span>,<span class="dv">89</span>) <span class="co">#just a vector of some numbers</span></span>
+<span id="cb15-2"><a href="coding-principles.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(my_nums) <span class="co">#use the mean function to find the average</span></span></code></pre></div>
 <pre><code>## [1] 39.66667</code></pre>
 <p>Functions always do the same thing, but give different results depending on the inputs (depending on the “arguments you pass to the function”).</p>
 <p>You can write your own functions, and then use them (“call them”) again and again. Here is the general form of a function</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" title="1">myfunctionname &lt;-<span class="st"> </span><span class="cf">function</span>(input_value) {</a>
-<a class="sourceLine" id="cb17-2" title="2"><span class="co"># comment line helpfully explaining what the function does</span></a>
-<a class="sourceLine" id="cb17-3" title="3">output_value &lt;-<span class="st"> </span>input_value <span class="co">#lines of code which do something to the input to produce the output</span></a>
-<a class="sourceLine" id="cb17-4" title="4"><span class="kw">return</span>(output_value)</a>
-<a class="sourceLine" id="cb17-5" title="5">}</a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="coding-principles.html#cb17-1" aria-hidden="true" tabindex="-1"></a>myfunctionname <span class="ot">&lt;-</span> <span class="cf">function</span>(input_value) {</span>
+<span id="cb17-2"><a href="coding-principles.html#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># comment line helpfully explaining what the function does</span></span>
+<span id="cb17-3"><a href="coding-principles.html#cb17-3" aria-hidden="true" tabindex="-1"></a>output_value <span class="ot">&lt;-</span> input_value <span class="co">#lines of code which do something to the input to produce the output</span></span>
+<span id="cb17-4"><a href="coding-principles.html#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(output_value)</span>
+<span id="cb17-5"><a href="coding-principles.html#cb17-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>Note a couple of things: when you run this code it does not produce any output, but a new object appears in the “global environment” window, top right. Like a variable, your function is now stored in the memory of the current R session.</p>
 <p>You can call this function now. If you close R you’ll need to define the function again by running the above code again (other functions are inbuilt, like <code>mean</code> and are loaded at startup, or when you use the <code>library</code> command to load a set of functions).</p>
 <p>Now, when we call the function, we pass actual values.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">myfunctionname</span>(<span class="dv">3</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="coding-principles.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">myfunctionname</span>(<span class="dv">3</span>)</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
 <p>Let’s make our function slightly more complicated</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" title="1">outcheck &lt;-<span class="st"> </span><span class="cf">function</span>(val,threshold) {</a>
-<a class="sourceLine" id="cb20-2" title="2"><span class="co"># outlier checker</span></a>
-<a class="sourceLine" id="cb20-3" title="3"><span class="cf">if</span>(val<span class="op">&lt;</span>threshold){</a>
-<a class="sourceLine" id="cb20-4" title="4">  output_value &lt;-<span class="st"> </span>val <span class="co">#if value is below theshold return that value</span></a>
-<a class="sourceLine" id="cb20-5" title="5">} <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb20-6" title="6">  output_value &lt;-<span class="st"> </span><span class="ot">NA</span> <span class="co">#otherwise, return NaN</span></a>
-<a class="sourceLine" id="cb20-7" title="7">}</a>
-<a class="sourceLine" id="cb20-8" title="8"><span class="kw">return</span>(output_value)</a>
-<a class="sourceLine" id="cb20-9" title="9">}</a></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="coding-principles.html#cb20-1" aria-hidden="true" tabindex="-1"></a>outcheck <span class="ot">&lt;-</span> <span class="cf">function</span>(val,threshold) {</span>
+<span id="cb20-2"><a href="coding-principles.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># outlier checker</span></span>
+<span id="cb20-3"><a href="coding-principles.html#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(val<span class="sc">&lt;</span>threshold){</span>
+<span id="cb20-4"><a href="coding-principles.html#cb20-4" aria-hidden="true" tabindex="-1"></a>  output_value <span class="ot">&lt;-</span> val <span class="co">#if value is below theshold return that value</span></span>
+<span id="cb20-5"><a href="coding-principles.html#cb20-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb20-6"><a href="coding-principles.html#cb20-6" aria-hidden="true" tabindex="-1"></a>  output_value <span class="ot">&lt;-</span> <span class="cn">NA</span> <span class="co">#otherwise, return NaN</span></span>
+<span id="cb20-7"><a href="coding-principles.html#cb20-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb20-8"><a href="coding-principles.html#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(output_value)</span>
+<span id="cb20-9"><a href="coding-principles.html#cb20-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>This function takes two input values, and returns a single value which depends on the relation between the two</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">outcheck</span>(<span class="dv">3</span>,<span class="dv">5</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="coding-principles.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">3</span>,<span class="dv">5</span>)</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="coding-principles.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>)</span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
-<div id="a-note-about-scope" class="section level4 hasAnchor">
+<div id="a-note-about-scope" class="section level4 hasAnchor" number="6.1.3.1">
 <h4><span class="header-section-number">6.1.3.1</span> A note about scope<a href="coding-principles.html#a-note-about-scope" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Variables within functions are kept ‘inside’ the functions (within the “scope” of the function). Once you pass a value to a function is acquires the label set in the function definition. Variables defined within the function don’t persist outside of it (they don’t affect the “global environment”)</p>
 <p>So, for example, it doesn’t matter if you have another variable called <code>threshold</code>, the threshold within the function is set by the second value passed it. Like this:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" title="1">threshold &lt;-<span class="st"> </span><span class="dv">100</span></a>
-<a class="sourceLine" id="cb25-2" title="2"><span class="kw">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>) <span class="co">#returns NA because 7 is higher than 5</span></a></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="coding-principles.html#cb25-1" aria-hidden="true" tabindex="-1"></a>threshold <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb25-2"><a href="coding-principles.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>) <span class="co">#returns NA because 7 is higher than 5</span></span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
 </div>
 </div>
-<div id="exercises-1-1" class="section level3 hasAnchor">
+<div id="exercises-1-1" class="section level3 hasAnchor" number="6.1.4">
 <h3><span class="header-section-number">6.1.4</span> Exercises 1<a href="coding-principles.html#exercises-1-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Write an if…else statement that prints “ODD” if the number is odd, “EVEN” if the number is even (hint: you might use the remainder function %% (try 4%%2 to see how much is left when you divide 4 by 2)</li>
@@ -492,7 +531,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Write a loop which counts from 1 to 100 and applies the fizzbuzz function to each number</li>
 </ul>
 </div>
-<div id="more" class="section level3 hasAnchor">
+<div id="more" class="section level3 hasAnchor" number="6.1.5">
 <h3><span class="header-section-number">6.1.5</span> More<a href="coding-principles.html#more" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Lisa DeBruine, &amp; Dale Barr. (2019, December 5). Data Skills for Reproducible Science (Version 1.0.0). Zenodo. <a href="http://doi.org/10.5281/zenodo.3564555" class="uri">http://doi.org/10.5281/zenodo.3564555</a>: <a href="https://psyteachr.github.io/msc-data-skills/func.html">Iterations &amp; Functions</a></li>
@@ -500,157 +539,157 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 </div>
 </div>
-<div id="fundamental-principles-of-good-code" class="section level2 hasAnchor">
+<div id="fundamental-principles-of-good-code" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> Fundamental principles of good code<a href="coding-principles.html#fundamental-principles-of-good-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="readability-matters" class="section level3 hasAnchor">
+<div id="readability-matters" class="section level3 hasAnchor" number="6.2.1">
 <h3><span class="header-section-number">6.2.1</span> Readability Matters<a href="coding-principles.html#readability-matters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Your most important collaborator is you from six months ago, and they don’t answer email.</p>
 <p>Good code doesn’t just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).</p>
 <p>To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing.
 Look at this function, it hard to understand, right?</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" title="1">pf &lt;-<span class="st"> </span><span class="cf">function</span>(n){ p=<span class="dv">1</span> ; <span class="cf">if</span> (n<span class="op">&gt;</span><span class="dv">1</span>){ i =<span class="st"> </span><span class="dv">2</span>; <span class="cf">while</span>( (i<span class="op">&lt;</span>(n<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(p<span class="op">==</span><span class="dv">1</span>) ) {<span class="cf">if</span> (n<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) p=<span class="dv">0</span>; i=i<span class="op">+</span><span class="dv">1</span> }  } <span class="cf">else</span> {p=<span class="dv">0</span> }; <span class="kw">return</span>(p) }</a></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="coding-principles.html#cb27-1" aria-hidden="true" tabindex="-1"></a>pf <span class="ot">&lt;-</span> <span class="cf">function</span>(n){ p<span class="ot">=</span><span class="dv">1</span> ; <span class="cf">if</span> (n<span class="sc">&gt;</span><span class="dv">1</span>){ i <span class="ot">=</span> <span class="dv">2</span>; <span class="cf">while</span>( (i<span class="sc">&lt;</span>(n<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (p<span class="sc">==</span><span class="dv">1</span>) ) {<span class="cf">if</span> (n<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) p<span class="ot">=</span><span class="dv">0</span>; i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> }  } <span class="cf">else</span> {p<span class="ot">=</span><span class="dv">0</span> }; <span class="fu">return</span>(p) }</span></code></pre></div>
 <p>This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won’t understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).</p>
 <p>Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" title="1">pf &lt;-<span class="st"> </span><span class="cf">function</span>(n){</a>
-<a class="sourceLine" id="cb28-2" title="2">  p=<span class="dv">1</span></a>
-<a class="sourceLine" id="cb28-3" title="3">  <span class="cf">if</span> (n<span class="op">&gt;</span><span class="dv">1</span>){ </a>
-<a class="sourceLine" id="cb28-4" title="4">    i =<span class="st"> </span><span class="dv">2</span> </a>
-<a class="sourceLine" id="cb28-5" title="5">      <span class="cf">while</span>( (i<span class="op">&lt;</span>(n<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(p<span class="op">==</span><span class="dv">1</span>) ) {</a>
-<a class="sourceLine" id="cb28-6" title="6">        <span class="cf">if</span> (n<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) {</a>
-<a class="sourceLine" id="cb28-7" title="7">          p=<span class="dv">0</span></a>
-<a class="sourceLine" id="cb28-8" title="8">        }</a>
-<a class="sourceLine" id="cb28-9" title="9">        i=i<span class="op">+</span><span class="dv">1</span></a>
-<a class="sourceLine" id="cb28-10" title="10">      }</a>
-<a class="sourceLine" id="cb28-11" title="11">  } <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb28-12" title="12">    p=<span class="dv">0</span></a>
-<a class="sourceLine" id="cb28-13" title="13">  }</a>
-<a class="sourceLine" id="cb28-14" title="14">  <span class="kw">return</span>(p)</a>
-<a class="sourceLine" id="cb28-15" title="15">}</a></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="coding-principles.html#cb28-1" aria-hidden="true" tabindex="-1"></a>pf <span class="ot">&lt;-</span> <span class="cf">function</span>(n){</span>
+<span id="cb28-2"><a href="coding-principles.html#cb28-2" aria-hidden="true" tabindex="-1"></a>  p<span class="ot">=</span><span class="dv">1</span></span>
+<span id="cb28-3"><a href="coding-principles.html#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
+<span id="cb28-4"><a href="coding-principles.html#cb28-4" aria-hidden="true" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> </span>
+<span id="cb28-5"><a href="coding-principles.html#cb28-5" aria-hidden="true" tabindex="-1"></a>      <span class="cf">while</span>( (i<span class="sc">&lt;</span>(n<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (p<span class="sc">==</span><span class="dv">1</span>) ) {</span>
+<span id="cb28-6"><a href="coding-principles.html#cb28-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (n<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb28-7"><a href="coding-principles.html#cb28-7" aria-hidden="true" tabindex="-1"></a>          p<span class="ot">=</span><span class="dv">0</span></span>
+<span id="cb28-8"><a href="coding-principles.html#cb28-8" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb28-9"><a href="coding-principles.html#cb28-9" aria-hidden="true" tabindex="-1"></a>        i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb28-10"><a href="coding-principles.html#cb28-10" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb28-11"><a href="coding-principles.html#cb28-11" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb28-12"><a href="coding-principles.html#cb28-12" aria-hidden="true" tabindex="-1"></a>    p<span class="ot">=</span><span class="dv">0</span></span>
+<span id="cb28-13"><a href="coding-principles.html#cb28-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb28-14"><a href="coding-principles.html#cb28-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(p)</span>
+<span id="cb28-15"><a href="coding-principles.html#cb28-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>Now we make the variable and function names sensible:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" title="1">primecheck &lt;-<span class="st"> </span><span class="cf">function</span>(num){</a>
-<a class="sourceLine" id="cb29-2" title="2">  isprime=<span class="ot">TRUE</span></a>
-<a class="sourceLine" id="cb29-3" title="3">  <span class="cf">if</span> (num<span class="op">&gt;</span><span class="dv">1</span>){ </a>
-<a class="sourceLine" id="cb29-4" title="4">    i =<span class="st"> </span><span class="dv">2</span> </a>
-<a class="sourceLine" id="cb29-5" title="5">      <span class="cf">while</span>( (i<span class="op">&lt;</span>(num<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(isprime<span class="op">==</span><span class="ot">TRUE</span>) ) {</a>
-<a class="sourceLine" id="cb29-6" title="6">        <span class="cf">if</span> (num<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) {</a>
-<a class="sourceLine" id="cb29-7" title="7">          isprime=<span class="ot">FALSE</span></a>
-<a class="sourceLine" id="cb29-8" title="8">        }</a>
-<a class="sourceLine" id="cb29-9" title="9">        i=i<span class="op">+</span><span class="dv">1</span></a>
-<a class="sourceLine" id="cb29-10" title="10">      }</a>
-<a class="sourceLine" id="cb29-11" title="11">  } <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb29-12" title="12">    isprime=<span class="ot">FALSE</span></a>
-<a class="sourceLine" id="cb29-13" title="13">  }</a>
-<a class="sourceLine" id="cb29-14" title="14">  <span class="kw">return</span>(isprime)</a>
-<a class="sourceLine" id="cb29-15" title="15">}</a></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="coding-principles.html#cb29-1" aria-hidden="true" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
+<span id="cb29-2"><a href="coding-principles.html#cb29-2" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span></span>
+<span id="cb29-3"><a href="coding-principles.html#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
+<span id="cb29-4"><a href="coding-principles.html#cb29-4" aria-hidden="true" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> </span>
+<span id="cb29-5"><a href="coding-principles.html#cb29-5" aria-hidden="true" tabindex="-1"></a>      <span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
+<span id="cb29-6"><a href="coding-principles.html#cb29-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb29-7"><a href="coding-principles.html#cb29-7" aria-hidden="true" tabindex="-1"></a>          isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb29-8"><a href="coding-principles.html#cb29-8" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb29-9"><a href="coding-principles.html#cb29-9" aria-hidden="true" tabindex="-1"></a>        i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb29-10"><a href="coding-principles.html#cb29-10" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb29-11"><a href="coding-principles.html#cb29-11" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb29-12"><a href="coding-principles.html#cb29-12" aria-hidden="true" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb29-13"><a href="coding-principles.html#cb29-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb29-14"><a href="coding-principles.html#cb29-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(isprime)</span>
+<span id="cb29-15"><a href="coding-principles.html#cb29-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>Can you tell what it does yet?</p>
 <p>Now fully commented</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" title="1">primecheck &lt;-<span class="st"> </span><span class="cf">function</span>(num){</a>
-<a class="sourceLine" id="cb30-2" title="2">  <span class="co">#check if a number is prime</span></a>
-<a class="sourceLine" id="cb30-3" title="3">  <span class="co"># - assumes the number provided is an integer</span></a>
-<a class="sourceLine" id="cb30-4" title="4">  <span class="co"># - works by working through all possible divisors up to half the test number, checking if the remainer is 0</span></a>
-<a class="sourceLine" id="cb30-5" title="5">  <span class="co">#</span></a>
-<a class="sourceLine" id="cb30-6" title="6">  isprime=<span class="ot">TRUE</span> <span class="co"># a flag, which tracks if we think the number is prime. We start out assuming our number *is* prime</span></a>
-<a class="sourceLine" id="cb30-7" title="7">  <span class="co"># first we only need to do the complicated method for numbers great than 1</span></a>
-<a class="sourceLine" id="cb30-8" title="8">  <span class="cf">if</span> (num<span class="op">&gt;</span><span class="dv">1</span>){ </a>
-<a class="sourceLine" id="cb30-9" title="9">    i =<span class="st"> </span><span class="dv">2</span> <span class="co">#a counter, starting at 2 (because all numbers divide by 1)</span></a>
-<a class="sourceLine" id="cb30-10" title="10">      <span class="co">#use while loop to check all divisors until we&#39;ve done them all or we find one (and confirm the number is not prime)</span></a>
-<a class="sourceLine" id="cb30-11" title="11"><span class="cf">while</span>( (i<span class="op">&lt;</span>(num<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(isprime<span class="op">==</span><span class="ot">TRUE</span>) ) {</a>
-<a class="sourceLine" id="cb30-12" title="12">  <span class="cf">if</span> (num<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) {</a>
-<a class="sourceLine" id="cb30-13" title="13">    <span class="co">#if the number divides by another number with no remainder it can&#39;t be prime, so we change the flag</span></a>
-<a class="sourceLine" id="cb30-14" title="14">    isprime=<span class="ot">FALSE</span></a>
-<a class="sourceLine" id="cb30-15" title="15">  }</a>
-<a class="sourceLine" id="cb30-16" title="16">  i=i<span class="op">+</span><span class="dv">1</span> <span class="co"># increment the counter, so we work through all possible divisors</span></a>
-<a class="sourceLine" id="cb30-17" title="17">}</a>
-<a class="sourceLine" id="cb30-18" title="18"></a>
-<a class="sourceLine" id="cb30-19" title="19">} <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb30-20" title="20">  <span class="co"># if the number is 1 or lower it can&#39;t be prime, so we change the flag</span></a>
-<a class="sourceLine" id="cb30-21" title="21">  isprime=<span class="ot">FALSE</span></a>
-<a class="sourceLine" id="cb30-22" title="22">}</a>
-<a class="sourceLine" id="cb30-23" title="23"><span class="kw">return</span>(isprime) <span class="co">#return the flag as the output of the function, 0 -&gt; not prime, 1 -&gt; prime</span></a>
-<a class="sourceLine" id="cb30-24" title="24">}</a></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="coding-principles.html#cb30-1" aria-hidden="true" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
+<span id="cb30-2"><a href="coding-principles.html#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#check if a number is prime</span></span>
+<span id="cb30-3"><a href="coding-principles.html#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># - assumes the number provided is an integer</span></span>
+<span id="cb30-4"><a href="coding-principles.html#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># - works by working through all possible divisors up to half the test number, checking if the remainer is 0</span></span>
+<span id="cb30-5"><a href="coding-principles.html#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb30-6"><a href="coding-principles.html#cb30-6" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span> <span class="co"># a flag, which tracks if we think the number is prime. We start out assuming our number *is* prime</span></span>
+<span id="cb30-7"><a href="coding-principles.html#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># first we only need to do the complicated method for numbers great than 1</span></span>
+<span id="cb30-8"><a href="coding-principles.html#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
+<span id="cb30-9"><a href="coding-principles.html#cb30-9" aria-hidden="true" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> <span class="co">#a counter, starting at 2 (because all numbers divide by 1)</span></span>
+<span id="cb30-10"><a href="coding-principles.html#cb30-10" aria-hidden="true" tabindex="-1"></a>      <span class="co">#use while loop to check all divisors until we&#39;ve done them all or we find one (and confirm the number is not prime)</span></span>
+<span id="cb30-11"><a href="coding-principles.html#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
+<span id="cb30-12"><a href="coding-principles.html#cb30-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb30-13"><a href="coding-principles.html#cb30-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">#if the number divides by another number with no remainder it can&#39;t be prime, so we change the flag</span></span>
+<span id="cb30-14"><a href="coding-principles.html#cb30-14" aria-hidden="true" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb30-15"><a href="coding-principles.html#cb30-15" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb30-16"><a href="coding-principles.html#cb30-16" aria-hidden="true" tabindex="-1"></a>  i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> <span class="co"># increment the counter, so we work through all possible divisors</span></span>
+<span id="cb30-17"><a href="coding-principles.html#cb30-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb30-18"><a href="coding-principles.html#cb30-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-19"><a href="coding-principles.html#cb30-19" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb30-20"><a href="coding-principles.html#cb30-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># if the number is 1 or lower it can&#39;t be prime, so we change the flag</span></span>
+<span id="cb30-21"><a href="coding-principles.html#cb30-21" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb30-22"><a href="coding-principles.html#cb30-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb30-23"><a href="coding-principles.html#cb30-23" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(isprime) <span class="co">#return the flag as the output of the function, 0 -&gt; not prime, 1 -&gt; prime</span></span>
+<span id="cb30-24"><a href="coding-principles.html#cb30-24" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>It is possible to comment too much. The code above I commented so someone who wasn’t an experienced programmer could read the comments and it would help them understand how the code worked (you can tell me if I succeeded). Usually a few fewer comments might make the code easier to read, with the assumption that anyone reading it has a bit of experience with the coding language. Like this</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" title="1">primecheck &lt;-<span class="st"> </span><span class="cf">function</span>(num){</a>
-<a class="sourceLine" id="cb31-2" title="2">  <span class="co">#check if a number is prime</span></a>
-<a class="sourceLine" id="cb31-3" title="3">  <span class="co"># - assumes input is integer</span></a>
-<a class="sourceLine" id="cb31-4" title="4">  isprime=<span class="ot">TRUE</span> <span class="co"># a flag, start assuming our number *is* prime </span></a>
-<a class="sourceLine" id="cb31-5" title="5">  <span class="co"># only check numbers &gt; 1</span></a>
-<a class="sourceLine" id="cb31-6" title="6">  <span class="cf">if</span> (num<span class="op">&gt;</span><span class="dv">1</span>){ </a>
-<a class="sourceLine" id="cb31-7" title="7">    i =<span class="st"> </span><span class="dv">2</span> <span class="co">#a counter</span></a>
-<a class="sourceLine" id="cb31-8" title="8">      <span class="co">#check all divisors until we&#39;ve done them all or we find one </span></a>
-<a class="sourceLine" id="cb31-9" title="9"><span class="cf">while</span>( (i<span class="op">&lt;</span>(num<span class="op">/</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)) <span class="op">&amp;</span><span class="st"> </span>(isprime<span class="op">==</span><span class="ot">TRUE</span>) ) {</a>
-<a class="sourceLine" id="cb31-10" title="10">  <span class="cf">if</span> (num<span class="op">%%</span>i <span class="op">==</span><span class="dv">0</span>) {</a>
-<a class="sourceLine" id="cb31-11" title="11">    <span class="co">#no remainder -&gt; number isn&#39;t prime</span></a>
-<a class="sourceLine" id="cb31-12" title="12">    isprime=<span class="ot">FALSE</span></a>
-<a class="sourceLine" id="cb31-13" title="13">  }</a>
-<a class="sourceLine" id="cb31-14" title="14">  i=i<span class="op">+</span><span class="dv">1</span> <span class="co"># increment the counter</span></a>
-<a class="sourceLine" id="cb31-15" title="15">}</a>
-<a class="sourceLine" id="cb31-16" title="16"></a>
-<a class="sourceLine" id="cb31-17" title="17">} <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb31-18" title="18">  <span class="co"># if the number is 1 or lower it can&#39;t be prime</span></a>
-<a class="sourceLine" id="cb31-19" title="19">  isprime=<span class="ot">FALSE</span></a>
-<a class="sourceLine" id="cb31-20" title="20">}</a>
-<a class="sourceLine" id="cb31-21" title="21"><span class="kw">return</span>(isprime)</a>
-<a class="sourceLine" id="cb31-22" title="22">}</a></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="coding-principles.html#cb31-1" aria-hidden="true" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
+<span id="cb31-2"><a href="coding-principles.html#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#check if a number is prime</span></span>
+<span id="cb31-3"><a href="coding-principles.html#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># - assumes input is integer</span></span>
+<span id="cb31-4"><a href="coding-principles.html#cb31-4" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span> <span class="co"># a flag, start assuming our number *is* prime </span></span>
+<span id="cb31-5"><a href="coding-principles.html#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># only check numbers &gt; 1</span></span>
+<span id="cb31-6"><a href="coding-principles.html#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
+<span id="cb31-7"><a href="coding-principles.html#cb31-7" aria-hidden="true" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> <span class="co">#a counter</span></span>
+<span id="cb31-8"><a href="coding-principles.html#cb31-8" aria-hidden="true" tabindex="-1"></a>      <span class="co">#check all divisors until we&#39;ve done them all or we find one </span></span>
+<span id="cb31-9"><a href="coding-principles.html#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
+<span id="cb31-10"><a href="coding-principles.html#cb31-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb31-11"><a href="coding-principles.html#cb31-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#no remainder -&gt; number isn&#39;t prime</span></span>
+<span id="cb31-12"><a href="coding-principles.html#cb31-12" aria-hidden="true" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb31-13"><a href="coding-principles.html#cb31-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb31-14"><a href="coding-principles.html#cb31-14" aria-hidden="true" tabindex="-1"></a>  i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> <span class="co"># increment the counter</span></span>
+<span id="cb31-15"><a href="coding-principles.html#cb31-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-16"><a href="coding-principles.html#cb31-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-17"><a href="coding-principles.html#cb31-17" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb31-18"><a href="coding-principles.html#cb31-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># if the number is 1 or lower it can&#39;t be prime</span></span>
+<span id="cb31-19"><a href="coding-principles.html#cb31-19" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb31-20"><a href="coding-principles.html#cb31-20" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb31-21"><a href="coding-principles.html#cb31-21" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(isprime)</span>
+<span id="cb31-22"><a href="coding-principles.html#cb31-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There’s no shortage of space in R scripts, so if in doubt, put some effort in to laying things out nicely, use sensible names for variable functions and add comments. You’ll thank yourself when you come back to your code (which you will always have to).</p>
 </div>
-<div id="avoid-hard-coded-values" class="section level3 hasAnchor">
+<div id="avoid-hard-coded-values" class="section level3 hasAnchor" number="6.2.2">
 <h3><span class="header-section-number">6.2.2</span> Avoid hard coded values<a href="coding-principles.html#avoid-hard-coded-values" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Say you were going to load some data, you could do this:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1">mydata =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="coding-principles.html#cb32-1" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span>)</span></code></pre></div>
 <p>Now this happens to work on my computer, but it won’t on yours. The reason it won’t work isn’t because there is a bug in how i’m loading data, just that you don’t have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them.</p>
 <p>Like this:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" title="1">datafile =<span class="st"> &#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span></a>
-<a class="sourceLine" id="cb33-2" title="2">mydata =<span class="st"> </span><span class="kw">read.csv</span>(datafile)</a></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="coding-principles.html#cb33-1" aria-hidden="true" tabindex="-1"></a>datafile <span class="ot">=</span> <span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span></span>
+<span id="cb33-2"><a href="coding-principles.html#cb33-2" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(datafile)</span></code></pre></div>
 <p>Now the second line is easier to read, and you also have a variable which you can reuse. For example maybe later in your script you want to save the name of the raw data file somewhere. You can just use:</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" title="1">label =<span class="st"> </span><span class="kw">paste</span>(<span class="st">&#39;This plot generated using data from &#39;</span>, datafile)</a></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="coding-principles.html#cb34-1" aria-hidden="true" tabindex="-1"></a>label <span class="ot">=</span> <span class="fu">paste</span>(<span class="st">&#39;This plot generated using data from &#39;</span>, datafile)</span></code></pre></div>
 <p>And when you use the same script for different data, both the lines loading data and recording the data file are correct.</p>
 <p>Another example, suppose you had two plots:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1">graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1))</a>
-<a class="sourceLine" id="cb35-2" title="2">graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></a></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="coding-principles.html#cb35-1" aria-hidden="true" tabindex="-1"></a>graph1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x1, <span class="at">y=</span>y1))</span>
+<span id="cb35-2"><a href="coding-principles.html#cb35-2" aria-hidden="true" tabindex="-1"></a>graph1 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&#39;blue&#39;</span>,<span class="at">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></span></code></pre></div>
 <p><img src="060-coding_files/figure-html/anscombe1-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1">graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))</a>
-<a class="sourceLine" id="cb36-2" title="2">graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span><span class="st">&#39;blue&#39;</span>,<span class="dt">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></a></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="coding-principles.html#cb36-1" aria-hidden="true" tabindex="-1"></a>graph2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x2, <span class="at">y=</span>y2))</span>
+<span id="cb36-2"><a href="coding-principles.html#cb36-2" aria-hidden="true" tabindex="-1"></a>graph2 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&#39;blue&#39;</span>,<span class="at">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></span></code></pre></div>
 <p><img src="060-coding_files/figure-html/anscombe2-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Adding variables means you only need to edit one line to change the look of both plots</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" title="1">pointcolour=<span class="st">&#39;red&#39;</span>; pointsize=<span class="dv">5</span> ; pointshape =<span class="st"> </span><span class="dv">23</span> <span class="co">#change this line for different look</span></a>
-<a class="sourceLine" id="cb37-2" title="2"></a>
-<a class="sourceLine" id="cb37-3" title="3">graph1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x1, <span class="dt">y=</span>y1)) </a>
-<a class="sourceLine" id="cb37-4" title="4">graph1 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span>pointcolour,<span class="dt">size=</span>pointsize, <span class="dt">shape =</span> pointshape) <span class="co"># never change these lines</span></a></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="coding-principles.html#cb37-1" aria-hidden="true" tabindex="-1"></a>pointcolour<span class="ot">=</span><span class="st">&#39;red&#39;</span>; pointsize<span class="ot">=</span><span class="dv">5</span> ; pointshape <span class="ot">=</span> <span class="dv">23</span> <span class="co">#change this line for different look</span></span>
+<span id="cb37-2"><a href="coding-principles.html#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="coding-principles.html#cb37-3" aria-hidden="true" tabindex="-1"></a>graph1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x1, <span class="at">y=</span>y1)) </span>
+<span id="cb37-4"><a href="coding-principles.html#cb37-4" aria-hidden="true" tabindex="-1"></a>graph1 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span>pointcolour,<span class="at">size=</span>pointsize, <span class="at">shape =</span> pointshape) <span class="co"># never change these lines</span></span></code></pre></div>
 <p><img src="060-coding_files/figure-html/anscombe1and2red-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" title="1">graph2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(<span class="dt">data =</span> anscombe, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> x2, <span class="dt">y=</span>y2))</a>
-<a class="sourceLine" id="cb38-2" title="2">graph2 <span class="op">+</span><span class="st"> </span><span class="kw">geom_point</span>(<span class="dt">color=</span>pointcolour,<span class="dt">size=</span>pointsize, <span class="dt">shape =</span> pointshape) <span class="co"># never change these lines</span></a></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="coding-principles.html#cb38-1" aria-hidden="true" tabindex="-1"></a>graph2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x2, <span class="at">y=</span>y2))</span>
+<span id="cb38-2"><a href="coding-principles.html#cb38-2" aria-hidden="true" tabindex="-1"></a>graph2 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span>pointcolour,<span class="at">size=</span>pointsize, <span class="at">shape =</span> pointshape) <span class="co"># never change these lines</span></span></code></pre></div>
 <p><img src="060-coding_files/figure-html/anscombe1and2red-2.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.</p>
 </div>
-<div id="functionalise-generalise" class="section level3 hasAnchor">
+<div id="functionalise-generalise" class="section level3 hasAnchor" number="6.2.3">
 <h3><span class="header-section-number">6.2.3</span> Functionalise &amp; Generalise<a href="coding-principles.html#functionalise-generalise" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you ever find yourself using very similar lines of code, you should think about making a function. Functions make your code shorter and easier to read (and write), and they make it <em>way</em> easier to update (because when you catch a bug you can just update the code in the function, rather than every time you repeated those lines).</p>
-<p>Functions are also an opportunity to think to yourself “what is the most general purpose way of doing what I’m doing”. Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things.</p>
+<p>Functions are also an opportunity to think to yourself “what is the most general purpose way of doing what I’m doing.” Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things.</p>
 <p>Let’s look at a toy example:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1">mynumbers =<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</a>
-<a class="sourceLine" id="cb39-2" title="2"></a>
-<a class="sourceLine" id="cb39-3" title="3"><span class="co">#double and add one to each number</span></a>
-<a class="sourceLine" id="cb39-4" title="4">mynumbers[<span class="dv">1</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">1</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span> <span class="co"># line 1</span></a>
-<a class="sourceLine" id="cb39-5" title="5">mynumbers[<span class="dv">2</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">2</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span> <span class="co"># line 2</span></a>
-<a class="sourceLine" id="cb39-6" title="6">mynumbers[<span class="dv">3</span>] &lt;-<span class="st"> </span>mynumbers[<span class="dv">3</span>]<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span> <span class="co"># line 3</span></a>
-<a class="sourceLine" id="cb39-7" title="7"></a>
-<a class="sourceLine" id="cb39-8" title="8"><span class="kw">print</span>(mynumbers)</a></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="coding-principles.html#cb39-1" aria-hidden="true" tabindex="-1"></a>mynumbers <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span>
+<span id="cb39-2"><a href="coding-principles.html#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="coding-principles.html#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co">#double and add one to each number</span></span>
+<span id="cb39-4"><a href="coding-principles.html#cb39-4" aria-hidden="true" tabindex="-1"></a>mynumbers[<span class="dv">1</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">1</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 1</span></span>
+<span id="cb39-5"><a href="coding-principles.html#cb39-5" aria-hidden="true" tabindex="-1"></a>mynumbers[<span class="dv">2</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">2</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 2</span></span>
+<span id="cb39-6"><a href="coding-principles.html#cb39-6" aria-hidden="true" tabindex="-1"></a>mynumbers[<span class="dv">3</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">3</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 3</span></span>
+<span id="cb39-7"><a href="coding-principles.html#cb39-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-8"><a href="coding-principles.html#cb39-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mynumbers)</span></code></pre></div>
 <pre><code>## [1] 5 7 9</code></pre>
 <p>This can be improved with a function</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1">myfunc &lt;-<span class="st"> </span><span class="cf">function</span>(num){</a>
-<a class="sourceLine" id="cb41-2" title="2">  <span class="co">#toy function, doubles and adds 1</span></a>
-<a class="sourceLine" id="cb41-3" title="3">  <span class="kw">return</span>(num<span class="op">*</span><span class="dv">2</span><span class="op">+</span><span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb41-4" title="4">  }  </a>
-<a class="sourceLine" id="cb41-5" title="5"></a>
-<a class="sourceLine" id="cb41-6" title="6">mynumbers =<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</a>
-<a class="sourceLine" id="cb41-7" title="7"></a>
-<a class="sourceLine" id="cb41-8" title="8">mynumbers &lt;-<span class="st"> </span><span class="kw">myfunc</span>(mynumbers) <span class="co"># all the work with 1 line!</span></a>
-<a class="sourceLine" id="cb41-9" title="9"></a>
-<a class="sourceLine" id="cb41-10" title="10"><span class="kw">print</span>(mynumbers)</a></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="coding-principles.html#cb41-1" aria-hidden="true" tabindex="-1"></a>myfunc <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
+<span id="cb41-2"><a href="coding-principles.html#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#toy function, doubles and adds 1</span></span>
+<span id="cb41-3"><a href="coding-principles.html#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(num<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)</span>
+<span id="cb41-4"><a href="coding-principles.html#cb41-4" aria-hidden="true" tabindex="-1"></a>  }  </span>
+<span id="cb41-5"><a href="coding-principles.html#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="coding-principles.html#cb41-6" aria-hidden="true" tabindex="-1"></a>mynumbers <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span>
+<span id="cb41-7"><a href="coding-principles.html#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="coding-principles.html#cb41-8" aria-hidden="true" tabindex="-1"></a>mynumbers <span class="ot">&lt;-</span> <span class="fu">myfunc</span>(mynumbers) <span class="co"># all the work with 1 line!</span></span>
+<span id="cb41-9"><a href="coding-principles.html#cb41-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-10"><a href="coding-principles.html#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mynumbers)</span></code></pre></div>
 <pre><code>## [1] 5 7 9</code></pre>
 <p>This code is easier to read, easier to change, and you can write new code which uses this function again.</p>
 </div>
-<div id="ask-for-help" class="section level3 hasAnchor">
+<div id="ask-for-help" class="section level3 hasAnchor" number="6.2.4">
 <h3><span class="header-section-number">6.2.4</span> Ask for help<a href="coding-principles.html#ask-for-help" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Nobody finds this easy straight away. Learning how to find help a core programming skill (along with not giving up when it feels like you are completely stuck).</p>
 <p>Part of this is knowing how programming people talk about stuff so you can search effectively for solutions.</p>
@@ -658,7 +697,7 @@ Look at this function, it hard to understand, right?</p>
 <p>If you are really stuck, just trying to describe you problem is a good way of indentifying exactly what you want to do, and why you can’t. This often means creating a ‘minimal reproducible example’ - the smallest script possible generates the error you’re trying to solve. Often the process of working on this helps you solve the problem yourself, but if it doesn’t it means you have clear way of showing someone else what you’re issue it. See this <a href="https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">How to make a great R reproducible example</a> and this <a href="https://stackoverflow.com/help/how-to-ask">How do I ask a good question?</a>. Now you have your minimal reproducible example you can ask a friend, teacher, or post it to a forum.</p>
 <p>If you’re on this module you can do this by posting it to Slack, or if not try seeking out R groups in your city or institution. Shout out to <a href="https://rladies.org/">Rladies</a></p>
 </div>
-<div id="exercises-2-1" class="section level3 hasAnchor">
+<div id="exercises-2-1" class="section level3 hasAnchor" number="6.2.5">
 <h3><span class="header-section-number">6.2.5</span> Exercises 2<a href="coding-principles.html#exercises-2-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>In pairs, take one person’s code from a previous week’s project and review for readability, using the <strong>better code</strong> checklist below. Write an improved version together</li>
@@ -667,7 +706,7 @@ Look at this function, it hard to understand, right?</p>
 <li>Make and share on slack a minimal reproducible example of your next R problem</li>
 </ul>
 </div>
-<div id="checklist-4" class="section level3 hasAnchor">
+<div id="checklist-4" class="section level3 hasAnchor" number="6.2.6">
 <h3><span class="header-section-number">6.2.6</span> Checklist<a href="coding-principles.html#checklist-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>control flow</strong></p>
 <ul>
@@ -700,7 +739,7 @@ Look at this function, it hard to understand, right?</p>
 <li>make a minimal reproducible example</li>
 </ul>
 </div>
-<div id="resources-5" class="section level3 hasAnchor">
+<div id="resources-5" class="section level3 hasAnchor" number="6.2.7">
 <h3><span class="header-section-number">6.2.7</span> Resources<a href="coding-principles.html#resources-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><a href="https://debruine.github.io/posts/function-tips/">Function tips</a></li>
