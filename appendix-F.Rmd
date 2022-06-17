@@ -7,31 +7,6 @@ There were too many students on the module this year to show all projects, so he
 
 ## Advice for future students
 
-As part of the module assessment I asked those who took the module what advice they would give to future students
-
-<style>
-  .alpha {
-  text-align: right;
-  color: darkred;
-  font-style: italic;
-  padding-bottom: 15px;
-  }
-  .beta {
-  text-align: left;
-  color: brown;
-  font-style: italic;
-  padding-bottom: 15px;
-  }
-</style>
-
-<div class="beta">I would definitely say choose a project topic that you are interested in. I have (quite tragically) loved every minute of developing my project since I am quite interested in the topic and found myself very invested in the outcome of the project.</div>
-
-<div class="beta">Try not to get frustrated! I didn’t have any coding experience before starting this course, and you will be surprised at how far you can push yourself. If you told me I would be making an interactive plot at the start of this module I would’ve laughed.</div>
-
-## Feedback
-
-Here is some selected feedback from the class of 2022.
-
 <style>
   .alpha {
   text-align: right;
@@ -45,7 +20,29 @@ Here is some selected feedback from the class of 2022.
   font-style: italic;
   padding-bottom: 15px;
   }
+  .gamma {
+  text-align: right;
+  color: brown;
+  font-style: italic;
+  padding-bottom: 15px;
+  }
+  .delta {
+  text-align: right;
+  color: red;
+  font-style: italic;
+  padding-bottom: 15px;
+  }
 </style>
+
+As part of the module assessment I asked those who took the module what advice they would give to future students
+
+<div class="gamma">I would definitely say choose a project topic that you are interested in. I have (quite tragically) loved every minute of developing my project since I am quite interested in the topic and found myself very invested in the outcome of the project.</div>
+
+<div class="delta">Try not to get frustrated! I didn’t have any coding experience before starting this course, and you will be surprised at how far you can push yourself. If you told me I would be making an interactive plot at the start of this module I would’ve laughed.</div>
+
+## Feedback
+
+Here is some selected feedback from the class of 2022.
 
 <div class="alpha">I went from not knowing how to code to creating my own data-wrangling script in the span of a few months, and I owe it to the teaching style employed during our sessions</div>
 
