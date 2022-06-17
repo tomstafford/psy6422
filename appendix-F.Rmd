@@ -2,12 +2,12 @@
 
 This was the third year for the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/postgraduate/taught/courses/2022/psychological-research-methods-data-science-msc). The classes were back in person and we cracked on with the core motivation of PSY6422 - to set students up for their independent data science project, carried out over the summer, but also to ensure that they left the MSc with a complete data project they could show off as part of a portfolio.
 
-There were too many students on the module this year to show all projects, so here are a few highlights:
-
 ## Module project showcase
 
+There were too many students on the module this year to show all projects, so here are a few highlights. Many creative, fun, interesting, challenging visualisation projects were produced but aren't shown here, but these few give a flavour of what student's got up to:
+
 Florence's project looked at [Gender bias in the cover personalities of TIME Magazine (1920-2013)](https://fsgwilliams.github.io/Data-Visualisation/)
-<img src="images/2022gemma.png" style="width: 600px; float: center;">
+<img src="images/2022florence.png" style="width: 600px; float: center;">
 [Pages](https://github.com/fsgwilliams/Data-Visualisation)
 
 Gemma's project was "Female labour force participation rates over the Last 100 Years"
