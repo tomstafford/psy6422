@@ -144,6 +144,7 @@ feedback
 class-of-2021
 feedback-1
 class-of-2022
+module-project-showcase
 advice-for-future-students
 one-thing-you-have-read-and-enjoyed-or-found-useful
 general-visualisation
