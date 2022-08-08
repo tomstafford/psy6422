@@ -8,6 +8,8 @@ Guide: [How to install R and RStudio?](https://www.r-bloggers.com/2019/12/how-to
 
 [https://swirlstats.com/](https://swirlstats.com/students.html)
 
+Nick KH Troubleshooting [Common R Problems](https://nickch-k.github.io/DataCommSlides/Lecture_04_Common_R_Problems.html)
+
 
 ## Exercises & Checklist
 
