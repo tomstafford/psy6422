@@ -43,6 +43,10 @@ Riffe, T., Sander, N., & Kluesener, S. (2021). Editorial to the Special Issue on
 
 Franconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). [The science of visual data communication: What works](https://journals.sagepub.com/doi/pdf/10.1177/15291006211051956). Psychological Science in the Public Interest, 22(3), 110-161.
 
+Lisa Charlotte Muth: [What to consider when using text in data visualizations](https://blog.datawrapper.de/text-in-data-visualizations/)
+
+https://blog.datawrapper.de/text-in-data-visualizations/
+
 ## The Reproducibility Crisis
 
 Cancer Biology Reproducibility Project
