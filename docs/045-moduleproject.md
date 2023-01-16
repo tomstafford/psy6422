@@ -1,10 +1,8 @@
 # Module project {-}
 
-\begin{info}
-\emph{These pages are about the final project, which comprises most of
-the module grade. There are many useful notes below, which you will want
-to refer to as you complete your project}
-\end{info}
+:::: {.info}
+*These pages are about the final project, which comprises most of the module grade. There are many useful notes below, which you will want to refer to as you complete your project*
+::::
   
 In this class we covered how to identify data for your final project for this module. We also discussed the project format and assessment criteria. Unlike other classes there is no checklist of learning outcomes.
 
@@ -34,11 +32,9 @@ Please include these headings, or something similar, in your project.
 * Summary
   * Brief thoughts on what you have learnt, what you might do next if you had more time / more data
   
-\begin{info}
-The ultimate aim is to make something that looks good and shows off your
-abilities. You want to produce something you are proud to show people
-(including future employers and supervisors)
-\end{info}
+:::: {.info}
+The ultimate aim is to make something that looks good and shows off your abilities. You want to produce something you are proud to show people (including future employers and supervisors)
+:::: 
   
 ## Choosing your data
 

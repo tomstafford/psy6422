@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
-date: "2023-01-15"
+date: "2023-01-16"
 output:
   html_document: default
 ---
@@ -18,11 +18,9 @@ These pages are written in Rmarkdown. You can see this individual file [here in 
 
 Rstudio magic (called "rendering" or "knitting") turns this file in to the webpage.
 
-\begin{info}
-Before you can turn your \texttt{.Rmd} files into PDF you need to
-install TeX on your machine: \href{https://miktex.org/download}{use this
-download link}
-\end{info}
+:::: {.info}
+ Before you can turn your ``.Rmd`` files into PDF you need to install TeX on your machine: [use this download link](https://miktex.org/download)
+::::
 
 
 Compare the [file](https://github.com/tomstafford/psy6422/blob/master/070-rmarkdown.Rmd) and the [webpage](https://tomstafford.github.io/psy6422/rmarkdown.html). 
@@ -105,12 +103,12 @@ df <- read_csv(url(urlfile))
 
 ```
 ## Rows: 25 Columns: 4
-## -- Column specification --------------------------------------------------------
+## ── Column specification ────────────────────────────────────────────────────────
 ## Delimiter: ","
 ## dbl (4): Participant Number, Total ASRS Score, Inattention subscale, Hyperac...
 ## 
-## i Use `spec()` to retrieve the full column specification for this data.
-## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
 
 ```r
@@ -131,16 +129,13 @@ p1 + geom_point(size=pointsize) +
   ylab(ylab)
 ```
 
-
-
-\begin{center}\includegraphics[width=1\linewidth]{070-rmarkdown_files/figure-latex/asrsscatter-1} \end{center}
+<img src="070-rmarkdown_files/figure-html/asrsscatter-1.png" width="100%" style="display: block; margin: auto;" />
 
 You don't need to show the r code, but can still include it in the document and use it to generate figures etc. 
 
 The scatterplot above uses participant number as one of the axes, which doesn't really make any sense. A histogram is a better way of visualising the spread of scores on a single variable, so here is one:
 
-
-\begin{center}\includegraphics[width=1\linewidth]{070-rmarkdown_files/figure-latex/examplehistogram-1} \end{center}
+<img src="070-rmarkdown_files/figure-html/examplehistogram-1.png" width="100%" style="display: block; margin: auto;" />
 
 The code to make this plot is contained in the same ``.Rmd`` file as this text, but I've hidden it so only the output is shown. To do this I set ``echo = FALSE`` for the r chunk in the ``.Rmd`` file. You'll have to look at the [source file](https://github.com/tomstafford/psy6422/blob/master/070-rmarkdown.Rmd) to see this, because - obviously! - in the webpage you don't see any code.
 
@@ -189,11 +184,9 @@ Rmarkdown documents give you a powerful way to combine text, code and code outpu
 * Send the .Rmd file *and the PDF to me via a Slack direct message
 
 
-\begin{info}
-Using RMarkdown is essential on this course. These exercises help you
-check you have mastered this material, as well as giving another
-opportunity for Tom to feed back on your project
-\end{info}
+:::: {.info}
+Using RMarkdown is essential on this course. These exercises help you check you have mastered this material, as well as giving another opportunity for Tom to feed back on your project
+::::
 
 ## Advanced
 

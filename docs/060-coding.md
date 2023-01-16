@@ -428,9 +428,7 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-
-
-\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1-1} \end{center}
+<img src="060-coding_files/figure-html/anscombe1-1.png" width="100%" style="display: block; margin: auto;" />
 
 
 ```r
@@ -438,9 +436,7 @@ graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-
-
-\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe2-1} \end{center}
+<img src="060-coding_files/figure-html/anscombe2-1.png" width="100%" style="display: block; margin: auto;" />
 
 Adding variables means you only need to edit one line to change the look of both plots
 
@@ -452,18 +448,14 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-
-
-\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1and2red-1} \end{center}
+<img src="060-coding_files/figure-html/anscombe1and2red-1.png" width="100%" style="display: block; margin: auto;" />
 
 ```r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-
-
-\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1and2red-2} \end{center}
+<img src="060-coding_files/figure-html/anscombe1and2red-2.png" width="100%" style="display: block; margin: auto;" />
 
 This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.
 

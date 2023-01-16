@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
 author: '[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)'
-date: "2023-01-15"
+date: "2023-01-16"
 output:
   html_document:
     df_print: paged
@@ -23,12 +23,9 @@ biblio-style: apalike
 
 PSY6422 Data Management and Visualisation is part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/). See here for more on the different courses which offer [data science, at the University of Sheffield](notes.html#data-science-sheffield)
 
-\begin{info}
-\emph{Spring 2022: These pages are evolving as I teach the course (in
-person rather than online this year!). If you find any inconsistencies
-please let me know. Check out the \href{class-of-2021.html}{class of
-2021 showcase} from last academic year}
-\end{info}
+:::: {.info}
+*Spring 2022: These pages are evolving as I teach the course (in person rather than online this year!). If you find any inconsistencies please let me know. Check out the [class of 2021 showcase](class-of-2021.html) from last academic year*  
+::::
   
 ## Motivation
 
