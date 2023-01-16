@@ -3,6 +3,8 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
+  12pt,
+  a5paper,
 ]{book}
 \title{PSY6422 Data Management and Visualisation}
 \author{Tom Stafford}
@@ -108,6 +110,8 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+% Make links footnotes instead of hotlinks:
+\DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -130,13 +134,7 @@
     \\\\\hline
     }
     
-\newenvironment{info}
-    {
-    \hline\\
-    }
-    { 
-    \\\\\hline
-    }
+\newenvironment{info}[0]{\par\leftskip=2em\rightskip=2em}{\par\medskip}
     
 \newenvironment{try}
     {
@@ -1823,7 +1821,7 @@ Here is another example
 
 \begin{verbatim}
 ## Rows: 25 Columns: 4
-## -- Column specification -----------------------------------------------------------------------------------------------------------------------------------------------------
+## -- Column specification --------------------------------------------------------
 ## Delimiter: ","
 ## dbl (4): Participant Number, Total ASRS Score, Inattention subscale, Hyperac...
 ## 

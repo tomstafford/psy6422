@@ -13,6 +13,9 @@ bibliography:
 - packages.bib
 site: bookdown::bookdown_site
 biblio-style: apalike
+papersize: a5
+fontsize: 12pt
+links-as-notes: true
 ---
 
 
