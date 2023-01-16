@@ -5,9 +5,10 @@
 
 Further reading, including books, links, demos and packages. You don't need to read all of this, but you will want to dig around. If I could recommend one book to accompany the course it would be 
 
-<div class="info">
-<p>Healy, K. (2018). <a href="https://socviz.co/">Data visualization: a practical introduction</a>. Princeton University Press.</p>
-</div>
+\begin{info}
+Healy, K. (2018). \href{https://socviz.co/}{Data visualization: a
+practical introduction}. Princeton University Press.
+\end{info}
 
 ## Visualisation (theory)
 
@@ -42,6 +43,10 @@ The Economist newsletter: "[Off the Charts](https://www.economist.com/offthechar
 Riffe, T., Sander, N., & Kluesener, S. (2021). Editorial to the Special Issue on Demographic Data Visualization: [Getting the point across–Reaching the potential of demographic data visualization](https://www.demographic-research.org/volumes/vol44/36/). Demographic research. Rostock: Max Planck Institute for Demographic Research, 2021, Vol. 44.
 
 Franconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). [The science of visual data communication: What works](https://journals.sagepub.com/doi/pdf/10.1177/15291006211051956). Psychological Science in the Public Interest, 22(3), 110-161.
+
+Lisa Charlotte Muth: [What to consider when using text in data visualizations](https://blog.datawrapper.de/text-in-data-visualizations/)
+
+https://blog.datawrapper.de/text-in-data-visualizations/
 
 ## The Reproducibility Crisis
 

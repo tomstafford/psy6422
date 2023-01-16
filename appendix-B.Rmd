@@ -5,9 +5,9 @@
 
 Further reading, including books, links, demos and packages. You don't need to read all of this, but you will want to dig around. If I could recommend one book to accompany the course it would be 
 
-```{block, type="info"}
+:::: {.info}
 Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.co/). Princeton University Press.
-```
+::::
 
 ## Visualisation (theory)
 

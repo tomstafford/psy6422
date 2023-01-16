@@ -1,8 +1,10 @@
 # Module project {-}
 
-<div class="info">
-<p><em>These pages are about the final project, which comprises most of the module grade. There are many useful notes below, which you will want to refer to as you complete your project</em></p>
-</div>
+\begin{info}
+\emph{These pages are about the final project, which comprises most of
+the module grade. There are many useful notes below, which you will want
+to refer to as you complete your project}
+\end{info}
   
 In this class we covered how to identify data for your final project for this module. We also discussed the project format and assessment criteria. Unlike other classes there is no checklist of learning outcomes.
 
@@ -32,9 +34,11 @@ Please include these headings, or something similar, in your project.
 * Summary
   * Brief thoughts on what you have learnt, what you might do next if you had more time / more data
   
-<div class="info">
-<p>The ultimate aim is to make something that looks good and shows off your abilities. You want to produce something you are proud to show people (including future employers and supervisors)</p>
-</div>
+\begin{info}
+The ultimate aim is to make something that looks good and shows off your
+abilities. You want to produce something you are proud to show people
+(including future employers and supervisors)
+\end{info}
   
 ## Choosing your data
 
@@ -55,6 +59,7 @@ The other route is large publicly available resources:
 * Enjoy this crowdsourced list of [Open psychological datasets](https://docs.google.com/spreadsheets/d/1ejOJTNTL5ApCuGTUciV0REEEAqvhI2Rd2FCoj7afops/edit#gid=0)
 * [Kaggle](https://www.kaggle.com/)
 * [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/articles/)
+* The [General Social Survey (GSS)](https://gss.norc.org/get-the-data) (US)
 * [Datasets APIs and open source projects related to Climate Change](https://github.com/KKulma/climate-change-data)
 
 ### Suggestions for possible project data sets 

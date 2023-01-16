@@ -428,7 +428,9 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-<img src="060-coding_files/figure-html/anscombe1-1.png" width="100%" style="display: block; margin: auto;" />
+
+
+\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1-1} \end{center}
 
 
 ```r
@@ -436,7 +438,9 @@ graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-<img src="060-coding_files/figure-html/anscombe2-1.png" width="100%" style="display: block; margin: auto;" />
+
+
+\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe2-1} \end{center}
 
 Adding variables means you only need to edit one line to change the look of both plots
 
@@ -448,14 +452,18 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-<img src="060-coding_files/figure-html/anscombe1and2red-1.png" width="100%" style="display: block; margin: auto;" />
+
+
+\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1and2red-1} \end{center}
 
 ```r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-<img src="060-coding_files/figure-html/anscombe1and2red-2.png" width="100%" style="display: block; margin: auto;" />
+
+
+\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1and2red-2} \end{center}
 
 This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.
 
@@ -555,6 +563,7 @@ __ask for help__
  
 ### Resources
 
+* Patrick J Mineault & The Good Research Code Handbook Community (2021). [The Good Research Code Handbook](https://goodresearch.dev/). Zenodo. doi:10.5281/zenodo.5796873
 * [Function tips](https://debruine.github.io/posts/function-tips/)
 * Vocabulary: [Names for common programming symbols](https://psyteachr.github.io/msc-data-skills/symbols.html)
 * [Program better, for fun and for profit](https://inattentionalcoffee.wordpress.com/2017/01/13/program-better-for-fun-and-for-profit/)
