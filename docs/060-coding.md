@@ -86,20 +86,20 @@ if (type_of_thing=='Murders'){
 
 Loops repeat, either iterating over a set values, like this:
   
-  
-  ```r
-  for (i in 1:5){
+
+```r
+for (i in 1:5){
   print(i)
-  }
-  ```
-  
-  ```
-  ## [1] 1
-  ## [1] 2
-  ## [1] 3
-  ## [1] 4
-  ## [1] 5
-  ```
+}
+```
+
+```
+## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5
+```
 
 Or until some condition is met
 
@@ -428,7 +428,9 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-<img src="060-coding_files/figure-html/anscombe1-1.png" width="100%" style="display: block; margin: auto;" />
+
+
+\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1-1} \end{center}
 
 
 ```r
@@ -436,7 +438,9 @@ graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color='blue',size=3) #change this line for different look
 ```
 
-<img src="060-coding_files/figure-html/anscombe2-1.png" width="100%" style="display: block; margin: auto;" />
+
+
+\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe2-1} \end{center}
 
 Adding variables means you only need to edit one line to change the look of both plots
 
@@ -448,14 +452,18 @@ graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-<img src="060-coding_files/figure-html/anscombe1and2red-1.png" width="100%" style="display: block; margin: auto;" />
+
+
+\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1and2red-1} \end{center}
 
 ```r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
 
-<img src="060-coding_files/figure-html/anscombe1and2red-2.png" width="100%" style="display: block; margin: auto;" />
+
+
+\begin{center}\includegraphics[width=1\linewidth]{060-coding_files/figure-latex/anscombe1and2red-2} \end{center}
 
 This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.
 

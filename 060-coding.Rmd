@@ -72,7 +72,7 @@ if (type_of_thing=='Murders'){
 
 Loops repeat, either iterating over a set values, like this:
   
-  ```{r}
+```{r}
 for (i in 1:5){
   print(i)
 }

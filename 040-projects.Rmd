@@ -34,7 +34,7 @@ Everything recorded during an experiment, whether by you or the computer, is dat
 
 Never delete *any* data.
 
-Never edit the raw data files. They should exist is a folder called \raw or \data and only ever be opened, never modified in any way.
+Never edit the raw data files. They should exist in a folder called \\raw or \\data and only ever be opened, never modified in any way.
 
 All data should be backed-up automatically, as soon as it is collected. For how to do this, see the next header
 
