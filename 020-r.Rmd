@@ -16,6 +16,7 @@ Nick KH Troubleshooting [Common R Problems](https://nickch-k.github.io/DataCommS
 *To complete this class you should do the following :*
 
 * install R on your computer
+  * if you can't, use the cloud: [rstudio.cloud](https://login.rstudio.cloud)
 
 * identify the console
   * enter a command directly (e.g. "2 + 2")
