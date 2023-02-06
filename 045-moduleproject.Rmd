@@ -40,6 +40,10 @@ The ultimate aim is to make something that looks good and shows off your abiliti
 
 The data is an excuse for the data visualisation, so don't agonise over this, and go for simple over complex if you have a choice. I recommend you find a data set with variables which you understand. 
 
+:::: {.info}
+*It will be tempting to find data on Kaggle, a site which released datasets for exploraiton. However, note that a foundation for good data analysis is understanding exactly how data was collected. Describing fully the data provenance is also in the mark scheme. Often Kaggle data sets do not include this information.*
+::::
+
 ### Finding Data
 
 Many papers are now published accompanied by open data. Sometimes this is indicated by an Open Data Badge. For example, take a look at the [current table of contents for Psychological Science](https://journals.sagepub.com/toc/pss/current). The badges are an initiative of the [Centre for Open Science](https://cos.io/our-services/open-science-badges/)
@@ -60,7 +64,7 @@ The other route is large publicly available resources:
 
 ### Suggestions for possible project data sets 
 
-These are examples of large, probably messy, real-world data sets which could make good starting points for projects:
+These are examples of large, probably messy, real-world data sets which could make good starting points for projects with more ambition:
 
 * [freeCodeCamp.org survey of new programmers](https://github.com/freeCodeCamp?q=new-coder-survey)
 * [StackOverFlow survey data](https://insights.stackoverflow.com/survey/)
@@ -69,6 +73,10 @@ These are examples of large, probably messy, real-world data sets which could ma
 * [AnAge Database of Animal Ageing and Longevity](https://genomics.senescence.info/species/index.html)
 * [The General Index](https://archive.org/details/GeneralIndex) - detailed linguistic data derived from 107,233,728 academic journal articles
 * [components.one](https://components.one/datasets) - various tech & media datasets
+* [Peer Review Workbench](https://lab.icsr.net/icsr_lab/workbenches.html) - 'summarized metadata of the peer reviews for over one million proprietary Elsevier journal manuscripts submitted between 2018 and 2021 (updated annually), enabling systematic analysis of the peer review process across different disciplines, at scale. '
+* [Open Citatons](https://opencitations.net/index/coci) - citation network for 76 million papers
+* [A decade of tasks](https://github.com/Derek-Jones/renzo-pomodoro) - Between April 2009 and February 2019, software engineer Renzo Borgatti set 17,000+ daily tasks for himself. He completed slightly less than half of them. He labeled them with tags such as “@meeting”, “@talk”, and “@clojure”. He estimated how many “pomodoros” each would take, and how many they really did.
+* [Lichess database](https://database.lichess.org/) - 4 billion online chess games 
 
 ## Choose your graph
 

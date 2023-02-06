@@ -63,5 +63,6 @@ You submit using them form link supplied by me, as an attachment with a filename
 * Russ Poldrack's [Advice for learning to code from scratch ](http://www.russpoldrack.org/2016/05/advice-for-learning-to-code-from-scratch.html)
 * Neuroskeptic on a [true story of data analysis error](http://neuroskeptic.blogspot.com/2011/04/tufnel-effect.html) (and how you can avoid it) "if you're doing something which involves 100 steps, it only takes 1 mistake to render the other 99 irrelevant."
 * [Data Sharing and Management Snafu in 3 Short Acts](https://www.youtube.com/watch?v=66oNv_DJuPc)
+* Thread from Darren Dahly /@statsepi on [professionalism in data analysis](https://twitter.com/statsepi/status/1385126000149807105)
 
 
