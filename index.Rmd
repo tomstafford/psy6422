@@ -36,12 +36,12 @@ options(tinytex.verbose = TRUE)
 PSY6422 Data Management and Visualisation is part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/). See here for more on the different courses which offer [data science, at the University of Sheffield](notes.html#data-science-sheffield)
 
 :::: {.info}
-*Spring 2022: These pages are evolving as I teach the course (in person rather than online this year!). If you find any inconsistencies please let me know. Check out the [class of 2021 showcase](class-of-2021.html) from last academic year*  
+*Spring 2023: These pages are evolving as I teach the course. If you find any inconsistencies please let me know. Check out the showcases form previous years: [class of 2021 showcase](class-of-2021.html), [class of 2022 showcase](class-of-2022.html)*  
 ::::
   
 ## Motivation
 
-Psychological science is increasingly reliant on complex computational and statistical methods to make sense of rich behavioural data. This course aims to teach the skills which support creating robust and repoducibile analyses with such methods and data.
+Psychological science is increasingly reliant on complex computational and statistical methods to make sense of rich behavioural data. This course aims to teach the skills which support creating robust and reproducibile analyses with such methods and data.
 
 As well as supporting sophisticated data visualisation, we aim to train you in reproducible workflows - meaning that you can reliably re-create all steps of an analysis using scripts that automate all steps between raw data and the final visualisation.
 
@@ -77,21 +77,21 @@ The bulk of the course assessment is to conduct and publish your own analysis pr
 
 The intention with the assessment is to ensure that every student leaves the course with something they are proud to put in their portfolio of work, something which shows what they can do and which helps with future job or course applications.
 
-See here for [more on the nature of your module project](module-project.html), see here for examples from previous years: [class of 2020](class-of-2020.html), [class of 2021](class-of-2021.html)..
+See here for [more on the nature of your module project](module-project.html), see here for examples from previous years: [class of 2020](class-of-2020.html), [class of 2021](class-of-2021.html), [class of 2022](class-of-2022.html)
 
 
 ## Resources for current students
 
-[Google Drive](https://drive.google.com/drive/folders/1sDmbrTfKpiz2Y02R17ajLPkJV1XSxvJD?usp=sharing):
+[Google Drive](https://drive.google.com/drive/folders/1c0GOBwwbaxiVcyZKr7QKcZOG6i-_d7by?usp=sharing):
 
 Includes slides and other resources, as well as these specific documents
 
-* [Timetable](https://docs.google.com/spreadsheets/d/1YBbaaFursDBg-aGvJ32WJd-IinPM7oml-tPMnVZIEA0/edit?usp=sharing)
-* [Assessment Criteria](https://docs.google.com/spreadsheets/d/1oTJKI675ijCs14jUoT9d_8yPH2i_S2AfQG507jN8aVY/edit?usp=sharing)
+* [Timetable](https://docs.google.com/spreadsheets/d/1q3wDSm4eMg2BRoosC5sV0t0FU_iZcOXsxuYj_cstEUw/edit?usp=sharing)
+* [Assessment Criteria](https://docs.google.com/spreadsheets/d/1EIxcBHWZ_h9eSXndkoM-hJf-J9qUhQvqfAz2dZGZe8k/edit?usp=sharing)
 
 FAQ document which I am adding to as questions come in
 
-* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/11OQs5bTnqth_cxwjHbQNeJTWZdp-wSTUcCQ2Uoz5rFw/edit?usp=sharing)
+* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/1pKKyV9hrzKrr8t6_qN18D5sDNsi0KwAYdYyhY1A6tEI/edit?usp=sharing)
 
 Most information is on these pages (hosted on github, no login required)
 
