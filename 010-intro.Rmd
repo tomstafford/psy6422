@@ -2,13 +2,13 @@
 
 ## Class material:
   
-Materials from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1c0GOBwwbaxiVcyZKr7QKcZOG6i-_d7by?usp=sharing) (UoS login required to access). Slides : [slides format](https://docs.google.com/presentation/d/15RlRzRGL3fa1SckE8YUWhJxiuWf5GH5pssIcG2zStKM/edit?usp=sharing).
+Materials from the class are in the PSY6422 [Google Drive](https://drive.google.com/drive/folders/1c0GOBwwbaxiVcyZKr7QKcZOG6i-_d7by?usp=sharing) (UoS login required to access). Slides : [slides format](https://docs.google.com/presentation/d/11RhxENoirsZKCvVPdsPkCdhPQmsNB2rBkeGJCyY1JQk/edit?usp=sharing).
 
 ## Exercise 1 (assessed!)
 
 The exercise for this class is an initial self-assessment, which comprises part of your final grade. The deadline is in two weeks - see the timetable.
 
-Submit using the form link provided by Tom [check your email] a document of no more than one A4 page (i.e. less than 500 words):
+Submit using the form link provided by Tom [check your email after class] a document of no more than one A4 page (i.e. less than 500 words):
 
 Aim 1: tell me what you know already  
 
