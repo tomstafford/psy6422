@@ -96,9 +96,8 @@ sharing-your-rmd-files-via-github-pages
 other-sharing-options
 checklist-8
 resources-9
-section
-section-1
-other-topicsresources
+machine-learning
+miscellaneous-topicsresources
 reproducibility
 general-righteousness
 before-class

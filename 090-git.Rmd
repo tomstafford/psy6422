@@ -1,5 +1,8 @@
 # Git and Github
 
+:::: {.info}
+*Spring 2023: This class will need to be rewritten because the guest lecturer can't teach it this year*  
+::::
 
 With our guest lecturer, [Seb James](https://www.sheffield.ac.uk/psychology/people/research/sebastian-james-0)
 
@@ -59,10 +62,9 @@ By the end of this class you should
 
 ## Resources
 
-Official documentation: [github pages](https://help.github.com/en/github/working-with-github-pages)
+* Official documentation: [github pages](https://help.github.com/en/github/working-with-github-pages)
+* Jenny Bryan git and R [Happy Git and GitHub for the useR](https://happygitwithr.com/index.html)
+* [Understanding Git Conceptually](https://www.sbf5.com/~cduan/technical/git/)
+* [git/github guide a minimal tutorial](https://kbroman.org/github_tutorial/)
+* Vuorre, M., & Curley, J. P. (2018). [Curating research assets: A tutorial on the git version control system](https://journals.sagepub.com/doi/full/10.1177/2515245918754826). Advances in Methods and Practices in Psychological Science, 1(2), 219-236.
 
-[Understanding Git Conceptually](https://www.sbf5.com/~cduan/technical/git/)
-
-[git/github guide a minimal tutorial](https://kbroman.org/github_tutorial/)
-
-Vuorre, M., & Curley, J. P. (2018). [Curating research assets: A tutorial on the git version control system](https://journals.sagepub.com/doi/full/10.1177/2515245918754826). Advances in Methods and Practices in Psychological Science, 1(2), 219-236.

@@ -4,22 +4,22 @@ The first ten topics of this course represent the core that I want every student
 
 The remaining time in the timetable is available for supervision on this data project, and to cover more advanced topics. For these topics, rather than provide a lecture, we will work in small groups to follow exercises and tutorials which exist outside of the course. The motivation for this is two-fold. First, because all your future work will be teamwork, I want students to graduate from this course with experience working together on technical projects. Whether you are more or less confident in the technical requirements, you will learn a lot from trying to share what you know or think you know with a group. Second, a key skill for ongoing development in data science is to teach yourself. There world is rich in useful advice, tutorials and examples. Only by discovering how you can use these will you maximise your potential after you have finished this module.
 
-
-## 2022
-
-Topics to be determined (see below)
-
-## 2021
-
-In 2021 we voted on the advanced topics to cover in class:
+In previous years we have voted on the advanced topics to cover in class. Topics have included:
 
 * [interactive plots with shiny](interactive-graphs-with-shiny.html)
 * [animated plots with gganimate](animated-plots-with-gganimate.html)
 * [SQL](database-queries-sql.html)
 * [python](python.html)
 
+Please visit these pages for topic-specific resources 
 
-## Other topics/resources
+## Machine Learning
+
+* [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems](https://www.amazon.co.uk/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646) by Aurelien Geron (2019)
+  * notebooks for this https://github.com/ageron/handson-ml3
+
+
+## Miscellaneous topics/resources
 
 * regexone.com [Learn Regular Expressions with simple, interactive exercises.](https://regexone.com/)
 * Performance tuning: [Code performance in R: Parallelization](https://www.r-bloggers.com/2021/06/code-performance-in-r-parallelization/)
@@ -28,6 +28,8 @@ In 2021 we voted on the advanced topics to cover in class:
 ## Reproducibility
 
 Dependencies 
+
+[Data Science and Computational Reproducibility: Using asdf, poetry, and renv to make your local Python and R environments easy(er) to manage](http://haines-lab.com/post/asdf-poetry-renv-local-python-r-environments/)
 
  * Package management 
     * https://groundhogr.com/

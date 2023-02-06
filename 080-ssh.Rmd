@@ -154,7 +154,9 @@ We can read the [espeak documentation](https://linux.die.net/man/1/espeak) to se
 
 ## Resources
 
+
+* [datascienceatthecommandline.com](https://datascienceatthecommandline.com/) - Data Science at the Command Line
 * [Five reasons why researchers should learn to love the command line](https://www.nature.com/articles/d41586-021-00263-0)
-* [University of Sheffield VPN](https://www.sheffield.ac.uk/it-services/vpn)
+* [Terminus](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html) - command line text adventure (see also [bashcrawl](https://gitlab.com/slackermedia/bashcrawl))
 * For historical interest: [In the Beginning... Was the Command Line](http://cristal.inria.fr/~weis/info/commandline.html) (1999) Neal Stephenson
 * If you want to experiment with linux you may start with [Ubuntu Linux](https://ubuntu.com/download/desktop)

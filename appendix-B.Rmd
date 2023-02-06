@@ -191,14 +191,11 @@ model checking package: [Performance](https://easystats.github.io/performance/in
 
 Rachel Thomas's [Applied Data Ethics Syllabus](https://ethics.fast.ai/syllabus)
 
-[Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems](https://www.amazon.co.uk/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646) by Aurelien Geron (2019)
-
 [Efficient R Programming](https://csgillespie.github.io/efficientR/)
-
-SQL [Database access dplyr ](https://db.rstudio.com/dplyr/)
 
 [Data Visualization course](https://datavizm20.classes.andrewheiss.com/lesson/) by Dr. Andrew Heiss of Georgia State University
 
+[www.datascienceglossary.org](https://www.datascienceglossary.org/) - there's lots of new terminology, don't be afraid to ask (or google)
 
 ## Pedagogy
 
