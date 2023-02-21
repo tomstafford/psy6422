@@ -24,6 +24,7 @@ Please visit these pages for topic-specific resources
 * regexone.com [Learn Regular Expressions with simple, interactive exercises.](https://regexone.com/)
 * Performance tuning: [Code performance in R: Parallelization](https://www.r-bloggers.com/2021/06/code-performance-in-r-parallelization/)
 * [Making Your First R Package](https://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html)
+* Webscraping (in python): [Web-Data-Scraping-S2023](https://github.com/CU-ITSS/Web-Data-Scraping-S2023/) from Brian Keegan
 
 ## Reproducibility
 
