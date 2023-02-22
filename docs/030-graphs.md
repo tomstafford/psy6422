@@ -53,6 +53,7 @@ In the console, understood
   * the shortcut keys for the assignment operator <- 
   * the use of tab for autocomplete
   * the use up arrow to cycle through previous commands
+  * CTRL + ENTER to run highlighted text
 
 Key concepts (chapter 3):  
 
@@ -60,6 +61,7 @@ Key concepts (chapter 3):
   * [long vs wide data](https://en.wikipedia.org/wiki/Wide_and_narrow_data)
   * values and keys
   * data variables can be continuous or factors 
-* plots have data, aesthetic mappings ('aes', 'mappings') and layers
-* adding mappings, adding geoms, geom properties, other layers (e.g. labs)
-* mappings are inherited by geom layers
+* The fundamental ggplot "recipe"
+  * plots have data, aesthetic mappings ('aes', 'mappings') and layers
+  * adding mappings, adding geoms, geom properties, other layers (e.g. labs)
+  * mappings are inherited by geom layers
