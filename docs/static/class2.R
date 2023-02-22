@@ -1,5 +1,3 @@
-# Workbook 2 - 19 Feb
-#
 # ----------1
 # This is an R script. 
 # 
