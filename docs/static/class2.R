@@ -67,7 +67,7 @@ swirl()                                # run swirl
 
 
 
-# Once you've done that, try some of the other lessons (2, 4, 9 are recommended)
+# If that worked, try some of the other lessons after the class (2, 4, 9 are recommended)
 
 # Full list of courses is here https://swirlstats.com/scn/title.html
 
