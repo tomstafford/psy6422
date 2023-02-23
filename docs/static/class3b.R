@@ -14,32 +14,28 @@ gapminder
 head(gapminder)
 
 #create plot (as a variable), identifying the data
-ggplot(data = gapminder)
-
+#think about this as preparing the canvas on which the graph will be painted
+p <- ggplot(data = gapminder)
 
 #idenfity data and mapping
-ggplot(data = gapminder,
+p <- ggplot(data = gapminder,
       mapping = aes(x = gdpPercap,
                     y = lifeExp))
 
-#add a geom layer
-ggplot(data = gapminder,
+#add a geom layer. This is the step that puts paint on the canvas
+p <- ggplot(data = gapminder,
        mapping = aes(x = gdpPercap,
-                     y = lifeExp)) +
-      geom_point()
+                     y = lifeExp))
+p + geom_point()
+#(at this point you should see a graph in Rstudio)
 
 #notes
 # can break lines after pluses, commas
 # + goes at the end of lines
 
-#can do this all by assigning to variables
-p <- ggplot(data = gapminder,
-            mapping = aes(x = gdpPercap,
-                          y = lifeExp))
-p + geom_point()
-
 ## Build your plots layer by layer
 
+#a different layer
 p <- ggplot(data = gapminder,
             mapping = aes(x = gdpPercap,
                           y=lifeExp))
@@ -89,17 +85,19 @@ p + geom_point() +
 
 ## Mapping aesthetics vs setting them
 #a mapping defines that a variable will be expressed by one of the visual elements of a plot
+# mapping 1
 p <- ggplot(data = gapminder,
             mapping = aes(x = gdpPercap,
                           y = lifeExp,
                           color = continent))
 
-#compare
+#mapping 2
 p <- ggplot(data = gapminder,
             mapping = aes(x = gdpPercap,
                           y = lifeExp,
                           color = "purple"))
 
+# run this after mapping 1 or 2 to compare
 p + geom_point() +
     geom_smooth(method = "loess") +
     scale_x_log10()
@@ -124,8 +122,9 @@ p + geom_point(alpha = 0.3) +
 
 #polished
 
+#nb you should almost never do anything other than a linear fit
 p <- ggplot(data = gapminder, mapping = aes(x = gdpPercap, y=lifeExp))
-p + geom_point(alpha = 0.3) + geom_smooth(method = "gam") +
+p + geom_point(alpha = 0.3) + geom_smooth(method = "lm") +
     scale_x_log10(labels = scales::dollar) +
     labs(x = "GDP Per Capita", y = "Life Expectancy in Years",
          title = "Economic Growth and Life Expectancy",
@@ -153,7 +152,7 @@ p + geom_point() +
     geom_smooth(method = "loess") +
     scale_x_log10()
 
-# don't use non linear fits unless you have a good reason
+#REMEMBER: don't use non linear fits unless you have a good reason
 
 ## Aesthetics can be mapped per geom
 
@@ -180,3 +179,12 @@ p_out <- p + geom_point(mapping = aes(color = log(pop))) +
 ggsave("figures/my_figure.pdf",plot=p_out)
 
 ggsave("figures/hi_res.png",height=8,wdith=10,units=in)
+
+
+# Exercises
+
+#replot the gapminder data as two histograms - one for gdpPercap and one for lifeExp
+
+#work out why the frequency count is higher than the number of countries in the world
+
+#plot histograms which accurately count values for each country 

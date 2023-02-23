@@ -74,17 +74,17 @@ cats > dogs
 
 #data frames!
 
-titanic
-
-#a note on case sensitivity
-Titanic
-
 #Healy uses a data frame he pre-created, so it is only "there" if you load the socviz library first
 #devtools::install_github("kjhealy/socviz") #you may need to install it first
 # note nonstandard install ie.. it is not install.packages("socviz")
 library(socviz)
 
+#a note on case sensitivity
+Titanic
+
 titanic
+
+#look at the data
 class(titanic)
 
 titanic$percent
@@ -100,7 +100,8 @@ titanic_tb
 str(my_numbers)
 str(my_summary)
 
-
+# there is a line missing in the script here which means the call to ggplot will throw an error?
+# what do you need to do first to make it work?
 ggplot(data = titanic, aes(x = n, y = percent)) +
     geom_point()
 

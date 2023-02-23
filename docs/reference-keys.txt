@@ -17,7 +17,7 @@ making-graphs
 class-material-1
 resources-2
 other-resources
-exercises
+post-class-exercises
 checklist-1
 project-organisation
 project-folders
@@ -26,7 +26,7 @@ research-data-management
 include-meta-data
 backup-and-sync
 resources-3
-exercises-1
+exercises
 warm-up-pair-programming-exercise
 homework-project-1
 checklist-2
@@ -42,7 +42,7 @@ stretch-goals
 in-class-exercises
 data-wrangling
 class-material-2
-exercises-2
+exercises-1
 checklist-3
 resources-4
 coding-principles
@@ -58,7 +58,7 @@ readability-matters
 avoid-hard-coded-values
 functionalise-generalise
 ask-for-help
-exercises-2-1
+exercises-2
 checklist-4
 resources-5
 rmarkdown

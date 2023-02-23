@@ -4,8 +4,10 @@
 
 Note: most of this class talk in workshop style, so any recordings are short and the slides are brief
 
-The live-coding demo used these files: [class3a.R](static/class3a.R) and [class3b.R](static/class3b.R). These are based on Healy (2018) chapters 2 and 3 respectively.
+We will work through these files as in-class exercises: [class3a.R](static/class3a.R) and [class3b.R](static/class3b.R). These are based on Healy (2018) chapters 2 and 3 respectively.
   
+Reading the first 3 chapters of Healy (2018) before the next class is essential 
+
 ## Resources
 
 This book is recommended for the course, and for this lecture in particular:
@@ -27,7 +29,7 @@ Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.
 * Giulia Ruggeri, Better data communication with {ggplot2}[Styling a chart and improving the text using {forcats} and {ggtext} and {scales}](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-92fbcfea2c6e), [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
 * datanovia.com: [GGPlot Axis Ticks: Set and Rotate Text Labels](https://www.datanovia.com/en/blog/ggplot-axis-ticks-set-and-rotate-text-labels/)
 
-## Exercises
+## Post-class exercises
 
 Review the [introduction](https://socviz.co) and [Chapter 1 'Look At Data'](https://socviz.co/lookatdata.html) of Healy (2018)
 
@@ -37,7 +39,9 @@ Work through [Chapter 3 'Make a plot'](https://socviz.co/makeplot.html)
 
 ## Checklist
 
-Completed the exercises  
+Worked through the scripts linked at the top of this page
+
+Completed the post reading from Healy (2018)    
 
  * especially section 3.8 'Where to go next' in [Chapter 3 'Make a plot'](https://socviz.co/makeplot.html)
 
