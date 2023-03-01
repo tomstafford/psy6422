@@ -4,6 +4,8 @@
 
 You should organise all the documentation, files, data, code and outputs for a project in a single folder. Your aim is that when you come back to this project, or want to share it, everything you need is in one place and sensibly organised.
 
+Use "projects" in RStudio to make this easy.
+
 Create subfolders for 'data', 'graphs', 'notes'. [Michael Frank's onboarding guide](http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html) explains a bit more about the logic of this.
 
 ## Naming Things
@@ -76,15 +78,15 @@ As well as backing up your work to the cloud, this will allow you to work on mul
 
 ### Warm up: Pair programming exercise
 
-: Write a script to create and save a histogram of life expectancy by continent, using the gapminder data (see slides for more notes)
+* Write a script to create and save a histogram of life expectancy by continent, using the gapminder data (see slides for more notes)
 
 ### Homework: Project 1
 
 Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R); find completed example on google drive) 
 
-Share this project with another student on the course. [2022 see this file for who](https://docs.google.com/spreadsheets/d/1gDbF07ekkz19HshAiDpZ6iu_y5iOKWrpyXDQKElV794/edit?usp=sharing)
+Share this project with another student on the course. [2023 see this file for who](https://docs.google.com/spreadsheets/d/1leMgH7w07jcRLYyktKhSz_Fsysck4IaJIHLiY7FdKbc/edit?usp=sharing)
 
-Run the project shared with you, complete [this checklist](https://docs.google.com/forms/d/e/1FAIpQLSdfOtUIUEs66W0nSqrHTHrMT-iubygdAhNFhUwbu0kOLZIMeA/viewform?usp=sf_link) 2022: deadline 0900 on 2nd of March.
+Run the project shared with you, complete [this checklist](https://forms.gle/axPTcs64RTkH17DU8) 2023: deadline 0900 on 8th of March.
 
 Review the questions in the library [Research Data Management plan for postgraduate researchers](https://docs.google.com/document/d/1rHXl2LYhgv7zeuwc5fDRMyqSgE3OaLa8/edit?usp=sharing&ouid=109750001665912327637&rtpof=true&sd=true)
 
