@@ -5,7 +5,7 @@ This class is about loading, cleaning, inspecting, merging and summarising data 
 
 ## Class material
 
-There are no slides for this class, it is taught entirely in workshop format.
+There are no slides for this class, it is taught entirely in workshop format. A core skill you'll be practicing is searching for help on the task you want to complete. If you feel stuck search for "tidyverse" and a description of the data wrangling task you're trying to do.
 
 ## Exercises
 
