@@ -514,7 +514,9 @@ Part of this is knowing how programming people talk about stuff so you can searc
 
 If you get an error message, copy and paste it into your search.
 
-If you are really stuck, just trying to describe you problem is a good way of indentifying exactly what you want to do, and why you can't. This often means creating a 'minimal reproducible example' - the smallest script possible generates the error you're trying to solve. Often the process of working on this helps you solve the problem yourself, but if it doesn't it means you have clear way of showing someone else what you're issue it. See this [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) and this [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask). Now you have your minimal reproducible example you can ask a friend, teacher, or post it to a forum.
+If you aren't sure what is causing the problem, try tidying up your code. Often just making everything simpler/neater will solve your problem. Restart R. Run your script line by line, checking each line works and does what you expect. Add comments as you go back through your script.
+
+If you are really stuck, just trying to share your problem is a good way of indentifying exactly what you want to do, and why you can't. This often means creating a 'minimal reproducible example' - the smallest script possible generates the error you're trying to solve. Often the process of working on this helps you solve the problem yourself, but if it doesn't it means you have clear way of showing someone else what you're issue it. See this [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) and this [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask). Now you have your minimal reproducible example you can ask a friend, teacher, or post it to a forum.
 
 ### Exercises 2
 

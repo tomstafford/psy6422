@@ -23,7 +23,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2023-03-01" />
+<meta name="date" content="2023-03-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -62,25 +62,27 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -89,9 +91,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -142,52 +144,64 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">PSY6422 Data Management & Visualisation</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Module Overview</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Module Overview</a>
+<ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#motivation"><i class="fa fa-check"></i><b>0.1</b> Motivation</a></li>
-<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-aims"><i class="fa fa-check"></i><b>0.2</b> Course Aims</a><ul>
+<li class="chapter" data-level="0.2" data-path="index.html"><a href="index.html#course-aims"><i class="fa fa-check"></i><b>0.2</b> Course Aims</a>
+<ul>
 <li class="chapter" data-level="0.2.1" data-path="index.html"><a href="index.html#the-module-mini-project"><i class="fa fa-check"></i><b>0.2.1</b> The Module mini-project</a></li>
 </ul></li>
 <li class="chapter" data-level="0.3" data-path="index.html"><a href="index.html#resources-for-current-students"><i class="fa fa-check"></i><b>0.3</b> Resources for current students</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html"><i class="fa fa-check"></i><b>1</b> Overview, assessment &amp; module organisation</a><ul>
+<li class="chapter" data-level="1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html"><i class="fa fa-check"></i><b>1</b> Overview, assessment &amp; module organisation</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#class-material"><i class="fa fa-check"></i><b>1.1</b> Class material:</a></li>
-<li class="chapter" data-level="1.2" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#exercise-1-assessed"><i class="fa fa-check"></i><b>1.2</b> Exercise 1 (assessed!)</a><ul>
+<li class="chapter" data-level="1.2" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#exercise-1-assessed"><i class="fa fa-check"></i><b>1.2</b> Exercise 1 (assessed!)</a>
+<ul>
 <li class="chapter" data-level="1.2.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#marking-criteria"><i class="fa fa-check"></i><b>1.2.1</b> Marking criteria:</a></li>
 <li class="chapter" data-level="1.2.2" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#submission"><i class="fa fa-check"></i><b>1.2.2</b> Submission</a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#checklist"><i class="fa fa-check"></i><b>1.3</b> Checklist:</a></li>
-<li class="chapter" data-level="1.4" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#resources"><i class="fa fa-check"></i><b>1.4</b> Resources</a><ul>
+<li class="chapter" data-level="1.4" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#resources"><i class="fa fa-check"></i><b>1.4</b> Resources</a>
+<ul>
 <li class="chapter" data-level="1.4.1" data-path="overview-assessment-module-organisation.html"><a href="overview-assessment-module-organisation.html#further-reading-on-the-motivation-for-a-data-management-component-of-this-course"><i class="fa fa-check"></i><b>1.4.1</b> Further reading on the motivation for a data management component of this course</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="r-r-studio.html"><a href="r-r-studio.html"><i class="fa fa-check"></i><b>2</b> R &amp; R Studio</a><ul>
+<li class="chapter" data-level="2" data-path="r-r-studio.html"><a href="r-r-studio.html"><i class="fa fa-check"></i><b>2</b> R &amp; R Studio</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="r-r-studio.html"><a href="r-r-studio.html#resources-1"><i class="fa fa-check"></i><b>2.1</b> Resources</a></li>
 <li class="chapter" data-level="2.2" data-path="r-r-studio.html"><a href="r-r-studio.html#exercises-checklist"><i class="fa fa-check"></i><b>2.2</b> Exercises &amp; Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="making-graphs.html"><a href="making-graphs.html"><i class="fa fa-check"></i><b>3</b> Making Graphs</a><ul>
+<li class="chapter" data-level="3" data-path="making-graphs.html"><a href="making-graphs.html"><i class="fa fa-check"></i><b>3</b> Making Graphs</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="making-graphs.html"><a href="making-graphs.html#class-material-1"><i class="fa fa-check"></i><b>3.1</b> Class material</a></li>
-<li class="chapter" data-level="3.2" data-path="making-graphs.html"><a href="making-graphs.html#resources-2"><i class="fa fa-check"></i><b>3.2</b> Resources</a><ul>
+<li class="chapter" data-level="3.2" data-path="making-graphs.html"><a href="making-graphs.html#resources-2"><i class="fa fa-check"></i><b>3.2</b> Resources</a>
+<ul>
 <li class="chapter" data-level="3.2.1" data-path="making-graphs.html"><a href="making-graphs.html#other-resources"><i class="fa fa-check"></i><b>3.2.1</b> Other resources</a></li>
 </ul></li>
 <li class="chapter" data-level="3.3" data-path="making-graphs.html"><a href="making-graphs.html#post-class-exercises"><i class="fa fa-check"></i><b>3.3</b> Post-class exercises</a></li>
 <li class="chapter" data-level="3.4" data-path="making-graphs.html"><a href="making-graphs.html#checklist-1"><i class="fa fa-check"></i><b>3.4</b> Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="project-organisation.html"><a href="project-organisation.html"><i class="fa fa-check"></i><b>4</b> Project Organisation</a><ul>
+<li class="chapter" data-level="4" data-path="project-organisation.html"><a href="project-organisation.html"><i class="fa fa-check"></i><b>4</b> Project Organisation</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="project-organisation.html"><a href="project-organisation.html#project-folders"><i class="fa fa-check"></i><b>4.1</b> Project folders</a></li>
 <li class="chapter" data-level="4.2" data-path="project-organisation.html"><a href="project-organisation.html#naming-things"><i class="fa fa-check"></i><b>4.2</b> Naming Things</a></li>
 <li class="chapter" data-level="4.3" data-path="project-organisation.html"><a href="project-organisation.html#research-data-management"><i class="fa fa-check"></i><b>4.3</b> Research Data Management</a></li>
 <li class="chapter" data-level="4.4" data-path="project-organisation.html"><a href="project-organisation.html#include-meta-data"><i class="fa fa-check"></i><b>4.4</b> Include meta-data</a></li>
 <li class="chapter" data-level="4.5" data-path="project-organisation.html"><a href="project-organisation.html#backup-and-sync"><i class="fa fa-check"></i><b>4.5</b> Backup and Sync</a></li>
 <li class="chapter" data-level="4.6" data-path="project-organisation.html"><a href="project-organisation.html#resources-3"><i class="fa fa-check"></i><b>4.6</b> Resources:</a></li>
-<li class="chapter" data-level="4.7" data-path="project-organisation.html"><a href="project-organisation.html#exercises"><i class="fa fa-check"></i><b>4.7</b> Exercises</a><ul>
+<li class="chapter" data-level="4.7" data-path="project-organisation.html"><a href="project-organisation.html#exercises"><i class="fa fa-check"></i><b>4.7</b> Exercises</a>
+<ul>
 <li class="chapter" data-level="4.7.1" data-path="project-organisation.html"><a href="project-organisation.html#warm-up-pair-programming-exercise"><i class="fa fa-check"></i><b>4.7.1</b> Warm up: Pair programming exercise</a></li>
 <li class="chapter" data-level="4.7.2" data-path="project-organisation.html"><a href="project-organisation.html#homework-project-1"><i class="fa fa-check"></i><b>4.7.2</b> Homework: Project 1</a></li>
 </ul></li>
 <li class="chapter" data-level="4.8" data-path="project-organisation.html"><a href="project-organisation.html#checklist-2"><i class="fa fa-check"></i><b>4.8</b> Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="module-project.html"><a href="module-project.html"><i class="fa fa-check"></i>Module project</a><ul>
+<li class="chapter" data-level="" data-path="module-project.html"><a href="module-project.html"><i class="fa fa-check"></i>Module project</a>
+<ul>
 <li class="chapter" data-level="4.9" data-path="module-project.html"><a href="module-project.html#requirements"><i class="fa fa-check"></i><b>4.9</b> Project requirements</a></li>
-<li class="chapter" data-level="4.10" data-path="module-project.html"><a href="module-project.html#choosing-your-data"><i class="fa fa-check"></i><b>4.10</b> Choosing your data</a><ul>
+<li class="chapter" data-level="4.10" data-path="module-project.html"><a href="module-project.html#choosing-your-data"><i class="fa fa-check"></i><b>4.10</b> Choosing your data</a>
+<ul>
 <li class="chapter" data-level="4.10.1" data-path="module-project.html"><a href="module-project.html#finding-data"><i class="fa fa-check"></i><b>4.10.1</b> Finding Data</a></li>
 <li class="chapter" data-level="4.10.2" data-path="module-project.html"><a href="module-project.html#suggestions-for-possible-project-data-sets"><i class="fa fa-check"></i><b>4.10.2</b> Suggestions for possible project data sets</a></li>
 </ul></li>
@@ -198,21 +212,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.15" data-path="module-project.html"><a href="module-project.html#stretch-goals"><i class="fa fa-check"></i><b>4.15</b> Stretch goals</a></li>
 <li class="chapter" data-level="4.16" data-path="module-project.html"><a href="module-project.html#in-class-exercises"><i class="fa fa-check"></i><b>4.16</b> In class exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="data-wrangling.html"><a href="data-wrangling.html"><i class="fa fa-check"></i><b>5</b> Data Wrangling</a><ul>
+<li class="chapter" data-level="5" data-path="data-wrangling.html"><a href="data-wrangling.html"><i class="fa fa-check"></i><b>5</b> Data Wrangling</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="data-wrangling.html"><a href="data-wrangling.html#class-material-2"><i class="fa fa-check"></i><b>5.1</b> Class material</a></li>
 <li class="chapter" data-level="5.2" data-path="data-wrangling.html"><a href="data-wrangling.html#exercises-1"><i class="fa fa-check"></i><b>5.2</b> Exercises</a></li>
 <li class="chapter" data-level="5.3" data-path="data-wrangling.html"><a href="data-wrangling.html#checklist-3"><i class="fa fa-check"></i><b>5.3</b> Checklist</a></li>
 <li class="chapter" data-level="5.4" data-path="data-wrangling.html"><a href="data-wrangling.html#resources-4"><i class="fa fa-check"></i><b>5.4</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>6</b> Coding Principles</a><ul>
-<li class="chapter" data-level="6.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>6.1</b> Fundamental methods</a><ul>
+<li class="chapter" data-level="6" data-path="coding-principles.html"><a href="coding-principles.html"><i class="fa fa-check"></i><b>6</b> Coding Principles</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-methods"><i class="fa fa-check"></i><b>6.1</b> Fundamental methods</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="coding-principles.html"><a href="coding-principles.html#if"><i class="fa fa-check"></i><b>6.1.1</b> If statements</a></li>
 <li class="chapter" data-level="6.1.2" data-path="coding-principles.html"><a href="coding-principles.html#loops"><i class="fa fa-check"></i><b>6.1.2</b> Loops</a></li>
 <li class="chapter" data-level="6.1.3" data-path="coding-principles.html"><a href="coding-principles.html#functions"><i class="fa fa-check"></i><b>6.1.3</b> Functions</a></li>
 <li class="chapter" data-level="6.1.4" data-path="coding-principles.html"><a href="coding-principles.html#exercises-1-1"><i class="fa fa-check"></i><b>6.1.4</b> Exercises 1</a></li>
 <li class="chapter" data-level="6.1.5" data-path="coding-principles.html"><a href="coding-principles.html#more"><i class="fa fa-check"></i><b>6.1.5</b> More</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>6.2</b> Fundamental principles of good code</a><ul>
+<li class="chapter" data-level="6.2" data-path="coding-principles.html"><a href="coding-principles.html#fundamental-principles-of-good-code"><i class="fa fa-check"></i><b>6.2</b> Fundamental principles of good code</a>
+<ul>
 <li class="chapter" data-level="6.2.1" data-path="coding-principles.html"><a href="coding-principles.html#readability-matters"><i class="fa fa-check"></i><b>6.2.1</b> Readability Matters</a></li>
 <li class="chapter" data-level="6.2.2" data-path="coding-principles.html"><a href="coding-principles.html#avoid-hard-coded-values"><i class="fa fa-check"></i><b>6.2.2</b> Avoid hard coded values</a></li>
 <li class="chapter" data-level="6.2.3" data-path="coding-principles.html"><a href="coding-principles.html#functionalise-generalise"><i class="fa fa-check"></i><b>6.2.3</b> Functionalise &amp; Generalise</a></li>
@@ -222,11 +240,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.2.7" data-path="coding-principles.html"><a href="coding-principles.html#resources-5"><i class="fa fa-check"></i><b>6.2.7</b> Resources</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>7</b> Rmarkdown</a><ul>
+<li class="chapter" data-level="7" data-path="rmarkdown.html"><a href="rmarkdown.html"><i class="fa fa-check"></i><b>7</b> Rmarkdown</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="rmarkdown.html"><a href="rmarkdown.html#and-this-line-is-a-heading"><i class="fa fa-check"></i><b>7.1</b> And this line is a heading</a></li>
 <li class="chapter" data-level="7.2" data-path="rmarkdown.html"><a href="rmarkdown.html#first-a-header"><i class="fa fa-check"></i><b>7.2</b> First a header</a></li>
 <li class="chapter" data-level="7.3" data-path="rmarkdown.html"><a href="rmarkdown.html#second-text"><i class="fa fa-check"></i><b>7.3</b> Second, text</a></li>
-<li class="chapter" data-level="7.4" data-path="rmarkdown.html"><a href="rmarkdown.html#third-code"><i class="fa fa-check"></i><b>7.4</b> Third, code</a><ul>
+<li class="chapter" data-level="7.4" data-path="rmarkdown.html"><a href="rmarkdown.html#third-code"><i class="fa fa-check"></i><b>7.4</b> Third, code</a>
+<ul>
 <li class="chapter" data-level="7.4.1" data-path="rmarkdown.html"><a href="rmarkdown.html#options-for-code-chunks"><i class="fa fa-check"></i><b>7.4.1</b> Options for code chunks</a></li>
 <li class="chapter" data-level="7.4.2" data-path="rmarkdown.html"><a href="rmarkdown.html#include-r-in-inline-text"><i class="fa fa-check"></i><b>7.4.2</b> Include r in inline text</a></li>
 </ul></li>
@@ -236,20 +256,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.8" data-path="rmarkdown.html"><a href="rmarkdown.html#checklist-5"><i class="fa fa-check"></i><b>7.8</b> Checklist</a></li>
 <li class="chapter" data-level="7.9" data-path="rmarkdown.html"><a href="rmarkdown.html#resources-6"><i class="fa fa-check"></i><b>7.9</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html"><i class="fa fa-check"></i><b>8</b> ssh and the command line</a><ul>
+<li class="chapter" data-level="8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html"><i class="fa fa-check"></i><b>8</b> ssh and the command line</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#launching-the-terminal"><i class="fa fa-check"></i><b>8.1</b> Launching the Terminal</a></li>
 <li class="chapter" data-level="8.2" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#changing-folders-navigating-the-directory-tree"><i class="fa fa-check"></i><b>8.2</b> Changing folders (‘navigating the directory tree’)</a></li>
 <li class="chapter" data-level="8.3" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#networking"><i class="fa fa-check"></i><b>8.3</b> Networking</a></li>
 <li class="chapter" data-level="8.4" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#ping"><i class="fa fa-check"></i><b>8.4</b> Ping</a></li>
 <li class="chapter" data-level="8.5" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#remote-access-using-ssh"><i class="fa fa-check"></i><b>8.5</b> Remote access using SSH</a></li>
-<li class="chapter" data-level="8.6" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#find-files-run-files-copy-files"><i class="fa fa-check"></i><b>8.6</b> Find files, run files, copy files</a><ul>
+<li class="chapter" data-level="8.6" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#find-files-run-files-copy-files"><i class="fa fa-check"></i><b>8.6</b> Find files, run files, copy files</a>
+<ul>
 <li class="chapter" data-level="8.6.1" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#switches"><i class="fa fa-check"></i><b>8.6.1</b> switches</a></li>
 </ul></li>
 <li class="chapter" data-level="8.7" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#exercises-4"><i class="fa fa-check"></i><b>8.7</b> Exercises</a></li>
 <li class="chapter" data-level="8.8" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#checklist-6"><i class="fa fa-check"></i><b>8.8</b> Checklist</a></li>
 <li class="chapter" data-level="8.9" data-path="ssh-and-the-command-line.html"><a href="ssh-and-the-command-line.html#resources-7"><i class="fa fa-check"></i><b>8.9</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>9</b> Git and Github</a><ul>
+<li class="chapter" data-level="9" data-path="git-and-github.html"><a href="git-and-github.html"><i class="fa fa-check"></i><b>9</b> Git and Github</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="git-and-github.html"><a href="git-and-github.html#motivation-1"><i class="fa fa-check"></i><b>9.1</b> Motivation</a></li>
 <li class="chapter" data-level="9.2" data-path="git-and-github.html"><a href="git-and-github.html#before-the-class"><i class="fa fa-check"></i><b>9.2</b> Before the class</a></li>
 <li class="chapter" data-level="9.3" data-path="git-and-github.html"><a href="git-and-github.html#accessing-git"><i class="fa fa-check"></i><b>9.3</b> Accessing git</a></li>
@@ -257,35 +280,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.5" data-path="git-and-github.html"><a href="git-and-github.html#checklist-7"><i class="fa fa-check"></i><b>9.5</b> Checklist</a></li>
 <li class="chapter" data-level="9.6" data-path="git-and-github.html"><a href="git-and-github.html#resources-8"><i class="fa fa-check"></i><b>9.6</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="publishing.html"><a href="publishing.html"><i class="fa fa-check"></i><b>10</b> Publishing</a><ul>
+<li class="chapter" data-level="10" data-path="publishing.html"><a href="publishing.html"><i class="fa fa-check"></i><b>10</b> Publishing</a>
+<ul>
 <li class="chapter" data-level="10.1" data-path="publishing.html"><a href="publishing.html#sharing-your-rmd-files-via-github-pages"><i class="fa fa-check"></i><b>10.1</b> Sharing your Rmd files via Github pages</a></li>
 <li class="chapter" data-level="10.2" data-path="publishing.html"><a href="publishing.html#other-sharing-options"><i class="fa fa-check"></i><b>10.2</b> Other sharing options</a></li>
 <li class="chapter" data-level="10.3" data-path="publishing.html"><a href="publishing.html#checklist-8"><i class="fa fa-check"></i><b>10.3</b> Checklist</a></li>
 <li class="chapter" data-level="10.4" data-path="publishing.html"><a href="publishing.html#resources-9"><i class="fa fa-check"></i><b>10.4</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="advanced-topics.html"><a href="advanced-topics.html"><i class="fa fa-check"></i>Advanced Topics</a><ul>
+<li class="chapter" data-level="" data-path="advanced-topics.html"><a href="advanced-topics.html"><i class="fa fa-check"></i>Advanced Topics</a>
+<ul>
 <li class="chapter" data-level="10.5" data-path="advanced-topics.html"><a href="advanced-topics.html#machine-learning"><i class="fa fa-check"></i><b>10.5</b> Machine Learning</a></li>
 <li class="chapter" data-level="10.6" data-path="advanced-topics.html"><a href="advanced-topics.html#miscellaneous-topicsresources"><i class="fa fa-check"></i><b>10.6</b> Miscellaneous topics/resources</a></li>
 <li class="chapter" data-level="10.7" data-path="advanced-topics.html"><a href="advanced-topics.html#reproducibility"><i class="fa fa-check"></i><b>10.7</b> Reproducibility</a></li>
 <li class="chapter" data-level="10.8" data-path="advanced-topics.html"><a href="advanced-topics.html#general-righteousness"><i class="fa fa-check"></i><b>10.8</b> General righteousness</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html"><i class="fa fa-check"></i>- Interactive graphs with Shiny</a><ul>
+<li class="chapter" data-level="" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html"><i class="fa fa-check"></i>- Interactive graphs with Shiny</a>
+<ul>
 <li class="chapter" data-level="10.9" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#before-class"><i class="fa fa-check"></i><b>10.9</b> Before class</a></li>
 <li class="chapter" data-level="10.10" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#exercises-5"><i class="fa fa-check"></i><b>10.10</b> Exercises</a></li>
 <li class="chapter" data-level="10.11" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#resources-10"><i class="fa fa-check"></i><b>10.11</b> Resources</a></li>
 <li class="chapter" data-level="10.12" data-path="interactive-graphs-with-shiny.html"><a href="interactive-graphs-with-shiny.html#examples-of-interactive-graphs-which-use-different-tech-javascript"><i class="fa fa-check"></i><b>10.12</b> Examples of interactive graphs which use different tech (Javascript!)</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="animated-plots-with-gganimate.html"><a href="animated-plots-with-gganimate.html"><i class="fa fa-check"></i>- Animated plots with gganimate</a><ul>
+<li class="chapter" data-level="" data-path="animated-plots-with-gganimate.html"><a href="animated-plots-with-gganimate.html"><i class="fa fa-check"></i>- Animated plots with gganimate</a>
+<ul>
 <li class="chapter" data-level="10.13" data-path="animated-plots-with-gganimate.html"><a href="animated-plots-with-gganimate.html#exercises-6"><i class="fa fa-check"></i><b>10.13</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="database-queries-sql.html"><a href="database-queries-sql.html"><i class="fa fa-check"></i>- Database queries: SQL</a><ul>
+<li class="chapter" data-level="" data-path="database-queries-sql.html"><a href="database-queries-sql.html"><i class="fa fa-check"></i>- Database queries: SQL</a>
+<ul>
 <li class="chapter" data-level="10.14" data-path="database-queries-sql.html"><a href="database-queries-sql.html#context"><i class="fa fa-check"></i><b>10.14</b> Context</a></li>
 <li class="chapter" data-level="10.15" data-path="database-queries-sql.html"><a href="database-queries-sql.html#key-information"><i class="fa fa-check"></i><b>10.15</b> Key information</a></li>
 <li class="chapter" data-level="10.16" data-path="database-queries-sql.html"><a href="database-queries-sql.html#exercises-7"><i class="fa fa-check"></i><b>10.16</b> Exercises</a></li>
 <li class="chapter" data-level="10.17" data-path="database-queries-sql.html"><a href="database-queries-sql.html#checklist-9"><i class="fa fa-check"></i><b>10.17</b> Checklist</a></li>
 <li class="chapter" data-level="10.18" data-path="database-queries-sql.html"><a href="database-queries-sql.html#resources-11"><i class="fa fa-check"></i><b>10.18</b> Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i>- Python</a><ul>
+<li class="chapter" data-level="" data-path="python.html"><a href="python.html"><i class="fa fa-check"></i>- Python</a>
+<ul>
 <li class="chapter" data-level="10.19" data-path="python.html"><a href="python.html#motivation-2"><i class="fa fa-check"></i><b>10.19</b> Motivation</a></li>
 <li class="chapter" data-level="10.20" data-path="python.html"><a href="python.html#a-worked-example"><i class="fa fa-check"></i><b>10.20</b> A worked example</a></li>
 <li class="chapter" data-level="10.21" data-path="python.html"><a href="python.html#preparation"><i class="fa fa-check"></i><b>10.21</b> Preparation</a></li>
@@ -293,17 +322,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="10.23" data-path="python.html"><a href="python.html#after-class"><i class="fa fa-check"></i><b>10.23</b> After class</a></li>
 </ul></li>
 <li class="appendix"><span><b>Appendices</b></span></li>
-<li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes</a><ul>
+<li class="chapter" data-level="A" data-path="class-notes.html"><a href="class-notes.html"><i class="fa fa-check"></i><b>A</b> Class notes</a>
+<ul>
 <li class="chapter" data-level="A.1" data-path="class-notes.html"><a href="class-notes.html#ask-me-questions"><i class="fa fa-check"></i><b>A.1</b> Ask me questions</a></li>
 <li class="chapter" data-level="A.2" data-path="class-notes.html"><a href="class-notes.html#terminology-raw-data"><i class="fa fa-check"></i><b>A.2</b> Terminology: ‘Raw data’</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading</a><ul>
+<li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading</a>
+<ul>
 <li class="chapter" data-level="B.1" data-path="extra-reading.html"><a href="extra-reading.html#visualisation-theory"><i class="fa fa-check"></i><b>B.1</b> Visualisation (theory)</a></li>
 <li class="chapter" data-level="B.2" data-path="extra-reading.html"><a href="extra-reading.html#the-reproducibility-crisis"><i class="fa fa-check"></i><b>B.2</b> The Reproducibility Crisis</a></li>
 <li class="chapter" data-level="B.3" data-path="extra-reading.html"><a href="extra-reading.html#better-practice"><i class="fa fa-check"></i><b>B.3</b> Better practice</a></li>
 <li class="chapter" data-level="B.4" data-path="extra-reading.html"><a href="extra-reading.html#project-organisation-1"><i class="fa fa-check"></i><b>B.4</b> Project organisation</a></li>
 <li class="chapter" data-level="B.5" data-path="extra-reading.html"><a href="extra-reading.html#coding"><i class="fa fa-check"></i><b>B.5</b> Coding</a></li>
-<li class="chapter" data-level="B.6" data-path="extra-reading.html"><a href="extra-reading.html#r"><i class="fa fa-check"></i><b>B.6</b> R</a><ul>
+<li class="chapter" data-level="B.6" data-path="extra-reading.html"><a href="extra-reading.html#r"><i class="fa fa-check"></i><b>B.6</b> R</a>
+<ul>
 <li class="chapter" data-level="B.6.1" data-path="extra-reading.html"><a href="extra-reading.html#hints"><i class="fa fa-check"></i><b>B.6.1</b> Hints</a></li>
 <li class="chapter" data-level="B.6.2" data-path="extra-reading.html"><a href="extra-reading.html#courses-books"><i class="fa fa-check"></i><b>B.6.2</b> Courses / books</a></li>
 </ul></li>
@@ -313,23 +345,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="B.10" data-path="extra-reading.html"><a href="extra-reading.html#advanced-reading-background-other-recommends"><i class="fa fa-check"></i><b>B.10</b> Advanced Reading, Background &amp; Other Recommends</a></li>
 <li class="chapter" data-level="B.11" data-path="extra-reading.html"><a href="extra-reading.html#pedagogy"><i class="fa fa-check"></i><b>B.11</b> Pedagogy</a></li>
 </ul></li>
-<li class="chapter" data-level="C" data-path="notes.html"><a href="notes.html"><i class="fa fa-check"></i><b>C</b> Notes</a><ul>
+<li class="chapter" data-level="C" data-path="notes.html"><a href="notes.html"><i class="fa fa-check"></i><b>C</b> Notes</a>
+<ul>
 <li class="chapter" data-level="C.1" data-path="notes.html"><a href="notes.html#credit"><i class="fa fa-check"></i><b>C.1</b> Credit</a></li>
 <li class="chapter" data-level="C.2" data-path="notes.html"><a href="notes.html#colophon"><i class="fa fa-check"></i><b>C.2</b> Colophon</a></li>
 <li class="chapter" data-level="C.3" data-path="notes.html"><a href="notes.html#data-science-sheffield"><i class="fa fa-check"></i><b>C.3</b> Data Science @ Sheffield</a></li>
 <li class="chapter" data-level="C.4" data-path="notes.html"><a href="notes.html#careers"><i class="fa fa-check"></i><b>C.4</b> Careers</a></li>
 <li class="chapter" data-level="C.5" data-path="notes.html"><a href="notes.html#testimonials"><i class="fa fa-check"></i><b>C.5</b> Testimonials</a></li>
 </ul></li>
-<li class="chapter" data-level="D" data-path="class-of-2020.html"><a href="class-of-2020.html"><i class="fa fa-check"></i><b>D</b> Class of 2020</a><ul>
+<li class="chapter" data-level="D" data-path="class-of-2020.html"><a href="class-of-2020.html"><i class="fa fa-check"></i><b>D</b> Class of 2020</a>
+<ul>
 <li class="chapter" data-level="D.1" data-path="class-of-2020.html"><a href="class-of-2020.html#feedback"><i class="fa fa-check"></i><b>D.1</b> Feedback</a></li>
 </ul></li>
-<li class="chapter" data-level="E" data-path="class-of-2021.html"><a href="class-of-2021.html"><i class="fa fa-check"></i><b>E</b> Class of 2021</a><ul>
+<li class="chapter" data-level="E" data-path="class-of-2021.html"><a href="class-of-2021.html"><i class="fa fa-check"></i><b>E</b> Class of 2021</a>
+<ul>
 <li class="chapter" data-level="E.1" data-path="class-of-2021.html"><a href="class-of-2021.html#feedback-1"><i class="fa fa-check"></i><b>E.1</b> Feedback</a></li>
 </ul></li>
-<li class="chapter" data-level="F" data-path="class-of-2022.html"><a href="class-of-2022.html"><i class="fa fa-check"></i><b>F</b> Class of 2022</a><ul>
+<li class="chapter" data-level="F" data-path="class-of-2022.html"><a href="class-of-2022.html"><i class="fa fa-check"></i><b>F</b> Class of 2022</a>
+<ul>
 <li class="chapter" data-level="F.1" data-path="class-of-2022.html"><a href="class-of-2022.html#module-project-showcase"><i class="fa fa-check"></i><b>F.1</b> Module project showcase</a></li>
 <li class="chapter" data-level="F.2" data-path="class-of-2022.html"><a href="class-of-2022.html#advice-for-future-students"><i class="fa fa-check"></i><b>F.2</b> Advice for future students</a></li>
-<li class="chapter" data-level="F.3" data-path="class-of-2022.html"><a href="class-of-2022.html#one-thing-you-have-read-and-enjoyed-or-found-useful"><i class="fa fa-check"></i><b>F.3</b> “one thing you have read and enjoyed or found useful”</a><ul>
+<li class="chapter" data-level="F.3" data-path="class-of-2022.html"><a href="class-of-2022.html#one-thing-you-have-read-and-enjoyed-or-found-useful"><i class="fa fa-check"></i><b>F.3</b> “one thing you have read and enjoyed or found useful”</a>
+<ul>
 <li class="chapter" data-level="F.3.1" data-path="class-of-2022.html"><a href="class-of-2022.html#general-visualisation"><i class="fa fa-check"></i><b>F.3.1</b> General Visualisation</a></li>
 <li class="chapter" data-level="F.3.2" data-path="class-of-2022.html"><a href="class-of-2022.html#r-specific-advice"><i class="fa fa-check"></i><b>F.3.2</b> R specific advice</a></li>
 <li class="chapter" data-level="F.3.3" data-path="class-of-2022.html"><a href="class-of-2022.html#markdown"><i class="fa fa-check"></i><b>F.3.3</b> Markdown</a></li>
