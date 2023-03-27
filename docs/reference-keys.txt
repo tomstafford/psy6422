@@ -88,7 +88,7 @@ git-and-github
 motivation-1
 before-the-class
 accessing-git
-resources-for-the-class
+essential-terminology
 checklist-7
 resources-8
 publishing
