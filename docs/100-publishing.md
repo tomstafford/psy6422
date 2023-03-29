@@ -18,14 +18,14 @@ If you are making multiple changes to your files, using git on your computer is 
 
 3. Save your analysis in a file ``index.Rmd``
 
-4. Add an .html file called index.html. This file can be created by clicking 'knit' in RStudio from your .Rmd file (see the class on [Rmarkdown](rmarkdown.html)
+4. Add an .html file called index.html. This file can be created by clicking 'knit' in RStudio from your .Rmd file (see the class on [Rmarkdown](rmarkdown.html))
   * selecting 'knit to HTML' if you haven't specified this in the header
 
 5. Upload or "Push" your files, most importantly the ``index.html`` file to a github repo, probably viewable at something like: ``https://github.com/username/myrepo/``
   * **NOTE**: To make the repository an archive of your project you can and should add all the other other files and folders, including the .Rmd file which you used to make the index.html file
 
 6. Visit this link and, via the browser,
-  * click "Settings" and scroll down to "Pages". Under "Source" select "Branch: main". Click Save
+  * click "Settings" and scroll down to "Pages". Under "Branch" select "main". Click Save
   * Find your pages, after a short moment, at [yourusername.github.io/yourreponame]()
   * Example: my repo is at [github.com/tomstafford/supertues](https://github.com/tomstafford/supertues), so the published pages are at [tomstafford.github.io/supertues](https://tomstafford.github.io/supertues/)
 
