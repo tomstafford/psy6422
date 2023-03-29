@@ -19,7 +19,11 @@ These pages are written in Rmarkdown. You can see this individual file [here in 
 Rstudio magic (called "rendering" or "knitting") turns this file in to the webpage.
 
 :::: {.info}
- Before you can turn your ``.Rmd`` files into PDF you need to install TeX on your machine: [use this download link](https://miktex.org/download)
+ Before you can turn your ``.Rmd`` files into PDF you need to install TeX on your machine: try this first in the R console
+ 
+  ``tinytex::install_tinytex()``
+
+If that doesn't work, you may need to [download miktex](https://miktex.org/download)
 ::::
 
 
