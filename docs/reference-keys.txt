@@ -88,6 +88,10 @@ git-and-github
 motivation-1
 before-the-class
 accessing-git
+trouble-shooting
+for-mac-you-may-need-install-homebrew-to-install-git
+to-configure-git-with-rstudio
+for-errors-around-fatal-authentication-failed
 essential-terminology
 checklist-7
 resources-8

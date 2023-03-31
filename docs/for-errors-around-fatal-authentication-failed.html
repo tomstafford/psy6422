@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>- Database queries: SQL | PSY6422 Data Management and Visualisation</title>
+  <title>Chapter 10 For errors around ‘fatal: authentication failed’ | PSY6422 Data Management and Visualisation</title>
   <meta name="description" content="Notes on the course - constantly evolving!" />
   <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="- Database queries: SQL | PSY6422 Data Management and Visualisation" />
+  <meta property="og:title" content="Chapter 10 For errors around ‘fatal: authentication failed’ | PSY6422 Data Management and Visualisation" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Notes on the course - constantly evolving!" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="- Database queries: SQL | PSY6422 Data Management and Visualisation" />
+  <meta name="twitter:title" content="Chapter 10 For errors around ‘fatal: authentication failed’ | PSY6422 Data Management and Visualisation" />
   
   <meta name="twitter:description" content="Notes on the course - constantly evolving!" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="animated-plots-with-gganimate.html"/>
-<link rel="next" href="python.html"/>
+<link rel="prev" href="git-and-github.html"/>
+<link rel="next" href="publishing.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -406,60 +406,64 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="database-queries-sql" class="section level1 unnumbered hasAnchor">
-<h1>- Database queries: SQL<a href="database-queries-sql.html#database-queries-sql" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="context" class="section level2 hasAnchor" number="11.14">
-<h2><span class="header-section-number">11.14</span> Context<a href="database-queries-sql.html#context" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>SQL, you can pronouce it S-Q-L or “sequel,” is a database system. It is old, in internet terms, but not going anywhere, and core to many data science jobs.</p>
+<div id="for-errors-around-fatal-authentication-failed" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Chapter 10</span> For errors around ‘fatal: authentication failed’<a href="for-errors-around-fatal-authentication-failed.html#for-errors-around-fatal-authentication-failed" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ul>
+<li>Click on your profile in the top right</li>
+<li>Select settings</li>
+<li>Scroll to select developer settings on the left hand side</li>
+<li>Click Personal Access Tokens</li>
+<li>Click Tokens (classic)</li>
+<li>Click Generate new token</li>
+<li>select Generate New token (classic)</li>
+<li>Give your token a name (e.g. ‘personal’)</li>
+<li>Change the expiration to ‘No expiration’</li>
+<li>Select repo</li>
+<li>Scroll to generate token and select</li>
+<li>Copy the token (once you leave this page you will lose this token forever)</li>
+<li>Go back to RStudio</li>
+<li>Try to push the commit</li>
+<li>Enter your username</li>
+<li>When prompted to enter password, enter the token you copied NOT your password</li>
+<li>Press ok</li>
+</ul>
+<div id="essential-terminology" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Essential terminology<a href="for-errors-around-fatal-authentication-failed.html#essential-terminology" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>repo: “repository.” A set of files which are in the same project and for which version control using git is appliued</p>
+<p>remote and local: repositories can be on your computer (local) or online, e.g. on github.com (remote)</p>
+<p>clone: make a copy of a repo</p>
+<p>branches: repos can exist in different versions, “branches”</p>
+<p>Other terminology, commit, merge, rebase, push/pull: see below</p>
+<div class="figure">
+<img src="images/gitworkflow.jpeg" alt="" />
+<p class="caption">Nikki Siapno “Git workflow”</p>
 </div>
-<div id="key-information" class="section level2 hasAnchor" number="11.15">
-<h2><span class="header-section-number">11.15</span> Key information<a href="database-queries-sql.html#key-information" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>There are different flavours, such as MySQL which is used by WordPress websites, or PostgreSQL / postgres.</p>
-<p>The common core of SQL is that that it is a ‘relational’ database management systems. It is used for storing information and saying how it is connected to other bits of information. Compare this to the spreadsheet/CSV, which stores information in a list.</p>
-<p>Note that SQL is designed for databases with potentially billions of rows of data. It demands working habits where you can’t “look” at the data all at once, as you would with a spreadsheet.</p>
-<p>SQL has it’s <a href="https://en.wikipedia.org/wiki/SQL_syntax">own terminology</a> but to start off we will think about two things</p>
-<ul>
-<li>Tables: these are rows and columns of data.</li>
-<li>Queries: these are commands we use to select, pull out and/or combine tables</li>
-</ul>
-<p>Tables have ‘fields’ (the variable names which define what information is stored, you may be used to thinking of these as the columns of your data)</p>
-<p>Tables also have ‘records’ (the stored information, which you be used to thinking of as the rows of your data)</p>
 </div>
-<div id="exercises-7" class="section level2 hasAnchor" number="11.16">
-<h2><span class="header-section-number">11.16</span> Exercises<a href="database-queries-sql.html#exercises-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In class, I will illustrate the key concepts of SQL with an example from my own research</p>
+<div id="checklist-7" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Checklist<a href="for-errors-around-fatal-authentication-failed.html#checklist-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Git and github are fundamental tools which will be relevant for collaborating on reliable computational projects, but it is not essential you master the full range of capabilities they offer for this module.</p>
+<p>By the end of this class you should</p>
 <ul>
-<li>Stafford, T. (2018). <a href="http://journals.sagepub.com/doi/10.1177/0956797617736887">Female chess players outperform expectations when playing men</a>. <em>Psychological Science, 29</em>(3), 429-436. (<a href="https://psyarxiv.com/bpy3t/">Preprint</a>).</li>
-</ul>
-<p>Then we will look at this interactive turorial:</p>
-<ul>
-<li><a href="https://sqlzoo.net">sqlzoo.net</a></li>
-</ul>
-<p>Specifically, we will do</p>
-<ul>
-<li>SELECT basics <a href="https://sqlzoo.net/wiki/SELECT_basics" class="uri">https://sqlzoo.net/wiki/SELECT_basics</a></li>
-<li>JOIN <a href="https://sqlzoo.net/wiki/The_JOIN_operation" class="uri">https://sqlzoo.net/wiki/The_JOIN_operation</a></li>
+<li>have a github account</li>
+<li>installed git on your local machine</li>
+<li>understand why git is useful for code projects</li>
+<li>recognise the essential terminology: repo/repository, remotes and local, clone, branches, commit, merge, rebase, push/pull</li>
 </ul>
 </div>
-<div id="checklist-9" class="section level2 hasAnchor" number="11.17">
-<h2><span class="header-section-number">11.17</span> Checklist<a href="database-queries-sql.html#checklist-9" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>By the end of the class, you should</p>
+<div id="resources-8" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Resources<a href="for-errors-around-fatal-authentication-failed.html#resources-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You can RTFM</p>
 <ul>
-<li>Know what SQL is and why it is important for data science</li>
-<li>Understand key concepts: tables, queries, fields, rows</li>
-<li>Recognise and solve problems involving SQL commands such as SELECT, FROM, WHERE, wildcard (%), JOIN, ON,</li>
+<li>Official documentation: <a href="https://help.github.com/en/github/working-with-github-pages">github pages</a></li>
 </ul>
-</div>
-<div id="resources-11" class="section level2 hasAnchor" number="11.18">
-<h2><span class="header-section-number">11.18</span> Resources<a href="database-queries-sql.html#resources-11" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Or you can try one of the following tutorials, they all teach the same thing but in slightly different ways</p>
 <ul>
-<li><a href="https://selectstarsql.com/">Select Star SQL</a> - interactive tutorial</li>
-<li>w3schools.com <a href="https://www.w3schools.com/sql/sql_join.asp">JOIN</a></li>
-<li>Interactive tutorial <a href="https://sqlzoo.net/wiki/SELECT_basics">sqlzoo.net/wiki/SELECT_basics</a></li>
-<li>SQL <a href="https://db.rstudio.com/dplyr/">Database access dplyr</a></li>
-<li><a href="https://www.r-bloggers.com/2021/03/sqlite-is-great-for-r-and-shiny-the-dbmisc-package-may-help-a-bit/">SQLite is great for R and Shiny. The dbmisc package may help a bit.</a></li>
-<li>example SQL data from Kaggle: SQLLite database on <a href="https://www.kaggle.com/anth7310/mental-health-in-the-tech-industry">Mental Health in the Tech Industry</a></li>
-<li><a href="https://www.askedith.ai/">askedith.ai</a> - natural language interface to SQL</li>
+<li>Jenny Bryan git and R <a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR</a></li>
+<li><a href="https://www.sbf5.com/~cduan/technical/git/">Understanding Git Conceptually</a></li>
+<li><a href="https://kbroman.org/github_tutorial/">git/github guide a minimal tutorial</a></li>
+<li>Vuorre, M., &amp; Curley, J. P. (2018). <a href="https://journals.sagepub.com/doi/full/10.1177/2515245918754826">Curating research assets: A tutorial on the git version control system</a>. Advances in Methods and Practices in Psychological Science, 1(2), 219-236.</li>
+<li>Software carpentry: <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a></li>
+<li>Seb James Git Tutorial <a href="https://github.com/ABRG-Models/GitTutorial">repo</a>, <a href="https://github.com/ABRG-Models/GitTutorial/blob/master/talk.pdf">PDF of slides</a></li>
 </ul>
 
 </div>
@@ -574,8 +578,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="animated-plots-with-gganimate.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="python.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="git-and-github.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="publishing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -31,6 +31,71 @@ Outside of RStudio:
 
  * Students using Windows can install: https://gitforwindows.org/ Once installed they should be able to open a git bash window and type ``git --version``
  * Students on a Mac will have git if they install 'Xcode' and 'Command line tools for Xcode'.They can test by opening a terminal and typing ``git --version``
+ 
+
+### Trouble shooting
+
+We are aiming to install git, and mamage syncing with github via RStudio. For these three components, different things on different types of computer can successful coordination, so there is some irreducible complexity in getting your set up working. The notes below should help for 90% of issues, and hopefull you only need to solve these installation issues once
+
+#### for mac, you may need install homebrew to install git
+
+On mac, change the default terminal to BASH, install homebrew:
+https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/ 
+
+In the terminal:
+
+ * ``Cmd + space``
+ * Type ``terminal``
+ * Press ``enter``
+ * In the terminal type, ``chsh -s /bin/bash``
+ * Enter password (this won’t show as you type) and press enter
+ * Close the terminal
+ * Reopen it
+ * To install git, type ``brew install git``
+
+Through system preferences:
+
+ * Click on ``system preferences``
+ * Click on ``‘Users and groups’``
+ * Press ``ctrl + your user``
+ * Click ``advanced options``
+ * Change ‘login shell’ to /bin/bash
+ * Open the terminal (instructions above)
+ * To install git, type ``brew install git``
+
+## To configure git with RStudio
+
+See https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html
+
+ * Click tools
+ * Click global options
+ * Click Git/SVN
+ * If git executable says ‘None’, browse to where git is installed on your laptop
+ * Click ok
+ * In the RStudio terminal:
+ * Type ``git config --user.name GitHub_USERNAME``
+ * Type ``git config --user.email GitHub_EMAIL``
+
+# For errors around ‘fatal: authentication failed’
+
+ * Click on your profile in the top right
+ * Select settings
+ * Scroll to select developer settings on the left hand side
+ * Click Personal Access Tokens
+ * Click Tokens (classic)
+ * Click Generate new token 
+ * select Generate New token (classic)
+ * Give your token a name (e.g. ‘personal’)
+ * Change the expiration to ‘No expiration’
+ * Select repo
+ * Scroll to generate token and select
+ * Copy the token (once you leave this page you will lose this token forever)
+ * Go back to RStudio
+ * Try to push the commit
+ * Enter your username
+ * When prompted to enter password, enter the token you copied NOT your password
+ * Press ok
+
 
 ## Essential terminology
 
