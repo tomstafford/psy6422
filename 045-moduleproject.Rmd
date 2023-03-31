@@ -76,7 +76,7 @@ These are examples of large, probably messy, real-world data sets which could ma
 * [Peer Review Workbench](https://lab.icsr.net/icsr_lab/workbenches.html) - 'summarized metadata of the peer reviews for over one million proprietary Elsevier journal manuscripts submitted between 2018 and 2021 (updated annually), enabling systematic analysis of the peer review process across different disciplines, at scale. '
 * [Open Citatons](https://opencitations.net/index/coci) - citation network for 76 million papers
 * [A decade of tasks](https://github.com/Derek-Jones/renzo-pomodoro) - Between April 2009 and February 2019, software engineer Renzo Borgatti set 17,000+ daily tasks for himself. He completed slightly less than half of them. He labeled them with tags such as “\@meeting”, “\@talk”, and “\@clojure”. He estimated how many “pomodoros” each would take, and how many they really did.
-* [Lichess database](https://database.lichess.org/) - 4 billion online chess games 
+* [Lichess database](https://database.lichess.org/) - 4 billion online chess games. Use with [chessR](https://jaseziv.github.io/chessR/)?
 
 ## Choose your graph
 
