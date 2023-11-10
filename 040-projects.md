@@ -1,0 +1,114 @@
+# Project Organisation
+  
+## Project folders
+
+You should organise all the documentation, files, data, code and outputs for a project in a single folder. Your aim is that when you come back to this project, or want to share it, everything you need is in one place and sensibly organised.
+
+Use "projects" in RStudio to make this easy.
+
+Create subfolders for 'data', 'graphs', 'notes'. [Michael Frank's onboarding guide](http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html) explains a bit more about the logic of this.
+
+## Naming Things
+
+Files come in different types. This is indicated by their name, not the content.Turn on the options which means you file viewers the extensions of files (so you can see the full filename is ``MyProject.Doc`` not just ``MyProject``). How to do this: [PC](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/), [Mac](https://support.apple.com/en-gb/guide/mac-help/mchlp2304/mac).
+
+Because you will want to share this project use names that make sense to other people, as well as to you. ``MyProject.Doc`` is a bad name. ``joeblogs_psy64222.doc`` is better.
+
+Computers sometimes care about capitalisation, which means you need to pay attention : ``MyFile.doc`` and ``myfile.doc`` may not get treated the same. Computers also sometimes care about spaces in filenames. You can include these in your filenames and wait until this messes things up later (maybe much later, maybe even never), or you can decide now to be careful about capitalisation and never use spaces in your files names. Replace spaces with underscores ``My File.doc`` becomes ``my_file.doc``
+
+:::: {.info}
+R/RStudio may not work well if you are using Windows and have Chinese characters in your username. You can avoid this by using the latin alphabet (thanks to 胡传鹏 for this tip)
+
+“c:/users/chuanpeng” √√√
+
+“c:/users/传鹏” ×××  
+:::: 
+
+Never include special characters (e.g. &).
+
+These rules also apply to variables in computer code.
+
+Jenny Bryan has good thoughts on [Naming Things](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
+  
+## Research Data Management
+
+Everything recorded during an experiment, whether by you or the computer, is data. All log files. Everything.
+
+Never delete *any* data.
+
+Never edit the raw data files. They should exist in a folder called \\raw or \\data and only ever be opened, never modified in any way.
+
+All data should be backed-up automatically, as soon as it is collected. For how to do this, see the next header
+
+## Include meta-data
+
+When you share data you *must* include descriptions of where the data comes from and how it can be interpreted. This is sometimes referred to as *data dictionary* or *code book*. The general category is *meta-data* - data about the data.
+
+Typically I include a file called ```codebook.txt``` in the same folder as the data. You can see this in the example projects shared during the module.
+
+In your codebook you should say briefly where your data comes from (how it was collected, who by etc). You should explain what the variables are. Usually variable columns are labelled with abbreviated or compressed names. The code book is your chance to explain in full what these abbreviations mean. You should also explain what the values or levels are of the difference variables. So, for example, if you have a column called ```gender``` in your data. A line in your codebook might be:
+
+```gender : self declared gender of participant. Values are 1 = female, 2 = male, 3 = other, 4 = prefer not to say```
+
+A codebook should also say how any missing values are coded and any other quirks of the data which could affect someone else's onward use.
+
+If you are using secondary data (i.e. data from someone else) it may come with an existing codebook and you should include this in your own project, along with your copy of the data. Make notes, either in an additional, addendum, codebook or in the comments on your analysis code, about any additional considerations which should be noted about the data.
+
+## Backup and Sync
+
+Any back up process which requires you to remember to deploy it is fragile. Use a cloud synchronisation service. Many are available, like OneDrive or Dropbox, but since you are in the University of Sheffield you should install the [Google Drive Backup and Sync tool](https://www.google.com/drive/download/). 
+
+As well as backing up your work to the cloud, this will allow you to work on multiple machines (because changes are automatically carried across from one to the other), as well as collaborate (because multiple people can add to the same shared folder and any changes are instantly available to the whole team).
+
+
+## Resources: 
+
+* Jenny Bryan's presentation on [Naming Things](http://www2.stat.duke.edu/~rcs46/lectures_2015/01-markdown-git/slides/naming-slides/naming-slides.pdf)
+* [Michael Frank's onboarding guide](http://babieslearninglanguage.blogspot.co.uk/2017/01/onboarding.html)
+* [Tidy Data organisation](http://vita.had.co.nz/papers/tidy-data.pdf) 
+* [Habits and open data: Helping students develop a theory of scientific mind ](http://bayesfactor.blogspot.co.uk/2015/11/habits-and-open-data-helping-students.html)
+* Broman & Woo (2017) [Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
+* [University of Sheffield pages on Research Data Management](https://www.sheffield.ac.uk/library/rdm/index)
+* Arslan, R. C. (2019). [How to automatically document data with the codebook package to facilitate data reuse](https://journals.sagepub.com/doi/full/10.1177/2515245919838783). Advances in Methods and Practices in Psychological Science, 2(2), 169-187.
+* Jenny Bryan: [I love the here package. Here's why.](https://github.com/jennybc/here_here)
+* [Why should I use the here package when I'm already using projects?](https://malco.io/2018/11/05/why-should-i-use-the-here-package-when-i-m-already-using-projects/)
+* rstats.wtf : [Project-oriented workflow](https://rstats.wtf/project-oriented-workflow.html)
+
+## Exercises
+
+### Warm up: Pair programming exercise
+
+* Write a script to create and save a histogram of life expectancy by continent, using the gapminder data (see slides for more notes)
+
+### Homework: Project 1
+
+Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R); find completed example on google drive) 
+
+Share this project with another student on the course. [2023 see this file for who](https://docs.google.com/spreadsheets/d/1leMgH7w07jcRLYyktKhSz_Fsysck4IaJIHLiY7FdKbc/edit?usp=sharing)
+
+Run the project shared with you, complete [this checklist](https://forms.gle/axPTcs64RTkH17DU8) 2023: deadline 0900 on 8th of March.
+
+Review the questions in the library [Research Data Management plan for postgraduate researchers](https://docs.google.com/document/d/1rHXl2LYhgv7zeuwc5fDRMyqSgE3OaLa8/edit?usp=sharing&ouid=109750001665912327637&rtpof=true&sd=true)
+
+## Checklist
+
+*in general*  
+ * Be able to organise and share project work
+
+*specifically*  
+Understand & Use  
+ * file extensions, file paths  
+ * standard file naming conventions  
+ * ISO 8601 date format  
+ * standard folder organisation for projects  
+
+Appreciate the need for a research data management plan
+
+Map network drives / automate backups
+
+You should be able to  
+ * download a file to your Desktop (e.g. [this one](static/anscombe.csv)) and locate it on your hard drive  
+ * report the full path of a file  
+ * open a csv file as plain text  
+ * share a project folder with someone else  
+
