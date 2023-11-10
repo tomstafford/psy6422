@@ -27,7 +27,7 @@ Tanvi Ravi's project was [World Happiness: Resilience in the face of the COVID-1
 
 Paul did a deep dive into the historical data on the [Eurovision song content winners](https://paulgering.github.io/PSY6422_project/).
 <img src="images/2023paul.png" style="width: 600px; float: center;">
- [Repo](https://github.com/paulgering/PSY6422_project)
+[Repo](https://github.com/paulgering/PSY6422_project)
 
 Jade looked at [Sumatran Tigers](https://jholley23.github.io/Sumatran-Tiger-Project/)
 <img src="images/2023jade.png" style="width: 600px; float: center;">

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 9 Git and Github | PSY6422 Data Management and Visualisation</title>
+  <title>G Class of 2023 | PSY6422 Data Management and Visualisation</title>
   <meta name="description" content="Notes on the course - constantly evolving!" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 9 Git and Github | PSY6422 Data Management and Visualisation" />
+  <meta property="og:title" content="G Class of 2023 | PSY6422 Data Management and Visualisation" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Notes on the course - constantly evolving!" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 9 Git and Github | PSY6422 Data Management and Visualisation" />
+  <meta name="twitter:title" content="G Class of 2023 | PSY6422 Data Management and Visualisation" />
   
   <meta name="twitter:description" content="Notes on the course - constantly evolving!" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ssh-and-the-command-line.html"/>
-<link rel="next" href="publishing.html"/>
+<link rel="prev" href="class-of-2022.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -403,141 +403,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="git-and-github" class="section level1 hasAnchor" number="9">
-<h1><span class="header-section-number">Chapter 9</span> Git and Github<a href="git-and-github.html#git-and-github" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div class="info">
-<p><a href="https://www.sheffield.ac.uk/psychology/people/research/sebastian-james-0">Seb James</a> taught this class over the last three years - thanks Seb!
-*</p>
-</div>
-<div id="motivation-1" class="section level2 hasAnchor" number="9.1">
-<h2><span class="header-section-number">9.1</span> Motivation<a href="git-and-github.html#motivation-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Git is an incredible common tool among software developers and computer scientists. It has powerful functionality for coordinate code projects across many people. As a core data science tool I want everyone on the course to have had some exposure to it, and to recognise the key concepts (as well as the value it has). We will not be using the full functionality in the course.</p>
-</div>
-<div id="before-the-class" class="section level2 hasAnchor" number="9.2">
-<h2><span class="header-section-number">9.2</span> Before the class<a href="git-and-github.html#before-the-class" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Create an account on <a href="https://github.com/">github.com</a>, if you don’t already have one.</p>
-<p>Install git on your machine.</p>
-<ul>
-<li>On Windows: <a href="https://git-scm.com/download/win" class="uri">https://git-scm.com/download/win</a></li>
-<li>On Mac: <a href="https://git-scm.com/download/mac" class="uri">https://git-scm.com/download/mac</a></li>
-</ul>
-<p>Until you do that you DON’T have the git features enabled in RStudio.</p>
-</div>
-<div id="accessing-git" class="section level2 hasAnchor" number="9.3">
-<h2><span class="header-section-number">9.3</span> Accessing git<a href="git-and-github.html#accessing-git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you have RStudio you can access git using point and click (top right), or via the terminal (the tab next to Console on the bottom right).</p>
-<p>Outside of RStudio:</p>
-<ul>
-<li>Students using Windows can install: <a href="https://gitforwindows.org/" class="uri">https://gitforwindows.org/</a> Once installed they should be able to open a git bash window and type <code>git --version</code></li>
-<li>Students on a Mac will have git if they install ‘Xcode’ and ‘Command line tools for Xcode.’They can test by opening a terminal and typing <code>git --version</code></li>
-</ul>
-<div id="trouble-shooting" class="section level3 hasAnchor" number="9.3.1">
-<h3><span class="header-section-number">9.3.1</span> Trouble shooting<a href="git-and-github.html#trouble-shooting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>We are aiming to install git, and mamage syncing with github via RStudio. For these three components, different things on different types of computer can successful coordination, so there is some irreducible complexity in getting your set up working. The notes below should help for 90% of issues, and hopefull you only need to solve these installation issues once</p>
-<div id="for-mac-you-may-need-install-homebrew-to-install-git" class="section level4 hasAnchor" number="9.3.1.1">
-<h4><span class="header-section-number">9.3.1.1</span> for mac, you may need install homebrew to install git<a href="git-and-github.html#for-mac-you-may-need-install-homebrew-to-install-git" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>On mac, change the default terminal to BASH, install homebrew:
-<a href="https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/" class="uri">https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/</a></p>
-<p>In the terminal:</p>
-<ul>
-<li><code>Cmd + space</code></li>
-<li>Type <code>terminal</code></li>
-<li>Press <code>enter</code></li>
-<li>In the terminal type, <code>chsh -s /bin/bash</code></li>
-<li>Enter password (this won’t show as you type) and press enter</li>
-<li>Close the terminal</li>
-<li>Reopen it</li>
-<li>To install git, type <code>brew install git</code></li>
-</ul>
-<p>Through system preferences:</p>
-<ul>
-<li>Click on <code>system preferences</code></li>
-<li>Click on <code>‘Users and groups’</code></li>
-<li>Press <code>ctrl + your user</code></li>
-<li>Click <code>advanced options</code></li>
-<li>Change ‘login shell’ to /bin/bash</li>
-<li>Open the terminal (instructions above)</li>
-<li>To install git, type <code>brew install git</code></li>
-</ul>
-</div>
-<div id="to-configure-git-with-rstudio" class="section level4 hasAnchor" number="9.3.1.2">
-<h4><span class="header-section-number">9.3.1.2</span> To configure git with RStudio<a href="git-and-github.html#to-configure-git-with-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>See <a href="https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html" class="uri">https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html</a></p>
-<ul>
-<li>Click tools</li>
-<li>Click global options</li>
-<li>Click Git/SVN</li>
-<li>If git executable says ‘None,’ browse to where git is installed on your laptop</li>
-<li>Click ok</li>
-<li>In the RStudio terminal:</li>
-<li>Type <code>git config --user.name GitHub_USERNAME</code></li>
-<li>Type <code>git config --user.email GitHub_EMAIL</code></li>
-</ul>
-</div>
-<div id="for-errors-around-fatal-authentication-failed" class="section level4 hasAnchor" number="9.3.1.3">
-<h4><span class="header-section-number">9.3.1.3</span> For errors around ‘fatal: authentication failed’<a href="git-and-github.html#for-errors-around-fatal-authentication-failed" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Click on your profile in the top right</li>
-<li>Select settings</li>
-<li>Scroll to select developer settings on the left hand side</li>
-<li>Click Personal Access Tokens</li>
-<li>Click Tokens (classic)</li>
-<li>Click Generate new token</li>
-<li>select Generate New token (classic)</li>
-<li>Give your token a name (e.g. ‘personal’)</li>
-<li>Change the expiration to ‘No expiration’</li>
-<li>Select repo</li>
-<li>Scroll to generate token and select</li>
-<li>Copy the token (once you leave this page you will lose this token forever)</li>
-<li>Go back to RStudio</li>
-<li>Try to push the commit</li>
-<li>Enter your username</li>
-<li>When prompted to enter password, enter the token you copied NOT your password</li>
-<li>Press ok</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="essential-terminology" class="section level2 hasAnchor" number="9.4">
-<h2><span class="header-section-number">9.4</span> Essential terminology<a href="git-and-github.html#essential-terminology" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>repo: “repository.” A set of files which are in the same project and for which version control using git is appliued</p>
-<p>remote and local: repositories can be on your computer (local) or online, e.g. on github.com (remote)</p>
-<p>clone: make a copy of a repo</p>
-<p>branches: repos can exist in different versions, “branches”</p>
-<p>Other terminology, commit, merge, rebase, push/pull: see below</p>
-<div class="figure">
-<img src="images/gitworkflow.jpeg" alt="" />
-<p class="caption">Nikki Siapno “Git workflow”</p>
-</div>
-</div>
-<div id="checklist-7" class="section level2 hasAnchor" number="9.5">
-<h2><span class="header-section-number">9.5</span> Checklist<a href="git-and-github.html#checklist-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Git and github are fundamental tools which will be relevant for collaborating on reliable computational projects, but it is not essential you master the full range of capabilities they offer for this module.</p>
-<p>By the end of this class you should</p>
-<ul>
-<li>have a github account</li>
-<li>installed git on your local machine</li>
-<li>understand why git is useful for code projects</li>
-<li>recognise the essential terminology: repo/repository, remotes and local, clone, branches, commit, merge, rebase, push/pull</li>
-</ul>
-</div>
-<div id="resources-8" class="section level2 hasAnchor" number="9.6">
-<h2><span class="header-section-number">9.6</span> Resources<a href="git-and-github.html#resources-8" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>You can RTFM</p>
-<ul>
-<li>Official documentation: <a href="https://help.github.com/en/github/working-with-github-pages">github pages</a></li>
-</ul>
-<p>Or you can try one of the following tutorials, they all teach the same thing but in slightly different ways</p>
-<ul>
-<li>Jenny Bryan git and R <a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR</a></li>
-<li><a href="https://www.sbf5.com/~cduan/technical/git/">Understanding Git Conceptually</a></li>
-<li><a href="https://kbroman.org/github_tutorial/">git/github guide a minimal tutorial</a></li>
-<li>Vuorre, M., &amp; Curley, J. P. (2018). <a href="https://journals.sagepub.com/doi/full/10.1177/2515245918754826">Curating research assets: A tutorial on the git version control system</a>. Advances in Methods and Practices in Psychological Science, 1(2), 219-236.</li>
-<li>Software carpentry: <a href="https://swcarpentry.github.io/git-novice/">Version Control with Git</a></li>
-<li>Seb James Git Tutorial <a href="https://github.com/ABRG-Models/GitTutorial">repo</a>, <a href="https://github.com/ABRG-Models/GitTutorial/blob/master/talk.pdf">PDF of slides</a></li>
-</ul>
+<div id="class-of-2023" class="section level1 hasAnchor" number="17">
+<h1><span class="header-section-number">G</span> Class of 2023<a href="class-of-2023.html#class-of-2023" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>A showcase of some projects from the class of 2022-23.</p>
+<p>There were too many students on the module this year to show all projects, so here are a few highlights. Many creative, fun, interesting, challenging visualisation projects were produced but aren’t shown here, but these few give a flavour of what student’s got up to:</p>
+<p>Gabriel’s project looked at <a href="https://gabrieltld.github.io/psy6422-modproj/">the number of Autism referrals in England before, during, and after lockdown</a>
+<img src="images/2023gabriel.png" style="width: 600px; float: center;">
+<a href="https://github.com/gabrieltld/psy6422-modproj/">Repo</a></p>
+<p>Vitally important information in Mathilde’s visualisation of <a href="https://mathildedenmark.github.io/DAAV-Project/">the ammount of caffeine in different highstreet coffee brands</a>
+<img src="images/2023mathilde.png" style="width: 600px; float: center;">
+<a href="https://github.com/MathildeDenmark/DAAV-Project">Repo</a></p>
+<p>I found Grace’s plot of <a href="https://graceesh.github.io/psy6422_energy_demand/">A Decade of Demand on the National Grid”</a> really informative - spot the lockdown months!
+<img src="images/2023grace.png" style="width: 600px; float: center;">
+<a href="https://github.com/GraceESH/psy6422_energy_demand">Repo</a></p>
+<p>Jennifer’s project on the number of <a href="https://jstandeven.github.io/PSY6422_Project/%5D">Freddos Afforded With The Minimum Wage: From 2000 to 2023</a> seems very relevant to the state of society, as well as illustrating <a href="https://en.wikipedia.org/wiki/Simpson%27s_paradox">Simpson’s Paradox</a> for across different points of time.
+<img src="images/2023jennifer.png" style="width: 600px; float: center;">
+<a href="https://github.com/jstandeven/PSY6422_Project">Repo</a></p>
+<p>Tanvi Ravi’s project was <a href="https://tanvi-r.github.io/PSY6422_Module_Project/">World Happiness: Resilience in the face of the COVID-19 Pandemic</a>
+<img src="images/2023tanviravi.png" style="width: 600px; float: center;">
+<a href="https://github.com/tanvi-r/PSY6422_Module_Project">Repo</a></p>
+<p>Paul did a deep dive into the historical data on the <a href="https://paulgering.github.io/PSY6422_project/">Eurovision song content winners</a>.
+<img src="images/2023paul.png" style="width: 600px; float: center;">
+<a href="https://github.com/paulgering/PSY6422_project">Repo</a></p>
+<p>Jade looked at <a href="https://jholley23.github.io/Sumatran-Tiger-Project/">Sumatran Tigers</a>
+<img src="images/2023jade.png" style="width: 600px; float: center;">
+<a href="https://github.com/Jholley23/Sumatran-Tiger-Project">Repo</a></p>
+<p>Anna’s interactive visualisation looked at <a href="reporting%20errors%20in%20psychology%20journals">https://annskama.shinyapps.io/p_values/</a> (<a href="https://github.com/annskama/p_values">Repo</a>)</p>
+<p>Emma’s visualisation of <a href="https://starsk1.github.io/Fuel_Prices/">Fuel Prices From 2003 to 2023</a> is elgantly simple yet effective
+<img src="images/2023emma.png" style="width: 600px; float: center;">
+<a href="https://github.com/Starsk1/Fuel_Prices">Repo</a></p>
 
-</div>
 </div>
 <div class="psyteachr_footer">
   
@@ -649,8 +544,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="ssh-and-the-command-line.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="publishing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="class-of-2022.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
