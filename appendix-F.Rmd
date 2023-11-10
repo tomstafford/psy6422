@@ -79,7 +79,7 @@ Other projects looked [at the income of UK doctors compared to inflation over th
 
 As part of the module assessment I asked those who took the module "what advice would you give someone starting this course?". Here's what they said:
 
-<div class="delta">its not as hard as you think it will be, you learn pretty quick, google helps a lot, start work on it early.
+<div class="delta">its not as hard as you think it will be, you learn pretty quick, google helps a lot, start work on it early.</div>
 
 <div class="gamma">I would definitely say choose a project topic that you are interested in. I have (quite tragically) loved every minute of developing my project since I am quite interested in the topic and found myself very invested in the outcome of the project.</div>
 

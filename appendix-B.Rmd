@@ -168,6 +168,8 @@ Graphing in R (Eric-Jan Wagenmakers and Quentin F. Gronau): http://shinyapps.org
 
 [r-charts.com](https://r-charts.com/): "Over 1100 graphs with reproducible code divided in 8 big categories and over 50 chart types, in addition of tools to choose and create colors and color palettes"
 
+[r-graph-gallery.com/](https://r-graph-gallery.com/): Similar!
+
 Cédric Scherer: [A ggplot2 Tutorial for Beautiful Plotting in R](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
 
 ## Presentations

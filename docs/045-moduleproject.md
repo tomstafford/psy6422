@@ -77,6 +77,8 @@ These are examples of large, probably messy, real-world data sets which could ma
 * [Open Citatons](https://opencitations.net/index/coci) - citation network for 76 million papers
 * [A decade of tasks](https://github.com/Derek-Jones/renzo-pomodoro) - Between April 2009 and February 2019, software engineer Renzo Borgatti set 17,000+ daily tasks for himself. He completed slightly less than half of them. He labeled them with tags such as “\@meeting”, “\@talk”, and “\@clojure”. He estimated how many “pomodoros” each would take, and how many they really did.
 * [Lichess database](https://database.lichess.org/) - 4 billion online chess games. Use with [chessR](https://jaseziv.github.io/chessR/)?
+* [The Upworthy Research Archive](https://upworthy.natematias.com/)
+* [Wikipedia browsing habits](https://diff.wikimedia.org/2023/06/21/new-dataset-uncovers-wikipedia-browsing-habits-while-protecting-users/)
 
 ## Choose your graph
 
