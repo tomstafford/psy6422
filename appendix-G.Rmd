@@ -20,7 +20,7 @@ I found Grace's plot of [A Decade of Demand on the National Grid"](https://grace
 <img src="images/2023grace.png" style="width: 600px">
 [Repo](https://github.com/GraceESH/psy6422_energy_demand)
 
-Jennifer's project [Freddos Afforded With The Minimum Wage: From 2000 to 2023](https://jstandeven.github.io/PSY6422_Project/]) is relevant to the state of the nation, and illustrates [Simpson's Paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox) for across different points of time.
+Jennifer's project [Freddos Afforded With The Minimum Wage: From 2000 to 2023](https://jstandeven.github.io/PSY6422_Project/) is relevant to the state of the nation, and illustrates [Simpson's Paradox](https://en.wikipedia.org/wiki/Simpson%27s_paradox) for across different points of time.
 
 <img src="images/2023jennifer.png" style="width: 600px">
 [Repo](https://github.com/jstandeven/PSY6422_Project)
