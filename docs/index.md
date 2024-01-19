@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Management and Visualisation"
 author: '[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)'
-date: "2023-11-23"
+date: "2024-01-19"
 output:
   html_document:
     df_print: paged
@@ -73,16 +73,16 @@ See here for [more on the nature of your module project](module-project.html), s
 
 ## Resources for current students
 
-[Google Drive](https://drive.google.com/drive/folders/1c0GOBwwbaxiVcyZKr7QKcZOG6i-_d7by?usp=sharing):
+[Google Drive](https://drive.google.com/drive/folders/1auHvdDMxgmCEUMXDvdZT1OQ4bJ3s2gVk?usp=drive_link):
 
 Includes slides and other resources, as well as these specific documents
 
-* [Timetable](https://docs.google.com/spreadsheets/d/1q3wDSm4eMg2BRoosC5sV0t0FU_iZcOXsxuYj_cstEUw/edit?usp=sharing)
-* [Assessment Criteria](https://docs.google.com/spreadsheets/d/1EIxcBHWZ_h9eSXndkoM-hJf-J9qUhQvqfAz2dZGZe8k/edit?usp=sharing)
+* [Timetable](https://docs.google.com/spreadsheets/d/1qBhWVNaws6TfDd4Q4ZPiVTBa_H4iZpWG8kK-Tv6aIr4/edit?usp=sharing)
+* [Assessment Criteria](https://docs.google.com/spreadsheets/d/10rVuVA5br3bq-zWiELrUBERE694P5NFhhH7lYve78Gs/edit?usp=sharing)
 
 FAQ document which I am adding to as questions come in
 
-* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/1pKKyV9hrzKrr8t6_qN18D5sDNsi0KwAYdYyhY1A6tEI/edit?usp=sharing)
+* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/1fule8FNrCi8u7xTCkmfUxFWEEKe6Amz4UB4c-enUBf4/edit?usp=sharing)
 
 Most information is on these pages (hosted on github, no login required)
 
