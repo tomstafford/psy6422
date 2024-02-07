@@ -73,7 +73,7 @@ See here for [more on the nature of your module project](module-project.html), s
 
 ## Resources for current students
 
-[Google Drive](https://drive.google.com/drive/folders/1auHvdDMxgmCEUMXDvdZT1OQ4bJ3s2gVk?usp=drive_link):
+[Google Drive](Google Drive](https://drive.google.com/drive/folders/1c0GOBwwbaxiVcyZKr7QKcZOG6i-_d7by?usp=sharing):
 
 Includes slides and other resources, as well as these specific documents
 
