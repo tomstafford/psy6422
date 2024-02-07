@@ -53,7 +53,6 @@ You submit using them form link supplied by me, as an attachment with a filename
 * Complete initial self-assessment by deadline
 
 * Check you have received email from Tom
-  * Used the link to join the slack group
   
 
 ## Resources
