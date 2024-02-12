@@ -84,9 +84,9 @@ As well as backing up your work to the cloud, this will allow you to work on mul
 
 Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R); find completed example on google drive) 
 
-Share this project with another student on the course. [2023 see this file for who](https://docs.google.com/spreadsheets/d/1leMgH7w07jcRLYyktKhSz_Fsysck4IaJIHLiY7FdKbc/edit?usp=sharing)
+Share this project with another student on the course. There is a file in the anscombe folder of the google drive telling you who to share with.
 
-Run the project shared with you, complete [this checklist](https://forms.gle/axPTcs64RTkH17DU8) 2023: deadline 0900 on 8th of March.
+Run the project shared with you, complete the checklist (see slides for link) by 9am on the day of the next class
 
 Review the questions in the library [Research Data Management plan for postgraduate researchers](https://docs.google.com/document/d/1rHXl2LYhgv7zeuwc5fDRMyqSgE3OaLa8/edit?usp=sharing&ouid=109750001665912327637&rtpof=true&sd=true)
 
