@@ -82,7 +82,7 @@ As well as backing up your work to the cloud, this will allow you to work on mul
 
 ### Homework: Project 1
 
-Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R); find completed example on google drive) 
+Create project containing script to generate plots from this data: [anscombe.csv](static/anscombe.csv) (template script [here](static/project1.R)).
 
 Share this project with another student on the course. There is a file in the anscombe folder of the google drive telling you who to share with.
 
