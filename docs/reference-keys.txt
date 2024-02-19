@@ -37,6 +37,7 @@ suggestions-for-possible-project-data-sets
 choose-your-graph
 check-list
 answers-to-common-questions
+getting-help
 example-projects
 stretch-goals
 in-class-exercises

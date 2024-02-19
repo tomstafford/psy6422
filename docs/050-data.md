@@ -9,7 +9,7 @@ There are no slides for this class, it is taught entirely in workshop format. A 
 
 ## Exercises
 
-Find the folder `/modelproject_asrs` in the google drive  
+Find the folder `/datawrangle` in the google drive  
 
 * review the project organisation and files
 * open the file `datawrangle_exercises.R`
@@ -45,5 +45,5 @@ Almost any data wrangling task you can imagine can be done, you just need to fin
 * Data Skills for Reproducible Science: [Data Wrangling](https://psyteachr.github.io/msc-data-skills/dplyr.html)
 * Claudia A Engel: [Data Wrangling with R](https://cengel.github.io/R-data-wrangling/dplyr.html)
 * R for Data Science: Part II [Wrangle](https://r4ds.had.co.nz/wrangle-intro.html), especially [Chapter 12 Tidy Data](https://r4ds.had.co.nz/tidy-data.html) and [Chapter 13 Relational Data](https://r4ds.had.co.nz/relational-data.html)
-* datacarpentry.org [Data Wrangling with dplyr and tidyr](https://datacarpentry.org/r-socialsci/03-dplyr-tidyr/index.html)
+* datacarpentry.org [Data Wrangling with dplyr and tidyr](https://datacarpentry.org/r-socialsci/03-dplyr.html)
 * RStudio: [data wrangling cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (PDF)

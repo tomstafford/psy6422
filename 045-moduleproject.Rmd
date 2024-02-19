@@ -22,9 +22,9 @@ Please include these headings, or something similar, in your project.
 * Research Questions
   * in plain english, a simple statement of what question(s) your visulisation will attempt to address
 * Data Preparation
-  * steps taken to clean the data, exclude outliers, create summary statistics, grouped variables, etc
+  * steps taken to clean the data, exclude outliers, sanity check the data range and values, create summary statistics, grouped variables, etc
   * show the first few rows of the processed data, if possible
-  * showing the code which does this were relevant
+  * showing the code which does this where relevant
 * Visualisation(s)
   * graph or graphs
   * documentation explaining any motivation (although good graph labelling is better than explanation in the accompanying text)
@@ -57,7 +57,6 @@ The other route is large publicly available resources:
 * such as [Our World in Data](https://ourworldindata.org/). 
 * Another good source of diverse, open and current data sets is the [Data Is Plural](http://tinyletter.com/data-is-plural/archive) newsletter
 * Enjoy this crowdsourced list of [Open psychological datasets](https://docs.google.com/spreadsheets/d/1ejOJTNTL5ApCuGTUciV0REEEAqvhI2Rd2FCoj7afops/edit#gid=0)
-* [Kaggle](https://www.kaggle.com/)
 * [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/articles/)
 * The [General Social Survey (GSS)](https://gss.norc.org/get-the-data) (US)
 * [Datasets APIs and open source projects related to Climate Change](https://github.com/KKulma/climate-change-data)
@@ -66,6 +65,8 @@ The other route is large publicly available resources:
 
 These are examples of large, probably messy, real-world data sets which could make good starting points for projects with more ambition:
 
+* [X Community Notes](https://help.twitter.com/en/using-x/community-notes) - data on crowdsourced fact-checks from the platform formally known as Twitter
+* [openpsychometrics.org](https://openpsychometrics.org/)
 * [freeCodeCamp.org survey of new programmers](https://github.com/freeCodeCamp?q=new-coder-survey)
 * [StackOverFlow survey data](https://insights.stackoverflow.com/survey/)
 * [BEHACOM - a dataset modelling users’ behaviour in computers](https://www.sciencedirect.com/science/article/pii/S2352340920306612)
@@ -74,7 +75,7 @@ These are examples of large, probably messy, real-world data sets which could ma
 * [The General Index](https://archive.org/details/GeneralIndex) - detailed linguistic data derived from 107,233,728 academic journal articles
 * [components.one](https://components.one/datasets) - various tech & media datasets
 * [Peer Review Workbench](https://lab.icsr.net/icsr_lab/workbenches.html) - 'summarized metadata of the peer reviews for over one million proprietary Elsevier journal manuscripts submitted between 2018 and 2021 (updated annually), enabling systematic analysis of the peer review process across different disciplines, at scale. '
-* [Open Citatons](https://opencitations.net/index/coci) - citation network for 76 million papers
+* [Open Citations](https://opencitations.net/index/coci) - citation network for 76 million papers
 * [A decade of tasks](https://github.com/Derek-Jones/renzo-pomodoro) - Between April 2009 and February 2019, software engineer Renzo Borgatti set 17,000+ daily tasks for himself. He completed slightly less than half of them. He labeled them with tags such as “\@meeting”, “\@talk”, and “\@clojure”. He estimated how many “pomodoros” each would take, and how many they really did.
 * [Lichess database](https://database.lichess.org/) - 4 billion online chess games. Use with [chessR](https://jaseziv.github.io/chessR/)?
 * [The Upworthy Research Archive](https://upworthy.natematias.com/)
@@ -97,18 +98,18 @@ Here are some questions to ask youself as you prepare your project
 * do you have access to the raw data?
 * can you load it?
   * if you can open it in a spreadsheet you will be definitely be able to open it in R, but you will still want to check if it is well formatted when you load it in R
-    * for example, if different cells have different amounts of information in your data won't import nicely
+    * for example, if different cells contain different numbers of entries your data may not import nicely
     * or, if you important information is contained in cell colours then this won't be available when you import into R
 * Do you understand it?
   * is there a code book?
   * do you know what the columns are?
   * do you understand the values?
-  
+  * Are the details of how the data was collected (by who? from whom? when? how?)
   
 ## Answers to common questions
   
   1. it doesn't matter if you don't do the things you said you wanted to do in the initial self-assessment
-  2. you can use the data from another course, for example the course project (psy6009) 
+  2. you can use the data from another course, for example the course project (psy6009)
   2b. if you do use the data from your research project make sure you are clear how this module project is different. I recommend not using the data from your research project.
   3. the data / data questions doesn't have to be something which expresses the relationship between two variables. Any visualisation which shows something non-trivial about the data is good.
   4. You don't need to do any statistical tests or model fitting. You don't need to have a set amount of data to meet statistical significance, just enough to be interesting when visualised.
@@ -118,12 +119,13 @@ Here are some questions to ask youself as you prepare your project
   8. You can reuse someone else's data - this is not plagiarism. You can even redo someone else's analysis. What you **can't** do is copy and paste someone's code for your project
   9. Your project doesn't have to be on a psychology/neuroscience topic, but bear in mind that domain knowledge makes a better data visualisation project, and you - as psychology students - have domain knowledge about psychology.
   10. The data does not have to be very large or very complex. Better a simple, clear, project than a complex, sophisticated project which is harder to understand.
+  
+  
 ## Getting help
 
-Simple questions should be posted on slack, ideally in the appropriate channel. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals. During the semester I add answers to asked questions to the Q&A document (link [here](index.html)). At the end of the semester I will update the webpage so all the information you need is on these pages.
+Simple questions can be posted in the FAQ document. This means that any advice you get (or give) is shared with the whole class, so everyone can benefit and we avoid needlessly repeating the same mistakes as individuals. During the semester I add answers to asked questions to the Q&A document (link [here](index.html)). At the end of the semester I will update the webpage so all the information you need is on these pages.
 
-For more complex problems, you will want to share your whole project - this means not just the R or Rmd file you are working on, but the data file(s) as well, as well as an auxillary notes. 
-Please create a folder, following the [project organisation scheme](project-organisation.html) we covered in week 2 with subfolders for the data, figures, etc and including the .Rmd file. Share this with me and I can help. 
+For more complex problems, you will want to share your whole project - this means not just the R or Rmd file you are working on, but the data file(s) as well, as well as an auxillary notes. Please create a folder, following the [project organisation scheme](project-organisation.html) we covered in week 2 with subfolders for the data, figures, etc and including the .Rmd file. Share this with me and I can help. 
 
 You can either share a google drive folder or a [github repo](git-and-github.html). Doing this means I have all the parts required to reproduce your issue. It also means that if you  update your project in between contacting me and me looking at it then I see the very latest version, rather than working on an outdated problem.
 
@@ -139,10 +141,12 @@ Also, please look at prior project completed by students on this course:
 
 * [Class of 2020 projects](class-of-2020.html).
 * [Class of 2021 projects](class-of-2021.html).
+* [Class of 2022 projects](class-of-2022.html).
+* [Class of 2023 projects](class-of-2023.html).
 
 ## Stretch goals
 
-More ambitious projects, using more advanced techiques, are possible for students who are further along with coding. These include techniques like database (SQL) queries, use of APIs, web-scraping or interactive plots
+More ambitious projects, using more advanced techniques, are possible for students who are further along with coding. These include techniques like database (SQL) queries, use of APIs, web-scraping or interactive plots. While we support this because it can play a role in the development of your skills, such advanced techniques ARE NOT NECESSARY to get strong marks (please consult the mark scheme).
 
 An accessible way to build interactive data visualisations is using the [Shiny package](https://shiny.rstudio.com/) Here's one built for previous research project I worked on : [Power analyser](https://sheffield-university.shinyapps.io/decision_power/)
 
