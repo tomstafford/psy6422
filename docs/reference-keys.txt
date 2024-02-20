@@ -123,6 +123,7 @@ after-class
 class-notes
 ask-me-questions
 terminology-raw-data
+what-should-i-do-if-my-visualisation-uses-a-new-library-or-package
 extra-reading
 visualisation-theory
 the-reproducibility-crisis

@@ -23,7 +23,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2024-02-19" />
+<meta name="date" content="2024-02-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -330,6 +330,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="A.1" data-path="class-notes.html"><a href="class-notes.html#ask-me-questions"><i class="fa fa-check"></i><b>A.1</b> Ask me questions</a></li>
 <li class="chapter" data-level="A.2" data-path="class-notes.html"><a href="class-notes.html#terminology-raw-data"><i class="fa fa-check"></i><b>A.2</b> Terminology: ‘Raw data’</a></li>
+<li class="chapter" data-level="A.3" data-path="class-notes.html"><a href="class-notes.html#what-should-i-do-if-my-visualisation-uses-a-new-library-or-package"><i class="fa fa-check"></i><b>A.3</b> What should I do if my visualisation uses a new library or package?</a></li>
 </ul></li>
 <li class="chapter" data-level="B" data-path="extra-reading.html"><a href="extra-reading.html"><i class="fa fa-check"></i><b>B</b> Extra Reading</a>
 <ul>
@@ -419,10 +420,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">A.2</span> Terminology: ‘Raw data’<a href="class-notes.html#terminology-raw-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Data before any processing has been done. Usually these means that the individual responses which create the data are recorded</p>
 <p>The opposite is cleaned data (once it has been processed) and then after that summary data (in which responses are collapsed across individuals or into groups)</p>
-<p>##. What should I do if my visualisation uses a new library or package?</p>
+</div>
+<div id="what-should-i-do-if-my-visualisation-uses-a-new-library-or-package" class="section level2 hasAnchor" number="11.3">
+<h2><span class="header-section-number">A.3</span> What should I do if my visualisation uses a new library or package?<a href="class-notes.html#what-should-i-do-if-my-visualisation-uses-a-new-library-or-package" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Ideally your code should specify all the libraries it uses. These are known as “dependencies.” If you use an usual library it may require specific downloading to your computer, meaning that your code won’t run on computers that don’t have it downloaded. There are ways of managing this, but we haven’t covered these in the course (google “docker” or “conda” or “reproducible computational environments”). As long as your code indicates what you have installed (e.g. it includes a line like</p>
 <p>library(fancyplotslibrary)</p>
 <p>at the beginning, don’t worry about it</p>
+<p>Remember - if you use a new library, your code will not run for anyone else until they install it.</p>
 
 </div>
 </div>
