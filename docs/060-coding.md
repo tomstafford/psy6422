@@ -523,7 +523,7 @@ If you are really stuck, just trying to share your problem is a good way of inde
 * In pairs, take one person's code from a previous week's project and review for readability, using the __better code__ checklist below. Write an improved version together
 * In pairs, try these '[Parsons Problems](https://github.com/tomstafford/parsonsproblems)' __only try the R problems__ not the python (`.py`) ones
 * Review these articles on how to make a minimal reproducible example: [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) & [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask).
-* Make and share on slack a minimal reproducible example of your next R problem
+* Make and share a minimal reproducible example of your next R problem
 
 ### Checklist
 
