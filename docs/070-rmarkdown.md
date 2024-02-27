@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Management and Visualisation"
 author: "Tom Stafford"
-date: "2024-02-20"
+date: "2024-02-27"
 output:
   html_document: default
 ---
@@ -35,7 +35,18 @@ Compare the [file](https://github.com/tomstafford/psy6422/blob/master/070-rmarkd
 
 ## And this line is a heading
 
-Try now creating your own Rmarkdown file by clicking File > New File > Rmarkdown in RStudio. 
+Try now creating your own Rmarkdown file. **DO THIS BY CREATING A NEW PROJECT FIRST**.
+
+Click 
+
+* File > New Project > New Directory [and choose where the project folder will be. Remember, you want it to be automatically backed up]
+* Project type is "New project"
+
+Now
+
+* File > New File > R Markdown [and choose a meaningful title]
+* You still need to save this file once it has been created
+ 
 
 RMarkdown files have three components.
 
@@ -52,6 +63,10 @@ This is called YAML and it is stuff meant to be read by the computer when the fi
 After a brief pause you should get a new window open, containing something that has some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings, etc).
 
 Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click "Knit" and select "Knit to PDF". You get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before. 
+
+:::: {.info}
+Submitting PDFs is one of the requirements for assessments 2 and 3. This class is good opportunity to check you can do this.
+::::
 
 
 ## Second, text

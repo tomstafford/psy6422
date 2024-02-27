@@ -546,6 +546,7 @@ __better code__
    * comments
 * hard coded values aid extension, efficiency and reproducibility
 * functions make code easier to read, easier to modify, reduce the likelihood of bugs
+   * all functions begin with a plain language comment explaining what the function does
 
 __ask for help__  
 
