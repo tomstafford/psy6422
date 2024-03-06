@@ -82,7 +82,7 @@ ping
 remote-access-using-ssh
 find-files-run-files-copy-files
 switches
-exercises-4
+remote-webserver-exercise
 checklist-6
 resources-7
 git-and-github
@@ -106,13 +106,13 @@ miscellaneous-topicsresources
 reproducibility
 general-righteousness
 before-class
-exercises-5
+exercises-4
 resources-10
 examples-of-interactive-graphs-which-use-different-tech-javascript
-exercises-6
+exercises-5
 context
 key-information
-exercises-7
+exercises-6
 checklist-9
 resources-11
 motivation-2

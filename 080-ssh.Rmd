@@ -20,6 +20,10 @@ On Windows or Mac, search 'Terminal' in the launcher. You should see a small bla
 
 Note that the cursor appears after some information that shows a file path and/or computer identity. Just as RStudio has a working directory, a location where it looks to load or save files, so with the command line. This is very important, since many command line instructions will only work if they are run *in the right place*.
 
+:::: {.info}
+You can also access the terminal inside RStudio (look for the tab above the console window). Fundamentally, however, this is just for convenience, the terminal is something available for all computers, not just those with RStudio installed.
+::::
+
 ## Changing folders ('navigating the directory tree')
 
 Get the contents of the current directory with `dir` (on Windows) or `ls` (on Mac).
@@ -32,13 +36,13 @@ You can get the current path `cd` (Windows) or `pwd` (Mac)
 
 This way you can navigate all of the files stored on your computer. It is fiddly and annoying compared to the normal GUI method, but it is more fundamental to how computers work 'under the hood' and this way of interacting with computers is necessary in some situations (including, often, accessing remote computers).
 
-Remeber, like in RStudio, you can use TAB to autocomplete commands. 
+Remember, like in RStudio, you can **use TAB to autocomplete commands.**
 
 ## Networking
 
 Computers connected to a network have an address, called an [IP address](https://en.wikipedia.org/wiki/Internet_Protocol), which is always four numbers separated by dots. You are used to navigating the internet using domain names such as [sheffield.ac.uk](), but these names exist for human convenience. Like the command line for individual computers, IP addresses are closer to the metal of how computer networks actually work.
 
-Copy this IP into your browser and see which website it takes you to: [143.167.2.102](http://143.167.2.102).
+Copy this IP into your browser and see which website it takes you to: [143.167.2.102](http://143.167.2.102)
 
 You computer is also connected to the internet, so it has an IP address. You can find this out by typing `ipconfig` (Windows) or `ifconfig` (Mac) at the command line. (You can also google 'what is my ip' but that won't work for what we're about to do). This command should give you a bunch of information. Look for the IP addresses. If you are at home you may see one with the first two numbers `192.168.xxx.xxx`. If you are on campus you should see an IP of the form `172.xxx.xxx.xxx'. All computer on the University network have IPs which start with the same number.
 
@@ -80,7 +84,7 @@ The terminal will look similar, but commands you run will now execute on this re
 
 ## Find files, run files, copy files
 
-*This section assumes you are working on a remote linux machine*
+**This section assumes you are working on a remote linux machine. Connection details will be on the slides during class**
 
 Let's use the command `find` to look on this remote computer for any R scripts. The use of * here is known as "a wildcard"
 
@@ -127,9 +131,9 @@ We can read the [espeak documentation](https://linux.die.net/man/1/espeak) to se
 `espeak -s 230 "hello my name is speedy"`
 
 
-## Exercises
+## Remote webserver exercise
 
-**These exercises will need to be done in the week after class, since the remote machine is not turned on permanently. See slack for the IP, username and password to use for remote access**
+**This exercises will need to be done in the week after class, since the remote machine is not turned on permanently. See the class slides for the IP, username and password to use for remote access**
 
 * Enter the remote IP in a browser - this shows a website served from the remote computer
 * remote access it using ssh
