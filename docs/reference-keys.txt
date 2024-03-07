@@ -94,6 +94,7 @@ for-mac-you-may-need-install-homebrew-to-install-git
 to-configure-git-with-rstudio
 for-errors-around-fatal-authentication-failed
 essential-terminology
+exercises-4
 checklist-7
 resources-8
 publishing
@@ -106,13 +107,13 @@ miscellaneous-topicsresources
 reproducibility
 general-righteousness
 before-class
-exercises-4
+exercises-5
 resources-10
 examples-of-interactive-graphs-which-use-different-tech-javascript
-exercises-5
+exercises-6
 context
 key-information
-exercises-6
+exercises-7
 checklist-9
 resources-11
 motivation-2

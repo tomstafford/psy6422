@@ -22,7 +22,7 @@ Install git on your machine.
   * On Windows: https://git-scm.com/download/win
   * On Mac: https://git-scm.com/download/mac
   
-Accept all the defaults when queried.
+Accept all the defaults when queried. 
   
 Until you do that you DON'T have the git features enabled in RStudio.
 
@@ -121,6 +121,17 @@ Other terminology: stage, commit, push/pull: see below
 
 ![Nikki Siapno "Git workflow"](images/gitworkflow.jpeg)
 
+## Exercises
+
+* create an account at github.com
+* install git on your computer
+* configure git with your name and email
+* create a repo on github.com
+* clone it to your computer, using RStudio Projects
+  * Once you have cloned a repo a “git” tab will appear in the top right corner of RStudio, allowing you to complete the essential git actions via RStudio & clicking
+* make edits and then stage, commit and push within RStudio
+  * solve any credentialing problems ("fatal authentication error")
+  * verify that your local edits appear on the remote repository on github.com
 
 ## Checklist
 
