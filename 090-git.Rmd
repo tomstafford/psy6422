@@ -69,7 +69,7 @@ Through system preferences:
 
 #### To configure git with RStudio
 
-See https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html
+Once git is installed on your machine, you just need to make sure that RStudio knows that. Once you've done this you can control git via RStudio. For longer notes see https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html
 
  * Click tools
  * Click global options
