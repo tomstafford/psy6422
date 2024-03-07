@@ -102,7 +102,7 @@ But we can also run the script without launching R (so the will run the script a
 
 You can also feed the script to R by specifying the full path
 
-`Rscript home/neo/Desktop/toyscript.R`
+`Rscript /home/neo/Desktop/toyscript.R`
 
 Find out how long the script takes to run by putting `time` in front
 
