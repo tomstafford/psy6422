@@ -52,7 +52,7 @@ animate(p,renderer=gifski_renderer("my_animation.gif"))
 * bonus question, why do it this way rather than use R to generate the animation on the page?
   * Use the `{frame_time}` attribute in a label
 * How does gganimate know what values to put in `frame_time`?
-  * Add small black marks to show the starting values of the data. Which option does this
+  * Add small, black, marks to show the starting values of the data. Which option does this
 * Look at the documentation and see if you can figure out what line to add to achieve this
 * [Hint](https://gganimate.com/reference/shadow_mark.html)
 * Why do you need to render a gif? 
