@@ -163,6 +163,11 @@ class-of-2023
 reflection
 class-of-2024
 reflection-1
-toms-notes
+feedback-from-those-taking-the-course
+toms-reflection
+student-feedback
 useful-links
+videos
+pages
+books-articles
 what-advice-would-you-give-someone-starting-this-course
