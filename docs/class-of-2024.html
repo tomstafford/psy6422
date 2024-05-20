@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 ssh and the command line | PSY6422 Data Management and Visualisation</title>
+  <title>H Class of 2024 | PSY6422 Data Management and Visualisation</title>
   <meta name="description" content="Notes on the course - constantly evolving!" />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 ssh and the command line | PSY6422 Data Management and Visualisation" />
+  <meta property="og:title" content="H Class of 2024 | PSY6422 Data Management and Visualisation" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Notes on the course - constantly evolving!" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 ssh and the command line | PSY6422 Data Management and Visualisation" />
+  <meta name="twitter:title" content="H Class of 2024 | PSY6422 Data Management and Visualisation" />
   
   <meta name="twitter:description" content="Notes on the course - constantly evolving!" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="rmarkdown.html"/>
-<link rel="next" href="git-and-github.html"/>
+<link rel="prev" href="class-of-2023.html"/>
+<link rel="next" href="toms-notes.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -421,133 +421,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ssh-and-the-command-line" class="section level1 hasAnchor" number="8">
-<h1><span class="header-section-number">Chapter 8</span> ssh and the command line<a href="ssh-and-the-command-line.html#ssh-and-the-command-line" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p align="center">
-<img src="images/remote.png" style="width: 600px; float: center;">
-</p>
-<div class="info">
-<p>Before this class please install the <a href="https://www.sheffield.ac.uk/it-services/vpn">University VPN</a> and confirm it works [estimated time: 5-10 minutes]</p>
-</div>
-<p>In this class we will introduce the idea of the command line, running commands without the normal graphical user interface (GUI) and accessing remote computers using ssh (secure shell).</p>
-<div id="launching-the-terminal" class="section level2 hasAnchor" number="8.1">
-<h2><span class="header-section-number">8.1</span> Launching the Terminal<a href="ssh-and-the-command-line.html#launching-the-terminal" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>On Windows or Mac, search ‘Terminal’ in the launcher. You should see a small black box (called “Command Prompt” on Windows) with a cursor. On windows you can also enter <code>cmd.exe</code> in the search box in the bottom left.</p>
-<p align="center">
-<img src="images/windows_cmd.png" style="width: 600px; float: center;">
-</p>
-<p>Note that the cursor appears after some information that shows a file path and/or computer identity. Just as RStudio has a working directory, a location where it looks to load or save files, so with the command line. This is very important, since many command line instructions will only work if they are run <em>in the right place</em>.</p>
-<div class="info">
-<p>You can also access the terminal inside RStudio (look for the tab above the console window). Fundamentally, however, this is just for convenience, the terminal is something available for all computers, not just those with RStudio installed.</p>
-</div>
-</div>
-<div id="changing-folders-navigating-the-directory-tree" class="section level2 hasAnchor" number="8.2">
-<h2><span class="header-section-number">8.2</span> Changing folders (‘navigating the directory tree’)<a href="ssh-and-the-command-line.html#changing-folders-navigating-the-directory-tree" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Get the contents of the current directory with <code>dir</code> (on Windows) or <code>ls</code> (on Mac).</p>
-<p>You will get a list of contents, some of these things are folders, some are files. Can you identify which is which?</p>
-<p>You can move into a subfolder, using <code>cd foldername</code>. You can move up/back the path using <code>cd ..</code></p>
-<p>You can get the current path <code>cd</code> (Windows) or <code>pwd</code> (Mac)</p>
-<p>This way you can navigate all of the files stored on your computer. It is fiddly and annoying compared to the normal GUI method, but it is more fundamental to how computers work ‘under the hood’ and this way of interacting with computers is necessary in some situations (including, often, accessing remote computers).</p>
-<p>Remember, like in RStudio, you can <strong>use TAB to autocomplete commands.</strong></p>
-</div>
-<div id="networking" class="section level2 hasAnchor" number="8.3">
-<h2><span class="header-section-number">8.3</span> Networking<a href="ssh-and-the-command-line.html#networking" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Computers connected to a network have an address, called an <a href="https://en.wikipedia.org/wiki/Internet_Protocol">IP address</a>, which is always four numbers separated by dots. You are used to navigating the internet using domain names such as <a href="">sheffield.ac.uk</a>, but these names exist for human convenience. Like the command line for individual computers, IP addresses are closer to the metal of how computer networks actually work.</p>
-<p>Copy this IP into your browser and see which website it takes you to: <a href="http://143.167.2.102">143.167.2.102</a></p>
-<p>You computer is also connected to the internet, so it has an IP address. You can find this out by typing <code>ipconfig</code> (Windows) or <code>ifconfig</code> (Mac) at the command line. (You can also google ‘what is my ip’ but that won’t work for what we’re about to do). This command should give you a bunch of information. Look for the IP addresses. If you are at home you may see one with the first two numbers <code>192.168.xxx.xxx</code>. If you are on campus you should see an IP of the form `172.xxx.xxx.xxx’. All computer on the University network have IPs which start with the same number.</p>
-<p>Now launch the University VPN and look for your IP again. If you are off campus it should change, so you now have an IP which starts 172. Remember this number, we will use it later.</p>
-</div>
-<div id="ping" class="section level2 hasAnchor" number="8.4">
-<h2><span class="header-section-number">8.4</span> Ping<a href="ssh-and-the-command-line.html#ping" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Computers talk to each other in lots of different ways, but you are probably mostly familiar with webpages - the “world wide web” (www) served via the <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">http protocol</a>.</p>
-<p>One of the very simplest ways for two computers to talk to each other is <code>ping</code> which is just a tool to check whether two computers can pass messages back and forth. The content of the message isn’t important, it is just to check that they are both connected to the network</p>
-<p>You can ping an IP or a website. Try it at the command line</p>
-<p><code>ping shef.ac.uk</code></p>
-<p>You should get back a bunch of lines will tell you how long, in milliseconds, your computer took to get a message to and from that website. Try it with somewhere further away.</p>
-<p><code>ping wapo.com</code> (the East coast of the USA), or <code>ping globaltimes.cn</code> (mainland China)</p>
-<p>But we can also ping individual machines. “sharc” is one of the <a href="https://docs.hpc.shef.ac.uk/en/latest/">high performance computing</a> (HPC) clusters at Sheffield. You can only talk to it if you are inside the University network (i.e. you need to be on campus or turn your VPN on). Try</p>
-<p><code>ping sharc.shef.ac.uk</code></p>
-<p>If you’ve turned your VPN on correctly it will work.</p>
-</div>
-<div id="remote-access-using-ssh" class="section level2 hasAnchor" number="8.5">
-<h2><span class="header-section-number">8.5</span> Remote access using SSH<a href="ssh-and-the-command-line.html#remote-access-using-ssh" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If two computers are connected, you may be able to remotely access one from the other using a command called ssh. This takes the form</p>
-<p><code>ssh user@machine_ip</code></p>
-<p>Tom will set up a machine for you to try this in class. If successful you should see something like this</p>
-<p align="center">
-<img src="images/neo.png" style="width: 600px; float: center;">
-</p>
-<p>The terminal will look similar, but commands you run will now execute on this remote machine. You may also have changed operating system, so you rather than the commands for Mac or Windows, you need to use the commands the work on the remote machine. Many HPC machines and webservers are linux machines (and so is the one we will connect to in class).</p>
-</div>
-<div id="find-files-run-files-copy-files" class="section level2 hasAnchor" number="8.6">
-<h2><span class="header-section-number">8.6</span> Find files, run files, copy files<a href="ssh-and-the-command-line.html#find-files-run-files-copy-files" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>This section assumes you are working on a remote linux machine. Connection details will be on the slides during class</strong></p>
-<p>Let’s use the command <code>find</code> to look on this remote computer for any R scripts. The use of * here is known as “a wildcard”</p>
-<p><code>find -name '*.R'</code></p>
-<p>We can run R on the remote computer, but you can’t run RStudio (because the terminal doesn’t show graphics, only text). Running software without the GUI is known as running software “headless.”</p>
-<p><code>R</code></p>
-<p>Will launch an interactive R console. Quit with <code>q()</code></p>
-<p>But we can also run the script without launching R (so the will run the script and then quit, leaving us back at the terminal. You can either navigate to the containing folder and run it.</p>
-<p><code>Rscript toyscript.R</code></p>
-<p>You can also feed the script to R by specifying the full path</p>
-<p><code>Rscript /home/neo/Desktop/toyscript.R</code></p>
-<p>Find out how long the script takes to run by putting <code>time</code> in front</p>
-<p><code>time Rscript toyscript.R</code></p>
-<p>Now there’s no point running a simple R script remotely, but when you have very large data it can be convenient to run your analysis on a remote machine which is more powerful (or on many remote machines, which allows parallel processing).</p>
-<p>Let’s copy this script from the remote machine to our home machine. To do this you need the <code>scp</code> command and to know your username and ip address. The path to where you want the file saved comes after the colon:</p>
-<p><code>scp toyscript.R  user@your_ip:/path/to/Desktop/toyscript.R</code></p>
-<div class="info">
-<p>scp will work on linux or mac, but not on windows.</p>
-</div>
-<div id="switches" class="section level3 hasAnchor" number="8.6.1">
-<h3><span class="header-section-number">8.6.1</span> switches<a href="ssh-and-the-command-line.html#switches" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Often we feed additional options (sometimes called ‘switches’) to command line tools. So the command <code>espeak</code> speaks words aloud</p>
-<p><code>espeak "hello"</code></p>
-<p>We can read the <a href="https://linux.die.net/man/1/espeak">espeak documentation</a> to see what the options are. Let’s adjust the pitch and speed.</p>
-<p><code>espeak -p 8 "hello but with extra gravitas"</code></p>
-<p><code>espeak -s 230 "hello my name is speedy"</code></p>
-</div>
-</div>
-<div id="remote-webserver-exercise" class="section level2 hasAnchor" number="8.7">
-<h2><span class="header-section-number">8.7</span> Remote webserver exercise<a href="ssh-and-the-command-line.html#remote-webserver-exercise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>This exercises will need to be done in the week after class, since the remote machine is not turned on permanently. See the class slides for the IP, username and password to use for remote access</strong></p>
-<ul>
-<li>Enter the remote IP in a browser - this shows a website served from the remote computer</li>
-<li>remote access it using ssh</li>
-<li>find the file index.html
-<ul>
-<li>hint: it is in /var/www/html</li>
-</ul></li>
-<li>copy to your local machine using scp</li>
-<li>edit using a text editor and save on your local machine</li>
-<li>copy back to the server</li>
-<li>look again at the IP in a browser to verify that you changed it (remember to press refresh/F5/clear your cache)</li>
-</ul>
-</div>
-<div id="checklist-6" class="section level2 hasAnchor" number="8.8">
-<h2><span class="header-section-number">8.8</span> Checklist<a href="ssh-and-the-command-line.html#checklist-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Identify and launch a terminal window</li>
-<li>Navigate the directory tree using command line instructions</li>
-<li>find your ip address</li>
-<li>ping an ip or website</li>
-<li>find files, run programmes, on remote machines
-<ul>
-<li>feed options to command line tools using switches</li>
-</ul></li>
-<li>copy files to/from remote machines using scp</li>
-</ul>
-</div>
-<div id="resources-7" class="section level2 hasAnchor" number="8.9">
-<h2><span class="header-section-number">8.9</span> Resources<a href="ssh-and-the-command-line.html#resources-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><a href="https://datascienceatthecommandline.com/">datascienceatthecommandline.com</a> - Data Science at the Command Line</li>
-<li><a href="https://www.nature.com/articles/d41586-021-00263-0">Five reasons why researchers should learn to love the command line</a></li>
-<li><a href="https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html">Terminus</a> - command line text adventure (see also <a href="https://gitlab.com/slackermedia/bashcrawl">bashcrawl</a>)</li>
-<li>For historical interest: <a href="http://cristal.inria.fr/~weis/info/commandline.html">In the Beginning… Was the Command Line</a> (1999) Neal Stephenson</li>
-<li>If you want to experiment with linux you may start with <a href="https://ubuntu.com/download/desktop">Ubuntu Linux</a></li>
-</ul>
-
+<div id="class-of-2024" class="section level1 hasAnchor" number="18">
+<h1><span class="header-section-number">H</span> Class of 2024<a href="class-of-2024.html#class-of-2024" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>A showcase of some projects from the class of 2023-24.</p>
+<p>There were too many students on the module this year to show all projects, so here are a few highlights. Many creative, fun, interesting, challenging visualisation projects were produced but aren’t shown here, but these few give a flavour of what student’s got up to:</p>
+<p>Rachel (looked at Contraception use since the 90s](<a href="https://rgatley.github.io/Contraception/" class="uri">https://rgatley.github.io/Contraception/</a>). (<a href="https://github.com/rgatley/Contraception">Repo</a>):</p>
+<p><img src="images/2024rachel.gif" style="width: 600px; float: center;"></p>
+<hr />
+<p>More trees! <a href="https://jacobmoorcroft.github.io/moorcroft_230170656/">The Growth of Woodland Area within the United Kingdom (1998-2023)</a> (<a href="https://github.com/JacobMoorcroft/moorcroft_230170656">Repo</a>)</p>
+<p><img src="images/2024jacob.png" style="width: 600px; float: center;"></p>
+<hr />
+<p>Tom looked at <a href="https://tomhbird.github.io/PSY6422_UFO_AIRPORTS/">the Relationship Between Major Airport Locations and UFO Sightings in Mainland USA</a> (<a href="https://github.com/tomhbird/PSY6422_UFO_AIRPORTS/">Repo</a>))</p>
+<p><img src="images/2024tom.png" style="width: 600px; float: center;"></p>
+<hr />
+<p>Max asked <a href="https://rpubs.com/MaxEspley/PSY6422_Project">Can national football results really have an impact on UK stock market values?</a>. tl;dr - if they do, it isn’t a large effect (which is why attending to the y-axis range is important in interpreting visualisations) (<a href="https://github.com/MaxEspley/PSY6422_Project">Repo</a>):</p>
+<p><img src="images/2024max.png" style="width: 600px; float: center;"></p>
+<hr />
+<p>One of the more sophisticated projects we’ve ever seen, which really showcases what is possible with when advanced data scraping, managemetn and visualisation are combined in a dashboard. Justin’s project <a href="https://uniuk.pythonanywhere.com/">How do the perspectives of UK university students, as expressed on Reddit, evolve over time?</a> is beyond what we teach on this course, but we’re happy we can support students to do more advanced work as part of the module. (<a href="https://github.com/sgjustino/UniUK">Repo</a>)</p>
+<hr />
+<p>Carlos showed off R’s capacity for scientific data visualisation, re-visualising his undergraduate project data on <a href="https://carlospzhz.github.io/PSY6422_Project/">The effects of calcium modulators on TDP-43 function and development of a new co-localization protocol in ALS cellular models</a> (<a href="https://github.com/carlospzhz/PSY6422_Project">Repo</a>)</p>
+<p><img src="images/2024carlos.jpeg" style="width: 600px; float: center;"></p>
+<div id="reflection-1" class="section level2 hasAnchor" number="18.1">
+<h2><span class="header-section-number">H.1</span> Reflection<a href="class-of-2024.html#reflection-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<style>
+  .alpha {
+  text-align: right;
+  color: darkblue;
+  font-style: italic;
+  padding-bottom: 15px;
+  }
+  .beta {
+  text-align: left;
+  color: green;
+  font-style: italic;
+  padding-bottom: 15px;
+  }
+</style>
+<p>This year we welcomed Hazel Gordon as GTA on the course.The comments from those taking the course make clear how much of a contribution she made - thank you Hazel!</p>
 </div>
 </div>
 <div class="psyteachr_footer">
@@ -660,8 +570,8 @@ window.onload = function() {
           </div>
         </div>
       </div>
-<a href="rmarkdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="git-and-github.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="class-of-2023.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="toms-notes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
