@@ -60,15 +60,13 @@ Carlos showed off R's capacity for scientific data visualisation, re-visualising
 This year we welcomed Hazel Gordon as GTA on the course.The comments from those taking the course make clear how much of a contribution she made - thank you Hazel!
 
 
-## Feedback from those taking the course
-
 ### Tom's reflection
 
 Feedback was mostly positive, and - as always - we continue to work on the course to improve it based on how it is experienced by each year of students. 
 
 This year we had a number of comments on what else could be included in the course: SQL, more on interactive and animated plots, and python. We'll keep these in mind for future iterations of the course. As in previous years, the part which students found hardest was github. As in previous years, I'm going to keep teaching it because it is still vital infrastructure for data science.
 
-## Student feedback
+### Student feedback
 
 Below, a (very biased) selection of student feedback
 
@@ -130,11 +128,11 @@ teaching staff. Other courses should utilise this approach to ensure students re
 in their work.
 </div>
 
-# Useful links
+### Useful links
 
 I asked students what resources they found useful. Here's a partial list:
 
-## Videos
+#### Videos
 
 * dataslice YouTube tutorials [youtube.com/@dataslice](https://www.youtube.com/@dataslice)
 
@@ -144,7 +142,7 @@ I asked students what resources they found useful. Here's a partial list:
 makeover series - YouTube https://www.youtube.com/playlist?list=PLwEff2aXpeWsdvonP3voif0acubN3XKmA
 
 
-## Pages
+#### Pages
 
 * The Anatomy of a Shiny Application https://www.r-bloggers.com/2021/04/the-anatomy-of-a-shiny-application/
 
@@ -158,7 +156,7 @@ with Captivating Document Styles. Rpubs.com. https://rpubs.com/ranydc/rmarkdown_
 //r-graph-gallery.com/
 
 
-## Books & articles
+#### Books & articles
 
 * Healy, K. (2018). Data Visualization: A Practical Introduction. Princeton University Press.
 
