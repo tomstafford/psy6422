@@ -124,7 +124,7 @@ GPT the right questions and when to use other online resources.
 The most important factor that helped my learning was the lecturer’s enthusiastic approach to coding. As a computer science undergraduate who despised coding, I surprisingly really enjoyed coding this assignment, due to the simplified, clear lecture material and the encouragement to keep trying to find solutions from the teaching staff. Other courses should utilise this approach to ensure students remain engaged and confident in their work.
 </div>
 
-# Useful links
+### Useful links
 
 I asked students what resources they found useful. Here's a partial list:
 
@@ -172,7 +172,7 @@ diagrammatic in data visualisation. Visual Studies, 29(2), 155–164. https://do
 
 
 
-# "what advice would you give someone starting this course?"
+#### "what advice would you give someone starting this course?"
 
 I also asked for advice worth giving to future students:
 
