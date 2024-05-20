@@ -4,6 +4,41 @@ A showcase of some projects from the class of 2023-24.
 
 There were too many students on the module this year to show all projects, so here are a few highlights. Many creative, fun, interesting, challenging visualisation projects were produced but aren't shown here, but these few give a flavour of what student's got up to:
 
+Rachel (looked at Contraception use since the 90s](https://rgatley.github.io/Contraception/). ([Repo](https://github.com/rgatley/Contraception)):
+
+<img src="images/2024rachel.gif" style="width: 600px; float: center;">
+
+---
+
+More trees! [The Growth of Woodland Area within the United Kingdom (1998-2023)](https://jacobmoorcroft.github.io/moorcroft_230170656/) ([Repo](https://github.com/JacobMoorcroft/moorcroft_230170656))
+
+<img src="images/2024jacob.png" style="width: 600px; float: center;">
+
+---
+
+Tom looked at [the Relationship Between Major Airport Locations and UFO Sightings in Mainland USA](https://tomhbird.github.io/PSY6422_UFO_AIRPORTS/) ([Repo](https://github.com/tomhbird/PSY6422_UFO_AIRPORTS/)))
+
+<img src="images/2024tom.png" style="width: 600px; float: center;">
+
+
+---
+
+Max asked [Can national football results really have an impact on UK stock market values?](https://rpubs.com/MaxEspley/PSY6422_Project). tl;dr - if they do, it isn't a large effect (which is why attending to the y-axis range is important in interpreting visualisations) ([Repo](https://github.com/MaxEspley/PSY6422_Project)):
+
+<img src="images/2024max.png" style="width: 600px; float: center;">
+
+---
+
+One of the more sophisticated projects we've ever seen, which really showcases what is possible with when advanced data scraping, managemetn and visualisation are combined in a dashboard. Justin's project [How do the perspectives of UK university students, as expressed on Reddit, evolve over time?](https://uniuk.pythonanywhere.com/) is beyond what we teach on this course, but we're happy we can support students to do more advanced work as part of the module. ([Repo](https://github.com/sgjustino/UniUK))
+
+--- 
+
+Carlos showed off R's capacity for scientific data visualisation, re-visualising his undergraduate project data on [The effects of calcium modulators on TDP-43 function and development of a new co-localization protocol in ALS cellular models](https://carlospzhz.github.io/PSY6422_Project/) ([Repo](https://github.com/carlospzhz/PSY6422_Project))
+
+<img src="images/2024carlos.jpeg" style="width: 600px; float: center;">
+
+
+
 
 ## Reflection
 
