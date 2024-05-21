@@ -10,28 +10,40 @@ Ruri made this ring plot of where doctors migrate to and from:
 
 Full project is here: [Doctors’ Migration in 2018](https://protor23.github.io/doctors-migration-2018/). She argues convincingly that some data visualisations can be valuable when they are **not** intuitive, that ultimately demanding a reader's attention to learn to decode complexity can be rewarding. 
 
+---
+
 Sebastian did a fantastic job using the Spotify API to extract data on the emotional valence of the top 200 songs for 70 countries, across the year 2020. Did the global pandemic affect the mood of the songs we listened to?
 
 <img src="images/2021sebastian.png" style="width: 600px; float: center;">
 
 Full project is here: [Visualising Valence](https://sebastianplnr.github.io/spotify_audio_feature_analysis/). 
 
+---
+
 Hubert's project on two meta-analytic bias detection techniques is here: [Welcome to the showdown between two
 bias detection techniques](https://hubertplisiecki.shinyapps.io/pcurve_vs_zcurve/). I'm not going to explain the visualisation here, but the project is an excellent example of data visualisation in the service of wider scientific purpose.
 
 <img src="images/2021hubert.png" style="width: 600px; float: center;">
 
+---
+
 Alex used data from the game Overwatch to visualise how choice of game hero differed between high and low skilled players: [Overwatch Hero Pick Rates](https://alexmontgomery-git.github.io/PSY6422_Project/):
 
 <img src="images/2021alex.png" style="width: 600px; float: center;">
+
+---
 
 Jarod also looked at gamers, use Steam data to show how the pandemic lockdown affected our gaming habits: [How COVID-19 affected gaming habits](https://jarod-wilson.github.io/psy6422/). 
 
 <img src="images/2021jarod.gif" style="width: 600px; float: center;">
 
+---
+
 A number of people made interactive visualisations, such as James, whose [US State-Wide UFO Sightings from 1970 - 2020](https://jamesshuffley.shinyapps.io/ufo_app/) you really need to visit to explore, but here's a static shot:
 
 <img src="images/2021james.png" style="width: 600px; float: center;">
+
+---
 
 Other interactive or animated visualisations include Halleyson's [Which Anime Studio Is The Best? An Examination Between 1958~2020](https://halleyson.github.io/psy6422dataproject/), Ollie's visualisation of the game trajectories from [One Hundred Years of Chess](https://olliebray.shinyapps.io/100YearsofChess/) data, and Farzana's analysis of global data on happiness: [The World Happiness Report 2021](https://farz1313.github.io/farzana_patel_psy6422/). Finally, here's an animation from  Juan's [Dementia Diagnosis Rates in England: A Data Story](https://jsgm21.github.io/gonzalezmartinez_psy6422_project/gonzalezmartinez_final_project).
 

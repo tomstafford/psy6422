@@ -10,40 +10,47 @@ Florence's project looked at [Gender bias in the cover personalities of TIME Mag
 <img src="images/2022florence.png" style="width: 600px; float: center;">
 [Pages](https://github.com/fsgwilliams/Data-Visualisation)
 
-
+---
 
 Gemma's project was "Female labour force participation rates over the Last 100 Years"
 <img src="images/2022gemma.png" style="width: 600px; float: center;">
 [Pages](http://rpubs.com/Gem-Hall/896578)
 [Repo](https://github.com/Gem-Hall/PSY6422_project.git)
 
+---
 
 Yibo looked at [Causes of death in the world](https://yshi81.github.io/Causes-of-death-in-the-world.github.io/), [Pages](https://github.com/Yshi81/Causes-of-death-in-the-world.github.io)
 
-
+---
 
 Peter's project shows character preference for the Overwatch League 2019
 <img src="images/2022peter.png" style="width: 600px; float: center;">
 [Pages](https://peterbeech.github.io/PSY6422_project/)
 [Repo](https://github.com/PeterBeech/PSY6422_project)
 
-
+---
 
 Luke's project is an interactive visualisation which allows you to explore "Global Levels of GDP per Capita, Population Density and Covid-19 Lockdown Severity, and their Relation to World Happiness" 
 <img src="images/2022luke.png" style="width: 600px; float: center;">
 [Pages](https://c6gp2m-luke-jenner.shinyapps.io/PSY6422_Project/)	[Repo](https://github.com/lukejenner6/PSY6422_Project)
 
-
+---
 
 This project looked at "Covid-19-immunised to total region population ratio in the Czech Republic" <img src="images/2022yorkshire.png" style="width: 600px; float: center;">
 [Pages](https://yorkshireorange.github.io/PSY6422/)
 [Repo](https://github.com/yorkshireorange/PSY6422)
 
+---
+
 Ben looked at [Efficacy of Self Testing - comparing two Covid 19 prevalence metrics across stages of the pandemic in England](https://ben-pw.github.io/PSY6422_Project/);  [Pages](https://github.com/Ben-PW/PSY6422_Project)
+
+---
 
 Natasha: [A stacked bar plot showing likert scale responses to imagined traumatic scenarios](https://natasharobinson2603.github.io/PSY6422_finalproject/), 
 <img src="images/2022natasha.png" style="width: 600px; float: center;">
 [Pages](https://github.com/NatashaRobinson2603/PSY6422_finalproject)
+
+---
 
 Other projects looked [at the income of UK doctors compared to inflation over the last 12 years](https://hvlabat.shinyapps.io/nhs_income_vs_inflation/), [Pages](https://github.com/hvlabat/nhs_income_vs_inflation); a [A History of Pitchfork Reviews](https://meicalowen.github.io/PSY6422-Data-Visualisation/), [Pages](https://github.com/meicalowen/PSY6422-Data-Visualisation); Kieran's project looked at the effect of losing crowds on football scores: [Home Advantage and Covid-19: Football's Natural Experiment](https://kietag.shinyapps.io/home-advantage-covid-19-app/), [Pages](https://github.com/Kietag/Home-Advantage-Covid-19-App)
 
