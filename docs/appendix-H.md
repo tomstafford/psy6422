@@ -181,7 +181,9 @@ I also asked for advice worth giving to future students:
 
 <div class="beta">
 Definitely come to class and actively participate. It makes such a difference when you can ask questions in person and see on the board what is happening. I would advise that you start like a code “cheat shect” so you have a place to write down any codes that may be helpful in the future. It makes it a lot easier when you're trying to remember how do write a code out correctly.
+</div>
 
+<div class="alpha">
 Attend every single session and make sure you complete each exercise thats given. This helps your under-
 standing so much and will be extremely useful for when it comes to completing your own project.
 Also don’t be afraid to ask questions if there is something you genuinely don’t understand or can’t figure
