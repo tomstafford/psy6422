@@ -41,7 +41,8 @@ Almost any data wrangling task you can imagine can be done, you just need to fin
 * practice searching for solutions to your data wrangling problems
 
 ## Resources
-  
+
+* Slides on Data Cleaning <https://cghlewis.github.io/ncme-data-cleaning-workshop/slides.html>  
 * Data Skills for Reproducible Science: [Data Wrangling](https://psyteachr.github.io/msc-data-skills/dplyr.html)
 * Claudia A Engel: [Data Wrangling with R](https://cengel.github.io/R-data-wrangling/dplyr.html)
 * R for Data Science: Part II [Wrangle](https://r4ds.had.co.nz/wrangle-intro.html), especially [Chapter 12 Tidy Data](https://r4ds.had.co.nz/tidy-data.html) and [Chapter 13 Relational Data](https://r4ds.had.co.nz/relational-data.html)
