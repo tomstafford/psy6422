@@ -28,6 +28,7 @@ Healy, K. (2018). [Data visualization: a practical introduction](https://socviz.
 * ggplot2: Elegant Graphics for Data Analysis, the chapter on [Themes](https://ggplot2-book.org/polishing.html)
 * Giulia Ruggeri, Better data communication with {ggplot2}[Styling a chart and improving the text using {forcats} and {ggtext} and {scales}](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-92fbcfea2c6e), [Better data communication with {ggplot2}, part 2](https://giulia-ruggeri.medium.com/better-data-communication-with-ggplot2-part-2-615a5180ccb)
 * datanovia.com: [GGPlot Axis Ticks: Set and Rotate Text Labels](https://www.datanovia.com/en/blog/ggplot-axis-ticks-set-and-rotate-text-labels/)
+* anthonyhobday.com: [Visual design rules you can safely follow every time][https://anthonyhobday.com/sideprojects/saferules)
 
 ## Post-class exercises
 

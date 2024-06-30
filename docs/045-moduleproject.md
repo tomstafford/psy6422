@@ -65,6 +65,7 @@ The other route is large publicly available resources:
 
 These are examples of large, probably messy, real-world data sets which could make good starting points for projects with more ambition:
 
+* [Open e-commerce 1.0: Five years of crowdsourced U.S. Amazon purchase histories with user demographics](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YGLYDY)
 * [X Community Notes](https://help.twitter.com/en/using-x/community-notes) - data on crowdsourced fact-checks from the platform formally known as Twitter
 * [openpsychometrics.org](https://openpsychometrics.org/)
 * [freeCodeCamp.org survey of new programmers](https://github.com/freeCodeCamp?q=new-coder-survey)
