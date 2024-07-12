@@ -29,7 +29,7 @@ Max asked [Can national football results really have an impact on UK stock marke
 
 ---
 
-One of the more sophisticated projects we've ever seen, which really showcases what is possible with when advanced data scraping, managemetn and visualisation are combined in a dashboard. Justin's project [How do the perspectives of UK university students, as expressed on Reddit, evolve over time?](https://uniuk.pythonanywhere.com/) is beyond what we teach on this course, but we're happy we can support students to do more advanced work as part of the module. ([Repo](https://github.com/sgjustino/UniUK))
+One of the more sophisticated projects we've ever seen, which really showcases what is possible with when advanced data scraping, management and visualisation are combined in a dashboard. Justin's project [How do the perspectives of UK university students, as expressed on Reddit, evolve over time?](https://uniuk.app/) is beyond what we teach on this course, but we're happy we can support students to do more advanced work as part of the module. ([Repo](https://github.com/sgjustino/UniUK))
 
 --- 
 
