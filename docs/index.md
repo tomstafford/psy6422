@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Analysis and Visualisation"
 author: '[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)'
-date: "2024-07-04"
+date: "2024-08-30"
 output:
   html_document:
     df_print: paged
