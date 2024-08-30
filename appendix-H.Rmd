@@ -29,7 +29,7 @@ Max asked [Can national football results really have an impact on UK stock marke
 
 ---
 
-One of the more sophisticated projects we've ever seen, which really showcases what is possible with when advanced data scraping, managemetn and visualisation are combined in a dashboard. Justin's project [How do the perspectives of UK university students, as expressed on Reddit, evolve over time?](https://uniuk.pythonanywhere.com/) is beyond what we teach on this course, but we're happy we can support students to do more advanced work as part of the module. ([Repo](https://github.com/sgjustino/UniUK))
+One of the more sophisticated projects we've ever seen, which really showcases what is possible with when advanced data scraping, managemetn and visualisation are combined in a dashboard. Justin's project [How do the perspectives of UK university students, as expressed on Reddit, evolve over time?](https://uniuk.app/) is beyond what we teach on this course, but we're happy we can support students to do more advanced work as part of the module. ([Repo](https://github.com/sgjustino/UniUK))
 
 --- 
 
@@ -37,7 +37,11 @@ Carlos showed off R's capacity for scientific data visualisation, re-visualising
 
 <img src="images/2024carlos.jpeg" style="width: 600px; float: center;">
 
+---
 
+Abi made good use of thematic colour and shape in this plot of US honey production. [US Honey Production 1998-2018](https://abigailmccarthy.github.io/PSY6422_Project/) ([Repo](https://github.com/abi-hol/PSY6422_honey_prod/):
+
+<img src="images/2024abi.png" style="width: 600px; float: center;">
 
 
 ## Reflection
