@@ -189,7 +189,12 @@ model checking package: [Performance](https://easystats.github.io/performance/in
 
 ## Advanced Reading, Background & Other Recommends
 
+[The Limits of Data](https://issues.org/limits-of-data-nguyen/) C. Thi Nguyen. Issues, XL, 2 (2024) <https://issues.org/limits-of-data-nguyen/>
+
 [Data Feminism](https://data-feminism.mitpress.mit.edu/) by Catherine D'Ignazio and Lauren F. Klein. The MIT Press. 2020
+
+Invisible Women: Exposing Data Bias in a World Designed for Men
+by Caroline Criado Perez (2019) <https://carolinecriadoperez.com/book/invisible-women/>
 
 Rachel Thomas's [Applied Data Ethics Syllabus](https://ethics.fast.ai/syllabus)
 
