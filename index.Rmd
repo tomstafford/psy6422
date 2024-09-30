@@ -82,16 +82,16 @@ See here for [more on the nature of your module project](module-project.html), s
 
 ## Resources for current students
 
-[Google Drive](https://drive.google.com/drive/folders/1auHvdDMxgmCEUMXDvdZT1OQ4bJ3s2gVk?usp=drive_link):
+[Google Drive](https://drive.google.com/drive/folders/1ga4ld-psVC762LksH2l1fooFGPBQ8nSD?usp=sharing):
 
 Includes slides and other resources, as well as these specific documents
 
-* [Timetable](https://docs.google.com/spreadsheets/d/1qBhWVNaws6TfDd4Q4ZPiVTBa_H4iZpWG8kK-Tv6aIr4/edit?usp=sharing)
-* [Assessment Criteria](https://docs.google.com/spreadsheets/d/10rVuVA5br3bq-zWiELrUBERE694P5NFhhH7lYve78Gs/edit?usp=sharing)
+* [Timetable](https://docs.google.com/spreadsheets/d/1RPi4OWTHZfDidvbIR-rj3F0xLVV8YtaPBd_jF071kM0/edit?usp=sharing)
+* [Assessment Criteria](https://docs.google.com/spreadsheets/d/1OItmKJ3D4pqz8So7i33EqD_xtVa6slHVDa-zgWKQYLI/edit?usp=sharing)
 
 FAQ document which I am adding to as questions come in
 
-* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/1fule8FNrCi8u7xTCkmfUxFWEEKe6Amz4UB4c-enUBf4/edit?usp=sharing)
+* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/16ZeOtBy43ImrGWTUSNmiplOwz3C2yd3CLIr-qdzf3bA/edit?usp=sharing)
 
 Most information is on these pages (hosted on github, no login required)
 
