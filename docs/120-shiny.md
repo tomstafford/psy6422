@@ -5,7 +5,7 @@
 Please install shiny
 
 
-```r
+``` r
 install.packages("shiny")
 install.packages("shinyjs")
 install.packages("shinydashboard")

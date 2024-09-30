@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Analysis and Visualisation"
 author: "Tom Stafford"
-date: "2024-09-16"
+date: "2024-09-30"
 output:
   html_document: default
 ---
@@ -86,7 +86,7 @@ But the real strength of Rmarkdown is you can mix text and code
 This is the third ingredient, code and any output it produces. Like this:
 
 
-```r
+``` r
 print("Here is some R code")
 a <- 6
 b <- 2.3
@@ -104,7 +104,7 @@ Here is another example
 
 
 
-```r
+``` r
 #Code to make an example graph
 library(tidyverse)
 
@@ -130,7 +130,7 @@ df <- read_csv(url(urlfile))
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
 
-```r
+``` r
 #rename columns for easy labelling
 df <- df %>% rename(ppt = "Participant Number",asrs = "Total ASRS Score")
 
@@ -174,7 +174,7 @@ You can also put single values in ongoing text using Rmarkdown
 Imagine you have some data
 
 
-```r
+``` r
 data = c(10,42,2,2,34,63)
 ```
 

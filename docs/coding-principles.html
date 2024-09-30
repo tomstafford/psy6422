@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Coding Principles | PSY6422 Data Analysis and Visualisation</title>
   <meta name="description" content="Notes on the course" />
-  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Coding Principles | PSY6422 Data Analysis and Visualisation" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2024-09-16" />
+<meta name="date" content="2024-09-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -64,7 +64,7 @@
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -100,7 +100,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -113,7 +113,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -437,56 +437,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="if" class="section level3 hasAnchor" number="6.1.1">
 <h3><span class="header-section-number">6.1.1</span> If statements<a href="coding-principles.html#if" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>So far we have written simple scripts that do things in order, top to bottom</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="coding-principles.html#cb1-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
-<span id="cb1-2"><a href="coding-principles.html#cb1-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
-<span id="cb1-3"><a href="coding-principles.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(a) <span class="co"># output the result</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="coding-principles.html#cb1-1" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb1-2"><a href="coding-principles.html#cb1-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb1-3"><a href="coding-principles.html#cb1-3" tabindex="-1"></a><span class="fu">print</span>(a) <span class="co"># output the result</span></span></code></pre></div>
 <pre><code>## [1] 2</code></pre>
 <p>The first block above is the code, the second block (the lines which start with <code>##</code>) is the output.</p>
-<p>Changing which statements are run is called “flow control.” An “If statement” is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="coding-principles.html#cb3-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
-<span id="cb3-2"><a href="coding-principles.html#cb3-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
-<span id="cb3-3"><a href="coding-principles.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(a<span class="sc">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
-<span id="cb3-4"><a href="coding-principles.html#cb3-4" aria-hidden="true" tabindex="-1"></a>  {<span class="fu">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></span></code></pre></div>
+<p>Changing which statements are run is called “flow control”. An “If statement” is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="coding-principles.html#cb3-1" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb3-2"><a href="coding-principles.html#cb3-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb3-3"><a href="coding-principles.html#cb3-3" tabindex="-1"></a><span class="cf">if</span>(a<span class="sc">&gt;</span><span class="dv">4</span>) <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
+<span id="cb3-4"><a href="coding-principles.html#cb3-4" tabindex="-1"></a>  {<span class="fu">print</span>(a)} <span class="co"># this statement runs if the test expression is true</span></span></code></pre></div>
 <p>Notice there is no output. Copy the code to your own computer and run it. Now change the first line to <code>a &lt;- 9</code> and run it again.</p>
 <p>An If statement defines a branch in the flow of a script. The default can be nothing happening, but sometimes you want to define two alternatives. You can do this with an “If…else…statement”</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="coding-principles.html#cb4-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
-<span id="cb4-2"><a href="coding-principles.html#cb4-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
-<span id="cb4-3"><a href="coding-principles.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(a<span class="sc">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
-<span id="cb4-4"><a href="coding-principles.html#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span></span>
-<span id="cb4-5"><a href="coding-principles.html#cb4-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb4-6"><a href="coding-principles.html#cb4-6" aria-hidden="true" tabindex="-1"></a>  {<span class="fu">print</span>(<span class="fu">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span></span>
-<span id="cb4-7"><a href="coding-principles.html#cb4-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="coding-principles.html#cb4-1" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># define a variable</span></span>
+<span id="cb4-2"><a href="coding-principles.html#cb4-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> a <span class="sc">+</span> <span class="dv">1</span> <span class="co">#add 1</span></span>
+<span id="cb4-3"><a href="coding-principles.html#cb4-3" tabindex="-1"></a><span class="cf">if</span>(a<span class="sc">&gt;</span><span class="dv">4</span>){ <span class="co"># this is the condition which has to be met, the &#39;test expression&#39;</span></span>
+<span id="cb4-4"><a href="coding-principles.html#cb4-4" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(a,<span class="st">&quot; is more than 4&quot;</span>)) <span class="co"># this statement runs if the test expression is true</span></span>
+<span id="cb4-5"><a href="coding-principles.html#cb4-5" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb4-6"><a href="coding-principles.html#cb4-6" tabindex="-1"></a>  {<span class="fu">print</span>(<span class="fu">paste</span>(a,<span class="st">&quot; is equal or less than 4&quot;</span>))} <span class="co"># this statement runs if the test expression is false</span></span>
+<span id="cb4-7"><a href="coding-principles.html#cb4-7" tabindex="-1"></a>}</span></code></pre></div>
 <pre><code>## [1] &quot;2  is equal or less than 4&quot;</code></pre>
 <p>You can actually have as many branches as you like, defining a series of test_expressions, like this</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="coding-principles.html#cb6-1" aria-hidden="true" tabindex="-1"></a>type_of_thing <span class="ot">&lt;-</span> <span class="st">&#39;&#39;</span> </span>
-<span id="cb6-2"><a href="coding-principles.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)</span>
-<span id="cb6-3"><a href="coding-principles.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (type_of_thing<span class="sc">==</span><span class="st">&#39;Murders&#39;</span>){</span>
-<span id="cb6-4"><a href="coding-principles.html#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;yes&quot;</span>)</span>
-<span id="cb6-5"><a href="coding-principles.html#cb6-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="sc">==</span><span class="st">&#39;Dollars&#39;</span>){</span>
-<span id="cb6-6"><a href="coding-principles.html#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;no&quot;</span>)</span>
-<span id="cb6-7"><a href="coding-principles.html#cb6-7" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb6-8"><a href="coding-principles.html#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)</span>
-<span id="cb6-9"><a href="coding-principles.html#cb6-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="coding-principles.html#cb6-1" tabindex="-1"></a>type_of_thing <span class="ot">&lt;-</span> <span class="st">&#39;&#39;</span> </span>
+<span id="cb6-2"><a href="coding-principles.html#cb6-2" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Is four a lot?&quot;</span>)</span>
+<span id="cb6-3"><a href="coding-principles.html#cb6-3" tabindex="-1"></a><span class="cf">if</span> (type_of_thing<span class="sc">==</span><span class="st">&#39;Murders&#39;</span>){</span>
+<span id="cb6-4"><a href="coding-principles.html#cb6-4" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;yes&quot;</span>)</span>
+<span id="cb6-5"><a href="coding-principles.html#cb6-5" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span> (type_of_thing<span class="sc">==</span><span class="st">&#39;Dollars&#39;</span>){</span>
+<span id="cb6-6"><a href="coding-principles.html#cb6-6" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;no&quot;</span>)</span>
+<span id="cb6-7"><a href="coding-principles.html#cb6-7" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb6-8"><a href="coding-principles.html#cb6-8" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Depends on the context&quot;</span>)</span>
+<span id="cb6-9"><a href="coding-principles.html#cb6-9" tabindex="-1"></a>}</span></code></pre></div>
 <pre><code>## [1] &quot;Is four a lot?&quot;
 ## [1] &quot;Depends on the context&quot;</code></pre>
 </div>
 <div id="loops" class="section level3 hasAnchor" number="6.1.2">
 <h3><span class="header-section-number">6.1.2</span> Loops<a href="coding-principles.html#loops" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Loops repeat, either iterating over a set values, like this:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="coding-principles.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
-<span id="cb8-2"><a href="coding-principles.html#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
-<span id="cb8-3"><a href="coding-principles.html#cb8-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="coding-principles.html#cb8-1" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb8-2"><a href="coding-principles.html#cb8-2" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
+<span id="cb8-3"><a href="coding-principles.html#cb8-3" tabindex="-1"></a>}</span></code></pre></div>
 <pre><code>## [1] 1
 ## [1] 2
 ## [1] 3
 ## [1] 4
 ## [1] 5</code></pre>
 <p>Or until some condition is met</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="coding-principles.html#cb10-1" aria-hidden="true" tabindex="-1"></a>i <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co">#need to initialise a starting value</span></span>
-<span id="cb10-2"><a href="coding-principles.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>(i<span class="sc">&lt;</span><span class="dv">6</span>){</span>
-<span id="cb10-3"><a href="coding-principles.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
-<span id="cb10-4"><a href="coding-principles.html#cb10-4" aria-hidden="true" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">+</span> <span class="dv">1</span> <span class="co"># increment the value of the counter</span></span>
-<span id="cb10-5"><a href="coding-principles.html#cb10-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="coding-principles.html#cb10-1" tabindex="-1"></a>i <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co">#need to initialise a starting value</span></span>
+<span id="cb10-2"><a href="coding-principles.html#cb10-2" tabindex="-1"></a><span class="cf">while</span>(i<span class="sc">&lt;</span><span class="dv">6</span>){</span>
+<span id="cb10-3"><a href="coding-principles.html#cb10-3" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
+<span id="cb10-4"><a href="coding-principles.html#cb10-4" tabindex="-1"></a>  i <span class="ot">&lt;-</span> i <span class="sc">+</span> <span class="dv">1</span> <span class="co"># increment the value of the counter</span></span>
+<span id="cb10-5"><a href="coding-principles.html#cb10-5" tabindex="-1"></a>}</span></code></pre></div>
 <pre><code>## [1] 1
 ## [1] 2
 ## [1] 3
@@ -494,63 +494,63 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [1] 5</code></pre>
 <p>Note that this second version, a “while loop” uses a test expression just like an if statement</p>
 <p>Loops are useful wherever you might want to repeat some operation.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="coding-principles.html#cb12-1" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="co">#how many years since you started saving</span></span>
-<span id="cb12-2"><a href="coding-principles.html#cb12-2" aria-hidden="true" tabindex="-1"></a>savings <span class="ot">&lt;-</span><span class="dv">100</span> <span class="co">#how much you start with</span></span>
-<span id="cb12-3"><a href="coding-principles.html#cb12-3" aria-hidden="true" tabindex="-1"></a>interest <span class="ot">&lt;-</span> <span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span></span>
-<span id="cb12-4"><a href="coding-principles.html#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate using a loop</span></span>
-<span id="cb12-5"><a href="coding-principles.html#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (year <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>years){</span>
-<span id="cb12-6"><a href="coding-principles.html#cb12-6" aria-hidden="true" tabindex="-1"></a>  savings<span class="ot">&lt;-</span>savings<span class="sc">*</span>interest</span>
-<span id="cb12-7"><a href="coding-principles.html#cb12-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb12-8"><a href="coding-principles.html#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;After&quot;</span>, years, <span class="st">&quot;years you will have £&quot;</span>, <span class="fu">round</span>(savings,<span class="dv">2</span>))) <span class="co">#save more, kids</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="coding-principles.html#cb12-1" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="dv">10</span> <span class="co">#how many years since you started saving</span></span>
+<span id="cb12-2"><a href="coding-principles.html#cb12-2" tabindex="-1"></a>savings <span class="ot">&lt;-</span><span class="dv">100</span> <span class="co">#how much you start with</span></span>
+<span id="cb12-3"><a href="coding-principles.html#cb12-3" tabindex="-1"></a>interest <span class="ot">&lt;-</span> <span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span></span>
+<span id="cb12-4"><a href="coding-principles.html#cb12-4" tabindex="-1"></a><span class="co">#Calculate using a loop</span></span>
+<span id="cb12-5"><a href="coding-principles.html#cb12-5" tabindex="-1"></a><span class="cf">for</span> (year <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>years){</span>
+<span id="cb12-6"><a href="coding-principles.html#cb12-6" tabindex="-1"></a>  savings<span class="ot">&lt;-</span>savings<span class="sc">*</span>interest</span>
+<span id="cb12-7"><a href="coding-principles.html#cb12-7" tabindex="-1"></a>}</span>
+<span id="cb12-8"><a href="coding-principles.html#cb12-8" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;After&quot;</span>, years, <span class="st">&quot;years you will have £&quot;</span>, <span class="fu">round</span>(savings,<span class="dv">2</span>))) <span class="co">#save more, kids</span></span></code></pre></div>
 <pre><code>## [1] &quot;After 10 years you will have £ 162.89&quot;</code></pre>
 <p>Lots of people advise against using loops because they are can be slow and it isn’t always obvious what they are doing. Alternatives often exist, like vectorisation:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="coding-principles.html#cb14-1" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co">#how many years since you started saving</span></span>
-<span id="cb14-2"><a href="coding-principles.html#cb14-2" aria-hidden="true" tabindex="-1"></a>savings <span class="ot">&lt;-</span><span class="dv">100</span> <span class="co">#how much you start with</span></span>
-<span id="cb14-3"><a href="coding-principles.html#cb14-3" aria-hidden="true" tabindex="-1"></a>interest <span class="ot">&lt;-</span> <span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span></span>
-<span id="cb14-4"><a href="coding-principles.html#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate using a vector</span></span>
-<span id="cb14-5"><a href="coding-principles.html#cb14-5" aria-hidden="true" tabindex="-1"></a>total_at_each_year<span class="ot">=</span>savings<span class="sc">*</span>interest<span class="sc">**</span>(<span class="dv">1</span><span class="sc">:</span>years) <span class="co">#rather than a loop all the answer values are stored in a single vector</span></span>
-<span id="cb14-6"><a href="coding-principles.html#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">#plot(total_at_each_year,xlab=&quot;years&quot;) #bonus! We can plot, since we now have all the intervening values saved</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="coding-principles.html#cb14-1" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co">#how many years since you started saving</span></span>
+<span id="cb14-2"><a href="coding-principles.html#cb14-2" tabindex="-1"></a>savings <span class="ot">&lt;-</span><span class="dv">100</span> <span class="co">#how much you start with</span></span>
+<span id="cb14-3"><a href="coding-principles.html#cb14-3" tabindex="-1"></a>interest <span class="ot">&lt;-</span> <span class="fl">1.05</span> <span class="co">#rate of interest, ie 5% interest</span></span>
+<span id="cb14-4"><a href="coding-principles.html#cb14-4" tabindex="-1"></a><span class="co">#Calculate using a vector</span></span>
+<span id="cb14-5"><a href="coding-principles.html#cb14-5" tabindex="-1"></a>total_at_each_year<span class="ot">=</span>savings<span class="sc">*</span>interest<span class="sc">**</span>(<span class="dv">1</span><span class="sc">:</span>years) <span class="co">#rather than a loop all the answer values are stored in a single vector</span></span>
+<span id="cb14-6"><a href="coding-principles.html#cb14-6" tabindex="-1"></a><span class="co">#plot(total_at_each_year,xlab=&quot;years&quot;) #bonus! We can plot, since we now have all the intervening values saved</span></span></code></pre></div>
 <p>The problem is, loops are the natural way to think about some problems. Often I first write my code with loops then, when I know what I really want to do I try and work out a way to do it with vectorisation.</p>
 </div>
 <div id="functions" class="section level3 hasAnchor" number="6.1.3">
 <h3><span class="header-section-number">6.1.3</span> Functions<a href="coding-principles.html#functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Functions take in values (called “arguments”), do something with them, and give a value or values back in return. You have already used functions, for example the mean function</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="coding-principles.html#cb15-1" aria-hidden="true" tabindex="-1"></a>my_nums <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">78</span>,<span class="dv">12</span>,<span class="dv">32</span>,<span class="dv">24</span>,<span class="dv">03</span>,<span class="dv">89</span>) <span class="co">#just a vector of some numbers</span></span>
-<span id="cb15-2"><a href="coding-principles.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(my_nums) <span class="co">#use the mean function to find the average</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="coding-principles.html#cb15-1" tabindex="-1"></a>my_nums <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">78</span>,<span class="dv">12</span>,<span class="dv">32</span>,<span class="dv">24</span>,<span class="dv">03</span>,<span class="dv">89</span>) <span class="co">#just a vector of some numbers</span></span>
+<span id="cb15-2"><a href="coding-principles.html#cb15-2" tabindex="-1"></a><span class="fu">mean</span>(my_nums) <span class="co">#use the mean function to find the average</span></span></code></pre></div>
 <pre><code>## [1] 39.66667</code></pre>
 <p>Functions always do the same thing, but give different results depending on the inputs (depending on the “arguments you pass to the function”).</p>
 <p>You can write your own functions, and then use them (“call them”) again and again. Here is the general form of a function</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="coding-principles.html#cb17-1" aria-hidden="true" tabindex="-1"></a>myfunctionname <span class="ot">&lt;-</span> <span class="cf">function</span>(input_value) {</span>
-<span id="cb17-2"><a href="coding-principles.html#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># comment line helpfully explaining what the function does</span></span>
-<span id="cb17-3"><a href="coding-principles.html#cb17-3" aria-hidden="true" tabindex="-1"></a>output_value <span class="ot">&lt;-</span> input_value <span class="co">#lines of code which do something to the input to produce the output</span></span>
-<span id="cb17-4"><a href="coding-principles.html#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(output_value)</span>
-<span id="cb17-5"><a href="coding-principles.html#cb17-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="coding-principles.html#cb17-1" tabindex="-1"></a>myfunctionname <span class="ot">&lt;-</span> <span class="cf">function</span>(input_value) {</span>
+<span id="cb17-2"><a href="coding-principles.html#cb17-2" tabindex="-1"></a><span class="co"># comment line helpfully explaining what the function does</span></span>
+<span id="cb17-3"><a href="coding-principles.html#cb17-3" tabindex="-1"></a>output_value <span class="ot">&lt;-</span> input_value <span class="co">#lines of code which do something to the input to produce the output</span></span>
+<span id="cb17-4"><a href="coding-principles.html#cb17-4" tabindex="-1"></a><span class="fu">return</span>(output_value)</span>
+<span id="cb17-5"><a href="coding-principles.html#cb17-5" tabindex="-1"></a>}</span></code></pre></div>
 <p>Note a couple of things: when you run this code it does not produce any output, but a new object appears in the “global environment” window, top right. Like a variable, your function is now stored in the memory of the current R session.</p>
 <p>You can call this function now. If you close R you’ll need to define the function again by running the above code again (other functions are inbuilt, like <code>mean</code> and are loaded at startup, or when you use the <code>library</code> command to load a set of functions).</p>
 <p>Now, when we call the function, we pass actual values.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="coding-principles.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">myfunctionname</span>(<span class="dv">3</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="coding-principles.html#cb18-1" tabindex="-1"></a><span class="fu">myfunctionname</span>(<span class="dv">3</span>)</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
 <p>Let’s make our function slightly more complicated</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="coding-principles.html#cb20-1" aria-hidden="true" tabindex="-1"></a>outcheck <span class="ot">&lt;-</span> <span class="cf">function</span>(val,threshold) {</span>
-<span id="cb20-2"><a href="coding-principles.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="co"># outlier checker</span></span>
-<span id="cb20-3"><a href="coding-principles.html#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(val<span class="sc">&lt;</span>threshold){</span>
-<span id="cb20-4"><a href="coding-principles.html#cb20-4" aria-hidden="true" tabindex="-1"></a>  output_value <span class="ot">&lt;-</span> val <span class="co">#if value is below theshold return that value</span></span>
-<span id="cb20-5"><a href="coding-principles.html#cb20-5" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb20-6"><a href="coding-principles.html#cb20-6" aria-hidden="true" tabindex="-1"></a>  output_value <span class="ot">&lt;-</span> <span class="cn">NA</span> <span class="co">#otherwise, return NaN</span></span>
-<span id="cb20-7"><a href="coding-principles.html#cb20-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb20-8"><a href="coding-principles.html#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(output_value)</span>
-<span id="cb20-9"><a href="coding-principles.html#cb20-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="coding-principles.html#cb20-1" tabindex="-1"></a>outcheck <span class="ot">&lt;-</span> <span class="cf">function</span>(val,threshold) {</span>
+<span id="cb20-2"><a href="coding-principles.html#cb20-2" tabindex="-1"></a><span class="co"># outlier checker</span></span>
+<span id="cb20-3"><a href="coding-principles.html#cb20-3" tabindex="-1"></a><span class="cf">if</span>(val<span class="sc">&lt;</span>threshold){</span>
+<span id="cb20-4"><a href="coding-principles.html#cb20-4" tabindex="-1"></a>  output_value <span class="ot">&lt;-</span> val <span class="co">#if value is below theshold return that value</span></span>
+<span id="cb20-5"><a href="coding-principles.html#cb20-5" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb20-6"><a href="coding-principles.html#cb20-6" tabindex="-1"></a>  output_value <span class="ot">&lt;-</span> <span class="cn">NA</span> <span class="co">#otherwise, return NaN</span></span>
+<span id="cb20-7"><a href="coding-principles.html#cb20-7" tabindex="-1"></a>}</span>
+<span id="cb20-8"><a href="coding-principles.html#cb20-8" tabindex="-1"></a><span class="fu">return</span>(output_value)</span>
+<span id="cb20-9"><a href="coding-principles.html#cb20-9" tabindex="-1"></a>}</span></code></pre></div>
 <p>This function takes two input values, and returns a single value which depends on the relation between the two</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="coding-principles.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">3</span>,<span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="coding-principles.html#cb21-1" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">3</span>,<span class="dv">5</span>)</span></code></pre></div>
 <pre><code>## [1] 3</code></pre>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="coding-principles.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="coding-principles.html#cb23-1" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>)</span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
 <div id="a-note-about-scope" class="section level4 hasAnchor" number="6.1.3.1">
 <h4><span class="header-section-number">6.1.3.1</span> A note about scope<a href="coding-principles.html#a-note-about-scope" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Variables within functions are kept ‘inside’ the functions (within the “scope” of the function). Once you pass a value to a function is acquires the label set in the function definition. Variables defined within the function don’t persist outside of it (they don’t affect the “global environment”)</p>
 <p>So, for example, it doesn’t matter if you have another variable called <code>threshold</code>, the threshold within the function is set by the second value passed it. Like this:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="coding-principles.html#cb25-1" aria-hidden="true" tabindex="-1"></a>threshold <span class="ot">&lt;-</span> <span class="dv">100</span></span>
-<span id="cb25-2"><a href="coding-principles.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>) <span class="co">#returns NA because 7 is higher than 5</span></span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="coding-principles.html#cb25-1" tabindex="-1"></a>threshold <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb25-2"><a href="coding-principles.html#cb25-2" tabindex="-1"></a><span class="fu">outcheck</span>(<span class="dv">7</span>,<span class="dv">5</span>) <span class="co">#returns NA because 7 is higher than 5</span></span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
 </div>
 </div>
@@ -579,145 +579,145 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Good code doesn’t just work, it is easy to understand. This supports the code being checked for errors, modified and improved (by you as well as by other people).</p>
 <p>To support this you should make your code readable. This means commenting your code, but also laying it out nicely, and using sensible names for variables and function. The aim is to make the code explain itself, as well as doing something. Someone who reads your code - a future you maybe, or a collaborator - needs to be able to run the code, yes, but they also need to know what you are doing and why you are doing.
 Look at this function, it hard to understand, right?</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="coding-principles.html#cb27-1" aria-hidden="true" tabindex="-1"></a>pf <span class="ot">&lt;-</span> <span class="cf">function</span>(n){ p<span class="ot">=</span><span class="dv">1</span> ; <span class="cf">if</span> (n<span class="sc">&gt;</span><span class="dv">1</span>){ i <span class="ot">=</span> <span class="dv">2</span>; <span class="cf">while</span>( (i<span class="sc">&lt;</span>(n<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (p<span class="sc">==</span><span class="dv">1</span>) ) {<span class="cf">if</span> (n<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) p<span class="ot">=</span><span class="dv">0</span>; i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> }  } <span class="cf">else</span> {p<span class="ot">=</span><span class="dv">0</span> }; <span class="fu">return</span>(p) }</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="coding-principles.html#cb27-1" tabindex="-1"></a>pf <span class="ot">&lt;-</span> <span class="cf">function</span>(n){ p<span class="ot">=</span><span class="dv">1</span> ; <span class="cf">if</span> (n<span class="sc">&gt;</span><span class="dv">1</span>){ i <span class="ot">=</span> <span class="dv">2</span>; <span class="cf">while</span>( (i<span class="sc">&lt;</span>(n<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (p<span class="sc">==</span><span class="dv">1</span>) ) {<span class="cf">if</span> (n<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) p<span class="ot">=</span><span class="dv">0</span>; i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> }  } <span class="cf">else</span> {p<span class="ot">=</span><span class="dv">0</span> }; <span class="fu">return</span>(p) }</span></code></pre></div>
 <p>This kind of code is very compressed. You can fit a lot in a few lines, but it is useless because nobody else will understand it, and probably the person who wrote it won’t understand it when they come back to it (and that means they will miss any bugs, or will find it hard to improve or repurpose).</p>
 <p>Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="coding-principles.html#cb28-1" aria-hidden="true" tabindex="-1"></a>pf <span class="ot">&lt;-</span> <span class="cf">function</span>(n){</span>
-<span id="cb28-2"><a href="coding-principles.html#cb28-2" aria-hidden="true" tabindex="-1"></a>  p<span class="ot">=</span><span class="dv">1</span></span>
-<span id="cb28-3"><a href="coding-principles.html#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (n<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
-<span id="cb28-4"><a href="coding-principles.html#cb28-4" aria-hidden="true" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> </span>
-<span id="cb28-5"><a href="coding-principles.html#cb28-5" aria-hidden="true" tabindex="-1"></a>      <span class="cf">while</span>( (i<span class="sc">&lt;</span>(n<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (p<span class="sc">==</span><span class="dv">1</span>) ) {</span>
-<span id="cb28-6"><a href="coding-principles.html#cb28-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (n<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
-<span id="cb28-7"><a href="coding-principles.html#cb28-7" aria-hidden="true" tabindex="-1"></a>          p<span class="ot">=</span><span class="dv">0</span></span>
-<span id="cb28-8"><a href="coding-principles.html#cb28-8" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb28-9"><a href="coding-principles.html#cb28-9" aria-hidden="true" tabindex="-1"></a>        i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span></span>
-<span id="cb28-10"><a href="coding-principles.html#cb28-10" aria-hidden="true" tabindex="-1"></a>      }</span>
-<span id="cb28-11"><a href="coding-principles.html#cb28-11" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb28-12"><a href="coding-principles.html#cb28-12" aria-hidden="true" tabindex="-1"></a>    p<span class="ot">=</span><span class="dv">0</span></span>
-<span id="cb28-13"><a href="coding-principles.html#cb28-13" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb28-14"><a href="coding-principles.html#cb28-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(p)</span>
-<span id="cb28-15"><a href="coding-principles.html#cb28-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="coding-principles.html#cb28-1" tabindex="-1"></a>pf <span class="ot">&lt;-</span> <span class="cf">function</span>(n){</span>
+<span id="cb28-2"><a href="coding-principles.html#cb28-2" tabindex="-1"></a>  p<span class="ot">=</span><span class="dv">1</span></span>
+<span id="cb28-3"><a href="coding-principles.html#cb28-3" tabindex="-1"></a>  <span class="cf">if</span> (n<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
+<span id="cb28-4"><a href="coding-principles.html#cb28-4" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> </span>
+<span id="cb28-5"><a href="coding-principles.html#cb28-5" tabindex="-1"></a>      <span class="cf">while</span>( (i<span class="sc">&lt;</span>(n<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (p<span class="sc">==</span><span class="dv">1</span>) ) {</span>
+<span id="cb28-6"><a href="coding-principles.html#cb28-6" tabindex="-1"></a>        <span class="cf">if</span> (n<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb28-7"><a href="coding-principles.html#cb28-7" tabindex="-1"></a>          p<span class="ot">=</span><span class="dv">0</span></span>
+<span id="cb28-8"><a href="coding-principles.html#cb28-8" tabindex="-1"></a>        }</span>
+<span id="cb28-9"><a href="coding-principles.html#cb28-9" tabindex="-1"></a>        i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb28-10"><a href="coding-principles.html#cb28-10" tabindex="-1"></a>      }</span>
+<span id="cb28-11"><a href="coding-principles.html#cb28-11" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb28-12"><a href="coding-principles.html#cb28-12" tabindex="-1"></a>    p<span class="ot">=</span><span class="dv">0</span></span>
+<span id="cb28-13"><a href="coding-principles.html#cb28-13" tabindex="-1"></a>  }</span>
+<span id="cb28-14"><a href="coding-principles.html#cb28-14" tabindex="-1"></a>  <span class="fu">return</span>(p)</span>
+<span id="cb28-15"><a href="coding-principles.html#cb28-15" tabindex="-1"></a>}</span></code></pre></div>
 <p>Now we make the variable and function names sensible:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="coding-principles.html#cb29-1" aria-hidden="true" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
-<span id="cb29-2"><a href="coding-principles.html#cb29-2" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span></span>
-<span id="cb29-3"><a href="coding-principles.html#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
-<span id="cb29-4"><a href="coding-principles.html#cb29-4" aria-hidden="true" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> </span>
-<span id="cb29-5"><a href="coding-principles.html#cb29-5" aria-hidden="true" tabindex="-1"></a>      <span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
-<span id="cb29-6"><a href="coding-principles.html#cb29-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
-<span id="cb29-7"><a href="coding-principles.html#cb29-7" aria-hidden="true" tabindex="-1"></a>          isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
-<span id="cb29-8"><a href="coding-principles.html#cb29-8" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb29-9"><a href="coding-principles.html#cb29-9" aria-hidden="true" tabindex="-1"></a>        i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span></span>
-<span id="cb29-10"><a href="coding-principles.html#cb29-10" aria-hidden="true" tabindex="-1"></a>      }</span>
-<span id="cb29-11"><a href="coding-principles.html#cb29-11" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb29-12"><a href="coding-principles.html#cb29-12" aria-hidden="true" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
-<span id="cb29-13"><a href="coding-principles.html#cb29-13" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb29-14"><a href="coding-principles.html#cb29-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(isprime)</span>
-<span id="cb29-15"><a href="coding-principles.html#cb29-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="coding-principles.html#cb29-1" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
+<span id="cb29-2"><a href="coding-principles.html#cb29-2" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span></span>
+<span id="cb29-3"><a href="coding-principles.html#cb29-3" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
+<span id="cb29-4"><a href="coding-principles.html#cb29-4" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> </span>
+<span id="cb29-5"><a href="coding-principles.html#cb29-5" tabindex="-1"></a>      <span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
+<span id="cb29-6"><a href="coding-principles.html#cb29-6" tabindex="-1"></a>        <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb29-7"><a href="coding-principles.html#cb29-7" tabindex="-1"></a>          isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb29-8"><a href="coding-principles.html#cb29-8" tabindex="-1"></a>        }</span>
+<span id="cb29-9"><a href="coding-principles.html#cb29-9" tabindex="-1"></a>        i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb29-10"><a href="coding-principles.html#cb29-10" tabindex="-1"></a>      }</span>
+<span id="cb29-11"><a href="coding-principles.html#cb29-11" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb29-12"><a href="coding-principles.html#cb29-12" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb29-13"><a href="coding-principles.html#cb29-13" tabindex="-1"></a>  }</span>
+<span id="cb29-14"><a href="coding-principles.html#cb29-14" tabindex="-1"></a>  <span class="fu">return</span>(isprime)</span>
+<span id="cb29-15"><a href="coding-principles.html#cb29-15" tabindex="-1"></a>}</span></code></pre></div>
 <p>Can you tell what it does yet?</p>
 <p>Now fully commented</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="coding-principles.html#cb30-1" aria-hidden="true" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
-<span id="cb30-2"><a href="coding-principles.html#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#check if a number is prime</span></span>
-<span id="cb30-3"><a href="coding-principles.html#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># - assumes the number provided is an integer</span></span>
-<span id="cb30-4"><a href="coding-principles.html#cb30-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># - works by working through all possible divisors up to half the test number, checking if the remainer is 0</span></span>
-<span id="cb30-5"><a href="coding-principles.html#cb30-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">#</span></span>
-<span id="cb30-6"><a href="coding-principles.html#cb30-6" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span> <span class="co"># a flag, which tracks if we think the number is prime. We start out assuming our number *is* prime</span></span>
-<span id="cb30-7"><a href="coding-principles.html#cb30-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># first we only need to do the complicated method for numbers great than 1</span></span>
-<span id="cb30-8"><a href="coding-principles.html#cb30-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
-<span id="cb30-9"><a href="coding-principles.html#cb30-9" aria-hidden="true" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> <span class="co">#a counter, starting at 2 (because all numbers divide by 1)</span></span>
-<span id="cb30-10"><a href="coding-principles.html#cb30-10" aria-hidden="true" tabindex="-1"></a>      <span class="co">#use while loop to check all divisors until we&#39;ve done them all or we find one (and confirm the number is not prime)</span></span>
-<span id="cb30-11"><a href="coding-principles.html#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
-<span id="cb30-12"><a href="coding-principles.html#cb30-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
-<span id="cb30-13"><a href="coding-principles.html#cb30-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">#if the number divides by another number with no remainder it can&#39;t be prime, so we change the flag</span></span>
-<span id="cb30-14"><a href="coding-principles.html#cb30-14" aria-hidden="true" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
-<span id="cb30-15"><a href="coding-principles.html#cb30-15" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb30-16"><a href="coding-principles.html#cb30-16" aria-hidden="true" tabindex="-1"></a>  i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> <span class="co"># increment the counter, so we work through all possible divisors</span></span>
-<span id="cb30-17"><a href="coding-principles.html#cb30-17" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb30-18"><a href="coding-principles.html#cb30-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-19"><a href="coding-principles.html#cb30-19" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb30-20"><a href="coding-principles.html#cb30-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># if the number is 1 or lower it can&#39;t be prime, so we change the flag</span></span>
-<span id="cb30-21"><a href="coding-principles.html#cb30-21" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
-<span id="cb30-22"><a href="coding-principles.html#cb30-22" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb30-23"><a href="coding-principles.html#cb30-23" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(isprime) <span class="co">#return the flag as the output of the function, 0 -&gt; not prime, 1 -&gt; prime</span></span>
-<span id="cb30-24"><a href="coding-principles.html#cb30-24" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="coding-principles.html#cb30-1" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
+<span id="cb30-2"><a href="coding-principles.html#cb30-2" tabindex="-1"></a>  <span class="co">#check if a number is prime</span></span>
+<span id="cb30-3"><a href="coding-principles.html#cb30-3" tabindex="-1"></a>  <span class="co"># - assumes the number provided is an integer</span></span>
+<span id="cb30-4"><a href="coding-principles.html#cb30-4" tabindex="-1"></a>  <span class="co"># - works by working through all possible divisors up to half the test number, checking if the remainer is 0</span></span>
+<span id="cb30-5"><a href="coding-principles.html#cb30-5" tabindex="-1"></a>  <span class="co">#</span></span>
+<span id="cb30-6"><a href="coding-principles.html#cb30-6" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span> <span class="co"># a flag, which tracks if we think the number is prime. We start out assuming our number *is* prime</span></span>
+<span id="cb30-7"><a href="coding-principles.html#cb30-7" tabindex="-1"></a>  <span class="co"># first we only need to do the complicated method for numbers great than 1</span></span>
+<span id="cb30-8"><a href="coding-principles.html#cb30-8" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
+<span id="cb30-9"><a href="coding-principles.html#cb30-9" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> <span class="co">#a counter, starting at 2 (because all numbers divide by 1)</span></span>
+<span id="cb30-10"><a href="coding-principles.html#cb30-10" tabindex="-1"></a>      <span class="co">#use while loop to check all divisors until we&#39;ve done them all or we find one (and confirm the number is not prime)</span></span>
+<span id="cb30-11"><a href="coding-principles.html#cb30-11" tabindex="-1"></a><span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
+<span id="cb30-12"><a href="coding-principles.html#cb30-12" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb30-13"><a href="coding-principles.html#cb30-13" tabindex="-1"></a>    <span class="co">#if the number divides by another number with no remainder it can&#39;t be prime, so we change the flag</span></span>
+<span id="cb30-14"><a href="coding-principles.html#cb30-14" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb30-15"><a href="coding-principles.html#cb30-15" tabindex="-1"></a>  }</span>
+<span id="cb30-16"><a href="coding-principles.html#cb30-16" tabindex="-1"></a>  i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> <span class="co"># increment the counter, so we work through all possible divisors</span></span>
+<span id="cb30-17"><a href="coding-principles.html#cb30-17" tabindex="-1"></a>}</span>
+<span id="cb30-18"><a href="coding-principles.html#cb30-18" tabindex="-1"></a></span>
+<span id="cb30-19"><a href="coding-principles.html#cb30-19" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb30-20"><a href="coding-principles.html#cb30-20" tabindex="-1"></a>  <span class="co"># if the number is 1 or lower it can&#39;t be prime, so we change the flag</span></span>
+<span id="cb30-21"><a href="coding-principles.html#cb30-21" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb30-22"><a href="coding-principles.html#cb30-22" tabindex="-1"></a>}</span>
+<span id="cb30-23"><a href="coding-principles.html#cb30-23" tabindex="-1"></a><span class="fu">return</span>(isprime) <span class="co">#return the flag as the output of the function, 0 -&gt; not prime, 1 -&gt; prime</span></span>
+<span id="cb30-24"><a href="coding-principles.html#cb30-24" tabindex="-1"></a>}</span></code></pre></div>
 <p>It is possible to comment too much. The code above I commented so someone who wasn’t an experienced programmer could read the comments and it would help them understand how the code worked (you can tell me if I succeeded). Usually a few fewer comments might make the code easier to read, with the assumption that anyone reading it has a bit of experience with the coding language. Like this</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="coding-principles.html#cb31-1" aria-hidden="true" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
-<span id="cb31-2"><a href="coding-principles.html#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#check if a number is prime</span></span>
-<span id="cb31-3"><a href="coding-principles.html#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># - assumes input is integer</span></span>
-<span id="cb31-4"><a href="coding-principles.html#cb31-4" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span> <span class="co"># a flag, start assuming our number *is* prime </span></span>
-<span id="cb31-5"><a href="coding-principles.html#cb31-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># only check numbers &gt; 1</span></span>
-<span id="cb31-6"><a href="coding-principles.html#cb31-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
-<span id="cb31-7"><a href="coding-principles.html#cb31-7" aria-hidden="true" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> <span class="co">#a counter</span></span>
-<span id="cb31-8"><a href="coding-principles.html#cb31-8" aria-hidden="true" tabindex="-1"></a>      <span class="co">#check all divisors until we&#39;ve done them all or we find one </span></span>
-<span id="cb31-9"><a href="coding-principles.html#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
-<span id="cb31-10"><a href="coding-principles.html#cb31-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
-<span id="cb31-11"><a href="coding-principles.html#cb31-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">#no remainder -&gt; number isn&#39;t prime</span></span>
-<span id="cb31-12"><a href="coding-principles.html#cb31-12" aria-hidden="true" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
-<span id="cb31-13"><a href="coding-principles.html#cb31-13" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb31-14"><a href="coding-principles.html#cb31-14" aria-hidden="true" tabindex="-1"></a>  i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> <span class="co"># increment the counter</span></span>
-<span id="cb31-15"><a href="coding-principles.html#cb31-15" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb31-16"><a href="coding-principles.html#cb31-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-17"><a href="coding-principles.html#cb31-17" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb31-18"><a href="coding-principles.html#cb31-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># if the number is 1 or lower it can&#39;t be prime</span></span>
-<span id="cb31-19"><a href="coding-principles.html#cb31-19" aria-hidden="true" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
-<span id="cb31-20"><a href="coding-principles.html#cb31-20" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb31-21"><a href="coding-principles.html#cb31-21" aria-hidden="true" tabindex="-1"></a><span class="fu">return</span>(isprime)</span>
-<span id="cb31-22"><a href="coding-principles.html#cb31-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="coding-principles.html#cb31-1" tabindex="-1"></a>primecheck <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
+<span id="cb31-2"><a href="coding-principles.html#cb31-2" tabindex="-1"></a>  <span class="co">#check if a number is prime</span></span>
+<span id="cb31-3"><a href="coding-principles.html#cb31-3" tabindex="-1"></a>  <span class="co"># - assumes input is integer</span></span>
+<span id="cb31-4"><a href="coding-principles.html#cb31-4" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">TRUE</span> <span class="co"># a flag, start assuming our number *is* prime </span></span>
+<span id="cb31-5"><a href="coding-principles.html#cb31-5" tabindex="-1"></a>  <span class="co"># only check numbers &gt; 1</span></span>
+<span id="cb31-6"><a href="coding-principles.html#cb31-6" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">&gt;</span><span class="dv">1</span>){ </span>
+<span id="cb31-7"><a href="coding-principles.html#cb31-7" tabindex="-1"></a>    i <span class="ot">=</span> <span class="dv">2</span> <span class="co">#a counter</span></span>
+<span id="cb31-8"><a href="coding-principles.html#cb31-8" tabindex="-1"></a>      <span class="co">#check all divisors until we&#39;ve done them all or we find one </span></span>
+<span id="cb31-9"><a href="coding-principles.html#cb31-9" tabindex="-1"></a><span class="cf">while</span>( (i<span class="sc">&lt;</span>(num<span class="sc">/</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)) <span class="sc">&amp;</span> (isprime<span class="sc">==</span><span class="cn">TRUE</span>) ) {</span>
+<span id="cb31-10"><a href="coding-principles.html#cb31-10" tabindex="-1"></a>  <span class="cf">if</span> (num<span class="sc">%%</span>i <span class="sc">==</span><span class="dv">0</span>) {</span>
+<span id="cb31-11"><a href="coding-principles.html#cb31-11" tabindex="-1"></a>    <span class="co">#no remainder -&gt; number isn&#39;t prime</span></span>
+<span id="cb31-12"><a href="coding-principles.html#cb31-12" tabindex="-1"></a>    isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb31-13"><a href="coding-principles.html#cb31-13" tabindex="-1"></a>  }</span>
+<span id="cb31-14"><a href="coding-principles.html#cb31-14" tabindex="-1"></a>  i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span> <span class="co"># increment the counter</span></span>
+<span id="cb31-15"><a href="coding-principles.html#cb31-15" tabindex="-1"></a>}</span>
+<span id="cb31-16"><a href="coding-principles.html#cb31-16" tabindex="-1"></a></span>
+<span id="cb31-17"><a href="coding-principles.html#cb31-17" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb31-18"><a href="coding-principles.html#cb31-18" tabindex="-1"></a>  <span class="co"># if the number is 1 or lower it can&#39;t be prime</span></span>
+<span id="cb31-19"><a href="coding-principles.html#cb31-19" tabindex="-1"></a>  isprime<span class="ot">=</span><span class="cn">FALSE</span></span>
+<span id="cb31-20"><a href="coding-principles.html#cb31-20" tabindex="-1"></a>}</span>
+<span id="cb31-21"><a href="coding-principles.html#cb31-21" tabindex="-1"></a><span class="fu">return</span>(isprime)</span>
+<span id="cb31-22"><a href="coding-principles.html#cb31-22" tabindex="-1"></a>}</span></code></pre></div>
 <p>This version is 22 lines rather than 1, but I hope you agree it is easier to work with. There’s no shortage of space in R scripts, so if in doubt, put some effort in to laying things out nicely, use sensible names for variable functions and add comments. You’ll thank yourself when you come back to your code (which you will always have to).</p>
 </div>
 <div id="avoid-hard-coded-values" class="section level3 hasAnchor" number="6.2.2">
 <h3><span class="header-section-number">6.2.2</span> Avoid hard coded values<a href="coding-principles.html#avoid-hard-coded-values" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Say you were going to load some data, you could do this:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="coding-principles.html#cb32-1" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="coding-principles.html#cb32-1" tabindex="-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(<span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span>)</span></code></pre></div>
 <p>Now this happens to work on my computer, but it won’t on yours. The reason it won’t work isn’t because there is a bug in how i’m loading data, just that you don’t have a file in the same place as I do. Far better, for both readability and debugging if you seperate out values that might change from the commands that use them.</p>
 <p>Like this:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="coding-principles.html#cb33-1" aria-hidden="true" tabindex="-1"></a>datafile <span class="ot">=</span> <span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span></span>
-<span id="cb33-2"><a href="coding-principles.html#cb33-2" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(datafile)</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="coding-principles.html#cb33-1" tabindex="-1"></a>datafile <span class="ot">=</span> <span class="st">&#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span></span>
+<span id="cb33-2"><a href="coding-principles.html#cb33-2" tabindex="-1"></a>mydata <span class="ot">=</span> <span class="fu">read.csv</span>(datafile)</span></code></pre></div>
 <p>Now the second line is easier to read, and you also have a variable which you can reuse. For example maybe later in your script you want to save the name of the raw data file somewhere. You can just use:</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="coding-principles.html#cb34-1" aria-hidden="true" tabindex="-1"></a>label <span class="ot">=</span> <span class="fu">paste</span>(<span class="st">&#39;This plot generated using data from &#39;</span>, datafile)</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="coding-principles.html#cb34-1" tabindex="-1"></a>label <span class="ot">=</span> <span class="fu">paste</span>(<span class="st">&#39;This plot generated using data from &#39;</span>, datafile)</span></code></pre></div>
 <p>And when you use the same script for different data, both the lines loading data and recording the data file are correct.</p>
 <p>Another example, suppose you had two plots:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="coding-principles.html#cb35-1" aria-hidden="true" tabindex="-1"></a>graph1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x1, <span class="at">y=</span>y1))</span>
-<span id="cb35-2"><a href="coding-principles.html#cb35-2" aria-hidden="true" tabindex="-1"></a>graph1 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&#39;blue&#39;</span>,<span class="at">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="coding-principles.html#cb35-1" tabindex="-1"></a>graph1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x1, <span class="at">y=</span>y1))</span>
+<span id="cb35-2"><a href="coding-principles.html#cb35-2" tabindex="-1"></a>graph1 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&#39;blue&#39;</span>,<span class="at">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></span></code></pre></div>
 <p><img src="060-coding_files/figure-html/anscombe1-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="coding-principles.html#cb36-1" aria-hidden="true" tabindex="-1"></a>graph2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x2, <span class="at">y=</span>y2))</span>
-<span id="cb36-2"><a href="coding-principles.html#cb36-2" aria-hidden="true" tabindex="-1"></a>graph2 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&#39;blue&#39;</span>,<span class="at">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="coding-principles.html#cb36-1" tabindex="-1"></a>graph2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x2, <span class="at">y=</span>y2))</span>
+<span id="cb36-2"><a href="coding-principles.html#cb36-2" tabindex="-1"></a>graph2 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">&#39;blue&#39;</span>,<span class="at">size=</span><span class="dv">3</span>) <span class="co">#change this line for different look</span></span></code></pre></div>
 <p><img src="060-coding_files/figure-html/anscombe2-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>Adding variables means you only need to edit one line to change the look of both plots</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="coding-principles.html#cb37-1" aria-hidden="true" tabindex="-1"></a>pointcolour<span class="ot">=</span><span class="st">&#39;red&#39;</span>; pointsize<span class="ot">=</span><span class="dv">5</span> ; pointshape <span class="ot">=</span> <span class="dv">23</span> <span class="co">#change this line for different look</span></span>
-<span id="cb37-2"><a href="coding-principles.html#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-3"><a href="coding-principles.html#cb37-3" aria-hidden="true" tabindex="-1"></a>graph1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x1, <span class="at">y=</span>y1)) </span>
-<span id="cb37-4"><a href="coding-principles.html#cb37-4" aria-hidden="true" tabindex="-1"></a>graph1 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span>pointcolour,<span class="at">size=</span>pointsize, <span class="at">shape =</span> pointshape) <span class="co"># never change these lines</span></span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="coding-principles.html#cb37-1" tabindex="-1"></a>pointcolour<span class="ot">=</span><span class="st">&#39;red&#39;</span>; pointsize<span class="ot">=</span><span class="dv">5</span> ; pointshape <span class="ot">=</span> <span class="dv">23</span> <span class="co">#change this line for different look</span></span>
+<span id="cb37-2"><a href="coding-principles.html#cb37-2" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="coding-principles.html#cb37-3" tabindex="-1"></a>graph1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x1, <span class="at">y=</span>y1)) </span>
+<span id="cb37-4"><a href="coding-principles.html#cb37-4" tabindex="-1"></a>graph1 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span>pointcolour,<span class="at">size=</span>pointsize, <span class="at">shape =</span> pointshape) <span class="co"># never change these lines</span></span></code></pre></div>
 <p><img src="060-coding_files/figure-html/anscombe1and2red-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="coding-principles.html#cb38-1" aria-hidden="true" tabindex="-1"></a>graph2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x2, <span class="at">y=</span>y2))</span>
-<span id="cb38-2"><a href="coding-principles.html#cb38-2" aria-hidden="true" tabindex="-1"></a>graph2 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span>pointcolour,<span class="at">size=</span>pointsize, <span class="at">shape =</span> pointshape) <span class="co"># never change these lines</span></span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="coding-principles.html#cb38-1" tabindex="-1"></a>graph2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> anscombe, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> x2, <span class="at">y=</span>y2))</span>
+<span id="cb38-2"><a href="coding-principles.html#cb38-2" tabindex="-1"></a>graph2 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">color=</span>pointcolour,<span class="at">size=</span>pointsize, <span class="at">shape =</span> pointshape) <span class="co"># never change these lines</span></span></code></pre></div>
 <p><img src="060-coding_files/figure-html/anscombe1and2red-2.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>This may seem minor, but as your code gets longer developing habits like this will save you time, and make your code easier to work with.</p>
 </div>
 <div id="functionalise-generalise" class="section level3 hasAnchor" number="6.2.3">
 <h3><span class="header-section-number">6.2.3</span> Functionalise &amp; Generalise<a href="coding-principles.html#functionalise-generalise" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you ever find yourself using very similar lines of code, you should think about making a function. Functions make your code shorter and easier to read (and write), and they make it <em>way</em> easier to update (because when you catch a bug you can just update the code in the function, rather than every time you repeated those lines).</p>
-<p>Functions are also an opportunity to think to yourself “what is the most general purpose way of doing what I’m doing.” Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things.</p>
+<p>Functions are also an opportunity to think to yourself “what is the most general purpose way of doing what I’m doing”. Thinking like this will help you develop powerful, flexible, code which you can use to do multiple things.</p>
 <p>Let’s look at a toy example:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="coding-principles.html#cb39-1" aria-hidden="true" tabindex="-1"></a>mynumbers <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span>
-<span id="cb39-2"><a href="coding-principles.html#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-3"><a href="coding-principles.html#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co">#double and add one to each number</span></span>
-<span id="cb39-4"><a href="coding-principles.html#cb39-4" aria-hidden="true" tabindex="-1"></a>mynumbers[<span class="dv">1</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">1</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 1</span></span>
-<span id="cb39-5"><a href="coding-principles.html#cb39-5" aria-hidden="true" tabindex="-1"></a>mynumbers[<span class="dv">2</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">2</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 2</span></span>
-<span id="cb39-6"><a href="coding-principles.html#cb39-6" aria-hidden="true" tabindex="-1"></a>mynumbers[<span class="dv">3</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">3</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 3</span></span>
-<span id="cb39-7"><a href="coding-principles.html#cb39-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb39-8"><a href="coding-principles.html#cb39-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mynumbers)</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="coding-principles.html#cb39-1" tabindex="-1"></a>mynumbers <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span>
+<span id="cb39-2"><a href="coding-principles.html#cb39-2" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="coding-principles.html#cb39-3" tabindex="-1"></a><span class="co">#double and add one to each number</span></span>
+<span id="cb39-4"><a href="coding-principles.html#cb39-4" tabindex="-1"></a>mynumbers[<span class="dv">1</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">1</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 1</span></span>
+<span id="cb39-5"><a href="coding-principles.html#cb39-5" tabindex="-1"></a>mynumbers[<span class="dv">2</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">2</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 2</span></span>
+<span id="cb39-6"><a href="coding-principles.html#cb39-6" tabindex="-1"></a>mynumbers[<span class="dv">3</span>] <span class="ot">&lt;-</span> mynumbers[<span class="dv">3</span>]<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span> <span class="co"># line 3</span></span>
+<span id="cb39-7"><a href="coding-principles.html#cb39-7" tabindex="-1"></a></span>
+<span id="cb39-8"><a href="coding-principles.html#cb39-8" tabindex="-1"></a><span class="fu">print</span>(mynumbers)</span></code></pre></div>
 <pre><code>## [1] 5 7 9</code></pre>
 <p>This can be improved with a function</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="coding-principles.html#cb41-1" aria-hidden="true" tabindex="-1"></a>myfunc <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
-<span id="cb41-2"><a href="coding-principles.html#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#toy function, doubles and adds 1</span></span>
-<span id="cb41-3"><a href="coding-principles.html#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(num<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)</span>
-<span id="cb41-4"><a href="coding-principles.html#cb41-4" aria-hidden="true" tabindex="-1"></a>  }  </span>
-<span id="cb41-5"><a href="coding-principles.html#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-6"><a href="coding-principles.html#cb41-6" aria-hidden="true" tabindex="-1"></a>mynumbers <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span>
-<span id="cb41-7"><a href="coding-principles.html#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-8"><a href="coding-principles.html#cb41-8" aria-hidden="true" tabindex="-1"></a>mynumbers <span class="ot">&lt;-</span> <span class="fu">myfunc</span>(mynumbers) <span class="co"># all the work with 1 line!</span></span>
-<span id="cb41-9"><a href="coding-principles.html#cb41-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-10"><a href="coding-principles.html#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mynumbers)</span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="coding-principles.html#cb41-1" tabindex="-1"></a>myfunc <span class="ot">&lt;-</span> <span class="cf">function</span>(num){</span>
+<span id="cb41-2"><a href="coding-principles.html#cb41-2" tabindex="-1"></a>  <span class="co">#toy function, doubles and adds 1</span></span>
+<span id="cb41-3"><a href="coding-principles.html#cb41-3" tabindex="-1"></a>  <span class="fu">return</span>(num<span class="sc">*</span><span class="dv">2</span><span class="sc">+</span><span class="dv">1</span>)</span>
+<span id="cb41-4"><a href="coding-principles.html#cb41-4" tabindex="-1"></a>  }  </span>
+<span id="cb41-5"><a href="coding-principles.html#cb41-5" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="coding-principles.html#cb41-6" tabindex="-1"></a>mynumbers <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)</span>
+<span id="cb41-7"><a href="coding-principles.html#cb41-7" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="coding-principles.html#cb41-8" tabindex="-1"></a>mynumbers <span class="ot">&lt;-</span> <span class="fu">myfunc</span>(mynumbers) <span class="co"># all the work with 1 line!</span></span>
+<span id="cb41-9"><a href="coding-principles.html#cb41-9" tabindex="-1"></a></span>
+<span id="cb41-10"><a href="coding-principles.html#cb41-10" tabindex="-1"></a><span class="fu">print</span>(mynumbers)</span></code></pre></div>
 <pre><code>## [1] 5 7 9</code></pre>
 <p>This code is easier to read, easier to change, and you can write new code which uses this function again.</p>
 </div>

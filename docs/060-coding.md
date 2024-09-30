@@ -20,7 +20,7 @@ As well demonstrating these fundamentals, these pages also introduce the vocabul
 So far we have written simple scripts that do things in order, top to bottom
 
 
-```r
+``` r
 a <- 1 # define a variable
 a <- a + 1 #add 1
 print(a) # output the result
@@ -35,7 +35,7 @@ The first block above is the code, the second block (the lines which start with 
 Changing which statements are run is called "flow control". An "If statement" is a fundamental way of doing this. It allows us to specify one set statements to run if a certain conditions is met. For example
 
 
-```r
+``` r
 a <- 1 # define a variable
 a <- a + 1 #add 1
 if(a>4) # this is the condition which has to be met, the 'test expression'
@@ -47,7 +47,7 @@ Notice there is no output. Copy the code to your own computer and run it. Now ch
 An If statement defines a branch in the flow of a script. The default can be nothing happening, but sometimes you want to define two alternatives. You can do this with an "If...else...statement"
 
 
-```r
+``` r
 a <- 1 # define a variable
 a <- a + 1 #add 1
 if(a>4){ # this is the condition which has to be met, the 'test expression'
@@ -64,7 +64,7 @@ if(a>4){ # this is the condition which has to be met, the 'test expression'
 You can actually have as many branches as you like, defining a series of test_expressions, like this
 
 
-```r
+``` r
 type_of_thing <- '' 
 print("Is four a lot?")
 if (type_of_thing=='Murders'){
@@ -87,7 +87,7 @@ if (type_of_thing=='Murders'){
 Loops repeat, either iterating over a set values, like this:
   
 
-```r
+``` r
 for (i in 1:5){
   print(i)
 }
@@ -104,7 +104,7 @@ for (i in 1:5){
 Or until some condition is met
 
 
-```r
+``` r
 i <- 1 #need to initialise a starting value
 while(i<6){
   print(i)
@@ -125,7 +125,7 @@ Loops are useful wherever you might want to repeat some operation.
 
 
 
-```r
+``` r
 years <- 10 #how many years since you started saving
 savings <-100 #how much you start with
 interest <- 1.05 #rate of interest, ie 5% interest
@@ -143,7 +143,7 @@ print(paste("After", years, "years you will have £", round(savings,2))) #save m
 Lots of people advise against using loops because they are can be slow and it isn't always obvious what they are doing. Alternatives often exist, like vectorisation:
  
 
-```r
+``` r
 years <- 20 #how many years since you started saving
 savings <-100 #how much you start with
 interest <- 1.05 #rate of interest, ie 5% interest
@@ -161,7 +161,7 @@ The problem is, loops are the natural way to think about some problems. Often I 
 Functions take in values (called "arguments"), do something with them, and give a value or values back in return. You have already used functions, for example the mean function
 
 
-```r
+``` r
 my_nums <- c(78,12,32,24,03,89) #just a vector of some numbers
 mean(my_nums) #use the mean function to find the average
 ```
@@ -175,7 +175,7 @@ Functions always do the same thing, but give different results depending on the 
 You can write your own functions, and then use them ("call them") again and again. Here is the general form of a function
 
 
-```r
+``` r
 myfunctionname <- function(input_value) {
 # comment line helpfully explaining what the function does
 output_value <- input_value #lines of code which do something to the input to produce the output
@@ -190,7 +190,7 @@ You can call this function now. If you close R you'll need to define the functio
 Now, when we call the function, we pass actual values. 
 
 
-```r
+``` r
 myfunctionname(3)
 ```
 
@@ -202,7 +202,7 @@ Let's make our function slightly more complicated
 
 
 
-```r
+``` r
 outcheck <- function(val,threshold) {
 # outlier checker
 if(val<threshold){
@@ -217,7 +217,7 @@ return(output_value)
 This function takes two input values, and returns a single value which depends on the relation between the two
 
 
-```r
+``` r
 outcheck(3,5)
 ```
 
@@ -228,7 +228,7 @@ outcheck(3,5)
 
 
 
-```r
+``` r
 outcheck(7,5)
 ```
 
@@ -244,7 +244,7 @@ Variables within functions are kept 'inside' the functions (within the "scope" o
 So, for example, it doesn't matter if you have another variable called `threshold`, the threshold within the function is set by the second value passed it. Like this:
                                                                                                                                                                                                                                                                 
 
-```r
+``` r
 threshold <- 100
 outcheck(7,5) #returns NA because 7 is higher than 5
 ```
@@ -279,7 +279,7 @@ To support this you should make your code readable. This means commenting your c
                                                                                                 Look at this function, it hard to understand, right?
 
 
-```r
+``` r
 pf <- function(n){ p=1 ; if (n>1){ i = 2; while( (i<(n/2+1)) & (p==1) ) {if (n%%i ==0) p=0; i=i+1 }  } else {p=0 }; return(p) }
 ```
 
@@ -288,7 +288,7 @@ This kind of code is very compressed. You can fit a lot in a few lines, but it i
 Readability is improved a lot by adding some spacing and tabs. Have another go at figuring out what the code does:
 
 
-```r
+``` r
 pf <- function(n){
   p=1
   if (n>1){ 
@@ -310,7 +310,7 @@ Now we make the variable and function names sensible:
 
 
 
-```r
+``` r
 primecheck <- function(num){
   isprime=TRUE
   if (num>1){ 
@@ -334,7 +334,7 @@ Can you tell what it does yet?
 Now fully commented
 
 
-```r
+``` r
 primecheck <- function(num){
   #check if a number is prime
   # - assumes the number provided is an integer
@@ -365,7 +365,7 @@ It is possible to comment too much. The code above I commented so someone who wa
 
 
 
-```r
+``` r
 primecheck <- function(num){
   #check if a number is prime
   # - assumes input is integer
@@ -397,7 +397,7 @@ This version is 22 lines rather than 1, but I hope you agree it is easier to wor
 Say you were going to load some data, you could do this:
   
 
-```r
+``` r
 mydata = read.csv('/home/tom/Desktop/psy6422/mydatafile.csv')
 ```
 
@@ -406,7 +406,7 @@ Now this happens to work on my computer, but it won't on yours. The reason it wo
 Like this:
 
 
-```r
+``` r
 datafile = '/home/tom/Desktop/psy6422/mydatafile.csv'
 mydata = read.csv(datafile)
 ```
@@ -414,7 +414,7 @@ mydata = read.csv(datafile)
 Now the second line is easier to read, and you also have a variable which you can reuse. For example maybe later in your script you want to save the name of the raw data file somewhere. You can just use:
 
 
-```r
+``` r
 label = paste('This plot generated using data from ', datafile)
 ```
 
@@ -423,7 +423,7 @@ And when you use the same script for different data, both the lines loading data
 Another example, suppose you had two plots:
 
 
-```r
+``` r
 graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1))
 graph1 + geom_point(color='blue',size=3) #change this line for different look
 ```
@@ -431,7 +431,7 @@ graph1 + geom_point(color='blue',size=3) #change this line for different look
 <img src="060-coding_files/figure-html/anscombe1-1.png" width="100%" style="display: block; margin: auto;" />
 
 
-```r
+``` r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color='blue',size=3) #change this line for different look
 ```
@@ -441,7 +441,7 @@ graph2 + geom_point(color='blue',size=3) #change this line for different look
 Adding variables means you only need to edit one line to change the look of both plots
 
 
-```r
+``` r
 pointcolour='red'; pointsize=5 ; pointshape = 23 #change this line for different look
 
 graph1 <- ggplot(data = anscombe, mapping = aes(x = x1, y=y1)) 
@@ -450,7 +450,7 @@ graph1 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # neve
 
 <img src="060-coding_files/figure-html/anscombe1and2red-1.png" width="100%" style="display: block; margin: auto;" />
 
-```r
+``` r
 graph2 <- ggplot(data = anscombe, mapping = aes(x = x2, y=y2))
 graph2 + geom_point(color=pointcolour,size=pointsize, shape = pointshape) # never change these lines
 ```
@@ -468,7 +468,7 @@ Functions are also an opportunity to think to yourself "what is the most general
 Let's look at a toy example:
 
 
-```r
+``` r
 mynumbers = c(2,3,4)
 
 #double and add one to each number
@@ -486,7 +486,7 @@ print(mynumbers)
 This can be improved with a function
 
 
-```r
+``` r
 myfunc <- function(num){
   #toy function, doubles and adds 1
   return(num*2+1)

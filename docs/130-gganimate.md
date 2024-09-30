@@ -9,14 +9,14 @@ Get started by installing:
 
 
 
-```r
+``` r
 install.packages("gganimate")
 ```
 
 This may give you a warning about additional packages you can install to help create output files in gif or movie file format
 
 
-```r
+``` r
 install.packages("gifski")
 install.packages("av")
 ```
@@ -40,7 +40,7 @@ The third is the shortest and simplest, but note that they use a different struc
 There is some nuance in getting the animation to save. You are having trouble with this, I recommend you divide the data frame preparation, animate plot creation and rendering into seperate stages. Once you have made a plot object, `p`, try this
 
 
-```r
+``` r
 animate(p,renderer=gifski_renderer("my_animation.gif"))
 ```
 

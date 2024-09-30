@@ -1,7 +1,7 @@
 --- 
 title: "PSY6422 Data Analysis and Visualisation"
 author: '[Tom Stafford](http://tomstafford.staff.shef.ac.uk/)'
-date: "2024-09-16"
+date: "2024-09-30"
 output:
   html_document:
     df_print: paged
@@ -27,7 +27,7 @@ links-as-notes: true
 PSY6422 Data Analysis and Visualisation is part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/). See here for more on the different courses which offer [data science, at the University of Sheffield](notes.html#data-science-sheffield)
 
 :::: {.info}
-*Autumn 2024: Updates coming soon for next semester. If you find any inconsistencies please let me know. Check out the showcases from previous years: [class of 2021 showcase](class-of-2021.html), [class of 2022 showcase](class-of-2022.html), [class of 2023 showcase](class-of-2023.html), [class of 2024 showcase](class-of-2024.html)*  
+*Autumn 2024: These pages now updated for the 2024-25 session. If you find any inconsistencies please let me know. Check out the showcases from previous years: [class of 2021 showcase](class-of-2021.html), [class of 2022 showcase](class-of-2022.html), [class of 2023 showcase](class-of-2023.html), [class of 2024 showcase](class-of-2024.html)*  
 ::::
   
 ## Motivation
@@ -73,16 +73,16 @@ See here for [more on the nature of your module project](module-project.html), s
 
 ## Resources for current students
 
-[Google Drive](https://drive.google.com/drive/folders/1auHvdDMxgmCEUMXDvdZT1OQ4bJ3s2gVk?usp=drive_link):
+[Google Drive](https://drive.google.com/drive/folders/1ga4ld-psVC762LksH2l1fooFGPBQ8nSD?usp=sharing):
 
 Includes slides and other resources, as well as these specific documents
 
-* [Timetable](https://docs.google.com/spreadsheets/d/1qBhWVNaws6TfDd4Q4ZPiVTBa_H4iZpWG8kK-Tv6aIr4/edit?usp=sharing)
-* [Assessment Criteria](https://docs.google.com/spreadsheets/d/10rVuVA5br3bq-zWiELrUBERE694P5NFhhH7lYve78Gs/edit?usp=sharing)
+* [Timetable](https://docs.google.com/spreadsheets/d/1RPi4OWTHZfDidvbIR-rj3F0xLVV8YtaPBd_jF071kM0/edit?usp=sharing)
+* [Assessment Criteria](https://docs.google.com/spreadsheets/d/1OItmKJ3D4pqz8So7i33EqD_xtVa6slHVDa-zgWKQYLI/edit?usp=sharing)
 
 FAQ document which I am adding to as questions come in
 
-* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/1fule8FNrCi8u7xTCkmfUxFWEEKe6Amz4UB4c-enUBf4/edit?usp=sharing)
+* [FAQ for PSY6422 (including on module project)](https://docs.google.com/document/d/16ZeOtBy43ImrGWTUSNmiplOwz3C2yd3CLIr-qdzf3bA/edit?usp=sharing)
 
 Most information is on these pages (hosted on github, no login required)
 

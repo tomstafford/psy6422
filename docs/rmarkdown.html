@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 7 Rmarkdown | PSY6422 Data Analysis and Visualisation</title>
   <meta name="description" content="Notes on the course" />
-  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 7 Rmarkdown | PSY6422 Data Analysis and Visualisation" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2024-09-16" />
+<meta name="date" content="2024-09-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -64,7 +64,7 @@
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -100,7 +100,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -113,7 +113,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -427,7 +427,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 7</span> Rmarkdown<a href="rmarkdown.html#rmarkdown" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Fundamental to the approach of this course is that you need to be able to share your analysis. Comments are good for making code readable, but often you will want longer sections of text, mixed in with both the code you are running and the outputs of the code (e.g. the plots you are making with it). Do this with RMarkdown.</p>
 <p>A RMarkdown file is a plain text file, like a R script, but with the extension <code>.Rmd</code> rather than <code>.R</code>. You can make one now in RStudio by clicking File &gt; New File &gt; R Markdown. Or by saving an existing .R script as <code>filename.Rmd</code>.</p>
-<p>RMarkdown is the system which marks how text should look after it has been converted into a webpage, or PDF, or some other kind of document. The name RMarkdown is kind of a joke, since RMarkdown is a version of a “markup langauge.” Markups are the opposite of the <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> systems (like MS word or Google Docs) which you are used to.</p>
+<p>RMarkdown is the system which marks how text should look after it has been converted into a webpage, or PDF, or some other kind of document. The name RMarkdown is kind of a joke, since RMarkdown is a version of a “markup langauge”. Markups are the opposite of the <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> systems (like MS word or Google Docs) which you are used to.</p>
 <p>These pages are written in Rmarkdown. You can see this individual file <a href="https://github.com/tomstafford/psy6422/blob/master/070-rmarkdown.Rmd">here in the online repositry</a>. It will really help if you read the webpage alongside the file, so you can compare the file which generates the text, using the markdown, and the output (the webpage).</p>
 <p>Rstudio magic (called “rendering” or “knitting”) turns this file in to the webpage.</p>
 <div class="info">
@@ -455,15 +455,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="first-a-header" class="section level2 hasAnchor" number="7.2">
 <h2><span class="header-section-number">7.2</span> First a header<a href="rmarkdown.html#first-a-header" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Aka “header material.” It looks like this, at the top of the file:</p>
-<div class="figure">
-<img src="images/yaml.png" alt="" />
-<p class="caption">Yaml matter at the top of a .Rmd file</p>
+<p>Aka “header material”. It looks like this, at the top of the file:</p>
+<div class="float">
+<img src="images/yaml.png" alt="Yaml matter at the top of a .Rmd file" />
+<div class="figcaption">Yaml matter at the top of a .Rmd file</div>
 </div>
 <p>This is called YAML and it is stuff meant to be read by the computer when the file is converted into a document to be read by humans. You can see that this is meant to be an “HTML” document (that’s the kind on a webpage), so let’s make it now. Click “knit” in RStudio (or “knit to HTML” if you are exploring the options menu).</p>
 <p>(you’ll be prompted to give your <code>.Rmd</code> file a name first, if you haven’t done this already).</p>
 <p>After a brief pause you should get a new window open, containing something that has some of the same words as your document. Notice how the YAML stuff has disappeared, and the new document now contains formatting (bold, italics, headings, etc).</p>
-<p>Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click “Knit” and select “Knit to PDF.” You get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before.</p>
+<p>Part of the benefit of markdown is that you write the document once, and can convert it to a webpage, or a PDF, or a MS Word document. Try now. Click “Knit” and select “Knit to PDF”. You get a nice PDF document, looking almost, but not entirely, like the webspage you made moments before.</p>
 <div class="info">
 <p>Submitting PDFs is one of the requirements for assessments 2 and 3. This class is good opportunity to check you can do this.</p>
 </div>
@@ -482,28 +482,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="third-code" class="section level2 hasAnchor" number="7.4">
 <h2><span class="header-section-number">7.4</span> Third, code<a href="rmarkdown.html#third-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This is the third ingredient, code and any output it produces. Like this:</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="rmarkdown.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Here is some R code&quot;</span>)</span>
-<span id="cb43-2"><a href="rmarkdown.html#cb43-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">6</span></span>
-<span id="cb43-3"><a href="rmarkdown.html#cb43-3" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fl">2.3</span></span>
-<span id="cb43-4"><a href="rmarkdown.html#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(a<span class="sc">/</span>b)</span>
-<span id="cb43-5"><a href="rmarkdown.html#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;And the output it produces&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="rmarkdown.html#cb43-1" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;Here is some R code&quot;</span>)</span>
+<span id="cb43-2"><a href="rmarkdown.html#cb43-2" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">6</span></span>
+<span id="cb43-3"><a href="rmarkdown.html#cb43-3" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fl">2.3</span></span>
+<span id="cb43-4"><a href="rmarkdown.html#cb43-4" tabindex="-1"></a><span class="fu">print</span>(a<span class="sc">/</span>b)</span>
+<span id="cb43-5"><a href="rmarkdown.html#cb43-5" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;And the output it produces&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;Here is some R code&quot;
 ## [1] 2.608696
 ## [1] &quot;And the output it produces&quot;</code></pre>
 <p>Here is another example</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="rmarkdown.html#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Code to make an example graph</span></span>
-<span id="cb45-2"><a href="rmarkdown.html#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb45-3"><a href="rmarkdown.html#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-4"><a href="rmarkdown.html#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="co">#load some data</span></span>
-<span id="cb45-5"><a href="rmarkdown.html#cb45-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-6"><a href="rmarkdown.html#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Methdod 1. Load from Tom&#39;s computer</span></span>
-<span id="cb45-7"><a href="rmarkdown.html#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="co">#filename &lt;- &#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span></span>
-<span id="cb45-8"><a href="rmarkdown.html#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="co">#df &lt;- read.csv(filename)</span></span>
-<span id="cb45-9"><a href="rmarkdown.html#cb45-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb45-10"><a href="rmarkdown.html#cb45-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Method 2. Load from URL https://rpubs.com/lokraj/github_csv</span></span>
-<span id="cb45-11"><a href="rmarkdown.html#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span> (readr)</span>
-<span id="cb45-12"><a href="rmarkdown.html#cb45-12" aria-hidden="true" tabindex="-1"></a>urlfile<span class="ot">=</span><span class="st">&quot;https://raw.githubusercontent.com/tomstafford/psy6422/master/mydatafile.csv&quot;</span></span>
-<span id="cb45-13"><a href="rmarkdown.html#cb45-13" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">url</span>(urlfile))</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="rmarkdown.html#cb45-1" tabindex="-1"></a><span class="co">#Code to make an example graph</span></span>
+<span id="cb45-2"><a href="rmarkdown.html#cb45-2" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb45-3"><a href="rmarkdown.html#cb45-3" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="rmarkdown.html#cb45-4" tabindex="-1"></a><span class="co">#load some data</span></span>
+<span id="cb45-5"><a href="rmarkdown.html#cb45-5" tabindex="-1"></a></span>
+<span id="cb45-6"><a href="rmarkdown.html#cb45-6" tabindex="-1"></a><span class="co">#Methdod 1. Load from Tom&#39;s computer</span></span>
+<span id="cb45-7"><a href="rmarkdown.html#cb45-7" tabindex="-1"></a><span class="co">#filename &lt;- &#39;/home/tom/Desktop/psy6422/mydatafile.csv&#39;</span></span>
+<span id="cb45-8"><a href="rmarkdown.html#cb45-8" tabindex="-1"></a><span class="co">#df &lt;- read.csv(filename)</span></span>
+<span id="cb45-9"><a href="rmarkdown.html#cb45-9" tabindex="-1"></a></span>
+<span id="cb45-10"><a href="rmarkdown.html#cb45-10" tabindex="-1"></a><span class="co">#Method 2. Load from URL https://rpubs.com/lokraj/github_csv</span></span>
+<span id="cb45-11"><a href="rmarkdown.html#cb45-11" tabindex="-1"></a><span class="fu">library</span> (readr)</span>
+<span id="cb45-12"><a href="rmarkdown.html#cb45-12" tabindex="-1"></a>urlfile<span class="ot">=</span><span class="st">&quot;https://raw.githubusercontent.com/tomstafford/psy6422/master/mydatafile.csv&quot;</span></span>
+<span id="cb45-13"><a href="rmarkdown.html#cb45-13" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">url</span>(urlfile))</span></code></pre></div>
 <pre><code>## Rows: 25 Columns: 4
 ## ── Column specification ────────────────────────────────────────────────────────
 ## Delimiter: &quot;,&quot;
@@ -511,21 +511,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## ℹ Use `spec()` to retrieve the full column specification for this data.
 ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="rmarkdown.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co">#rename columns for easy labelling</span></span>
-<span id="cb47-2"><a href="rmarkdown.html#cb47-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="at">ppt =</span> <span class="st">&quot;Participant Number&quot;</span>,<span class="at">asrs =</span> <span class="st">&quot;Total ASRS Score&quot;</span>)</span>
-<span id="cb47-3"><a href="rmarkdown.html#cb47-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-4"><a href="rmarkdown.html#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="co">#plot parameters</span></span>
-<span id="cb47-5"><a href="rmarkdown.html#cb47-5" aria-hidden="true" tabindex="-1"></a>plottitle  <span class="ot">&lt;-</span>  <span class="st">&#39;ASRS values for each participant&#39;</span></span>
-<span id="cb47-6"><a href="rmarkdown.html#cb47-6" aria-hidden="true" tabindex="-1"></a>xlab  <span class="ot">&lt;-</span>  <span class="st">&#39;Participant number&#39;</span></span>
-<span id="cb47-7"><a href="rmarkdown.html#cb47-7" aria-hidden="true" tabindex="-1"></a>ylab  <span class="ot">&lt;-</span>  <span class="st">&#39;Total ASRS score&#39;</span></span>
-<span id="cb47-8"><a href="rmarkdown.html#cb47-8" aria-hidden="true" tabindex="-1"></a>pointsize  <span class="ot">&lt;-</span>  <span class="dv">7</span></span>
-<span id="cb47-9"><a href="rmarkdown.html#cb47-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb47-10"><a href="rmarkdown.html#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="co">#make plot</span></span>
-<span id="cb47-11"><a href="rmarkdown.html#cb47-11" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data=</span>df,<span class="fu">aes</span>(<span class="at">x=</span>ppt,<span class="at">y=</span>asrs))</span>
-<span id="cb47-12"><a href="rmarkdown.html#cb47-12" aria-hidden="true" tabindex="-1"></a>p1 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size=</span>pointsize) <span class="sc">+</span></span>
-<span id="cb47-13"><a href="rmarkdown.html#cb47-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(plottitle) <span class="sc">+</span></span>
-<span id="cb47-14"><a href="rmarkdown.html#cb47-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(xlab) <span class="sc">+</span></span>
-<span id="cb47-15"><a href="rmarkdown.html#cb47-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(ylab)</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="rmarkdown.html#cb47-1" tabindex="-1"></a><span class="co">#rename columns for easy labelling</span></span>
+<span id="cb47-2"><a href="rmarkdown.html#cb47-2" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="at">ppt =</span> <span class="st">&quot;Participant Number&quot;</span>,<span class="at">asrs =</span> <span class="st">&quot;Total ASRS Score&quot;</span>)</span>
+<span id="cb47-3"><a href="rmarkdown.html#cb47-3" tabindex="-1"></a></span>
+<span id="cb47-4"><a href="rmarkdown.html#cb47-4" tabindex="-1"></a><span class="co">#plot parameters</span></span>
+<span id="cb47-5"><a href="rmarkdown.html#cb47-5" tabindex="-1"></a>plottitle  <span class="ot">&lt;-</span>  <span class="st">&#39;ASRS values for each participant&#39;</span></span>
+<span id="cb47-6"><a href="rmarkdown.html#cb47-6" tabindex="-1"></a>xlab  <span class="ot">&lt;-</span>  <span class="st">&#39;Participant number&#39;</span></span>
+<span id="cb47-7"><a href="rmarkdown.html#cb47-7" tabindex="-1"></a>ylab  <span class="ot">&lt;-</span>  <span class="st">&#39;Total ASRS score&#39;</span></span>
+<span id="cb47-8"><a href="rmarkdown.html#cb47-8" tabindex="-1"></a>pointsize  <span class="ot">&lt;-</span>  <span class="dv">7</span></span>
+<span id="cb47-9"><a href="rmarkdown.html#cb47-9" tabindex="-1"></a></span>
+<span id="cb47-10"><a href="rmarkdown.html#cb47-10" tabindex="-1"></a><span class="co">#make plot</span></span>
+<span id="cb47-11"><a href="rmarkdown.html#cb47-11" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data=</span>df,<span class="fu">aes</span>(<span class="at">x=</span>ppt,<span class="at">y=</span>asrs))</span>
+<span id="cb47-12"><a href="rmarkdown.html#cb47-12" tabindex="-1"></a>p1 <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">size=</span>pointsize) <span class="sc">+</span></span>
+<span id="cb47-13"><a href="rmarkdown.html#cb47-13" tabindex="-1"></a>  <span class="fu">ggtitle</span>(plottitle) <span class="sc">+</span></span>
+<span id="cb47-14"><a href="rmarkdown.html#cb47-14" tabindex="-1"></a>  <span class="fu">xlab</span>(xlab) <span class="sc">+</span></span>
+<span id="cb47-15"><a href="rmarkdown.html#cb47-15" tabindex="-1"></a>  <span class="fu">ylab</span>(ylab)</span></code></pre></div>
 <p><img src="070-rmarkdown_files/figure-html/asrsscatter-1.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>You don’t need to show the r code, but can still include it in the document and use it to generate figures etc.</p>
 <p>The scatterplot above uses participant number as one of the axes, which doesn’t really make any sense. A histogram is a better way of visualising the spread of scores on a single variable, so here is one:</p>
@@ -545,7 +545,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">7.4.2</span> Include r in inline text<a href="rmarkdown.html#include-r-in-inline-text" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can also put single values in ongoing text using Rmarkdown</p>
 <p>Imagine you have some data</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="rmarkdown.html#cb48-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">42</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">34</span>,<span class="dv">63</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="rmarkdown.html#cb48-1" tabindex="-1"></a>data <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">42</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">34</span>,<span class="dv">63</span>)</span></code></pre></div>
 <p>You can then refer to it in the text. Like this: the mean of the data is 25.5</p>
 <p>If you are viewing on the webpage you see the answer, but the file contains an instruction to calculate <code>mean(data)</code>.</p>
 <p>Neat, eh?</p>
@@ -578,12 +578,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="advanced" class="section level2 hasAnchor" number="7.7">
 <h2><span class="header-section-number">7.7</span> Advanced<a href="rmarkdown.html#advanced" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Set the <a href="https://bookdown.org/yihui/rmarkdown/html-document.html">html output options</a> in the YAML to make your output look nicer</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb49-1"><a href="rmarkdown.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb49-2"><a href="rmarkdown.html#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Habits&quot;</span></span>
-<span id="cb49-3"><a href="rmarkdown.html#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span></span>
-<span id="cb49-4"><a href="rmarkdown.html#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">df_print</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;paged&#39;</span></span>
-<span id="cb49-5"><a href="rmarkdown.html#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">code_folding</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;show&#39;</span></span>
-<span id="cb49-6"><a href="rmarkdown.html#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb49-1"><a href="rmarkdown.html#cb49-1" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb49-2"><a href="rmarkdown.html#cb49-2" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;Habits&quot;</span></span>
+<span id="cb49-3"><a href="rmarkdown.html#cb49-3" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span></span>
+<span id="cb49-4"><a href="rmarkdown.html#cb49-4" tabindex="-1"></a><span class="at">  </span><span class="fu">df_print</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;paged&#39;</span></span>
+<span id="cb49-5"><a href="rmarkdown.html#cb49-5" tabindex="-1"></a><span class="at">  </span><span class="fu">code_folding</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;show&#39;</span></span>
+<span id="cb49-6"><a href="rmarkdown.html#cb49-6" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div>
 </div>
 <div id="checklist-5" class="section level2 hasAnchor" number="7.8">
 <h2><span class="header-section-number">7.8</span> Checklist<a href="rmarkdown.html#checklist-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
