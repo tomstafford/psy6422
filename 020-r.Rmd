@@ -9,28 +9,38 @@
 * r-bloggers.com [Top 10 errors in R and how to fix them](https://www.r-bloggers.com/2023/02/top-10-errors-in-r-and-how-to-fix-them/)
 * [rtutor.ai/](http://rtutor.ai/) - natural language interface to R
 
-## Exercises & Checklist
+## Exercises
 
-*To complete this class you should do the following :*
 
 * install R on your computer
   * if you can't, use the cloud: [posit.cloud](https://login.posit.cloud) [log in with Google and your \@sheffield.ac.uk account]
 
+* open this [script](static/class2.R) 
+  * review line by line [as a pair exercise]
+
+* know how to install and load a library of functions ("a package")
+  * install the swirl package
+
+## Checklist
+
+*To complete this class you should be able to do the following :*
+
+* have R and RStudio installed and working correctly
+
+* create a new project
+
 * identify the console
-  * enter a command directly (e.g. "2 + 2")
+  * here you can enter a command directly (e.g. "2 + 2")
 
 * identify the file window
-  * create a new project
-  * save a script as a .R file
-  * run a single line of the script by pressing CTRL + ENTER
-  * run the whole script
+
+* save a script as a .R file
+
+* run a single line of the script by pressing CTRL + ENTER
+
+* run the whole script
 
 * identify the environment window
 
 * identify the files/plots/etc window
 
-* know how to install and load a library of functions ("a package")
-  * install the swirl package
-
-* open this [script](static/class2.R) 
-  * review line by line [as a pair exercise]
