@@ -4,7 +4,7 @@
 
 ## download this script and the data to your computer
 ## create a project folder and put the script and the data in
-## set the RStudio working directory to the project folder
+## (creating a project automatically sets the RStudio working directory to the project folder)
 ## after this block, every comment requests that you enter some instructions
 
 
