@@ -107,18 +107,22 @@ ggplot(data = titanic, aes(x = n, y = percent)) +
 
 ## <----- PAIR EXERCISE --------->
 
-## Get data into R
+## Purpose: Get data into R and plot it
 
-#1 first download this file by copying url to browser
-# https://cdn.rawgit.com/kjhealy/viz-organdata/master/organdonation.csv
+# The data we will plot is available on the internet here
+#  https://cdn.rawgit.com/kjhealy/viz-organdata/master/organdonation.csv
 
-#2 #download and look at file using google sheets or excel'
+#1 Add this link to your brownser. You should see rows of data, seperated by commas (this is "comma seperated values" data - csv)
 
-#3 assign the url to a variable (remember it is a string, so use "")
+#2 Download the data by clicking File -> Save As. You can now look at file using google sheets or excel, which should put it in a table for you (using the commas to decide what goes where)
+
+#But we want to do the whole task in R, so we need to automate getting the data
+
+#3 The link is *where* the data is available. Assign the url to a variable (remember it is a string, so use "")
 
 #4 use that variable name to load the data from the internet
 # google "read_csv in r" for help
 
-#4b Bonus: load the same data from the file on your computer
+#4b Bonus: still using R, load the same data from the file on your computer
 
 #5 now plot pop.dens against gdp using a scatter plot and tell me what you see
