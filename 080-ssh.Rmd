@@ -4,10 +4,6 @@
 <img src="images/remote.png" style="width: 600px; float: center;">
 </p>
 
-:::: {.info}
-Before this class please install the [University VPN](https://www.sheffield.ac.uk/it-services/vpn) and confirm it works [estimated time: 5-10 minutes]
-::::
-
 In this class we will introduce the idea of the command line, running commands without the normal graphical user interface (GUI) and accessing remote computers using ssh (secure shell).
 
 ## Launching the Terminal

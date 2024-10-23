@@ -23,7 +23,7 @@
 <meta name="author" content="Tom Stafford" />
 
 
-<meta name="date" content="2024-10-04" />
+<meta name="date" content="2024-10-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -74,7 +74,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -506,7 +506,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb45-12"><a href="rmarkdown.html#cb45-12" tabindex="-1"></a>urlfile<span class="ot">=</span><span class="st">&quot;https://raw.githubusercontent.com/tomstafford/psy6422/master/mydatafile.csv&quot;</span></span>
 <span id="cb45-13"><a href="rmarkdown.html#cb45-13" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">url</span>(urlfile))</span></code></pre></div>
 <pre><code>## Rows: 25 Columns: 4
-## ── Column specification ────────────────────────────────────────────────────────
+## ── Column specification ───────────────────────────────────────────────
 ## Delimiter: &quot;,&quot;
 ## dbl (4): Participant Number, Total ASRS Score, Inattention subscale, Hyperac...
 ## 
