@@ -461,7 +461,8 @@ __better code__
    * indents and whitespace
    * sensible variable names
    * comments
-* hard coded values aid extension, efficiency and reproducibility
+* creating explicit variables, rather thanhard coding values, can aid extension, efficiency and reproducibility
+   * e.g. for things like plot parameters
 * functions make code easier to read, easier to modify, reduce the likelihood of bugs
    * all functions begin with a plain language comment explaining what the function does
 
