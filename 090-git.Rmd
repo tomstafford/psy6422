@@ -124,7 +124,7 @@ Other terminology: stage, commit, push/pull: see below
 ## Exercises
 
 :::: {.info}
-Github has changed so you can't use your site password to push changes. You will need to create an access token
+Github has changed so you can't use your site password to push changes. You will need to create an access token. See here for help <https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls>
 ::::
 
 * create an account at github.com
