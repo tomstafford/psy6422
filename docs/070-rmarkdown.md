@@ -1,7 +1,7 @@
 ---
 title: "PSY6422 Data Analysis and Visualisation"
 author: "Tom Stafford"
-date: "2024-11-01"
+date: "2025-07-29"
 output:
   html_document: default
 ---
@@ -122,7 +122,7 @@ df <- read_csv(url(urlfile))
 
 ```
 ## Rows: 25 Columns: 4
-## ── Column specification ──────────────────────────────────────────────────────────────────────────────────────
+## ── Column specification ─────────────────────────────────────────────────────────────────────────────────────────────
 ## Delimiter: ","
 ## dbl (4): Participant Number, Total ASRS Score, Inattention subscale, Hyperac...
 ## 
