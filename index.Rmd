@@ -33,10 +33,10 @@ options(tinytex.verbose = TRUE)
 
 # Module Overview {-}
 
-PSY6422 Data Analysis and Visualisation is part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) taught at The University of Sheffield by [Tom Stafford](http://tomstafford.staff.shef.ac.uk/). See here for more on the different courses which offer [data science, at the University of Sheffield](notes.html#data-science-sheffield)
+PSY6422 Data Analysis and Visualisation was designed and taught by me [Tom Stafford](https://tomstafford.github.io/) 2020-2025, as part of the [MSc in Psychological Research Methods with Data Science](https://www.sheffield.ac.uk/psychology/prospectivepg/masters/data-science) at The University of Sheffield. The module continues as part of the MSc in Psychological Research Methods and the new MSc in Artifical Intelligence.
 
 :::: {.info}
-PSY6422 ran 2020 - 2025, convened by me, [Tom Stafford](https://tomstafford.github.io/). These pages are now archival. Check out the showcases from previous years:
+These pages are now archival. Check out the showcases from previous years:
 
 * [class of 2021 showcase](class-of-2021.html), 
 * [class of 2022 showcase](class-of-2022.html), 
